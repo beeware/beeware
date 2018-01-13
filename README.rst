@@ -29,23 +29,44 @@ This package provides a convenient user interface to drive those tools.
 Usage
 -----
 
-To install it, run::
+To install BeeWare, create a new virtual environment::
 
-    > pip install beeware
+    $ mkdir beeware
+    $ cd beeware
+    beeware $ python -m venv venv
+    beeware $ ./venv/bin/activate
 
-Then -- To start a new project::
+(or, if you're on Windows)::
 
-    > beeware new
+    beeware $ venv\Scripts\activate.bat
 
-To build a project for iOS::
+Then, install BeeWare in that virtual environment::
 
-    > beeware build ios
+    (venv) $ pip install beeware
 
-To run a project on the iOS simulator (this will also do a build)::
+To start a new project, run::
 
-    > beeware run ios
+    (venv) $ beeware new
+
+This will prompt you for details of your new project, such as the name,
+description, and license.
+
+Once you've added your application code, run::
+
+    (venv) $ beeware build ios
+
+from the directory that beeware created to build your application. To run
+your application::
+
+    (venv) $ beeware run ios
 
 You can also target `android`, `macos`, `windows`, `linux` or `django`.
+
+This will:
+
+* Run the app in the simulator for iOS and Android;
+* Start a desktop app on Windows, macOS and Linux; and
+* Start a webserver on port 8000 for Django
 
 Community
 ---------
