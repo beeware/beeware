@@ -1,9 +1,25 @@
-.. image:: http://pybee.org/static/images/brutus-170.png
+.. image:: http://pybee.org/static/images/brutus-270.png
     :width: 72px
     :target: https://pybee.org/
 
 BeeWare
 =======
+
+.. image:: https://img.shields.io/pypi/pyversions/beeware.svg
+    :target: https://pypi.python.org/pypi/beeware
+
+.. image:: https://img.shields.io/pypi/v/beeware.svg
+    :target: https://pypi.python.org/pypi/beeware
+
+.. image:: https://img.shields.io/pypi/status/beeware.svg
+    :target: https://pypi.python.org/pypi/beeware
+
+.. image:: https://img.shields.io/pypi/l/beeware.svg
+    :target: https://github.com/pybee/beeware/blob/master/LICENSE
+
+.. image:: https://badges.gitter.im/pybee/general.svg
+    :target: https://gitter.im/pybee/general
+
 
 BeeWare is a collection of tools and libraries to aid native application
 development in Python.
