@@ -33,15 +33,15 @@ To install it, run::
 
     > pip install beeware
 
-Then -- To start a new project:
+Then -- To start a new project::
 
     > beeware new
 
-To build a project for iOS:
+To build a project for iOS::
 
     > beeware build ios
 
-To run a project on the iOS simulator (this will also do a build):
+To run a project on the iOS simulator (this will also do a build)::
 
     > beeware run ios
 
