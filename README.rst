@@ -1,4 +1,4 @@
-.. image:: http://pybee.org/static/images/defaultlogo.png
+.. image:: http://pybee.org/static/images/brutus-170.png
     :width: 72px
     :target: https://pybee.org/
 
