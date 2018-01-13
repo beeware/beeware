@@ -17,6 +17,7 @@ def new_project():
     cmd = ['cookiecutter', 'https://github.com/pybee/briefcase-template.git']
     print('Creating new BeeWare project using the Briefcase Template...')
     print('>>>', ' '.join(cmd))
+    print()
     subprocess.run(cmd)
 
 
@@ -24,6 +25,7 @@ def build_project(target):
     cmd = ['setup.py', target]
     print('Running Briefcase...')
     print('>>> python', ' '.join(cmd))
+    print()
     subprocess.run([sys.executable] + cmd)
 
 
@@ -31,6 +33,7 @@ def run_project(target):
     cmd = ['setup.py', target, '-s']
     print('Running Briefcase...')
     print('>>> python', ' '.join(cmd))
+    print()
     subprocess.run([sys.executable] + cmd)
 
 
