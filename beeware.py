@@ -54,9 +54,9 @@ def main():
     if args.command == 'new':
         new_project()
     elif args.command == 'build':
-        build_project(args.target)
+        build_project(args.target.lower())
     elif args.command == 'run':
-        run_project(args.target)
+        run_project(args.target.lower())
     else:
         parser.print_help()
 
