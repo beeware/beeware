@@ -30,6 +30,10 @@ setup(
         ]
     },
     license='New BSD',
+    install_requires=[
+        'briefcase',
+        'toga',
+    ],
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
