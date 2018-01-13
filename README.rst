@@ -29,6 +29,7 @@ To run a project on the iOS simulator (this will also do a build):
 
     > beeware run ios
 
+You can also target `android`, `macos`, `windows`, `linux` or `django`.
 
 Community
 ---------
