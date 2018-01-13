@@ -19,7 +19,7 @@ To install it, run::
 
 Then -- To start a new project:
 
-    > beeware start
+    > beeware new
 
 To build a project for iOS:
 
