@@ -29,6 +29,7 @@ setup(
             'beeware = beeware:main',
         ]
     },
+    py_modules=['beeware'],
     license='New BSD',
     install_requires=[
         'briefcase',
