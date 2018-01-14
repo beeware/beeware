@@ -33,7 +33,7 @@ setup(
     license='New BSD',
     install_requires=[
         'briefcase',
-        'toga>=0.3.0.dev1',
+        'toga>=0.3.0.dev2',
     ],
     classifiers=[
         'Development Status :: 4 - Beta',
