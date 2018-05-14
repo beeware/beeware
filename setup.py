@@ -47,5 +47,10 @@ setup(
         'Topic :: Software Development',
         'Topic :: Utilities',
     ],
+    package_urls={
+        'Funding': 'https://pybee.org/contributing/membership/',
+        'Tracker': 'https://github.com/pybee/beeware/issues',
+        'Source': 'https://github.com/pybee/beeware',
+    },
     # test_suite='tests'
 )
