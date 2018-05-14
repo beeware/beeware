@@ -62,10 +62,10 @@ your application::
 
 You can also target `android`, `macos`, `windows`, `linux` or `django`.
 
-This will:
+Depending on your choice of target, this will either (as appropriate):
 
-* Run the app in the simulator for iOS and Android;
-* Start a desktop app on Windows, macOS and Linux; and
+* Run the app in the simulator for iOS or Android;
+* Start a desktop app on Windows, macOS or Linux; or
 * Start a webserver on port 8000 for Django
 
 Community
