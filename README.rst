@@ -1,24 +1,33 @@
-.. image:: http://pybee.org/static/images/brutus-270.png
+.. image:: http://beeware.org/static/images/brutus-270.png
     :width: 72px
-    :target: https://pybee.org/
+    :target: https://beeware.org/
 
 BeeWare
 =======
 
 .. image:: https://img.shields.io/pypi/pyversions/beeware.svg
-    :target: https://pypi.python.org/pypi/beeware
+   :target: https://pypi.python.org/pypi/beeware
+   :alt: Python Versions
 
 .. image:: https://img.shields.io/pypi/v/beeware.svg
-    :target: https://pypi.python.org/pypi/beeware
+   :target: https://pypi.python.org/pypi/beeware
+   :alt: PyPI Version
 
 .. image:: https://img.shields.io/pypi/status/beeware.svg
-    :target: https://pypi.python.org/pypi/beeware
+   :target: https://pypi.python.org/pypi/beeware
+   :alt: Maturity
 
 .. image:: https://img.shields.io/pypi/l/beeware.svg
-    :target: https://github.com/pybee/beeware/blob/master/LICENSE
+   :target: https://github.com/beeware/beeware/blob/master/LICENSE
+   :alt: BSD License
 
-.. image:: https://badges.gitter.im/pybee/general.svg
-    :target: https://gitter.im/pybee/general
+.. image:: https://github.com/beeware/beefore/workflows/Build%20status/badge.svg
+   :target: https://github.com/beeware/beefore/actions
+   :alt: Build Status
+
+.. image:: https://badges.gitter.im/beeware/general.svg
+   :target: https://gitter.im/beeware/general
+   :alt: Chat on Gitter
 
 
 BeeWare is a collection of tools and libraries to aid native application
@@ -75,7 +84,7 @@ You can talk to the BeeWare community through:
 
 * `@pybeeware on Twitter`_
 
-* The `pybee/general`_ channel on Gitter.
+* The `beeware/general`_ channel on Gitter.
 
 We foster a welcoming and respectful community as described in our
 `BeeWare Community Code of Conduct`_.
@@ -86,10 +95,10 @@ Contributing
 If you experience problems with BeeWare, `log them on GitHub`_. If you
 want to contribute code, please `fork the code`_ and `submit a pull request`_.
 
-.. _BeeWare suite: http://pybee.org
+.. _BeeWare suite: http://beeware.org
 .. _@pybeeware on Twitter: https://twitter.com/pybeeware
-.. _pybee/general: https://gitter.im/pybee/general
-.. _BeeWare Community Code of Conduct: http://pybee.org/community/behavior/
-.. _log them on Github: https://github.com/pybee/beeware/issues
-.. _fork the code: https://github.com/pybee/beeware
-.. _submit a pull request: https://github.com/pybee/beeware/pulls
+.. _beeware/general: https://gitter.im/beeware/general
+.. _BeeWare Community Code of Conduct: http://beeware.org/community/behavior/
+.. _log them on Github: https://github.com/beeware/beeware/issues
+.. _fork the code: https://github.com/beeware/beeware
+.. _submit a pull request: https://github.com/beeware/beeware/pulls
