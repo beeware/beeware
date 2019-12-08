@@ -1,6 +1,6 @@
 .. image:: https://beeware.org/static/images/brutus-270.png
    :width: 72px
-   :target: https://pybee.org
+   :target: https://beeware.org
 
 BeeWare
 =======
@@ -33,49 +33,22 @@ BeeWare
 BeeWare is a collection of tools and libraries to aid native application
 development in Python.
 
-This package provides a convenient user interface to drive those tools.
+This package provides a convenient user interface to start a new BeeWare
+project.
 
 Usage
 -----
 
-To install BeeWare, create a new virtual environment::
-
-    $ mkdir beeware
-    $ cd beeware
-    beeware $ python -m venv venv
-    beeware $ ./venv/bin/activate
-
-(or, if you're on Windows)::
-
-    beeware $ venv\Scripts\activate.bat
-
-Then, install BeeWare in that virtual environment::
+Create and activate a virtual environment, and then run::
 
     (venv) $ pip install beeware
-
-To start a new project, run::
-
     (venv) $ beeware new
 
-This will prompt you for details of your new project, such as the name,
-description, and license.
+This will prompt you for some details about your application (such as the
+application's name), and roll out an configured project for you to use.
 
-Once you've added your application code, run::
-
-    (venv) $ beeware build ios
-
-from the directory that beeware created to build your application. To run
-your application::
-
-    (venv) $ beeware run ios
-
-You can also target `android`, `macos`, `windows`, `linux` or `django`.
-
-Depending on your choice of target, this will either (as appropriate):
-
-* Run the app in the simulator for iOS or Android;
-* Start a desktop app on Windows, macOS or Linux; or
-* Start a webserver on port 8000 for Django
+For a introduction to the full BeeWare suite, we recommend running the
+`BeeWare Tutorial`_.
 
 Community
 ---------
@@ -95,7 +68,8 @@ Contributing
 If you experience problems with BeeWare, `log them on GitHub`_. If you
 want to contribute code, please `fork the code`_ and `submit a pull request`_.
 
-.. _BeeWare suite: http://beeware.org
+.. _BeeWare suite: https://beeware.org
+.. _BeeWare Tutorial: https://beeware.readthedocs.io/en/latest/tutorial/index.html
 .. _@pybeeware on Twitter: https://twitter.com/pybeeware
 .. _beeware/general: https://gitter.im/beeware/general
 .. _BeeWare Community Code of Conduct: http://beeware.org/community/behavior/
