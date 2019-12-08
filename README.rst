@@ -1,6 +1,6 @@
-.. image:: http://beeware.org/static/images/brutus-270.png
-    :width: 72px
-    :target: https://beeware.org/
+.. image:: https://beeware.org/static/images/brutus-270.png
+   :width: 72px
+   :target: https://pybee.org
 
 BeeWare
 =======
