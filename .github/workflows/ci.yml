@@ -2,8 +2,8 @@ name: CI
 on: [pull_request]
 
 jobs:
-  beefore:
-    name: Pre-test checks
+  docs:
+    name: Docs build
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 4
@@ -17,49 +17,11 @@ jobs:
         python-version: 3.8
     - name: Install dependencies
       run: |
-        pip install --upgrade pip setuptools beefore
+        pip install --upgrade pip setuptools
+        pip install -r docs/requirements.txt
     - name: Run Beefore checks
       env:
         GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        beefore --username github-actions --repository ${{ github.repository }} --pull-request ${{ github.event.number }} --commit ${{ github.event.pull_request.head.sha }} ${{ matrix.task }} .
+        cd docs && make html
 
-  smoke:
-    name: Smoke test (3.5)
-    needs: beefore
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v1
-    - name: Set up Python 3.5
-      uses: actions/setup-python@v1
-      with:
-        python-version: 3.5
-    - name: Install dependencies
-      run: |
-        pip install --upgrade pip setuptools pytest-tldr
-        pip install -e .
-    - name: Test
-      run: |
-        python setup.py test
-
-  python-versions:
-    name: Python compatibility test
-    needs: smoke
-    runs-on: ubuntu-latest
-    strategy:
-      max-parallel: 4
-      matrix:
-        python-version: [3.6, 3.7, 3.8]
-    steps:
-    - uses: actions/checkout@v1
-    - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v1
-      with:
-        python-version: ${{ matrix.python-version }}
-    - name: Install dependencies
-      run: |
-        pip install --upgrade pip setuptools pytest-tldr
-        pip install -e .
-    - name: Test
-      run: |
-        python setup.py test
