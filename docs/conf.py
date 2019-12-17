@@ -48,8 +48,8 @@ copyright = u'2013, Russell Keith-Magee'
 #
 # The full version, including alpha/beta/rc tags.
 import io, re
-with io.open('../beeware.py', encoding='utf8') as version_file:
-    version_match = re.search(r"^__version__ = ['\"]([^'\"]*)['\"]", version_file.read(), re.M)
+with io.open('../setup.cfg', encoding='utf8') as version_file:
+    version_match = re.search(r"^version = (.*)$", version_file.read(), re.M)
     if version_match:
         release = version_match.group(1)
     else:
