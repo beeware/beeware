@@ -6,7 +6,7 @@ Now, we're going to take our application, and deploy it as an iOS application.
 
 The process of deploying an application to iOS is very similar to the process
 for deploying as a desktop application. First, you run the ``create`` command -
-but this time, we specify that we want to create an iOS application::
+but this time, we specify that we want to create an iOS application:
 
 .. code-block:: bash
 
@@ -37,8 +37,8 @@ using the ``build`` command:
 
   (beeware-venv) $ briefcase build iOS
 
-[hello-world] Generating application template...
-Using app template: https://github.com/beeware/briefcase-iOS-Xcode-template.git
+  [hello-world] Generating application template...
+  Using app template: https://github.com/beeware/briefcase-iOS-Xcode-template.git
 
   [helloworld] Building DMG...
   ...

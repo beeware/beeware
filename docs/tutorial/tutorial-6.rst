@@ -3,7 +3,7 @@ Tutorial 6 - Publishing your app!
 =================================
 
 Once you've built an installer for your application, you're going to want to
-share it with the world. Briefcase provides a command - `publish` to manage
+share it with the world. Briefcase provides a command - ``publish`` to manage
 this process, with a range of options for how to publish your application.
 
 **Coming soon**

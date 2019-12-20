@@ -11,5 +11,5 @@ Next steps
 ==========
 
 We've now deployed our application on the web! We're now ready to share our
-application with the rest of the world. In `Tutorial 6 <./tutorial-6>`,
+application with the rest of the world. In :doc:`Tutorial 6 <./tutorial-6>`,
 we'll use Briefcase to publish our application so others can download it.

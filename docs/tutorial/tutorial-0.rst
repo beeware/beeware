@@ -48,14 +48,14 @@ Next, install the additional dependencies needed for your operating system:
     Building BeeWare apps on Linux requires some system packages. The list
     of packages required varies depending on your distribution:
 
-    **Ubuntu, Debian 9**
+    **Ubuntu 16.04, Debian 9**
 
     .. code-block:: bash
 
       $ sudo apt-get update
       $ sudo apt-get install python3-dev python3-venv libgirepository1.0-dev libcairo2-dev libpango1.0-dev libwebkitgtk-3.0-0 gir1.2-webkit-3.0
 
-    **Ubuntu, Debian 10**
+    **Ubuntu 18.04, Debian 10**
 
     .. code-block:: bash
 

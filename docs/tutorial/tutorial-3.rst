@@ -112,7 +112,7 @@ directory, run:
 
   .. group-tab:: Windows
 
-    .. code-block:: bash
+    .. code-block:: doscon
 
       (beeware-venv) C:\...>briefcase create
 
@@ -171,7 +171,7 @@ You can then compile an installer, using the `build` command:
       ...
       [helloworld] Created Hello World-x86_64-0.0.1.AppImage.
 
-    Once this step completes, the `linux` folder will contain a file named
+    Once this step completes, the ``linux`` folder will contain a file named
     ``Hello World-x86_64-0.0.1.AppImage``. This AppImage is an executable;
     you can run it from the shell, or double click on it in your file explorer.
     You can also give it to any other Linux user, and as long as they've got
@@ -179,7 +179,7 @@ You can then compile an installer, using the `build` command:
 
   .. group-tab:: Windows
 
-    .. code-block:: bash
+    .. code-block:: doscon
 
       (beeware-venv) C:\...>briefcase build
 
@@ -187,7 +187,7 @@ You can then compile an installer, using the `build` command:
       ...
       [helloworld] Created Hello_World-0.0.1.msi.
 
-    Once this step completes, the `window` folder will contain a file named
+    Once this step completes, the ``windows`` folder will contain a file named
     ``Hello_World-0.0.1.msi``. If you double click on this installer, you
     should go through a familiar Windows installation process. Once this
     installation completes, there will be a "Hello World" entry in your start

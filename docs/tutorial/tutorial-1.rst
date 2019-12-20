@@ -29,7 +29,7 @@ the ``beeware-venv`` virtual environment activated, and run:
 
   .. group-tab:: Windows
 
-    .. code-block:: bash
+    .. code-block:: doscon
 
       (beeware-venv)C:\...>pip install --pre beeware
 
@@ -60,9 +60,9 @@ from your command prompt:
 
   .. group-tab:: Windows
 
-    .. code-block:: bash
+    .. code-block:: doscon
 
-      (beeware-venv)C:\...>briefcase new
+      (beeware-venv) C:\...>briefcase new
 
 Briefcase will ask us for some details of our new application. For the
 purposes of this tutorial, use the following:
@@ -161,7 +161,7 @@ the project in Developer (or ``dev``) mode:
 
   .. group-tab:: Windows
 
-    .. code-block:: bash
+    .. code-block:: doscon
 
       (beeware-venv) C:\...>cd helloworld
       (beeware-venv) C:\...>briefcase dev

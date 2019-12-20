@@ -135,7 +135,7 @@ the application again. As before, we'll use Developer mode:
 
   .. group-tab:: Windows
 
-    .. code-block:: bash
+    .. code-block:: doscon
 
       (beeware-venv) C:\...>briefcase dev
 
