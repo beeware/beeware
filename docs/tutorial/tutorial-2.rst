@@ -112,7 +112,6 @@ Adding some content of our own
 
 **TODO**
 
-
 Now that we've made these changes we can see what they look like by starting
 the application again. As before, we'll use Developer mode:
 
