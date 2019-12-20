@@ -30,22 +30,8 @@ BeeWare
    :alt: Chat on Gitter
 
 
-BeeWare is a collection of tools and libraries to aid native application
-development in Python.
-
-This package provides a convenient user interface to start a new BeeWare
-project.
-
-Usage
------
-
-Create and activate a virtual environment, and then run::
-
-    (venv) $ pip install beeware
-    (venv) $ beeware new
-
-This will prompt you for some details about your application (such as the
-application's name), and roll out an configured project for you to use.
+BeeWare is a collection of tools and libraries for building and distributing
+native applications in Python.
 
 For a introduction to the full BeeWare suite, we recommend running the
 `BeeWare Tutorial`_.
@@ -69,7 +55,7 @@ If you experience problems with BeeWare, `log them on GitHub`_. If you
 want to contribute code, please `fork the code`_ and `submit a pull request`_.
 
 .. _BeeWare suite: https://beeware.org
-.. _BeeWare Tutorial: https://beeware.readthedocs.io/en/latest/tutorial/index.html
+.. _BeeWare Tutorial: https://beeware.readthedocs.io/en/latest/tutorial/
 .. _@pybeeware on Twitter: https://twitter.com/pybeeware
 .. _beeware/general: https://gitter.im/beeware/general
 .. _BeeWare Community Code of Conduct: http://beeware.org/community/behavior/
