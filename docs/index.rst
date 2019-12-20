@@ -49,3 +49,4 @@ application in Python! <tutorial/tutorial-0>`
     tutorial/tutorial-3
     tutorial/tutorial-4/index
     tutorial/tutorial-5
+    tutorial/tutorial-6
