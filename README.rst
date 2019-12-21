@@ -55,7 +55,7 @@ If you experience problems with BeeWare, `log them on GitHub`_. If you
 want to contribute code, please `fork the code`_ and `submit a pull request`_.
 
 .. _BeeWare suite: https://beeware.org
-.. _BeeWare Tutorial: https://beeware.readthedocs.io/en/latest/tutorial/
+.. _BeeWare Tutorial: https://beeware.readthedocs.io/en/latest/
 .. _@pybeeware on Twitter: https://twitter.com/pybeeware
 .. _beeware/general: https://gitter.im/beeware/general
 .. _BeeWare Community Code of Conduct: http://beeware.org/community/behavior/
