@@ -294,7 +294,7 @@ reflected in how the application appears.
 Next steps
 ==========
 
-We now have our application packaged for distribution on desktop platforms. But
-what about mobile? In :doc:`Tutorial 4 <tutorial-4/index>`, we'll convert
-out application into a mobile application, and deploy it onto a device
-simulator, and onto a phone.
+We now have our application packaged for distribution on desktop platforms.
+But what happens when we need to update the code in our application? How do
+we get those updates into our packaged application? Turn to
+:doc:`Tutorial 4 <./tutorial-4>`, to find out...

@@ -25,7 +25,7 @@
     </style>
 
 =============================
-Tutorial 4 - Taking it Mobile
+Tutorial 5 - Taking it Mobile
 =============================
 
 So far, we've been running and testing our application on the desktop. However,

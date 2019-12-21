@@ -1,22 +1,15 @@
-=================================
-Tutorial 6 - Publishing your app!
-=================================
+===============================
+Tutorial 6 - Put it on the web!
+===============================
 
-Once you've built an installer for your application, you're going to want to
-share it with the world. Briefcase provides a command - ``publish`` to manage
-this process, with a range of options for how to publish your application.
+In addition to supporting mobile platforms, the Toga widget toolkit supports
+the web! Using the same API, you can deploy your application as a web site.
 
 **Coming soon**
 
 Next steps
 ==========
 
-This has been a taster for what you can do with the tools provided by the
-BeeWare project. What you do from here is up to you!
-
-Some places to go from here:
-
- * Tutorials demonstrating `features of the Toga widget toolkit
-   <https://toga.readthedocs.io/en/latest/tutorial/index.html>`__.
- * Details on the `options available when configuring your Briefcase project
-   <https://briefcase.readthedocs.io/en/latest/reference/index.html>`__.
+We've now deployed our application on the web! We're now ready to share our
+application with the rest of the world. In :doc:`Tutorial 7 <./tutorial-7>`,
+we'll use Briefcase to publish our application so others can download it.

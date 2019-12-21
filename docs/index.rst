@@ -47,6 +47,7 @@ application in Python! <tutorial/tutorial-0>`
     tutorial/tutorial-1
     tutorial/tutorial-2
     tutorial/tutorial-3
-    tutorial/tutorial-4/index
-    tutorial/tutorial-5
+    tutorial/tutorial-4
+    tutorial/tutorial-5/index
     tutorial/tutorial-6
+    tutorial/tutorial-7

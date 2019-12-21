@@ -1,5 +1,5 @@
 ==================================
-Tutorial 4 - Taking it mobile: iOS
+Tutorial 5 - Taking it mobile: iOS
 ==================================
 
 Now, we're going to take our application, and deploy it as an iOS application.
@@ -61,5 +61,5 @@ Next steps
 ==========
 
 We've now got an application on our phone! Is there anywhere other way to
-deploy a BeeWare app? Turn to :doc:`Tutorial 5 <../tutorial-5>` to find
+deploy a BeeWare app? Turn to :doc:`Tutorial 6 <../tutorial-6>` to find
 out...
