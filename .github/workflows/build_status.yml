@@ -1,5 +1,8 @@
-name: CI
-on: [pull_request]
+name: Build status
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   docs:
@@ -24,4 +27,3 @@ jobs:
         GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         cd docs && make html
-
