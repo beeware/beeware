@@ -13,11 +13,11 @@ In the ``src/helloworld`` directory, you should see 3 files: ``__init__.py``,
 ``__main__.py`` and ``app.py``.
 
 ``__init__.py`` marks the ``helloworld`` directory as an importable Python
-package. It is an empty file; the very fact it exists tells the Python
-interpreter that ``helloworld`` is a package.
+module. It is an empty file; the very fact it exists tells the Python
+interpreter that the ``helloworld`` directory defines a module.
 
-``__main__.py`` marks the ``helloworld`` package as a special kind of package -
-an executable module. If you try to run the ``helloworld`` module, using
+``__main__.py`` marks the ``helloworld`` module as a special kind of module -
+an executable module. If you try to run the ``helloworld`` module using
 ``python -m helloworld``, the ``__main__.py`` file is where Python will start
 executing. The contents of ``__main__.py`` is relatively simple::
 
@@ -107,10 +107,120 @@ This ``main()`` method is the one that is imported and invoked by
 ``__main__.py``. It creates and returns an instance of our ``HelloWorld``
 application.
 
+That's the simplest possible Toga application. Let's put some of our own
+content into the application, and make the app do something interesting.
+
 Adding some content of our own
 ==============================
 
-**TODO**
+Modify your ``HelloWorld`` class so it looks like this::
+
+    class HelloWorld(toga.App):
+        def startup(self):
+            main_box = toga.Box(style=Pack(direction=COLUMN))
+
+            name_label = toga.Label(
+                'Your name: ',
+                style=Pack(padding=(0, 5))
+            )
+            self.name_input = toga.TextInput(style=Pack(flex=1))
+
+            name_box = toga.Box(style=Pack(direction=ROW, padding=5))
+            name_box.add(name_label)
+            name_box.add(self.name_input)
+
+            button = toga.Button(
+                'Say Hello!',
+                on_press=self.say_hello,
+                style=Pack(padding=5)
+            )
+
+            main_box.add(name_box)
+            main_box.add(button)
+
+            self.main_window = toga.MainWindow(title=self.name)
+            self.main_window.content = main_box
+            self.main_window.show()
+
+        def say_hello(self, widget):
+            print("Hello", self.name_input.value)
+
+Let's look in detail at what has changed.
+
+We're still creating a main box; however, we are now applying a style::
+
+            main_box = toga.Box(style=Pack(direction=COLUMN))
+
+Toga's builtin layout system is called "Pack". It behaves a lot like CSS. You
+define objects in a heirarchy - in HTML, the objects are ``<div>``, ``<span>``,
+and other DOM elements; in Toga, they're widgets and boxes. You can then assign
+styles to the individual elements. In this case, we're indicating that this is
+a ``COLUMN`` box - that is, it is a box that will consume all the available
+width, and will expand it's height as content is added, but it will try to be
+as short as possible.
+
+Next, we define a couple of widgets::
+
+            name_label = toga.Label(
+                'Your name: ',
+                style=Pack(padding=(0, 5))
+            )
+            self.name_input = toga.TextInput(style=Pack(flex=1))
+
+Here, we define a Label and a TextInput. Both widgets have styles associated
+with them; the label will have 5px of padding on it's left and right, and no
+padding on the top and bottom. The TextInput is marked as being flexible - that
+is, it will absorb all available space in it's layout axis.
+
+The TextInput is assigned as an instance variable of class. This gives us
+easy access to the widget instance - something that we'll use in a moment.
+
+Next, we define a box to hold these two widgets::
+
+            name_box = toga.Box(style=Pack(direction=ROW, padding=5))
+            name_box.add(name_label)
+            name_box.add(self.name_input)
+
+The ``name_box`` is a box just like the main box; however, this time, it's a
+``ROW`` box. That means content will be added horizontally, and it will try
+to make it's width as narrow as possible. The box also has some padding - 5px
+on all sides.
+
+Now we define a button::
+
+            button = toga.Button(
+                'Say Hello!',
+                on_press=self.say_hello,
+                style=Pack(padding=5)
+            )
+
+The button also has 5px of padding on all sides. We also define a *handler* -
+a method to invoke when the button is pressed.
+
+Then, we add the name box and the button to the main box::
+
+            main_box.add(name_box)
+            main_box.add(button)
+
+This completes our layout; the rest of the startup method is as it was
+previously - defining a MainWindow, and assigning the main box as the window's
+content::
+
+            self.main_window = toga.MainWindow(title=self.name)
+            self.main_window.content = main_box
+            self.main_window.show()
+
+The last thing we need to do is define the handler for the button. A handler
+can be any method, generator or asynchronous co-routine; it accepts the widget
+that generated the event as an argument, and will be invoked whenever the
+button is pressed::
+
+        def say_hello(self, widget):
+            print("Hello, ", self.name_input.value)
+
+The body of the method is a simple print statement - however, it will
+interrogate the current value of the name input, and use that content as the
+text that is printed.
 
 Now that we've made these changes we can see what they look like by starting
 the application again. As before, we'll use Developer mode:
@@ -154,17 +264,20 @@ This should open a GUI window:
   .. group-tab:: macOS
 
     .. image:: images/macOS/tutorial-2.png
-        :alt: Hello World Tutorial 2 window, on macOS
+       :alt: Hello World Tutorial 2 window, on macOS
 
   .. group-tab:: Linux
 
     .. image:: images/linux/tutorial-2.png
-        :alt: Hello World Tutorial 2 window, on Linux
+       :alt: Hello World Tutorial 2 window, on Linux
 
   .. group-tab:: Windows
 
     .. image:: images/windows/tutorial-2.png
-        :alt: Hello World Tutorial 2 window, on Windows
+       :alt: Hello World Tutorial 2 window, on Windows
+
+If you enter a name in the text box, and press the GUI button, you should see
+output appear in the console where you started the application.
 
 Next steps
 ==========

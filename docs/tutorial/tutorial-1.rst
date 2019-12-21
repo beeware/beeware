@@ -177,17 +177,17 @@ This should open a GUI window:
   .. group-tab:: macOS
 
     .. image:: images/macOS/tutorial-1.png
-        :alt: Hello World Tutorial 1 window, on macOS
+       :alt: Hello World Tutorial 1 window, on macOS
 
   .. group-tab:: Linux
 
     .. image:: images/linux/tutorial-1.png
-        :alt: Hello World Tutorial 1 window, on Linux
+       :alt: Hello World Tutorial 1 window, on Linux
 
   .. group-tab:: Windows
 
     .. image:: images/windows/tutorial-1.png
-        :alt: Hello World Tutorial 1 window, on Windows
+       :alt: Hello World Tutorial 1 window, on Windows
 
 Press the close button (or select Quit from the application's menu), and you're
 done! Congratulations - you've just written a standalone, native application
