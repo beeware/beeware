@@ -15,7 +15,8 @@ Updating application code
 
 **TODO** Make some visible code change...
 
-Then, we can tell Briefcase to update our
+Then, we can tell Briefcase to update the code in our application:
+
 .. tabs::
 
   .. group-tab:: macOS
