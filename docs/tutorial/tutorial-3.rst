@@ -13,6 +13,9 @@ Work.
 
 Briefcase can be used to package your application for distribution in this way.
 
+Scaffolding your application
+============================
+
 You can now use briefcase to build your application. Since this is the first
 time we're packaging our application, we need to create some confguration files
 and other scaffolding to support the packaging process. From the ``helloworld``
@@ -129,12 +132,67 @@ directory, run:
       ...
       [helloworld] Application created.
 
+You've probably just seen pages of content go past in your terminal... so what
+just happened? Briefcase has done the following:
+
+1. It **generated an application template**. There's a lot of files and
+   configurations required to build a native installer, above and beyond the
+   code of your actual application. This extra scaffolding is almost the same
+   for every application on the same platform, except for the name of the
+   actual application being constructed - so Briefcase provides an application
+   template for each platform it supports. This step rolls out the template,
+   subsituting the name of your application, bundle ID, and other properties of
+   your configuration file as required to support the platform you're building
+   on.
+
+   If you're not happy with the template provided by Briefcase, you can
+   provide your own. However, you probably don't want to do this until you've
+   got a bit more experience using Briefcase's default template.
+
+2. It **downloaded and installed a support package**. The packaging approach
+   taken by briefcase is best described as "the simplest thing that could
+   possibly work" - it ships a complete, isolated Python interpreter as part of
+   every application it builds. This is slightly space innefficient - if you
+   have 5 applications packaged with Briefcase, you'll have 5 copies of the
+   Python interpreter. However, this approach guarantees that every application
+   is completely independent, using a specific version of Python that is known
+   to work with the application.
+
+   Again, Briefcase provides a default support package for each platform; if
+   you want, you can provide your own support package, and have that package
+   included as part of the build process. You may want to do this if you have
+   particular options in the Python interpreter that you need to have enabled,
+   or if you want to strip modules out of the standard library that you don't
+   need at runtime.
+
+   Briefcase maintains a local cache of support packages, so once you've
+   downloaded a specific support package, that cached copy will be used on
+   future builds.
+
+3. It **installed application dependencies**. Your application can specify any
+   third-party modules that are required at runtime. These will be installed
+   using `pip` into your application's installer.
+
+4. It **Installed your application code**. Your application will have it's own
+   code and resources (e.g., images that are needed at runtime); these files
+   are copied into the installer.
+
+5. It **installed your resources needed by your application.** Lastly, it
+   adds any additional resources that are needed by the installer itself.
+   This includes things like icons that need to be attached to the final
+   application and splash screen images.
+
 Once this completes, if you look in the project directory, you should now see a
 directory corresponding to your platform (``macOS``, ``linux``, or ``windows``)
 that contains additional files. This is the platform-specific packaging
 configuration for your application.
 
-You can then compile an installer, using the `build` command:
+Building your installer
+=======================
+
+You can then compile an installer, using the `build` command. The build command
+does any compilation that is required to convert the scaffolded project into
+a final, executable installer:
 
 .. tabs::
 
@@ -192,6 +250,46 @@ You can then compile an installer, using the `build` command:
     should go through a familiar Windows installation process. Once this
     installation completes, there will be a "Hello World" entry in your start
     menu.
+
+Running your app
+================
+
+You can now use Briefcase to run your application:
+
+.. tabs::
+
+  .. group-tab:: macOS
+
+    .. code-block:: bash
+
+      (beeware-venv) $ briefcase run
+
+      [helloworld] Starting app...
+
+  .. group-tab:: Linux
+
+    .. code-block:: bash
+
+      (beeware-venv) $ briefcase run
+
+      [helloworld] Starting app...
+
+  .. group-tab:: Windows
+
+    .. code-block:: doscon
+
+      (beeware-venv) C:\...>briefcase run
+
+      [helloworld] Starting app...
+
+This will start your run your native application, using the native binary
+that was just constructed. You may notice some small differences in the way
+your application looks when it's running - icons, and the name displayed by the
+operating system, for example, may be slightly different to those you saw
+when running under developer mode. This is because you're using the actual
+packaged application, not just running Python code. From the operating system's
+perspective, you're now running "an app", not "a Python program", and that is
+reflected in how the application appears.
 
 Next steps
 ==========
