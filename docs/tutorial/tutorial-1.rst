@@ -71,6 +71,11 @@ purposes of this tutorial, use the following:
 
 * **App Name** - Accept the default value: ``helloworld``.
 
+* **Bundle** - If you own your own domain, enter that domain in reversed order.
+  (For example, if you own the domain "cupcakes.com", enter ``com.cupcakes``
+  as the bundle). If you don't own your own domain, accept the default bundle
+  (``com.example``).
+
 * **Project Name** - Accept the default value: ``Hello World``.
 
 * **Description** - Accept the default value (or, if you want to be really
@@ -78,12 +83,9 @@ purposes of this tutorial, use the following:
 
 * **Author** - Enter your own name here.
 
-* **Author email** - Enter your own email address. This wil only appear in the
-
-* **Bundle** - If you own your own domain, enter that domain in reversed order.
-  (For example, if you own the domain "cupcakes.com", enter ``com.cupcakes``
-  as the bundle). If you don't own your own domain, accept the default bundle
-  (``com.example``).
+* **Author's email** - Enter your own email address. This will be used in the
+  configuration file, in help text, and anywhere that an email is required
+  when submitting the app to an app store.
 
 * **URL** - The URL of the landing page for your application. Again, if you own
   your own domain, enter a URL at that domain (including the ``https://``).
