@@ -325,7 +325,7 @@ or doing other pre-distribution tasks.
 
     When you're ready to publish a real application, check out the Briefcase
     How-To guide on `Setting up a macOS code signing identity
-    <https://briefcase.readthedocs.io/en/latest/how-to/code-sigining/macOS.html>`__
+    <https://briefcase.readthedocs.io/en/latest/how-to/code-signing/macOS.html>`__
 
   .. group-tab:: Linux
 
