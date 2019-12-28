@@ -82,7 +82,8 @@ If Briefcase can't find the scaffolded template, it will automatically invoke
 `create` to generate a fresh scaffold.
 
 Now that we've updated the installer code, We can then run ``briefcase build``
-to re-compiled app, and ``briefcase run`` to run the updated app.
+to re-compiled app, ``briefcase run`` to run the updated app, and ``briefcase
+publish`` to repackage the application for distribution.
 
 Updating dependencies and icons
 ===============================
@@ -137,17 +138,13 @@ new logic works; then update, build and run the app with one command:
 
       [helloworld] Application updated.
 
-      [helloworld] Building DMG...
-      ...
-      [helloworld] Created Hello World-0.0.1.dmg.
-
       [helloworld] Starting app...
 
   .. group-tab:: Linux
 
     .. code-block:: bash
 
-      (beeware-venv) $ briefcase update
+      (beeware-venv) $ briefcase run -u
 
       [helloworld] Updating application code...
       Installing src/helloworld...
@@ -156,7 +153,7 @@ new logic works; then update, build and run the app with one command:
 
       [helloworld] Building AppImage...
       ...
-      [helloworld] Created Hello World-x86_64-0.0.1.AppImage.
+      [helloworld] Created linux/Hello World-x86_64-0.0.1.AppImage.
 
       [helloworld] Starting app...
 
@@ -171,16 +168,16 @@ new logic works; then update, build and run the app with one command:
 
       [helloworld] Application updated.
 
-      [helloworld] Building MSI...
-      ...
-      [helloworld] Created Hello_World-0.0.1.msi.
-
       [helloworld] Starting app...
 
-This should only be required if you're testing the *packaging* of your
-application, or hunting a bug that only manifests when your application is in
-packaged form. For most day-to-day development, ``briefcase dev`` will be a lot
-faster.
+This should only be required if you're testing something about how your
+application runs as a native binary, or hunting a bug that only manifests when
+your application is in packaged form. For most day-to-day development,
+``briefcase dev`` will be a lot faster.
+
+The package command also accepts the ``-u`` argument, so if you make a change
+to your application code and want to repackage immediately, you can run
+``briefcase package -u``.
 
 Next steps
 ==========

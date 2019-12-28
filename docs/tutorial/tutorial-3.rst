@@ -13,13 +13,12 @@ Work.
 
 Briefcase can be used to package your application for distribution in this way.
 
-Scaffolding your application
-============================
+Creating your application scaffold
+==================================
 
-You can now use briefcase to build your application. Since this is the first
-time we're packaging our application, we need to create some confguration files
-and other scaffolding to support the packaging process. From the ``helloworld``
-directory, run:
+Since this is the first time we're packaging our application, we need to create
+some confguration files and other scaffolding to support the packaging process.
+From the ``helloworld`` directory, run:
 
 .. tabs::
 
@@ -40,7 +39,15 @@ directory, run:
       ...
       [helloworld] Installing application resources...
       ...
-      [helloworld] Application created.
+      [helloworld] Created macOS/Hello World
+
+    Once this step completes, the ``macOS`` folder will contain a ``Hello
+    World`` folder. That folder fill contain another folder named ``Hello
+    World.app``. This ``.app`` folder is a self contained macOS executable. If
+    you open the Finder, you can double click on the icon for thi folder to
+    start your application. If you send ``Hello World.app`` to a friend, they
+    will be able to do the same - double click on the app, and see your app
+    running.
 
   .. group-tab:: Linux
 
@@ -78,7 +85,7 @@ directory, run:
          necessary to run Briefcase inside the container::
 
              $ apt-get update
-             $ apt-get install python3-dev python3-venv libgirepository1.0-dev libcairo2-dev libpango1.0-dev libwebkitgtk-3.0-0 gir1.2-webkit-3.0
+             $ apt-get install python3-dev libgirepository1.0-dev libcairo2-dev libpango1.0-dev libwebkitgtk-3.0-0 gir1.2-webkit-3.0
              $ pip install beeware
 
          There is no need to use a virtual environment inside the Docker
@@ -111,7 +118,7 @@ directory, run:
       ...
       [helloworld] Installing application resources...
       ...
-      [helloworld] Application created.
+      [helloworld] Created linux/Hello World
 
   .. group-tab:: Windows
 
@@ -130,7 +137,7 @@ directory, run:
       ...
       [helloworld] Installing application resources...
       ...
-      [helloworld] Application created.
+      [helloworld] Created windows\Hello World
 
 You've probably just seen pages of content go past in your terminal... so what
 just happened? Briefcase has done the following:
@@ -187,12 +194,12 @@ directory corresponding to your platform (``macOS``, ``linux``, or ``windows``)
 that contains additional files. This is the platform-specific packaging
 configuration for your application.
 
-Building your installer
-=======================
+Building your application
+=========================
 
-You can then compile an installer, using the `build` command. The build command
-does any compilation that is required to convert the scaffolded project into
-a final, executable installer:
+You can now compile your your application. This step performs any binary
+compilation that is necessary for your application to be executable on your
+target platform.
 
 .. tabs::
 
@@ -202,22 +209,13 @@ a final, executable installer:
 
       (beeware-venv) $ briefcase build
 
-      [helloworld] Building DMG...
-      ...
-      [helloworld] Created Hello World-0.0.1.dmg.
+      [helloworld] Built macOS/Hello World/Hello World.app
 
-    Once this step completes, the ``macOS`` folder will contain an ``Hello
-    World.app``. This file is a self contained macOS executable. If you open
-    the Finder, you can double click on the icon to start the application. If
-    you send ``Hello World.app`` to a friend, they will be able to do the same
-    - double click on the app, and see your app running.
-
-    The ``macOS`` folder will contain a file named ``Hello World-0.0.1.dmg``.
-    If you locate this file in the Finder, and double click on it's icon,
-    you'll mount the DMG, giving you a copy of the Hello World app, and a
-    link to your Applications folder for easy installation. Drag the app file
-    into Application, and you've installed your application. Send the DMG file
-    to a friend, and they should be able to do the same.
+    On ``macOS``, the ``build`` command doesn't need to do anything. A ``.app``
+    folder is a layout convention of ``macOS`` itself; as long as the folder
+    has a ``.app`` extension, and adheres to some internal layout rules, and
+    provides some metadata in a known location, the folder will appear to the
+    operating system as an application.
 
   .. group-tab:: Linux
 
@@ -227,7 +225,7 @@ a final, executable installer:
 
       [helloworld] Building AppImage...
       ...
-      [helloworld] Created Hello World-x86_64-0.0.1.AppImage.
+      [helloworld] Built linux/Hello World-x86_64-0.0.1.AppImage
 
     Once this step completes, the ``linux`` folder will contain a file named
     ``Hello World-x86_64-0.0.1.AppImage``. This AppImage is an executable;
@@ -241,15 +239,12 @@ a final, executable installer:
 
       (beeware-venv) C:\...>briefcase build
 
-      [helloworld] Building MSI...
-      ...
-      [helloworld] Created Hello_World-0.0.1.msi.
+      [helloworld] Built windows\Hello World
 
-    Once this step completes, the ``windows`` folder will contain a file named
-    ``Hello_World-0.0.1.msi``. If you double click on this installer, you
-    should go through a familiar Windows installation process. Once this
-    installation completes, there will be a "Hello World" entry in your start
-    menu.
+    On Windows, this step does nothing. The distributed "binary" on windows is
+    a folder with a known entry point; the installer (when it is eventually
+    created) will encode details on how to start the application, and install
+    a Start Menu item to invoke the application.
 
 Running your app
 ================
@@ -282,14 +277,84 @@ You can now use Briefcase to run your application:
 
       [helloworld] Starting app...
 
-This will start your run your native application, using the native binary
-that was just constructed. You may notice some small differences in the way
-your application looks when it's running - icons, and the name displayed by the
-operating system, for example, may be slightly different to those you saw
+This will start your run your native application, using the output of the
+`build` command. You may notice some small differences in the way your
+application looks when it's running - for example, icons, and the name
+displayed by the operating system, may be slightly different to those you saw
 when running under developer mode. This is because you're using the actual
 packaged application, not just running Python code. From the operating system's
 perspective, you're now running "an app", not "a Python program", and that is
 reflected in how the application appears.
+
+Building your installer
+=======================
+
+You can now package your application for distribution, using the `package`
+command. The package command does any compilation that is required to convert
+the scaffolded project into a final, distributable product. Depending on the
+platform, this may involve compiling an installer, performing code signing,
+or doing other pre-distribution tasks.
+
+.. tabs::
+
+  .. group-tab:: macOS
+
+    .. code-block:: bash
+
+      (beeware-venv) $ briefcase package --no-sign
+
+      [helloworld] Signing app...
+      ...
+      [helloworld] Building DMG...
+      ...
+      [helloworld] Created macOS/Hello World-0.0.1.dmg
+
+    The ``macOS`` folder will contain a file named ``Hello World-0.0.1.dmg``.
+    If you locate this file in the Finder, and double click on it's icon,
+    you'll mount the DMG, giving you a copy of the Hello World app, and a
+    link to your Applications folder for easy installation. Drag the app file
+    into Application, and you've installed your application. Send the DMG file
+    to a friend, and they should be able to do the same.
+
+    In this example, we've used the ``--no-sign`` option - that is, we've
+    decided to *not* sign our application. We've done this to keep the tutorial
+    simple. Setting up code signing identities is a little fiddly, and they're
+    only *absolutely* required if you're intending to distribute your
+    application to others. If we were publishing a real application, you would
+    leave off the ``--no-sign`` flag.
+
+    When you're ready to publish a real application, check out the Briefcase
+    How-To guide on `Setting up a macOS code signing identity
+    <https://briefcase.readthedocs.io/en/latest/how-to/code-sigining/macOS.html>`__
+
+  .. group-tab:: Linux
+
+    .. code-block:: bash
+
+      (beeware-venv) $ briefcase package
+
+      [helloworld] Building AppImage...
+      ...
+      [helloworld] Created linux/Hello World-x86_64-0.0.1.AppImage.
+
+    On Linux, this step does nothing. The AppImage created by the build command
+    is a complete executable, requiring no additional processing.
+
+  .. group-tab:: Windows
+
+    .. code-block:: doscon
+
+      (beeware-venv) C:\...>briefcase package
+
+      [helloworld] Building MSI...
+      ...
+      [helloworld] Created windows\Hello_World-0.0.1.msi
+
+    Once this step completes, the ``windows`` folder will contain a file named
+    ``Hello_World-0.0.1.msi``. If you double click on this installer to run it,
+    you should go through a familiar Windows installation process. Once this
+    installation completes, there will be a "Hello World" entry in your start
+    menu.
 
 Next steps
 ==========

@@ -30,10 +30,10 @@ This directory will contain a ``Hello World`` folder, which will contain
 an Xcode project, as well as the support libraries and the application code
 needed for the application.
 
-You can then use Briefcase to compile the application compile an installer,
-using the ``build`` command. You'll be prompted to select a device to compile
-for; if you've got simulators for multiple iOS versions installed, you may also
-be asked which iOS version you want to target. The options you are shown may
+You can then use Briefcase to compile the application compile your app, using
+the ``build`` command. You'll be prompted to select a device to compile for; if
+you've got simulators for multiple iOS versions installed, you may also be
+asked which iOS version you want to target. The options you are shown may
 differ from the options show in this output; for our purposes, it doesn't
 matter which simulator you pick.
 
@@ -69,7 +69,7 @@ matter which simulator you pick.
   ...
   Build succeeded.
 
-  [hello-world] Created Hello World.app.
+  [hello-world] Built iOS/Hello World/build/Debug-iphonesimulator/Hello World.app
 
 We're now ready to run our application. You could do this by running
 ``briefcase run iOS``. If you run briefcase in that way, you'll be asked again
