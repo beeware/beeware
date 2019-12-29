@@ -82,7 +82,7 @@ purposes of this tutorial, use the following:
 * **Project Name** - Accept the default value: ``Hello World``.
 
 * **Description** - Accept the default value (or, if you want to be really
-  creative, come up wit your own description!)
+  creative, come up with your own description!)
 
 * **Author** - Enter your own name here.
 
