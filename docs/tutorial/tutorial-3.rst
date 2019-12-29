@@ -260,6 +260,8 @@ You can now use Briefcase to run your application:
       (beeware-venv) $ briefcase run
 
       [helloworld] Starting app...
+  
+      (beeware-venv) $
 
   .. group-tab:: Linux
 
@@ -269,6 +271,8 @@ You can now use Briefcase to run your application:
 
       [helloworld] Starting app...
 
+      (beeware-venv) $ 
+
   .. group-tab:: Windows
 
     .. code-block:: doscon
@@ -277,14 +281,19 @@ You can now use Briefcase to run your application:
 
       [helloworld] Starting app...
 
+      (beeware-venv) C:\...>
+
 This will start your run your native application, using the output of the
-`build` command. You may notice some small differences in the way your
-application looks when it's running - for example, icons, and the name
-displayed by the operating system, may be slightly different to those you saw
-when running under developer mode. This is because you're using the actual
-packaged application, not just running Python code. From the operating system's
-perspective, you're now running "an app", not "a Python program", and that is
-reflected in how the application appears.
+`build` command. 
+
+You may notice some small differences in the way your application looks when
+it's running - for example, icons, and the name displayed by the operating
+system, may be slightly different to those you saw when running under developer
+mode. This is because you're using the actual packaged application, not just
+running Python code. From the operating system's perspective, you're now
+running "an app", not "a Python program", and that is reflected in how the
+application appears. The console output we saw earlier also won't work anymore,
+since we are running a standalone app that has no console to output to. 
 
 Building your installer
 =======================
