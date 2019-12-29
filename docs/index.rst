@@ -7,12 +7,12 @@ BeeWare
 BeeWare is a suite of tools and libraries, each of which works together to help
 you write cross platform native GUI Python applications. It includes:
 
-* `Toga <toga.readthedocs.org>`__, a cross platform widget toolkit;
-* `Briefcase <briefcase.readthedocs.org>`__, a tool for packaging Python
+* `Toga <https://toga.readthedocs.io>`__, a cross platform widget toolkit;
+* `Briefcase <https://briefcase.readthedocs.io>`__, a tool for packaging Python
   projects as distributables artefacts that can be shipped to end users;
-* `Rubicon ObjC <rubicon-objc.readthedocs.org>`__, a library for working with
+* `Rubicon ObjC <https://rubicon-objc.readthedocs.io>`__, a library for working with
   Objective C libraries on iOS and macOS from within Python code;
-* `Rubicon Java <rubicon-java.readthedocs.org>`__, a library for working with
+* `Rubicon Java <https://rubicon-java.readthedocs.io>`__, a library for working with
   Java libraries from within Python code;
 * Pre-complied builds of Python that can be used on platforms where official
   Python installers aren't available.
