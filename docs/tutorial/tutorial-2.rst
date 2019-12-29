@@ -113,7 +113,7 @@ content into the application, and make the app do something interesting.
 Adding some content of our own
 ==============================
 
-Modify your ``HelloWorld`` class so it looks like this::
+Modify your ``HelloWorld`` class inside ``src/helloworld/app.py`` so that it looks like this::
 
     class HelloWorld(toga.App):
         def startup(self):

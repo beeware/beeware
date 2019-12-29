@@ -4,6 +4,8 @@ Tutorial 5 - Taking it mobile: Android
 
 To deploy our applicaton to Android...
 
+**Coming soon.**
+
 Next steps
 ==========
 

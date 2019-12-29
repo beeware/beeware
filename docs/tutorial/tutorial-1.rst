@@ -33,6 +33,9 @@ the ``beeware-venv`` virtual environment activated, and run:
 
       (beeware-venv)C:\...>pip install --pre beeware
 
+
+ℹ️ : ``--pre`` is a flag to tell ``pip`` to install pre-release or development versions. This ensures you are installing the most recent development version of Beeware. 
+
 One of the BeeWare tools is **Briefcase**. Briefcase can be used to package
 your application for distribution to end users - but it can also be used to
 bootstrap a new project.
