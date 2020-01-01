@@ -42,12 +42,12 @@ our application window::
         def startup(self):
             main_box = toga.Box()
 
-            self.main_window = toga.MainWindow(title=self.name)
+            self.main_window = toga.MainWindow(title=self.formal_name)
             self.main_window.content = main_box
             self.main_window.show()
 
     def main():
-        return HelloWorld('Hello World', 'com.example.helloworld')
+        return HelloWorld()
 
 Lets go through this line by line::
 
@@ -82,7 +82,7 @@ In this application, we define a single box, but we don't put anything into it.
 
 Next, we define a window into which we can put this empty box::
 
-            self.main_window = toga.MainWindow(title=self.name)
+            self.main_window = toga.MainWindow(title=self.formal_name)
 
 This creates an instance of a ``toga.MainWindow``, which will have a title
 matching the application's name. A Main Window is a special kind of window in
@@ -101,7 +101,7 @@ Last of all, we define a ``main()`` method. This is what creates the instance
 of our application::
 
     def main():
-        return HelloWorld('Hello World', 'com.example.helloworld')
+        return HelloWorld()
 
 This ``main()`` method is the one that is imported and invoked by
 ``__main__.py``. It creates and returns an instance of our ``HelloWorld``
@@ -138,7 +138,7 @@ Modify your ``HelloWorld`` class inside ``src/helloworld/app.py`` so that it loo
             main_box.add(name_box)
             main_box.add(button)
 
-            self.main_window = toga.MainWindow(title=self.name)
+            self.main_window = toga.MainWindow(title=self.formal_name)
             self.main_window.content = main_box
             self.main_window.show()
 
@@ -206,7 +206,7 @@ This completes our layout; the rest of the startup method is as it was
 previously - defining a MainWindow, and assigning the main box as the window's
 content::
 
-            self.main_window = toga.MainWindow(title=self.name)
+            self.main_window = toga.MainWindow(title=self.formal_name)
             self.main_window.content = main_box
             self.main_window.show()
 
