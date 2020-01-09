@@ -180,7 +180,7 @@ just happened? Briefcase has done the following:
    third-party modules that are required at runtime. These will be installed
    using `pip` into your application's installer.
 
-4. It **Installed your application code**. Your application will have it's own
+4. It **Installed your application code**. Your application will have its own
    code and resources (e.g., images that are needed at runtime); these files
    are copied into the installer.
 
@@ -317,7 +317,7 @@ or doing other pre-distribution tasks.
       [helloworld] Created macOS/Hello World-0.0.1.dmg
 
     The ``macOS`` folder will contain a file named ``Hello World-0.0.1.dmg``.
-    If you locate this file in the Finder, and double click on it's icon,
+    If you locate this file in the Finder, and double click on its icon,
     you'll mount the DMG, giving you a copy of the Hello World app, and a
     link to your Applications folder for easy installation. Drag the app file
     into Application, and you've installed your application. Send the DMG file

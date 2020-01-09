@@ -156,7 +156,7 @@ define objects in a heirarchy - in HTML, the objects are ``<div>``, ``<span>``,
 and other DOM elements; in Toga, they're widgets and boxes. You can then assign
 styles to the individual elements. In this case, we're indicating that this is
 a ``COLUMN`` box - that is, it is a box that will consume all the available
-width, and will expand it's height as content is added, but it will try to be
+width, and will expand its height as content is added, but it will try to be
 as short as possible.
 
 Next, we define a couple of widgets::
@@ -168,9 +168,9 @@ Next, we define a couple of widgets::
             self.name_input = toga.TextInput(style=Pack(flex=1))
 
 Here, we define a Label and a TextInput. Both widgets have styles associated
-with them; the label will have 5px of padding on it's left and right, and no
+with them; the label will have 5px of padding on its left and right, and no
 padding on the top and bottom. The TextInput is marked as being flexible - that
-is, it will absorb all available space in it's layout axis.
+is, it will absorb all available space in its layout axis.
 
 The TextInput is assigned as an instance variable of class. This gives us
 easy access to the widget instance - something that we'll use in a moment.
@@ -183,7 +183,7 @@ Next, we define a box to hold these two widgets::
 
 The ``name_box`` is a box just like the main box; however, this time, it's a
 ``ROW`` box. That means content will be added horizontally, and it will try
-to make it's width as narrow as possible. The box also has some padding - 5px
+to make its width as narrow as possible. The box also has some padding - 5px
 on all sides.
 
 Now we define a button::
