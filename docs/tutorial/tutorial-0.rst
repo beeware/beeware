@@ -30,6 +30,8 @@ Debian/Ubuntu/Mint; ``dnf`` on Fedora, or ``pacman`` on Arch).
     can run `python3` from your operating system's command prompt/terminal
     application, and get a working Python interpreter.
 
+.. _install-dependencies:
+
 Install dependencies
 ====================
 
@@ -66,7 +68,6 @@ Next, install the additional dependencies needed for your operating system:
 
     .. code-block:: bash
 
-      # Fedora
       $ sudo dnf install pkg-config python3-devel gobject-introspection-devel cairo-devel cairo-gobject-devel pango-devel webkitgtk3
 
   .. group-tab:: Windows
