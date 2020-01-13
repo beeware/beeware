@@ -40,7 +40,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'BeeWare'
-copyright = u'2013, Russell Keith-Magee'
+copyright = u'2020, Russell Keith-Magee'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
