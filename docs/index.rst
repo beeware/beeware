@@ -14,7 +14,7 @@ you write cross platform native GUI Python applications. It includes:
   Objective C libraries on iOS and macOS from within Python code;
 * `Rubicon Java <https://rubicon-java.readthedocs.io>`__, a library for working with
   Java libraries from within Python code;
-* Pre-complied builds of Python that can be used on platforms where official
+* Pre-compiled builds of Python that can be used on platforms where official
   Python installers aren't available.
 
 You can use each of the tools in isolation, or you can use all of them as a
