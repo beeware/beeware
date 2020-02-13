@@ -197,7 +197,7 @@ configuration for your application.
 Building your application
 =========================
 
-You can now compile your your application. This step performs any binary
+You can now compile your application. This step performs any binary
 compilation that is necessary for your application to be executable on your
 target platform.
 
