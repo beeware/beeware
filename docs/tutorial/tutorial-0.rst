@@ -83,7 +83,7 @@ We're now going to create a virtual environment - a "sandbox" that we can use
 to isolate our work on this tutorial from our main Python installation. If we
 install packages into the virtual environment, our main Python installation
 (and any other Python projects on our computer) won't be affected. If we make
-a complete mess of our virutal environment, we'll be able to simply delete it
+a complete mess of our virtual environment, we'll be able to simply delete it
 and start again, without affecting any other Python project on our computer,
 and without the need to re-install Python.
 
