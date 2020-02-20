@@ -41,9 +41,14 @@ Next, install the additional dependencies needed for your operating system:
 
   .. group-tab:: macOS
 
-    Building BeeWare apps on macOS requires Xcode. Xcode is available for free
-    from `the macOS App Store
-    <https://apps.apple.com/au/app/xcode/id497799835?mt=12>`__.
+    Building BeeWare apps on macOS requires:
+
+    * **Git**, a version control system. You can download Git from from
+      `git-scm.org <https://git-scm.com/download/>`__.
+
+    * **Xcode**, Apple's IDE tooling. Xcode is available for free
+      from `the macOS App Store
+      <https://apps.apple.com/au/app/xcode/id497799835?mt=12>`__.
 
   .. group-tab:: Linux
 
@@ -55,25 +60,31 @@ Next, install the additional dependencies needed for your operating system:
     .. code-block:: bash
 
       $ sudo apt-get update
-      $ sudo apt-get install python3-dev python3-venv libgirepository1.0-dev libcairo2-dev libpango1.0-dev libwebkitgtk-3.0-0 gir1.2-webkit-3.0
+      $ sudo apt-get install git python3-dev python3-venv libgirepository1.0-dev libcairo2-dev libpango1.0-dev libwebkitgtk-3.0-0 gir1.2-webkit-3.0
 
     **Ubuntu 18.04, Debian 10**
 
     .. code-block:: bash
 
       $ sudo apt-get update
-      $ sudo apt-get install python3-dev python3-venv libgirepository1.0-dev libcairo2-dev libpango1.0-dev libwebkit2gtk-4.0-37 gir1.2-webkit2-4.0
+      $ sudo apt-get install git python3-dev python3-venv libgirepository1.0-dev libcairo2-dev libpango1.0-dev libwebkit2gtk-4.0-37 gir1.2-webkit2-4.0
 
     **Fedora**
 
     .. code-block:: bash
 
-      $ sudo dnf install pkg-config python3-devel gobject-introspection-devel cairo-devel cairo-gobject-devel pango-devel webkitgtk3
+      $ sudo dnf install git pkg-config python3-devel gobject-introspection-devel cairo-devel cairo-gobject-devel pango-devel webkitgtk3
 
   .. group-tab:: Windows
 
-    Building Windows installers requires the `WiX Toolset
-    <https://wixtoolset.org/releases/>`__.
+    Building BeeWare apps on Windows requires:
+
+    * **Git**, a version control system. You can download Git from from
+      `git-scm.org <https://git-scm.com/download/>`__.
+
+    * **WiX Toolset**, a set of utilities for building Windows installers. An
+      installer can be obtained from `the WiX Toolset website
+      <https://wixtoolset.org/releases/>`__.
 
 
 Set up a virtual environment
