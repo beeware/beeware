@@ -19,13 +19,13 @@ the ``beeware-venv`` virtual environment activated, and run:
 
     .. code-block:: bash
 
-      (beeware-venv) $ pip install --pre beeware
+      (beeware-venv) $ python -m pip install --pre beeware
 
   .. group-tab:: Linux
 
     .. code-block:: bash
 
-      (beeware-venv) $ pip install --pre beeware
+      (beeware-venv) $ python -m pip install --pre beeware
 
     .. admonition:: Possible errors during installation
 
@@ -38,12 +38,12 @@ the ``beeware-venv`` virtual environment activated, and run:
 
     .. code-block:: doscon
 
-      (beeware-venv)C:\...>pip install --pre beeware
+      (beeware-venv)C:\...>python -m pip install --pre beeware
 
     .. admonition:: Possible errors during installation
 
-        On some versions of Python, installing the ``beeware`` package will
-        raise an error. This will usually manifest as:
+        If you're using a more recent version of Python (3.8+), installing the
+        ``beeware`` package may raise an error. This will usually manifest as:
 
         .. code-block:: doscon
 
@@ -94,8 +94,8 @@ the ``beeware-venv`` virtual environment activated, and run:
             suggests `this collection of wheels
             <https://www.lfd.uci.edu/~gohlke/pythonlibs/#pythonnet>`__ as a
             possible source. The `.whl` file can be installed with
-            ``pip install somefile.whl``; you should then be able to re-run
-            ``pip install --pre beeware``.
+            ``python -m pip install somefile.whl``; you should then be able to
+            re-run ``python -m pip install --pre beeware``.
 
 One of the BeeWare tools is **Briefcase**. Briefcase can be used to package
 your application for distribution to end users - but it can also be used to
