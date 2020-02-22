@@ -9,10 +9,31 @@ Install Python
 ==============
 
 The first thing we'll need is a working Python interpreter, running Python 3.5
-or higher. If you're on macOS or Windows, you can get the official installer
-from `the Python website <https://www.python.org/downloads>`_. If you're on
-Linux, you'll install Python using the system package manager (``apt`` on
-Debian/Ubuntu/Mint; ``dnf`` on Fedora, or ``pacman`` on Arch).
+or higher.
+
+.. tabs::
+
+  .. group-tab:: macOS
+
+    If you're on macOS, you can get the official installer from
+    `the Python website <https://www.python.org/downloads>`_. You can use any
+    stable version of Python from 3.5 onward (although we'd advice avoiding
+    alphas, betas and release candidates unless you *really* know what you're
+    doing).
+
+  .. group-tab:: Linux
+
+    If you're on Linux, you'll install Python using the system package manager
+    (``apt`` on Debian/Ubuntu/Mint; ``dnf`` on Fedora, or ``pacman`` on Arch).
+
+  .. group-tab:: Windows
+
+    If you're on Windows, you can get the official installer from
+    `the Python website <https://www.python.org/downloads>`_. You can use any
+    stable version of Python 3.5, 3.6 or 3.7. We would advise *against* using
+    Python 3.8 at this time, as some libraries needed for this tutorial aren't
+    yet available for Python 3.8. We also advise avoiding alphas, betas and
+    release candidates unless you *really* know what you're doing.
 
 .. admonition:: Alternative Python distributions
 

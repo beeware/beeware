@@ -85,8 +85,8 @@ From the ``helloworld`` directory, run:
          necessary to run Briefcase inside the container::
 
              $ apt-get update
-             $ apt-get install python3-dev libgirepository1.0-dev libcairo2-dev libpango1.0-dev libwebkitgtk-3.0-0 gir1.2-webkit-3.0
-             $ pip install beeware
+             $ apt-get install git python3-dev python3-pip libgirepository1.0-dev libcairo2-dev libpango1.0-dev libwebkitgtk-3.0-0 gir1.2-webkit-3.0
+             $ python3 -m pip install --pre beeware
 
          There is no need to use a virtual environment inside the Docker
          container, as Docker provides the isolation layer that virtual
@@ -260,7 +260,7 @@ You can now use Briefcase to run your application:
       (beeware-venv) $ briefcase run
 
       [helloworld] Starting app...
-  
+
       (beeware-venv) $
 
   .. group-tab:: Linux
@@ -271,7 +271,7 @@ You can now use Briefcase to run your application:
 
       [helloworld] Starting app...
 
-      (beeware-venv) $ 
+      (beeware-venv) $
 
   .. group-tab:: Windows
 
@@ -284,7 +284,7 @@ You can now use Briefcase to run your application:
       (beeware-venv) C:\...>
 
 This will start your run your native application, using the output of the
-`build` command. 
+`build` command.
 
 You may notice some small differences in the way your application looks when
 it's running - for example, icons, and the name displayed by the operating
@@ -293,7 +293,7 @@ mode. This is because you're using the actual packaged application, not just
 running Python code. From the operating system's perspective, you're now
 running "an app", not "a Python program", and that is reflected in how the
 application appears. The console output we saw earlier also won't work anymore,
-since we are running a standalone app that has no console to output to. 
+since we are running a standalone app that has no console to output to.
 
 Building your installer
 =======================
