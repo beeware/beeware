@@ -42,9 +42,9 @@ From the ``helloworld`` directory, run:
       [helloworld] Created macOS/Hello World
 
     Once this step completes, the ``macOS`` folder will contain a ``Hello
-    World`` folder. That folder fill contain another folder named ``Hello
+    World`` folder. That folder will contain another folder named ``Hello
     World.app``. This ``.app`` folder is a self contained macOS executable. If
-    you open the Finder, you can double click on the icon for thi folder to
+    you open the Finder, you can double click on the icon for this folder to
     start your application. If you send ``Hello World.app`` to a friend, they
     will be able to do the same - double click on the app, and see your app
     running.
