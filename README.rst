@@ -33,7 +33,7 @@ BeeWare
 BeeWare is a collection of tools and libraries for building and distributing
 native applications in Python.
 
-For a introduction to the full BeeWare suite, we recommend running the
+For an introduction to the full BeeWare suite, we recommend running the
 `BeeWare Tutorial`_.
 
 Community
