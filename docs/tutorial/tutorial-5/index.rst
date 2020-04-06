@@ -32,15 +32,6 @@ So far, we've been running and testing our application on the desktop. However,
 BeeWare also supports mobile platforms - and the application we've written
 can be deployed to your mobile device, too!
 
-.. admonition:: iOS only... for now.
-
-    The BeeWare project *has* tooling for Android. Unfortunately, due to some
-    recent changes in the Android ecosystem, combined with some changes in Toga
-    itself, means that our Android tooling is currently broken. We're working
-    on it, and hope to have a solution in the very near future.
-
-    In the meantime, this tutorial only works on iOS.
-
 .. rst-class:: clearfix row
 
 .. rst-class:: column column2
@@ -57,8 +48,7 @@ have installed in :doc:`Tutorial 0 <../tutorial-0>`.
 :doc:`Android <android>`
 ------------------------
 
-Android applications be compiled on macOS, Windows or Linux. You'll need to
-download and install `Android Studio <https://developer.android.com/studio>`__.
+Android applications be compiled on macOS, Windows or Linux.
 
 .. toctree::
     :maxdepth: 1
