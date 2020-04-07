@@ -27,9 +27,9 @@ download OpenJDK 8.
   .. group-tab:: macOS
 
     On macOS, the default format is a *.pkg* installer. Download and execute the
-    installer, accepting the defaults. In your terminal, run:
+    installer, accepting the defaults. In your terminal, run::
 
-    ``export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"``
+      (beeware-venv) $ export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
 
     You will need to run this every time you start a terminal session, or you
     can add it to your `shell configuration <https://apple.stackexchange.com/a/356455>`_
@@ -38,11 +38,11 @@ download OpenJDK 8.
   .. group-tab:: Linux
 
     On Linux, the default format is a *.tar.gz* file. Download it and unpack it to a
-    directory of your choosing. Set the *JAVA_HOME* environment variable to the
-    directory containing *bin*; for example, if you unpacked the *.tar.gz* file
-    into ``~/java/1.8/``, at the time of writing, you would need to run:
+    directory of your choosing. Set the ``JAVA_HOME`` environment variable to the
+    directory containing ``bin/javac``. For example, if you unpacked the *.tar.gz* file
+    into ``~/java/1.8/``, at the time of writing, you would need to run::
 
-    ``export JAVA_HOME=$HOME/java/1.8/jdk8u242-b08``
+      (beeware-venv) $ export JAVA_HOME="$HOME/java/1.8/jdk8u242-b08"
 
     You will need to run this every time you start a terminal session, or you
     can add it to your `PAM environment file <https://help.ubuntu.com/community/EnvironmentVariables#Persistent_environment_variables>`_,
@@ -72,7 +72,7 @@ We test *javac* here, not *java*, because if *javac* works, so will *java*.
 
     .. code-block:: bash
 
-      $ "$JAVA_HOME/bin/javac" -version
+      (beeware-venv) $ "$JAVA_HOME/bin/javac" -version
       javac 1.8.0_242
 
     If you get a "Command not found" error, look for the ``export`` command in
@@ -82,7 +82,7 @@ We test *javac* here, not *java*, because if *javac* works, so will *java*.
 
     .. code-block:: bash
 
-      $ "$JAVA_HOME/javac" -version
+      (beeware-venv) $ "$JAVA_HOME/bin/javac" -version
       javac 1.8.0_242
 
     If you get a "Command not found" error, look for the ``export`` command in
@@ -92,7 +92,7 @@ We test *javac* here, not *java*, because if *javac* works, so will *java*.
 
     .. code-block:: doscon
 
-      C:\...>"%JAVA_HOME%\bin\javac" -version
+      (beeware-venv) C:\...>"%JAVA_HOME%\bin\javac" -version
       javac 1.8.0_242
 
     If you get a "Command not found" error, re-run the installer from AdoptOpenJDK
@@ -149,7 +149,7 @@ command. This downloads an Android app template and adds your Python code to it.
 
     .. code-block:: doscon
 
-      C:\...>briefcase create android
+      (beeware-venv) C:\...>briefcase create android
 
       [helloworld] Generating application template...
       Using app template: https://github.com/beeware/briefcase-android-gradle-template.git
@@ -166,8 +166,9 @@ command. This downloads an Android app template and adds your Python code to it.
 
 Once this completes, we'll now have an ``android`` directory in your project.
 This directory will contain a ``Hello World`` folder, which will contain an
-Android project configured to use gradle, your application code, and a support
-package containing the Python interpreter and the `rubicon-java` library.
+Android project with a Gradle build configuration. This project will contain
+your application code, and a support package containing the Python interpreter
+and the `rubicon-java` library.
 
 In the process, Briefcase downloads the Android SDK. You may be prompted to
 accept Google's Android SDK license.
@@ -175,9 +176,13 @@ accept Google's Android SDK license.
 You can then use Briefcase's ``build`` command to compile this into an Android
 APK app file. It will take quite a few minutes the first time, depending on
 your Internet connection speed, and then should take less than 30 seconds every
-successive time. If you see that Gradle is "CONFIGURING" for many, many minutes,
-this is normal; Gradle is busy performing downloads, and you should not
-interrupt it.
+successive time.
+
+.. admonition:: Gradle can look stuck
+
+  You may see Gradle stuck on the "CONFIGURING" step for many, many minutes.
+  Gradle is likely busy performing downloads, and you should not interrupt it.
+  This typically only affects the first time an app is built.
 
 .. code-block:: bash
 
@@ -236,7 +241,7 @@ create an appropriate Android virtual device. Run that command on your system.
 
     .. code-block:: doscon
 
-      C:\...>briefcase run android
+      (beeware-venv) C:\...>briefcase run android
 
       No Android device was specified. Please specify a specific device on which
       to run the app by passing `-d <device_id>`.
@@ -249,21 +254,24 @@ create an appropriate Android virtual device. Run that command on your system.
 
 
 Examine the specific output on your system, and run the commands provided
-until you see an Android virtual device on your screen. It will look something
-like this as it starts up.
+until you see an Android virtual device on the launcher screen.
+
+You will see two steps of Android booting. First, the Android logo will appear.
 
 .. figure:: ../images/android/tutorial-5-booting.png
    :alt: Android virtual device booting
 
    Android virtual device booting
 
+In the second phase, the launcher screen will appear.
+
 .. figure:: ../images/android/tutorial-5-running.png
-   :alt: Android virtual device fully started
+   :alt: Android virtual device fully started, on the launcher screen
 
-   Android virtual device fully started
+   Android virtual device fully started, on the launcher screen
 
-Once an Android virtual device is running, you can launch the app with Briefcase
-by running this command:
+Once an Android virtual device is at the launcher screen, you can launch the app
+with Briefcase by running this command:
 
 .. tabs::
 
@@ -283,7 +291,7 @@ by running this command:
 
     .. code-block:: doscon
 
-      C:\...>briefcase run android -d emulator-5554
+      (beeware-venv) C:\...>briefcase run android -d emulator-5554
 
 At this point, you should see the app launch on your virtual device. If you see
 an error message, you may need to follow the advice in the error message about
@@ -334,7 +342,7 @@ To find the device name, use the ``run`` command without ``-d`` parameter.
 
     .. code-block:: doscon
 
-      C:\...>briefcase run android
+      (beeware-venv) C:\...>briefcase run android
 
       No Android device was specified. Please specify a specific device on which
       to run the app by passing `-d <device_id>`.
@@ -373,7 +381,7 @@ column. In this case, you would run:
 
     .. code-block:: doscon
 
-      C:\...>briefcase run android -d CoolPhone_038201
+      (beeware-venv) C:\...>briefcase run android -d CoolPhone_038201
 
 If your device appears in this list, but you see the word **unauthorized**, you
 likely need to `enable USB debugging on the device <https://developer.android.com/studio/debug/dev-options>`_.
