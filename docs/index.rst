@@ -33,8 +33,7 @@ platforms such as Android and iOS; and for the Web. Support for other platforms
 
     The BeeWare suite is a work in progress. Some tools and libraries are more
     mature than others, and some platforms have better support than others. In
-    particular, our support for Android is known to have significant problems,
-    and Web support should be considered experimental only.
+    particular, Web support should be considered experimental only.
 
 Ready to try BeeWare for yourself? :doc:`Let's build a cross platform
 application in Python! <tutorial/tutorial-0>`
