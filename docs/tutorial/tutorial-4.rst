@@ -83,7 +83,7 @@ If Briefcase can't find the scaffolded template, it will automatically invoke
 
 Now that we've updated the installer code, We can then run ``briefcase build``
 to re-compiled app, ``briefcase run`` to run the updated app, and ``briefcase
-publish`` to repackage the application for distribution.
+package`` to repackage the application for distribution.
 
 Updating dependencies and icons
 ===============================
