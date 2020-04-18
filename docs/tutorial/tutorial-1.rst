@@ -7,11 +7,11 @@ We're ready to create our first application.
 Install the BeeWare tools
 =========================
 
-First, we need to install the beeware tools and libraries. BeeWare provides a
-convenient shortcut for doing this: a ``beeware`` meta-package on PyPI that
-includes all the pieces you'll need to run this tutorial. Make sure you're in
-the ``beeware-tutorial`` you created in :doc:`Tutorial 0 <tutorial-0>`, with
-the ``beeware-venv`` virtual environment activated, and run:
+First, we need to install **Briefcase**. Briefcase is a BeeWare tool that can
+be used to package your application for distribution to end users - but it can
+also be used to bootstrap a new project. Make sure you're in the
+``beeware-tutorial`` directory you created in :doc:`Tutorial 0 <tutorial-0>`,
+with the ``beeware-venv`` virtual environment activated, and run:
 
 .. tabs::
 
@@ -19,13 +19,13 @@ the ``beeware-venv`` virtual environment activated, and run:
 
     .. code-block:: bash
 
-      (beeware-venv) $ python -m pip install beeware
+      (beeware-venv) $ python -m pip install briefcase
 
   .. group-tab:: Linux
 
     .. code-block:: bash
 
-      (beeware-venv) $ python -m pip install beeware
+      (beeware-venv) $ python -m pip install briefcase
 
     .. admonition:: Possible errors during installation
 
@@ -38,7 +38,7 @@ the ``beeware-venv`` virtual environment activated, and run:
 
     .. code-block:: doscon
 
-      (beeware-venv)C:\...>python -m pip install beeware
+      (beeware-venv)C:\...>python -m pip install briefcase
 
     .. admonition:: Possible errors during installation
 
@@ -104,9 +104,9 @@ bootstrap a new project.
 Bootstrap a new project
 =======================
 
-Let's start our first BeeWare project!  Using the Briefcase ``new`` command,
-we're going to create an application called **Hello World**. Run the following
-from your command prompt:
+Let's start our first BeeWare project!  We're going to use the Briefcase
+``new`` command to create an application called **Hello World**. Run the
+following from your command prompt:
 
 .. tabs::
 
