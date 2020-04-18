@@ -19,13 +19,13 @@ the ``beeware-venv`` virtual environment activated, and run:
 
     .. code-block:: bash
 
-      (beeware-venv) $ python -m pip install --pre beeware
+      (beeware-venv) $ python -m pip install beeware
 
   .. group-tab:: Linux
 
     .. code-block:: bash
 
-      (beeware-venv) $ python -m pip install --pre beeware
+      (beeware-venv) $ python -m pip install beeware
 
     .. admonition:: Possible errors during installation
 
@@ -38,7 +38,7 @@ the ``beeware-venv`` virtual environment activated, and run:
 
     .. code-block:: doscon
 
-      (beeware-venv)C:\...>python -m pip install --pre beeware
+      (beeware-venv)C:\...>python -m pip install beeware
 
     .. admonition:: Possible errors during installation
 
