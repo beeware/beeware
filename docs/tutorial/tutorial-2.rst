@@ -113,7 +113,8 @@ content into the application, and make the app do something interesting.
 Adding some content of our own
 ==============================
 
-Modify your ``HelloWorld`` class inside ``src/helloworld/app.py`` so that it looks like this::
+Modify your ``HelloWorld`` class inside ``src/helloworld/app.py`` so that it
+looks like this::
 
     class HelloWorld(toga.App):
         def startup(self):
@@ -144,6 +145,11 @@ Modify your ``HelloWorld`` class inside ``src/helloworld/app.py`` so that it loo
 
         def say_hello(self, widget):
             print("Hello", self.name_input.value)
+
+.. note::
+
+    Don't remove the imports at the top of the file , or the ``main()`` at the
+    bottom. You only need to update the ``HelloWorld`` class.
 
 Let's look in detail at what has changed.
 
