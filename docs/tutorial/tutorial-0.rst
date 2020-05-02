@@ -73,8 +73,8 @@ Next, install the additional dependencies needed for your operating system:
 
   .. group-tab:: Linux
 
-    Building BeeWare apps on Linux requires some system packages. The list
-    of packages required varies depending on your distribution:
+    To support local development, you'll need to install some system packages.
+    The list of packages required varies depending on your distribution:
 
     **Ubuntu 16.04, Debian 9**
 
@@ -95,6 +95,26 @@ Next, install the additional dependencies needed for your operating system:
     .. code-block:: bash
 
       $ sudo dnf install git pkg-config python3-devel gobject-introspection-devel cairo-devel cairo-gobject-devel pango-devel webkitgtk3
+
+    Briefcase also uses a tool called AppImage to build binaries that can be
+    used across Linux distributions. However, building AppImage binaries for
+    Linux is complicated, because of the inconsistent library versions present
+    on each distribution. Briefcase uses Docker to provide a well-controlled
+    binary environment for hosting AppImage builds.
+
+    Official installers for `Docker Engine
+    <https://docs.docker.com/engine/install/#server>`__ are availble for a
+    range of Unix distributions. Follow the instructions for your platform.
+    Once you've installed Docker, you should be able to start an Ubuntu 16.04
+    container:
+
+    .. code-block:: bash
+
+      $ docker run -it ubuntu:16.04
+
+    This should show you a Unix prompt (something like `root@84444e31cff9:/#`)
+    inside your Docker container. Type Ctrl-D to exit Docker and return to your
+    local shell.
 
   .. group-tab:: Windows
 
