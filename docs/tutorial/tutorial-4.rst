@@ -161,7 +161,7 @@ new logic works; then update, build and run the app with one command:
 
     .. code-block:: doscon
 
-      (beeware-venv) C:\...>briefcase update
+      (beeware-venv) C:\...>briefcase run -u
 
       [helloworld] Updating application code...
       Installing src/helloworld...
