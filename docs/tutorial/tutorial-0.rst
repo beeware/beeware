@@ -94,7 +94,7 @@ Next, install the additional dependencies needed for your operating system:
 
     .. code-block:: bash
 
-      $ sudo dnf install git pkg-config python3-devel gobject-introspection-devel cairo-devel cairo-gobject-devel pango-devel webkitgtk3
+      $ sudo dnf install git pkg-config python3-devel gobject-introspection-devel cairo-devel cairo-gobject-devel pango-devel webkit2gtk3
 
   .. group-tab:: Windows
 
