@@ -30,6 +30,32 @@ This directory will contain a ``Hello World`` folder, which will contain
 an Xcode project, as well as the support libraries and the application code
 needed for the application.
 
+You may get the following error:
+
+.. code-block:: bash
+
+  (beeware-venv) $ briefcase create iOS
+  xcode-select: error: tool 'xcodebuild' requires Xcode, but active developer directory '/Library/Developer/CommandLineTools' is a command line tools instance
+
+  Xcode is not installed.
+
+  You should be shown a dialog prompting you to install Xcode and the
+  command line tools. Select "Get Xcode" to install Xcode from the app store.
+
+  You can install Xcode from the macOS App Store.
+
+  Re-run Briefcase once that installation is complete.
+
+If you get this error then check that you have Xcode installed.
+It is possible for the error to occur even if you have Xcode installed already.
+If that is the case, run the following from the terminal. 
+
+.. code-block:: bash
+
+  (beeware-venv) $ sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+
+You can now run the ``create iOS`` command. 
+
 You can then use Briefcase to compile your app using
 the ``build`` command. You'll be prompted to select a device to compile for; if
 you've got simulators for multiple iOS versions installed, you may also be
