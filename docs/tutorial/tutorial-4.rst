@@ -93,10 +93,10 @@ changed, or you have new application resources, like a new splash screen or
 application icon)? In this situation, the ``update`` command has some options
 you can use:
 
-* ``briefcase update -d`` (or ``briefcase update --update_dependencies``)
+* ``briefcase update -d`` (or ``briefcase update --update-dependencies``)
   will re-install your the application dependecies.
 
-* ``briefcase update -r`` (or ``briefcase update --update_resources``)
+* ``briefcase update -r`` (or ``briefcase update --update-resources``)
   will re-install your application resources.
 
 Update and run in one step
