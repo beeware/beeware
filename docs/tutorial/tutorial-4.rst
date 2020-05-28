@@ -81,9 +81,11 @@ for your existing bundled application:
 If Briefcase can't find the scaffolded template, it will automatically invoke
 `create` to generate a fresh scaffold.
 
-Now that we've updated the installer code, We can then run ``briefcase build``
+Now that we've updated the installer code, we can then run ``briefcase build``
 to re-compiled app, ``briefcase run`` to run the updated app, and ``briefcase
 package`` to repackage the application for distribution.
+
+(Remember that as noted in :doc:`Tutorial 3 <tutorial-3/index>`, for the tutorial we recommend running ``briefcase package`` with the ``--no-sign`` flag to avoid the complexity of setting up a code signing identity and keep the tutorial as simple as possible.)
 
 Updating dependencies and icons
 ===============================
@@ -186,5 +188,5 @@ We now have our application packaged for distribution on desktop platforms,
 and we've been able to update the code in our application.
 
 But what about mobile? In :doc:`Tutorial 5 <tutorial-5/index>`, we'll convert
-out application into a mobile application, and deploy it onto a device
+our application into a mobile application, and deploy it onto a device
 simulator, and onto a phone.
