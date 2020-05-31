@@ -286,10 +286,12 @@ You can now use Briefcase to run your application:
 This will start to run your native application, using the output of the
 `build` command.
 
-You'll notice that the console output we saw earlier won't work anymore. This is because we are now running a standalone, packaged app that has no console to output to.
+You'll notice that the console output we saw earlier won't be visible anymore. 
+This is because we are now running a standalone, packaged app that has no 
+(visible) console to which it can output. 
 
-You might also notice some small differences in the way your application looks when
-it's running. For example, icons and the name displayed by the operating
+You might also notice some small differences in the way your application looks 
+when it's running. For example, icons and the name displayed by the operating
 system may be slightly different to those you saw when running under developer
 mode. This is also because you're using the packaged application, not just
 running Python code. From the operating system's perspective, you're now
