@@ -2,6 +2,15 @@
 Tutorial 0 - Let's get set up!
 ==============================
 
+.. admonition:: Important note if you plan to use BeeWare to create an Android app.
+    
+    The BeeWare project *has* tooling for Android. Unfortunately, due to some
+    recent changes in the Android ecosystem, combined with some changes in Toga
+    itself, means that our Android tooling is currently broken. We're working
+    on it, and hope to have a solution in the very near future.
+
+    In the meantime, the Mobile part of this tutorial only works on iOS.
+
 Before we build our first BeeWare app, we have to make sure we've got
 all the prerequisites for running BeeWare.
 
