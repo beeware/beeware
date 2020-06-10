@@ -68,32 +68,20 @@ From the ``helloworld`` directory, run:
 
       This means you have four options:
 
-      1. Install Ubuntu 16.04 on your own machine.
+      1. Run Briefcase using the BeeWare Docker image.
 
-      2. Find a cloud or CI provider that can provide you an Ubuntu 16.04
-         machine for build purposes. Github Actions, for example, provides
-         Ubuntu 16.04 as a build option.
-
-      3. Run Briefcase inside a Docker container. Once you have `installed
-         Docker <https://docs.docker.com/install/>`__, the command::
-
-            $ docker run -it -v /path/to/project:/project ubuntu:16.04 /bin/bash
-
-         will start a Docker container running Ubuntu 16.04, mounting your
-         local project directory (``/path/to/project``) as the ``/project``
-         directory in the container. You can then install the requirements
-         necessary to run Briefcase inside the container::
-
-             $ apt-get update
-             $ apt-get install git python3-dev python3-pip libgirepository1.0-dev libcairo2-dev libpango1.0-dev libwebkitgtk-3.0-0 gir1.2-webkit-3.0
-             $ python3 -m pip install --pre beeware
-
-         There is no need to use a virtual environment inside the Docker
-         container, as Docker provides the isolation layer that virtual
-         environments provide in a local environment.
+         Once you have `installed Docker <https://docs.docker.com/install/>`__,
+         execute the `briefcase create` command within a container:
+            $ docker run -v $(pwd):/project -i roipoussiere/briefcase create
 
          As an aside, this approach will also allow you to create Linux
          packages while on Windows or macOS.
+
+      2. Install Ubuntu 16.04 on your own machine.
+
+      3. Find a cloud or CI provider that can provide you an Ubuntu 16.04
+         machine for build purposes. Github Actions, for example, provides
+         Ubuntu 16.04 as a build option.
 
       4. Build your own version of the BeeWare `Python support libraries
          <https://github.com/beeware/Python-Linux-support>`__. If you take this
@@ -286,17 +274,17 @@ You can now use Briefcase to run your application:
 This will start to run your native application, using the output of the
 `build` command.
 
-You'll notice that the console output we saw earlier won't be visible anymore. 
-This is because we are now running a standalone, packaged app that has no 
-(visible) console to which it can output. 
+You'll notice that the console output we saw earlier won't be visible anymore.
+This is because we are now running a standalone, packaged app that has no
+(visible) console to which it can output.
 
-You might also notice some small differences in the way your application looks 
+You might also notice some small differences in the way your application looks
 when it's running. For example, icons and the name displayed by the operating
 system may be slightly different to those you saw when running under developer
 mode. This is also because you're using the packaged application, not just
 running Python code. From the operating system's perspective, you're now
 running "an app", not "a Python program", and this is reflected in how the
-application appears. 
+application appears.
 
 Building your installer
 =======================
