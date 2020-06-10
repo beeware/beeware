@@ -215,6 +215,13 @@ target platform.
       ...
       [helloworld] Built linux/Hello World-x86_64-0.0.1.AppImage
 
+    If you use briefcase Docker image, you must add the `SYS_ADMIN` runtime privilege,
+    because fuse (used by AppImage) needs permissions to mount/umount:
+
+    .. code-block:: bash
+
+      docker run --cap-add SYS_ADMIN --device /dev/fuse -v $(pwd):/project -i roipoussiere/briefcase build
+
     Once this step completes, the ``linux`` folder will contain a file named
     ``Hello World-x86_64-0.0.1.AppImage``. This AppImage is an executable;
     you can run it from the shell, or double click on it in your file explorer.
