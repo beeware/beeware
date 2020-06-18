@@ -37,7 +37,10 @@ with the ``beeware-venv`` virtual environment activated, and run:
   .. group-tab:: Windows
 
     .. code-block:: doscon
-
+      First we activate the virtual environment beeware-venv
+      C:\...>cd beeware-venv
+      C:\...>cd Scripts
+      start activate.bat
       (beeware-venv)C:\...>python -m pip install briefcase
 
     .. admonition:: Possible errors during installation
