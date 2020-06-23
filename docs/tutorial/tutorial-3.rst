@@ -41,67 +41,7 @@ From the ``helloworld`` directory, run:
       ...
       [helloworld] Created macOS/Hello World
 
-    Once this step completes, the ``macOS`` folder will contain a ``Hello
-    World`` folder. That folder will contain another folder named ``Hello
-    World.app``. This ``.app`` folder is a self contained macOS executable. If
-    you open the Finder, you can double click on the icon for this folder to
-    start your application. If you send ``Hello World.app`` to a friend, they
-    will be able to do the same - double click on the app, and see your app
-    running.
-
   .. group-tab:: Linux
-
-    .. note::
-
-      Packaging binaries for Linux is complicated, because of the inconsistent
-      library versions present on each distribution. Briefcase uses the
-      `AppImage <https://appimage.org/>`__ format by default, which resolves
-      many of these problems. An AppImage can be executed on *any* Linux
-      distribution with a version of libc greater than or equal the version of
-      the distribution where the AppImage was created.
-
-      To simplify the packaging process, Briefcase provides a pre-compiled
-      Python support library. This support library was compiled on Ubuntu 16.04,
-      which means the AppImages build by Briefcase can be used on *any* Linux
-      distribution of about the same age or newer - but those AppImages *must*
-      be compiled on Ubuntu 16.04.
-
-      This means you have four options:
-
-      1. Install Ubuntu 16.04 on your own machine.
-
-      2. Find a cloud or CI provider that can provide you an Ubuntu 16.04
-         machine for build purposes. Github Actions, for example, provides
-         Ubuntu 16.04 as a build option.
-
-      3. Run Briefcase inside a Docker container. Once you have `installed
-         Docker <https://docs.docker.com/install/>`__, the command::
-
-            $ docker run -it -v /path/to/project:/project ubuntu:16.04 /bin/bash
-
-         will start a Docker container running Ubuntu 16.04, mounting your
-         local project directory (``/path/to/project``) as the ``/project``
-         directory in the container. You can then install the requirements
-         necessary to run Briefcase inside the container::
-
-             $ apt-get update
-             $ apt-get install git python3-dev python3-pip libgirepository1.0-dev libcairo2-dev libpango1.0-dev libwebkitgtk-3.0-0 gir1.2-webkit-3.0
-             $ python3 -m pip install --pre beeware
-
-         There is no need to use a virtual environment inside the Docker
-         container, as Docker provides the isolation layer that virtual
-         environments provide in a local environment.
-
-         As an aside, this approach will also allow you to create Linux
-         packages while on Windows or macOS.
-
-      4. Build your own version of the BeeWare `Python support libraries
-         <https://github.com/beeware/Python-Linux-support>`__. If you take this
-         approach, be aware that your AppImage will only be as portable as the
-         version of libc that is available on the distribution you use. If you
-         build using Ubuntu 19.10, for example, you can expect that only people
-         on the most recent versions of Fedora or Arch will be able to run your
-         AppImage.
 
     .. code-block:: bash
 
@@ -113,12 +53,24 @@ From the ``helloworld`` directory, run:
       [helloworld] Installing support package...
       ...
       [helloworld] Installing dependencies...
+      [helloworld] Entering Docker context...
+
+      [helloworld] Building Docker container image...
       ...
+      [helloworld] Leaving Docker context.
+
       [helloworld] Installing application code...
       ...
       [helloworld] Installing application resources...
       ...
       [helloworld] Created linux/Hello World
+
+    .. note::
+
+      The first time you run this, it may take a while, as Briefcase needs to
+      prepare an Ubuntu 16.04 Docker image that can be used to build AppImage
+      binaries. This involves downloading a lot of system packages. On future
+      runs, this Docker image will be re-used.
 
   .. group-tab:: Windows
 
@@ -231,7 +183,8 @@ target platform.
     ``Hello World-x86_64-0.0.1.AppImage``. This AppImage is an executable;
     you can run it from the shell, or double click on it in your file explorer.
     You can also give it to any other Linux user, and as long as they've got
-    a recent version of Linux, they should be able to run it in the same way.
+    a version of Linux published after 2016, they should be able to run it in
+    the same way.
 
   .. group-tab:: Windows
 
@@ -283,17 +236,20 @@ You can now use Briefcase to run your application:
 
       (beeware-venv) C:\...>
 
-This will start your run your native application, using the output of the
+This will start to run your native application, using the output of the
 `build` command.
 
-You may notice some small differences in the way your application looks when
-it's running - for example, icons, and the name displayed by the operating
-system, may be slightly different to those you saw when running under developer
-mode. This is because you're using the actual packaged application, not just
+You'll notice that the console output we saw earlier won't be visible anymore. 
+This is because we are now running a standalone, packaged app that has no 
+(visible) console to which it can output. 
+
+You might also notice some small differences in the way your application looks 
+when it's running. For example, icons and the name displayed by the operating
+system may be slightly different to those you saw when running under developer
+mode. This is also because you're using the packaged application, not just
 running Python code. From the operating system's perspective, you're now
-running "an app", not "a Python program", and that is reflected in how the
-application appears. The console output we saw earlier also won't work anymore,
-since we are running a standalone app that has no console to output to.
+running "an app", not "a Python program", and this is reflected in how the
+application appears. 
 
 Building your installer
 =======================

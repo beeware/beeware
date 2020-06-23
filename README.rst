@@ -21,8 +21,8 @@ BeeWare
    :target: https://github.com/beeware/beeware/blob/master/LICENSE
    :alt: BSD License
 
-.. image:: https://github.com/beeware/beefore/workflows/Build%20status/badge.svg
-   :target: https://github.com/beeware/beefore/actions
+.. image:: https://github.com/beeware/beeware/workflows/CI/badge.svg?branch=master
+   :target: https://github.com/beeware/beeware/actions
    :alt: Build Status
 
 .. image:: https://badges.gitter.im/beeware/general.svg

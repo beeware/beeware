@@ -81,9 +81,14 @@ for your existing bundled application:
 If Briefcase can't find the scaffolded template, it will automatically invoke
 `create` to generate a fresh scaffold.
 
-Now that we've updated the installer code, We can then run ``briefcase build``
+Now that we've updated the installer code, we can then run ``briefcase build``
 to re-compiled app, ``briefcase run`` to run the updated app, and ``briefcase
-publish`` to repackage the application for distribution.
+package`` to repackage the application for distribution.
+
+(macOS users, remember that as noted in :doc:`Tutorial 3 <tutorial-3>`, for the
+tutorial we recommend running ``briefcase package`` with the ``--no-sign`` flag
+to avoid the complexity of setting up a code signing identity and keep the
+tutorial as simple as possible.)
 
 Updating dependencies and icons
 ===============================
@@ -93,10 +98,10 @@ changed, or you have new application resources, like a new splash screen or
 application icon)? In this situation, the ``update`` command has some options
 you can use:
 
-* ``briefcase update -d`` (or ``briefcase update --update_dependencies``)
+* ``briefcase update -d`` (or ``briefcase update --update-dependencies``)
   will re-install your the application dependecies.
 
-* ``briefcase update -r`` (or ``briefcase update --update_resources``)
+* ``briefcase update -r`` (or ``briefcase update --update-resources``)
   will re-install your application resources.
 
 Update and run in one step
@@ -161,7 +166,7 @@ new logic works; then update, build and run the app with one command:
 
     .. code-block:: doscon
 
-      (beeware-venv) C:\...>briefcase update
+      (beeware-venv) C:\...>briefcase run -u
 
       [helloworld] Updating application code...
       Installing src/helloworld...
@@ -186,5 +191,5 @@ We now have our application packaged for distribution on desktop platforms,
 and we've been able to update the code in our application.
 
 But what about mobile? In :doc:`Tutorial 5 <tutorial-5/index>`, we'll convert
-out application into a mobile application, and deploy it onto a device
+our application into a mobile application, and deploy it onto a device
 simulator, and onto a phone.
