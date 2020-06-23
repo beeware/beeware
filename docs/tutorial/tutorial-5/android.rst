@@ -3,10 +3,9 @@ Tutorial 5 - Taking it mobile: Android
 ======================================
 
 The process of deploying an application to Android is very similar to the
-process for deploying as a desktop application. The ``briefcase`` tool
-handles the installation of dependencies for Android, including the
-Android SDK, the Android emulator, and the AdoptOpenJDK Java compiler and
-runtime.
+process for deploying as a desktop application. Briefcase handles installing
+dependencies for Android, including the Android SDK, the Android emulator,
+and the AdoptOpenJDK Java compiler and runtime.
 
 Create an Android app and compile it
 ====================================
