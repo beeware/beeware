@@ -78,8 +78,9 @@ Android project with a Gradle build configuration. This project will contain
 your application code, and a support package containing the Python interpreter
 and the `rubicon-java` library.
 
-In the process, Briefcase downloads the Android SDK. You may be prompted to
-accept Google's Android SDK license.
+When you run ``briefcase create android`` for the first time, Briefcase downloads
+the Android SDK. File sizes and download times can be considerable; this can take
+a while. You can also expect to be prompted to accept Google's Android SDK license.
 
 You can then use Briefcase's ``build`` command to compile this into an Android
 APK app file. It will take quite a few minutes the first time, depending on
@@ -88,19 +89,48 @@ successive time.
 
 .. admonition:: Gradle can look stuck
 
-  You may see Gradle stuck on the "CONFIGURING" step for many, many minutes.
-  Gradle is likely busy performing downloads, and you should not interrupt it.
-  This typically only affects the first time an app is built.
+  During the Briefcase ``build`` step, Gradle (the Android platform build tool)
+  will print "CONFIGURING", and may appear stuck for many, many minutes. Gradle
+  is downloading additional Android SDK components. You should not interrupt it.
+  This typically only occurs the first time an app is built.
 
-.. code-block:: bash
+.. tabs::
 
-  (beeware-venv) $ briefcase build android
-  [helloworld] Building Android APK...
-  Starting a Gradle Daemon
-  ...
-  BUILD SUCCESSFUL in 1m 1s
-  28 actionable tasks: 17 executed, 11 up-to-date
-  [helloworld] Built android/Hello World/app/build/outputs/apk/debug/app-debug.apk
+  .. group-tab:: macOS
+
+    .. code-block:: bash
+
+      (beeware-venv) $ briefcase build android
+      [helloworld] Building Android APK...
+      Starting a Gradle Daemon
+      ...
+      BUILD SUCCESSFUL in 1m 1s
+      28 actionable tasks: 17 executed, 11 up-to-date
+      [helloworld] Built android/Hello World/app/build/outputs/apk/debug/app-debug.apk
+
+  .. group-tab:: Linux
+
+    .. code-block:: bash
+
+      (beeware-venv) $ briefcase build android
+      [helloworld] Building Android APK...
+      Starting a Gradle Daemon
+      ...
+      BUILD SUCCESSFUL in 1m 1s
+      28 actionable tasks: 17 executed, 11 up-to-date
+      [helloworld] Built android/Hello World/app/build/outputs/apk/debug/app-debug.apk
+
+  .. group-tab:: Windows
+
+    .. code-block:: doscon
+
+      (beeware-venv) C:\...>briefcase build android
+      [helloworld] Building Android APK...
+      Starting a Gradle Daemon
+      ...
+      BUILD SUCCESSFUL in 1m 1s
+      28 actionable tasks: 17 executed, 11 up-to-date
+      [helloworld] Built android\Hello World\app\build\outputs\apk\debug\app-debug.apk
 
 Run the app on a virtual device
 ===============================
