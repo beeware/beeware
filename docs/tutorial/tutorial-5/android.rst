@@ -187,25 +187,41 @@ Android emulator.
 Choose your desired device, or choose the option to create a new device. If you create a new
 device, you will have to provide a name (or accept the default of ``beePhone``).
 
-Once you choose a device, you will see two steps of Android booting followed by your app
-launching. First, the Android logo will appear.
+Briefcase ``run`` will automatically boot the virtual device if necessary. When the device
+is booting, you will see the Android logo.
 
 .. figure:: ../images/android/tutorial-5-booting.png
    :alt: Android virtual device booting
 
    Android virtual device booting
 
-In the second phase, the launcher screen will appear.
+Briefcase ``run`` will start your app when the device finishes booting. You will briefly
+see a launcher screen.
 
 .. figure:: ../images/android/tutorial-5-running.png
    :alt: Android virtual device fully started, on the launcher screen
 
    Android virtual device fully started, on the launcher screen
 
-Once the phone finishes booting, ``briefcase run`` will automatically begin
-to launch your app. You will first see a splash screen, then your app. If you
-see an error message in your console, you may need to follow the advice in the
-error message about finding the correct device name.
+Briefcase ``run`` will proceed to launch your app with no intervention required by you.
+BeeWare Android apps begin with a splash screen while the Python components
+initialize.
+
+.. figure:: ../images/android/tutorial-5-splash.png
+   :alt: App splash screen
+
+   App splash screen
+
+The app will initialize Python and draw your widgets. In the case of the
+app built in :doc:`Tutorial 2 <../tutorial-2>`, it will look like this.
+
+.. figure:: ../images/android/tutorial-5-launched.png
+   :alt: App from Tutorial 2, fully launched
+
+   App from Tutorial 2, fully launched
+
+If you fail to see your app launching, you may need to check your terminal
+where you ran ``briefcase run`` and look for any error messages.
 
 Run the app on a physical device
 ================================
