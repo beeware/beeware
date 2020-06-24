@@ -140,8 +140,11 @@ to run the app on an Android device, either physical or virtual. This section
 covers running the app on a virtual Android device.
 
 On Android, Briefcase's ``run`` command requires that you specify which device to run on.
-If you use ``run`` without specifying a device, Briefcase will show a list of
-physical and virtual devices (if any) and offer to create one.
+If you use ``run`` without specifying a device, Briefcase will show a list of devices.
+This will include any virtual devices you have already created, perhaps because you
+have already configured this workstation for Android development, and any physical
+devices currently connected. The last item will always be an option to create a new
+Android emulator.
 
 .. tabs::
 
