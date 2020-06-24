@@ -10,7 +10,7 @@ and the AdoptOpenJDK Java compiler and runtime.
 Create an Android app and compile it
 ====================================
 
-Firs, run the ``create`` command. This downloads an Android app template and
+First, run the ``create`` command. This downloads an Android app template and
 adds your Python code to it.
 
 .. tabs::
