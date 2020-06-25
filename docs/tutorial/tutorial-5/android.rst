@@ -247,7 +247,7 @@ is typically the
 
       Select device:
 
-        1) Pixel_3a (94ZZY0LNE8)
+        1) Pixel 3a (94ZZY0LNE8)
         2) Create a new Android emulator
 
       >
@@ -260,7 +260,7 @@ is typically the
 
       Select device:
 
-        1) Pixel_3a (94ZZY0LNE8)
+        1) Pixel 3a (94ZZY0LNE8)
         2) Create a new Android emulator
 
       >
@@ -269,9 +269,11 @@ is typically the
 
     .. code-block:: doscon
 
+      (beeware-venv) C:\...>briefcase run android
+
       Select device:
 
-        1) CoolPhone
+        1) Pixel 3a (94ZZY0LNE8)
         2) Create a new Android emulator
 
       >
