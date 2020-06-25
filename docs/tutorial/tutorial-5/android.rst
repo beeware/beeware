@@ -230,7 +230,12 @@ If you have an Android phone or tablet you want to run your app on, you can
 connect it to your development workstation, typically using a USB cable.
 Then you can use Briefcase's ``run`` command to target your physical device.
 
-If Briefcase can detect the device, it will appear in the ``run`` output.
+If Briefcase can detect the device, it will appear in the ``run`` output. The
+following output shows what you might see if you have a Google Pixel 3a device
+connected.
+
+Although Android devices can be given names, the name that appears here
+is typically the
 
 .. tabs::
 
@@ -242,7 +247,7 @@ If Briefcase can detect the device, it will appear in the ``run`` output.
 
       Select device:
 
-        1) CoolPhone
+        1) Pixel_3a (94ZZY0LNE8)
         2) Create a new Android emulator
 
       >
@@ -255,7 +260,7 @@ If Briefcase can detect the device, it will appear in the ``run`` output.
 
       Select device:
 
-        1) CoolPhone
+        1) Pixel_3a (94ZZY0LNE8)
         2) Create a new Android emulator
 
       >
@@ -272,9 +277,14 @@ If Briefcase can detect the device, it will appear in the ``run`` output.
       >
 
 In this example, you could type **1** then press return to run the app on your
-CoolPhone device. In the case that your device is detected, but the Android
-tools cannot install apps over the USB connection, Briefcase will print a
-message explaining how to enable USB debugging.
+Pixel 3a device. When creating this list, Briefcase queries `adb
+<https://developer.android.com/studio/command-line/adb>`__ for the device's
+serial number (in this case, 94ZZY0LNE8) and model name (in this case,
+Pixel_3a).
+
+In the case that your device is detected, but the Android tools cannot install
+apps over the USB connection, Briefcase will print a message explaining how to
+enable USB debugging.
 
 If you wish to skip the prompt in the future, you can pass the ``-d device_name``
 parameter. Upon successfully selecting the device, Briefcase will print the
