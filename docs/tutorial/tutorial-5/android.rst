@@ -282,7 +282,7 @@ In this example, you could type **1** then press return to run the app on your
 Pixel 3a device. When creating this list, Briefcase queries `adb
 <https://developer.android.com/studio/command-line/adb>`__ for the device's
 serial number (in this case, 94ZZY0LNE8) and model name (in this case,
-Pixel_3a).
+Pixel 3a).
 
 In the case that your device is detected, but the Android tools cannot install
 apps over the USB connection, Briefcase will print a message explaining how to
