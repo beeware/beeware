@@ -57,7 +57,7 @@ have installed in :doc:`Tutorial 0 <../tutorial-0>`.
 :doc:`Android <android>`
 ------------------------
 
-Android applications be compiled on macOS, Windows or Linux. You'll need to
+Android applications be compiled on macOS, Windows, or Linux. You'll need to
 download and install `Android Studio <https://developer.android.com/studio>`__.
 
 .. toctree::
