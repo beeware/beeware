@@ -72,7 +72,7 @@ matter which simulator you pick.
   [hello-world] Built iOS/Hello World/build/Debug-iphonesimulator/Hello World.app
 
 We're now ready to run our application. You could do this by running
-``briefcase run iOS``. If you run briefcase in that way, you'll be asked again
+``briefcase run iOS``. If you run Briefcase in that way, you'll be asked again
 for the device you want to target. If you already know the devices that are
 available, you can tell briefcase to use that simulator by providing a ``-d``
 (or ``--device``) option. Using the name of the device you selected when

@@ -2,10 +2,13 @@
 Tutorial 5 - Taking it mobile: Android
 ======================================
 
+Now, we're going to take our application, and deploy it as an Android
+application.
+
 The process of deploying an application to Android is very similar to the
 process for deploying as a desktop application. Briefcase handles installing
-dependencies for Android, including the Android SDK, the Android emulator,
-and the AdoptOpenJDK Java compiler and runtime.
+dependencies for Android, including the Android SDK, the Android emulator, and
+a Java compiler.
 
 Create an Android app and compile it
 ====================================
@@ -72,27 +75,19 @@ adds your Python code to it.
       ...
       [helloworld] Application created.
 
-Once this completes, we'll now have an ``android`` directory in your project.
+When you run ``briefcase create android`` for the first time, Briefcase
+downloads a Java JDK, and the Android SDK. File sizes and download times can be
+considerable; this may take a while (10 minutes or longer, depending on the
+speed of your Internet connection). When the download has completed, you will
+be prompted to accept Google's Android SDK license.
+
+Once this completes, we'll now have an ``android`` directory in our project.
 This directory will contain a ``Hello World`` folder, which will contain an
 Android project with a Gradle build configuration. This project will contain
-your application code, and a support package containing the Python interpreter
-and the `rubicon-java` library.
+your application code, and a support package containing the Python interpreter.
 
-When you run ``briefcase create android`` for the first time, Briefcase downloads
-the Android SDK. File sizes and download times can be considerable; this can take
-a while. You can also expect to be prompted to accept Google's Android SDK license.
-
-You can then use Briefcase's ``build`` command to compile this into an Android
-APK app file. It will take quite a few minutes the first time, depending on
-your Internet connection speed, and then should take less than 30 seconds every
-successive time.
-
-.. admonition:: Gradle can look stuck
-
-  During the Briefcase ``build`` step, Gradle (the Android platform build tool)
-  will print "CONFIGURING", and may appear stuck for many, many minutes. Gradle
-  is downloading additional Android SDK components. You should not interrupt it.
-  This typically only occurs the first time an app is built.
+We can then use Briefcase's ``build`` command to compile this into an Android
+APK app file.
 
 .. tabs::
 
@@ -132,19 +127,26 @@ successive time.
       28 actionable tasks: 17 executed, 11 up-to-date
       [helloworld] Built android\Hello World\app\build\outputs\apk\debug\app-debug.apk
 
+.. admonition:: Gradle may look stuck
+
+  During the ``briefcase build android`` step, Gradle (the Android platform
+  build tool) will print ``CONFIGURING: 100%``, and appear to be doing nothing.
+  Don't worry, it's not stuck - it's downloading more Android SDK components.
+  Depending on your Internet connection speed, this may take another 10 minutes
+  (or longer). This lag should only happen the very first time you run
+  ``build``; the tools are cached, and on your next build, the cached versions
+  will be used.
+
 Run the app on a virtual device
 ===============================
 
 We're now ready to run our application. You can use Briefcase's ``run`` command
-to run the app on an Android device, either physical or virtual. This section
-covers running the app on a virtual Android device.
+to run the app on an Android device. Let's start by running on an Android
+emulator.
 
-On Android, Briefcase's ``run`` command requires that you specify which device to run on.
-If you use ``run`` without specifying a device, Briefcase will show a list of devices.
-This will include any virtual devices you have already created, perhaps because you
-have already configured this workstation for Android development, and any physical
-devices currently connected. The last item will always be an option to create a new
-Android emulator.
+To run your application, run ``briefcase run android``. When you do this,
+you'll be prompted with a list of devices that you could run the app on. The
+last item will always be an option to create a new Android emulator.
 
 .. tabs::
 
@@ -184,58 +186,117 @@ Android emulator.
 
       >
 
-Choose your desired device, or choose the option to create a new device. If you create a new
-device, you will have to provide a name (or accept the default of ``beePhone``).
+We can now choose our desired device. Select the "Create a new Android
+emulator" option, and accept the default choice for the device name
+(``beePhone``).
 
-Briefcase ``run`` will automatically boot the virtual device if necessary. When the device
-is booting, you will see the Android logo.
+Briefcase ``run`` will automatically boot the virtual device. When the device
+is booting, you will see the Android logo:
 
 .. figure:: ../images/android/tutorial-5-booting.png
+   :align: center
+   :width: 30%
    :alt: Android virtual device booting
 
    Android virtual device booting
 
-Briefcase ``run`` will start your app when the device finishes booting. You will briefly
-see a launcher screen.
+Once the device has finished booting, Briefcase will install your app on the
+device. You will briefly see a launcher screen:
 
 .. figure:: ../images/android/tutorial-5-running.png
+   :align: center
+   :width: 30%
    :alt: Android virtual device fully started, on the launcher screen
 
    Android virtual device fully started, on the launcher screen
 
-Briefcase ``run`` will proceed to launch your app with no intervention required by you.
-BeeWare Android apps begin with a splash screen while the Python components
-initialize.
+The app will then start. You'll see a splash screen while the app starts up:
 
 .. figure:: ../images/android/tutorial-5-splash.png
+   :align: center
+   :width: 30%
    :alt: App splash screen
 
    App splash screen
 
-The app will initialize Python and draw your widgets. In the case of the
-app built in :doc:`Tutorial 2 <../tutorial-2>`, it will look like this.
+The first time the app starts, it needs to unpack itself onto the device. This
+may take a few seconds. Once it's unpacked, you'll see the Android version of
+our desktop app:
 
 .. figure:: ../images/android/tutorial-5-launched.png
+   :align: center
+   :width: 30%
    :alt: App from Tutorial 2, fully launched
 
-   App from Tutorial 2, fully launched
+   Demo app fully launched
 
 If you fail to see your app launching, you may need to check your terminal
 where you ran ``briefcase run`` and look for any error messages.
 
+In future, if you want to run on this device without using the menu, you can
+provide the emulator's name to Briefcase, using ``briefcase run android -d
+@beePhone`` to run on the virtual device directly.
+
 Run the app on a physical device
 ================================
 
-If you have an Android phone or tablet you want to run your app on, you can
-connect it to your development workstation, typically using a USB cable.
-Then you can use Briefcase's ``run`` command to target your physical device.
+If you have a physical Android phone or tablet, you can connect it to your
+computer with a USB cable, and then use the Briefcase to target your physical
+device.
 
 If Briefcase can detect the device, it will appear in the ``run`` output. The
-following output shows what you might see if you have a Google Pixel 3a device
-connected.
+first time you use a device for development, it may report itself as an
+"Unknown device (not authorized for development)":
 
-Although Android devices can be given names, the name that appears here
-is typically the
+.. tabs::
+
+  .. group-tab:: macOS
+
+    .. code-block:: bash
+
+      (beeware-venv) $ briefcase run android
+
+      Select device:
+
+        1) Unknown device (not authorized for development) (94ZZY0LNE8)
+        2) @beePhone (emulator)
+        3) Create a new Android emulator
+
+      >
+
+  .. group-tab:: Linux
+
+    .. code-block:: bash
+
+      (beeware-venv) $ briefcase run android
+
+      Select device:
+
+        1) Unknown device (not authorized for development) (94ZZY0LNE8)
+        2) @beePhone (emulator)
+        3) Create a new Android emulator
+
+      >
+
+  .. group-tab:: Windows
+
+    .. code-block:: doscon
+
+      (beeware-venv) C:\...>briefcase run android
+
+      Select device:
+
+        1) Unknown device (not authorized for development) (94ZZY0LNE8)
+        2) @beePhone (emulator)
+        3) Create a new Android emulator
+
+      >
+
+Android requires that devices be placed into "developer" mode before you can
+load an app onto the device. Select the "unknown" device, and you'll be shown
+a link that shows you how to enable developer mode.
+
+Once developer mode has been enabled you can re-run ``briefcase run android``:
 
 .. tabs::
 
@@ -248,7 +309,8 @@ is typically the
       Select device:
 
         1) Pixel 3a (94ZZY0LNE8)
-        2) Create a new Android emulator
+        2) @beePhone (emulator)
+        3) Create a new Android emulator
 
       >
 
@@ -261,7 +323,8 @@ is typically the
       Select device:
 
         1) Pixel 3a (94ZZY0LNE8)
-        2) Create a new Android emulator
+        2) @beePhone (emulator)
+        3) Create a new Android emulator
 
       >
 
@@ -274,23 +337,17 @@ is typically the
       Select device:
 
         1) Pixel 3a (94ZZY0LNE8)
-        2) Create a new Android emulator
+        2) @beePhone (emulator)
+        3) Create a new Android emulator
 
       >
 
-In this example, you could type **1** then press return to run the app on your
-Pixel 3a device. When creating this list, Briefcase queries `adb
-<https://developer.android.com/studio/command-line/adb>`__ for the device's
-serial number (in this case, 94ZZY0LNE8) and model name (in this case,
-Pixel 3a).
+This time, we get the name of the device, and it's serial number (in this case,
+a Pixel 3a).
 
-In the case that your device is detected, but the Android tools cannot install
-apps over the USB connection, Briefcase will print a message explaining how to
-enable USB debugging.
-
-If you wish to skip the prompt in the future, you can pass the ``-d device_name``
-parameter. Upon successfully selecting the device, Briefcase will print the
-specific device name to pass to ``-d``.
+In future, if you want to run on this device without using the menu, you can
+provide the phones's serial number to Briefcase, using ``briefcase run android
+-d 94ZZY0LNE8``. Thi will run on the device directly, wthout prompting.
 
 Next steps
 ==========
