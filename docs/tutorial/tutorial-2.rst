@@ -49,7 +49,7 @@ our application window::
     def main():
         return HelloWorld()
 
-Lets go through this line by line::
+Let's go through this line by line::
 
     import toga
     from toga.style import Pack
@@ -178,7 +178,7 @@ with them; the label will have 5px of padding on its left and right, and no
 padding on the top and bottom. The TextInput is marked as being flexible - that
 is, it will absorb all available space in its layout axis.
 
-The TextInput is assigned as an instance variable of class. This gives us
+The TextInput is assigned as an instance variable of the class. This gives us
 easy access to the widget instance - something that we'll use in a moment.
 
 Next, we define a box to hold these two widgets::
@@ -217,7 +217,7 @@ content::
             self.main_window.show()
 
 The last thing we need to do is define the handler for the button. A handler
-can be any method, generator or asynchronous co-routine; it accepts the widget
+can be any method, generator, or asynchronous co-routine; it accepts the widget
 that generated the event as an argument, and will be invoked whenever the
 button is pressed::
 

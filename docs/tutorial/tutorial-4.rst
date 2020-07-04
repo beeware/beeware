@@ -13,7 +13,7 @@ So - how do you update your installed app when you make code changes?
 Updating application code
 =========================
 
-Our application current prints to the console when you press the button.
+Our application currently prints to the console when you press the button.
 However, GUI applications shouldn't really use the console for output. They
 need to use dialogs to communicate with users.
 
