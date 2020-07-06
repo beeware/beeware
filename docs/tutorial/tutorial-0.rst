@@ -35,6 +35,12 @@ or higher.
     yet available for Python 3.8. We also advise avoiding alphas, betas and
     release candidates unless you *really* know what you're doing.
 
+    .. admonition:: No really - **don't use Python 3.8**
+
+      **Do not use Python 3.8**. If you use Python 3.8, apps will start, but
+      then become unresponsive. The **only** fix at this time is to use a
+      different version of Python.
+
 .. admonition:: Alternative Python distributions
 
     There are lots of different ways of installing Python. You can install
