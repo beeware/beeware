@@ -28,18 +28,10 @@ or higher.
 
   .. group-tab:: Windows
 
-    If you're on Windows, you can get the official installer from
-    `the Python website <https://www.python.org/downloads>`_. You can use any
-    stable version of Python 3.5, 3.6 or 3.7. We would advise *against* using
-    Python 3.8 at this time, as some libraries needed for this tutorial aren't
-    yet available for Python 3.8. We also advise avoiding alphas, betas and
-    release candidates unless you *really* know what you're doing.
-
-    .. admonition:: No really - **don't use Python 3.8**
-
-      **Do not use Python 3.8**. If you use Python 3.8, apps will start, but
-      then become unresponsive. The **only** fix at this time is to use a
-      different version of Python.
+    If you're on Windows, you can get the official installer from `the Python
+    website <https://www.python.org/downloads>`_. You can use any stable
+    version of Python from 3.5 onward (although we'd advise avoiding alphas,
+    betas and release candidates unless you *really* know what you're doing.
 
 .. admonition:: Alternative Python distributions
 
