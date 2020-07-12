@@ -26,6 +26,8 @@ or higher.
     If you're on Linux, you'll install Python using the system package manager
     (``apt`` on Debian/Ubuntu/Mint; ``dnf`` on Fedora, or ``pacman`` on Arch).
 
+    We don't support Raspberry Pi at this time.
+
   .. group-tab:: Windows
 
     If you're on Windows, you can get the official installer from
