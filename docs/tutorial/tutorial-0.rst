@@ -26,6 +26,8 @@ or higher.
     If you're on Linux, you'll install Python using the system package manager
     (``apt`` on Debian/Ubuntu/Mint; ``dnf`` on Fedora, or ``pacman`` on Arch).
 
+    We don't support Raspberry Pi at this time.
+
   .. group-tab:: Windows
 
     If you're on Windows, you can get the official installer from `the Python
@@ -93,6 +95,12 @@ Next, install the additional dependencies needed for your operating system:
     .. code-block:: bash
 
       $ sudo dnf install git pkg-config python3-devel gobject-introspection-devel cairo-devel cairo-gobject-devel pango-devel webkitgtk4
+
+    **Arch, Manjaro**
+
+    .. code-block:: bash
+
+      $ sudo pacman -Syu git pkgconf cairo python-cairo pango gobject-introspection gobject-introspection-runtime python-gobject webkit2gtk
 
     Briefcase also uses a tool called AppImage to build binaries that can be
     used across Linux distributions. However, building AppImage binaries for
