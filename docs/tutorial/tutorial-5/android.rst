@@ -352,6 +352,6 @@ provide the phones's serial number to Briefcase, using ``briefcase run android
 Next steps
 ==========
 
-We've now got an application on our phone! Is there anywhere other way to
+We've now got an application on our phone! Is there another way to
 deploy a BeeWare app? Turn to :doc:`Tutorial 6 <../tutorial-6>` to find
 out...
