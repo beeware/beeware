@@ -271,7 +271,11 @@ or doing other pre-distribution tasks.
       [helloworld] Building DMG...
       ...
       [helloworld] Created macOS/Hello World-0.0.1.dmg
-
+      
+    If you're on Catalina, you might see the warning ``hdiutil: attach: 
+    WARNING: ignoring IDME options (obsolete)`` in the output. You can safely 
+    ignore that warning.
+    
     The ``macOS`` folder will contain a file named ``Hello World-0.0.1.dmg``.
     If you locate this file in the Finder, and double click on its icon,
     you'll mount the DMG, giving you a copy of the Hello World app, and a
