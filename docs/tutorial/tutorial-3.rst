@@ -272,8 +272,9 @@ or doing other pre-distribution tasks.
       ...
       [helloworld] Created macOS/Hello World-0.0.1.dmg
       
-    You might see ``hdiutil: attach: WARNING: ignoring IDME options (obsolete)``
-    in the output. Just ignore that - it's harmless.
+    If you're on Catalina, you might see the warning ``hdiutil: attach: 
+    WARNING: ignoring IDME options (obsolete)`` in the output. You can safely 
+    ignore that warning.
     
     The ``macOS`` folder will contain a file named ``Hello World-0.0.1.dmg``.
     If you locate this file in the Finder, and double click on its icon,
