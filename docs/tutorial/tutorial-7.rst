@@ -11,7 +11,7 @@ this process, with a range of options for how to publish your application.
 Next steps
 ==========
 
-This has been a taster for what you can do with the tools provided by the
+This has been a taste for what you can do with the tools provided by the
 BeeWare project. What you do from here is up to you!
 
 Some places to go from here:
