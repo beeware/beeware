@@ -345,7 +345,7 @@ Once developer mode has been enabled you can re-run ``briefcase run android``:
 This time, we get the name of the device, and it's serial number (in this case,
 a Pixel 3a).
 
-In future, if you want to run on this device without using the menu, you can
+In the future, if you want to run on this device without using the menu, you can
 provide the phones's serial number to Briefcase, using ``briefcase run android
 -d 94ZZY0LNE8``. Thi will run on the device directly, wthout prompting.
 
