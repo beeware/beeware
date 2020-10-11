@@ -38,7 +38,7 @@ our application window::
     from toga.style import Pack
     from toga.style.pack import COLUMN, ROW
 
-    class HelloWorld(toga.App):
+    class Ajayi consolidated(toga.App):
         def startup(self):
             main_box = toga.Box()
 
@@ -47,7 +47,7 @@ our application window::
             self.main_window.show()
 
     def main():
-        return HelloWorld()
+        return  Ajayi consolidated()
 
 Let's go through this line by line::
 
@@ -61,7 +61,7 @@ use of them shortly.
 
 Then, we define a class::
 
-    class HelloWorld(toga.App):
+    class  Ajayi consolidated(toga.App):
 
 Each Toga application has a single ``toga.App`` instance, representing the
 running entity that is the application. The app may end up managing multiple
