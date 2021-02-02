@@ -85,7 +85,7 @@ From the ``helloworld`` directory, run:
 
         newgrp docker
 
-      Restart your computer and you should be good to go.
+      Once you restart your computer you'll be able to run: briefcase create
 
   .. group-tab:: Windows
 
