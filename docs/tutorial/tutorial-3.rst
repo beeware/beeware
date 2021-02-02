@@ -75,7 +75,17 @@ From the ``helloworld`` directory, run:
     .. admonition:: Possible Docker error on Ubuntu
 
       If you encounter a Docker permissions error, you may need to create a 
-      Docker group.
+      Docker group. To do so, follow these steps:
+
+      .. code_block:: bash
+
+        sudo groupadd Docker
+
+        sudo usermod -aG docker $USER
+
+        newgrp docker
+
+      Restart your computer and you should be good to go.
 
   .. group-tab:: Windows
 
