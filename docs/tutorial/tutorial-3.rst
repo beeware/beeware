@@ -72,6 +72,11 @@ From the ``helloworld`` directory, run:
       binaries. This involves downloading a lot of system packages. On future
       runs, this Docker image will be re-used.
 
+    .. admonition:: Possible Docker error on Ubuntu
+
+      If you encounter a Docker permissions error, you may need to create a 
+      Docker group.
+
   .. group-tab:: Windows
 
     .. code-block:: doscon
