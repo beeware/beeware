@@ -77,7 +77,7 @@ From the ``helloworld`` directory, run:
       If you encounter a Docker permissions error, you may need to add your
       user account to the Docker group. To do so, use these commands:
 
-      .. code_block:: bash
+      .. code-block:: bash
 
         sudo groupadd Docker
 
