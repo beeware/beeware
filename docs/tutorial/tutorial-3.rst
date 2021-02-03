@@ -74,8 +74,8 @@ From the ``helloworld`` directory, run:
 
     .. admonition:: Possible Docker error on Ubuntu
 
-      If you encounter a Docker permissions error, you may need to create a 
-      Docker group. To do so, follow these steps:
+      If you encounter a Docker permissions error, you may need to add your
+      user account to the Docker group. To do so, use these commands:
 
       .. code_block:: bash
 
@@ -85,7 +85,7 @@ From the ``helloworld`` directory, run:
 
         newgrp docker
 
-      Once you restart your computer you'll be able to run: briefcase create
+      Restart your computer you'll be able to run: briefcase create
 
   .. group-tab:: Windows
 
