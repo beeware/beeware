@@ -349,6 +349,14 @@ In the future, if you want to run on this device without using the menu, you can
 provide the phones's serial number to Briefcase, using ``briefcase run android
 -d 94ZZY0LNE8``. Thi will run on the device directly, wthout prompting.
 
+.. note::
+
+    When you’re developing for Android, it's useful to be able to view the
+    Android logs. To view the Android logs without the background noise from
+    the rest of the system, you can run ``adb logcat -s MainActivity:* stdio:*
+    Python:*``. Anything your app writes to stdout (e.g., the output of
+    ``print()`` statements) will be visible in the logs.
+
 Next steps
 ==========
 
