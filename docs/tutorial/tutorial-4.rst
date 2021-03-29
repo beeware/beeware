@@ -117,10 +117,7 @@ a name in the text input box, the dialog will say "Hello, ". Let's modify the
 ``say_hello`` function again to handle this edge case::
 
         def say_hello(self, widget):
-            if self.name_input.value:
-                name = self.name_input.value
-            else:
-                name = 'stranger'
+            name = self.name_input.value or 'Stranger'
 
             self.main_window.info_dialog(
                 'Hi there!',
