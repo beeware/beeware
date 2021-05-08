@@ -50,7 +50,7 @@ Once you've got Xcode installed, :doc:`let's build our app for iOS! <iOS>`
 :doc:`Android <android>`
 ------------------------
 
-Android applications be compiled on macOS, Windows or Linux. All the tools
+Android applications can be compiled on macOS, Windows or Linux. All the tools
 required to build for Android will be downloaded the first time you build
 an Android app.
 
