@@ -1,0 +1,131 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013, Russell Keith-Magee
+# This file is distributed under the same license as the BeeWare package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BeeWare 0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-04 13:30+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../index.rst:3
+msgid "BeeWare"
+msgstr "BeeWare"
+
+#: ../../index.rst:6
+msgid "**Languages**:"
+msgstr "**Sprachen**"
+
+#: ../../index.rst:6
+msgid "`German <de/index.html>`__"
+msgstr "Ènglisch <../index.html>`__"
+
+#: ../../index.rst:8
+msgid "**Write Python. Run Anywhere.**"
+msgstr "**Einmal schreiben. Überall verwenden**"
+
+#: ../../index.rst:10
+msgid ""
+"BeeWare is a suite of tools and libraries, each of which works together "
+"to help you write cross platform native GUI Python applications. It "
+"includes:"
+msgstr ""
+"BeeWare ist ein Tool- und Bibliothekenpacket, mit welchem man Cross-Platform "
+"Programme schreiben kann. Es enthält:"
+
+#: ../../index.rst:13
+msgid "`Toga <https://toga.readthedocs.io>`__, a cross platform widget toolkit;"
+msgstr "`Toga <https://toga.readthedocs.io>`__, ein Cross-Platform, Widget Toolkit;"
+
+#: ../../index.rst:14
+msgid ""
+"`Briefcase <https://briefcase.readthedocs.io>`__, a tool for packaging "
+"Python projects as distributable artefacts that can be shipped to end "
+"users;"
+msgstr ""
+"`Briefcase <https://briefcase.readthedocs.io>`__, ein Werkzeug zum verpacken von Python"
+"projekten als vollwertige Installationsdateien;"
+
+#: ../../index.rst:16
+msgid ""
+"`Rubicon ObjC <https://rubicon-objc.readthedocs.io>`__, a library for "
+"working with Objective C libraries on iOS and macOS from within Python "
+"code;"
+msgstr ""
+"`Rubicon ObjC <https://rubicon-objc.readthedocs.io>`__, eine Bibliothek, mit der man mit"
+"Objective C Bibliotheken für iOS and macOS in Python arbeiten kann.;"
+
+#: ../../index.rst:18
+msgid ""
+"`Rubicon Java <https://rubicon-java.readthedocs.io>`__, a library for "
+"working with Java libraries from within Python code;"
+msgstr ""
+"`Rubicon Java <https://rubicon-java.readthedocs.io>`__, eine Bibliothek, mit der man mit"
+"Java libraries in Python arbeiten kann.;"
+
+#: ../../index.rst:20
+msgid ""
+"Pre-compiled builds of Python that can be used on platforms where "
+"official Python installers aren't available."
+msgstr "Python installationen für Platformen, für die es keine offiziellen Python-binaries gibt."
+
+#: ../../index.rst:23
+msgid ""
+"You can use each of the tools in isolation, or you can use all of them as"
+" a suite."
+msgstr "Diese Werkzeuge können alleine oder in Verbindung miteinander verwendet werden."
+
+#: ../../index.rst:26
+msgid ""
+"The full BeeWare suite also includes `software development tools "
+"<https://beeware.org/project/projects/tools/>`__ and `applications "
+"<https://beeware.org/project/projects/applications/>`__ that have been "
+"written using BeeWare's own libraries."
+msgstr ""
+"Die BeeWare suite enthält auch `software development tools"
+"<https://beeware.org/project/projects/tools/>`__ und `apps"
+"<https://beeware.org/project/projects/applications/>`__ welche mit der BeeWare"
+"suite geschrieben wurden."
+
+#: ../../index.rst:31
+msgid ""
+"The BeeWare suite is available on macOS, Windows, Linux (using GTK); on "
+"mobile platforms such as Android and iOS; and for the Web. Support for "
+"other platforms (such as set top boxes and watches) is on our long term "
+"roadmap."
+msgstr ""
+"Beeware unterstützt macOS, Windows, Linux(unter verwendung von GTK); Android"
+"und iOS Handys; und platforms such as Android and iOS; und Django(Internet)."
+"Weitere Platformen, wie Set-Top-Boxen und Smartwatches sind in Planung."
+
+#: ../../index.rst:35
+msgid "Platform support"
+msgstr "Platform support"
+
+#: ../../index.rst:37
+msgid ""
+"The BeeWare suite is a work in progress. Some tools and libraries are "
+"more mature than others, and some platforms have better support than "
+"others. In particular, Web support should be considered experimental "
+"only."
+msgstr ""
+"BeeWare ist work in progress. Manche Werkzeuge und Bibliotheken sind weiter,"
+"und manche Platformen funktionieren schon besser. Web und Android noch in Erprobung."
+
+#: ../../index.rst:41
+msgid ""
+"Ready to try BeeWare for yourself? :doc:`Let's build a cross platform "
+"application in Python! <tutorial/tutorial-0>`"
+msgstr ""
+"Sie wollen BeeWare ausprobieren? :doc:`Erstellen wir eine Cross-Platform-App"
+"in Python! <tutorial/tutorial-0>`"
+
