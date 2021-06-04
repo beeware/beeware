@@ -2,6 +2,9 @@
 BeeWare
 =======
 
+**Languages**:
+  `German <de/index.html>`__
+
 **Write Python. Run Anywhere.**
 
 BeeWare is a suite of tools and libraries, each of which works together to help
