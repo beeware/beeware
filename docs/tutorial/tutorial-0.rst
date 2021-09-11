@@ -76,19 +76,19 @@ Next, install the additional dependencies needed for your operating system:
     To support local development, you'll need to install some system packages.
     The list of packages required varies depending on your distribution:
 
-    **Ubuntu 16.04, Debian 9**
+    **Ubuntu 16.04 / Debian 9**
 
     .. code-block:: bash
 
       $ sudo apt-get update
-      $ sudo apt-get install git python3-dev python3-venv libgirepository1.0-dev libcairo2-dev libpango1.0-dev libwebkitgtk-3.0-0 gir1.2-webkit-3.0
+      $ sudo apt-get install git python3-dev python3-venv python3-gi python3-gi-cairo libgirepository1.0-dev libcairo2-dev libpango1.0-dev libwebkitgtk-3.0-0 gir1.2-webkit2-3.0
 
-    **Ubuntu 18.04, Debian 10**
+    **Ubuntu 18.04, 20.04 / Debian 10, 11**
 
     .. code-block:: bash
 
       $ sudo apt-get update
-      $ sudo apt-get install git python3-dev python3-venv libgirepository1.0-dev libcairo2-dev libpango1.0-dev libwebkit2gtk-4.0-37 gir1.2-webkit2-4.0
+      $ sudo apt-get install git python3-dev python3-venv python3-gi python3-gi-cairo libgirepository1.0-dev libcairo2-dev libpango1.0-dev libwebkit2gtk-4.0-37 gir1.2-webkit2-4.0
 
     **Fedora**
 
@@ -111,12 +111,12 @@ Next, install the additional dependencies needed for your operating system:
     Official installers for `Docker Engine
     <https://docs.docker.com/engine/install/#server>`__ are availble for a
     range of Unix distributions. Follow the instructions for your platform.
-    Once you've installed Docker, you should be able to start an Ubuntu 16.04
+    Once you've installed Docker, you should be able to start an Ubuntu 18.04
     container:
 
     .. code-block:: bash
 
-      $ docker run -it ubuntu:16.04
+      $ docker run -it ubuntu:18.04
 
     This should show you a Unix prompt (something like `root@84444e31cff9:/#`)
     inside your Docker container. Type Ctrl-D to exit Docker and return to your
