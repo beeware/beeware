@@ -100,7 +100,7 @@ just happened? Briefcase has done the following:
    for every application on the same platform, except for the name of the
    actual application being constructed - so Briefcase provides an application
    template for each platform it supports. This step rolls out the template,
-   subsituting the name of your application, bundle ID, and other properties of
+   substituting the name of your application, bundle ID, and other properties of
    your configuration file as required to support the platform you're building
    on.
 
@@ -276,7 +276,7 @@ or doing other pre-distribution tasks.
     If you locate this file in the Finder, and double click on its icon,
     you'll mount the DMG, giving you a copy of the Hello World app, and a
     link to your Applications folder for easy installation. Drag the app file
-    into Application, and you've installed your application. Send the DMG file
+    into Applications, and you've installed your application. Send the DMG file
     to a friend, and they should be able to do the same.
 
     In this example, we've used the ``--no-sign`` option - that is, we've
