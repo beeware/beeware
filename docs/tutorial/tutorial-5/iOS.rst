@@ -99,6 +99,7 @@ see the simulator start, and eventually open your iOS application:
 Next steps
 ==========
 
-We've now got an application on our phone! Is there anywhere other way to
-deploy a BeeWare app? Turn to :doc:`Tutorial 6 <../tutorial-6>` to find
-out...
+We've now got an application on our phone! However, this app is fairly simple,
+and doesn't involve any third-party libraries. Can we include libraries from the
+Python Package Index (PyPI) in our app? Turn to :doc:`Tutorial 6
+<../tutorial-6>` to find out...
