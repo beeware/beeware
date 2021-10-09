@@ -322,7 +322,7 @@ Updating dependencies
 
 In the root directory of your app, there is a file named ``pyproject.toml``.
 This file contains all the app configuration details that you provided when
-you originally ran the ``briefcase new`` wizard.
+you originally ran ``briefcase new``.
 
 ``pyproject.toml`` is broken up into sections; one of the sections describes
 the settings for your app::
