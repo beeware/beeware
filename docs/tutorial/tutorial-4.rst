@@ -22,14 +22,33 @@ Modify the `say_hello` callback so it looks like this::
 
     def say_hello(self, widget):
         self.main_window.info_dialog(
+            "Hello, {}".format(self.name_input.value),
             'Hi there!',
-            "Hello, {}".format(self.name_input.value)
         )
 
 This directs Toga to open a modal dialog box when the button is pressed.
 
-If you run ``briefcase dev`` and press the button, you'll see the new dialog
-box. However, if you run ``briefcase run``, the dialog box won't appear.
+If you run ``briefcase dev``, enter a name, and press the button, you'll see the
+new dialog box:
+
+.. tabs::
+
+  .. group-tab:: macOS
+
+    .. image:: images/macOS/tutorial-4.png
+       :alt: Hello World Tutorial 4 dialog, on macOS
+
+  .. group-tab:: Linux
+
+    .. image:: images/linux/tutorial-4.png
+       :alt: Hello World Tutorial 4 dialog, on Linux
+
+  .. group-tab:: Windows
+
+    .. image:: images/windows/tutorial-4.png
+       :alt: Hello World Tutorial 4 dialog, on Windows
+
+However, if you run ``briefcase run``, the dialog box won't appear.
 
 Why is this? Well, ``briefcase dev`` operates by running your code in place -
 it tries to produce as realistic runtime environment for your code as possible,
@@ -89,20 +108,6 @@ package`` to repackage the application for distribution.
 tutorial we recommend running ``briefcase package`` with the ``--no-sign`` flag
 to avoid the complexity of setting up a code signing identity and keep the
 tutorial as simple as possible.)
-
-Updating dependencies and icons
-===============================
-
-This only updates the application code, though - what if your dependencies have
-changed, or you have new application resources, like a new splash screen or
-application icon)? In this situation, the ``update`` command has some options
-you can use:
-
-* ``briefcase update -d`` (or ``briefcase update --update-dependencies``)
-  will re-install your application dependecies.
-
-* ``briefcase update -r`` (or ``briefcase update --update-resources``)
-  will re-install your application resources.
 
 Update and run in one step
 ==========================
