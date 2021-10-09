@@ -40,63 +40,6 @@ with the ``beeware-venv`` virtual environment activated, and run:
 
       (beeware-venv)C:\...>python -m pip install briefcase
 
-    .. admonition:: Possible errors during installation
-
-        If you're using a more recent version of Python (3.8+), installing the
-        ``beeware`` package may raise an error. This will usually manifest as:
-
-        .. code-block:: doscon
-
-                Traceback (most recent call last):
-                  File "<string>", line 1, in <module>
-                  File "C:\...\Local\Temp\pip-install-ytuu_37_\pythonnet\setup.py", line 18, in <module>
-                    from wheel import bdist_wheel
-                ModuleNotFoundError: No module named 'wheel'
-                ----------------------------------------
-            ERROR: Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.
-
-        Depending on the specifics of your environment, it might also manifest
-        as a report that includes the following:
-
-        .. code-block:: doscon
-
-              Building wheel for pythonnet (setup.py) ... error
-              ERROR: Command errored out with exit status 1:
-              ...
-                File "c:\...\Local\Programs\Python\Python38\lib\subprocess.py", line 364, in check_call
-                  raise CalledProcessError(retcode, cmd)
-              subprocess.CalledProcessError: Command '['...\\python.exe', 'tools\\geninterop\\geninterop.py', 'src\\runtime\\interop38.cs']' returned non-zero exit status 1.
-              ----------------------------------------
-              ERROR: Failed building wheel for pythonnet
-              Running setup.py clean for pythonnet
-            Failed to build pythonnet
-
-        This is caused because the ``beeware`` package has dependencies, and on
-        Windows, one of those dependencies is `Python for .NET
-        <http://pythonnet.github.io/>`__. Python for .NET isn't a pure Python
-        package - it contains C# modules that need to be compiled. The Python
-        for .NET team publishes pre-compiled versions of these modules, but
-        they sometimes lag behind in support of more recent versions of Python.
-
-        If you get this error, you have three options:
-
-         1. Use an older version of Python. Check the `pythonnet entry on
-            PyPI <https://pypi.org/project/pythonnet/>`__ to see the versions
-            of Python currently supported by Python for .NET.
-
-         2. Configure your environment to support compiling Python for .NET.
-            This is a moderately complex process, and will require you to have
-            Visual Studio. See `the Python for .NET wiki
-            <https://github.com/pythonnet/pythonnet/wiki/Installation>`__ for
-            details.
-
-         3. Install an unofficial compiled wheel. The Python for .NET team
-            suggests `this collection of wheels
-            <https://www.lfd.uci.edu/~gohlke/pythonlibs/#pythonnet>`__ as a
-            possible source. The `.whl` file can be installed with
-            ``python -m pip install somefile.whl``; you should then be able to
-            re-run ``python -m pip install --pre beeware``.
-
 One of the BeeWare tools is **Briefcase**. Briefcase can be used to package
 your application for distribution to end users - but it can also be used to
 bootstrap a new project.
@@ -235,6 +178,71 @@ the project in Developer (or ``dev``) mode:
       [hello-world] Installing dependencies...
       ...
       [helloworld] Starting in dev mode...
+
+    .. admonition:: Possible errors during installation
+
+        If you're using a more recent version of Python (3.9+), this step may
+        raise an error when installing dependencies. This will usually manifest
+        as:
+
+        .. code-block:: doscon
+
+                Traceback (most recent call last):
+                  File "<string>", line 1, in <module>
+                  File "C:\...\Local\Temp\pip-install-ytuu_37_\pythonnet\setup.py", line 18, in <module>
+                    from wheel import bdist_wheel
+                ModuleNotFoundError: No module named 'wheel'
+                ----------------------------------------
+            ERROR: Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.
+
+        Depending on the specifics of your environment, it might also manifest
+        as a report that includes the following:
+
+        .. code-block:: doscon
+
+              Building wheel for pythonnet (setup.py) ... error
+              ERROR: Command errored out with exit status 1:
+              ...
+                File "c:\...\Local\Programs\Python\Python38\lib\subprocess.py", line 364, in check_call
+                  raise CalledProcessError(retcode, cmd)
+              subprocess.CalledProcessError: Command '['...\\python.exe', 'tools\\geninterop\\geninterop.py', 'src\\runtime\\interop38.cs']' returned non-zero exit status 1.
+              ----------------------------------------
+              ERROR: Failed building wheel for pythonnet
+              Running setup.py clean for pythonnet
+            Failed to build pythonnet
+
+        This is caused because the the tutorial app depends on the `Python for
+        .NET <http://pythonnet.github.io/>`__ package to access system libraries
+        on Windows. Python for .NET isn't a pure Python package - it contains C#
+        modules that need to be compiled. The Python for .NET team publishes
+        pre-compiled versions of these modules, but they sometimes lag behind in
+        support of more recent versions of Python.
+
+        If you get this error, you have four options:
+
+         1. Use an older version of Python. Check the `pythonnet entry on
+            PyPI <https://pypi.org/project/pythonnet/>`__ to see the versions
+            of Python currently supported by Python for .NET.
+
+         2. Install a pre-release version of Python for .NET. The 3.0 release,
+            which is currently in alpha testing, is a pure Python package, and
+            only requires that the `.NET 5 SDK
+            <https://dotnet.microsoft.com/download>`__ is installed on your
+            computer. Unfortunately, this option isn't well documented;
+            consult Python for .NET support channels for details.
+
+         3. Configure your environment to support compiling Python for .NET.
+            This is a moderately complex process, and will require you to have
+            Visual Studio. See `the Python for .NET wiki
+            <https://github.com/pythonnet/pythonnet/wiki/Installation>`__ for
+            details.
+
+         4. Install an unofficial compiled wheel. The Python for .NET team
+            suggests `this collection of wheels
+            <https://www.lfd.uci.edu/~gohlke/pythonlibs/#pythonnet>`__ as a
+            possible source. The `.whl` file can be installed with
+            ``python -m pip install somefile.whl``; you should then be able to
+            re-run ``python -m pip install --pre beeware``.
 
 This should open a GUI window:
 

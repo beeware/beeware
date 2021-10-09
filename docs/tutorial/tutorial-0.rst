@@ -8,7 +8,7 @@ all the prerequisites for running BeeWare.
 Install Python
 ==============
 
-The first thing we'll need is a working Python interpreter, running Python 3.5
+The first thing we'll need is a working Python interpreter, running Python 3.6
 or higher.
 
 .. tabs::
@@ -17,7 +17,7 @@ or higher.
 
     If you're on macOS, you can get the official installer from
     `the Python website <https://www.python.org/downloads>`_. You can use any
-    stable version of Python from 3.5 onward (although we'd advise avoiding
+    stable version of Python from 3.6 onward (although we'd advise avoiding
     alphas, betas, and release candidates unless you *really* know what you're
     doing).
 
@@ -31,9 +31,10 @@ or higher.
   .. group-tab:: Windows
 
     If you're on Windows, you can get the official installer from `the Python
-    website <https://www.python.org/downloads>`_. You can use any stable
-    version of Python from 3.5 onward (although we'd advise avoiding alphas,
-    betas and release candidates unless you *really* know what you're doing.
+    website <https://www.python.org/downloads>`_. You can Python 3.6, 3.7 or
+    3.8; while it is *possible* to use more recent versions of Python, there's
+    one dependency that will be a lot harder to use on Python 3.9 or later -
+    so we'd advise against it.
 
 .. admonition:: Alternative Python distributions
 
@@ -128,11 +129,6 @@ Next, install the additional dependencies needed for your operating system:
 
     * **Git**, a version control system. You can download Git from from
       `git-scm.org <https://git-scm.com/download/>`__.
-
-    * **WiX Toolset**, a set of utilities for building Windows installers. An
-      installer can be obtained from `the WiX Toolset website
-      <https://wixtoolset.org/releases/>`__.
-
 
 Set up a virtual environment
 ============================
