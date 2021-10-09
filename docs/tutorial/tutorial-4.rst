@@ -22,7 +22,7 @@ Modify the `say_hello` callback so it looks like this::
 
     def say_hello(self, widget):
         self.main_window.info_dialog(
-            "Hello, {}".format(self.name_input.value)
+            "Hello, {}".format(self.name_input.value),
             'Hi there!',
         )
 
