@@ -6,7 +6,7 @@ So far, the app we've built has only used our own code, plus the code provided
 by BeeWare. However, in a real-world app, you'll likely want to use a
 third-party library, downloaded from the Python Package Index (PyPI).
 
-Lets modify our app to include a third-party library.
+Let's modify our app to include a third-party library.
 
 Accessing an API
 ================
