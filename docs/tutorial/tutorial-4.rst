@@ -22,8 +22,8 @@ Modify the `say_hello` callback so it looks like this::
 
     def say_hello(self, widget):
         self.main_window.info_dialog(
-            "Hello, {}".format(self.name_input.value),
-            'Hi there!',
+            'Hello, {}'.format(self.name_input.value),
+            'Hi there!'
         )
 
 This directs Toga to open a modal dialog box when the button is pressed.
@@ -128,8 +128,8 @@ a name in the text input box, the dialog will say "Hello, ". Let's modify the
                 name = 'stranger'
 
             self.main_window.info_dialog(
-                'Hi there!',
-                "Hello, {}".format(name)
+                'Hello, {}'.format(name),
+                'Hi there!'
             )
 
 Run your app in development mode (with ``briefcase dev``) to confirm that the
