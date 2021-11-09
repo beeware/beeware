@@ -10,6 +10,5 @@ the web! Using the same API, you can deploy your application as a web site.
 Next steps
 ==========
 
-We've now got an application on our phone! Is there anywhere other way to
-deploy a BeeWare app? Turn to :doc:`Tutorial 9 <tutorial-9>` to find
-out...
+We've now got the application on the web! How about publishing your app?
+Turn to :doc:`Tutorial 10 <tutorial-10>` to find out...
