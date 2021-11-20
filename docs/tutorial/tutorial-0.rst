@@ -127,10 +127,6 @@ Next, install the additional dependencies needed for your operating system:
     * **Git**, a version control system. You can download Git from from
       `git-scm.org <https://git-scm.com/download/>`__.
 
-    * **.NET SDK**, the tools that let you talk to the Windows system libraries.
-      You can download the .NET SDK from ` Microsoft's website
-      <https://dotnet.microsoft.com/download>`__
-
     After installing these tools, you should ensure you restart any terminal
     sessions. Windows will only expose newly installed tools terminals started
     *after* the install has completed.
