@@ -31,10 +31,7 @@ or higher.
   .. group-tab:: Windows
 
     If you're on Windows, you can get the official installer from `the Python
-    website <https://www.python.org/downloads>`_. You can Python 3.6, 3.7 or
-    3.8; while it is *possible* to use more recent versions of Python, there's
-    one dependency that will be a lot harder to use on Python 3.9 or later -
-    so we'd advise against it.
+    website <https://www.python.org/downloads>`_.
 
 .. admonition:: Alternative Python distributions
 
@@ -129,6 +126,14 @@ Next, install the additional dependencies needed for your operating system:
 
     * **Git**, a version control system. You can download Git from from
       `git-scm.org <https://git-scm.com/download/>`__.
+
+    * **.NET SDK**, the tools that let you talk to the Windows system libraries.
+      You can download the .NET SDK from ` Microsoft's website
+      <https://dotnet.microsoft.com/download>`__
+
+    After installing these tools, you should ensure you restart any terminal
+    sessions. Windows will only expose newly installed tools terminals started
+    *after* the install has completed.
 
 Set up a virtual environment
 ============================
