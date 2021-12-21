@@ -47,7 +47,9 @@ Then modify the ``say_hello()`` callback so it looks like this::
         else:
             name = 'stranger'
 
-        response = httpx.get("https://jsonplaceholder.typicode.com/posts/42")
+        with httpx.Client() as client:
+            response = client.get("https://jsonplaceholder.typicode.com/posts/42")
+
         payload = response.json()
 
         self.main_window.info_dialog(
