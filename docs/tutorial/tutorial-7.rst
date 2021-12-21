@@ -42,10 +42,10 @@ of the window that is currently visible.
 The important detail to notice: while an application is processing an event, *it
 can't redraw*, and *it can't process other events*.
 
-This means any user logic contained in an event handlers needs to complete
-quickly. Any delay in completing the event handler will be observed by
-the user as a slowdown (or stop) in GUI updates. If this delay is long enough,
-your operating system may report this as a problem - the macOS "Beachball" and
+This means any user logic contained in an event handler needs to complete
+quickly. Any delay in completing the event handler will be observed by the user
+as a slowdown (or stop) in GUI updates. If this delay is long enough, your
+operating system may report this as a problem - the macOS "Beachball" and
 Windows "Hourglass" are the operating system telling you that your app is taking
 too long in an event handler.
 
@@ -76,11 +76,13 @@ being asynchronous. They also need to internally declare when an opportunity
 exists to change context to another co-routine.
 
 In Python, asynchronous programming is implemented using the ``async`` and
-``await`` keywords, and the ``asyncio`` module in the standard library. The
-``async`` keyword allows us to declare that a function is an asynchronous
-co-routine. The ``await`` keyword provides a way to declare when an opportunity
-exists to change context to another co-routine. The ``asyncio`` module provides
-some other useful tools and primitives for asynchronous coding.
+``await`` keywords, and the `asyncio
+<https://docs.python.org/3/library/asyncio.html>`__ module in the standard
+library. The ``async`` keyword allows us to declare that a function is an
+asynchronous co-routine. The ``await`` keyword provides a way to declare when an
+opportunity exists to change context to another co-routine. The `asyncio
+<https://docs.python.org/3/library/asyncio.html>`__ module provides some other
+useful tools and primitives for asynchronous coding.
 
 Making the tutorial Asynchronous
 ================================
@@ -121,7 +123,9 @@ There are only 4 changes in this code from the previous version:
    while we are waiting for the response from the network, the app can release control
    to the event loop.
 
-Toga handles everything else that is needed to make the app fully asynchronous.
+Toga allows you to use regular methods or asynchronous co-routines as handlers;
+Toga manages everything behind the scenes to make sure the handler is invoked
+or awaited as required.
 
 If you save these changes and re-run the app (either with ``briefcase dev`` in
 development mode, or by updating and re-running the packaged app), there won't
