@@ -8,30 +8,36 @@ all the prerequisites for running BeeWare.
 Install Python
 ==============
 
-The first thing we'll need is a working Python interpreter, running Python 3.6
-or higher.
+The first thing we'll need is a working Python interpreter, running Python 3.7
+or newer.
 
 .. tabs::
 
   .. group-tab:: macOS
 
-    If you're on macOS, you can get the official installer from
-    `the Python website <https://www.python.org/downloads>`_. You can use any
-    stable version of Python from 3.6 onward (although we'd advise avoiding
-    alphas, betas, and release candidates unless you *really* know what you're
-    doing).
+    If you're on macOS, you can get the official installer from `the Python
+    website <https://www.python.org/downloads>`_. You can use any stable version
+    of Python from 3.7 onward. We'd advise avoiding alphas, betas, and release
+    candidates unless you *really* know what you're doing.
 
   .. group-tab:: Linux
 
     If you're on Linux, you'll install Python using the system package manager
     (``apt`` on Debian/Ubuntu/Mint; ``dnf`` on Fedora, or ``pacman`` on Arch).
 
+    You should ensure that the system Python is Python 3.7 or newer; if it isn't
+    (e.g., Ubuntu 18.04 ships with Python 3.6), you may need to use an alternate
+    source for Python (e.g., the `deadsnakes PPA
+    <https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa>`__ on Ubuntu).
+
     We don't support Raspberry Pi at this time.
 
   .. group-tab:: Windows
 
     If you're on Windows, you can get the official installer from `the Python
-    website <https://www.python.org/downloads>`_.
+    website <https://www.python.org/downloads>`_. You can use any stable version
+    of Python from 3.7 onward. We'd advise avoiding alphas, betas and release
+    candidates unless you *really* know what you're doing.
 
 .. admonition:: Alternative Python distributions
 
