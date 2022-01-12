@@ -53,7 +53,7 @@ Then modify the ``say_hello()`` callback so it looks like this::
         payload = response.json()
 
         self.main_window.info_dialog(
-            "Hello, {}".format(self.name_input.value),
+            "Hello, {}".format(name),
             payload["body"],
         )
 
