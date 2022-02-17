@@ -71,8 +71,8 @@ a way to describe a program that allows the interpreter to run multiple
 functions a the same time, sharing resources between all the concurrently running
 functions.
 
-Asynchronous functions (known as *co-routines*) need to explicitly declared as
-being asynchronous. They also need to internally declare when an opportunity
+Asynchronous functions (known as *co-routines*) need to be explicitly declared
+as being asynchronous. They also need to internally declare when an opportunity
 exists to change context to another co-routine.
 
 In Python, asynchronous programming is implemented using the ``async`` and
