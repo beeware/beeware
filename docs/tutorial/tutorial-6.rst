@@ -226,8 +226,6 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
-
     Update the code in the packaged app:
 
     .. code-block:: bash
@@ -272,9 +270,9 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
 
   .. group-tab:: Windows
 
-    .. code-block:: doscon
-
     Update the code in the packaged app:
+    
+    .. code-block:: doscon
 
       (beeware-venv)C:\...>briefcase update
 
@@ -285,7 +283,7 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
 
     Rebuild the app:
 
-    .. code-block:: bash
+    .. code-block:: doscon
 
       (beeware-venv)C:\...>briefcase build
 
@@ -293,7 +291,7 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
 
     And finally, run the app:
 
-    .. code-block:: bash
+    .. code-block:: doscon
 
       (beeware-venv)C:\...>briefcase run
 
