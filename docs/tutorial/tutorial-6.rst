@@ -275,6 +275,7 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
     .. code-block:: doscon
 
     Update the code in the packaged app:
+    .. code-block:: bash
 
       (beeware-venv)C:\...>briefcase update
 
