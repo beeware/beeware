@@ -89,7 +89,7 @@ From the ``helloworld`` directory, run:
       ...
       [helloworld] Installing application resources...
       ...
-      [helloworld] Created windows\Hello World
+      [helloworld] Created windows\msi\Hello World
 
 You've probably just seen pages of content go past in your terminal... so what
 just happened? Briefcase has done the following:
@@ -311,7 +311,7 @@ or doing other pre-distribution tasks.
 
       [helloworld] Building MSI...
       ...
-      [helloworld] Created windows\Hello_World-0.0.1.msi
+      [helloworld] Packaged windows\Hello_World-0.0.1.msi
 
     Once this step completes, the ``windows`` folder will contain a file named
     ``Hello_World-0.0.1.msi``. If you double click on this installer to run it,
