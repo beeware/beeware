@@ -101,7 +101,7 @@ If Briefcase can't find the scaffolded template, it will automatically invoke
 `create` to generate a fresh scaffold.
 
 Now that we've updated the installer code, we can then run ``briefcase build``
-to re-compiled app, ``briefcase run`` to run the updated app, and ``briefcase
+to re-compile the app, ``briefcase run`` to run the updated app, and ``briefcase
 package`` to repackage the application for distribution.
 
 (macOS users, remember that as noted in :doc:`Tutorial 3 <tutorial-3>`, for the
