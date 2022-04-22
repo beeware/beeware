@@ -3,7 +3,7 @@ on:
   pull_request:
   push:
     branches:
-      master
+      main
 
 jobs:
   beefore:
@@ -15,10 +15,10 @@ jobs:
         task: ['docs', 'package']
     steps:
     - uses: actions/checkout@v1
-    - name: Set up Python 3.8
+    - name: Set up Python 3.10
       uses: actions/setup-python@v1
       with:
-        python-version: 3.8
+        python-version: "3.10"
     - name: Install dependencies
       run: |
         pip install --upgrade pip

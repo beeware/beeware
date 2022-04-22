@@ -219,6 +219,15 @@ The app will then start. You'll see a splash screen while the app starts up:
 
    App splash screen
 
+.. admonition:: The emulator didn't start!
+
+    The Android emulator is a complex piece of software that relies on a number
+    of hardware and operating system features - features that may not be
+    available or enabled on older machines. If you experience any difficulties
+    starting the Android emulator, consult the `Requirements and recommendations
+    <https://developer.android.com/studio/run/emulator#requirements>`__ section
+    of the Android developer documentation.
+
 The first time the app starts, it needs to unpack itself onto the device. This
 may take a few seconds. Once it's unpacked, you'll see the Android version of
 our desktop app:
@@ -244,59 +253,17 @@ If you have a physical Android phone or tablet, you can connect it to your
 computer with a USB cable, and then use the Briefcase to target your physical
 device.
 
-If Briefcase can detect the device, it will appear in the ``run`` output. The
-first time you use a device for development, it may report itself as an
-"Unknown device (not authorized for development)":
+Android requires that you prepare your device before it can be used for
+development. You will need to make 2 changes to the options on your device:
 
-.. tabs::
+ * Enable developer options
+ * Enable USB debugging
 
-  .. group-tab:: macOS
+Details on how to make these changes can be found `in the Android developer
+documentation <https://developer.android.com/studio/debug/dev-options#enable>`__.
 
-    .. code-block:: bash
-
-      (beeware-venv) $ briefcase run android
-
-      Select device:
-
-        1) Unknown device (not authorized for development) (94ZZY0LNE8)
-        2) @beePhone (emulator)
-        3) Create a new Android emulator
-
-      >
-
-  .. group-tab:: Linux
-
-    .. code-block:: bash
-
-      (beeware-venv) $ briefcase run android
-
-      Select device:
-
-        1) Unknown device (not authorized for development) (94ZZY0LNE8)
-        2) @beePhone (emulator)
-        3) Create a new Android emulator
-
-      >
-
-  .. group-tab:: Windows
-
-    .. code-block:: doscon
-
-      (beeware-venv) C:\...>briefcase run android
-
-      Select device:
-
-        1) Unknown device (not authorized for development) (94ZZY0LNE8)
-        2) @beePhone (emulator)
-        3) Create a new Android emulator
-
-      >
-
-Android requires that devices be placed into "developer" mode before you can
-load an app onto the device. Select the "unknown" device, and you'll be shown
-a link that shows you how to enable developer mode.
-
-Once developer mode has been enabled you can re-run ``briefcase run android``:
+Once these steps have been completed, your device should appear in the list of
+available devices when you run ``briefcase run android``.
 
 .. tabs::
 
@@ -342,20 +309,22 @@ Once developer mode has been enabled you can re-run ``briefcase run android``:
 
       >
 
-This time, we get the name of the device, and it's serial number (in this case,
-a Pixel 3a).
+Here we can see a new physical device with it's serial number on the deployment
+list - in this case, a Pixel 3a. In the future, if you want to run on this
+device without using the menu, you can provide the phones's serial number to
+Briefcase (in this case, ``briefcase run android -d 94ZZY0LNE8``). This will run
+on the device directly, wthout prompting.
 
-In the future, if you want to run on this device without using the menu, you can
-provide the phones's serial number to Briefcase, using ``briefcase run android
--d 94ZZY0LNE8``. Thi will run on the device directly, wthout prompting.
+.. admonition:: My device doesn't appear!
 
-.. note::
+    If your device doesn't appear on this list at all, either you haven't enabled
+    USB debugging, (or the device isn't plugged in!).
 
-    When you’re developing for Android, it's useful to be able to view the
-    Android logs. To view the Android logs without the background noise from
-    the rest of the system, you can run ``adb logcat -s MainActivity:* stdio:*
-    Python:*``. Anything your app writes to stdout (e.g., the output of
-    ``print()`` statements) will be visible in the logs.
+    If your device appears, but is listed as "Unknown device (not authorized for
+    development)", developer mode hasn't been correctly enabled. Re-run `the
+    steps to enable developer options
+    <https://developer.android.com/studio/debug/dev-options#enable>`__, and
+    re-run ``briefcase run android``.
 
 Next steps
 ==========
