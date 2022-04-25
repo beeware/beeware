@@ -192,7 +192,7 @@ target platform.
 
       (beeware-venv) C:\...>briefcase build
 
-      [helloworld] Built windows\Hello World
+      [helloworld] Built windows\msi\Hello World
 
     On Windows, this step does nothing. The distributed "binary" on windows is
     a folder with a known entry point; the installer (when it is eventually
