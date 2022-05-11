@@ -144,7 +144,7 @@ looks like this::
             self.main_window.show()
 
         def say_hello(self, widget):
-            print("Hello", self.name_input.value)
+            print("Hello,", self.name_input.value)
 
 .. note::
 
@@ -222,7 +222,7 @@ that generated the event as an argument, and will be invoked whenever the
 button is pressed::
 
         def say_hello(self, widget):
-            print("Hello, ", self.name_input.value)
+            print("Hello,", self.name_input.value)
 
 The body of the method is a simple print statement - however, it will
 interrogate the current value of the name input, and use that content as the
