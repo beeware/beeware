@@ -111,7 +111,7 @@ just happened? Briefcase has done the following:
 2. It **downloaded and installed a support package**. The packaging approach
    taken by briefcase is best described as "the simplest thing that could
    possibly work" - it ships a complete, isolated Python interpreter as part of
-   every application it builds. This is slightly space innefficient - if you
+   every application it builds. This is slightly space inefficient - if you
    have 5 applications packaged with Briefcase, you'll have 5 copies of the
    Python interpreter. However, this approach guarantees that every application
    is completely independent, using a specific version of Python that is known
