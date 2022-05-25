@@ -84,7 +84,7 @@ If you have multiple iPhone 11 simulators, briefcase will pick the highest
 iOS version; if you want to pick a particular iOS version, you tell it to use
 that specific version::
 
-    $ briefcase run iOS -d "iPhone 11::13.3"
+    $ briefcase run iOS -d "iPhone 11::iOS 13.3"
 
 Or, you can name a specific device UDID::
 
