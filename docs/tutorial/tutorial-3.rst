@@ -243,13 +243,19 @@ You'll notice that the console output we saw earlier won't be visible anymore.
 This is because we are now running a standalone, packaged app that has no 
 (visible) console to which it can output. 
 
-You might also notice some small differences in the way your application looks 
+You might notice some small differences in the way your application looks
 when it's running. For example, icons and the name displayed by the operating
 system may be slightly different to those you saw when running under developer
 mode. This is also because you're using the packaged application, not just
 running Python code. From the operating system's perspective, you're now
 running "an app", not "a Python program", and this is reflected in how the
-application appears. 
+application appears.
+
+You'll also notice some small differences with the console output we saw earlier
+as it is now extracted from the system or device logs. The logging process will
+not be terminated when we close the application. Please type CTRL-C to stop the
+logging process.
+
 
 Building your installer
 =======================
