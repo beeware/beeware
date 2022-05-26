@@ -251,11 +251,14 @@ running Python code. From the operating system's perspective, you're now
 running "an app", not "a Python program", and this is reflected in how the
 application appears.
 
-You'll also notice some small differences with the console output we saw earlier
-as it is now extracted from the system or device logs. The logging process will
-not be terminated when we close the application. Please type CTRL-C to stop the
-logging process.
-
+If you're on macOS, you'll also notice some small differences in the console
+output we saw earlier. This is because the packaged app writes its console
+output to the system log. When you run the packaged app, you're seeing a
+filtered version of the system log, not raw console output; and as a result,
+there's more system log details (like timestamps and the message source) being 
+displayed. When you close the application, the system log will continue to run, 
+even though there are no more logs to display. You can stop the display of the
+system log by typing Ctrl-C.
 
 Building your installer
 =======================
