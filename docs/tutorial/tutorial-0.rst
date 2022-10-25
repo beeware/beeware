@@ -35,8 +35,11 @@ The first thing we'll need is a working Python interpreter.
 
     If you're on Windows, you can get the official installer from `the Python
     website <https://www.python.org/downloads>`_. You can use any stable version
-    of Python from 3.8 onward. We'd advise avoiding alphas, betas and release
-    candidates unless you *really* know what you're doing.
+    of Python from 3.8-3.10. Python 3.11 isn't currently supported, as
+    `Python.net doesn't currently support Python 3.11
+    <https://github.com/pythonnet/pythonnet/pull/1955>`__. We'd advise avoiding
+    alphas, betas and release candidates unless you *really* know what you're
+    doing.
 
 .. admonition:: Alternative Python distributions
 
