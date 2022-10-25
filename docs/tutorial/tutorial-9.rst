@@ -1,14 +1,18 @@
-===============================
-Tutorial 9 - Put it on the web!
-===============================
+===================================
+Tutorial 9 - Make this app your own
+===================================
 
-In addition to supporting mobile platforms, the Toga widget toolkit supports
-the web! Using the same API, you can deploy your application as a web site.
+So far, our app has used a default "gray bee" icon. How do we update the
+app to use our own icon?
+
+Adding an icon
+==============
 
 **Coming soon**
 
 Next steps
 ==========
 
-We've now got the application on the web! How about publishing your app?
-Turn to :doc:`Tutorial 10 <tutorial-10>` to find out...
+We've now got an application with a custom icon on our desktop and phone! How do
+we share this application with everyone else? Turn to :doc:`Tutorial 10
+<tutorial-10>` to find out...
