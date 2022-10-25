@@ -4,7 +4,15 @@ Tutorial 6 - Put it on the web!
 
 In addition to supporting mobile platforms, the Toga widget toolkit also
 supports the web! Using the same API that you used to deploy your desktop and
-mobiole applications, you can deploy your application as a single-page web app.
+mobile applications, you can deploy your application as a single-page web app.
+
+.. admonition:: Proof of Concept
+
+    The Toga Web backend is the least mature of all the Toga backends. It's
+    mature enough to show off a few features, but it's missing many other
+    widgets. At this point in time, Web deployment should be considered a "Proof
+    of Concept" - enough to demonstrate what can be done, but not enough to be
+    relied on for serious development.
 
 Deploying as a web app
 ======================
@@ -13,9 +21,9 @@ The process of deploying as a single-page web app follows the same familiar
 pattern - you create the application, then build the application, then run it.
 However, Briefcase can be a little bit smart; if you attempt to run an
 application, and Briefcase determines that it hasn't been created or built for
-the platform being targetted, it will do the create and build steps for you.
-Since this is our first time running the app for the web, we can perform all three
-steps with one command:
+the platform being targeted, it will do the create and build steps for you.
+Since this is our first time running the app for the web, we can perform all
+three steps with one command:
 
 .. tabs::
 
