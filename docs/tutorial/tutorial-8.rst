@@ -145,6 +145,19 @@ trigger the dialog, you may notice a number of subtle improvements:
 Next steps
 ==========
 
-We've now got an application that is slick and responsive, even when it's
-waiting on a slow API. But it still looks like a tutorial app. Is there anything
-we can do about that? Turn to :doc:`Tutorial 9 <tutorial-9>` to find out...
+This has been a taste for what you can do with the tools provided by the
+BeeWare project. What you do from here is up to you!
+
+Some places to go from here:
+
+ * Tutorials demonstrating `features of the Toga widget toolkit
+   <https://toga.readthedocs.io/en/latest/tutorial/index.html>`__.
+ * Details on the `options available when configuring your Briefcase project
+   <https://briefcase.readthedocs.io/en/latest/reference/index.html>`__.
+
+..Next steps
+..==========
+
+..We've now got an application that is slick and responsive, even when it's
+..waiting on a slow API. But it still looks like a tutorial app. Is there anything
+..we can do about that? Turn to :doc:`Tutorial 9 <tutorial-9>` to find out...
