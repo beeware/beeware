@@ -371,24 +371,21 @@ app-level ``requires`` setting. The app-level dependencies will always be
 installed; the platform-specific dependecies are installed *in addition* to the
 app-level ones.
 
-.. admonition:: Python only on mobile (for now!)
+.. admonition:: Some binary packages may not be available
 
-    On desktop platforms (macOS, Windows, Linux), any ``pip``-installable can
-    be added to your requirements. On mobile platforms, your options are a
-    little more limited - you can only use *pure Python* packages i.e.,
-    packages that do *not* contain a binary module.
+    On desktop platforms (macOS, Windows, Linux), any ``pip``-installable can be
+    added to your requirements. On mobile and web platforms, `your options are
+    slightly limited <https://briefcase.readthedocs.io/en/latest/background/faq.html#can-i-use-third-party-python-packages-in-my-app>`__.
 
-    This means that libraries like ``numpy``, ``scikit-learn``, or
-    ``cryptography`` can be used in a *desktop* app, but not a *mobile* app.
-    This is primarily because mobile apps require binary modules that are compiled
-    for multiple platforms, which is difficult to set up.
+    In short; any *pure Python* package (i.e., packages that do *not* contain a
+    binary module) can be used without difficulty. However, if your dependency
+    contains a binary component, it must be compiled; at this time, most Python
+    packages don't provide compilation support for non-desktop platforms.
 
-    It's *possible* to build a mobile Python app that uses binary modules, but
-    it's not easy to set up -- well outside the scope of an introductory
-    tutorial like this one. This is an area that we'd like to address - but it's
-    not a simple task. If you'd like to see this added to BeeWare, please
-    consider `supporting the project by becoming a member
-    <http://beeware.org/bee/join/>`_.
+    BeeWare can provide binaries for some popular binary modules (including
+    `numpy`, `pandas`, and `cryptography`). It's *usually* possible to compile
+    packages for mobile platforms, but it's not easy to set up -- well outside
+    the scope of an introductory tutorial like this one.
 
 Now that we've told Briefcase about our additional dependencies, we can try
 packaging our app again. Ensure that you've saved your changes to
