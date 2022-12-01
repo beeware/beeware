@@ -128,12 +128,16 @@ file system should look something like::
                     __init__.py
                     __main__.py
                     app.py
+            tests/
+                helloworld.py
+                test_app.py
 
 This skeleton is actually a fully functioning application without adding
-anything else. The ``src`` folder contains all the code for the application,
-and the ``pyproject.toml`` file describes how to package the application for
-distribution. If you open ``pyproject.toml`` in an editor, you'll see the
-configuration details you just provided to Briefcase.
+anything else. The ``src`` folder contains all the code for the application, the
+``tests`` folder contains an initial test suite, and the ``pyproject.toml`` file
+describes how to package the application for distribution. If you open
+``pyproject.toml`` in an editor, you'll see the configuration details you just
+provided to Briefcase.
 
 Now that we have a stub application, we can use Briefcase to run the
 application.
