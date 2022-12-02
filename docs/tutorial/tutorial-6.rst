@@ -29,7 +29,7 @@ three steps with one command:
 
   .. group-tab:: macOS
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase run web
 
@@ -49,7 +49,7 @@ three steps with one command:
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase run web
 

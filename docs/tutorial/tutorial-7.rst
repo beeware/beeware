@@ -70,7 +70,7 @@ has worked.
 
   .. group-tab:: macOS
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase dev
       Traceback (most recent call last):
@@ -90,7 +90,7 @@ has worked.
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase dev
       Traceback (most recent call last):
@@ -136,7 +136,7 @@ with ``pip``, and then re-running ``briefcase dev``:
 
   .. group-tab:: macOS
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ python -m pip install httpx
       (beeware-venv) $ briefcase dev
@@ -149,7 +149,7 @@ with ``pip``, and then re-running ``briefcase dev``:
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ python -m pip install httpx
       (beeware-venv) $ briefcase dev
@@ -187,7 +187,7 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
 
     Update the code in the packaged app:
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase update
 
@@ -198,7 +198,7 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
 
     Rebuild the app:
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase build
 
@@ -208,7 +208,7 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
 
     And finally, run the app:
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase run
 
@@ -223,7 +223,7 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
 
     Update the code in the packaged app:
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase update
 
@@ -234,7 +234,7 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
 
     Rebuild the app:
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase build
 
@@ -244,7 +244,7 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
 
     And finally, run the app:
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase run
 
@@ -391,7 +391,7 @@ packaging our app again. Ensure that you've saved your changes to
 
   .. group-tab:: macOS
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase update -d
 
@@ -409,7 +409,7 @@ packaging our app again. Ensure that you've saved your changes to
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase update -d
 

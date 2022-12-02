@@ -81,27 +81,27 @@ Next, install the additional dependencies needed for your operating system:
 
     **Ubuntu 16.04 / Debian 9**
 
-    .. code-block:: bash
+    .. code-block:: console
 
       $ sudo apt-get update
       $ sudo apt-get install git python3-dev python3-venv python3-gi python3-gi-cairo libgirepository1.0-dev libcairo2-dev libpango1.0-dev libwebkitgtk-3.0-0 gir1.2-webkit2-3.0
 
     **Ubuntu 18.04, 20.04 / Debian 10, 11**
 
-    .. code-block:: bash
+    .. code-block:: console
 
       $ sudo apt-get update
       $ sudo apt-get install git python3-dev python3-venv python3-gi python3-gi-cairo libgirepository1.0-dev libcairo2-dev libpango1.0-dev libwebkit2gtk-4.0-37 gir1.2-webkit2-4.0
 
     **Fedora**
 
-    .. code-block:: bash
+    .. code-block:: console
 
       $ sudo dnf install git pkg-config python3-devel gobject-introspection-devel cairo-devel cairo-gobject-devel pango-devel webkitgtk4
 
     **Arch, Manjaro**
 
-    .. code-block:: bash
+    .. code-block:: console
 
       $ sudo pacman -Syu git pkgconf cairo python-cairo pango gobject-introspection gobject-introspection-runtime python-gobject webkit2gtk
 
@@ -117,7 +117,7 @@ Next, install the additional dependencies needed for your operating system:
     Once you've installed Docker, you should be able to start an Ubuntu 18.04
     container:
 
-    .. code-block:: bash
+    .. code-block:: console
 
       $ docker run -it ubuntu:18.04
 
@@ -151,7 +151,7 @@ and without the need to re-install Python.
 
   .. group-tab:: macOS
 
-    .. code-block:: bash
+    .. code-block:: console
 
       $ mkdir beeware-tutorial
       $ cd beeware-tutorial
@@ -160,7 +160,7 @@ and without the need to re-install Python.
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
+    .. code-block:: console
 
       $ mkdir beeware-tutorial
       $ cd beeware-tutorial

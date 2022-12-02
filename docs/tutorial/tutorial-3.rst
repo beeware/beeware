@@ -24,7 +24,7 @@ From the ``helloworld`` directory, run:
 
   .. group-tab:: macOS
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase create
 
@@ -43,7 +43,7 @@ From the ``helloworld`` directory, run:
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase create
 
@@ -157,7 +157,7 @@ target platform.
 
   .. group-tab:: macOS
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase build
 
@@ -176,7 +176,7 @@ target platform.
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase build
 
@@ -213,7 +213,7 @@ You can now use Briefcase to run your application:
 
   .. group-tab:: macOS
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase run
 
@@ -236,7 +236,7 @@ You can now use Briefcase to run your application:
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase run
 
@@ -290,7 +290,7 @@ or doing other pre-distribution tasks.
 
   .. group-tab:: macOS
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase package --no-sign
 
@@ -318,7 +318,7 @@ or doing other pre-distribution tasks.
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase package
 

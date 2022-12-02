@@ -235,7 +235,7 @@ the application again. As before, we'll use Developer mode:
 
   .. group-tab:: macOS
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase dev
 
@@ -243,7 +243,7 @@ the application again. As before, we'll use Developer mode:
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase dev
 

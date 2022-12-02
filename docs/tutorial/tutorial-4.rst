@@ -66,7 +66,7 @@ for your existing bundled application:
 
   .. group-tab:: macOS
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase update
 
@@ -77,7 +77,7 @@ for your existing bundled application:
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase update
 
@@ -146,7 +146,7 @@ new logic works; then update, build and run the app with one command:
 
   .. group-tab:: macOS
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase run -u
 
@@ -159,7 +159,7 @@ new logic works; then update, build and run the app with one command:
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase run -u
 

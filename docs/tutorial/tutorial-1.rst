@@ -17,13 +17,13 @@ with the ``beeware-venv`` virtual environment activated, and run:
 
   .. group-tab:: macOS
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ python -m pip install briefcase
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ python -m pip install briefcase
 
@@ -55,13 +55,13 @@ following from your command prompt:
 
   .. group-tab:: macOS
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase new
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase new
 
@@ -152,7 +152,7 @@ the project in Developer (or ``dev``) mode:
 
   .. group-tab:: macOS
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ cd helloworld
       (beeware-venv) $ briefcase dev
@@ -163,7 +163,7 @@ the project in Developer (or ``dev``) mode:
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ cd helloworld
       (beeware-venv) $ briefcase dev

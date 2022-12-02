@@ -33,7 +33,7 @@ option to ensure that the test requirements are also installed:
 
   .. group-tab:: macOS
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase dev --test -r
 
@@ -56,7 +56,7 @@ option to ensure that the test requirements are also installed:
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase dev --test -r
 
@@ -138,7 +138,7 @@ need to use the ``--test`` option:
 
   .. group-tab:: macOS
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase dev --test
 
@@ -155,7 +155,7 @@ need to use the ``--test`` option:
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase dev --test
 
@@ -208,7 +208,7 @@ Then, run the test suite with this new test:
 
   .. group-tab:: macOS
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase dev --test
 
@@ -240,7 +240,7 @@ Then, run the test suite with this new test:
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase dev --test
 
@@ -325,7 +325,7 @@ If we run the tests again, we'll now see our tests pass:
 
   .. group-tab:: macOS
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase dev --test
 
@@ -343,7 +343,7 @@ If we run the tests again, we'll now see our tests pass:
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase dev --test
 
@@ -395,7 +395,7 @@ environment:
 
   .. group-tab:: macOS
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase run --test -r
 
@@ -438,7 +438,7 @@ environment:
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase run --test -r
 
