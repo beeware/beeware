@@ -292,11 +292,17 @@ or doing other pre-distribution tasks.
 
     .. code-block:: console
 
-      (beeware-venv) $ briefcase package --no-sign
+      (beeware-venv) $ briefcase package --adhoc
+
+      [helloworld] Signing app with adhoc identity...
+      ...
+      Signing macOS/app/Hello World/Hello World.app
+           ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.0% • 00:07
 
       [helloworld] Building DMG...
-      ...
-      [helloworld] Created macOS/Hello World-0.0.1.dmg
+      Signing macOS/Hello World-0.0.1.dmg
+
+      [helloworld] Packaged macOS/Hello World-0.0.1.dmg
 
     The ``macOS`` folder will contain a file named ``Hello World-0.0.1.dmg``.
     If you locate this file in the Finder, and double click on its icon,
@@ -305,12 +311,12 @@ or doing other pre-distribution tasks.
     into Applications, and you've installed your application. Send the DMG file
     to a friend, and they should be able to do the same.
 
-    In this example, we've used the ``--no-sign`` option - that is, we've
-    decided to *not* sign our application. We've done this to keep the tutorial
+    In this example, we've used the ``--adhoc`` option - that is, we're signing
+    our application with adhoc credentials. We've done this to keep the tutorial
     simple. Setting up code signing identities is a little fiddly, and they're
     only *absolutely* required if you're intending to distribute your
-    application to others. If we were publishing a real application, you would
-    leave off the ``--no-sign`` flag.
+    application to others. If we were publishing a real application, you will
+    need to specify real credentials.
 
     When you're ready to publish a real application, check out the Briefcase
     How-To guide on `Setting up a macOS code signing identity
