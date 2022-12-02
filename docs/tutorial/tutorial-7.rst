@@ -42,18 +42,13 @@ Let's add a ``httpx`` API call to our app. Add an import to the top of the
 Then modify the ``say_hello()`` callback so it looks like this::
 
     def say_hello(self, widget):
-        if self.name_input.value:
-            name = self.name_input.value
-        else:
-            name = 'stranger'
-
         with httpx.Client() as client:
             response = client.get("https://jsonplaceholder.typicode.com/posts/42")
 
         payload = response.json()
 
         self.main_window.info_dialog(
-            "Hello, {}".format(name),
+            greeting(self.name_input.value),
             payload["body"],
         )
 

@@ -18,12 +18,12 @@ However, GUI applications shouldn't really use the console for output. They
 need to use dialogs to communicate with users.
 
 Let's add a dialog box to say hello, instead of writing to the console.
-Modify the `say_hello` callback so it looks like this::
+Modify the ``say_hello`` callback so it looks like this::
 
     def say_hello(self, widget):
         self.main_window.info_dialog(
-            'Hello, {}'.format(self.name_input.value),
-            'Hi there!'
+            f"Hello, {self.name_input.value}",
+            "Hi there!""
         )
 
 This directs Toga to open a modal dialog box when the button is pressed.
@@ -119,17 +119,24 @@ Briefcase has a shortcut to support this usage pattern - the ``-u`` (or
 
 Let's try making another change. You may have noticed that if you don't type
 a name in the text input box, the dialog will say "Hello, ". Let's modify the
-``say_hello`` function again to handle this edge case::
+``say_hello`` function again to handle this edge case.
+
+At the top of the file, between the imports and the ``class HelloWorld``
+definition, add a utility methods to generate an appropriate greeting depending
+on the value of the name that has been provided::
+
+    def greeting(name):
+        if name:
+            return f"Hello, {name}"
+        else:
+            return "Hello, stranger"
+
+Then, modify the ``say_hello`` callback to use this new utility method::
 
         def say_hello(self, widget):
-            if self.name_input.value:
-                name = self.name_input.value
-            else:
-                name = 'stranger'
-
             self.main_window.info_dialog(
-                'Hello, {}'.format(name),
-                'Hi there!'
+                greeting(self.name_input.value),
+                "Hi there!",
             )
 
 Run your app in development mode (with ``briefcase dev``) to confirm that the

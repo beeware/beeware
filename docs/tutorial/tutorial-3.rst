@@ -79,7 +79,7 @@ From the ``helloworld`` directory, run:
       (beeware-venv) C:\...>briefcase create
 
       [helloworld] Generating application template...
-      Using app template: https://github.com/beeware/briefcase-windows-msi-template.git
+      Using app template: https://github.com/beeware/briefcase-windows-app-template.git
       ...
       [helloworld] Installing support package...
       ...
@@ -89,7 +89,7 @@ From the ``helloworld`` directory, run:
       ...
       [helloworld] Installing application resources...
       ...
-      [helloworld] Created windows\msi\Hello World
+      [helloworld] Created windows\app\Hello World
 
 You've probably just seen pages of content go past in your terminal... so what
 just happened? Briefcase has done the following:
@@ -161,13 +161,18 @@ target platform.
 
       (beeware-venv) $ briefcase build
 
+      [helloworld] Adhoc signing app...
+      ...
+      Signing macOS/app/Hello World/Hello World.app
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.0% • 00:07
+
       [helloworld] Built macOS/Hello World/Hello World.app
 
-    On ``macOS``, the ``build`` command doesn't need to do anything. A ``.app``
-    folder is a layout convention of ``macOS`` itself; as long as the folder
-    has a ``.app`` extension, and adheres to some internal layout rules, and
-    provides some metadata in a known location, the folder will appear to the
-    operating system as an application.
+    On ``macOS``, the ``build`` command doesn't need to *compile* anything, but
+    it does need to sign the contents of binary so that it can be executed. This
+    signature is an "ad-hoc" signature - it will only work on *your* machine; if
+    you want to distribute the application to others, you'll need to provide a
+    full signature.
 
   .. group-tab:: Linux
 
@@ -192,7 +197,7 @@ target platform.
 
       (beeware-venv) C:\...>briefcase build
 
-      [helloworld] Built windows\msi\Hello World
+      [helloworld] Built windows\app\Hello World
 
     On Windows, this step does nothing. The distributed "binary" on windows is
     a folder with a known entry point; the installer (when it is eventually
@@ -213,8 +218,21 @@ You can now use Briefcase to run your application:
       (beeware-venv) $ briefcase run
 
       [helloworld] Starting app...
-
-      (beeware-venv) $
+      ===========================================================================
+      Configuring isolated Python...
+      Pre-initializing Python runtime...
+      PythonHome: /Users/rkm/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/support/python-stdlib
+      PYTHONPATH:
+      - /Users/rkm/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/support/python311.zip
+      - /Users/rkm/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/support/python-stdlib
+      - /Users/rkm/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/support/python-stdlib/lib-dynload
+      - /Users/rkm/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/app_packages
+      - /Users/rkm/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/app
+      Configure argc/argv...
+      Initializing Python runtime...
+      Installing Python NSLog handler...
+      Running app module: helloworld
+      ---------------------------------------------------------------------------
 
   .. group-tab:: Linux
 
@@ -223,8 +241,8 @@ You can now use Briefcase to run your application:
       (beeware-venv) $ briefcase run
 
       [helloworld] Starting app...
+      ===========================================================================
 
-      (beeware-venv) $
 
   .. group-tab:: Windows
 
@@ -234,14 +252,22 @@ You can now use Briefcase to run your application:
 
       [helloworld] Starting app...
 
-      (beeware-venv) C:\...>
+      ===========================================================================
+      Log started: 2022-12-02 10:57:34Z
+      PreInitializing Python runtime...
+      PythonHome: C:\Users\rkm\beeware-tutorial\helloworld\windows\app\Hello World\src
+      PYTHONPATH:
+      - C:\Users\rkm\beeware-tutorial\helloworld\windows\app\Hello World\src\python39.zip
+      - C:\Users\rkm\beeware-tutorial\helloworld\windows\app\Hello World\src
+      - C:\Users\rkm\beeware-tutorial\helloworld\windows\app\Hello World\src\app_packages
+      - C:\Users\rkm\beeware-tutorial\helloworld\windows\app\Hello World\src\app
+      Configure argc/argv...
+      Initializing Python runtime...
+      Running app module: togatest
+      ---------------------------------------------------------------------------
 
 This will start to run your native application, using the output of the
 `build` command.
-
-You'll notice that the console output we saw earlier won't be visible anymore. 
-This is because we are now running a standalone, packaged app that has no 
-(visible) console to which it can output. 
 
 You might notice some small differences in the way your application looks
 when it's running. For example, icons and the name displayed by the operating
@@ -250,15 +276,6 @@ mode. This is also because you're using the packaged application, not just
 running Python code. From the operating system's perspective, you're now
 running "an app", not "a Python program", and this is reflected in how the
 application appears.
-
-If you're on macOS, you'll also notice some small differences in the console
-output we saw earlier. This is because the packaged app writes its console
-output to the system log. When you run the packaged app, you're seeing a
-filtered version of the system log, not raw console output; and as a result,
-there's more system log details (like timestamps and the message source) being 
-displayed. When you close the application, the system log will continue to run, 
-even though there are no more logs to display. You can stop the display of the
-system log by typing Ctrl-C.
 
 Building your installer
 =======================

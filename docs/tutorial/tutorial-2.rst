@@ -121,7 +121,7 @@ looks like this::
             main_box = toga.Box(style=Pack(direction=COLUMN))
 
             name_label = toga.Label(
-                'Your name: ',
+                "Your name: ",
                 style=Pack(padding=(0, 5))
             )
             self.name_input = toga.TextInput(style=Pack(flex=1))
@@ -131,7 +131,7 @@ looks like this::
             name_box.add(self.name_input)
 
             button = toga.Button(
-                'Say Hello!',
+                "Say Hello!",
                 on_press=self.say_hello,
                 style=Pack(padding=5)
             )
@@ -144,7 +144,7 @@ looks like this::
             self.main_window.show()
 
         def say_hello(self, widget):
-            print("Hello,", self.name_input.value)
+            print(f"Hello, {self.name_input.value}")
 
 .. note::
 
@@ -168,7 +168,7 @@ as short as possible.
 Next, we define a couple of widgets::
 
             name_label = toga.Label(
-                'Your name: ',
+                "Your name: ",
                 style=Pack(padding=(0, 5))
             )
             self.name_input = toga.TextInput(style=Pack(flex=1))
@@ -195,7 +195,7 @@ on all sides.
 Now we define a button::
 
             button = toga.Button(
-                'Say Hello!',
+                "Say Hello!",
                 on_press=self.say_hello,
                 style=Pack(padding=5)
             )
@@ -222,7 +222,7 @@ that generated the event as an argument, and will be invoked whenever the
 button is pressed::
 
         def say_hello(self, widget):
-            print("Hello,", self.name_input.value)
+            print(f"Hello, {self.name_input.value}")
 
 The body of the method is a simple print statement - however, it will
 interrogate the current value of the name input, and use that content as the
