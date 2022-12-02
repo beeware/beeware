@@ -35,7 +35,7 @@ The first thing we'll need is a working Python interpreter.
 
     If you're on Windows, you can get the official installer from `the Python
     website <https://www.python.org/downloads>`_. You can use any stable version
-    of Python from 3.8 onward. We'd advise avoiding alphas, betas and release
+    of Python from 3.8 onward. We'd advise avoiding alphas, betas, and release
     candidates unless you *really* know what you're doing.
 
 .. admonition:: Alternative Python distributions
