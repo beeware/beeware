@@ -68,7 +68,7 @@ we can have a long-running event handler *and* maintain a responsive UI.
 
 We can do this by using *asynchronous programming*. Asynchronous programming is
 a way to describe a program that allows the interpreter to run multiple
-functions a the same time, sharing resources between all the concurrently running
+functions at the same time, sharing resources between all the concurrently running
 functions.
 
 Asynchronous functions (known as *co-routines*) need to be explicitly declared
