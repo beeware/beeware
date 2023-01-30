@@ -24,51 +24,62 @@ From the ``helloworld`` directory, run:
 
   .. group-tab:: macOS
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase create
 
       [helloworld] Generating application template...
-      Using app template: https://github.com/beeware/briefcase-macOS-app-template.git
+      Using app template: https://github.com/beeware/briefcase-macOS-app-template.git, branch v0.3.12
       ...
       [helloworld] Installing support package...
       ...
-      [helloworld] Installing dependencies...
-      ...
       [helloworld] Installing application code...
+      ...
+      [helloworld] Installing requirements...
       ...
       [helloworld] Installing application resources...
       ...
-      [helloworld] Created macOS/Hello World
+      [helloworld] Removing unneeded app content...
+      ...
+      [helloworld] Created macOS/app/Hello World
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase create
 
       [helloworld] Generating application template...
-      Using app template: https://github.com/beeware/briefcase-linux-appImage-template.git
+      Using app template: https://github.com/beeware/briefcase-linux-AppImage-template.git, branch v0.3.12
       ...
       [helloworld] Installing support package...
       ...
-      [helloworld] Installing dependencies...
-      [helloworld] Entering Docker context...
-
       [helloworld] Building Docker container image...
       ...
-      [helloworld] Leaving Docker context.
-
       [helloworld] Installing application code...
       ...
+      [helloworld] Installing requirements...
+      ...
+      [helloworld] Entering Docker context...
+      ...
+      [helloworld] Leaving Docker context...
+      Building wheels for app requirements... done
+
+      [helloworld] Entering Docker context...
+      ...
+      [helloworld] Leaving Docker context...
+      Installing app requirements... done
+
       [helloworld] Installing application resources...
       ...
-      [helloworld] Created linux/Hello World
+      [helloworld] Removing unneeded app content...
+      ...
+      [helloworld] Created linux/appimage/Hello World
 
     .. note::
 
       The first time you run this, it may take a while, as Briefcase needs to
-      prepare an Ubuntu 16.04 Docker image that can be used to build AppImage
+      prepare an Ubuntu 18.04 Docker image that can be used to build AppImage
       binaries. This involves downloading a lot of system packages. On future
       runs, this Docker image will be re-used.
 
@@ -79,17 +90,17 @@ From the ``helloworld`` directory, run:
       (beeware-venv) C:\...>briefcase create
 
       [helloworld] Generating application template...
-      Using app template: https://github.com/beeware/briefcase-windows-msi-template.git
+      Using app template: https://github.com/beeware/briefcase-windows-app-template.git, branch 0.3.12
       ...
       [helloworld] Installing support package...
       ...
-      [helloworld] Installing dependencies...
-      ...
       [helloworld] Installing application code...
+      ...
+      [helloworld] Installing requirements...
       ...
       [helloworld] Installing application resources...
       ...
-      [helloworld] Created windows\msi\Hello World
+      [helloworld] Created windows\app\Hello World
 
 You've probably just seen pages of content go past in your terminal... so what
 just happened? Briefcase has done the following:
@@ -128,7 +139,7 @@ just happened? Briefcase has done the following:
    downloaded a specific support package, that cached copy will be used on
    future builds.
 
-3. It **installed application dependencies**. Your application can specify any
+3. It **installed application requirements**. Your application can specify any
    third-party modules that are required at runtime. These will be installed
    using `pip` into your application's installer.
 
@@ -157,21 +168,26 @@ target platform.
 
   .. group-tab:: macOS
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase build
 
+      [helloworld] Adhoc signing app...
+      ...
+      Signing macOS/app/Hello World/Hello World.app
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.0% • 00:07
+
       [helloworld] Built macOS/Hello World/Hello World.app
 
-    On ``macOS``, the ``build`` command doesn't need to do anything. A ``.app``
-    folder is a layout convention of ``macOS`` itself; as long as the folder
-    has a ``.app`` extension, and adheres to some internal layout rules, and
-    provides some metadata in a known location, the folder will appear to the
-    operating system as an application.
+    On macOS, the ``build`` command doesn't need to *compile* anything, but it
+    does need to sign the contents of binary so that it can be executed. This
+    signature is an "ad-hoc" signature - it will only work on *your* machine; if
+    you want to distribute the application to others, you'll need to provide a
+    full signature.
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase build
 
@@ -183,7 +199,7 @@ target platform.
     ``Hello World-x86_64-0.0.1.AppImage``. This AppImage is an executable;
     you can run it from the shell, or double click on it in your file explorer.
     You can also give it to any other Linux user, and as long as they've got
-    a version of Linux published after 2016, they should be able to run it in
+    a version of Linux published after 2018, they should be able to run it in
     the same way.
 
   .. group-tab:: Windows
@@ -191,13 +207,13 @@ target platform.
     .. code-block:: doscon
 
       (beeware-venv) C:\...>briefcase build
+      Setting stup app details... done
 
-      [helloworld] Built windows\msi\Hello World
+      [helloworld] Built windows\app\Hello World
 
-    On Windows, this step does nothing. The distributed "binary" on windows is
-    a folder with a known entry point; the installer (when it is eventually
-    created) will encode details on how to start the application, and install
-    a Start Menu item to invoke the application.
+    On Windows, the ``build`` command doesn't need to *compile* anything, but
+    it does need to write some metadata so that the application knows it's name,
+    version, and so on.
 
 Running your app
 ================
@@ -208,23 +224,36 @@ You can now use Briefcase to run your application:
 
   .. group-tab:: macOS
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase run
 
       [helloworld] Starting app...
-
-      (beeware-venv) $
+      ===========================================================================
+      Configuring isolated Python...
+      Pre-initializing Python runtime...
+      PythonHome: /Users/brutus/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/support/python-stdlib
+      PYTHONPATH:
+      - /Users/brutus/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/support/python311.zip
+      - /Users/brutus/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/support/python-stdlib
+      - /Users/brutus/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/support/python-stdlib/lib-dynload
+      - /Users/brutus/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/app_packages
+      - /Users/brutus/beeware-tutorial/helloworld/macOS/app/Hello World/Hello World.app/Contents/Resources/app
+      Configure argc/argv...
+      Initializing Python runtime...
+      Installing Python NSLog handler...
+      Running app module: helloworld
+      ---------------------------------------------------------------------------
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase run
 
       [helloworld] Starting app...
+      ===========================================================================
 
-      (beeware-venv) $
 
   .. group-tab:: Windows
 
@@ -234,14 +263,22 @@ You can now use Briefcase to run your application:
 
       [helloworld] Starting app...
 
-      (beeware-venv) C:\...>
+      ===========================================================================
+      Log started: 2022-12-02 10:57:34Z
+      PreInitializing Python runtime...
+      PythonHome: C:\Users\brutus\beeware-tutorial\helloworld\windows\app\Hello World\src
+      PYTHONPATH:
+      - C:\Users\brutus\beeware-tutorial\helloworld\windows\app\Hello World\src\python39.zip
+      - C:\Users\brutus\beeware-tutorial\helloworld\windows\app\Hello World\src
+      - C:\Users\brutus\beeware-tutorial\helloworld\windows\app\Hello World\src\app_packages
+      - C:\Users\brutus\beeware-tutorial\helloworld\windows\app\Hello World\src\app
+      Configure argc/argv...
+      Initializing Python runtime...
+      Running app module: togatest
+      ---------------------------------------------------------------------------
 
 This will start to run your native application, using the output of the
 `build` command.
-
-You'll notice that the console output we saw earlier won't be visible anymore. 
-This is because we are now running a standalone, packaged app that has no 
-(visible) console to which it can output. 
 
 You might notice some small differences in the way your application looks
 when it's running. For example, icons and the name displayed by the operating
@@ -250,15 +287,6 @@ mode. This is also because you're using the packaged application, not just
 running Python code. From the operating system's perspective, you're now
 running "an app", not "a Python program", and this is reflected in how the
 application appears.
-
-If you're on macOS, you'll also notice some small differences in the console
-output we saw earlier. This is because the packaged app writes its console
-output to the system log. When you run the packaged app, you're seeing a
-filtered version of the system log, not raw console output; and as a result,
-there's more system log details (like timestamps and the message source) being 
-displayed. When you close the application, the system log will continue to run, 
-even though there are no more logs to display. You can stop the display of the
-system log by typing Ctrl-C.
 
 Building your installer
 =======================
@@ -273,13 +301,19 @@ or doing other pre-distribution tasks.
 
   .. group-tab:: macOS
 
-    .. code-block:: bash
+    .. code-block:: console
 
-      (beeware-venv) $ briefcase package --no-sign
+      (beeware-venv) $ briefcase package --adhoc
+
+      [helloworld] Signing app with adhoc identity...
+      ...
+      Signing macOS/app/Hello World/Hello World.app
+           ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.0% • 00:07
 
       [helloworld] Building DMG...
-      ...
-      [helloworld] Created macOS/Hello World-0.0.1.dmg
+      Signing macOS/Hello World-0.0.1.dmg
+
+      [helloworld] Packaged macOS/Hello World-0.0.1.dmg
 
     The ``macOS`` folder will contain a file named ``Hello World-0.0.1.dmg``.
     If you locate this file in the Finder, and double click on its icon,
@@ -288,12 +322,12 @@ or doing other pre-distribution tasks.
     into Applications, and you've installed your application. Send the DMG file
     to a friend, and they should be able to do the same.
 
-    In this example, we've used the ``--no-sign`` option - that is, we've
-    decided to *not* sign our application. We've done this to keep the tutorial
+    In this example, we've used the ``--adhoc`` option - that is, we're signing
+    our application with adhoc credentials. We've done this to keep the tutorial
     simple. Setting up code signing identities is a little fiddly, and they're
     only *absolutely* required if you're intending to distribute your
-    application to others. If we were publishing a real application, you would
-    leave off the ``--no-sign`` flag.
+    application to others. If we were publishing a real application, you will
+    need to specify real credentials.
 
     When you're ready to publish a real application, check out the Briefcase
     How-To guide on `Setting up a macOS code signing identity
@@ -301,7 +335,7 @@ or doing other pre-distribution tasks.
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase package
 

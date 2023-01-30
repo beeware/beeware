@@ -18,12 +18,12 @@ However, GUI applications shouldn't really use the console for output. They
 need to use dialogs to communicate with users.
 
 Let's add a dialog box to say hello, instead of writing to the console.
-Modify the `say_hello` callback so it looks like this::
+Modify the ``say_hello`` callback so it looks like this::
 
     def say_hello(self, widget):
         self.main_window.info_dialog(
-            'Hello, {}'.format(self.name_input.value),
-            'Hi there!'
+            f"Hello, {self.name_input.value}",
+            "Hi there!"
         )
 
 This directs Toga to open a modal dialog box when the button is pressed.
@@ -57,16 +57,16 @@ your code as an application. Part of the process of packaging your app involves
 copying your code *into* the application bundle - and at the moment, your
 application still has the old code in it.
 
-So - we need to tell briefcase to copy over the new version of the code. We
-*could* do this by deleting the old platform directory and starting from
-scratch. However, Briefcase provides an easier way - you can update the code
-for your existing bundled application:
+So - we need to tell briefcase to update your app, copying in the new version of
+the code. We *could* do this by deleting the old platform directory and starting
+from scratch. However, Briefcase provides an easier way - you can update the
+code for your existing bundled application:
 
 .. tabs::
 
   .. group-tab:: macOS
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase update
 
@@ -77,7 +77,7 @@ for your existing bundled application:
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase update
 
@@ -98,7 +98,7 @@ for your existing bundled application:
       [helloworld] Application updated.
 
 If Briefcase can't find the scaffolded template, it will automatically invoke
-`create` to generate a fresh scaffold.
+``create`` to generate a fresh scaffold.
 
 Now that we've updated the installer code, we can then run ``briefcase build``
 to re-compile the app, ``briefcase run`` to run the updated app, and ``briefcase
@@ -113,23 +113,35 @@ Update and run in one step
 ==========================
 
 If you're rapidly iterating code changes, you'll likely want to make a code
-change, update the application, and immediately re-run your application.
-Briefcase has a shortcut to support this usage pattern - the ``-u`` (or
+change, update the application, and immediately re-run your application. For
+most purposes, developer mode (``briefcase dev``) will be the easiest way to do
+this sort of rapid iteration; however, if you're testing something about how
+your application runs as a native binary, or hunting a bug that only manifests
+when your application is in packaged form, you may need to use repeated calls to
+``briefcase run``. To simplify the process of updating and running the bundled
+app, Briefcase has a shortcut to support this usage pattern - the ``-u`` (or
 ``--update``) option on the ``run`` command.
 
 Let's try making another change. You may have noticed that if you don't type
 a name in the text input box, the dialog will say "Hello, ". Let's modify the
-``say_hello`` function again to handle this edge case::
+``say_hello`` function again to handle this edge case.
+
+At the top of the file, between the imports and the ``class HelloWorld``
+definition, add a utility methods to generate an appropriate greeting depending
+on the value of the name that has been provided::
+
+    def greeting(name):
+        if name:
+            return f"Hello, {name}"
+        else:
+            return "Hello, stranger"
+
+Then, modify the ``say_hello`` callback to use this new utility method::
 
         def say_hello(self, widget):
-            if self.name_input.value:
-                name = self.name_input.value
-            else:
-                name = 'stranger'
-
             self.main_window.info_dialog(
-                'Hello, {}'.format(name),
-                'Hi there!'
+                greeting(self.name_input.value),
+                "Hi there!",
             )
 
 Run your app in development mode (with ``briefcase dev``) to confirm that the
@@ -139,12 +151,15 @@ new logic works; then update, build and run the app with one command:
 
   .. group-tab:: macOS
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase run -u
 
       [helloworld] Updating application code...
       Installing src/helloworld...
+
+      [helloworld] Removing unneeded app content...
+      ...
 
       [helloworld] Application updated.
 
@@ -152,12 +167,15 @@ new logic works; then update, build and run the app with one command:
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase run -u
 
       [helloworld] Updating application code...
       Installing src/helloworld...
+
+      [helloworld] Removing unneeded app content...
+      ...
 
       [helloworld] Application updated.
 
@@ -176,14 +194,12 @@ new logic works; then update, build and run the app with one command:
       [helloworld] Updating application code...
       Installing src/helloworld...
 
+      [helloworld] Removing unneeded app content...
+      ...
+
       [helloworld] Application updated.
 
       [helloworld] Starting app...
-
-This should only be required if you're testing something about how your
-application runs as a native binary, or hunting a bug that only manifests when
-your application is in packaged form. For most day-to-day development,
-``briefcase dev`` will be a lot faster.
 
 The package command also accepts the ``-u`` argument, so if you make a change
 to your application code and want to repackage immediately, you can run

@@ -17,13 +17,13 @@ with the ``beeware-venv`` virtual environment activated, and run:
 
   .. group-tab:: macOS
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ python -m pip install briefcase
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ python -m pip install briefcase
 
@@ -55,13 +55,13 @@ following from your command prompt:
 
   .. group-tab:: macOS
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase new
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase new
 
@@ -128,12 +128,17 @@ file system should look something like::
                     __init__.py
                     __main__.py
                     app.py
+            tests/
+                __init__.py
+                helloworld.py
+                test_app.py
 
 This skeleton is actually a fully functioning application without adding
-anything else. The ``src`` folder contains all the code for the application,
-and the ``pyproject.toml`` file describes how to package the application for
-distribution. If you open ``pyproject.toml`` in an editor, you'll see the
-configuration details you just provided to Briefcase.
+anything else. The ``src`` folder contains all the code for the application, the
+``tests`` folder contains an initial test suite, and the ``pyproject.toml`` file
+describes how to package the application for distribution. If you open
+``pyproject.toml`` in an editor, you'll see the configuration details you just
+provided to Briefcase.
 
 Now that we have a stub application, we can use Briefcase to run the
 application.
@@ -148,25 +153,27 @@ the project in Developer (or ``dev``) mode:
 
   .. group-tab:: macOS
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ cd helloworld
       (beeware-venv) $ briefcase dev
 
-      [hello-world] Installing dependencies...
+      [hello-world] Installing requirements...
       ...
       [helloworld] Starting in dev mode...
+      ===========================================================================
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ cd helloworld
       (beeware-venv) $ briefcase dev
 
-      [hello-world] Installing dependencies...
+      [hello-world] Installing requirements...
       ...
       [helloworld] Starting in dev mode...
+      ===========================================================================
 
   .. group-tab:: Windows
 
@@ -175,9 +182,10 @@ the project in Developer (or ``dev``) mode:
       (beeware-venv) C:\...>cd helloworld
       (beeware-venv) C:\...>briefcase dev
 
-      [hello-world] Installing dependencies...
+      [hello-world] Installing requirements...
       ...
       [helloworld] Starting in dev mode...
+      ===========================================================================
 
 This should open a GUI window:
 

@@ -16,11 +16,12 @@ retrieve data, and display that data to the user. This is a toy app, so we don't
 have a *real* API to work with, so we'll use the `{JSON} Placeholder API
 <https://jsonplaceholder.typicode.com>`__ as a source of data.
 
-{JSON} Placeholder API has a number of "fake" API endpoints you can use as test
-data. One of those APIs is the ``/posts/`` endpoint, which returns fake blog
-posts. If you open ``https://jsonplaceholder.typicode.com/posts/42`` in your
-browser, you'll get a JSON payload describing a single post - some `Lorum ipsum
-<https://en.wikipedia.org/wiki/Lorem_ipsum>`__ content for a blog post with ID 42.
+The {JSON} Placeholder API has a number of "fake" API endpoints you can use as
+test data. One of those APIs is the ``/posts/`` endpoint, which returns fake
+blog posts. If you open ``https://jsonplaceholder.typicode.com/posts/42`` in
+your browser, you'll get a JSON payload describing a single post - some `Lorum
+ipsum <https://en.wikipedia.org/wiki/Lorem_ipsum>`__ content for a blog post
+with ID 42.
 
 The Python standard library contains all the tools you'd need to access an API.
 However, the built-in APIs are very low level. They are good implementations of
@@ -42,18 +43,13 @@ Let's add a ``httpx`` API call to our app. Add an import to the top of the
 Then modify the ``say_hello()`` callback so it looks like this::
 
     def say_hello(self, widget):
-        if self.name_input.value:
-            name = self.name_input.value
-        else:
-            name = 'stranger'
-
         with httpx.Client() as client:
             response = client.get("https://jsonplaceholder.typicode.com/posts/42")
 
         payload = response.json()
 
         self.main_window.info_dialog(
-            "Hello, {}".format(name),
+            greeting(self.name_input.value),
             payload["body"],
         )
 
@@ -75,7 +71,7 @@ has worked.
 
   .. group-tab:: macOS
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase dev
       Traceback (most recent call last):
@@ -95,7 +91,7 @@ has worked.
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase dev
       Traceback (most recent call last):
@@ -141,7 +137,7 @@ with ``pip``, and then re-running ``briefcase dev``:
 
   .. group-tab:: macOS
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ python -m pip install httpx
       (beeware-venv) $ briefcase dev
@@ -154,7 +150,7 @@ with ``pip``, and then re-running ``briefcase dev``:
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ python -m pip install httpx
       (beeware-venv) $ briefcase dev
@@ -192,54 +188,53 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
 
     Update the code in the packaged app:
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase update
 
       [hello-world] Updating application code...
-      Installing src/hello_world...
-
+      ...
       [hello-world] Application updated.
 
     Rebuild the app:
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase build
 
-      [hello-world] Building AppImage...
-      ...
-      [hello-world] Built linux/Hello_World-0.0.1-x86_64.AppImage
+      [helloworld] Adhoc signing app...
+      [hello-world] Built macOS/app/Hello World/Hello World.app
 
     And finally, run the app:
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase run
 
       [hello-world] Starting app...
+      ===========================================================================
 
-    However, when the app runs, you'll see a crash dialog:
+    However, when the app runs, you'll see an error in the console, plus a crash
+    dialog:
 
-    .. image:: images/macOS/tutorial-6-crash.png
+    .. image:: images/macOS/tutorial-7-crash.png
        :alt: Hello World Tutorial 7 app crash, on macOS
 
   .. group-tab:: Linux
 
     Update the code in the packaged app:
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase update
 
       [hello-world] Updating application code...
-      Installing src/hello_world...
-
+      ...
       [hello-world] Application updated.
 
     Rebuild the app:
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase build
 
@@ -249,11 +244,16 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
 
     And finally, run the app:
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase run
 
       [hello-world] Starting app...
+      ===========================================================================
+
+    However, when the app runs, you'll see an error in the console:
+
+    .. code-block:: console
 
       Traceback (most recent call last):
         File "/tmp/.mount_Hello_ifthSH/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main
@@ -277,8 +277,7 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
       (beeware-venv)C:\...>briefcase update
 
       [hello-world] Updating application code...
-      Installing src/hello_world...
-
+      ...
       [hello-world] Application updated.
 
     Rebuild the app:
@@ -286,7 +285,7 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
     .. code-block:: doscon
 
       (beeware-venv)C:\...>briefcase build
-
+      ...
       [hello-world] Built windows/msi/Hello World
 
     And finally, run the app:
@@ -296,8 +295,13 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
       (beeware-venv)C:\...>briefcase run
 
       [hello-world] Starting app...
+      ===========================================================================
 
-      Unable to start app hello-world.
+    However, when the app runs, you'll see an error in the console, plus a crash
+    dialog:
+
+    .. image:: images/windows/tutorial-7-crash.png
+       :alt: Hello World Tutorial 7 app crash, on Windows
 
 Once again, the app has failed to start because ``httpx`` has been installed - but
 why? Haven't we already installed ``httpx``?
@@ -331,7 +335,7 @@ the settings for your app::
     formal_name = "Hello World"
     description = "A Tutorial app"
     icon = "src/hello_world/resources/hello-world"
-    sources = ['src/hello_world']
+    sources = ["src/hello_world"]
     requires = []
 
 The ``requires`` option describes the dependencies of our application. It is
@@ -387,46 +391,52 @@ app-level ones.
     packages for mobile platforms, but it's not easy to set up -- well outside
     the scope of an introductory tutorial like this one.
 
-Now that we've told Briefcase about our additional dependencies, we can try
+Now that we've told Briefcase about our additional requirements, we can try
 packaging our app again. Ensure that you've saved your changes to
 ``pyproject.toml``, and then update your app again - this time, passing in the
-``-d`` flag. This tells Briefcase to update dependencies in the packaged app:
+``-r`` flag. This tells Briefcase to update requirements in the packaged app:
 
 .. tabs::
 
   .. group-tab:: macOS
 
-    .. code-block:: bash
+    .. code-block:: console
 
-      (beeware-venv) $ briefcase update -d
+      (beeware-venv) $ briefcase update -r
 
-      [hello-world] Updating dependencies...
+      [hello-world] Updating application code...
+      Installing src/hello_world...
+
+      [hello-world] Updating requirements...
       Collecting httpx
         Using cached httpx-0.19.0-py3-none-any.whl (77 kB)
       ...
       Installing collected packages: sniffio, idna, travertino, rfc3986, h11, anyio, toga-core, rubicon-objc, httpcore, charset-normalizer, certifi, toga-cocoa, httpx
       Successfully installed anyio-3.3.2 certifi-2021.10.8 charset-normalizer-2.0.6 h11-0.12.0 httpcore-0.13.7 httpx-0.19.0 idna-3.2 rfc3986-1.5.0 rubicon-objc-0.4.1 sniffio-1.2.0 toga-cocoa-0.3.0.dev28 toga-core-0.3.0.dev28 travertino-0.1.3
 
-      [hello-world] Updating application code...
-      Installing src/hello_world...
+      [helloworld] Removing unneeded app content...
+      ...
 
       [hello-world] Application updated.
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
+    .. code-block:: console
 
-      (beeware-venv) $ briefcase update -d
+      (beeware-venv) $ briefcase update -r
 
-      [hello-world] Updating dependencies...
+      [hello-world] Updating application code...
+      Installing src/hello_world...
+
+      [hello-world] Updating requirements...
       Collecting httpx
         Using cached httpx-0.19.0-py3-none-any.whl (77 kB)
       ...
       Installing collected packages: sniffio, idna, travertino, rfc3986, h11, anyio, toga-core, rubicon-objc, httpcore, charset-normalizer, certifi, toga-cocoa, httpx
       Successfully installed anyio-3.3.2 certifi-2021.10.8 charset-normalizer-2.0.6 h11-0.12.0 httpcore-0.13.7 httpx-0.19.0 idna-3.2 rfc3986-1.5.0 rubicon-objc-0.4.1 sniffio-1.2.0 toga-cocoa-0.3.0.dev28 toga-core-0.3.0.dev28 travertino-0.1.3
 
-      [hello-world] Updating application code...
-      Installing src/hello_world...
+      [helloworld] Removing unneeded app content...
+      ...
 
       [hello-world] Application updated.
 
@@ -434,22 +444,31 @@ packaging our app again. Ensure that you've saved your changes to
 
     .. code-block:: doscon
 
-      (beeware-venv)C:\...>briefcase update -d
+      (beeware-venv)C:\...>briefcase update -r
 
-      [hello-world] Updating dependencies...
+      [hello-world] Updating application code...
+      Installing src/hello_world...
+
+      [hello-world] Updating requirements...
       Collecting httpx
         Using cached httpx-0.19.0-py3-none-any.whl (77 kB)
       ...
       Installing collected packages: sniffio, idna, travertino, rfc3986, h11, anyio, toga-core, rubicon-objc, httpcore, charset-normalizer, certifi, toga-cocoa, httpx
       Successfully installed anyio-3.3.2 certifi-2021.10.8 charset-normalizer-2.0.6 h11-0.12.0 httpcore-0.13.7 httpx-0.19.0 idna-3.2 rfc3986-1.5.0 rubicon-objc-0.4.1 sniffio-1.2.0 toga-cocoa-0.3.0.dev28 toga-core-0.3.0.dev28 travertino-0.1.3
 
-      [hello-world] Updating application code...
-      Installing src/hello_world...
+      [helloworld] Removing unneeded app content...
+      ...
 
       [hello-world] Application updated.
 
-Once you've updated, you can run ``briefcase build`` and ``briefcase run`` -
-and you should see your packaged app, with the new dialog behavior.
+Once you've updated, you can run ``briefcase build`` and ``briefcase run`` - and
+you should see your packaged app, with the new dialog behavior.
+
+.. note::
+
+    The ``-r`` option for updating reqiurements is also honored by the ``build`` and
+    ``run`` command, so if you want to update, build, and run in one step, you could
+    use ``briefcase run -u -r``.
 
 
 Next steps

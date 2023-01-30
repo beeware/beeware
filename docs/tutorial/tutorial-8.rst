@@ -45,9 +45,9 @@ can't redraw*, and *it can't process other events*.
 This means any user logic contained in an event handler needs to complete
 quickly. Any delay in completing the event handler will be observed by the user
 as a slowdown (or stop) in GUI updates. If this delay is long enough, your
-operating system may report this as a problem - the macOS "Beachball" and
-Windows "Hourglass" are the operating system telling you that your app is taking
-too long in an event handler.
+operating system may report this as a problem - the macOS "beachball" and
+Windows "spinner" icons are the operating system telling you that your app is
+taking too long in an event handler.
 
 Simple operations like "update a label", or "recompute the total of the inputs"
 are easy to complete quickly. However, there are a lot of operations that can't
@@ -91,18 +91,13 @@ To make our tutorial asynchronous, modify the ``say_hello()`` event handler so
 it looks like this::
 
     async def say_hello(self, widget):
-        if self.name_input.value:
-            name = self.name_input.value
-        else:
-            name = 'stranger'
-
         async with httpx.AsyncClient() as client:
             response = await client.get("https://jsonplaceholder.typicode.com/posts/42")
 
         payload = response.json()
 
         self.main_window.info_dialog(
-            "Hello, {}".format(name),
+            greeting(self.name_input.value),
             payload["body"],
         )
 
@@ -135,7 +130,7 @@ trigger the dialog, you may notice a number of subtle improvements:
 * The button returns to an "unclicked" state, rather than being stuck in a
   "clicked" state.
 
-* The "beachball"/"hourglass" icon won't appear
+* The "beachball"/"spinner" icon won't appear
 
 * If you move/resize the app window while waiting for the dialog to appear,
   the window will redraw.
@@ -145,19 +140,7 @@ trigger the dialog, you may notice a number of subtle improvements:
 Next steps
 ==========
 
-This has been a taste for what you can do with the tools provided by the
-BeeWare project. What you do from here is up to you!
-
-Some places to go from here:
-
- * Tutorials demonstrating `features of the Toga widget toolkit
-   <https://toga.readthedocs.io/en/latest/tutorial/index.html>`__.
- * Details on the `options available when configuring your Briefcase project
-   <https://briefcase.readthedocs.io/en/latest/reference/index.html>`__.
-
-..Next steps
-..==========
-
-..We've now got an application that is slick and responsive, even when it's
-..waiting on a slow API. But it still looks like a tutorial app. Is there anything
-..we can do about that? Turn to :doc:`Tutorial 9 <tutorial-9>` to find out...
+We've now got an application that is slick and responsive, even when it's
+waiting on a slow API. But how can we make sure that the app keeps working as we
+continue to develop it further? How do we test our app? Turn to :doc:`Tutorial 9
+<tutorial-9>` to find out...

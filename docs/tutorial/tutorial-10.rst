@@ -1,24 +1,20 @@
 :orphan:
 
-==================================
-Tutorial 10 - Publishing your app!
-==================================
+====================================
+Tutorial 10 - Make this app your own
+====================================
 
-Once you've built an installer for your application, you're going to want to
-share it with the world. Briefcase provides a command - ``publish`` to manage
-this process, with a range of options for how to publish your application.
+So far, our app has used a default "gray bee" icon. How do we update the
+app to use our own icon?
+
+Adding an icon
+==============
 
 **Coming soon**
 
 Next steps
 ==========
 
-This has been a taste for what you can do with the tools provided by the
-BeeWare project. What you do from here is up to you!
-
-Some places to go from here:
-
- * Tutorials demonstrating `features of the Toga widget toolkit
-   <https://toga.readthedocs.io/en/latest/tutorial/index.html>`__.
- * Details on the `options available when configuring your Briefcase project
-   <https://briefcase.readthedocs.io/en/latest/reference/index.html>`__.
+We've now got an application with a custom icon on our desktop and phone! How do
+we share this application with everyone else? Turn to :doc:`Tutorial 11
+<tutorial-11>` to find out...
