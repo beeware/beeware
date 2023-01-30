@@ -515,12 +515,11 @@ BeeWare project. What you do from here is up to you!
 
 Some places to go from here:
 
- * Tutorials demonstrating `features of the Toga widget toolkit
-   <https://toga.readthedocs.io/en/latest/tutorial/index.html>`__.
- * Details on the `options available when configuring your Briefcase project
-   <https://briefcase.readthedocs.io/en/latest/reference/index.html>`__.
+* Tutorials demonstrating `features of the Toga widget toolkit
+  <https://toga.readthedocs.io/en/latest/tutorial/index.html>`__.
+* Details on the `options available when configuring your Briefcase project
+  <https://briefcase.readthedocs.io/en/latest/reference/index.html>`__.
 
-
-..We've now got a a test suite for our application. But it still looks like a
-..tutorial app. Is there anything we can do about that? Turn to :doc:`Tutorial 10
-..<tutorial-10>` to find out...
+.. We've now got a a test suite for our application. But it still looks like a
+.. tutorial app. Is there anything we can do about that? Turn to :doc:`Tutorial 10
+.. <tutorial-10>` to find out...
