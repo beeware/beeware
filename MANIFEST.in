@@ -1,7 +1,9 @@
-include CONTRIBUTING.md
-include README.rst
+include .readthedocs.yaml
 include AUTHORS
+include CONTRIBUTING.md
 include LICENSE
+include README.rst
+include tox.ini
 include docs/spelling_wordlist
 recursive-include docs *.bat
 recursive-include docs *.db
