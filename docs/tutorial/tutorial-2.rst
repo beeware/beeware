@@ -229,7 +229,7 @@ interrogate the current value of the name input, and use that content as the
 text that is printed.
 
 Now that we've made these changes we can see what they look like by starting
-the application again. As before, we'll use Developer mode:
+the application again. As before, we'll use developer mode:
 
 .. tabs::
 
@@ -240,6 +240,7 @@ the application again. As before, we'll use Developer mode:
       (beeware-venv) $ briefcase dev
 
       [helloworld] Starting in dev mode...
+      ===========================================================================
 
   .. group-tab:: Linux
 
@@ -248,6 +249,7 @@ the application again. As before, we'll use Developer mode:
       (beeware-venv) $ briefcase dev
 
       [helloworld] Starting in dev mode...
+      ===========================================================================
 
   .. group-tab:: Windows
 
@@ -256,6 +258,7 @@ the application again. As before, we'll use Developer mode:
       (beeware-venv) C:\...>briefcase dev
 
       [helloworld] Starting in dev mode...
+      ===========================================================================
 
 You'll notice that this time, it *doesn't* install dependencies. Briefcase can
 detect that the application has been run before, and to save time, will only

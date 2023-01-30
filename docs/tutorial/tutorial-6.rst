@@ -9,10 +9,14 @@ mobile applications, you can deploy your application as a single-page web app.
 .. admonition:: Proof of Concept
 
     The Toga Web backend is the least mature of all the Toga backends. It's
-    mature enough to show off a few features, but it's missing many other
-    widgets. At this point in time, Web deployment should be considered a "Proof
-    of Concept" - enough to demonstrate what can be done, but not enough to be
-    relied on for serious development.
+    mature enough to show off a few features, but it's likely to be bugging, and
+    will missing many of the widgets that are available on other platforms. At
+    this point in time, Web deployment should be considered a "Proof of Concept"
+    - enough to demonstrate what can be done, but not enough to be relied on for
+    serious development.
+
+    If you have problems with this step of the tutorial, you can skip to the
+    next page.
 
 Deploying as a web app
 ======================

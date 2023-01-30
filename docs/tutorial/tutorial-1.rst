@@ -129,6 +129,7 @@ file system should look something like::
                     __main__.py
                     app.py
             tests/
+                __init__.py
                 helloworld.py
                 test_app.py
 
@@ -157,9 +158,10 @@ the project in Developer (or ``dev``) mode:
       (beeware-venv) $ cd helloworld
       (beeware-venv) $ briefcase dev
 
-      [hello-world] Installing dependencies...
+      [hello-world] Installing requirements...
       ...
       [helloworld] Starting in dev mode...
+      ===========================================================================
 
   .. group-tab:: Linux
 
@@ -168,9 +170,10 @@ the project in Developer (or ``dev``) mode:
       (beeware-venv) $ cd helloworld
       (beeware-venv) $ briefcase dev
 
-      [hello-world] Installing dependencies...
+      [hello-world] Installing requirements...
       ...
       [helloworld] Starting in dev mode...
+      ===========================================================================
 
   .. group-tab:: Windows
 
@@ -179,9 +182,10 @@ the project in Developer (or ``dev``) mode:
       (beeware-venv) C:\...>cd helloworld
       (beeware-venv) C:\...>briefcase dev
 
-      [hello-world] Installing dependencies...
+      [hello-world] Installing requirements...
       ...
       [helloworld] Starting in dev mode...
+      ===========================================================================
 
 This should open a GUI window:
 

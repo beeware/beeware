@@ -45,9 +45,9 @@ can't redraw*, and *it can't process other events*.
 This means any user logic contained in an event handler needs to complete
 quickly. Any delay in completing the event handler will be observed by the user
 as a slowdown (or stop) in GUI updates. If this delay is long enough, your
-operating system may report this as a problem - the macOS "Beachball" and
-Windows "Hourglass" are the operating system telling you that your app is taking
-too long in an event handler.
+operating system may report this as a problem - the macOS "beachball" and
+Windows "spinner" icons are the operating system telling you that your app is
+taking too long in an event handler.
 
 Simple operations like "update a label", or "recompute the total of the inputs"
 are easy to complete quickly. However, there are a lot of operations that can't
@@ -130,7 +130,7 @@ trigger the dialog, you may notice a number of subtle improvements:
 * The button returns to an "unclicked" state, rather than being stuck in a
   "clicked" state.
 
-* The "beachball"/"hourglass" icon won't appear
+* The "beachball"/"spinner" icon won't appear
 
 * If you move/resize the app window while waiting for the dialog to appear,
   the window will redraw.
