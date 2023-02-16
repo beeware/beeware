@@ -17,7 +17,7 @@ Creating your application scaffold
 ==================================
 
 Since this is the first time we're packaging our application, we need to create
-some confguration files and other scaffolding to support the packaging process.
+some configuration files and other scaffolding to support the packaging process.
 From the ``helloworld`` directory, run:
 
 .. tabs::
