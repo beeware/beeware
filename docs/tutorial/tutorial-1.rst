@@ -116,6 +116,7 @@ file system should look something like::
         beeware-venv/
             ...
         helloworld/
+            CHANGELOG
             LICENSE
             README.rst
             pyproject.toml

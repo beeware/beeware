@@ -41,13 +41,20 @@ From the ``helloworld`` directory, run:
       ...
       [helloworld] Removing unneeded app content...
       ...
-      [helloworld] Created macOS/app/Hello World
+      [helloworld] Created build/helloworld-0.0.1/macOS/app
 
   .. group-tab:: Linux
 
     .. code-block:: console
 
       (beeware-venv) $ briefcase create
+
+      [helloworld] Finalizing application configuration...
+      Targeting ubuntu:jammy (Vendor base debian)
+      Determining glibc version... done
+
+      Targeting glibc 2.35
+      Targeting Python3.10
 
       [helloworld] Generating application template...
       Using app template: https://github.com/beeware/briefcase-linux-AppImage-template.git, branch v0.3.12
@@ -74,14 +81,7 @@ From the ``helloworld`` directory, run:
       ...
       [helloworld] Removing unneeded app content...
       ...
-      [helloworld] Created linux/appimage/Hello World
-
-    .. note::
-
-      The first time you run this, it may take a while, as Briefcase needs to
-      prepare an Ubuntu 18.04 Docker image that can be used to build AppImage
-      binaries. This involves downloading a lot of system packages. On future
-      runs, this Docker image will be re-used.
+      [helloworld] Created build/helloworld/linux/ubuntu
 
   .. group-tab:: Windows
 
@@ -100,7 +100,7 @@ From the ``helloworld`` directory, run:
       ...
       [helloworld] Installing application resources...
       ...
-      [helloworld] Created windows\app\Hello World
+      [helloworld] Created build\helloworld\windows\app
 
 You've probably just seen pages of content go past in your terminal... so what
 just happened? Briefcase has done the following:
@@ -174,10 +174,10 @@ target platform.
 
       [helloworld] Adhoc signing app...
       ...
-      Signing macOS/app/Hello World/Hello World.app
+      Signing build/helloworld/macOS/app/Hello World.app
       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.0% • 00:07
 
-      [helloworld] Built macOS/Hello World/Hello World.app
+      [helloworld] Built build/helloworld-0.0.1/macOS/app/Hello World.app
 
     On macOS, the ``build`` command doesn't need to *compile* anything, but it
     does need to sign the contents of binary so that it can be executed. This
@@ -191,16 +191,39 @@ target platform.
 
       (beeware-venv) $ briefcase build
 
-      [helloworld] Building AppImage...
-      ...
-      [helloworld] Built linux/Hello World-x86_64-0.0.1.AppImage
+      [helloworld] Finalizing application configuration...
+      Targeting ubuntu:jammy (Vendor base debian)
+      Determining glibc version... done
 
-    Once this step completes, the ``linux`` folder will contain a file named
-    ``Hello World-x86_64-0.0.1.AppImage``. This AppImage is an executable;
-    you can run it from the shell, or double click on it in your file explorer.
-    You can also give it to any other Linux user, and as long as they've got
-    a version of Linux published after 2018, they should be able to run it in
-    the same way.
+      Targeting glibc 2.35
+      Targeting Python3.10
+
+      [helloworld] Building application...
+      Build bootstrap binary...
+      make: Entering directory '/home/brutus/beeware-tutorial/helloworld/build/linux/ubuntu/jammy/bootstrap'
+      ...
+      make: Leaving directory '/home/brutus/beeware-tutorial/helloworld/build/linux/ubuntu/jammy/bootstrap'
+      Building bootstrap binary... done
+
+      Installing license... done
+
+      Installing changelog... done
+
+      Installing man page... done
+
+      Update file permissions...
+      ...
+      Updating file permissions... done
+
+      Stripping binary... done
+
+      [helloworld] Built build/helloworld-0.0.1/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld
+
+    Once this step completes, the ``build`` folder will contain a
+    ``helloworld-0.0.1`` folder that contains a mirror of a Linux ``/usr``
+    filesystem. This filesystem mirror will contain a ``bin`` folder with a
+    ``helloworld`` binary, plus ``lib`` and ``share`` folders needed to support
+    the binary.
 
   .. group-tab:: Windows
 
@@ -209,7 +232,7 @@ target platform.
       (beeware-venv) C:\...>briefcase build
       Setting stup app details... done
 
-      [helloworld] Built windows\app\Hello World
+      [helloworld] Built build\helloworld-0.0.1\windows\app\src\Toga Test.exe
 
     On Windows, the ``build`` command doesn't need to *compile* anything, but
     it does need to write some metadata so that the application knows it's name,
@@ -251,9 +274,26 @@ You can now use Briefcase to run your application:
 
       (beeware-venv) $ briefcase run
 
+      [helloworld] Finalizing application configuration...
+      Targeting ubuntu:jammy (Vendor base debian)
+      Determining glibc version... done
+
+      Targeting glibc 2.35
+      Targeting Python3.10
+
       [helloworld] Starting app...
       ===========================================================================
-
+      Install path: /home/brutus/beeware-tutorial/helloworld/build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr
+      Pre-initializing Python runtime...
+      PYTHONPATH:
+      - /usr/lib/python3.10
+      - /usr/lib/python3.10/lib-dynload
+      - /home/brutus/beeware-tutorial/helloworld/build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/lib/helloworld/app
+      - /home/brutus/beeware-tutorial/helloworld/build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/lib/helloworld/app_packages
+      Configure argc/argv...
+      Initializing Python runtime...
+      Running app module: helloworld
+      ---------------------------------------------------------------------------
 
   .. group-tab:: Windows
 
@@ -274,11 +314,11 @@ You can now use Briefcase to run your application:
       - C:\Users\brutus\beeware-tutorial\helloworld\windows\app\Hello World\src\app
       Configure argc/argv...
       Initializing Python runtime...
-      Running app module: togatest
+      Running app module: helloworld
       ---------------------------------------------------------------------------
 
 This will start to run your native application, using the output of the
-`build` command.
+``build`` command.
 
 You might notice some small differences in the way your application looks
 when it's running. For example, icons and the name displayed by the operating
@@ -291,7 +331,7 @@ application appears.
 Building your installer
 =======================
 
-You can now package your application for distribution, using the `package`
+You can now package your application for distribution, using the ``package``
 command. The package command does any compilation that is required to convert
 the scaffolded project into a final, distributable product. Depending on the
 platform, this may involve compiling an installer, performing code signing,
@@ -303,29 +343,29 @@ or doing other pre-distribution tasks.
 
     .. code-block:: console
 
-      (beeware-venv) $ briefcase package --adhoc
+      (beeware-venv) $ briefcase package --adhoc-sign
 
       [helloworld] Signing app with adhoc identity...
       ...
-      Signing macOS/app/Hello World/Hello World.app
+      Signing build/helloworld/macOS/app/Hello World.app
            ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.0% • 00:07
 
       [helloworld] Building DMG...
-      Signing macOS/Hello World-0.0.1.dmg
+      Signing dist/Hello World-0.0.1.dmg
 
-      [helloworld] Packaged macOS/Hello World-0.0.1.dmg
+      [helloworld] Packaged dist/Hello World-0.0.1.dmg
 
-    The ``macOS`` folder will contain a file named ``Hello World-0.0.1.dmg``.
+    The ``dist`` folder will contain a file named ``Hello World-0.0.1.dmg``.
     If you locate this file in the Finder, and double click on its icon,
     you'll mount the DMG, giving you a copy of the Hello World app, and a
     link to your Applications folder for easy installation. Drag the app file
     into Applications, and you've installed your application. Send the DMG file
     to a friend, and they should be able to do the same.
 
-    In this example, we've used the ``--adhoc`` option - that is, we're signing
-    our application with adhoc credentials. We've done this to keep the tutorial
-    simple. Setting up code signing identities is a little fiddly, and they're
-    only *absolutely* required if you're intending to distribute your
+    In this example, we've used the ``--adhoc-sign`` option - that is, we're
+    signing our application with adhoc credentials. We've done this to keep the
+    tutorial simple. Setting up code signing identities is a little fiddly, and
+    they're only *absolutely* required if you're intending to distribute your
     application to others. If we were publishing a real application, you will
     need to specify real credentials.
 
@@ -335,16 +375,96 @@ or doing other pre-distribution tasks.
 
   .. group-tab:: Linux
 
+    The output of the package step will slightly different dependig on
+    your Linux distribution. If you're on a Debian-derived distribution,
+    you'll see:
+
     .. code-block:: console
 
       (beeware-venv) $ briefcase package
 
-      [helloworld] Building AppImage...
-      ...
-      [helloworld] Created linux/Hello World-x86_64-0.0.1.AppImage.
+      [helloworld] Finalizing application configuration...
+      Targeting ubuntu:jammy (Vendor base debian)
+      Determining glibc version... done
 
-    On Linux, this step does nothing. The AppImage created by the build command
-    is a complete executable, requiring no additional processing.
+      Targeting glibc 2.35
+      Targeting Python3.10
+
+      [helloworld] Building .deb package...
+      Write Debian package control file... done
+
+      dpkg-deb: building package 'helloworld' in 'helloworld-0.0.1.deb'.
+      Building Debian package... done
+
+      [helloworld] Packaged dist/helloworld_0.0.1-1~ubuntu-jammy_amd64.deb
+
+    The ``dist`` folder will contain the DEB file that was generated.
+
+    If you're on a Redhat-based distribution, you'll see:
+
+    .. code-block:: console
+
+      (beeware-venv) $ briefcase package
+
+      [helloworld] Finalizing application configuration...
+      Targeting fedora:36 (Vendor base rhel)
+      Determining glibc version... done
+
+      Targeting glibc 2.35
+      Targeting Python3.10
+
+      [helloworld] Building .rpm package...
+      Generating rpmbuild layout... done
+
+      Write RPM spec file... done
+
+      Building source archive... done
+
+      Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.Kav9H7
+      + umask 022
+      ...
+      + exit 0
+      Building RPM package... done
+
+      [helloworld] Packaged dist/helloworld-0.0.1-1.fc36.x86_64.rpm
+
+    The ``dist`` folder will contain the RPM file that was generated.
+
+    Other Linux distributions aren't currently supported for packaging at
+    present.
+
+    If you want to build a package for any other Linux distributions,
+    Briefcase can also help - but you'll need to install Docker.
+
+    Official installers for `Docker Engine
+    <https://docs.docker.com/engine/install/#server>`__ are available for a
+    range of Unix distributions. Follow the instructions for your platform;
+    however, ensure you don't install Docker in "rootless" mode.
+
+    Once you've installed Docker, you should be able to start an Linux
+    container - for example:
+
+    .. code-block:: console
+
+      $ docker run -it ubuntu:22.04
+
+    will show you a Unix prompt (something like `root@84444e31cff9:/#`) inside
+    an Ubuntu 22.04 Docker container. Type Ctrl-D to exit Docker and return to
+    your local shell.
+
+    Once you've got Docker installed, you can use Briefcase to build a package
+    for any Linux distribution that Briefcase supports by passing in a Docker
+    image as an argument. For example, to build a DEB package for Ubuntu 22.04
+    (Jammy), regardless of the operating system you're on, you can run:
+
+    .. code-block:: console
+
+      $ briefcase package --target ubuntu:jammy
+
+    This will download the Docker image for your selected operating system,
+    create a container that is able to run Briefcase builds, and build
+    the app package inside the image. Once it's completed, the ``dist`` folder
+    will contain the package for the target Linux distribution.
 
   .. group-tab:: Windows
 
@@ -354,9 +474,9 @@ or doing other pre-distribution tasks.
 
       [helloworld] Building MSI...
       ...
-      [helloworld] Packaged windows\Hello_World-0.0.1.msi
+      [helloworld] Packaged dist\Hello_World-0.0.1.msi
 
-    Once this step completes, the ``windows`` folder will contain a file named
+    Once this step completes, the ``dist`` folder will contain a file named
     ``Hello_World-0.0.1.msi``. If you double click on this installer to run it,
     you should go through a familiar Windows installation process. Once this
     installation completes, there will be a "Hello World" entry in your start

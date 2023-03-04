@@ -192,9 +192,9 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
 
       (beeware-venv) $ briefcase update
 
-      [hello-world] Updating application code...
+      [helloworld] Updating application code...
       ...
-      [hello-world] Application updated.
+      [helloworld] Application updated.
 
     Rebuild the app:
 
@@ -203,7 +203,7 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
       (beeware-venv) $ briefcase build
 
       [helloworld] Adhoc signing app...
-      [hello-world] Built macOS/app/Hello World/Hello World.app
+      [helloworld] Built build/helloworld-0.0.1/macOS/app/Hello World.app
 
     And finally, run the app:
 
@@ -211,7 +211,7 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
 
       (beeware-venv) $ briefcase run
 
-      [hello-world] Starting app...
+      [helloworld] Starting app...
       ===========================================================================
 
     However, when the app runs, you'll see an error in the console, plus a crash
@@ -228,9 +228,9 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
 
       (beeware-venv) $ briefcase update
 
-      [hello-world] Updating application code...
+      [helloworld] Updating application code...
       ...
-      [hello-world] Application updated.
+      [helloworld] Application updated.
 
     Rebuild the app:
 
@@ -238,9 +238,12 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
 
       (beeware-venv) $ briefcase build
 
-      [hello-world] Building AppImage...
+      [helloworld] Finalizing application configuration...
       ...
-      [hello-world] Built linux/Hello_World-0.0.1-x86_64.AppImage
+
+      [helloworld] Building application...
+      ...
+      [helloworld] Built build/helloworld-0.0.1/linux/system/helloworld-0.0.1/usr/bin/helloworld
 
     And finally, run the app:
 
@@ -248,7 +251,7 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
 
       (beeware-venv) $ briefcase run
 
-      [hello-world] Starting app...
+      [helloworld] Starting app...
       ===========================================================================
 
     However, when the app runs, you'll see an error in the console:
@@ -266,7 +269,7 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
           import httpx
       ModuleNotFoundError: No module named 'httpx'
 
-      Unable to start app hello-world.
+      Unable to start app helloworld.
 
   .. group-tab:: Windows
 
@@ -276,9 +279,9 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
 
       (beeware-venv)C:\...>briefcase update
 
-      [hello-world] Updating application code...
+      [helloworld] Updating application code...
       ...
-      [hello-world] Application updated.
+      [helloworld] Application updated.
 
     Rebuild the app:
 
@@ -286,7 +289,7 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
 
       (beeware-venv)C:\...>briefcase build
       ...
-      [hello-world] Built windows/msi/Hello World
+      [helloworld] Built build\helloworld-0.0.1\windows\app\src\Toga Test.exe
 
     And finally, run the app:
 
@@ -294,7 +297,7 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
 
       (beeware-venv)C:\...>briefcase run
 
-      [hello-world] Starting app...
+      [helloworld] Starting app...
       ===========================================================================
 
     However, when the app runs, you'll see an error in the console, plus a crash
@@ -331,11 +334,11 @@ you originally ran ``briefcase new``.
 ``pyproject.toml`` is broken up into sections; one of the sections describes
 the settings for your app::
 
-    [tool.briefcase.app.hello-world]
+    [tool.briefcase.app.helloworld]
     formal_name = "Hello World"
     description = "A Tutorial app"
-    icon = "src/hello_world/resources/hello-world"
-    sources = ["src/hello_world"]
+    icon = "src/helloworld/resources/helloworld"
+    sources = ["src/helloworld"]
     requires = []
 
 The ``requires`` option describes the dependencies of our application. It is
@@ -360,8 +363,8 @@ input to ``pip install`` can be used here - so, you could specify:
    else, this path probably won't exist on their machine!)
 
 Further down in ``pyproject.toml``, you'll notice other sections that are
-operating system dependent, like ``[tool.briefcase.app.hello-world.macOS]`` and
-``[tool.briefcase.app.hello-world.windows]``. These sections *also* have a
+operating system dependent, like ``[tool.briefcase.app.helloworld.macOS]`` and
+``[tool.briefcase.app.helloworld.windows]``. These sections *also* have a
 ``requires`` setting. These settings allow you to define additional
 platform-specific dependencies - so, for example, if you need a
 platform-specific library to handle some aspect of your app, you can specify
@@ -404,10 +407,10 @@ packaging our app again. Ensure that you've saved your changes to
 
       (beeware-venv) $ briefcase update -r
 
-      [hello-world] Updating application code...
+      [helloworld] Updating application code...
       Installing src/hello_world...
 
-      [hello-world] Updating requirements...
+      [helloworld] Updating requirements...
       Collecting httpx
         Using cached httpx-0.19.0-py3-none-any.whl (77 kB)
       ...
@@ -417,7 +420,7 @@ packaging our app again. Ensure that you've saved your changes to
       [helloworld] Removing unneeded app content...
       ...
 
-      [hello-world] Application updated.
+      [helloworld] Application updated.
 
   .. group-tab:: Linux
 
@@ -425,10 +428,17 @@ packaging our app again. Ensure that you've saved your changes to
 
       (beeware-venv) $ briefcase update -r
 
-      [hello-world] Updating application code...
+      [helloworld] Finalizing application configuration...
+      Targeting ubuntu:jammy (Vendor base debian)
+      Determining glibc version... done
+
+      Targeting glibc 2.35
+      Targeting Python3.10
+
+      [helloworld] Updating application code...
       Installing src/hello_world...
 
-      [hello-world] Updating requirements...
+      [helloworld] Updating requirements...
       Collecting httpx
         Using cached httpx-0.19.0-py3-none-any.whl (77 kB)
       ...
@@ -438,7 +448,7 @@ packaging our app again. Ensure that you've saved your changes to
       [helloworld] Removing unneeded app content...
       ...
 
-      [hello-world] Application updated.
+      [helloworld] Application updated.
 
   .. group-tab:: Windows
 
@@ -446,10 +456,10 @@ packaging our app again. Ensure that you've saved your changes to
 
       (beeware-venv)C:\...>briefcase update -r
 
-      [hello-world] Updating application code...
-      Installing src/hello_world...
+      [helloworld] Updating application code...
+      Installing src/helloworld...
 
-      [hello-world] Updating requirements...
+      [helloworld] Updating requirements...
       Collecting httpx
         Using cached httpx-0.19.0-py3-none-any.whl (77 kB)
       ...
@@ -459,7 +469,7 @@ packaging our app again. Ensure that you've saved your changes to
       [helloworld] Removing unneeded app content...
       ...
 
-      [hello-world] Application updated.
+      [helloworld] Application updated.
 
 Once you've updated, you can run ``briefcase build`` and ``briefcase run`` - and
 you should see your packaged app, with the new dialog behavior.

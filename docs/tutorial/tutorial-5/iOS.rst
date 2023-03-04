@@ -23,7 +23,7 @@ but this time, we specify that we want to create an iOS application:
   ...
   [helloworld] Installing application resources...
   ...
-  [helloworld] Created iOS/Xcode/Hello World
+  [helloworld] Created build/helloworld/iOS/Xcode
 
 Once this completes, we'll now have an ``iOS`` directory in your project.
 This directory will contain a ``Hello World`` folder, which will contain
@@ -43,7 +43,7 @@ You can then use Briefcase to compile your app using ``briefcase build iOS``:
   ...
   Building... done
 
-  [helloworld] Built iOS/Xcode/Hello World/build/Debug-iphonesimulator/Hello World.app
+  [helloworld] Built build/helloworld-0.0.1/iOS/Xcode/build/Debug-iphonesimulator/Hello World.app
 
 We're now ready to run our application, using ``briefcase run iOS``. You'll be
 prompted to select a device to compile for; if you've got simulators for

@@ -405,8 +405,7 @@ environment:
 
       [helloworld] Updating requirements...
       ...
-      [helloworld] Built macOS/app/Hello World/Hello World.app
-      [helloworld] Built linux/Hello World-x86_64-0.0.1.AppImage (test mode)
+      [helloworld] Built build/helloworld-0.0.1/macOS/app/Hello World.app (test mode)
 
       [helloworld] Starting test suite...
       ===========================================================================
@@ -442,13 +441,20 @@ environment:
 
       (beeware-venv) $ briefcase run --test -r
 
+      [helloworld] Finalizing application configuration...
+      Targeting ubuntu:jammy (Vendor base debian)
+      Determining glibc version... done
+
+      Targeting glibc 2.35
+      Targeting Python3.10
+
       [helloworld] Updating application code...
       Installing src/helloworld... done
       Installing tests... done
 
       [helloworld] Updating requirements...
       ...
-      [helloworld] Built linux/Hello World-x86_64-0.0.1.AppImage (test mode)
+      [helloworld] Built build/helloworld-0.0.1/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld (test mode)
 
       [helloworld] Starting test suite...
       ===========================================================================
@@ -474,7 +480,7 @@ environment:
 
       [helloworld] Updating requirements...
       ...
-      [helloworld] Built windows\app\Hello World\src\Hello World.exe (test mode)
+      [helloworld] Built build\helloworld-0.0.1\windows\app\src\Hello World.exe (test mode)
 
       ===========================================================================
       Log started: 2022-12-02 10:57:34Z
