@@ -14,10 +14,16 @@ The first thing we'll need is a working Python interpreter.
 
   .. group-tab:: macOS
 
-    If you're on macOS, you can get the official installer from `the Python
-    website <https://www.python.org/downloads>`_. You can use any stable version
-    of Python from 3.8 onward. We'd advise avoiding alphas, betas, and release
-    candidates unless you *really* know what you're doing.
+    If you're on macOS, a recent version of Python is included with Xcode or
+    the command line developer tools. To check if you already have it, run the
+    following command:
+
+    .. code-block:: console
+
+      $ python3 --version
+
+    If Python is installed, you'll see its version number. Otherwise, you'll
+    be prompted to install the command line developer tools.
 
   .. group-tab:: Linux
 
@@ -67,12 +73,8 @@ Next, install the additional dependencies needed for your operating system:
 
     Building BeeWare apps on macOS require:
 
-    * **Git**, a version control system. You can download Git from
-      `git-scm.org <https://git-scm.com/download/>`__.
-
-    * **Xcode**, Apple's IDE tooling. Xcode is available for free
-      from `the macOS App Store
-      <https://apps.apple.com/au/app/xcode/id497799835?mt=12>`__.
+    * **Git**, a version control system. This is included with Xcode or the
+      command line developer tools, which you installed above.
 
   .. group-tab:: Linux
 
