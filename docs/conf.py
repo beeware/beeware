@@ -12,6 +12,7 @@
 import os
 import re
 import sys
+from datetime import datetime
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -24,7 +25,9 @@ import sys
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinx.ext.autodoc', 'sphinx.ext.todo', 'sphinx_tabs.tabs']
+extensions = [
+    'sphinx.ext.autodoc', 'sphinx.ext.todo', 'sphinx_design', 'sphinx_tabs.tabs'
+]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -39,8 +42,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'BeeWare'
-copyright = u'2013, Russell Keith-Magee'
+project = 'BeeWare'
+copyright = f'{datetime.now().year}, Russell Keith-Magee'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the

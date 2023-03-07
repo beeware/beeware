@@ -1,29 +1,3 @@
-.. raw:: html
-
-    <style>
-        .row {clear: both}
-
-        .column img {border: 1px solid black;}
-
-        @media only screen and (min-width: 1000px),
-               only screen and (min-width: 500px) and (max-width: 768px){
-
-            .column {
-                padding-left: 5px;
-                padding-right: 5px;
-                float: left;
-            }
-
-            .column3  {
-                width: 33.3%;
-            }
-
-            .column2  {
-                width: 50%;
-            }
-        }
-    </style>
-
 =============================
 Tutorial 5 - Taking it Mobile
 =============================
@@ -32,15 +6,19 @@ So far, we've been running and testing our application on the desktop. However,
 BeeWare also supports mobile platforms - and the application we've written
 can be deployed to your mobile device, too!
 
-:doc:`iOS <iOS>`
-----------------
+.. grid:: 1 1 2 2
 
-iOS applications can only be compiled on macOS.
+    .. grid-item-card:: iOS
 
-:doc:`Android <android>`
-------------------------
+        iOS applications can only be compiled on macOS.
 
-Android applications can be compiled on macOS, Windows or Linux.
+        :doc:`Let's build our app for iOS! <iOS>`
+
+    .. grid-item-card:: Android
+
+        Android applications can be compiled on macOS, Windows or Linux.
+
+        :doc:`Let's build our app for Android! <android>`
 
 .. toctree::
     :maxdepth: 1
