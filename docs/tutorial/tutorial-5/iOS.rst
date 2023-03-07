@@ -23,10 +23,9 @@ but this time, we specify that we want to create an iOS application:
   ...
   [helloworld] Installing application resources...
   ...
-  [helloworld] Created build/helloworld/ios/Xcode
+  [helloworld] Created build/helloworld/ios/xcode
 
-Once this completes, we'll now have an ``iOS`` directory in your project.
-This directory will contain a ``Hello World`` folder, which will contain
+Once this completes, we'll have a  ``build/helloworld/ios/xcode`` directory containing
 an Xcode project, as well as the support libraries and the application code
 needed for the application.
 
@@ -43,7 +42,7 @@ You can then use Briefcase to compile your app using ``briefcase build iOS``:
   ...
   Building... done
 
-  [helloworld] Built build/helloworld/ios/Xcode/build/Debug-iphonesimulator/Hello World.app
+  [helloworld] Built build/helloworld/ios/xcode/build/Debug-iphonesimulator/Hello World.app
 
 We're now ready to run our application, using ``briefcase run iOS``. You'll be
 prompted to select a device to compile for; if you've got simulators for
