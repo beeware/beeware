@@ -122,7 +122,7 @@ APK app file.
       28 actionable tasks: 17 executed, 11 up-to-date
       Building... done
 
-      [helloworld] Built build/helloworld-0.0.1/android/gradle/app/build/outputs/apk/debug/app-debug.apk
+      [helloworld] Built build/helloworld/android/gradle/app/build/outputs/apk/debug/app-debug.apk
 
   .. group-tab:: Linux
 
@@ -137,7 +137,7 @@ APK app file.
       28 actionable tasks: 17 executed, 11 up-to-date
       Building... done
 
-      [helloworld] Built build/helloworld-0.0.1/android/gradle/app/build/outputs/apk/debug/app-debug.apk
+      [helloworld] Built build/helloworld/android/gradle/app/build/outputs/apk/debug/app-debug.apk
 
   .. group-tab:: Windows
 
@@ -152,7 +152,7 @@ APK app file.
       28 actionable tasks: 17 executed, 11 up-to-date
       Building... done
 
-      [helloworld] Built build\helloworld-0.0.1\android\gradle\app\build\outputs\apk\debug\app-debug.apk
+      [helloworld] Built build\helloworld\android\gradle\app\build\outputs\apk\debug\app-debug.apk
 
 .. admonition:: Gradle may look stuck
 

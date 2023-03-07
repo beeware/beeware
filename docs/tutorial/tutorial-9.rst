@@ -405,7 +405,7 @@ environment:
 
       [helloworld] Updating requirements...
       ...
-      [helloworld] Built build/helloworld-0.0.1/macOS/app/Hello World.app (test mode)
+      [helloworld] Built build/helloworld/macos/app/Hello World.app (test mode)
 
       [helloworld] Starting test suite...
       ===========================================================================
@@ -454,7 +454,7 @@ environment:
 
       [helloworld] Updating requirements...
       ...
-      [helloworld] Built build/helloworld-0.0.1/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld (test mode)
+      [helloworld] Built build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld (test mode)
 
       [helloworld] Starting test suite...
       ===========================================================================
@@ -480,7 +480,7 @@ environment:
 
       [helloworld] Updating requirements...
       ...
-      [helloworld] Built build\helloworld-0.0.1\windows\app\src\Hello World.exe (test mode)
+      [helloworld] Built build\helloworld\windows\app\src\Hello World.exe (test mode)
 
       ===========================================================================
       Log started: 2022-12-02 10:57:34Z

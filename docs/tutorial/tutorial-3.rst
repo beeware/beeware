@@ -41,7 +41,7 @@ From the ``helloworld`` directory, run:
       ...
       [helloworld] Removing unneeded app content...
       ...
-      [helloworld] Created build/helloworld-0.0.1/macOS/app
+      [helloworld] Created build/helloworld/macos/app
 
   .. group-tab:: Linux
 
@@ -174,10 +174,10 @@ target platform.
 
       [helloworld] Adhoc signing app...
       ...
-      Signing build/helloworld/macOS/app/Hello World.app
+      Signing build/helloworld/macos/app/Hello World.app
       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.0% • 00:07
 
-      [helloworld] Built build/helloworld-0.0.1/macOS/app/Hello World.app
+      [helloworld] Built build/helloworld/macos/app/Hello World.app
 
     On macOS, the ``build`` command doesn't need to *compile* anything, but it
     does need to sign the contents of binary so that it can be executed. This
@@ -217,7 +217,7 @@ target platform.
 
       Stripping binary... done
 
-      [helloworld] Built build/helloworld-0.0.1/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld
+      [helloworld] Built build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld
 
     Once this step completes, the ``build`` folder will contain a
     ``helloworld-0.0.1`` folder that contains a mirror of a Linux ``/usr``
@@ -232,7 +232,7 @@ target platform.
       (beeware-venv) C:\...>briefcase build
       Setting stup app details... done
 
-      [helloworld] Built build\helloworld-0.0.1\windows\app\src\Toga Test.exe
+      [helloworld] Built build\helloworld\windows\app\src\Toga Test.exe
 
     On Windows, the ``build`` command doesn't need to *compile* anything, but
     it does need to write some metadata so that the application knows it's name,
@@ -347,7 +347,7 @@ or doing other pre-distribution tasks.
 
       [helloworld] Signing app with adhoc identity...
       ...
-      Signing build/helloworld/macOS/app/Hello World.app
+      Signing build/helloworld/macos/app/Hello World.app
            ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.0% • 00:07
 
       [helloworld] Building DMG...

@@ -203,7 +203,7 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
       (beeware-venv) $ briefcase build
 
       [helloworld] Adhoc signing app...
-      [helloworld] Built build/helloworld-0.0.1/macOS/app/Hello World.app
+      [helloworld] Built build/helloworld/macos/app/Hello World.app
 
     And finally, run the app:
 
@@ -243,7 +243,7 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
 
       [helloworld] Building application...
       ...
-      [helloworld] Built build/helloworld-0.0.1/linux/system/helloworld-0.0.1/usr/bin/helloworld
+      [helloworld] Built build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld
 
     And finally, run the app:
 
@@ -259,13 +259,13 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
     .. code-block:: console
 
       Traceback (most recent call last):
-        File "/tmp/.mount_Hello_ifthSH/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+        File "/usr/lib/python3.10/runpy.py", line 194, in _run_module_as_main
           return _run_code(code, main_globals, None,
-        File "/tmp/.mount_Hello_ifthSH/usr/lib/python3.8/runpy.py", line 87, in _run_code
+        File "/usr/lib/python3.10/runpy.py", line 87, in _run_code
           exec(code, run_globals)
-        File "/tmp/.mount_Hello_ifthSH/usr/app/hello_world/__main__.py", line 1, in <module>
-          from hello_world.app import main
-        File "/tmp/.mount_Hello_ifthSH/usr/app/hello_world/app.py", line 8, in <module>
+        File "/home/brutus/beeware-tutorial/helloworld/build/linux/ubuntu/jammy/helloworld-0.0.1/usr/app/hello_world/__main__.py", line 1, in <module>
+          from helloworld.app import main
+        File "/home/brutus/beeware-tutorial/helloworld/build/linux/ubuntu/jammy/helloworld-0.0.1/usr/app/hello_world/app.py", line 8, in <module>
           import httpx
       ModuleNotFoundError: No module named 'httpx'
 
@@ -289,7 +289,7 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
 
       (beeware-venv)C:\...>briefcase build
       ...
-      [helloworld] Built build\helloworld-0.0.1\windows\app\src\Toga Test.exe
+      [helloworld] Built build\helloworld\windows\app\src\Toga Test.exe
 
     And finally, run the app:
 
