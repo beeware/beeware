@@ -99,7 +99,7 @@ considerable; this may take a while (10 minutes or longer, depending on the
 speed of your Internet connection). When the download has completed, you will
 be prompted to accept Google's Android SDK license.
 
-Once this completes, we'll now have an android
+Once this completes, we'll have a
 ``build\helloworld\android\gradle`` directory in our project, which will contain
 an Android project with a Gradle build configuration. This project will contain
 your application code, and a support package containing the Python interpreter.

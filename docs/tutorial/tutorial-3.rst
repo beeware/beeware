@@ -375,7 +375,7 @@ or doing other pre-distribution tasks.
 
   .. group-tab:: Linux
 
-    The output of the package step will slightly different dependig on
+    The output of the package step will be slightly different depending on
     your Linux distribution. If you're on a Debian-derived distribution,
     you'll see:
 
@@ -430,11 +430,10 @@ or doing other pre-distribution tasks.
 
     The ``dist`` folder will contain the RPM file that was generated.
 
-    Other Linux distributions aren't currently supported for packaging at
-    present.
+    Other Linux distributions aren't currently supported for packaging.
 
-    If you want to build a package for any other Linux distributions,
-    Briefcase can also help - but you'll need to install Docker.
+    If you want to build a package for a Linux distribution other than the one 
+    you're using, Briefcase can also help - but you'll need to install Docker.
 
     Official installers for `Docker Engine
     <https://docs.docker.com/engine/install/#server>`__ are available for a

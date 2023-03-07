@@ -167,7 +167,7 @@ last command (the ``activate`` command) to re-activate your environment.
     predecessor to Python's built in ``venv`` module. As with Python installs -
     if you're on macOS or Windows, it doesn't matter *how* you create your
     virtual environment, as long as you have one. If you're on Linux, you should
-    stick to ``venv`` and the system python.
+    stick to ``venv`` and the system Python.
 
 Next steps
 ==========
