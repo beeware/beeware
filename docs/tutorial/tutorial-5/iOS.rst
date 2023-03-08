@@ -2,7 +2,10 @@
 Tutorial 5 - Taking it mobile: iOS
 ==================================
 
-Now, we're going to take our application, and deploy it as an iOS application.
+To compile iOS applications we'll need Xcode, which is available for free from `the macOS
+App Store <https://apps.apple.com/au/app/xcode/id497799835?mt=12>`__.
+
+Once we've got Xcode installed, we can take our application and deploy it as an iOS app.
 
 The process of deploying an application to iOS is very similar to the process
 for deploying as a desktop application. First, you run the ``create`` command -
