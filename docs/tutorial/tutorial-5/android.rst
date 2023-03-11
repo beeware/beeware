@@ -41,7 +41,7 @@ adds your Python code to it.
       [helloworld] Removing unneeded app content...
       No app content cleanup required.
 
-      [helloworld] Created android/gradle/Hello World
+      [helloworld] Created build/helloworld/android/gradle
 
   .. group-tab:: Linux
 
@@ -66,7 +66,7 @@ adds your Python code to it.
       [helloworld] Removing unneeded app content...
       No app content cleanup required.
 
-      [helloworld] Created android/gradle/Hello World
+      [helloworld] Created build/helloworld/android/gradle
 
   .. group-tab:: Windows
 
@@ -91,7 +91,7 @@ adds your Python code to it.
       [helloworld] Removing unneeded app content...
       No app content cleanup required.
 
-      [helloworld] Created android\gradle\Hello World.
+      [helloworld] Created build\helloworld\android\gradle
 
 When you run ``briefcase create android`` for the first time, Briefcase
 downloads a Java JDK, and the Android SDK. File sizes and download times can be
@@ -99,9 +99,9 @@ considerable; this may take a while (10 minutes or longer, depending on the
 speed of your Internet connection). When the download has completed, you will
 be prompted to accept Google's Android SDK license.
 
-Once this completes, we'll now have an ``android`` directory in our project.
-This directory will contain a ``Hello World`` folder, which will contain an
-Android project with a Gradle build configuration. This project will contain
+Once this completes, we'll have a
+``build\helloworld\android\gradle`` directory in our project, which will contain
+an Android project with a Gradle build configuration. This project will contain
 your application code, and a support package containing the Python interpreter.
 
 We can then use Briefcase's ``build`` command to compile this into an Android
@@ -122,7 +122,7 @@ APK app file.
       28 actionable tasks: 17 executed, 11 up-to-date
       Building... done
 
-      [helloworld] Built android/Hello World/app/build/outputs/apk/debug/app-debug.apk
+      [helloworld] Built build/helloworld/android/gradle/app/build/outputs/apk/debug/app-debug.apk
 
   .. group-tab:: Linux
 
@@ -137,7 +137,7 @@ APK app file.
       28 actionable tasks: 17 executed, 11 up-to-date
       Building... done
 
-      [helloworld] Built android/Hello World/app/build/outputs/apk/debug/app-debug.apk
+      [helloworld] Built build/helloworld/android/gradle/app/build/outputs/apk/debug/app-debug.apk
 
   .. group-tab:: Windows
 
@@ -152,7 +152,7 @@ APK app file.
       28 actionable tasks: 17 executed, 11 up-to-date
       Building... done
 
-      [helloworld] Built android\Hello World\app\build\outputs\apk\debug\app-debug.apk
+      [helloworld] Built build\helloworld\android\gradle\app\build\outputs\apk\debug\app-debug.apk
 
 .. admonition:: Gradle may look stuck
 

@@ -163,6 +163,11 @@ new logic works; then update, build and run the app with one command:
 
       [helloworld] Application updated.
 
+      [helloworld] Building application...
+      ...
+
+      [helloworld] Built build/helloworld/macos/app/Hello World.app
+
       [helloworld] Starting app...
 
   .. group-tab:: Linux
@@ -171,17 +176,25 @@ new logic works; then update, build and run the app with one command:
 
       (beeware-venv) $ briefcase run -u
 
+      [helloworld] Finalizing application configuration...
+      Targeting ubuntu:jammy (Vendor base debian)
+      Determining glibc version... done
+
+      Targeting glibc 2.35
+      Targeting Python3.10
+
       [helloworld] Updating application code...
-      Installing src/helloworld...
+      Installing src/helloworld... done
 
       [helloworld] Removing unneeded app content...
       ...
 
       [helloworld] Application updated.
 
-      [helloworld] Building AppImage...
+      [helloworld] Building application...
       ...
-      [helloworld] Created linux/Hello World-x86_64-0.0.1.AppImage.
+
+      [helloworld] Built build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld
 
       [helloworld] Starting app...
 
