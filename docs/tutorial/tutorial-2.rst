@@ -263,7 +263,7 @@ the application again. As before, we'll use developer mode:
 You'll notice that this time, it *doesn't* install dependencies. Briefcase can
 detect that the application has been run before, and to save time, will only
 run the application. If you add new dependencies to your app, you can make
-sure that they're installed by passing in a ``-d`` option when you run
+sure that they're installed by passing in a ``-r`` option when you run
 ``briefcase dev``.
 
 This should open a GUI window:
