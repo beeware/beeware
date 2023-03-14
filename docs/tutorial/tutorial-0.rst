@@ -88,10 +88,14 @@ Next, install the additional dependencies needed for your operating system:
 
     **Ubuntu 20.04+ / Debian 10+**
 
+    ..
+      The package list should be the same as in ci.yml and tutorial-0.rst in the Toga
+      repository.
+
     .. code-block:: console
 
       $ sudo apt-get update
-      $ sudo apt-get install build-essential git python3-dev python3-venv python3-gi python3-gi-cairo libgirepository1.0-dev libcairo2-dev libpango1.0-dev libwebkit2gtk-4.0-37 gir1.2-webkit2-4.0
+      $ sudo apt-get install build-essential git python3-dev python3-venv python3-cairo-dev python3-gi-cairo libgirepository1.0-dev libcairo2-dev libpango1.0-dev gir1.2-webkit2-4.0 pkg-config
 
     **Fedora**
 
