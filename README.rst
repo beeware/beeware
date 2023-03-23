@@ -36,17 +36,22 @@ native applications in Python.
 For an introduction to the full BeeWare suite, we recommend running the
 `BeeWare Tutorial`_.
 
+.. _BeeWare Tutorial: https://beeware.readthedocs.io/en/latest/
+
 Community
 ---------
 
 You can talk to the BeeWare community through:
 
-* `@pybeeware on Twitter`_
-
-* `Discord <https://beeware.org/bee/chat/>`__
+* `@beeware@fosstodon.org on Mastodon`_
+* `Discord`_
 
 We foster a welcoming and respectful community as described in our
 `BeeWare Community Code of Conduct`_.
+
+.. _@beeware@fosstodon.org on Mastodon: https://fosstodon.org/@beeware
+.. _Discord: https://beeware.org/bee/chat/
+.. _BeeWare Community Code of Conduct: http://beeware.org/community/behavior/
 
 Contributing
 ------------
@@ -54,10 +59,6 @@ Contributing
 If you experience problems with BeeWare, `log them on GitHub`_. If you
 want to contribute code, please `fork the code`_ and `submit a pull request`_.
 
-.. _BeeWare suite: https://beeware.org
-.. _BeeWare Tutorial: https://beeware.readthedocs.io/en/latest/
-.. _@pybeeware on Twitter: https://twitter.com/pybeeware
-.. _BeeWare Community Code of Conduct: http://beeware.org/community/behavior/
 .. _log them on Github: https://github.com/beeware/beeware/issues
 .. _fork the code: https://github.com/beeware/beeware
 .. _submit a pull request: https://github.com/beeware/beeware/pulls
