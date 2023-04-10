@@ -306,7 +306,7 @@ Then, run the test suite with this new test:
 
 This time, we see a test failure - and the output explains the source of the
 failure: the test is expecting the output "BeeWare the IDEs of Python!", but our
-implementaion of ``greeting()`` is returning "Hello, Brutus". Let's modify the
+implementation of ``greeting()`` is returning "Hello, Brutus". Let's modify the
 implementation of ``greeting()`` in ``src/helloworld/app.py`` to have the new
 behavior::
 
@@ -380,7 +380,7 @@ If we run the tests again, we'll now see our tests pass:
 Runtime tests
 =============
 
-So far, we'e been running the tests in development mode. This is especially
+So far, we've been running the tests in development mode. This is especially
 useful when you're developing new features, as you can rapidly iterate on adding
 tests, and adding code to make those tests pass. However, at some point, you'll
 want to verify that your code also runs correctly when inside the bundle app

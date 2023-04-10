@@ -230,7 +230,7 @@ target platform.
     .. code-block:: doscon
 
       (beeware-venv) C:\...>briefcase build
-      Setting stup app details... done
+      Setting stub app details... done
 
       [helloworld] Built build\helloworld\windows\app\src\Toga Test.exe
 
@@ -400,7 +400,7 @@ or doing other pre-distribution tasks.
 
     The ``dist`` folder will contain the DEB file that was generated.
 
-    If you're on a Redhat-based distribution, you'll see:
+    If you're on a RHEL-based distribution, you'll see:
 
     .. code-block:: console
 
