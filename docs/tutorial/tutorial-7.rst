@@ -375,7 +375,7 @@ because the libraries needed to display a user interface are platform specific.
 
 In our case, we want ``httpx`` to be installed on all platforms, so we use the
 app-level ``requires`` setting. The app-level dependencies will always be
-installed; the platform-specific dependecies are installed *in addition* to the
+installed; the platform-specific dependencies are installed *in addition* to the
 app-level ones.
 
 .. admonition:: Some binary packages may not be available
@@ -476,7 +476,7 @@ you should see your packaged app, with the new dialog behavior.
 
 .. note::
 
-    The ``-r`` option for updating reqiurements is also honored by the ``build`` and
+    The ``-r`` option for updating requirements is also honored by the ``build`` and
     ``run`` command, so if you want to update, build, and run in one step, you could
     use ``briefcase run -u -r``.
 

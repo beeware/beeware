@@ -338,9 +338,9 @@ available devices when you run ``briefcase run android``.
 
 Here we can see a new physical device with it's serial number on the deployment
 list - in this case, a Pixel 3a. In the future, if you want to run on this
-device without using the menu, you can provide the phones's serial number to
+device without using the menu, you can provide the phone's serial number to
 Briefcase (in this case, ``briefcase run android -d 94ZZY0LNE8``). This will run
-on the device directly, wthout prompting.
+on the device directly, without prompting.
 
 .. admonition:: My device doesn't appear!
 
