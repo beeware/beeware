@@ -181,7 +181,7 @@ target platform.
 
     On macOS, the ``build`` command doesn't need to *compile* anything, but it
     does need to sign the contents of binary so that it can be executed. This
-    signature is an "ad-hoc" signature - it will only work on *your* machine; if
+    signature is an *ad hoc* signature - it will only work on *your* machine; if
     you want to distribute the application to others, you'll need to provide a
     full signature.
 
@@ -363,10 +363,11 @@ or doing other pre-distribution tasks.
     to a friend, and they should be able to do the same.
 
     In this example, we've used the ``--adhoc-sign`` option - that is, we're
-    signing our application with adhoc credentials. We've done this to keep the
-    tutorial simple. Setting up code signing identities is a little fiddly, and
-    they're only *absolutely* required if you're intending to distribute your
-    application to others. If we were publishing a real application, you will
+    signing our application with *ad hoc* credentials - temporary credentials
+    that will only work on your machine. We've done this to keep the tutorial
+    simple. Setting up code signing identities is a little fiddly, and they're
+    only *required* if you're intending to distribute your application to
+    others. If we were publishing a real application for others to use, we would
     need to specify real credentials.
 
     When you're ready to publish a real application, check out the Briefcase
@@ -432,7 +433,7 @@ or doing other pre-distribution tasks.
 
     Other Linux distributions aren't currently supported for packaging.
 
-    If you want to build a package for a Linux distribution other than the one 
+    If you want to build a package for a Linux distribution other than the one
     you're using, Briefcase can also help - but you'll need to install Docker.
 
     Official installers for `Docker Engine
