@@ -31,7 +31,7 @@ with the ``beeware-venv`` virtual environment activated, and run:
 
         If you see errors during installation, it's almost certainly because
         some of the system requirements haven't been installed. Make sure you
-        have :ref:`installed all the platform pre-requisistes
+        have :ref:`installed all the platform pre-requisites
         <install-dependencies>`.
 
   .. group-tab:: Windows

@@ -56,7 +56,7 @@ The first thing we'll need is a working Python interpreter.
     <https://docs.conda.io/en/latest/miniconda.html>`__.
 
     If you're on macOS or Windows, it doesn't matter *how* you've installed
-    Python - it only matters that you can run `python3` from your operating
+    Python - it only matters that you can run ``python3`` from your operating
     system's command prompt/terminal application, and get a working Python
     interpreter.
 
