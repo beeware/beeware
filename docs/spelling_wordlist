@@ -1,5 +1,9 @@
 adhoc
+artefacts
+backend
+backends
 beachball
+conda
 Ctrl
 dialogs
 distributable
@@ -11,6 +15,7 @@ miniconda
 pre
 Pre
 px
+runtime
 Runtime
 scaffolded
 Smooooth

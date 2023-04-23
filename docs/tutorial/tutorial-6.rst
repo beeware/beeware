@@ -104,7 +104,7 @@ How does this work?
 
 This web app is a static website - a single HTML source page, with some CSS and
 other resources. Briefcase has started a local web server to serve this page so
-your browser can view the page. If you wanted to put this webpage into
+your browser can view the page. If you wanted to put this web page into
 production, you could copy the contents of the ``www`` folder onto any web
 server that can serve static content.
 

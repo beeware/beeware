@@ -141,7 +141,7 @@ just happened? Briefcase has done the following:
 
 3. It **installed application requirements**. Your application can specify any
    third-party modules that are required at runtime. These will be installed
-   using `pip` into your application's installer.
+   using ``pip`` into your application's installer.
 
 4. It **Installed your application code**. Your application will have its own
    code and resources (e.g., images that are needed at runtime); these files
@@ -221,7 +221,7 @@ target platform.
 
     Once this step completes, the ``build`` folder will contain a
     ``helloworld-0.0.1`` folder that contains a mirror of a Linux ``/usr``
-    filesystem. This filesystem mirror will contain a ``bin`` folder with a
+    file system. This file system mirror will contain a ``bin`` folder with a
     ``helloworld`` binary, plus ``lib`` and ``share`` folders needed to support
     the binary.
 
@@ -448,9 +448,9 @@ or doing other pre-distribution tasks.
 
       $ docker run -it ubuntu:22.04
 
-    will show you a Unix prompt (something like `root@84444e31cff9:/#`) inside
-    an Ubuntu 22.04 Docker container. Type Ctrl-D to exit Docker and return to
-    your local shell.
+    will show you a Unix prompt (something like ``root@84444e31cff9:/#``)
+    inside an Ubuntu 22.04 Docker container. Type Ctrl-D to exit Docker and
+    return to your local shell.
 
     Once you've got Docker installed, you can use Briefcase to build a package
     for any Linux distribution that Briefcase supports by passing in a Docker
