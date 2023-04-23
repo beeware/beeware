@@ -113,7 +113,7 @@ has worked.
 
     .. code-block:: doscon
 
-      (beeware-venv)C:\...>briefcase dev
+      (beeware-venv) C:\...>briefcase dev
       Traceback (most recent call last):
       File "...\venv\bin\briefcase", line 5, in <module>
           from briefcase.__main__ import main
@@ -165,8 +165,8 @@ with ``pip``, and then re-running ``briefcase dev``:
 
     .. code-block:: doscon
 
-      (beeware-venv)C:\...>python -m pip install httpx
-      (beeware-venv)C:\...>briefcase dev
+      (beeware-venv) C:\...>python -m pip install httpx
+      (beeware-venv) C:\...>briefcase dev
 
     When you enter a name and press the button, you should see a dialog that
     looks something like:
@@ -277,7 +277,7 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
 
     .. code-block:: doscon
 
-      (beeware-venv)C:\...>briefcase update
+      (beeware-venv) C:\...>briefcase update
 
       [helloworld] Updating application code...
       ...
@@ -287,7 +287,7 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
 
     .. code-block:: doscon
 
-      (beeware-venv)C:\...>briefcase build
+      (beeware-venv) C:\...>briefcase build
       ...
       [helloworld] Built build\helloworld\windows\app\src\Toga Test.exe
 
@@ -295,7 +295,7 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
 
     .. code-block:: doscon
 
-      (beeware-venv)C:\...>briefcase run
+      (beeware-venv) C:\...>briefcase run
 
       [helloworld] Starting app...
       ===========================================================================
@@ -454,7 +454,7 @@ packaging our app again. Ensure that you've saved your changes to
 
     .. code-block:: doscon
 
-      (beeware-venv)C:\...>briefcase update -r
+      (beeware-venv) C:\...>briefcase update -r
 
       [helloworld] Updating application code...
       Installing src/helloworld...

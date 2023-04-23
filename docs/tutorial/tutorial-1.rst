@@ -38,7 +38,7 @@ with the ``beeware-venv`` virtual environment activated, and run:
 
     .. code-block:: doscon
 
-      (beeware-venv)C:\...>python -m pip install briefcase
+      (beeware-venv) C:\...> python -m pip install briefcase
 
 One of the BeeWare tools is **Briefcase**. Briefcase can be used to package
 your application for distribution to end users - but it can also be used to

@@ -75,7 +75,7 @@ three steps with one command:
 
     .. code-block:: doscon
 
-      (beeware-venv)C:\...>briefcase run web
+      (beeware-venv) C:\...>briefcase run web
 
       [helloworld] Generating application template...
       ...
