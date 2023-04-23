@@ -9,7 +9,7 @@ you write cross platform native GUI Python applications. It includes:
 
 * `Toga <https://toga.readthedocs.io>`__, a cross platform widget toolkit;
 * `Briefcase <https://briefcase.readthedocs.io>`__, a tool for packaging Python
-  projects as distributable artefacts that can be shipped to end users;
+  projects as distributable artifacts that can be shipped to end users;
 * Libraries (such as `Rubicon ObjC <https://rubicon-objc.readthedocs.io>`__) for
   accessing platform-native libraries;
 * Pre-compiled builds of Python that can be used on platforms where official
@@ -25,7 +25,7 @@ using BeeWare's own libraries.
 
 The BeeWare suite is available on macOS, Windows, Linux (using GTK); on mobile
 platforms such as Android and iOS; and for the Web. Support for other platforms
-(such as set top boxes and watches) is on our long term roadmap.
+(such as set top boxes and watches) is on our long term road map.
 
 .. admonition:: Platform support
 
