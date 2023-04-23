@@ -112,25 +112,21 @@ linkcheck_ignore = [r"https://github.com/.*#", r"http://127.0.0.1.*"]
 copybutton_prompt_text = "|".join(
     [
         # Python REPL
-        # r">>>\s?",
-        # Python REPL line continuation
-        # r"\.\.\.\s?",
-        # IPython
-        # r"In \[\d*\]:\s?",
-        # Jupyter
-        # r" {5,8}:\s?",
-        # IPython and Jupyter line continuation
-        # r" {2,5}\.\.\.:\s?",
-        # non-Windows terminal session
-        r"\$\s?",
-        # non-Windows terminal session in venv
-        r"\(beeware-venv\)\s?\$\s?",
-        # Windows terminal session
-        r"C:\\>\s?",
-        r"C:\\\.\.\.>\s?",
-        # Windows terminal session in venv
-        r"\(beeware-venv\)\s?C:\\>\s?",
-        r"\(beeware-venv\)\s?C:\\\.\.\.>\s?",
+        # r">>>\s?", r"\.\.\.\s?",
+        # IPython and Jupyter
+        # r"In \[\d*\]:\s?", r" {5,8}:\s?", r" {2,5}\.\.\.:\s?",
+        # terminal session prompt
+        #  matches:
+        #   $
+        #   (venv) $
+        #   (beeware-venv) $
+        #   C:\>
+        #   C:\...>
+        #   (venv) C:\>
+        #   (venv) C:\...>
+        #   (beeware-venv) C:\>
+        #   (beeware-venv) C:\...>
+        r"(?:\((?:beeware-)?venv\))?\s?(?:\$|C:\\(?:\.\.\.)?>)\s?",
     ]
 )
 copybutton_prompt_is_regexp = True
