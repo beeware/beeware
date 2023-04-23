@@ -9,7 +9,7 @@ you write cross platform native GUI Python applications. It includes:
 
 * `Toga <https://toga.readthedocs.io>`__, a cross platform widget toolkit;
 * `Briefcase <https://briefcase.readthedocs.io>`__, a tool for packaging Python
-  projects as distributable artifacts that can be shipped to end users;
+  projects as distributable artefacts that can be shipped to end users;
 * Libraries (such as `Rubicon ObjC <https://rubicon-objc.readthedocs.io>`__) for
   accessing platform-native libraries;
 * Pre-compiled builds of Python that can be used on platforms where official
