@@ -25,7 +25,7 @@ using BeeWare's own libraries.
 
 The BeeWare suite is available on macOS, Windows, Linux (using GTK); on mobile
 platforms such as Android and iOS; and for the Web. Support for other platforms
-(such as set top boxes and watches) is on our long term roadmap.
+(such as set top boxes and watches) is on our long term road map.
 
 .. admonition:: Platform support
 

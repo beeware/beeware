@@ -26,8 +26,8 @@ executing. The contents of ``__main__.py`` is relatively simple::
     if __name__ == '__main__':
         main().main_loop()
 
-That is - it imports the ``main`` method from the helloworld app; and if it's
-being executed as an entry point, calls the main() method, and starts the
+That is - it imports the ``main`` method from the ``helloworld`` app; and if
+it's being executed as an entry point, calls the main() method, and starts the
 application's main loop. The main loop is the way a GUI application listens for
 user input (like mouse clicks and keyboard presses).
 
@@ -86,7 +86,7 @@ Next, we define a window into which we can put this empty box::
 
 This creates an instance of a ``toga.MainWindow``, which will have a title
 matching the application's name. A Main Window is a special kind of window in
-Toga - it's a window that is closely bound to the lifecycle of the app. When
+Toga - it's a window that is closely bound to the life cycle of the app. When
 the Main Window is closed, the application exits. The Main Window is also the
 window that has the application's menu (if you're on a platform like Windows
 where menu bars are part of the window)
