@@ -194,6 +194,7 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
 
       [helloworld] Updating application code...
       ...
+
       [helloworld] Application updated.
 
     Rebuild the app:
@@ -230,6 +231,7 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
 
       [helloworld] Updating application code...
       ...
+
       [helloworld] Application updated.
 
     Rebuild the app:
@@ -243,6 +245,7 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
 
       [helloworld] Building application...
       ...
+
       [helloworld] Built build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld
 
     And finally, run the app:
@@ -281,6 +284,7 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
 
       [helloworld] Updating application code...
       ...
+
       [helloworld] Application updated.
 
     Rebuild the app:
@@ -289,6 +293,7 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
 
       (beeware-venv) C:\...>briefcase build
       ...
+
       [helloworld] Built build\helloworld\windows\app\src\Toga Test.exe
 
     And finally, run the app:
@@ -390,9 +395,9 @@ app-level ones.
     packages don't provide compilation support for non-desktop platforms.
 
     BeeWare can provide binaries for some popular binary modules (including
-    `numpy`, `pandas`, and `cryptography`). It's *usually* possible to compile
-    packages for mobile platforms, but it's not easy to set up -- well outside
-    the scope of an introductory tutorial like this one.
+    ``numpy``, ``pandas``, and ``cryptography``). It's *usually* possible to
+    compile packages for mobile platforms, but it's not easy to set up -- well
+    outside the scope of an introductory tutorial like this one.
 
 Now that we've told Briefcase about our additional requirements, we can try
 packaging our app again. Ensure that you've saved your changes to

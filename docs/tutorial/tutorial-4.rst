@@ -71,7 +71,10 @@ code for your existing bundled application:
       (beeware-venv) $ briefcase update
 
       [helloworld] Updating application code...
-      Installing src/helloworld...
+      Installing src/helloworld... done
+
+      [helloworld] Removing unneeded app content...
+      Removing unneeded app bundle content... done
 
       [helloworld] Application updated.
 
@@ -82,7 +85,13 @@ code for your existing bundled application:
       (beeware-venv) $ briefcase update
 
       [helloworld] Updating application code...
-      Installing src/helloworld...
+      Installing src/helloworld... done
+
+      [helloworld] Removing unneeded app content...
+      Removing unneeded app bundle content... done
+
+      [helloworld] Removing unneeded app content...
+      Removing unneeded app bundle content... done
 
       [helloworld] Application updated.
 
@@ -93,7 +102,10 @@ code for your existing bundled application:
       (beeware-venv) C:\...>briefcase update
 
       [helloworld] Updating application code...
-      Installing src/helloworld...
+      Installing src/helloworld... done
+
+      [helloworld] Removing unneeded app content...
+      Removing unneeded app bundle content... done
 
       [helloworld] Application updated.
 
@@ -156,10 +168,10 @@ new logic works; then update, build and run the app with one command:
       (beeware-venv) $ briefcase run -u
 
       [helloworld] Updating application code...
-      Installing src/helloworld...
+      Installing src/helloworld... done
 
       [helloworld] Removing unneeded app content...
-      ...
+      Removing unneeded app bundle content... done
 
       [helloworld] Application updated.
 
@@ -187,7 +199,7 @@ new logic works; then update, build and run the app with one command:
       Installing src/helloworld... done
 
       [helloworld] Removing unneeded app content...
-      ...
+      Removing unneeded app bundle content... done
 
       [helloworld] Application updated.
 
@@ -205,10 +217,10 @@ new logic works; then update, build and run the app with one command:
       (beeware-venv) C:\...>briefcase run -u
 
       [helloworld] Updating application code...
-      Installing src/helloworld...
+      Installing src/helloworld... done
 
       [helloworld] Removing unneeded app content...
-      ...
+      Removing unneeded app bundle content... done
 
       [helloworld] Application updated.
 
