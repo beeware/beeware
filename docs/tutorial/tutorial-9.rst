@@ -388,7 +388,7 @@ environment.
 
 The ``--test`` and ``-r`` options can also be passed to the ``run`` command. If
 you use ``briefcase run --test -r``, the same test suite will run, but it will
-run inside the packaged application bundle rather than you development
+run inside the packaged application bundle rather than your development
 environment:
 
 .. tabs::
