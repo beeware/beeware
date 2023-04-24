@@ -109,24 +109,30 @@ linkcheck_ignore = [r"https://github.com/.*#", r"http://127.0.0.1.*"]
 
 # -- Options for copy button ---------------------------------------------------
 
+# virtual env prefix: (venv), (beeware-venv)
+venv = r"\((?:beeware-)?venv\)"
+# macOS and Linux shell prompt: $, #
+shell = r"\$|#"
+# win CMD prompt: C:\>, C:\...>
+cmd = r"C:\\>|C:\\\.\.\.>"
+# PowerShell prompt: PS C:\>, PS C:\...>
+ps = r"PS C:\\>|PS C:\\\.\.\.>"
+# zero or one whitespace char
+sp = r"\s?"
+
+# optional venv prefix
+venv_prefix = rf"(?:{venv})?"
+# one of the platforms' shell prompts
+shell_prompt = rf"(?:{shell}|{cmd}|{ps})"
+
 copybutton_prompt_text = "|".join(
     [
         # Python REPL
         # r">>>\s?", r"\.\.\.\s?",
         # IPython and Jupyter
         # r"In \[\d*\]:\s?", r" {5,8}:\s?", r" {2,5}\.\.\.:\s?",
-        # terminal session prompt
-        #  matches:
-        #   $
-        #   (venv) $
-        #   (beeware-venv) $
-        #   C:\>
-        #   C:\...>
-        #   (venv) C:\>
-        #   (venv) C:\...>
-        #   (beeware-venv) C:\>
-        #   (beeware-venv) C:\...>
-        r"(?:\((?:beeware-)?venv\))?\s?(?:\$|C:\\(?:\.\.\.)?>)\s?",
+        # Shell prompt
+        rf"{venv_prefix}{sp}{shell_prompt}{sp}",
     ]
 )
 copybutton_prompt_is_regexp = True
