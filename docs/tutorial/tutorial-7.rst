@@ -324,7 +324,7 @@ contains everything it needs is to build a completely isolated Python
 environment. This means there's a completely isolated Python install, and a
 completely isolated set of dependencies. This is what Briefcase is building when
 you run ``briefcase build`` - an isolated Python environment. This also explains
-why ``httpx`` isn't installed - it has been installed in the your *development*
+why ``httpx`` isn't installed - it has been installed in your *development*
 environment, but not in the packaged app.
 
 So - we need to tell Briefcase that our app has an external dependency.
