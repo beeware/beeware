@@ -84,7 +84,7 @@ option to ensure that the test requirements are also installed:
 
     .. code-block:: doscon
 
-      (beeware-venv)C:\...>briefcase dev --test -r
+      (beeware-venv) C:\...>briefcase dev --test -r
 
       [helloworld] Installing requirements...
       ...
@@ -174,7 +174,7 @@ need to use the ``--test`` option:
 
     .. code-block:: doscon
 
-      (beeware-venv)C:\...>briefcase dev --test
+      (beeware-venv) C:\...>briefcase dev --test
 
       [helloworld] Running test suite in dev environment...
       ===========================================================================
@@ -276,7 +276,7 @@ Then, run the test suite with this new test:
 
     .. code-block:: doscon
 
-      (beeware-venv)C:\...>briefcase dev --test
+      (beeware-venv) C:\...>briefcase dev --test
 
       [helloworld] Running test suite in dev environment...
       ===========================================================================
@@ -363,7 +363,7 @@ If we run the tests again, we'll now see our tests pass:
 
     .. code-block:: doscon
 
-      (beeware-venv)C:\...>briefcase dev --test
+      (beeware-venv) C:\...>briefcase dev --test
 
       [helloworld] Running test suite in dev environment...
       ===========================================================================
@@ -472,7 +472,7 @@ environment:
 
     .. code-block:: doscon
 
-      (beeware-venv)C:\...>briefcase run --test -r
+      (beeware-venv) C:\...>briefcase run --test -r
 
       [helloworld] Updating application code...
       Installing src/helloworld... done
@@ -493,7 +493,7 @@ environment:
       - C:\Users\brutus\beeware-tutorial\helloworld\windows\app\Hello World\src\app
       Configure argc/argv...
       Initializing Python runtime...
-      Running app module: togatest
+      Running app module: tests.helloworld
       ---------------------------------------------------------------------------
       ============================= test session starts ==============================
       ...

@@ -110,11 +110,11 @@ There are only 4 changes in this code from the previous version:
    synchronous ``Client()``. This tells ``httpx`` that it should operate in
    asynchronous mode, rather than synchronous mode.
 
-3. The context manager used to create the client is marked as `async`. This tells
+3. The context manager used to create the client is marked as ``async``. This tells
    Python that there is an opportunity to release control as the context manager
    is entered and exited.
 
-4. The `get` call is made with an `await` keyword. This instructs the app that
+4. The ``get`` call is made with an ``await`` keyword. This instructs the app that
    while we are waiting for the response from the network, the app can release control
    to the event loop.
 

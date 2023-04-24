@@ -31,14 +31,14 @@ with the ``beeware-venv`` virtual environment activated, and run:
 
         If you see errors during installation, it's almost certainly because
         some of the system requirements haven't been installed. Make sure you
-        have :ref:`installed all the platform pre-requisistes
+        have :ref:`installed all the platform pre-requisites
         <install-dependencies>`.
 
   .. group-tab:: Windows
 
     .. code-block:: doscon
 
-      (beeware-venv)C:\...>python -m pip install briefcase
+      (beeware-venv) C:\...>python -m pip install briefcase
 
 One of the BeeWare tools is **Briefcase**. Briefcase can be used to package
 your application for distribution to end users - but it can also be used to
@@ -161,6 +161,7 @@ the project in Developer (or ``dev``) mode:
 
       [hello-world] Installing requirements...
       ...
+
       [helloworld] Starting in dev mode...
       ===========================================================================
 
@@ -173,6 +174,7 @@ the project in Developer (or ``dev``) mode:
 
       [hello-world] Installing requirements...
       ...
+
       [helloworld] Starting in dev mode...
       ===========================================================================
 
@@ -185,6 +187,7 @@ the project in Developer (or ``dev``) mode:
 
       [hello-world] Installing requirements...
       ...
+
       [helloworld] Starting in dev mode...
       ===========================================================================
 

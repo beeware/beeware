@@ -113,7 +113,7 @@ has worked.
 
     .. code-block:: doscon
 
-      (beeware-venv)C:\...>briefcase dev
+      (beeware-venv) C:\...>briefcase dev
       Traceback (most recent call last):
       File "...\venv\bin\briefcase", line 5, in <module>
           from briefcase.__main__ import main
@@ -165,8 +165,8 @@ with ``pip``, and then re-running ``briefcase dev``:
 
     .. code-block:: doscon
 
-      (beeware-venv)C:\...>python -m pip install httpx
-      (beeware-venv)C:\...>briefcase dev
+      (beeware-venv) C:\...>python -m pip install httpx
+      (beeware-venv) C:\...>briefcase dev
 
     When you enter a name and press the button, you should see a dialog that
     looks something like:
@@ -194,6 +194,7 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
 
       [helloworld] Updating application code...
       ...
+
       [helloworld] Application updated.
 
     Rebuild the app:
@@ -230,6 +231,7 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
 
       [helloworld] Updating application code...
       ...
+
       [helloworld] Application updated.
 
     Rebuild the app:
@@ -243,6 +245,7 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
 
       [helloworld] Building application...
       ...
+
       [helloworld] Built build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld
 
     And finally, run the app:
@@ -277,25 +280,27 @@ we've made code changes, we need to follow the same steps as in Tutorial 4:
 
     .. code-block:: doscon
 
-      (beeware-venv)C:\...>briefcase update
+      (beeware-venv) C:\...>briefcase update
 
       [helloworld] Updating application code...
       ...
+
       [helloworld] Application updated.
 
     Rebuild the app:
 
     .. code-block:: doscon
 
-      (beeware-venv)C:\...>briefcase build
+      (beeware-venv) C:\...>briefcase build
       ...
+
       [helloworld] Built build\helloworld\windows\app\src\Toga Test.exe
 
     And finally, run the app:
 
     .. code-block:: doscon
 
-      (beeware-venv)C:\...>briefcase run
+      (beeware-venv) C:\...>briefcase run
 
       [helloworld] Starting app...
       ===========================================================================
@@ -390,9 +395,9 @@ app-level ones.
     packages don't provide compilation support for non-desktop platforms.
 
     BeeWare can provide binaries for some popular binary modules (including
-    `numpy`, `pandas`, and `cryptography`). It's *usually* possible to compile
-    packages for mobile platforms, but it's not easy to set up -- well outside
-    the scope of an introductory tutorial like this one.
+    ``numpy``, ``pandas``, and ``cryptography``). It's *usually* possible to
+    compile packages for mobile platforms, but it's not easy to set up -- well
+    outside the scope of an introductory tutorial like this one.
 
 Now that we've told Briefcase about our additional requirements, we can try
 packaging our app again. Ensure that you've saved your changes to
@@ -454,7 +459,7 @@ packaging our app again. Ensure that you've saved your changes to
 
     .. code-block:: doscon
 
-      (beeware-venv)C:\...>briefcase update -r
+      (beeware-venv) C:\...>briefcase update -r
 
       [helloworld] Updating application code...
       Installing src/helloworld...

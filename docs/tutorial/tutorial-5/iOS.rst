@@ -11,30 +11,38 @@ The process of deploying an application to iOS is very similar to the process
 for deploying as a desktop application. First, you run the ``create`` command -
 but this time, we specify that we want to create an iOS application:
 
-.. code-block:: bash
+.. code-block:: console
 
   (beeware-venv) $ briefcase create iOS
 
   [helloworld] Generating application template...
-  Using app template: https://github.com/beeware/briefcase-iOS-Xcode-template.git, branch v0.3.12
+  Using app template: https://github.com/beeware/briefcase-iOS-Xcode-template.git, branch v0.3.14
   ...
+
   [helloworld] Installing support package...
   ...
+
   [helloworld] Installing application code...
-  ...
+  Installing src/helloworld... done
+
   [helloworld] Installing requirements...
   ...
+
   [helloworld] Installing application resources...
   ...
+
+  [helloworld] Removing unneeded app content...
+  ...
+
   [helloworld] Created build/helloworld/ios/xcode
 
-Once this completes, we'll have a  ``build/helloworld/ios/xcode`` directory containing
+Once this completes, we'll have a ``build/helloworld/ios/xcode`` directory containing
 an Xcode project, as well as the support libraries and the application code
 needed for the application.
 
 You can then use Briefcase to compile your app using ``briefcase build iOS``:
 
-.. code-block:: bash
+.. code-block:: console
 
   (beeware-venv) $ briefcase build iOS
 
@@ -54,7 +62,7 @@ want to target. The options you are shown may differ from the options show in
 this output - at the very least, the list of devices will likely be different.
 For our purposes, it doesn't matter which simulator you pick.
 
-.. code-block:: bash
+.. code-block:: console
 
   (beeware-venv) $ briefcase run iOS
 
@@ -82,6 +90,7 @@ For our purposes, it doesn't matter which simulator you pick.
       $ briefcase run iOS -d 2614A2DD-574F-4C1F-9F1E-478F32DE282E
 
   [helloworld] Starting app on an iPhone SE (3rd generation) running iOS 16.2 (device UDID 2614A2DD-574F-4C1F-9F1E-478F32DE282E)
+  Booting simulator... done
   Opening simulator... done
 
   [helloworld] Installing app...
@@ -103,17 +112,23 @@ see the simulator start, and eventually open your iOS application:
 
 If you know ahead of time which iOS simulator you want to target, you can tell
 Briefcase to use that simulator by providing a ``-d`` (or ``--device``) option.
-Using the name of the device you selected when you built your application, run::
+Using the name of the device you selected when you built your application, run:
+
+.. code-block:: console
 
     $ briefcase run iOS -d "iPhone SE (3rd generation)"
 
 If you have multiple iOS versions available, Briefcase will pick the highest
 iOS version; if you want to pick a particular iOS version, you tell it to use
-that specific version::
+that specific version:
+
+.. code-block:: console
 
     $ briefcase run iOS -d "iPhone SE (3rd generation)::iOS 15.5"
 
-Or, you can name a specific device UDID::
+Or, you can name a specific device UDID:
+
+.. code-block:: console
 
     $ briefcase run iOS -d 2614A2DD-574F-4C1F-9F1E-478F32DE282E
 

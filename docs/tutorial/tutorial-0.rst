@@ -28,13 +28,13 @@ The first thing we'll need is a working Python interpreter.
   .. group-tab:: Linux
 
     If you're on Linux, you'll install Python using the system package manager
-    (``apt`` on Debian/Ubuntu/Mint; ``dnf`` on Fedora, or ``pacman`` on Arch).
+    (``apt`` on Debian/Ubuntu/Mint, ``dnf`` on Fedora, or ``pacman`` on Arch).
 
     You should ensure that the system Python is Python 3.8 or newer; if it isn't
     (e.g., Ubuntu 18.04 ships with Python 3.6), you'll need to upgrade your
     Linux distribution to something more recent.
 
-    We don't support Raspberry Pi at this time.
+    Support for Raspberry Pi is limited at this time.
 
   .. group-tab:: Windows
 
@@ -56,7 +56,7 @@ The first thing we'll need is a working Python interpreter.
     <https://docs.conda.io/en/latest/miniconda.html>`__.
 
     If you're on macOS or Windows, it doesn't matter *how* you've installed
-    Python - it only matters that you can run `python3` from your operating
+    Python - it only matters that you can run ``python3`` from your operating
     system's command prompt/terminal application, and get a working Python
     interpreter.
 

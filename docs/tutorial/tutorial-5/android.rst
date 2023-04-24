@@ -20,51 +20,55 @@ adds your Python code to it.
 
   .. group-tab:: macOS
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase create android
 
       [helloworld] Generating application template...
-      Using app template: https://github.com/beeware/briefcase-android-gradle-template.git, branch v0.3.12
+      Using app template: https://github.com/beeware/briefcase-android-gradle-template.git, branch v0.3.14
       ...
+
       [helloworld] Installing support package...
       No support package required.
 
       [helloworld] Installing application code...
-      ...
+      Installing src/helloworld... done
+
       [helloworld] Installing requirements...
-      writing requirements file... done
+      Writing requirements file... done
 
       [helloworld] Installing application resources...
       ...
 
       [helloworld] Removing unneeded app content...
-      No app content cleanup required.
+      Removing unneeded app bundle content... done
 
       [helloworld] Created build/helloworld/android/gradle
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase create android
 
       [helloworld] Generating application template...
-      Using app template: https://github.com/beeware/briefcase-android-gradle-template.git, branch v0.3.12
+      Using app template: https://github.com/beeware/briefcase-android-gradle-template.git, branch v0.3.14
       ...
+
       [helloworld] Installing support package...
       No support package required.
 
       [helloworld] Installing application code...
-      ...
+      Installing src/helloworld... done
+
       [helloworld] Installing requirements...
-      writing requirements file... done
+      Writing requirements file... done
 
       [helloworld] Installing application resources...
       ...
 
       [helloworld] Removing unneeded app content...
-      No app content cleanup required.
+      Removing unneeded app bundle content... done
 
       [helloworld] Created build/helloworld/android/gradle
 
@@ -75,21 +79,23 @@ adds your Python code to it.
       (beeware-venv) C:\...>briefcase create android
 
       [helloworld] Generating application template...
-      Using app template: https://github.com/beeware/briefcase-android-gradle-template.git, branch v0.3.12
+      Using app template: https://github.com/beeware/briefcase-android-gradle-template.git, branch v0.3.14
       ...
+
       [helloworld] Installing support package...
       No support package required.
 
       [helloworld] Installing application code...
-      ...
+      Installing src/helloworld... done
+
       [helloworld] Installing requirements...
-      writing requirements file... done
+      Writing requirements file... done
 
       [helloworld] Installing application resources...
       ...
 
       [helloworld] Removing unneeded app content...
-      No app content cleanup required.
+      Removing unneeded app bundle content... done
 
       [helloworld] Created build\helloworld\android\gradle
 
@@ -111,9 +117,12 @@ APK app file.
 
   .. group-tab:: macOS
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase build android
+
+      [helloworld] Updating app metadata...
+      Setting main module... done
 
       [helloworld] Building Android APK...
       Starting a Gradle Daemon
@@ -126,9 +135,12 @@ APK app file.
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase build android
+
+      [helloworld] Updating app metadata...
+      Setting main module... done
 
       [helloworld] Building Android APK...
       Starting a Gradle Daemon
@@ -144,6 +156,9 @@ APK app file.
     .. code-block:: doscon
 
       (beeware-venv) C:\...>briefcase build android
+
+      [helloworld] Updating app metadata...
+      Setting main module... done
 
       [helloworld] Building Android APK...
       Starting a Gradle Daemon
@@ -179,7 +194,7 @@ last item will always be an option to create a new Android emulator.
 
   .. group-tab:: macOS
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase run android
 
@@ -191,7 +206,7 @@ last item will always be an option to create a new Android emulator.
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase run android
 
@@ -296,7 +311,7 @@ available devices when you run ``briefcase run android``.
 
   .. group-tab:: macOS
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase run android
 
@@ -310,7 +325,7 @@ available devices when you run ``briefcase run android``.
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
+    .. code-block:: console
 
       (beeware-venv) $ briefcase run android
 
