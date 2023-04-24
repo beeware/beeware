@@ -159,6 +159,26 @@ and without the need to re-install Python.
       C:\...>cd beeware-tutorial
       C:\...>py -m venv beeware-venv
       C:\...>beeware-venv\Scripts\activate.bat
+      
+    .. code-block:: powershell
+     
+      PS C:\...>md beeware-tutorial
+      PS C:\...>cd beeware-tutorial
+      PS C:\...>py -m venv beeware-venv
+      PS C:\...>beeware-venv\Scripts\activate.ps1       
+      
+.. admonition:: PowerShell Script Error Activation
+
+    If you receive this error: 
+    
+    ``File C:\...\beeware-tutorial\beeware-venv\Scripts\activate.ps1 cannot be loaded because running scripts is disabled on this system.``
+    
+    Complete these steps to resolve the script error activation:
+
+    1. Open Windows PowerShell and Run as Administrator.
+    2. type ``set-executionpolicy RemoteSigned``
+    3. Type ``Y`` for Yes or ``A`` Yes to All to change the execution policy.
+    4. Rerun ``beeware-venv\Scripts\activate.ps1`` where you initially tried to run the command.
 
 If this worked, your prompt should now be changed - it should have a
 ``(beeware-venv)`` prefix. This lets you know that you're currently in your
