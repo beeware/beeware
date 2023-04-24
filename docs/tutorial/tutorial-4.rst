@@ -117,7 +117,7 @@ to re-compile the app, ``briefcase run`` to run the updated app, and ``briefcase
 package`` to repackage the application for distribution.
 
 (macOS users, remember that as noted in :doc:`Tutorial 3 <tutorial-3>`, for the
-tutorial we recommend running ``briefcase package`` with the ``--no-sign`` flag
+tutorial we recommend running ``briefcase package`` with the ``--adhoc-sign`` flag
 to avoid the complexity of setting up a code signing identity and keep the
 tutorial as simple as possible.)
 
