@@ -154,31 +154,27 @@ and without the need to re-install Python.
   .. group-tab:: Windows
 
     .. code-block:: doscon
-
-      C:\...>md beeware-tutorial
-      C:\...>cd beeware-tutorial
-      C:\...>py -m venv beeware-venv
-      C:\...>beeware-venv\Scripts\activate.bat
-      
-    .. code-block:: powershell
      
-      PS C:\...>md beeware-tutorial
-      PS C:\...>cd beeware-tutorial
-      PS C:\...>py -m venv beeware-venv
-      PS C:\...>beeware-venv\Scripts\activate.ps1       
-      
-.. admonition:: PowerShell Script Error Activation
+       C:\...>md beeware-tutorial
+       C:\...>cd beeware-tutorial
+       C:\...>py -m venv beeware-venv
+       C:\...>beeware-venv\Scripts\activate     
+       
+    .. admonition:: Errors running PowerShell Scripts
 
-    If you receive this error: 
-    
-    ``File C:\...\beeware-tutorial\beeware-venv\Scripts\activate.ps1 cannot be loaded because running scripts is disabled on this system.``
-    
-    Complete these steps to resolve the script error activation:
+      If you're using Powershell, and you receive the error:: 
+              
+          File C:\...\beeware-tutorial\beeware-venv\Scripts\activate.ps1 cannot be loaded because running scripts is disabled on this system.
+              
+      Your Windows account doesn't have permissions to run scripts. To fix this:
 
-    1. Open Windows PowerShell and Run as Administrator.
-    2. type ``set-executionpolicy RemoteSigned``
-    3. Type ``Y`` for Yes or ``A`` Yes to All to change the execution policy.
-    4. Rerun ``beeware-venv\Scripts\activate.ps1`` where you initially tried to run the command.
+      1. Run Windows PowerShell as Administrator.
+      2. Run ``set-executionpolicy RemoteSigned``
+      3. Select ``Y`` to change the execution policy.
+              
+      Once you've done this you can rerun
+      ``beeware-venv\Scripts\activate.ps1`` in your original Powershell
+      session (or a new session in the same directory).
 
 If this worked, your prompt should now be changed - it should have a
 ``(beeware-venv)`` prefix. This lets you know that you're currently in your
