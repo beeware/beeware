@@ -162,7 +162,7 @@ and without the need to re-install Python.
        
     .. admonition:: Errors running PowerShell Scripts
 
-      If you're using Powershell, and you receive the error:: 
+      If you're using PowerShell, and you receive the error:: 
               
           File C:\...\beeware-tutorial\beeware-venv\Scripts\activate.ps1 cannot be loaded because running scripts is disabled on this system.
               
@@ -173,7 +173,7 @@ and without the need to re-install Python.
       3. Select ``Y`` to change the execution policy.
               
       Once you've done this you can rerun
-      ``beeware-venv\Scripts\activate.ps1`` in your original Powershell
+      ``beeware-venv\Scripts\activate.ps1`` in your original PowerShell
       session (or a new session in the same directory).
 
 If this worked, your prompt should now be changed - it should have a
