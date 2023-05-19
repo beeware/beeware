@@ -235,8 +235,17 @@ target platform.
       [helloworld] Built build\helloworld\windows\app\src\Hello World.exe
 
     On Windows, the ``build`` command doesn't need to *compile* anything, but
-    it does need to write some metadata so that the application knows it's name,
+    it does need to write some metadata so that the application knows its name,
     version, and so on.
+
+    .. admonition:: Triggering antivirus
+
+      Since this metadata is being written directly in to the pre-compiled
+      binary rolled out from the template during the ``create`` command, this
+      may trigger antivirus software running on your machine and prevent the
+      metadata from being written. In that case, instruct the antivirus to
+      allow the tool (named ``rcedit-x64.exe``) to run and re-run the command
+      above.
 
 Running your app
 ================
