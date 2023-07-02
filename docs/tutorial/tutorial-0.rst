@@ -94,20 +94,20 @@ Next, install the additional dependencies needed for your operating system:
 
     .. code-block:: console
 
-      $ sudo apt-get update
-      $ sudo apt-get install build-essential git python3-dev python3-venv python3-cairo-dev python3-gi-cairo libgirepository1.0-dev libcairo2-dev libpango1.0-dev gir1.2-webkit2-4.0 pkg-config
+      $ sudo apt update
+      $ sudo apt install build-essential git pkg-config python3-dev python3-venv libgirepository1.0-dev libcairo2-dev gir1.2-webkit2-4.0
 
     **Fedora**
 
     .. code-block:: console
 
-      $ sudo dnf install git pkg-config python3-devel gobject-introspection-devel cairo-devel cairo-gobject-devel pango-devel webkitgtk4
+      $ sudo dnf install git pkg-config rpm-build python3-devel gobject-introspection-devel cairo-gobject-devel webkitgtk4
 
     **Arch, Manjaro**
 
     .. code-block:: console
 
-      $ sudo pacman -Syu git pkgconf cairo python-cairo pango gobject-introspection gobject-introspection-runtime python-gobject webkit2gtk
+      $ sudo pacman -Syu base-devel git pkgconf python3 gobject-introspection cairo libcanberra gtk3 webkit2gtk
 
   .. group-tab:: Windows
 
