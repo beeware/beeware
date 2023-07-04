@@ -101,7 +101,7 @@ Next, install the additional dependencies needed for your operating system:
 
     .. code-block:: console
 
-      $ sudo dnf install git pkg-config rpm-build python3-devel gobject-introspection-devel cairo-gobject-devel webkitgtk4 libcanberra-gtk3
+      $ sudo dnf install git pkg-config rpm-build python3-devel gobject-introspection-devel cairo-gobject-devel webkit2gtk3 libcanberra-gtk3
 
     **Arch, Manjaro**
 
