@@ -40,6 +40,14 @@ with the ``beeware-venv`` virtual environment activated, and run:
 
       (beeware-venv) C:\...>python -m pip install briefcase
 
+    .. admonition:: Possible errors during installation
+
+        It is important to use ``python -m pip`` instead of ``pip`` here,
+        because briefcase explicitly depends on ``setuptools`` and thus
+        ``pip``. So ``pip install briefcase`` might try to upgrade pip, which
+        only works when using ``python -m pip`` and can fail when using ``pip``
+        directly.
+
 One of the BeeWare tools is **Briefcase**. Briefcase can be used to package
 your application for distribution to end users - but it can also be used to
 bootstrap a new project.
