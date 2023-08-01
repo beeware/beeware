@@ -1,11 +1,21 @@
-=======
-BeeWare
-=======
+================================
+Welcome to the BeeWare Tutorial!
+================================
 
 **Write Python. Run Anywhere.**
 
-BeeWare is a suite of tools and libraries, each of which works together to help
-you write cross platform native GUI Python applications. It includes:
+Welcome to BeeWare! In this tutorial, we're going to build an graphical user interface
+using Python, and deploy it as a desktop application, as a mobile application, and as a
+single page web app. We're also going to look at how you can use BeeWare tools to do
+some of the common tasks that you'll need to do as an app developer, such as testing
+your app.
+
+What is BeeWare?
+================
+
+BeeWare is not a single product, or tool, or library - it's a collection of tools and
+libraries, each of which works together to help you write cross platform Python
+applications with a native GUI. It includes:
 
 * `Toga <https://toga.readthedocs.io>`__, a cross platform widget toolkit;
 * `Briefcase <https://briefcase.readthedocs.io>`__, a tool for packaging Python
@@ -15,23 +25,16 @@ you write cross platform native GUI Python applications. It includes:
 * Pre-compiled builds of Python that can be used on platforms where official
   Python installers aren't available.
 
-You can use each of the tools in isolation, or you can use all of them as a
-suite.
-
-The full BeeWare suite also includes `software development tools
-<https://beeware.org/project/projects/tools/>`__ and `applications
-<https://beeware.org/project/projects/applications/>`__ that have been written
-using BeeWare's own libraries.
+In this tutorial, we'll be using all these tools, but as a user, you'll only need to
+interact with the first two (Toga and Briefcase). However, each of the tools can also be
+used individually - for example, you can use Briefcase to deploy an app without using
+Toga as a GUI toolkit.
 
 The BeeWare suite is available on macOS, Windows, Linux (using GTK); on mobile
-platforms such as Android and iOS; and for the Web. Support for other platforms
-(such as set top boxes and watches) is on our long term road map.
+platforms such as Android and iOS; and for the Web.
 
-.. admonition:: Platform support
-
-    The BeeWare suite is a work in progress. Some tools and libraries are more
-    mature than others, and some platforms have better support than others. In
-    particular, Web support should be considered experimental only.
+Lets go!
+========
 
 Ready to try BeeWare for yourself? :doc:`Let's build a cross platform
 application in Python! <tutorial/tutorial-0>`
