@@ -76,7 +76,7 @@ Next, install the additional dependencies needed for your operating system:
 
   .. group-tab:: macOS
 
-    Building BeeWare apps on macOS require:
+    Building BeeWare apps on macOS requires:
 
     * **Git**, a version control system. This is included with Xcode or the
       command line developer tools, which you installed above.
