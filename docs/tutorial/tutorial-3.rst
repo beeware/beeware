@@ -386,59 +386,115 @@ or doing other pre-distribution tasks.
   .. group-tab:: Linux
 
     The output of the package step will be slightly different depending on
-    your Linux distribution. If you're on a Debian-derived distribution,
-    you'll see:
+    your Linux distribution. You'll see the following output, if you're on a sytem that is:
 
-    .. code-block:: console
+    .. tabs::
 
-      (beeware-venv) $ briefcase package
+      .. group-tab:: Debian Based
 
-      [helloworld] Finalizing application configuration...
-      Targeting ubuntu:jammy (Vendor base debian)
-      Determining glibc version... done
+        If you're on a Debian-derived distribution, you'll see:
 
-      Targeting glibc 2.35
-      Targeting Python3.10
+        .. code-block:: console
 
-      [helloworld] Building .deb package...
-      Write Debian package control file... done
+          (beeware-venv) $ briefcase package
 
-      dpkg-deb: building package 'helloworld' in 'helloworld-0.0.1.deb'.
-      Building Debian package... done
+          [helloworld] Finalizing application configuration...
+          Targeting ubuntu:jammy (Vendor base debian)
+          Determining glibc version... done
 
-      [helloworld] Packaged dist/helloworld_0.0.1-1~ubuntu-jammy_amd64.deb
+          Targeting glibc 2.35
+          Targeting Python3.10
 
-    The ``dist`` folder will contain the DEB file that was generated.
+          [helloworld] Building .deb package...
+          Write Debian package control file... done
 
-    If you're on a RHEL-based distribution, you'll see:
+          dpkg-deb: building package 'helloworld' in 'helloworld-0.0.1.deb'.
+          Building Debian package... done
 
-    .. code-block:: console
+          [helloworld] Packaged dist/helloworld_0.0.1-1~ubuntu-jammy_amd64.deb
 
-      (beeware-venv) $ briefcase package
+        The ``dist`` folder will contain the ``.deb`` file that was generated.
 
-      [helloworld] Finalizing application configuration...
-      Targeting fedora:36 (Vendor base rhel)
-      Determining glibc version... done
+      .. group-tab:: RHEL Based
 
-      Targeting glibc 2.35
-      Targeting Python3.10
+        If you're on a RHEL-based distribution, you'll see:
 
-      [helloworld] Building .rpm package...
-      Generating rpmbuild layout... done
+        .. code-block:: console
 
-      Write RPM spec file... done
+          (beeware-venv) $ briefcase package
 
-      Building source archive... done
+          [helloworld] Finalizing application configuration...
+          Targeting fedora:36 (Vendor base rhel)
+          Determining glibc version... done
 
-      Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.Kav9H7
-      + umask 022
-      ...
-      + exit 0
-      Building RPM package... done
+          Targeting glibc 2.35
+          Targeting Python3.10
 
-      [helloworld] Packaged dist/helloworld-0.0.1-1.fc36.x86_64.rpm
+          [helloworld] Building .rpm package...
+          Generating rpmbuild layout... done
 
-    The ``dist`` folder will contain the RPM file that was generated.
+          Write RPM spec file... done
+
+          Building source archive... done
+
+          Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.Kav9H7
+          + umask 022
+          ...
+          + exit 0
+          Building RPM package... done
+
+          [helloworld] Packaged dist/helloworld-0.0.1-1.fc36.x86_64.rpm
+
+        The ``dist`` folder will contain the ``.rpm`` file that was generated.
+
+      .. group-tab:: Arch Based
+
+        If your're on an Arch-based distribution, you'll see:
+
+        .. code-block:: console
+          
+          (beeware-venv) $ briefcase package
+
+          [helloworld] Finalizing application configuration...
+          Targeting manjaro:rolling (Vendor base arch)
+          Determining glibc version... done
+          Targeting glibc 2.37
+          Targeting Python3.10
+
+          [helloworld] Building .pkg.tar.zst package...
+          Generating pkgbuild layout... done
+          Building source archive... done
+          Write PKGBUILD file... done
+          ==> Making package: helloworld 0.0.1-1 (Sat 26 Aug 2023 06:21:16 AM EDT)
+          ==> Checking runtime dependencies...
+          ==> Checking buildtime dependencies...
+          ==> Retrieving sources...
+            -> Found helloworld-0.0.1.tar.gz
+          ==> Validating source files with md5sums...
+              helloworld-0.0.1.tar.gz ... Skipped
+          ==> Extracting sources...
+            -> Extracting helloworld-0.0.1.tar.gz with bsdtar
+          ==> Entering fakeroot environment...
+          ==> Starting package()...
+          ==> Tidying install...
+            -> Removing libtool files...
+            -> Purging unwanted files...
+            -> Removing static library files...
+            -> Compressing man and info pages...
+          ==> Checking for packaging issues...
+          ==> Creating package "helloworld"...
+            -> Generating .PKGINFO file...
+            -> Generating .BUILDINFO file...
+            -> Adding changelog file...
+            -> Generating .MTREE file...
+            -> Compressing package...
+          ==> Leaving fakeroot environment.
+          ==> Finished making: helloworld 0.0.1-1 (Sat 26 Aug 2023 06:21:17 AM EDT)
+          Building Arch package... done
+
+          [helloworld] Packaged dist/helloworld-0.0.1-1-x86_64.pkg.tar.zst
+
+        The ``dist`` folder will contain the ``.pkg.tar.zst`` file that was generated.
 
     Other Linux distributions aren't currently supported for packaging.
 
