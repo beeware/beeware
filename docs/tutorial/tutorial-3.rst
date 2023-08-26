@@ -386,7 +386,7 @@ or doing other pre-distribution tasks.
   .. group-tab:: Linux
 
     The output of the package step will be slightly different depending on
-    your Linux distribution. You'll see the following output, if you're on a sytem that is:
+    your Linux distribution. You'll see the following output, if you're on a system that is:
 
     .. tabs::
 
@@ -449,7 +449,7 @@ or doing other pre-distribution tasks.
 
       .. group-tab:: Arch Based
 
-        If your're on an Arch-based distribution, you'll see:
+        If you're on an Arch-based distribution, you'll see:
 
         .. code-block:: console
           
