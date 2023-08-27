@@ -388,86 +388,78 @@ or doing other pre-distribution tasks.
     The output of the package step will be slightly different depending on
     your Linux distribution. You'll see the following output, if you're on a system that is:
 
-    .. tabs::
+    If you're on a Debian-derived distribution, you'll see:
 
-      .. group-tab:: Debian Based
+    .. code-block:: console
 
-        If you're on a Debian-derived distribution, you'll see:
+      (beeware-venv) $ briefcase package
 
-        .. code-block:: console
+      [helloworld] Finalizing application configuration...
+      Targeting ubuntu:jammy (Vendor base debian)
+      Determining glibc version... done
 
-          (beeware-venv) $ briefcase package
+      Targeting glibc 2.35
+      Targeting Python3.10
 
-          [helloworld] Finalizing application configuration...
-          Targeting ubuntu:jammy (Vendor base debian)
-          Determining glibc version... done
+      [helloworld] Building .deb package...
+      Write Debian package control file... done
 
-          Targeting glibc 2.35
-          Targeting Python3.10
+      dpkg-deb: building package 'helloworld' in 'helloworld-0.0.1.deb'.
+      Building Debian package... done
 
-          [helloworld] Building .deb package...
-          Write Debian package control file... done
+      [helloworld] Packaged dist/helloworld_0.0.1-1~ubuntu-jammy_amd64.deb
 
-          dpkg-deb: building package 'helloworld' in 'helloworld-0.0.1.deb'.
-          Building Debian package... done
+    The ``dist`` folder will contain the ``.deb`` file that was generated.
 
-          [helloworld] Packaged dist/helloworld_0.0.1-1~ubuntu-jammy_amd64.deb
+    If you're on a RHEL-based distribution, you'll see:
 
-        The ``dist`` folder will contain the ``.deb`` file that was generated.
+    .. code-block:: console
 
-      .. group-tab:: RHEL Based
+      (beeware-venv) $ briefcase package
 
-        If you're on a RHEL-based distribution, you'll see:
+      [helloworld] Finalizing application configuration...
+      Targeting fedora:36 (Vendor base rhel)
+      Determining glibc version... done
 
-        .. code-block:: console
+      Targeting glibc 2.35
+      Targeting Python3.10
 
-          (beeware-venv) $ briefcase package
+      [helloworld] Building .rpm package...
+      Generating rpmbuild layout... done
 
-          [helloworld] Finalizing application configuration...
-          Targeting fedora:36 (Vendor base rhel)
-          Determining glibc version... done
+      Write RPM spec file... done
 
-          Targeting glibc 2.35
-          Targeting Python3.10
+      Building source archive... done
 
-          [helloworld] Building .rpm package...
-          Generating rpmbuild layout... done
+      Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.Kav9H7
+      + umask 022
+      ...
+      + exit 0
+      Building RPM package... done
 
-          Write RPM spec file... done
+      [helloworld] Packaged dist/helloworld-0.0.1-1.fc36.x86_64.rpm
 
-          Building source archive... done
+    The ``dist`` folder will contain the ``.rpm`` file that was generated.
 
-          Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.Kav9H7
-          + umask 022
-          ...
-          + exit 0
-          Building RPM package... done
+    If you're on an Arch-based distribution, you'll see:
 
-          [helloworld] Packaged dist/helloworld-0.0.1-1.fc36.x86_64.rpm
+    .. code-block:: console
+      
+      (beeware-venv) $ briefcase package
 
-        The ``dist`` folder will contain the ``.rpm`` file that was generated.
+      [helloworld] Finalizing application configuration...
+      Targeting manjaro:rolling (Vendor base arch)
+      Determining glibc version... done
+      Targeting glibc 2.37
+      Targeting Python3.10
 
-      .. group-tab:: Arch Based
+      [helloworld] Building .pkg.tar.zst package...
+      ...
+      Building Arch package... done
 
-        If you're on an Arch-based distribution, you'll see:
+      [helloworld] Packaged dist/helloworld-0.0.1-1-x86_64.pkg.tar.zst
 
-        .. code-block:: console
-          
-          (beeware-venv) $ briefcase package
-
-          [helloworld] Finalizing application configuration...
-          Targeting manjaro:rolling (Vendor base arch)
-          Determining glibc version... done
-          Targeting glibc 2.37
-          Targeting Python3.10
-
-          [helloworld] Building .pkg.tar.zst package...
-          ...
-          Building Arch package... done
-
-          [helloworld] Packaged dist/helloworld-0.0.1-1-x86_64.pkg.tar.zst
-
-        The ``dist`` folder will contain the ``.pkg.tar.zst`` file that was generated.
+    The ``dist`` folder will contain the ``.pkg.tar.zst`` file that was generated.
 
     Other Linux distributions aren't currently supported for packaging.
 
