@@ -446,7 +446,7 @@ or doing other pre-distribution tasks.
       (beeware-venv) $ briefcase package
 
       [helloworld] Finalizing application configuration...
-      Targeting manjaro:rolling (Vendor base arch)
+      Targeting arch:rolling (Vendor base arch)
       Determining glibc version... done
       Targeting glibc 2.37
       Targeting Python3.10
