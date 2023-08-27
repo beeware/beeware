@@ -386,9 +386,7 @@ or doing other pre-distribution tasks.
   .. group-tab:: Linux
 
     The output of the package step will be slightly different depending on
-    your Linux distribution. You'll see the following output, if you're on a system that is:
-
-    If you're on a Debian-derived distribution, you'll see:
+    your Linux distribution. If you're on a Debian-derived distribution, you'll see:
 
     .. code-block:: console
 
