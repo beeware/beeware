@@ -386,8 +386,7 @@ or doing other pre-distribution tasks.
   .. group-tab:: Linux
 
     The output of the package step will be slightly different depending on
-    your Linux distribution. If you're on a Debian-derived distribution,
-    you'll see:
+    your Linux distribution. If you're on a Debian-derived distribution, you'll see:
 
     .. code-block:: console
 
@@ -408,7 +407,7 @@ or doing other pre-distribution tasks.
 
       [helloworld] Packaged dist/helloworld_0.0.1-1~ubuntu-jammy_amd64.deb
 
-    The ``dist`` folder will contain the DEB file that was generated.
+    The ``dist`` folder will contain the ``.deb`` file that was generated.
 
     If you're on a RHEL-based distribution, you'll see:
 
@@ -438,7 +437,27 @@ or doing other pre-distribution tasks.
 
       [helloworld] Packaged dist/helloworld-0.0.1-1.fc36.x86_64.rpm
 
-    The ``dist`` folder will contain the RPM file that was generated.
+    The ``dist`` folder will contain the ``.rpm`` file that was generated.
+
+    If you're on an Arch-based distribution, you'll see:
+
+    .. code-block:: console
+      
+      (beeware-venv) $ briefcase package
+
+      [helloworld] Finalizing application configuration...
+      Targeting arch:rolling (Vendor base arch)
+      Determining glibc version... done
+      Targeting glibc 2.37
+      Targeting Python3.10
+
+      [helloworld] Building .pkg.tar.zst package...
+      ...
+      Building Arch package... done
+
+      [helloworld] Packaged dist/helloworld-0.0.1-1-x86_64.pkg.tar.zst
+
+    The ``dist`` folder will contain the ``.pkg.tar.zst`` file that was generated.
 
     Other Linux distributions aren't currently supported for packaging.
 
