@@ -180,7 +180,7 @@ Running the updated app
 =======================
 
 Let's get this updated application code packaged as a standalone app. Since
-we've made code changes, we need to follow the same steps as in Tutorial 4:
+we've made code changes, we need to follow the same steps as in :doc:`Tutorial 4 <tutorial-4>`:
 
 .. tabs::
 
