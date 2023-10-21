@@ -110,7 +110,7 @@ Success! We've just executed a single test that verifies Python math works in
 the way we'd expect (What a relief!).
 
 Let's replace this placeholder test with a test to verify that our
-``generate()`` method behaves the way we'd expect. Replace the contents of
+``greeting()`` method behaves the way we'd expect. Replace the contents of
 ``test_app.py`` with the following::
 
     from helloworld.app import greeting
@@ -187,7 +187,7 @@ need to use the ``--test`` option:
 
       ============================== 2 passed in 0.11s ===============================
 
-Excellent! Our ``generate()`` utility method is working as expected.
+Excellent! Our ``greeting()`` utility method is working as expected.
 
 Test driven development
 =======================
