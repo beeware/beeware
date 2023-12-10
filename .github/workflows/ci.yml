@@ -16,7 +16,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Set up Python
-      uses: actions/setup-python@v5
+      uses: actions/setup-python@v5.0.0
       with:
         python-version: "3.x"
     - name: Install dependencies
@@ -27,4 +27,3 @@ jobs:
     - name: Run Pre-test check
       run: |
         tox -e ${{ matrix.task }}
-
