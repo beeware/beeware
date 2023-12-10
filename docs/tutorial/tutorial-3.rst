@@ -442,7 +442,7 @@ or doing other pre-distribution tasks.
     If you're on an Arch-based distribution, you'll see:
 
     .. code-block:: console
-      
+
       (beeware-venv) $ briefcase package
 
       [helloworld] Finalizing application configuration...
@@ -465,9 +465,9 @@ or doing other pre-distribution tasks.
     you're using, Briefcase can also help - but you'll need to install Docker.
 
     Official installers for `Docker Engine
-    <https://docs.docker.com/engine/install/#server>`__ are available for a
-    range of Unix distributions. Follow the instructions for your platform;
-    however, ensure you don't install Docker in "rootless" mode.
+    <https://docs.docker.com/engine/install>`__ are available for a range of
+    Unix distributions. Follow the instructions for your platform; however,
+    ensure you don't install Docker in "rootless" mode.
 
     Once you've installed Docker, you should be able to start an Linux
     container - for example:
