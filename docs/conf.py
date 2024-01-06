@@ -313,3 +313,4 @@ todo_include_todos = True
 
 gettext_compact = False
 gettext_uuid = True
+gettext_allow_fuzzy_translations = True

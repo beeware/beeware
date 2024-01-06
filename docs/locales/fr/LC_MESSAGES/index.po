@@ -1,72 +1,80 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2024, Russell Keith-Magee
-# This file is distributed under the same license as the BeeWare package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
-#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-06 12:36+0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: fr\n"
+"POT-Creation-Date: 2024-01-06 18:04+0800\n"
+"PO-Revision-Date: 2024-01-06 20:03+0800\n"
+"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
 "Language-Team: fr <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Generated-By: Babel 2.14.0\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #: ../../index.rst:3
 msgid "Welcome to the BeeWare Tutorial!"
 msgstr "Bienvenue dans le didacticiel BeeWare!"
 
 #: ../../index.rst:5
+#, fuzzy
 msgid "**Write Python. Run Anywhere.**"
-msgstr ""
+msgstr "**Écrire en Python. Exécutez n'importe où.**"
 
 #: ../../index.rst:7
+#, fuzzy
 msgid "Welcome to BeeWare! In this tutorial, we're going to build an graphical user interface using Python, and deploy it as a desktop application, as a mobile application, and as a single page web app. We're also going to look at how you can use BeeWare tools to do some of the common tasks that you'll need to do as an app developer, such as testing your app."
-msgstr ""
+msgstr "Bienvenue à BeeWare ! Dans ce tutoriel, nous allons construire une interface utilisateur graphique en utilisant Python, et la déployer en tant qu'application de bureau, application mobile et application web à page unique. Nous allons également voir comment vous pouvez utiliser les outils BeeWare pour effectuer certaines des tâches courantes dont vous aurez besoin en tant que développeur d'applications, telles que le test de votre application."
 
 #: ../../index.rst:14
+#, fuzzy
 msgid "What is BeeWare?"
-msgstr ""
+msgstr "Qu'est-ce que BeeWare ?"
 
 #: ../../index.rst:16
+#, fuzzy
 msgid "BeeWare is not a single product, or tool, or library - it's a collection of tools and libraries, each of which works together to help you write cross platform Python applications with a native GUI. It includes:"
-msgstr ""
+msgstr "BeeWare n'est pas un produit, un outil ou une bibliothèque unique - c'est une collection d'outils et de bibliothèques, chacun d'entre eux fonctionnant ensemble pour vous aider à écrire des applications Python multiplateformes avec une interface graphique native. Il comprend :"
 
 #: ../../index.rst:20
+#, fuzzy
 msgid "`Toga <https://toga.readthedocs.io>`__, a cross platform widget toolkit;"
-msgstr ""
+msgstr "`Toga <https://toga.readthedocs.io>`__, une boîte à outils de widgets multiplateforme ;"
 
 #: ../../index.rst:21
+#, fuzzy
 msgid "`Briefcase <https://briefcase.readthedocs.io>`__, a tool for packaging Python projects as distributable artefacts that can be shipped to end users;"
-msgstr ""
+msgstr "`Briefcase <https://briefcase.readthedocs.io>`__, un outil pour empaqueter les projets Python en tant qu'artefacts distribuables qui peuvent être envoyés aux utilisateurs finaux ;"
 
 #: ../../index.rst:23
+#, fuzzy
 msgid "Libraries (such as `Rubicon ObjC <https://rubicon-objc.readthedocs.io>`__) for accessing platform-native libraries;"
-msgstr ""
+msgstr "Des bibliothèques (telles que `Rubicon ObjC <https://rubicon-objc.readthedocs.io>`__) pour accéder aux bibliothèques natives de la plate-forme ;"
 
 #: ../../index.rst:25
+#, fuzzy
 msgid "Pre-compiled builds of Python that can be used on platforms where official Python installers aren't available."
-msgstr ""
+msgstr "Constructions précompilées de Python qui peuvent être utilisées sur des plateformes où les installateurs officiels de Python ne sont pas disponibles."
 
 #: ../../index.rst:28
+#, fuzzy
 msgid "In this tutorial, we'll be using all these tools, but as a user, you'll only need to interact with the first two (Toga and Briefcase). However, each of the tools can also be used individually - for example, you can use Briefcase to deploy an app without using Toga as a GUI toolkit."
-msgstr ""
+msgstr "Dans ce tutoriel, nous utiliserons tous ces outils, mais en tant qu'utilisateur, vous n'aurez besoin d'interagir qu'avec les deux premiers (Toga et Briefcase). Cependant, chacun de ces outils peut également être utilisé individuellement - par exemple, vous pouvez utiliser Briefcase pour déployer une application sans utiliser Toga comme boîte à outils GUI."
 
 #: ../../index.rst:33
+#, fuzzy
 msgid "The BeeWare suite is available on macOS, Windows, Linux (using GTK); on mobile platforms such as Android and iOS; and for the Web."
-msgstr ""
+msgstr "La suite BeeWare est disponible sur macOS, Windows, Linux (utilisant GTK) ; sur des plateformes mobiles telles qu'Android et iOS ; et pour le Web."
 
 #: ../../index.rst:37
+#, fuzzy
 msgid "Lets go!"
-msgstr ""
+msgstr "C'est parti !"
 
 #: ../../index.rst:39
+#, fuzzy
 msgid "Ready to try BeeWare for yourself? :doc:`Let's build a cross platform application in Python! <tutorial/tutorial-0>`"
-msgstr ""
+msgstr "Prêt à essayer BeeWare par vous-même ? :doc:`Créons une application multiplateforme en Python ! <tutorial/tutorial-0>`"

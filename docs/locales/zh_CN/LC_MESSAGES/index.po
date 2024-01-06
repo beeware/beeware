@@ -1,72 +1,77 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2024, Russell Keith-Magee
-# This file is distributed under the same license as the BeeWare package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
-#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-06 12:36+0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: zh_CN\n"
+"POT-Creation-Date: 2024-01-06 18:04+0800\n"
+"PO-Revision-Date: 2024-01-06 20:03+0800\n"
+"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
 "Language-Team: zh_CN <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #: ../../index.rst:3
 msgid "Welcome to the BeeWare Tutorial!"
-msgstr "欢迎来到 BeeWare 教程"
+msgstr "欢迎来到 BeeWare 教程!"
 
 #: ../../index.rst:5
 msgid "**Write Python. Run Anywhere.**"
-msgstr ""
+msgstr "**编写 Python。随时随地运行。**"
 
 #: ../../index.rst:7
+#, fuzzy
 msgid "Welcome to BeeWare! In this tutorial, we're going to build an graphical user interface using Python, and deploy it as a desktop application, as a mobile application, and as a single page web app. We're also going to look at how you can use BeeWare tools to do some of the common tasks that you'll need to do as an app developer, such as testing your app."
-msgstr ""
+msgstr "欢迎来到 BeeWare！在本教程中，我们将使用 Python 构建一个图形用户界面，并将其部署为桌面应用程序、移动应用程序和单页网页应用程序。此外，我们还将介绍如何使用 BeeWare 工具来完成应用程序开发人员需要完成的一些常见任务，例如测试应用程序。"
 
 #: ../../index.rst:14
+#, fuzzy
 msgid "What is BeeWare?"
-msgstr ""
+msgstr "什么是 BeeWare？"
 
 #: ../../index.rst:16
 msgid "BeeWare is not a single product, or tool, or library - it's a collection of tools and libraries, each of which works together to help you write cross platform Python applications with a native GUI. It includes:"
-msgstr ""
+msgstr "BeeWare 并不是一个单独的产品、工具或库，它是一系列工具和库的集合，每个工具和库都能协同工作，帮助您编写跨平台、具有本地图形用户界面的 Python 应用程序。它包括:"
 
 #: ../../index.rst:20
+#, fuzzy
 msgid "`Toga <https://toga.readthedocs.io>`__, a cross platform widget toolkit;"
-msgstr ""
+msgstr "`Toga <https://toga.readthedocs.io>`__，一个跨平台的 widget 工具包；"
 
 #: ../../index.rst:21
+#, fuzzy
 msgid "`Briefcase <https://briefcase.readthedocs.io>`__, a tool for packaging Python projects as distributable artefacts that can be shipped to end users;"
-msgstr ""
+msgstr "`Briefcase <https://briefcase.readthedocs.io>`__，一个用于将 Python 项目打包为可发布工件并发送给最终用户的工具；"
 
 #: ../../index.rst:23
+#, fuzzy
 msgid "Libraries (such as `Rubicon ObjC <https://rubicon-objc.readthedocs.io>`__) for accessing platform-native libraries;"
-msgstr ""
+msgstr "库（如 `Rubicon ObjC <https://rubicon-objc.readthedocs.io>`__），用于访问平台本地库；"
 
 #: ../../index.rst:25
+#, fuzzy
 msgid "Pre-compiled builds of Python that can be used on platforms where official Python installers aren't available."
-msgstr ""
+msgstr "Python 的预编译版本，可在没有官方 Python 安装程序的平台上使用。"
 
 #: ../../index.rst:28
+#, fuzzy
 msgid "In this tutorial, we'll be using all these tools, but as a user, you'll only need to interact with the first two (Toga and Briefcase). However, each of the tools can also be used individually - for example, you can use Briefcase to deploy an app without using Toga as a GUI toolkit."
-msgstr ""
+msgstr "在本教程中，我们将使用所有这些工具，但作为用户，您只需要与前两个工具（Toga 和 Briefcase）进行交互。不过，每个工具都可以单独使用，例如，您可以使用 Briefcase 部署应用程序，而无需使用 Toga 作为图形用户界面工具包。"
 
 #: ../../index.rst:33
+#, fuzzy
 msgid "The BeeWare suite is available on macOS, Windows, Linux (using GTK); on mobile platforms such as Android and iOS; and for the Web."
-msgstr ""
+msgstr "BeeWare 套件可用于 macOS、Windows、Linux（使用 GTK）、安卓和 iOS 等移动平台以及网络。"
 
 #: ../../index.rst:37
 msgid "Lets go!"
-msgstr ""
+msgstr "我们走!"
 
 #: ../../index.rst:39
+#, fuzzy
 msgid "Ready to try BeeWare for yourself? :doc:`Let's build a cross platform application in Python! <tutorial/tutorial-0>`"
-msgstr ""
+msgstr "准备好亲身体验 BeeWare了吗？ :doc:`Let's build a cross platform application in Python！<tutorial/tutorial-0>`"

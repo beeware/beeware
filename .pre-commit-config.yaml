@@ -34,3 +34,5 @@ repos:
     - id: codespell
       # remove toml extra once Python 3.10 is no longer supported
       additional_dependencies: ['.[toml]']
+      # Can't spell check a file that isn't in english...
+      exclude: "docs/locales"
