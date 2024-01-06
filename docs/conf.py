@@ -9,8 +9,8 @@
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 
-import re
 import sys
+from importlib.metadata import version as metadata_version
 from datetime import datetime
 
 # If extensions (or modules to document with autodoc) are in another directory,
@@ -54,14 +54,8 @@ copyright = f"{datetime.now().year}, Russell Keith-Magee"
 # built documents.
 #
 # The full version, including alpha/beta/rc tags.
-with open("../setup.cfg", encoding="utf8") as version_file:
-    version_match = re.search(r"^version = (.*)$", version_file.read(), re.M)
-    if version_match:
-        release = version_match.group(1)
-    else:
-        raise RuntimeError("Unable to find version string.")
-
-# The short X.Y version.
+release = metadata_version("beeware")
+# The short X.Y version
 version = ".".join(release.split(".")[:2])
 
 autoclass_content = "both"
