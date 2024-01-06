@@ -10,8 +10,8 @@
 # serve to show the default.
 
 import sys
-from importlib.metadata import version as metadata_version
 from datetime import datetime
+from importlib.metadata import version as metadata_version
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
