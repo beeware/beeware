@@ -308,3 +308,8 @@ todo_include_todos = True
 
 # If this is True, todolist produce output without file path and line, The default is False.
 # todo_link_only = False
+
+# -- Options for gettext -------------------------------------------
+
+gettext_compact = False
+gettext_uuid = True
