@@ -63,6 +63,7 @@ docs = [
     "sphinx_tabs == 3.4.4",
     "sphinx-autobuild == 2021.3.14",
     "sphinx-copybutton == 0.5.2",
+    "sphinx-intl == 2.1.0",
     "sphinxcontrib-spelling == 8.0.0",
 ]
 

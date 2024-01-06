@@ -1,0 +1,1612 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Russell Keith-Magee
+# This file is distributed under the same license as the BeeWare package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BeeWare 0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-06 12:08+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../tutorial/tutorial-0.rst:3
+msgid "Tutorial 0 - Let's get set up!"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:5
+msgid "Before we build our first BeeWare app, we have to make sure we've got all the prerequisites for running BeeWare."
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:9
+msgid "Install Python"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:11
+msgid "The first thing we'll need is a working Python interpreter."
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:15 ../../tutorial/tutorial-0.rst:77
+#: ../../tutorial/tutorial-0.rst:136 ../../tutorial/tutorial-1.rst:18
+#: ../../tutorial/tutorial-1.rst:64 ../../tutorial/tutorial-1.rst:163
+#: ../../tutorial/tutorial-1.rst:206 ../../tutorial/tutorial-2.rst:236
+#: ../../tutorial/tutorial-2.rst:273 ../../tutorial/tutorial-3.rst:25
+#: ../../tutorial/tutorial-3.rst:174 ../../tutorial/tutorial-3.rst:257
+#: ../../tutorial/tutorial-3.rst:351 ../../tutorial/tutorial-4.rst:36
+#: ../../tutorial/tutorial-4.rst:67 ../../tutorial/tutorial-4.rst:164
+#: ../../tutorial/tutorial-5/android.rst:21
+#: ../../tutorial/tutorial-5/android.rst:118
+#: ../../tutorial/tutorial-5/android.rst:195
+#: ../../tutorial/tutorial-5/android.rst:312 ../../tutorial/tutorial-6.rst:34
+#: ../../tutorial/tutorial-7.rst:72 ../../tutorial/tutorial-7.rst:138
+#: ../../tutorial/tutorial-7.rst:187 ../../tutorial/tutorial-7.rst:409
+#: ../../tutorial/tutorial-9.rst:34 ../../tutorial/tutorial-9.rst:139
+#: ../../tutorial/tutorial-9.rst:209 ../../tutorial/tutorial-9.rst:326
+#: ../../tutorial/tutorial-9.rst:396
+msgid "macOS"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:17
+msgid "If you're on macOS, a recent version of Python is included with Xcode or the command line developer tools. To check if you already have it, run the following command:"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:25
+msgid "If Python is installed, you'll see its version number. Otherwise, you'll be prompted to install the command line developer tools."
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:28 ../../tutorial/tutorial-0.rst:84
+#: ../../tutorial/tutorial-0.rst:145 ../../tutorial/tutorial-1.rst:24
+#: ../../tutorial/tutorial-1.rst:70 ../../tutorial/tutorial-1.rst:176
+#: ../../tutorial/tutorial-1.rst:211 ../../tutorial/tutorial-2.rst:245
+#: ../../tutorial/tutorial-2.rst:278 ../../tutorial/tutorial-3.rst:52
+#: ../../tutorial/tutorial-3.rst:193 ../../tutorial/tutorial-3.rst:280
+#: ../../tutorial/tutorial-3.rst:386 ../../tutorial/tutorial-4.rst:41
+#: ../../tutorial/tutorial-4.rst:81 ../../tutorial/tutorial-4.rst:185
+#: ../../tutorial/tutorial-5/android.rst:48
+#: ../../tutorial/tutorial-5/android.rst:136
+#: ../../tutorial/tutorial-5/android.rst:207
+#: ../../tutorial/tutorial-5/android.rst:326 ../../tutorial/tutorial-6.rst:72
+#: ../../tutorial/tutorial-7.rst:92 ../../tutorial/tutorial-7.rst:151
+#: ../../tutorial/tutorial-7.rst:224 ../../tutorial/tutorial-7.rst:430
+#: ../../tutorial/tutorial-9.rst:57 ../../tutorial/tutorial-9.rst:156
+#: ../../tutorial/tutorial-9.rst:241 ../../tutorial/tutorial-9.rst:344
+#: ../../tutorial/tutorial-9.rst:438
+msgid "Linux"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:30
+msgid "If you're on Linux, you'll install Python using the system package manager (``apt`` on Debian/Ubuntu/Mint, ``dnf`` on Fedora, or ``pacman`` on Arch)."
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:33
+msgid "You should ensure that the system Python is Python 3.8 or newer; if it isn't (e.g., Ubuntu 18.04 ships with Python 3.6), you'll need to upgrade your Linux distribution to something more recent."
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:37
+msgid "Support for Raspberry Pi is limited at this time."
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:39 ../../tutorial/tutorial-0.rst:112
+#: ../../tutorial/tutorial-0.rst:154 ../../tutorial/tutorial-1.rst:37
+#: ../../tutorial/tutorial-1.rst:76 ../../tutorial/tutorial-1.rst:189
+#: ../../tutorial/tutorial-1.rst:216 ../../tutorial/tutorial-2.rst:254
+#: ../../tutorial/tutorial-2.rst:283 ../../tutorial/tutorial-3.rst:86
+#: ../../tutorial/tutorial-3.rst:228 ../../tutorial/tutorial-3.rst:307
+#: ../../tutorial/tutorial-3.rst:497 ../../tutorial/tutorial-4.rst:46
+#: ../../tutorial/tutorial-4.rst:98 ../../tutorial/tutorial-4.rst:213
+#: ../../tutorial/tutorial-5/android.rst:75
+#: ../../tutorial/tutorial-5/android.rst:154
+#: ../../tutorial/tutorial-5/android.rst:219
+#: ../../tutorial/tutorial-5/android.rst:340 ../../tutorial/tutorial-6.rst:110
+#: ../../tutorial/tutorial-7.rst:112 ../../tutorial/tutorial-7.rst:164
+#: ../../tutorial/tutorial-7.rst:277 ../../tutorial/tutorial-7.rst:458
+#: ../../tutorial/tutorial-9.rst:83 ../../tutorial/tutorial-9.rst:173
+#: ../../tutorial/tutorial-9.rst:275 ../../tutorial/tutorial-9.rst:362
+#: ../../tutorial/tutorial-9.rst:471
+msgid "Windows"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:41
+msgid "If you're on Windows, you can get the official installer from `the Python website <https://www.python.org/downloads>`_. You can use any stable version of Python from 3.8 onward. We'd advise avoiding alphas, betas, and release candidates unless you *really* know what you're doing."
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:46
+msgid "Alternative Python distributions"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:48
+msgid "There are lots of different ways of installing Python. You can install Python through `homebrew <https://docs.brew.sh/Homebrew-and-Python>`__. You can use `pyenv <https://github.com/pyenv/pyenv#simple-python-version-management-pyenv>`__ to manage multiple Python installs on the same machine. Windows users can install Python from the Windows App Store. Users from a data science background might want to use `Anaconda <https://docs.anaconda.com/anaconda/install/>`__ or `Miniconda <https://docs.conda.io/en/latest/miniconda.html>`__."
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:58
+msgid "If you're on macOS or Windows, it doesn't matter *how* you've installed Python - it only matters that you can run ``python3`` from your operating system's command prompt/terminal application, and get a working Python interpreter."
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:63
+msgid "If you're on Linux, you should use the system Python provided by your operating system. You will be able to complete *most* of this tutorial using a non-system Python, but you won't be able to package your application for distribution to others."
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:71
+msgid "Install dependencies"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:73
+msgid "Next, install the additional dependencies needed for your operating system:"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:79
+msgid "Building BeeWare apps on macOS requires:"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:81
+msgid "**Git**, a version control system. This is included with Xcode or the command line developer tools, which you installed above."
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:86
+msgid "To support local development, you'll need to install some system packages. The list of packages required varies depending on your distribution:"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:89
+msgid "**Ubuntu 20.04+ / Debian 10+**"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:100
+msgid "**Fedora**"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:106
+msgid "**Arch, Manjaro**"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:114
+msgid "Building BeeWare apps on Windows requires:"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:116
+msgid "**Git**, a version control system. You can download Git from from `git-scm.org <https://git-scm.com/download/>`__."
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:119
+msgid "After installing these tools, you should ensure you restart any terminal sessions. Windows will only expose newly installed tools terminals started *after* the install has completed."
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:124
+msgid "Set up a virtual environment"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:126
+msgid "We're now going to create a virtual environment - a \"sandbox\" that we can use to isolate our work on this tutorial from our main Python installation. If we install packages into the virtual environment, our main Python installation (and any other Python projects on our computer) won't be affected. If we make a complete mess of our virtual environment, we'll be able to simply delete it and start again, without affecting any other Python project on our computer, and without the need to re-install Python."
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:163
+msgid "Errors running PowerShell Scripts"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:165
+msgid "If you're using PowerShell, and you receive the error::"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:169
+msgid "Your Windows account doesn't have permissions to run scripts. To fix this:"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:171
+msgid "Run Windows PowerShell as Administrator."
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:172
+msgid "Run ``set-executionpolicy RemoteSigned``"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:173
+msgid "Select ``Y`` to change the execution policy."
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:175
+msgid "Once you've done this you can rerun ``beeware-venv\\Scripts\\activate.ps1`` in your original PowerShell session (or a new session in the same directory)."
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:179
+msgid "If this worked, your prompt should now be changed - it should have a ``(beeware-venv)`` prefix. This lets you know that you're currently in your BeeWare virtual environment. Whenever you're working on this tutorial, you should make sure your virtual environment is activated. If it isn't, re-run the last command (the ``activate`` command) to re-activate your environment."
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:185
+msgid "Alternative virtual environments"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:187
+msgid "If you're using Anaconda or miniconda, you may be more familiar with using conda environments. You might also have heard of ``virtualenv``, a predecessor to Python's built in ``venv`` module. As with Python installs - if you're on macOS or Windows, it doesn't matter *how* you create your virtual environment, as long as you have one. If you're on Linux, you should stick to ``venv`` and the system Python."
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:195 ../../tutorial/tutorial-1.rst:226
+#: ../../tutorial/tutorial-10.rst:16 ../../tutorial/tutorial-11.rst:14
+#: ../../tutorial/tutorial-2.rst:292 ../../tutorial/tutorial-3.rst:522
+#: ../../tutorial/tutorial-4.rst:234 ../../tutorial/tutorial-5/android.rst:372
+#: ../../tutorial/tutorial-5/iOS.rst:136 ../../tutorial/tutorial-6.rst:173
+#: ../../tutorial/tutorial-7.rst:490 ../../tutorial/tutorial-8.rst:141
+#: ../../tutorial/tutorial-9.rst:517
+msgid "Next steps"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:197
+msgid "We've now set up our environment. We're ready to :doc:`create our first BeeWare application <tutorial-1>`."
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:3
+msgid "Tutorial 1 - Your first app"
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:5
+msgid "We're ready to create our first application."
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:8
+msgid "Install the BeeWare tools"
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:10
+msgid "First, we need to install **Briefcase**. Briefcase is a BeeWare tool that can be used to package your application for distribution to end users - but it can also be used to bootstrap a new project. Make sure you're in the ``beeware-tutorial`` directory you created in :doc:`Tutorial 0 <tutorial-0>`, with the ``beeware-venv`` virtual environment activated, and run:"
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:30 ../../tutorial/tutorial-1.rst:43
+msgid "Possible errors during installation"
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:32
+msgid "If you see errors during installation, it's almost certainly because some of the system requirements haven't been installed. Make sure you have :ref:`installed all the platform pre-requisites <install-dependencies>`."
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:45
+msgid "It is important that you use ``python -m pip``, rather than a bare ``pip``. Briefcase needs to ensure that it has an up-to-date version of ``pip`` and ``setuptools``, and a bare invocation of ``pip`` can't self-update. If you want to know more, `Brett Cannon has a detailed blog post about the issue <https://snarky.ca/why-you-should-use-python-m-pip/>`__."
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:51
+msgid "One of the BeeWare tools is **Briefcase**. Briefcase can be used to package your application for distribution to end users - but it can also be used to bootstrap a new project."
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:56
+msgid "Bootstrap a new project"
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:58
+msgid "Let's start our first BeeWare project!  We're going to use the Briefcase ``new`` command to create an application called **Hello World**. Run the following from your command prompt:"
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:82
+msgid "Briefcase will ask us for some details of our new application. For the purposes of this tutorial, use the following:"
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:85
+msgid "**Formal Name** - Accept the default value: ``Hello World``."
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:87
+msgid "**App Name** - Accept the default value: ``helloworld``."
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:89
+msgid "**Bundle** - If you own your own domain, enter that domain in reversed order. (For example, if you own the domain \"cupcakes.com\", enter ``com.cupcakes`` as the bundle). If you don't own your own domain, accept the default bundle (``com.example``)."
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:94
+msgid "**Project Name** - Accept the default value: ``Hello World``."
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:96
+msgid "**Description** - Accept the default value (or, if you want to be really creative, come up with your own description!)"
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:99
+msgid "**Author** - Enter your own name here."
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:101
+msgid "**Author's email** - Enter your own email address. This will be used in the configuration file, in help text, and anywhere that an email is required when submitting the app to an app store."
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:105
+msgid "**URL** - The URL of the landing page for your application. Again, if you own your own domain, enter a URL at that domain (including the ``https://``). Otherwise, just accept the default URL (``https://example.com/helloworld``). This URL doesn't need to actually exist (for now); it will only be used if you publish your application to an app store."
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:111
+msgid "**License** - Accept the default license (BSD). This won't affect anything about the operation of the tutorial, though - so if you have particularly strong feelings about license choice, feel free to choose another license."
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:116
+msgid "**GUI framework** - Accept the default option, Toga (BeeWare's own GUI toolkit)."
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:119
+msgid "Briefcase will then generate a project skeleton for you to use. If you've followed this tutorial so far, and accepted the defaults as described, your file system should look something like::"
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:145
+msgid "This skeleton is actually a fully functioning application without adding anything else. The ``src`` folder contains all the code for the application, the ``tests`` folder contains an initial test suite, and the ``pyproject.toml`` file describes how to package the application for distribution. If you open ``pyproject.toml`` in an editor, you'll see the configuration details you just provided to Briefcase."
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:152
+msgid "Now that we have a stub application, we can use Briefcase to run the application."
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:156
+msgid "Run the app in developer mode"
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:158
+msgid "Move into the ``helloworld`` project directory and tell briefcase to start the project in Developer (or ``dev``) mode:"
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:202 ../../tutorial/tutorial-2.rst:269
+msgid "This should open a GUI window:"
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst
+msgid "Hello World Tutorial 1 window, on macOS"
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst
+msgid "Hello World Tutorial 1 window, on Linux"
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst
+msgid "Hello World Tutorial 1 window, on Windows"
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:221
+msgid "Press the close button (or select Quit from the application's menu), and you're done! Congratulations - you've just written a standalone, native application in Python!"
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:228
+msgid "We now have a working application, running in developer mode. Now we can add some logic of our own to make our application do something a little more interesting. In :doc:`Tutorial 2 <tutorial-2>`, we'll put a more useful user interface onto our application."
+msgstr ""
+
+#: ../../tutorial/tutorial-10.rst:5
+msgid "Tutorial 10 - Make this app your own"
+msgstr ""
+
+#: ../../tutorial/tutorial-10.rst:7
+msgid "So far, our app has used a default \"gray bee\" icon. How do we update the app to use our own icon?"
+msgstr ""
+
+#: ../../tutorial/tutorial-10.rst:11
+msgid "Adding an icon"
+msgstr ""
+
+#: ../../tutorial/tutorial-10.rst:13 ../../tutorial/tutorial-11.rst:11
+msgid "**Coming soon**"
+msgstr ""
+
+#: ../../tutorial/tutorial-10.rst:18
+msgid "We've now got an application with a custom icon on our desktop and phone! How do we share this application with everyone else? Turn to :doc:`Tutorial 11 <tutorial-11>` to find out..."
+msgstr ""
+
+#: ../../tutorial/tutorial-11.rst:5
+msgid "Tutorial 11 - Publishing your app!"
+msgstr ""
+
+#: ../../tutorial/tutorial-11.rst:7
+msgid "Once you've built an installer for your application, you're going to want to share it with the world. Briefcase provides a command - ``publish`` to manage this process, with a range of options for how to publish your application."
+msgstr ""
+
+#: ../../tutorial/tutorial-11.rst:16 ../../tutorial/tutorial-9.rst:519
+msgid "This has been a taste for what you can do with the tools provided by the BeeWare project. What you do from here is up to you!"
+msgstr ""
+
+#: ../../tutorial/tutorial-11.rst:19 ../../tutorial/tutorial-9.rst:522
+msgid "Some places to go from here:"
+msgstr ""
+
+#: ../../tutorial/tutorial-11.rst:21 ../../tutorial/tutorial-9.rst:524
+msgid "Tutorials demonstrating `features of the Toga widget toolkit <https://toga.readthedocs.io/en/latest/tutorial/index.html>`__."
+msgstr ""
+
+#: ../../tutorial/tutorial-11.rst:23 ../../tutorial/tutorial-9.rst:526
+msgid "Details on the `options available when configuring your Briefcase project <https://briefcase.readthedocs.io/en/latest/reference/index.html>`__."
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:3
+msgid "Tutorial 2 - Making it interesting"
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:5
+msgid "In :doc:`Tutorial 1 <tutorial-1>`, we generated a stub project that was able to run, but we didn't write any code ourselves. Let's take a look at what was generated for us."
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:10
+msgid "What was generated"
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:12
+msgid "In the ``src/helloworld`` directory, you should see 3 files: ``__init__.py``, ``__main__.py`` and ``app.py``."
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:15
+msgid "``__init__.py`` marks the ``helloworld`` directory as an importable Python module. It is an empty file; the very fact it exists tells the Python interpreter that the ``helloworld`` directory defines a module."
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:19
+msgid "``__main__.py`` marks the ``helloworld`` module as a special kind of module - an executable module. If you try to run the ``helloworld`` module using ``python -m helloworld``, the ``__main__.py`` file is where Python will start executing. The contents of ``__main__.py`` is relatively simple::"
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:29
+msgid "That is - it imports the ``main`` method from the ``helloworld`` app; and if it's being executed as an entry point, calls the main() method, and starts the application's main loop. The main loop is the way a GUI application listens for user input (like mouse clicks and keyboard presses)."
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:34
+msgid "The more interesting file is ``app.py`` - this contains the logic that creates our application window::"
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:52
+msgid "Let's go through this line by line::"
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:58
+msgid "First, we import the ``toga`` widget toolkit, as well as some style-related utility classes and constants. Our code doesn't use these yet - but we'll make use of them shortly."
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:62
+msgid "Then, we define a class::"
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:66
+msgid "Each Toga application has a single ``toga.App`` instance, representing the running entity that is the application. The app may end up managing multiple windows; but for simple applications, there will be a single main window."
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:70
+msgid "Next, we define a ``startup()`` method::"
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:75
+msgid "The first thing the startup method does is to define a main box. Toga's layout scheme behaves similar to HTML. You build an application by constructing a collection of boxes, each of which contains other boxes, or actual widgets. You then apply styles to these boxes to define how they will consume the available window space."
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:81
+msgid "In this application, we define a single box, but we don't put anything into it."
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:83
+msgid "Next, we define a window into which we can put this empty box::"
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:87
+msgid "This creates an instance of a ``toga.MainWindow``, which will have a title matching the application's name. A Main Window is a special kind of window in Toga - it's a window that is closely bound to the life cycle of the app. When the Main Window is closed, the application exits. The Main Window is also the window that has the application's menu (if you're on a platform like Windows where menu bars are part of the window)"
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:94
+msgid "We then add our empty box as the content of the main window, and instruct the application to show our window::"
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:100
+msgid "Last of all, we define a ``main()`` method. This is what creates the instance of our application::"
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:106
+msgid "This ``main()`` method is the one that is imported and invoked by ``__main__.py``. It creates and returns an instance of our ``HelloWorld`` application."
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:110
+msgid "That's the simplest possible Toga application. Let's put some of our own content into the application, and make the app do something interesting."
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:114
+msgid "Adding some content of our own"
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:116
+msgid "Modify your ``HelloWorld`` class inside ``src/helloworld/app.py`` so that it looks like this::"
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:151
+msgid "Don't remove the imports at the top of the file , or the ``main()`` at the bottom. You only need to update the ``HelloWorld`` class."
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:154
+msgid "Let's look in detail at what has changed."
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:156
+msgid "We're still creating a main box; however, we are now applying a style::"
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:160
+msgid "Toga's builtin layout system is called \"Pack\". It behaves a lot like CSS. You define objects in a hierarchy - in HTML, the objects are ``<div>``, ``<span>``, and other DOM elements; in Toga, they're widgets and boxes. You can then assign styles to the individual elements. In this case, we're indicating that this is a ``COLUMN`` box - that is, it is a box that will consume all the available width, and will expand its height as content is added, but it will try to be as short as possible."
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:168
+msgid "Next, we define a couple of widgets::"
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:176
+msgid "Here, we define a Label and a TextInput. Both widgets have styles associated with them; the label will have 5px of padding on its left and right, and no padding on the top and bottom. The TextInput is marked as being flexible - that is, it will absorb all available space in its layout axis."
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:181
+msgid "The TextInput is assigned as an instance variable of the class. This gives us easy access to the widget instance - something that we'll use in a moment."
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:184
+msgid "Next, we define a box to hold these two widgets::"
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:190
+msgid "The ``name_box`` is a box just like the main box; however, this time, it's a ``ROW`` box. That means content will be added horizontally, and it will try to make its width as narrow as possible. The box also has some padding - 5px on all sides."
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:195
+msgid "Now we define a button::"
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:203
+msgid "The button also has 5px of padding on all sides. We also define a *handler* - a method to invoke when the button is pressed."
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:206
+msgid "Then, we add the name box and the button to the main box::"
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:211
+msgid "This completes our layout; the rest of the startup method is as it was previously - defining a MainWindow, and assigning the main box as the window's content::"
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:219
+msgid "The last thing we need to do is define the handler for the button. A handler can be any method, generator, or asynchronous co-routine; it accepts the widget that generated the event as an argument, and will be invoked whenever the button is pressed::"
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:227
+msgid "The body of the method is a simple print statement - however, it will interrogate the current value of the name input, and use that content as the text that is printed."
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:231
+msgid "Now that we've made these changes we can see what they look like by starting the application again. As before, we'll use developer mode:"
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:263
+msgid "You'll notice that this time, it *doesn't* install dependencies. Briefcase can detect that the application has been run before, and to save time, will only run the application. If you add new dependencies to your app, you can make sure that they're installed by passing in a ``-r`` option when you run ``briefcase dev``."
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst
+msgid "Hello World Tutorial 2 window, on macOS"
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst
+msgid "Hello World Tutorial 2 window, on Linux"
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst
+msgid "Hello World Tutorial 2 window, on Windows"
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:288
+msgid "If you enter a name in the text box, and press the GUI button, you should see output appear in the console where you started the application."
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:294
+msgid "We've now got an application that does something a little more interesting. But it only runs on our own computer. Let's package this application for distribution. In :doc:`Tutorial 3 <tutorial-3>`, we'll wrap our application up as a standalone installer that we could send to a friend, a customer, or upload to an App Store."
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:3
+msgid "Tutorial 3 - Packaging for distribution"
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:5
+msgid "So far, we've been running our application in \"Developer mode\". This makes it easy for us to run our application locally - but what we really want is to be able to give our application to others."
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:9
+msgid "However, we don't want to have to teach our users how to install Python, create a virtual environment, clone a git repository, and run Briefcase in developer mode. We'd rather just give them an installer, and have the application Just Work."
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:14
+msgid "Briefcase can be used to package your application for distribution in this way."
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:17
+msgid "Creating your application scaffold"
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:19
+msgid "Since this is the first time we're packaging our application, we need to create some configuration files and other scaffolding to support the packaging process. From the ``helloworld`` directory, run:"
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:110
+msgid "You've probably just seen pages of content go past in your terminal... so what just happened? Briefcase has done the following:"
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:113
+msgid "It **generated an application template**. There's a lot of files and configurations required to build a native installer, above and beyond the code of your actual application. This extra scaffolding is almost the same for every application on the same platform, except for the name of the actual application being constructed - so Briefcase provides an application template for each platform it supports. This step rolls out the template, substituting the name of your application, bundle ID, and other properties of your configuration file as required to support the platform you're building on."
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:123
+msgid "If you're not happy with the template provided by Briefcase, you can provide your own. However, you probably don't want to do this until you've got a bit more experience using Briefcase's default template."
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:127
+msgid "It **downloaded and installed a support package**. The packaging approach taken by briefcase is best described as \"the simplest thing that could possibly work\" - it ships a complete, isolated Python interpreter as part of every application it builds. This is slightly space inefficient - if you have 5 applications packaged with Briefcase, you'll have 5 copies of the Python interpreter. However, this approach guarantees that every application is completely independent, using a specific version of Python that is known to work with the application."
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:136
+msgid "Again, Briefcase provides a default support package for each platform; if you want, you can provide your own support package, and have that package included as part of the build process. You may want to do this if you have particular options in the Python interpreter that you need to have enabled, or if you want to strip modules out of the standard library that you don't need at runtime."
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:143
+msgid "Briefcase maintains a local cache of support packages, so once you've downloaded a specific support package, that cached copy will be used on future builds."
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:147
+msgid "It **installed application requirements**. Your application can specify any third-party modules that are required at runtime. These will be installed using ``pip`` into your application's installer."
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:151
+msgid "It **Installed your application code**. Your application will have its own code and resources (e.g., images that are needed at runtime); these files are copied into the installer."
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:155
+msgid "It **installed your resources needed by your application.** Lastly, it adds any additional resources that are needed by the installer itself. This includes things like icons that need to be attached to the final application and splash screen images."
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:160
+msgid "Once this completes, if you look in the project directory, you should now see a directory corresponding to your platform (``macOS``, ``linux``, or ``windows``) that contains additional files. This is the platform-specific packaging configuration for your application."
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:166
+msgid "Building your application"
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:168
+msgid "You can now compile your application. This step performs any binary compilation that is necessary for your application to be executable on your target platform."
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:187
+msgid "On macOS, the ``build`` command doesn't need to *compile* anything, but it does need to sign the contents of binary so that it can be executed. This signature is an *ad hoc* signature - it will only work on *your* machine; if you want to distribute the application to others, you'll need to provide a full signature."
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:222
+msgid "Once this step completes, the ``build`` folder will contain a ``helloworld-0.0.1`` folder that contains a mirror of a Linux ``/usr`` file system. This file system mirror will contain a ``bin`` folder with a ``helloworld`` binary, plus ``lib`` and ``share`` folders needed to support the binary."
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:237
+msgid "On Windows, the ``build`` command doesn't need to *compile* anything, but it does need to write some metadata so that the application knows its name, version, and so on."
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:241
+msgid "Triggering antivirus"
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:243
+msgid "Since this metadata is being written directly in to the pre-compiled binary rolled out from the template during the ``create`` command, this may trigger antivirus software running on your machine and prevent the metadata from being written. In that case, instruct the antivirus to allow the tool (named ``rcedit-x64.exe``) to run and re-run the command above."
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:251
+msgid "Running your app"
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:253
+msgid "You can now use Briefcase to run your application:"
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:329
+msgid "This will start to run your native application, using the output of the ``build`` command."
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:332
+msgid "You might notice some small differences in the way your application looks when it's running. For example, icons and the name displayed by the operating system may be slightly different to those you saw when running under developer mode. This is also because you're using the packaged application, not just running Python code. From the operating system's perspective, you're now running \"an app\", not \"a Python program\", and this is reflected in how the application appears."
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:341
+msgid "Building your installer"
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:343
+msgid "You can now package your application for distribution, using the ``package`` command. The package command does any compilation that is required to convert the scaffolded project into a final, distributable product. Depending on the platform, this may involve compiling an installer, performing code signing, or doing other pre-distribution tasks."
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:367
+msgid "The ``dist`` folder will contain a file named ``Hello World-0.0.1.dmg``. If you locate this file in the Finder, and double click on its icon, you'll mount the DMG, giving you a copy of the Hello World app, and a link to your Applications folder for easy installation. Drag the app file into Applications, and you've installed your application. Send the DMG file to a friend, and they should be able to do the same."
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:374
+msgid "In this example, we've used the ``--adhoc-sign`` option - that is, we're signing our application with *ad hoc* credentials - temporary credentials that will only work on your machine. We've done this to keep the tutorial simple. Setting up code signing identities is a little fiddly, and they're only *required* if you're intending to distribute your application to others. If we were publishing a real application for others to use, we would need to specify real credentials."
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:382
+msgid "When you're ready to publish a real application, check out the Briefcase How-To guide on `Setting up a macOS code signing identity <https://briefcase.readthedocs.io/en/latest/how-to/code-signing/macOS.html>`__"
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:388
+msgid "The output of the package step will be slightly different depending on your Linux distribution. If you're on a Debian-derived distribution, you'll see:"
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:410
+msgid "The ``dist`` folder will contain the ``.deb`` file that was generated."
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:412
+msgid "If you're on a RHEL-based distribution, you'll see:"
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:440
+msgid "The ``dist`` folder will contain the ``.rpm`` file that was generated."
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:442
+msgid "If you're on an Arch-based distribution, you'll see:"
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:460
+msgid "The ``dist`` folder will contain the ``.pkg.tar.zst`` file that was generated."
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:462
+msgid "Other Linux distributions aren't currently supported for packaging."
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:464
+msgid "If you want to build a package for a Linux distribution other than the one you're using, Briefcase can also help - but you'll need to install Docker."
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:467
+msgid "Official installers for `Docker Engine <https://docs.docker.com/engine/install>`__ are available for a range of Unix distributions. Follow the instructions for your platform; however, ensure you don't install Docker in \"rootless\" mode."
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:472
+msgid "Once you've installed Docker, you should be able to start an Linux container - for example:"
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:479
+msgid "will show you a Unix prompt (something like ``root@84444e31cff9:/#``) inside an Ubuntu 22.04 Docker container. Type Ctrl-D to exit Docker and return to your local shell."
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:483
+msgid "Once you've got Docker installed, you can use Briefcase to build a package for any Linux distribution that Briefcase supports by passing in a Docker image as an argument. For example, to build a DEB package for Ubuntu 22.04 (Jammy), regardless of the operating system you're on, you can run:"
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:492
+msgid "This will download the Docker image for your selected operating system, create a container that is able to run Briefcase builds, and build the app package inside the image. Once it's completed, the ``dist`` folder will contain the package for the target Linux distribution."
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:515
+msgid "Once this step completes, the ``dist`` folder will contain a file named ``Hello_World-0.0.1.msi``. If you double click on this installer to run it, you should go through a familiar Windows installation process. Once this installation completes, there will be a \"Hello World\" entry in your start menu."
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:524
+msgid "We now have our application packaged for distribution on desktop platforms. But what happens when we need to update the code in our application? How do we get those updates into our packaged application? Turn to :doc:`Tutorial 4 <./tutorial-4>` to find out..."
+msgstr ""
+
+#: ../../tutorial/tutorial-4.rst:3
+msgid "Tutorial 4 - Updating your application"
+msgstr ""
+
+#: ../../tutorial/tutorial-4.rst:5
+msgid "In the last tutorial, we packaged our application as a native application. If you're dealing with a real-world app, that isn't going to be the end of the story - you'll likely do some testing, discover problems, and need to make some changes. Even if your application is perfect, you'll eventually want to publish version 2 of your application with improvements."
+msgstr ""
+
+#: ../../tutorial/tutorial-4.rst:11
+msgid "So - how do you update your installed app when you make code changes?"
+msgstr ""
+
+#: ../../tutorial/tutorial-4.rst:14
+msgid "Updating application code"
+msgstr ""
+
+#: ../../tutorial/tutorial-4.rst:16
+msgid "Our application currently prints to the console when you press the button. However, GUI applications shouldn't really use the console for output. They need to use dialogs to communicate with users."
+msgstr ""
+
+#: ../../tutorial/tutorial-4.rst:20
+msgid "Let's add a dialog box to say hello, instead of writing to the console. Modify the ``say_hello`` callback so it looks like this::"
+msgstr ""
+
+#: ../../tutorial/tutorial-4.rst:29
+msgid "This directs Toga to open a modal dialog box when the button is pressed."
+msgstr ""
+
+#: ../../tutorial/tutorial-4.rst:31
+msgid "If you run ``briefcase dev``, enter a name, and press the button, you'll see the new dialog box:"
+msgstr ""
+
+#: ../../tutorial/tutorial-4.rst
+msgid "Hello World Tutorial 4 dialog, on macOS"
+msgstr ""
+
+#: ../../tutorial/tutorial-4.rst
+msgid "Hello World Tutorial 4 dialog, on Linux"
+msgstr ""
+
+#: ../../tutorial/tutorial-4.rst
+msgid "Hello World Tutorial 4 dialog, on Windows"
+msgstr ""
+
+#: ../../tutorial/tutorial-4.rst:51
+msgid "However, if you run ``briefcase run``, the dialog box won't appear."
+msgstr ""
+
+#: ../../tutorial/tutorial-4.rst:53
+msgid "Why is this? Well, ``briefcase dev`` operates by running your code in place - it tries to produce as realistic runtime environment for your code as possible, but it doesn't provide or use any of the platform infrastructure for wrapping your code as an application. Part of the process of packaging your app involves copying your code *into* the application bundle - and at the moment, your application still has the old code in it."
+msgstr ""
+
+#: ../../tutorial/tutorial-4.rst:60
+msgid "So - we need to tell briefcase to update your app, copying in the new version of the code. We *could* do this by deleting the old platform directory and starting from scratch. However, Briefcase provides an easier way - you can update the code for your existing bundled application:"
+msgstr ""
+
+#: ../../tutorial/tutorial-4.rst:112
+msgid "If Briefcase can't find the scaffolded template, it will automatically invoke ``create`` to generate a fresh scaffold."
+msgstr ""
+
+#: ../../tutorial/tutorial-4.rst:115
+msgid "Now that we've updated the installer code, we can then run ``briefcase build`` to re-compile the app, ``briefcase run`` to run the updated app, and ``briefcase package`` to repackage the application for distribution."
+msgstr ""
+
+#: ../../tutorial/tutorial-4.rst:119
+msgid "(macOS users, remember that as noted in :doc:`Tutorial 3 <tutorial-3>`, for the tutorial we recommend running ``briefcase package`` with the ``--adhoc-sign`` flag to avoid the complexity of setting up a code signing identity and keep the tutorial as simple as possible.)"
+msgstr ""
+
+#: ../../tutorial/tutorial-4.rst:125
+msgid "Update and run in one step"
+msgstr ""
+
+#: ../../tutorial/tutorial-4.rst:127
+msgid "If you're rapidly iterating code changes, you'll likely want to make a code change, update the application, and immediately re-run your application. For most purposes, developer mode (``briefcase dev``) will be the easiest way to do this sort of rapid iteration; however, if you're testing something about how your application runs as a native binary, or hunting a bug that only manifests when your application is in packaged form, you may need to use repeated calls to ``briefcase run``. To simplify the process of updating and running the bundled app, Briefcase has a shortcut to support this usage pattern - the ``-u`` (or ``--update``) option on the ``run`` command."
+msgstr ""
+
+#: ../../tutorial/tutorial-4.rst:137
+msgid "Let's try making another change. You may have noticed that if you don't type a name in the text input box, the dialog will say \"Hello, \". Let's modify the ``say_hello`` function again to handle this edge case."
+msgstr ""
+
+#: ../../tutorial/tutorial-4.rst:141
+msgid "At the top of the file, between the imports and the ``class HelloWorld`` definition, add a utility methods to generate an appropriate greeting depending on the value of the name that has been provided::"
+msgstr ""
+
+#: ../../tutorial/tutorial-4.rst:151
+msgid "Then, modify the ``say_hello`` callback to use this new utility method::"
+msgstr ""
+
+#: ../../tutorial/tutorial-4.rst:159
+msgid "Run your app in development mode (with ``briefcase dev``) to confirm that the new logic works; then update, build and run the app with one command:"
+msgstr ""
+
+#: ../../tutorial/tutorial-4.rst:229
+msgid "The package command also accepts the ``-u`` argument, so if you make a change to your application code and want to repackage immediately, you can run ``briefcase package -u``."
+msgstr ""
+
+#: ../../tutorial/tutorial-4.rst:236
+msgid "We now have our application packaged for distribution on desktop platforms, and we've been able to update the code in our application."
+msgstr ""
+
+#: ../../tutorial/tutorial-4.rst:239
+msgid "But what about mobile? In :doc:`Tutorial 5 <tutorial-5/index>`, we'll convert our application into a mobile application, and deploy it onto a device simulator, and onto a phone."
+msgstr ""
+
+#: ../../tutorial/tutorial-5/android.rst:3
+msgid "Tutorial 5 - Taking it mobile: Android"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/android.rst:5
+msgid "Now, we're going to take our application, and deploy it as an Android application."
+msgstr ""
+
+#: ../../tutorial/tutorial-5/android.rst:8
+msgid "The process of deploying an application to Android is very similar to the process for deploying as a desktop application. Briefcase handles installing dependencies for Android, including the Android SDK, the Android emulator, and a Java compiler."
+msgstr ""
+
+#: ../../tutorial/tutorial-5/android.rst:14
+msgid "Create an Android app and compile it"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/android.rst:16
+msgid "First, run the ``create`` command. This downloads an Android app template and adds your Python code to it."
+msgstr ""
+
+#: ../../tutorial/tutorial-5/android.rst:102
+msgid "When you run ``briefcase create android`` for the first time, Briefcase downloads a Java JDK, and the Android SDK. File sizes and download times can be considerable; this may take a while (10 minutes or longer, depending on the speed of your Internet connection). When the download has completed, you will be prompted to accept Google's Android SDK license."
+msgstr ""
+
+#: ../../tutorial/tutorial-5/android.rst:108
+msgid "Once this completes, we'll have a ``build\\helloworld\\android\\gradle`` directory in our project, which will contain an Android project with a Gradle build configuration. This project will contain your application code, and a support package containing the Python interpreter."
+msgstr ""
+
+#: ../../tutorial/tutorial-5/android.rst:113
+msgid "We can then use Briefcase's ``build`` command to compile this into an Android APK app file."
+msgstr ""
+
+#: ../../tutorial/tutorial-5/android.rst:172
+msgid "Gradle may look stuck"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/android.rst:174
+msgid "During the ``briefcase build android`` step, Gradle (the Android platform build tool) will print ``CONFIGURING: 100%``, and appear to be doing nothing. Don't worry, it's not stuck - it's downloading more Android SDK components. Depending on your Internet connection speed, this may take another 10 minutes (or longer). This lag should only happen the very first time you run ``build``; the tools are cached, and on your next build, the cached versions will be used."
+msgstr ""
+
+#: ../../tutorial/tutorial-5/android.rst:183
+msgid "Run the app on a virtual device"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/android.rst:185
+msgid "We're now ready to run our application. You can use Briefcase's ``run`` command to run the app on an Android device. Let's start by running on an Android emulator."
+msgstr ""
+
+#: ../../tutorial/tutorial-5/android.rst:189
+msgid "To run your application, run ``briefcase run android``. When you do this, you'll be prompted with a list of devices that you could run the app on. The last item will always be an option to create a new Android emulator."
+msgstr ""
+
+#: ../../tutorial/tutorial-5/android.rst:231
+msgid "We can now choose our desired device. Select the \"Create a new Android emulator\" option, and accept the default choice for the device name (``beePhone``)."
+msgstr ""
+
+#: ../../tutorial/tutorial-5/android.rst:235
+msgid "Briefcase ``run`` will automatically boot the virtual device. When the device is booting, you will see the Android logo:"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/android.rst:243
+msgid "Android virtual device booting"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/android.rst:245
+msgid "Once the device has finished booting, Briefcase will install your app on the device. You will briefly see a launcher screen:"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/android.rst:253
+msgid "Android virtual device fully started, on the launcher screen"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/android.rst:255
+msgid "The app will then start. You'll see a splash screen while the app starts up:"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/android.rst:262
+msgid "App splash screen"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/android.rst:264
+msgid "The emulator didn't start!"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/android.rst:266
+msgid "The Android emulator is a complex piece of software that relies on a number of hardware and operating system features - features that may not be available or enabled on older machines. If you experience any difficulties starting the Android emulator, consult the `Requirements and recommendations <https://developer.android.com/studio/run/emulator#requirements>`__ section of the Android developer documentation."
+msgstr ""
+
+#: ../../tutorial/tutorial-5/android.rst:273
+msgid "The first time the app starts, it needs to unpack itself onto the device. This may take a few seconds. Once it's unpacked, you'll see the Android version of our desktop app:"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/android.rst:282
+msgid "App from Tutorial 2, fully launched"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/android.rst:282
+msgid "Demo app fully launched"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/android.rst:284
+msgid "If you fail to see your app launching, you may need to check your terminal where you ran ``briefcase run`` and look for any error messages."
+msgstr ""
+
+#: ../../tutorial/tutorial-5/android.rst:287
+msgid "In future, if you want to run on this device without using the menu, you can provide the emulator's name to Briefcase, using ``briefcase run android -d @beePhone`` to run on the virtual device directly."
+msgstr ""
+
+#: ../../tutorial/tutorial-5/android.rst:292
+msgid "Run the app on a physical device"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/android.rst:294
+msgid "If you have a physical Android phone or tablet, you can connect it to your computer with a USB cable, and then use the Briefcase to target your physical device."
+msgstr ""
+
+#: ../../tutorial/tutorial-5/android.rst:298
+msgid "Android requires that you prepare your device before it can be used for development. You will need to make 2 changes to the options on your device:"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/android.rst:301
+msgid "Enable developer options"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/android.rst:302
+msgid "Enable USB debugging"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/android.rst:304
+msgid "Details on how to make these changes can be found `in the Android developer documentation <https://developer.android.com/studio/debug/dev-options#enable>`__."
+msgstr ""
+
+#: ../../tutorial/tutorial-5/android.rst:307
+msgid "Once these steps have been completed, your device should appear in the list of available devices when you run ``briefcase run android``."
+msgstr ""
+
+#: ../../tutorial/tutorial-5/android.rst:354
+msgid "Here we can see a new physical device with it's serial number on the deployment list - in this case, a Pixel 3a. In the future, if you want to run on this device without using the menu, you can provide the phone's serial number to Briefcase (in this case, ``briefcase run android -d 94ZZY0LNE8``). This will run on the device directly, without prompting."
+msgstr ""
+
+#: ../../tutorial/tutorial-5/android.rst:360
+msgid "My device doesn't appear!"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/android.rst:362
+msgid "If your device doesn't appear on this list at all, either you haven't enabled USB debugging, (or the device isn't plugged in!)."
+msgstr ""
+
+#: ../../tutorial/tutorial-5/android.rst:365
+msgid "If your device appears, but is listed as \"Unknown device (not authorized for development)\", developer mode hasn't been correctly enabled. Re-run `the steps to enable developer options <https://developer.android.com/studio/debug/dev-options#enable>`__, and re-run ``briefcase run android``."
+msgstr ""
+
+#: ../../tutorial/tutorial-5/android.rst:374
+#: ../../tutorial/tutorial-5/iOS.rst:138
+msgid "We've now got an application on our phone! Is there anywhere else we can deploy a BeeWare app? Turn to :doc:`Tutorial 6 <../tutorial-6>` to find out..."
+msgstr ""
+
+#: ../../tutorial/tutorial-5/iOS.rst:3
+msgid "Tutorial 5 - Taking it mobile: iOS"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/iOS.rst:5
+msgid "To compile iOS applications we'll need Xcode, which is available for free from `the macOS App Store <https://apps.apple.com/au/app/xcode/id497799835?mt=12>`__."
+msgstr ""
+
+#: ../../tutorial/tutorial-5/iOS.rst:8
+msgid "Once we've got Xcode installed, we can take our application and deploy it as an iOS app."
+msgstr ""
+
+#: ../../tutorial/tutorial-5/iOS.rst:10
+msgid "The process of deploying an application to iOS is very similar to the process for deploying as a desktop application. First, you run the ``create`` command - but this time, we specify that we want to create an iOS application:"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/iOS.rst:39
+msgid "Once this completes, we'll have a ``build/helloworld/ios/xcode`` directory containing an Xcode project, as well as the support libraries and the application code needed for the application."
+msgstr ""
+
+#: ../../tutorial/tutorial-5/iOS.rst:43
+msgid "You can then use Briefcase to compile your app using ``briefcase build iOS``:"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/iOS.rst:58
+msgid "We're now ready to run our application, using ``briefcase run iOS``. You'll be prompted to select a device to compile for; if you've got simulators for multiple iOS SDK versions installed, you may also be asked which iOS version you want to target. The options you are shown may differ from the options show in this output - at the very least, the list of devices will likely be different. For our purposes, it doesn't matter which simulator you pick."
+msgstr ""
+
+#: ../../tutorial/tutorial-5/iOS.rst:107
+msgid "This will start the iOS simulator, install your app, and start it. You should see the simulator start, and eventually open your iOS application:"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/iOS.rst:-1
+msgid "Hello World Tutorial 5 window, on iOS"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/iOS.rst:113
+msgid "If you know ahead of time which iOS simulator you want to target, you can tell Briefcase to use that simulator by providing a ``-d`` (or ``--device``) option. Using the name of the device you selected when you built your application, run:"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/iOS.rst:121
+msgid "If you have multiple iOS versions available, Briefcase will pick the highest iOS version; if you want to pick a particular iOS version, you tell it to use that specific version:"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/iOS.rst:129
+msgid "Or, you can name a specific device UDID:"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/index.rst:3
+msgid "Tutorial 5 - Taking it Mobile"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/index.rst:5
+msgid "So far, we've been running and testing our application on the desktop. However, BeeWare also supports mobile platforms - and the application we've written can be deployed to your mobile device, too!"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/index.rst:11
+msgid "iOS"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/index.rst:13
+msgid "iOS applications can only be compiled on macOS."
+msgstr ""
+
+#: ../../tutorial/tutorial-5/index.rst:15
+msgid ":doc:`Let's build our app for iOS! <iOS>`"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/index.rst:17
+msgid "Android"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/index.rst:19
+msgid "Android applications can be compiled on macOS, Windows or Linux."
+msgstr ""
+
+#: ../../tutorial/tutorial-5/index.rst:21
+msgid ":doc:`Let's build our app for Android! <android>`"
+msgstr ""
+
+#: ../../tutorial/tutorial-6.rst:3
+msgid "Tutorial 6 - Put it on the web!"
+msgstr ""
+
+#: ../../tutorial/tutorial-6.rst:5
+msgid "In addition to supporting mobile platforms, the Toga widget toolkit also supports the web! Using the same API that you used to deploy your desktop and mobile applications, you can deploy your application as a single-page web app."
+msgstr ""
+
+#: ../../tutorial/tutorial-6.rst:9
+msgid "Proof of Concept"
+msgstr ""
+
+#: ../../tutorial/tutorial-6.rst:11
+msgid "The Toga Web backend is the least mature of all the Toga backends. It's mature enough to show off a few features, but it's likely to be buggy, and will be missing many of the widgets that are available on other platforms. At this point in time, Web deployment should be considered a \"Proof of Concept\" - enough to demonstrate what can be done, but not enough to be relied on for serious development."
+msgstr ""
+
+#: ../../tutorial/tutorial-6.rst:18
+msgid "If you have problems with this step of the tutorial, you can skip to the next page."
+msgstr ""
+
+#: ../../tutorial/tutorial-6.rst:22
+msgid "Deploying as a web app"
+msgstr ""
+
+#: ../../tutorial/tutorial-6.rst:24
+msgid "The process of deploying as a single-page web app follows the same familiar pattern - you create the application, then build the application, then run it. However, Briefcase can be a little bit smart; if you attempt to run an application, and Briefcase determines that it hasn't been created or built for the platform being targeted, it will do the create and build steps for you. Since this is our first time running the app for the web, we can perform all three steps with one command:"
+msgstr ""
+
+#: ../../tutorial/tutorial-6.rst:148
+msgid "This will open a web browser, pointing at `http://127.0.0.1:8080 <http://127.0.0.1:8080>`__:"
+msgstr ""
+
+#: ../../tutorial/tutorial-6.rst:-1
+msgid "Hello World Tutorial 6 dialog, in a browser"
+msgstr ""
+
+#: ../../tutorial/tutorial-6.rst:154
+msgid "If you enter your name and click the button, a dialog will appear."
+msgstr ""
+
+#: ../../tutorial/tutorial-6.rst:157
+msgid "How does this work?"
+msgstr ""
+
+#: ../../tutorial/tutorial-6.rst:159
+msgid "This web app is a static website - a single HTML source page, with some CSS and other resources. Briefcase has started a local web server to serve this page so your browser can view the page. If you wanted to put this web page into production, you could copy the contents of the ``www`` folder onto any web server that can serve static content."
+msgstr ""
+
+#: ../../tutorial/tutorial-6.rst:165
+msgid "But when you press the button, you're running Python code... how does that work? Toga uses `PyScript <https://pyscript.net>`__ to provide a Python interpreter in the browser. Briefcase packages your app's code as wheels that PyScript can load in the browser. When the page is loaded, the application code runs in the browser, building the UI using the browser DOM. When you click a button, that button runs the event handling code in the browser."
+msgstr ""
+
+#: ../../tutorial/tutorial-6.rst:175
+msgid "Although we've now deployed this app on desktop, mobile and the web, the app is fairly simple, and doesn't involve any third-party libraries. Can we include libraries from the Python Package Index (PyPI) in our app? Turn to :doc:`Tutorial 7 <tutorial-7>` to find out..."
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:3
+msgid "Tutorial 7 - Get this (third)-party started"
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:5
+msgid "So far, the app we've built has only used our own code, plus the code provided by BeeWare. However, in a real-world app, you'll likely want to use a third-party library, downloaded from the Python Package Index (PyPI)."
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:9
+msgid "Let's modify our app to include a third-party library."
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:12
+msgid "Accessing an API"
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:14
+msgid "A common task an app will need to perform is to make a request on a web API to retrieve data, and display that data to the user. This is a toy app, so we don't have a *real* API to work with, so we'll use the `{JSON} Placeholder API <https://jsonplaceholder.typicode.com>`__ as a source of data."
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:19
+msgid "The {JSON} Placeholder API has a number of \"fake\" API endpoints you can use as test data. One of those APIs is the ``/posts/`` endpoint, which returns fake blog posts. If you open ``https://jsonplaceholder.typicode.com/posts/42`` in your browser, you'll get a JSON payload describing a single post - some `Lorum ipsum <https://en.wikipedia.org/wiki/Lorem_ipsum>`__ content for a blog post with ID 42."
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:26
+msgid "The Python standard library contains all the tools you'd need to access an API. However, the built-in APIs are very low level. They are good implementations of the HTTP protocol - but they require the user to manage lots of low-level details, like URL redirection, sessions, authentication, and payload encoding. As a \"normal browser user\" you're probably used to taking these details for granted, as a browser manages these details for you."
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:33
+msgid "As a result, people have developed third-party libraries that wrap the built-in APIs and provide a simpler API that is a closer match for the everyday browser experience. We're going to use one of those libraries to access the {JSON} Placeholder API - a library called `httpx <https://www.python-httpx.org>`__."
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:38
+msgid "Let's add a ``httpx`` API call to our app. Add an import to the top of the ``app.py`` to import ``httpx``::"
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:43
+msgid "Then modify the ``say_hello()`` callback so it looks like this::"
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:56
+msgid "This will change the ``say_hello()`` callback so that when it is invoked, it will:"
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:59
+msgid "make a GET request on the JSON placeholder API to obtain post 42;"
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:61
+msgid "decode the response as JSON;"
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:63
+msgid "extract the body of the post; and"
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:65
+msgid "include the body of that post as the text of the dialog."
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:67
+msgid "Lets run our updated app in Briefcase developer mode to check that our change has worked."
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:132
+msgid "What happened? We've added ``httpx`` to our *code*, but we haven't added it to our development virtual environment. We can fix this by installing ``httpx`` with ``pip``, and then re-running ``briefcase dev``:"
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:145 ../../tutorial/tutorial-7.rst:158
+#: ../../tutorial/tutorial-7.rst:171
+msgid "When you enter a name and press the button, you should see a dialog that looks something like:"
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst
+msgid "Hello World Tutorial 7 dialog, on macOS"
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst
+msgid "Hello World Tutorial 7 dialog, on Linux"
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst
+msgid "Hello World Tutorial 7 dialog, on Windows"
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:177
+msgid "We've now got a working app, using a third party library, running in development mode!"
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:180
+msgid "Running the updated app"
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:182
+msgid "Let's get this updated application code packaged as a standalone app. Since we've made code changes, we need to follow the same steps as in :doc:`Tutorial 4 <tutorial-4>`:"
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:189 ../../tutorial/tutorial-7.rst:226
+#: ../../tutorial/tutorial-7.rst:279
+msgid "Update the code in the packaged app:"
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:200 ../../tutorial/tutorial-7.rst:237
+#: ../../tutorial/tutorial-7.rst:290
+msgid "Rebuild the app:"
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:209 ../../tutorial/tutorial-7.rst:251
+#: ../../tutorial/tutorial-7.rst:299
+msgid "And finally, run the app:"
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:218 ../../tutorial/tutorial-7.rst:308
+msgid "However, when the app runs, you'll see an error in the console, plus a crash dialog:"
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst
+msgid "Hello World Tutorial 7 app crash, on macOS"
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:260
+msgid "However, when the app runs, you'll see an error in the console:"
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst
+msgid "Hello World Tutorial 7 app crash, on Windows"
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:314
+msgid "Once again, the app has failed to start because ``httpx`` has been installed - but why? Haven't we already installed ``httpx``?"
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:317
+msgid "We have - but only in the development environment. Your development environment is entirely local to your machine - and is only enabled when you explicitly activate it. Although Briefcase has a development mode, the main reason you'd use Briefcase is to package up your code so you can give it to someone else."
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:322
+msgid "The only way to guarantee that someone else will have a Python environment that contains everything it needs is to build a completely isolated Python environment. This means there's a completely isolated Python install, and a completely isolated set of dependencies. This is what Briefcase is building when you run ``briefcase build`` - an isolated Python environment. This also explains why ``httpx`` isn't installed - it has been installed in your *development* environment, but not in the packaged app."
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:330
+msgid "So - we need to tell Briefcase that our app has an external dependency."
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:333
+msgid "Updating dependencies"
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:335
+msgid "In the root directory of your app, there is a file named ``pyproject.toml``. This file contains all the app configuration details that you provided when you originally ran ``briefcase new``."
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:339
+msgid "``pyproject.toml`` is broken up into sections; one of the sections describes the settings for your app::"
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:349
+msgid "The ``requires`` option describes the dependencies of our application. It is a list of strings, specifying libraries (and, optionally, versions) of libraries that you want to be included with your app."
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:353
+msgid "Modify the ``requires`` setting so that it reads::"
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:359
+msgid "By adding this setting, we're telling Briefcase \"when you build my app, run ``pip install httpx`` into the application bundle\". Anything that would be legal input to ``pip install`` can be used here - so, you could specify:"
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:363
+msgid "A specific library version (e.g., ``\"httpx==0.19.0\"``);"
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:364
+msgid "A range of library versions (e.g., ``\"httpx>=0.19\"``);"
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:365
+msgid "A path to a git repository (e.g., ``\"git+https://github.com/encode/httpx\"``); or"
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:367
+msgid "A local file path (However - be warned: if you give your code to someone else, this path probably won't exist on their machine!)"
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:370
+msgid "Further down in ``pyproject.toml``, you'll notice other sections that are operating system dependent, like ``[tool.briefcase.app.helloworld.macOS]`` and ``[tool.briefcase.app.helloworld.windows]``. These sections *also* have a ``requires`` setting. These settings allow you to define additional platform-specific dependencies - so, for example, if you need a platform-specific library to handle some aspect of your app, you can specify that library in the platform-specific ``requires`` section, and that setting will only be used for that platform. You will notice that the ``toga`` libraries are all specified in the platform-specific ``requires`` section - this is because the libraries needed to display a user interface are platform specific."
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:381
+msgid "In our case, we want ``httpx`` to be installed on all platforms, so we use the app-level ``requires`` setting. The app-level dependencies will always be installed; the platform-specific dependencies are installed *in addition* to the app-level ones."
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:386
+msgid "Some binary packages may not be available"
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:388
+msgid "On desktop platforms (macOS, Windows, Linux), any ``pip``-installable can be added to your requirements. On mobile and web platforms, `your options are slightly limited <https://briefcase.readthedocs.io/en/latest/background/faq.html#can-i-use-third-party-python-packages-in-my-app>`__."
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:392
+msgid "In short; any *pure Python* package (i.e., packages that do *not* contain a binary module) can be used without difficulty. However, if your dependency contains a binary component, it must be compiled; at this time, most Python packages don't provide compilation support for non-desktop platforms."
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:397
+msgid "BeeWare can provide binaries for some popular binary modules (including ``numpy``, ``pandas``, and ``cryptography``). It's *usually* possible to compile packages for mobile platforms, but it's not easy to set up -- well outside the scope of an introductory tutorial like this one."
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:402
+msgid "Now that we've told Briefcase about our additional requirements, we can try packaging our app again. Ensure that you've saved your changes to ``pyproject.toml``, and then update your app again - this time, passing in the ``-r`` flag. This tells Briefcase to update requirements in the packaged app:"
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:479
+msgid "Once you've updated, you can run ``briefcase build`` and ``briefcase run`` - and you should see your packaged app, with the new dialog behavior."
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:484
+msgid "The ``-r`` option for updating requirements is also honored by the ``build`` and ``run`` command, so if you want to update, build, and run in one step, you could use ``briefcase run -u -r``."
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:492
+msgid "We've now got an app that uses a third-party library! However, you may have noticed that when you press the button, the app becomes a little unresponsive. Can we do anything to fix this? Turn to :doc:`Tutorial 8 <tutorial-8>` to find out..."
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:3
+msgid "Tutorial 8 - Making it Smooooth"
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:5
+msgid "Unless you've got a *really* fast internet connection, you may notice that when you press the button, the GUI for your app locks up for a little bit. This is because the web request we have made is *synchronous*. When our application makes the web request, it waits for the API to return a response before continuing. While it's waiting, it *isn't* allowing the application to redraw - and as a result, the application locks up."
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:13
+msgid "GUI Event Loops"
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:15
+msgid "To understand why this happens, we need to dig into the details of how a GUI application works. The specifics vary depending on the platform; but the high level concepts are the same, no matter the platform or GUI environment you're using."
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:20
+msgid "A GUI app is, fundamentally, a single loop that looks something like::"
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:26
+msgid "This loop is called the *Event Loop*. (These aren't actual method names - it's an illustration of what is going on in \"pseudo-code\")."
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:29
+msgid "When you click on a button, or drag a scroll bar, or type a key, you are generating an \"event\". That \"event\" is put onto a queue, and the app will process the queue of events when it next has the opportunity to do so. The user code that is triggered in response to the event is called an *event handler*. These event handlers are invoked as part of the ``process_events()`` call."
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:35
+msgid "Once an app has processed all the available events, it will ``redraw()`` the GUI. This takes into account any changes that the events have caused to the display of the app, as well as anything else that is going on in the operating system - for example, the windows of another app may obscure or reveal part of our app's window, and our app's redraw will need to reflect the portion of the window that is currently visible."
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:42
+msgid "The important detail to notice: while an application is processing an event, *it can't redraw*, and *it can't process other events*."
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:45
+msgid "This means any user logic contained in an event handler needs to complete quickly. Any delay in completing the event handler will be observed by the user as a slowdown (or stop) in GUI updates. If this delay is long enough, your operating system may report this as a problem - the macOS \"beachball\" and Windows \"spinner\" icons are the operating system telling you that your app is taking too long in an event handler."
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:52
+msgid "Simple operations like \"update a label\", or \"recompute the total of the inputs\" are easy to complete quickly. However, there are a lot of operations that can't be completed quickly. If you're performing a complex mathematical calculation, or indexing all the files on a file system, or performing a large network request, you can't \"just do it quickly\" - the operations are inherently slow."
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:58
+msgid "So - how do we perform long-lived operations in a GUI application?"
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:61
+msgid "Asynchronous programming"
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:63
+msgid "What we need is a way to tell an app in the middle of a long-lived event handler that it is OK to temporarily release control back to the event loop, as long as we can resume where we left off. It's up to the app to determine when this release can occur; but if the app releases control to the event loop regularly, we can have a long-running event handler *and* maintain a responsive UI."
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:69
+msgid "We can do this by using *asynchronous programming*. Asynchronous programming is a way to describe a program that allows the interpreter to run multiple functions at the same time, sharing resources between all the concurrently running functions."
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:74
+msgid "Asynchronous functions (known as *co-routines*) need to be explicitly declared as being asynchronous. They also need to internally declare when an opportunity exists to change context to another co-routine."
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:78
+msgid "In Python, asynchronous programming is implemented using the ``async`` and ``await`` keywords, and the `asyncio <https://docs.python.org/3/library/asyncio.html>`__ module in the standard library. The ``async`` keyword allows us to declare that a function is an asynchronous co-routine. The ``await`` keyword provides a way to declare when an opportunity exists to change context to another co-routine. The `asyncio <https://docs.python.org/3/library/asyncio.html>`__ module provides some other useful tools and primitives for asynchronous coding."
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:88
+msgid "Making the tutorial Asynchronous"
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:90
+msgid "To make our tutorial asynchronous, modify the ``say_hello()`` event handler so it looks like this::"
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:104
+msgid "There are only 4 changes in this code from the previous version:"
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:106
+msgid "The method is defined as ``async def``, rather than just ``def``. This tells Python that the method is an asynchronous co-routine."
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:109
+msgid "The client that is created is an asynchronous ``AsyncClient()``, rather than a synchronous ``Client()``. This tells ``httpx`` that it should operate in asynchronous mode, rather than synchronous mode."
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:113
+msgid "The context manager used to create the client is marked as ``async``. This tells Python that there is an opportunity to release control as the context manager is entered and exited."
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:117
+msgid "The ``get`` call is made with an ``await`` keyword. This instructs the app that while we are waiting for the response from the network, the app can release control to the event loop."
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:121
+msgid "Toga allows you to use regular methods or asynchronous co-routines as handlers; Toga manages everything behind the scenes to make sure the handler is invoked or awaited as required."
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:125
+msgid "If you save these changes and re-run the app (either with ``briefcase dev`` in development mode, or by updating and re-running the packaged app), there won't be any obvious changes to the app. However, when you click on the button to trigger the dialog, you may notice a number of subtle improvements:"
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:130
+msgid "The button returns to an \"unclicked\" state, rather than being stuck in a \"clicked\" state."
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:133
+msgid "The \"beachball\"/\"spinner\" icon won't appear"
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:135
+msgid "If you move/resize the app window while waiting for the dialog to appear, the window will redraw."
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:138
+msgid "If you try to open an app menu, the menu will appear immediately."
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:143
+msgid "We've now got an application that is slick and responsive, even when it's waiting on a slow API. But how can we make sure that the app keeps working as we continue to develop it further? How do we test our app? Turn to :doc:`Tutorial 9 <tutorial-9>` to find out..."
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:3
+msgid "Tutorial 9 - Testing times"
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:5
+msgid "Most software development doesn't involve writing new code - it's modifying existing code. Ensuring that existing code continues to work in the way we expect is a key part of the software development process. One way to do ensure the behavior of our app is with a *test suite*."
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:11
+msgid "Running the test suite"
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:13
+msgid "It turns out our project already has a test suite! When we originally generated our project, two top-level directories were generated: ``src`` and ``tests``. The ``src`` folder contains the code for our app; the ``tests`` folder contains our test suite. Inside the ``tests`` folder is a file named ``test_app.py`` with the following content::"
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:23
+msgid "This is a `Pytest <https://pytest.org>`__ *test case* - a block of code that can be executed to verify some behavior of your app. In this case, the test is a placeholder, and doesn't test anything about our app - but it is a test that we can perform."
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:28
+msgid "We can run this test suite using the ``--test`` option to ``briefcase dev``. As this is the first time we are running tests, we also need to pass in the ``-r`` option to ensure that the test requirements are also installed:"
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:109
+msgid "Success! We've just executed a single test that verifies Python math works in the way we'd expect (What a relief!)."
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:112
+msgid "Let's replace this placeholder test with a test to verify that our ``greeting()`` method behaves the way we'd expect. Replace the contents of ``test_app.py`` with the following::"
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:130
+msgid "This defines two new tests, verifying the two behaviors we expect to see: the output when a name is provided, and the output when the name is empty."
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:133
+msgid "We can now re-run the test suite. This time, we don't need to provided the ``-r`` option, as the test requirements have already been installed; we only need to use the ``--test`` option:"
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:190
+msgid "Excellent! Our ``greeting()`` utility method is working as expected."
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:193
+msgid "Test driven development"
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:195
+msgid "Now that we have a test suite, we can use it to drive the development of new features. Let's modify our app to have a special greeting for one particular user. We can start by adding a test case for the new behavior that we'd like to see to the bottom of ``test_app.py``::"
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:205
+msgid "Then, run the test suite with this new test:"
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:307
+msgid "This time, we see a test failure - and the output explains the source of the failure: the test is expecting the output \"BeeWare the IDEs of Python!\", but our implementation of ``greeting()`` is returning \"Hello, Brutus\". Let's modify the implementation of ``greeting()`` in ``src/helloworld/app.py`` to have the new behavior::"
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:322
+msgid "If we run the tests again, we'll now see our tests pass:"
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:381
+msgid "Runtime tests"
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:383
+msgid "So far, we've been running the tests in development mode. This is especially useful when you're developing new features, as you can rapidly iterate on adding tests, and adding code to make those tests pass. However, at some point, you'll want to verify that your code also runs correctly when inside the bundle app environment."
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:389
+msgid "The ``--test`` and ``-r`` options can also be passed to the ``run`` command. If you use ``briefcase run --test -r``, the same test suite will run, but it will run inside the packaged application bundle rather than your development environment:"
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:508
+msgid "As with ``briefcase dev --test``, the ``-r`` option is only needed the first time you run the test suite to ensure that the test dependencies are present. On subsequent runs, you can omit this option."
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:512
+msgid "You can also use the ``--test`` option on mobile backends: - so ``briefcase run iOS --test`` and ``briefcase run android --test`` will both work, running the test suite on the mobile device you select."
+msgstr ""
+
