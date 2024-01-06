@@ -1,0 +1,71 @@
+name: Update Translations
+on:
+  push:
+    branches:
+      main
+
+# Cancel active CI runs for a PR before starting another run
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
+defaults:
+  run:
+    shell: bash  # https://github.com/beeware/briefcase/pull/912
+
+env:
+  FORCE_COLOR: "1"
+
+jobs:
+  update-translations:
+    name: Update Translations
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.1
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.BRUTUS_PAT_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v4.7.1
+        with:
+          python-version: "3.X"
+          cache: pip
+          cache-dependency-path: |
+            **/pyproject.toml
+            .pre-commit-config.yaml
+
+      - name: Update pip
+        run: python -m pip install -U pip
+
+      - name: Install tox
+        run: python -m pip install tox
+
+      - name: Configure git
+        run: |
+          git config --local user.email "$(git log --pretty='%ae' -1)"
+          git config --local user.name "brutus[bot]"
+
+      - name: Regenerate PO files
+        run: |
+          tox -e docs-translate
+
+      - name: Update Needed?
+        id: updated
+        run: |
+          if [[ $(git status --porcelain) ]]; then
+            echo "updated=true" >> ${GITHUB_OUTPUT}
+          else
+            echo "updated=false" >> ${GITHUB_OUTPUT}
+          fi
+
+      - name: Commit updated translations
+        if: steps.updated.outputs.updated == 'true'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          # Commit the updated PO files.
+          git add docs/locale
+          git commit -m "Update translations."
+          git push origin
