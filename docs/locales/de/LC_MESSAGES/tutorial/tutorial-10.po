@@ -33,7 +33,7 @@ msgstr "Hinzufügen eines Symbols"
 #: ../../tutorial/tutorial-10.rst:13 60c9ddb282cd44699f9e83b1e857b013
 #, fuzzy
 msgid "**Coming soon**"
-msgstr "**Nächstes Mal**"
+msgstr "**Kommt bald**"
 
 #: ../../tutorial/tutorial-10.rst:16 b6eb75c787774e1a93b1cb64d20c9766
 #, fuzzy

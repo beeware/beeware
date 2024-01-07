@@ -22,12 +22,12 @@ msgstr "Willkommen zum BeeWare-Tutorial!"
 #: ../../index.rst:5
 #, fuzzy
 msgid "**Write Python. Run Anywhere.**"
-msgstr "**Python schreiben. Überall ausführen.**"
+msgstr "**Schreiben Sie Python. Führen Sie es überall aus.**"
 
 #: ../../index.rst:7
 #, fuzzy
 msgid "Welcome to BeeWare! In this tutorial, we're going to build an graphical user interface using Python, and deploy it as a desktop application, as a mobile application, and as a single page web app. We're also going to look at how you can use BeeWare tools to do some of the common tasks that you'll need to do as an app developer, such as testing your app."
-msgstr "Willkommen bei BeeWare! In diesem Tutorial werden wir eine grafische Benutzeroberfläche mit Python erstellen und sie als Desktop-Anwendung, als mobile Anwendung und als einseitige Webanwendung bereitstellen. Außerdem sehen wir uns an, wie Sie die BeeWare-Tools nutzen können, um einige der üblichen Aufgaben zu erledigen, die Sie als App-Entwickler benötigen, wie zum Beispiel das Testen Ihrer App."
+msgstr "Willkommen bei BeeWare! In diesem Tutorial werden wir eine grafische Benutzeroberfläche mit Python erstellen und sie als Desktop-, Mobil- und Web-Anwendung bereitstellen. Außerdem sehen wir uns an, wie Sie die BeeWare-Tools nutzen können, um übliche Aufgaben als App-Entwickler zu erledigen, wie zum Beispiel das Testen Ihrer App."
 
 #: ../../index.rst:14
 #, fuzzy

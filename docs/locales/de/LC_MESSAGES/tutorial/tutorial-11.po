@@ -28,7 +28,7 @@ msgstr "Sobald Sie ein Installationsprogramm für Ihre Anwendung erstellt haben,
 #: ../../tutorial/tutorial-11.rst:11 7dc60c2e7de94c1f85939ddd5ca4b693
 #, fuzzy
 msgid "**Coming soon**"
-msgstr "**Nächstes Mal**"
+msgstr "**Kommt bald**"
 
 #: ../../tutorial/tutorial-11.rst:14 2da5c96620f24002b6bd6312ba4f360b
 #, fuzzy

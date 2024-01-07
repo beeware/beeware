@@ -18,7 +18,7 @@ msgstr ""
 #: ../../tutorial/tutorial-0.rst:3 da7047648df8422ca10b095700768f86
 #, fuzzy
 msgid "Tutorial 0 - Let's get set up!"
-msgstr "Tutorial 0 - Richten wir uns ein!"
+msgstr "Tutorial 0 - Erstinstallation"
 
 #: ../../tutorial/tutorial-0.rst:5 5b093b2dc7ea445aa519bdbe2bd12b44
 #, fuzzy

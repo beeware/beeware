@@ -118,7 +118,7 @@ msgstr "Laufzeittests"
 #: ../../tutorial/tutorial-9.rst:383 a38dfba53f3b449baef928abb7cb161d
 #, fuzzy
 msgid "So far, we've been running the tests in development mode. This is especially useful when you're developing new features, as you can rapidly iterate on adding tests, and adding code to make those tests pass. However, at some point, you'll want to verify that your code also runs correctly when inside the bundle app environment."
-msgstr "Bislang haben wir die Tests im Entwicklungsmodus ausgeführt. Dies ist besonders nützlich, wenn Sie neue Funktionen entwickeln, da Sie schnell Tests und Code hinzufügen können, damit diese Tests erfolgreich sind. Irgendwann werden Sie jedoch sicherstellen wollen, dass Ihr Code auch in der Bundle-App-Umgebung korrekt ausgeführt wird."
+msgstr "Bislang haben wir die Tests im Entwicklungsmodus ausgeführt. Dies ist besonders nützlich, wenn Sie neue Funktionen entwickeln, da Sie schnell Tests und Code hinzufügen können, damit diese Tests erfolgreich sind. Irgendwann werden Sie jedoch sicherstellen wollen, dass Ihr Code auch als Anwendungspaket korrekt ausgeführt wird."
 
 #: ../../tutorial/tutorial-9.rst:389 e4f8722d4328445c8ecd3addf3eb91b6
 #, fuzzy

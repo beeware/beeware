@@ -18,7 +18,7 @@ msgstr ""
 #: ../../tutorial/tutorial-2.rst:3 7fa77e3a63694ae1beac587cb35bcaab
 #, fuzzy
 msgid "Tutorial 2 - Making it interesting"
-msgstr "Tutorial 2 - Interessant machen"
+msgstr "Tutorial 2 - Es wird interessant"
 
 #: ../../tutorial/tutorial-2.rst:5 56dc30dfe6ee4d13b6a41b1afed46e09
 #, fuzzy
@@ -68,7 +68,7 @@ msgstr "Als erstes importieren wir das ``toga``-Widget-Toolkit, sowie einige sti
 #: ../../tutorial/tutorial-2.rst:62 cce07422e47843f3909548b09d7b21ae
 #, fuzzy
 msgid "Then, we define a class::"
-msgstr "Dann definieren wir eine Klasse::"
+msgstr "Definieren wir eine Klasse::"
 
 #: ../../tutorial/tutorial-2.rst:66 c57547cbf8cb4676864a7810b47765be
 #, fuzzy

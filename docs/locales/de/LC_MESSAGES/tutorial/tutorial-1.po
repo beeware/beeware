@@ -68,12 +68,12 @@ msgstr "Es ist wichtig, dass Sie ``python -m pip`` und nicht ``pip`` verwenden. 
 #: ../../tutorial/tutorial-1.rst:51 21e0b2dc22684b0d938ad248f2d614ef
 #, fuzzy
 msgid "One of the BeeWare tools is **Briefcase**. Briefcase can be used to package your application for distribution to end users - but it can also be used to bootstrap a new project."
-msgstr "Eines der BeeWare-Tools ist **Briefcase**. Briefcase kann verwendet werden, um Ihre Anwendung für die Verteilung an Endbenutzer zu verpacken - es kann aber auch zum Bootstrapping eines neuen Projekts verwendet werden."
+msgstr "Eines der BeeWare-Tools ist **Briefcase**. Briefcase kann verwendet werden, um Ihre Anwendung für die Verteilung an Endbenutzer zu verpacken - es kann aber auch zur Erstellung eines neuen Projekts verwendet werden."
 
 #: ../../tutorial/tutorial-1.rst:56 82d99b2cce94417b8214c68541122f62
 #, fuzzy
 msgid "Bootstrap a new project"
-msgstr "Bootstrap für ein neues Projekt"
+msgstr "Erstellen Sie ein neues Projekt"
 
 #: ../../tutorial/tutorial-1.rst:58 857cba15deb840c4ae6c5d8c25c2c371
 #, fuzzy
@@ -108,7 +108,7 @@ msgstr "**Projektname** - Übernehmen Sie den Standardwert: ``Hallo World``."
 #: ../../tutorial/tutorial-1.rst:96 e660125476f64c748ab540667078789f
 #, fuzzy
 msgid "**Description** - Accept the default value (or, if you want to be really creative, come up with your own description!)"
-msgstr "**Description** - Übernehmen Sie den Standardwert (oder, wenn Sie wirklich kreativ sein wollen, denken Sie sich Ihre eigene Beschreibung aus!)"
+msgstr "**Description** - Übernehmen Sie den Standardwert (wenn Sie wirklich kreativ sein wollen, denken Sie sich Ihre eigene Beschreibung aus!)"
 
 #: ../../tutorial/tutorial-1.rst:99 a2f8f524905a4f1eb7a40238aef126a8
 #, fuzzy
