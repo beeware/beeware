@@ -22,7 +22,7 @@ your app.
       ``#translations`` channel in `Discord <https://beeware.org/bee/chat/>`__;
       introduce yourself there and we will add you to the translation team.
 
-.. only:: translation
+.. only:: human_translation
 
    .. admonition:: This is a translation!
 
