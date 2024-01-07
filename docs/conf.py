@@ -9,6 +9,7 @@
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 
+import os
 import sys
 from datetime import datetime
 from importlib.metadata import version as metadata_version
@@ -314,3 +315,11 @@ todo_include_todos = True
 gettext_compact = False
 gettext_uuid = True
 gettext_allow_fuzzy_translations = True
+
+# ReadTheDocs doesn't allow configuration of the -t tags passed in for builds;
+# but it *does* allow for configuration of environment variables.
+translation = os.getenv("TRANSLATION")
+if translation == "machine":
+    tags.add("machine_translation")
+elif translation == "human":
+    tags.add("translation")
