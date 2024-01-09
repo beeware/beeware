@@ -3,7 +3,12 @@ on:
   pull_request:
   push:
     branches:
-      main
+      - main
+  workflow_call:
+    outputs:
+      artifact-name:
+        description: "Name of the uploaded artifact; use for artifact retrieval."
+        value: ${{ jobs.package.outputs.artifact-name }}
 
 # Cancel active CI runs for a PR before starting another run
 concurrency:
