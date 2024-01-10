@@ -1,22 +1,21 @@
-
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-07 09:54+0800\n"
-"PO-Revision-Date: 2024-01-06 20:03+0800\n"
+"PO-Revision-Date: 2024-01-10 22:12+0000\n"
 "Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
+"tutorial-2/de/>\n"
 "Language: de\n"
-"Language-Team: de <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.4-dev\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../tutorial/tutorial-2.rst:3 d77ee502e50f449f95f9f8c33e419114
-#, fuzzy
 msgid "Tutorial 2 - Making it interesting"
 msgstr "Tutorial 2 - Es wird interessant"
 
@@ -66,14 +65,16 @@ msgid "First, we import the ``toga`` widget toolkit, as well as some style-relat
 msgstr "Als erstes importieren wir das ``toga``-Widget-Toolkit, sowie einige stilbezogene Utility-Klassen und Konstanten. Unser Code verwendet diese noch nicht - aber wir werden sie in Kürze nutzen."
 
 #: ../../tutorial/tutorial-2.rst:62 c1f84cece7e14583834985d216014ce7
-#, fuzzy
 msgid "Then, we define a class::"
 msgstr "Definieren wir eine Klasse::"
 
 #: ../../tutorial/tutorial-2.rst:66 1f451e1511074ab39a6dfc086e8ef2f7
 #, fuzzy
 msgid "Each Toga application has a single ``toga.App`` instance, representing the running entity that is the application. The app may end up managing multiple windows; but for simple applications, there will be a single main window."
-msgstr "Jede Toga-Anwendung hat eine einzige ``toga.App``-Instanz, die die laufende Entität, die Anwendung, darstellt. Die Anwendung kann mehrere Fenster verwalten, aber für einfache Anwendungen gibt es ein einziges Hauptfenster."
+msgstr ""
+"Jede Toga-Anwendung hat eine einzige ``toga.App``-Instanz, die laufende "
+"Entität, die Anwendung, darstellt. Die Anwendung kann mehrere Fenster "
+"verwalten, aber für einfache Anwendungen gibt es ein einziges Hauptfenster."
 
 #: ../../tutorial/tutorial-2.rst:70 bb7c218afb624c5b81ccf3222fdcb835
 #, fuzzy
@@ -267,4 +268,3 @@ msgstr "Nächste Schritte"
 #, fuzzy
 msgid "We've now got an application that does something a little more interesting. But it only runs on our own computer. Let's package this application for distribution. In :doc:`Tutorial 3 <tutorial-3>`, we'll wrap our application up as a standalone installer that we could send to a friend, a customer, or upload to an App Store."
 msgstr "Wir haben jetzt eine Anwendung, die etwas Interessanteres macht. Aber sie läuft nur auf unserem eigenen Computer. Lassen Sie uns diese Anwendung für die Verteilung verpacken. In :doc:`Tutorial 3 <tutorial-3>` werden wir unsere Anwendung als eigenständiges Installationsprogramm verpacken, das wir an einen Freund oder Kunden schicken oder in einen App Store hochladen können."
-
