@@ -55,6 +55,7 @@ jobs:
       - name: Update Needed?
         id: updated
         run: |
+          echo "ACTOR: ${{github.actor}}"
           if [[ $(git status --porcelain) ]]; then
             echo "updated=true" >> ${GITHUB_OUTPUT}
           else

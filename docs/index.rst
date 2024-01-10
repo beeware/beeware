@@ -14,7 +14,7 @@ your app.
 
    .. admonition:: Translations are available
 
-      If you're not comfortable with English, translations of this tutorial are
+      If you're not comfortable with English, this tutorial has been translations of this tutorial are
       available in
       `Deutsch <https://docs.beeware.org/de>`__,
       `Español <https://docs.beeware.org/es>`__,
@@ -31,8 +31,8 @@ your app.
       all.
 
       If you'd like the help improve the translation, get in touch! We have a
-      ``#translations`` channel in `Discord <https://beeware.org/bee/chat/>`__;
-      introduce yourself there and we will add you to the translation team.
+      ``#translations`` channel in `Discord <https://beeware.org/bee/chat/>`__.
+      Introduce yourself there and we will add you to the translation team.
 
 .. only:: human_translation
 
@@ -43,8 +43,8 @@ your app.
       not translated at all.
 
       If you'd like the help improve the translation, get in touch! We have a
-      ``#translations`` channel in `Discord <https://beeware.org/bee/chat/>`__;
-      introduce yourself there and we will add you to the translation team.
+      ``#translations`` channel in `Discord <https://beeware.org/bee/chat/>`__.
+      Introduce yourself there and we will add you to the translation team.
 
 What is BeeWare?
 ================
