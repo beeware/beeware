@@ -6,9 +6,8 @@ Welcome to the BeeWare Tutorial!
 
 Welcome to BeeWare! In this tutorial, we're going to build a graphical user interface
 using Python, and deploy it as a desktop application, as a mobile application, and as a
-single page web app. We're also going to look at how you can use BeeWare tools to do
-some of the common tasks that you'll need to do as an app developer, such as testing
-your app.
+single page web app. We'll also look at how you can use BeeWare tools to perform some of
+the common tasks that you'll need to do as an app developer, such as testing your app.
 
 .. only:: original_translation
 

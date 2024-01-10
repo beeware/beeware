@@ -68,5 +68,5 @@ jobs:
         run: |
           # Commit the updated PO files.
           git add docs/locales
-          git commit -m "Update translations to $(git rev-parser --short HEAD)."
+          git commit -m "Update translations to $(git rev-parse --short HEAD)."
           git push origin
