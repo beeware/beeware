@@ -318,6 +318,6 @@ gettext_allow_fuzzy_translations = True
 
 # ReadTheDocs doesn't allow configuration of the -t tags passed in for builds;
 # but it *does* allow for configuration of environment variables.
-translation = os.getenv("TRANSLATION")
-if translation:
+if not any(tag.endswith("_translation") for tag in tags):
+    translation = os.getenv("TRANSLATION", "original")
     tags.add(f"{translation}_translation")
