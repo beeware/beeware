@@ -1,19 +1,19 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-06 18:04+0800\n"
-"PO-Revision-Date: 2024-01-06 20:03+0800\n"
+"PO-Revision-Date: 2024-01-10 22:12+0000\n"
 "Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
-"Language-Team: de <LL@li.org>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
+"tutorial-1/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.4-dev\n"
 "Generated-By: Babel 2.14.0\n"
-"X-Generator: Poedit 3.4.2\n"
 
 #: ../../tutorial/tutorial-1.rst:3 6b15f54bec2546c79f0a21b50b918daa
 #, fuzzy
@@ -66,12 +66,13 @@ msgid "It is important that you use ``python -m pip``, rather than a bare ``pip`
 msgstr "Es ist wichtig, dass Sie ``python -m pip`` und nicht ``pip`` verwenden. Briefcase muss sicherstellen, dass es eine aktuelle Version von ``pip`` und ``setuptools`` hat, und ein bloßer Aufruf von ``pip`` kann sich nicht selbst aktualisieren. Wenn Sie mehr darüber wissen wollen, hat `Brett Cannon einen detaillierten Blogbeitrag zu diesem Problem <https://snarky.ca/why-you-should-use-python-m-pip/>`__."
 
 #: ../../tutorial/tutorial-1.rst:51 21e0b2dc22684b0d938ad248f2d614ef
-#, fuzzy
 msgid "One of the BeeWare tools is **Briefcase**. Briefcase can be used to package your application for distribution to end users - but it can also be used to bootstrap a new project."
-msgstr "Eines der BeeWare-Tools ist **Briefcase**. Briefcase kann verwendet werden, um Ihre Anwendung für die Verteilung an Endbenutzer zu verpacken - es kann aber auch zur Erstellung eines neuen Projekts verwendet werden."
+msgstr ""
+"Eines der BeeWare-Tools ist **Briefcase**. Briefcase kann verwendet werden, "
+"um Ihre Anwendung für die Verteilung an Endbenutzer zu verpacken - es kann "
+"aber auch zur Erstellung eines neuen Projekts verwendet werden."
 
 #: ../../tutorial/tutorial-1.rst:56 82d99b2cce94417b8214c68541122f62
-#, fuzzy
 msgid "Bootstrap a new project"
 msgstr "Erstellen Sie ein neues Projekt"
 
@@ -106,9 +107,10 @@ msgid "**Project Name** - Accept the default value: ``Hello World``."
 msgstr "**Projektname** - Übernehmen Sie den Standardwert: ``Hallo World``."
 
 #: ../../tutorial/tutorial-1.rst:96 e660125476f64c748ab540667078789f
-#, fuzzy
 msgid "**Description** - Accept the default value (or, if you want to be really creative, come up with your own description!)"
-msgstr "**Description** - Übernehmen Sie den Standardwert (wenn Sie wirklich kreativ sein wollen, denken Sie sich Ihre eigene Beschreibung aus!)"
+msgstr ""
+"**Description** - Übernehmen Sie den Standardwert (wenn Sie wirklich kreativ "
+"sein wollen, denken Sie sich Ihre eigene Beschreibung aus!)"
 
 #: ../../tutorial/tutorial-1.rst:99 a2f8f524905a4f1eb7a40238aef126a8
 #, fuzzy
