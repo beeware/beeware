@@ -12,7 +12,7 @@ on:
 
 # Cancel active CI runs for a PR before starting another run
 concurrency:
-  group: ${{ github.ref }}
+  group: ci-${{ github.ref }}
   cancel-in-progress: true
 
 defaults:
