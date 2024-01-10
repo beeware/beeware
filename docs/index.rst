@@ -10,6 +10,18 @@ single page web app. We're also going to look at how you can use BeeWare tools t
 some of the common tasks that you'll need to do as an app developer, such as testing
 your app.
 
+.. only:: original_translation
+
+   .. admonition:: Translations are available
+
+      If you're not comfortable with English, translations of this tutorial are
+      available in
+      `Deutsch <https://docs.beeware.org/de>`__,
+      `Español <https://docs.beeware.org/es>`__,
+      `Français <https://docs.beeware.org/fr>`__, and
+      `汉语 <https://docs.beeware.org/zh-cn>`__.
+
+
 .. only:: machine_translation
 
    .. admonition:: This is a machine translation!

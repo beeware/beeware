@@ -62,3 +62,20 @@ want to contribute code, please `fork the code`_ and `submit a pull request`_.
 .. _log them on Github: https://github.com/beeware/beeware/issues
 .. _fork the code: https://github.com/beeware/beeware
 .. _submit a pull request: https://github.com/beeware/beeware/pulls
+
+Translations
+~~~~~~~~~~~~
+
+.. image:: https://hosted.weblate.org/widget/beeware/open-graph.png
+   :target: https://hosted.weblate.org/engage/beeware/
+   :alt: Translation status
+   :width: 300px
+
+We manage translations using `Weblate <https://weblate.org/>`__.
+
+.. image:: https://hosted.weblate.org/widget/beeware/horizontal-blue.svg
+   :target: https://hosted.weblate.org/engage/beeware/
+   :alt: Translation status
+
+If you'd like to contribute to the translation effort, join the ``#translations``
+channel on `Discord`_ and introduce yourself!
