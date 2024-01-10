@@ -1,0 +1,56 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BeeWare 0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-06 18:04+0800\n"
+"PO-Revision-Date: 2024-01-06 20:03+0800\n"
+"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.14.0\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#: ../../tutorial/tutorial-11.rst:5 5aee0264f9254c3ab627767576f8114c
+#, fuzzy
+msgid "Tutorial 11 - Publishing your app!"
+msgstr "教程 11 - 发布应用程序！"
+
+#: ../../tutorial/tutorial-11.rst:7 b2e394a85a1b4ce5aadb46a4d08d85c2
+#, fuzzy
+msgid "Once you've built an installer for your application, you're going to want to share it with the world. Briefcase provides a command - ``publish`` to manage this process, with a range of options for how to publish your application."
+msgstr "为应用程序创建安装程序后，您会希望与全世界分享它。公文包提供了一个命令 ``publish`` 来管理这一过程，并提供了一系列发布应用程序的选项。"
+
+#: ../../tutorial/tutorial-11.rst:11 7dc60c2e7de94c1f85939ddd5ca4b693
+#, fuzzy
+msgid "**Coming soon**"
+msgstr "**即将推出**"
+
+#: ../../tutorial/tutorial-11.rst:14 2da5c96620f24002b6bd6312ba4f360b
+#, fuzzy
+msgid "Next steps"
+msgstr "下一步"
+
+#: ../../tutorial/tutorial-11.rst:16 7ac2d0b0f4cf4bc28b4108e80d2ec807
+#, fuzzy
+msgid "This has been a taste for what you can do with the tools provided by the BeeWare project. What you do from here is up to you!"
+msgstr "这只是您利用 BeeWare 项目提供的工具所能做的一些尝试。接下来的工作就靠您自己了！"
+
+#: ../../tutorial/tutorial-11.rst:19 d88f02061f8b44778f134599fbdb56d3
+#, fuzzy
+msgid "Some places to go from here:"
+msgstr "从这里可以去一些地方："
+
+#: ../../tutorial/tutorial-11.rst:21 ae7cdf8380db42599055e4c788c6fc0d
+#, fuzzy
+msgid "Tutorials demonstrating `features of the Toga widget toolkit <https://toga.readthedocs.io/en/latest/tutorial/index.html>`__."
+msgstr "演示 \"Toga widget 工具包 <https://toga.readthedocs.io/en/latest/tutorial/index.html>`__ 的功能 \"的教程。"
+
+#: ../../tutorial/tutorial-11.rst:23 7772053ef16046d0b2e97fc62995b4f9
+#, fuzzy
+msgid "Details on the `options available when configuring your Briefcase project <https://briefcase.readthedocs.io/en/latest/reference/index.html>`__."
+msgstr "配置您的 Briefcase 项目 <https://briefcase.readthedocs.io/en/latest/reference/index.html>`__ 时可用选项的详细信息。"

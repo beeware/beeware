@@ -1,0 +1,46 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BeeWare 0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-06 18:04+0800\n"
+"PO-Revision-Date: 2024-01-06 20:03+0800\n"
+"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
+"Language-Team: de <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.14.0\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#: ../../tutorial/tutorial-10.rst:5 41f1bed0da4649b39dad21024689a3c9
+#, fuzzy
+msgid "Tutorial 10 - Make this app your own"
+msgstr "Tutorial 10 - Machen Sie diese Anwendung zu Ihrer eigenen"
+
+#: ../../tutorial/tutorial-10.rst:7 cf6d0c81b00b49a799a6f8e4a4d1c37e
+#, fuzzy
+msgid "So far, our app has used a default \"gray bee\" icon. How do we update the app to use our own icon?"
+msgstr "Bisher hat unsere App das Standardsymbol \"graue Biene\" verwendet. Wie können wir die App aktualisieren, um unser eigenes Symbol zu verwenden?"
+
+#: ../../tutorial/tutorial-10.rst:11 8d544e586a094fcf9ce8778feb304db2
+#, fuzzy
+msgid "Adding an icon"
+msgstr "Hinzufügen eines Symbols"
+
+#: ../../tutorial/tutorial-10.rst:13 60c9ddb282cd44699f9e83b1e857b013
+#, fuzzy
+msgid "**Coming soon**"
+msgstr "**Kommt bald**"
+
+#: ../../tutorial/tutorial-10.rst:16 b6eb75c787774e1a93b1cb64d20c9766
+#, fuzzy
+msgid "Next steps"
+msgstr "Nächste Schritte"
+
+#: ../../tutorial/tutorial-10.rst:18 bee80af130bb4037bf17213f2decaa74
+#, fuzzy
+msgid "We've now got an application with a custom icon on our desktop and phone! How do we share this application with everyone else? Turn to :doc:`Tutorial 11 <tutorial-11>` to find out..."
+msgstr "Wir haben jetzt eine Anwendung mit einem eigenen Symbol auf unserem Desktop und Telefon! Wie können wir diese Anwendung mit allen anderen teilen? Schau dir :doc:`Tutorial 11 <tutorial-11>` an, um das herauszufinden..."

@@ -7,23 +7,16 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      # This permission is required for trusted publishing.
+      id-token: write
     steps:
-    - uses: actions/checkout@v4
-    - name: Set up Python
-      uses: actions/setup-python@v5.0.0
-      with:
-        python-version: '3.x'
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        python -m pip install --upgrade setuptools
-        python -m pip install tox
-    - name: Build release artefacts
-      run: |
-        tox -e package
-    - name: Publish release
-      env:
-        TWINE_USERNAME: __token__
-        TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
-      run: |
-        tox -e publish
+      - uses: dsaltares/fetch-gh-release-asset@1.1.1
+        with:
+          version: tags/${{ github.event.release.tag_name }}
+          file: ${{ github.event.repository.name }}.*
+          regex: true
+          target: dist/
+
+      - name: Publish release to production PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1

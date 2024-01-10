@@ -3,27 +3,30 @@ on:
   pull_request:
   push:
     branches:
-      main
+      - main
+  workflow_call:
+    outputs:
+      artifact-name:
+        description: "Name of the uploaded artifact; use for artifact retrieval."
+        value: ${{ jobs.package.outputs.artifact-name }}
+
+# Cancel active CI runs for a PR before starting another run
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
+defaults:
+  run:
+    shell: bash  # https://github.com/beeware/briefcase/pull/912
+
+env:
+  FORCE_COLOR: "1"
 
 jobs:
-  beefore:
-    name: Pre-test checks
-    runs-on: ubuntu-latest
-    strategy:
-      max-parallel: 4
-      matrix:
-        task: ['docs', 'package']
-    steps:
-    - uses: actions/checkout@v4
-    - name: Set up Python
-      uses: actions/setup-python@v5.0.0
-      with:
-        python-version: "3.x"
-    - name: Install dependencies
-      run: |
-        pip install --upgrade pip
-        pip install --upgrade setuptools
-        pip install tox
-    - name: Run Pre-test check
-      run: |
-        tox -e ${{ matrix.task }}
+  pre-commit:
+    name: Pre-commit checks
+    uses: beeware/.github/.github/workflows/pre-commit-run.yml@main
+
+  package:
+    name: Python package
+    uses: beeware/.github/.github/workflows/python-package-create.yml@main

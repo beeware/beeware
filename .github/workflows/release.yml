@@ -6,19 +6,51 @@ on:
       - 'v*'
 
 jobs:
-  build:
+  ci:
+    name: CI
+    uses: ./.github/workflows/ci.yml
+
+  docs:
+    name: Verify Docs Build
+    uses: beeware/.github/.github/workflows/docs-build-verify.yml@main
+    secrets: inherit
+    with:
+      project-name: "beeware"
+      project-version: ${{ github.ref_name }}
+
+  release:
     name: Create Release
+    needs: [ ci, docs ]
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      # This permission is required for trusted publishing.
+      id-token: write
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Set build variables
+        run: |
+          echo "VERSION=${GITHUB_REF_NAME#v}" >> $GITHUB_ENV
+
+      - name: Set up Python
+        uses: actions/setup-python@v5.0.0
         with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
+          python-version: "3.x"
+
+      - name: Get packages
+        uses: actions/download-artifact@v4.1.0
+        with:
+          name: ${{ needs.ci.outputs.artifact-name }}
+          path: dist
+
+      - name: Create release
+        uses: ncipollo/release-action@v1.13.0
+        with:
+          name: ${{ env.VERSION }}
           draft: true
-          prerelease: false
+          artifacts: dist/*
+          artifactErrorsFailBuild: true
+
+      - name: Publish release to Test PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          repository-url: https://test.pypi.org/legacy/

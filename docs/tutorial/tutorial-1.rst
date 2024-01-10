@@ -42,10 +42,10 @@ with the ``beeware-venv`` virtual environment activated, and run:
 
     .. admonition:: Possible errors during installation
 
-        It is important that you use ``python -m pip``, rather than a bare ``pip``. 
+        It is important that you use ``python -m pip``, rather than a bare ``pip``.
         Briefcase needs to ensure that it has an up-to-date version of ``pip`` and
-        ``setuptools``, and a bare invocation of ``pip`` can't self-update. If you 
-        want to know more, `Brett Cannon has a detailed blog post about the issue 
+        ``setuptools``, and a bare invocation of ``pip`` can't self-update. If you
+        want to know more, `Brett Cannon has a detailed blog post about the issue
         <https://snarky.ca/why-you-should-use-python-m-pip/>`__.
 
 One of the BeeWare tools is **Briefcase**. Briefcase can be used to package

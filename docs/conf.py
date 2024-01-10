@@ -9,9 +9,10 @@
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 
-import re
+import os
 import sys
 from datetime import datetime
+from importlib.metadata import version as metadata_version
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -54,14 +55,8 @@ copyright = f"{datetime.now().year}, Russell Keith-Magee"
 # built documents.
 #
 # The full version, including alpha/beta/rc tags.
-with open("../setup.cfg", encoding="utf8") as version_file:
-    version_match = re.search(r"^version = (.*)$", version_file.read(), re.M)
-    if version_match:
-        release = version_match.group(1)
-    else:
-        raise RuntimeError("Unable to find version string.")
-
-# The short X.Y version.
+release = metadata_version("beeware")
+# The short X.Y version
 version = ".".join(release.split(".")[:2])
 
 autoclass_content = "both"
@@ -314,3 +309,15 @@ todo_include_todos = True
 
 # If this is True, todolist produce output without file path and line, The default is False.
 # todo_link_only = False
+
+# -- Options for gettext -------------------------------------------
+
+gettext_compact = False
+gettext_uuid = True
+gettext_allow_fuzzy_translations = True
+
+# ReadTheDocs doesn't allow configuration of the -t tags passed in for builds;
+# but it *does* allow for configuration of environment variables.
+translation = os.getenv("TRANSLATION")
+if translation:
+    tags.add(f"{translation}_translation")

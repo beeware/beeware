@@ -157,13 +157,12 @@ We're still creating a main box; however, we are now applying a style::
 
             main_box = toga.Box(style=Pack(direction=COLUMN))
 
-Toga's builtin layout system is called "Pack". It behaves a lot like CSS. You
-define objects in a hierarchy - in HTML, the objects are ``<div>``, ``<span>``,
-and other DOM elements; in Toga, they're widgets and boxes. You can then assign
-styles to the individual elements. In this case, we're indicating that this is
-a ``COLUMN`` box - that is, it is a box that will consume all the available
-width, and will expand its height as content is added, but it will try to be
-as short as possible.
+Toga's built-in layout system is called "Pack". It behaves a lot like CSS. You define
+objects in a hierarchy - in HTML, the objects are ``<div>``, ``<span>``, and other DOM
+elements; in Toga, they're widgets and boxes. You can then assign styles to the
+individual elements. In this case, we're indicating that this is a ``COLUMN`` box - that
+is, it is a box that will consume all the available width, and will expand its height as
+content is added, but it will try to be as short as possible.
 
 Next, we define a couple of widgets::
 
