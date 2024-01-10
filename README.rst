@@ -66,12 +66,12 @@ want to contribute code, please `fork the code`_ and `submit a pull request`_.
 Translations
 ~~~~~~~~~~~~
 
-We manage translations using `Weblate <https://weblate.org/>`__.
-
 .. image:: https://hosted.weblate.org/widget/beeware/open-graph.png
    :target: https://hosted.weblate.org/engage/beeware/
    :alt: Translation status
    :width: 300px
+
+We manage translations using `Weblate <https://weblate.org/>`__.
 
 .. image:: https://hosted.weblate.org/widget/beeware/horizontal-blue.svg
    :target: https://hosted.weblate.org/engage/beeware/
