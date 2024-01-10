@@ -4,7 +4,7 @@ Welcome to the BeeWare Tutorial!
 
 **Write Python. Run Anywhere.**
 
-Welcome to BeeWare! In this tutorial, we're going to build an graphical user interface
+Welcome to BeeWare! In this tutorial, we're going to build a graphical user interface
 using Python, and deploy it as a desktop application, as a mobile application, and as a
 single page web app. We're also going to look at how you can use BeeWare tools to do
 some of the common tasks that you'll need to do as an app developer, such as testing
@@ -72,8 +72,8 @@ platforms such as Android and iOS; and for the Web.
 Lets go!
 ========
 
-Ready to try BeeWare for yourself? :doc:`Let's build a cross platform
-application in Python! <tutorial/tutorial-0>`
+Ready to try BeeWare for yourself? :doc:`Let's build a cross platform application in
+Python! <tutorial/tutorial-0>`
 
 .. toctree::
     :maxdepth: 2
