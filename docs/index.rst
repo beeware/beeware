@@ -15,8 +15,11 @@ your app.
    .. admonition:: Translations are available
 
       If you're not comfortable with English, translations of this tutorial are
-      available in `Deutsch <../../de/latest>`__, `Español <../../es/latest>`__,
-      `Français <../../fr/latest>`__, and `汉语 <../../zh-cn/latest>`__.
+      available in
+      `Deutsch <https://docs.beeware.org/de>`__,
+      `Español <https://docs.beeware.org/es>`__,
+      `Français <https://docs.beeware.org/fr>`__, and
+      `汉语 <https://docs.beeware.org/zh-cn>`__.
 
 
 .. only:: machine_translation
