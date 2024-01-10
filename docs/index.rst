@@ -14,7 +14,7 @@ your app.
 
    .. admonition:: Translations are available
 
-      If you're not comfortable with English, this tutorial has been translations of this tutorial are
+      If you're not comfortable with English, translations of this tutorial are
       available in
       `Deutsch <https://docs.beeware.org/de>`__,
       `Español <https://docs.beeware.org/es>`__,

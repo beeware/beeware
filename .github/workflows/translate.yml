@@ -19,7 +19,7 @@ env:
 jobs:
   update-translations:
     name: Update Translations
-    if: github.actor != 'brutus[bot]'
+    if: github.actor != 'brutusthebee'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -46,7 +46,7 @@ jobs:
       - name: Configure git
         run: |
           git config --local user.email "$(git log --pretty='%ae' -1)"
-          git config --local user.name "brutus[bot]"
+          git config --local user.name "brutusthebee[bot]"
 
       - name: Regenerate PO files
         run: |
@@ -55,7 +55,6 @@ jobs:
       - name: Update Needed?
         id: updated
         run: |
-          echo "ACTOR: ${{github.actor}}"
           if [[ $(git status --porcelain) ]]; then
             echo "updated=true" >> ${GITHUB_OUTPUT}
           else
