@@ -1,49 +1,53 @@
-
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-07 09:54+0800\n"
-"PO-Revision-Date: 2024-01-06 20:03+0800\n"
-"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
+"PO-Revision-Date: 2024-01-10 22:12+0000\n"
+"Last-Translator: Sheep Cat <xymsyh@gmail.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"beeware/tutorial/tutorial-2/zh_Hans/>\n"
 "Language: zh_CN\n"
-"Language-Team: zh_CN <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.4-dev\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../tutorial/tutorial-2.rst:3 d77ee502e50f449f95f9f8c33e419114
-#, fuzzy
 msgid "Tutorial 2 - Making it interesting"
-msgstr "教程 2 - 激发兴趣"
+msgstr "教程 2 - 使之更有趣"
 
 #: ../../tutorial/tutorial-2.rst:5 9243ae1890a444c1a2ac5ed207ffb2b9
-#, fuzzy
 msgid "In :doc:`Tutorial 1 <tutorial-1>`, we generated a stub project that was able to run, but we didn't write any code ourselves. Let's take a look at what was generated for us."
-msgstr "在 :doc:`Tutorial 1<tutorial-1>` 中，我们生成了一个可以运行的存根项目，但我们自己并没有编写任何代码。让我们看看为我们生成了什么。"
+msgstr ""
+"在 :doc:`Tutorial 1<tutorial-1>` 中，我们生成了一个可以运行的基础项目，但我们"
+"自己并没有编写任何代码。让我们看看为我们生成了什么。"
 
 #: ../../tutorial/tutorial-2.rst:10 e9ebf421d32d4033b9798ae970b813ab
-#, fuzzy
 msgid "What was generated"
-msgstr "产生了什么"
+msgstr "生成的内容"
 
 #: ../../tutorial/tutorial-2.rst:12 50b605789b834bc7b4fbf912c0adb10b
-#, fuzzy
 msgid "In the ``src/helloworld`` directory, you should see 3 files: ``__init__.py``, ``__main__.py`` and ``app.py``."
-msgstr "在 ``src/helloworld`` 目录中，你应该看到 3 个文件：__init__.py``、__main__.py`` 和 `app.py``。"
+msgstr ""
+"在 ``src/helloworld`` 目录中，你应该看到 3 个文件：__init__.py``、__main__."
+"py`` 和 `app.py``。"
 
 #: ../../tutorial/tutorial-2.rst:15 3f2c12dc8d5d441fb7808bf022dc78e5
-#, fuzzy
 msgid "``__init__.py`` marks the ``helloworld`` directory as an importable Python module. It is an empty file; the very fact it exists tells the Python interpreter that the ``helloworld`` directory defines a module."
-msgstr "`__init__.py`` 将 ``helloworld` 目录标记为可导入的 Python 模块。这是一个空文件；它存在的事实告诉 Python 解释器 ``helloworld`` 目录定义了一个模块。"
+msgstr ""
+"`__init__.py`` 将 ``helloworld` 目录标记为可导入的 Python "
+"模块。这是一个空文件；它的存在告诉 Python 解释器 helloworld "
+"目录定义了一个模块。"
 
 #: ../../tutorial/tutorial-2.rst:19 3aa0f503e2fa4451bb9838717732de67
-#, fuzzy
 msgid "``__main__.py`` marks the ``helloworld`` module as a special kind of module - an executable module. If you try to run the ``helloworld`` module using ``python -m helloworld``, the ``__main__.py`` file is where Python will start executing. The contents of ``__main__.py`` is relatively simple::"
-msgstr "`__main__.py`` 将 ``helloworld`` 模块标记为一种特殊的模块 - 可执行模块。如果使用 ``python -m helloworld`` 试图运行 ``helloworld`` 模块，`__main__.py`` 文件就是 Python 开始执行的地方。`__main__.py`` 的内容相对简单：："
+msgstr ""
+"``__main__.py`` 将 ``helloworld`` 模块标记为一种特殊的模块 - 可执行模块。"
+"如果你尝试使用 ``python -m helloworld`` 试图运行 ``helloworld`` 模块，Python "
+"将从``__main__.py`` 文件开始执行。``__main__.py`` 的内容相对简单：："
 
 #: ../../tutorial/tutorial-2.rst:29 2cb39aab85b34665b518db1e45270039
 #, fuzzy
@@ -98,7 +102,12 @@ msgstr "接下来，我们定义一个窗口，将这个空盒子放入其中：
 #: ../../tutorial/tutorial-2.rst:87 1f5b1de7a5db4e2ba8227894670829d6
 #, fuzzy
 msgid "This creates an instance of a ``toga.MainWindow``, which will have a title matching the application's name. A Main Window is a special kind of window in Toga - it's a window that is closely bound to the life cycle of the app. When the Main Window is closed, the application exits. The Main Window is also the window that has the application's menu (if you're on a platform like Windows where menu bars are part of the window)"
-msgstr "这会创建一个 ``toga.MainWindow`` 主窗口）实例，它的标题将与应用程序的名称相匹配。在 Toga 中，主窗口是一种特殊的窗口--它与应用程序的生命周期紧密相连。当主窗口关闭时，应用程序也随之退出。主窗口也是应用程序菜单的窗口（如果您使用的是 Windows 等平台，菜单栏是窗口的一部分）。"
+msgstr ""
+"这会创建一个 ``toga.MainWindow`` "
+"主窗口）实例，它的标题将与应用程序的名称相匹配。在 Toga "
+"中，主窗口是一种特殊的窗口--它与应用程序的生命周期紧密相连。当主窗口关闭时，"
+"应用程序也随之退出。主窗口也是应用程序菜单的窗口（如果您使用的是 Windows "
+"等平台，菜单栏是窗口的一部分）。"
 
 #: ../../tutorial/tutorial-2.rst:94 04b4175b3f874d12b86bceb1e870a867
 #, fuzzy
@@ -267,4 +276,3 @@ msgstr "下一步"
 #, fuzzy
 msgid "We've now got an application that does something a little more interesting. But it only runs on our own computer. Let's package this application for distribution. In :doc:`Tutorial 3 <tutorial-3>`, we'll wrap our application up as a standalone installer that we could send to a friend, a customer, or upload to an App Store."
 msgstr "我们现在有了一个应用程序，它能做一些更有趣的事情。但它只能在我们自己的电脑上运行。让我们把这个程序打包发布。在 :doc:`Tutorial 3<tutorial-3>` 中，我们将把应用程序打包成一个独立的安装程序，可以发送给朋友、客户或上传到应用程序商店。"
-
