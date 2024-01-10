@@ -67,6 +67,6 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         run: |
           # Commit the updated PO files.
-          git add docs/locale
+          git add docs/locales
           git commit -m "Update translations."
           git push origin
