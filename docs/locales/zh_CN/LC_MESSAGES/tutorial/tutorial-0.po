@@ -1,19 +1,19 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-06 18:04+0800\n"
-"PO-Revision-Date: 2024-01-06 20:03+0800\n"
-"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
-"Language-Team: zh_CN <LL@li.org>\n"
+"PO-Revision-Date: 2024-01-13 02:06+0000\n"
+"Last-Translator: Sheep Cat <xymsyh@gmail.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"beeware/tutorial/tutorial-0/zh_Hans/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.4-dev\n"
 "Generated-By: Babel 2.14.0\n"
-"X-Generator: Poedit 3.4.2\n"
 
 #: ../../tutorial/tutorial-0.rst:3 da7047648df8422ca10b095700768f86
 #, fuzzy
@@ -36,7 +36,6 @@ msgid "The first thing we'll need is a working Python interpreter."
 msgstr "首先，我们需要一个正常工作的 Python 解释器。"
 
 #: ../../tutorial/tutorial-0.rst:15 ../../tutorial/tutorial-0.rst:77 ../../tutorial/tutorial-0.rst:136 35d69d0d9f7b4bc4a461552ffa1ea1a6 91d99e415473445f847abc0f44203618 bec1fa85435a41cc9e1d3066fe0a54c9
-#, fuzzy
 msgid "macOS"
 msgstr "MacOS"
 
@@ -51,7 +50,6 @@ msgid "If Python is installed, you'll see its version number. Otherwise, you'll 
 msgstr "如果已安装 Python，则会看到其版本号。否则，系统会提示您安装命令行开发工具。"
 
 #: ../../tutorial/tutorial-0.rst:28 ../../tutorial/tutorial-0.rst:84 ../../tutorial/tutorial-0.rst:145 54cfa3bb6d5a41fa8c00b7e3f5465bf3 b6ec25d3df84426d816dd345b53376ee baee1e013cfc452e832e14cccabab4e7
-#, fuzzy
 msgid "Linux"
 msgstr "Linux"
 
@@ -71,7 +69,6 @@ msgid "Support for Raspberry Pi is limited at this time."
 msgstr "目前对 Raspberry Pi 的支持有限。"
 
 #: ../../tutorial/tutorial-0.rst:39 ../../tutorial/tutorial-0.rst:112 ../../tutorial/tutorial-0.rst:154 0118da7bcbbe454497de1c7b3ab90617 1005c9afd4764e2abfbe701f1e19eb63 d134440922944702ae8086e9a2c263d2
-#, fuzzy
 msgid "Windows"
 msgstr "Windows"
 
@@ -216,7 +213,6 @@ msgid "If you're using Anaconda or miniconda, you may be more familiar with usin
 msgstr "如果您使用的是 Anaconda 或 miniconda，那么您可能对使用 conda 环境更为熟悉。您可能还听说过 ``virtualenv``，它是 Python 内置的 ``venv`` 模块的前身。就像 Python 的安装一样，如果你使用的是 macOS 或 Windows，那么如何创建虚拟环境并不重要，只要有一个就够了。如果在 Linux 上，则应坚持使用 ``venv`` 和系统 Python。"
 
 #: ../../tutorial/tutorial-0.rst:195 6fba72a61ac9453fb6fa6abbc5608981
-#, fuzzy
 msgid "Next steps"
 msgstr "下一步"
 
