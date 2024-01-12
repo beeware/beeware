@@ -1,19 +1,19 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-06 18:04+0800\n"
-"PO-Revision-Date: 2024-01-06 20:03+0800\n"
-"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
-"Language-Team: zh_CN <LL@li.org>\n"
+"PO-Revision-Date: 2024-01-13 02:06+0000\n"
+"Last-Translator: Sheep Cat <xymsyh@gmail.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"beeware/tutorial/tutorial-6/zh_Hans/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.4-dev\n"
 "Generated-By: Babel 2.14.0\n"
-"X-Generator: Poedit 3.4.2\n"
 
 #: ../../tutorial/tutorial-6.rst:3 2a532cc3806d417fa3be690ab757a4b2
 #, fuzzy
@@ -51,17 +51,14 @@ msgid "The process of deploying as a single-page web app follows the same famili
 msgstr "作为单页面 Web 应用程序部署的过程遵循相同的熟悉模式--创建应用程序，然后构建应用程序，然后运行它。不过，Briefcase 也有一点小聪明；如果您尝试运行应用程序，而 Briefcase 确定该应用程序尚未针对目标平台创建或构建，那么它会为您执行创建和构建步骤。由于这是我们第一次为网络运行应用程序，我们可以用一条命令执行所有三个步骤："
 
 #: ../../tutorial/tutorial-6.rst:34 510f5b2ca0884038a8e30fb9a096af4d
-#, fuzzy
 msgid "macOS"
 msgstr "MacOS"
 
 #: ../../tutorial/tutorial-6.rst:72 52e1585ec59c40f781a5ca2464633807
-#, fuzzy
 msgid "Linux"
 msgstr "Linux"
 
 #: ../../tutorial/tutorial-6.rst:110 fa0f7530ac0f457581d5b701b434bdae
-#, fuzzy
 msgid "Windows"
 msgstr "Windows"
 
@@ -96,7 +93,6 @@ msgid "But when you press the button, you're running Python code... how does tha
 msgstr "但当你按下按钮时，你运行的是 Python 代码......这是怎么做到的呢？Toga 使用 `PyScript <https://pyscript.net>`__ 在浏览器中提供 Python 解释器。公文包将应用程序的代码打包成 PyScript 可以在浏览器中加载的轮子。加载页面时，应用代码会在浏览器中运行，并使用浏览器 DOM 构建用户界面。当您点击按钮时，该按钮会在浏览器中运行事件处理代码。"
 
 #: ../../tutorial/tutorial-6.rst:173 c0712cbbdbb5474fae8a3b7ea9e1f165
-#, fuzzy
 msgid "Next steps"
 msgstr "下一步"
 
