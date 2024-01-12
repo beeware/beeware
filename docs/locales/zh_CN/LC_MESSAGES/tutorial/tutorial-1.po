@@ -1,19 +1,19 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-06 18:04+0800\n"
-"PO-Revision-Date: 2024-01-06 20:03+0800\n"
-"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
-"Language-Team: zh_CN <LL@li.org>\n"
+"PO-Revision-Date: 2024-01-13 02:06+0000\n"
+"Last-Translator: Sheep Cat <xymsyh@gmail.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"beeware/tutorial/tutorial-1/zh_Hans/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.4-dev\n"
 "Generated-By: Babel 2.14.0\n"
-"X-Generator: Poedit 3.4.2\n"
 
 #: ../../tutorial/tutorial-1.rst:3 6b15f54bec2546c79f0a21b50b918daa
 #, fuzzy
@@ -36,12 +36,10 @@ msgid "First, we need to install **Briefcase**. Briefcase is a BeeWare tool that
 msgstr "首先，我们需要安装**Briefcase**。Briefcase是一款BeeWare工具，可用于打包应用程序，以便分发给最终用户，但也可用于引导新项目。确保您在 :doc:`Tutorial 0<tutorial-0>` 中创建的 ``beeware-tutorial`` 目录中，并激活 ``beeware-venv`` 虚拟环境，然后运行："
 
 #: ../../tutorial/tutorial-1.rst:18 ../../tutorial/tutorial-1.rst:64 ../../tutorial/tutorial-1.rst:163 ../../tutorial/tutorial-1.rst:206 29eb3427ac404ea79b348996b9eada95 9b68194071074e4e846f6bc195da9b4e a43fae5f4b954f859b0fceceae7b41ad ed897f448baa40c4b125a30aead48e41
-#, fuzzy
 msgid "macOS"
 msgstr "MacOS"
 
 #: ../../tutorial/tutorial-1.rst:24 ../../tutorial/tutorial-1.rst:70 ../../tutorial/tutorial-1.rst:176 ../../tutorial/tutorial-1.rst:211 409cca84e7fe4accb0ccd642c7ab3bf6 677c6640854f4e03bb60beb973f60130 9a9a3f7d49134a9588eb41bb7a141ac4 fc0159712aea4e7faa00a4adf2939ebe
-#, fuzzy
 msgid "Linux"
 msgstr "Linux"
 
@@ -56,7 +54,6 @@ msgid "If you see errors during installation, it's almost certainly because some
 msgstr "如果在安装过程中出现错误，几乎可以肯定是因为某些系统要求尚未安装。请确保您已 :ref:`安装了所有平台先决条件 <install-dependencies>`。"
 
 #: ../../tutorial/tutorial-1.rst:37 ../../tutorial/tutorial-1.rst:76 ../../tutorial/tutorial-1.rst:189 ../../tutorial/tutorial-1.rst:216 572fb98f93f2482b8cd97ae0228ada50 8930f98d45994ca1ae7f849ba2eced6e dc2e0a487cd4434598f283de98efeec3 ee6bd27c82104f298ba5d9e54b264801
-#, fuzzy
 msgid "Windows"
 msgstr "Windows"
 
@@ -161,9 +158,8 @@ msgid "Move into the ``helloworld`` project directory and tell briefcase to star
 msgstr "移动到 ``helloworld`` 项目目录，告诉公文包以开发者（或 ``dev``）模式启动项目："
 
 #: ../../tutorial/tutorial-1.rst:202 aa1c8a83cf6243b09c023e51f484cb42
-#, fuzzy
 msgid "This should open a GUI window:"
-msgstr "这将打开一个图形用户界面窗口："
+msgstr "这将打开一个图形用户界面 (GUI) 窗口："
 
 #: ../../tutorial/tutorial-1.rst fe09db73be95425aa64cd8c46256274e
 #, fuzzy
@@ -186,7 +182,6 @@ msgid "Press the close button (or select Quit from the application's menu), and 
 msgstr "按下关闭按钮（或从应用程序菜单中选择 \"退出\"），就大功告成了！恭喜 - 你刚刚用 Python 编写了一个独立的本地应用程序！"
 
 #: ../../tutorial/tutorial-1.rst:226 07eb588ce0634a43833281386afc9176
-#, fuzzy
 msgid "Next steps"
 msgstr "下一步"
 
