@@ -1,18 +1,18 @@
-
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-07 09:54+0800\n"
-"PO-Revision-Date: 2024-01-06 20:03+0800\n"
-"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
+"PO-Revision-Date: 2024-01-14 01:02+0000\n"
+"Last-Translator: Lancelot Fouillet <lancelot.fouillet@orange.fr>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/beeware/tutorial/"
+"tutorial-2/fr/>\n"
 "Language: fr\n"
-"Language-Team: fr <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.4-dev\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../tutorial/tutorial-2.rst:3 d77ee502e50f449f95f9f8c33e419114
@@ -212,19 +212,16 @@ msgstr "Maintenant que nous avons effectué ces changements, nous pouvons voir �
 
 #: ../../tutorial/tutorial-2.rst:235 ../../tutorial/tutorial-2.rst:272
 #: 33a0be631b2741cdbf4d66c68588ff90 4f95885535034dd7bc6f03a823b01d7c
-#, fuzzy
 msgid "macOS"
 msgstr "macOS"
 
 #: ../../tutorial/tutorial-2.rst:244 ../../tutorial/tutorial-2.rst:277
 #: 13268e27f8dd4fa7aa97178728669ea8 96fa7564618e4e2ca326bb6b4f22eae8
-#, fuzzy
 msgid "Linux"
 msgstr "Linux"
 
 #: ../../tutorial/tutorial-2.rst:253 ../../tutorial/tutorial-2.rst:282
 #: 58ff99756da94e00b1cb0145584a5640 b29c7dbc8ce542a890606f0cd47c02fc
-#, fuzzy
 msgid "Windows"
 msgstr "Windows"
 
@@ -259,7 +256,6 @@ msgid "If you enter a name in the text box, and press the GUI button, you should
 msgstr "Si vous saisissez un nom dans la zone de texte et que vous appuyez sur le bouton GUI, vous devriez voir apparaître une sortie dans la console où vous avez démarré l'application."
 
 #: ../../tutorial/tutorial-2.rst:291 e08d3a86b82245a8916624e9794ae970
-#, fuzzy
 msgid "Next steps"
 msgstr "Étapes suivantes"
 
@@ -267,4 +263,3 @@ msgstr "Étapes suivantes"
 #, fuzzy
 msgid "We've now got an application that does something a little more interesting. But it only runs on our own computer. Let's package this application for distribution. In :doc:`Tutorial 3 <tutorial-3>`, we'll wrap our application up as a standalone installer that we could send to a friend, a customer, or upload to an App Store."
 msgstr "Nous avons maintenant une application qui fait quelque chose d'un peu plus intéressant. Mais elle ne fonctionne que sur notre propre ordinateur. Emballons cette application pour la distribuer. Dans :doc:`Tutorial 3 <tutorial-3>`, nous allons emballer notre application sous la forme d'un programme d'installation autonome que nous pourrons envoyer à un ami, un client, ou télécharger sur un App Store."
-
