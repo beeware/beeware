@@ -30,7 +30,7 @@ The first thing we'll need is a working Python interpreter.
     If you're on Linux, you'll install Python using the system package manager
     (``apt`` on Debian/Ubuntu/Mint, ``dnf`` on Fedora, or ``pacman`` on Arch).
 
-    You should ensure that the system Python is Python 3.8 or newer; if it isn't
+    You should ensure that the system Python is between 3.8 and 3.11; if it isn't
     (e.g., Ubuntu 18.04 ships with Python 3.6), you'll need to upgrade your
     Linux distribution to something more recent.
 
@@ -40,7 +40,7 @@ The first thing we'll need is a working Python interpreter.
 
     If you're on Windows, you can get the official installer from `the Python
     website <https://www.python.org/downloads>`_. You can use any stable version
-    of Python from 3.8 onward. We'd advise avoiding alphas, betas, and release
+    of Python between 3.8 up to 3.11. We'd advise avoiding alphas, betas, and release
     candidates unless you *really* know what you're doing.
 
 .. admonition:: Alternative Python distributions
