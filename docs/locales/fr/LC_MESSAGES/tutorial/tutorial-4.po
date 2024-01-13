@@ -1,19 +1,19 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-06 18:04+0800\n"
-"PO-Revision-Date: 2024-01-06 20:03+0800\n"
-"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
-"Language-Team: fr <LL@li.org>\n"
+"PO-Revision-Date: 2024-01-14 01:02+0000\n"
+"Last-Translator: Lancelot Fouillet <lancelot.fouillet@orange.fr>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/beeware/tutorial/"
+"tutorial-4/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.4-dev\n"
 "Generated-By: Babel 2.14.0\n"
-"X-Generator: Poedit 3.4.2\n"
 
 #: ../../tutorial/tutorial-4.rst:3 7fe4cbf2a0064eb09013538f9bdfef61
 #, fuzzy
@@ -56,7 +56,6 @@ msgid "If you run ``briefcase dev``, enter a name, and press the button, you'll 
 msgstr "Si vous lancez ``briefcase dev``, entrez un nom et appuyez sur le bouton, vous verrez la nouvelle boîte de dialogue :"
 
 #: ../../tutorial/tutorial-4.rst:36 ../../tutorial/tutorial-4.rst:67 ../../tutorial/tutorial-4.rst:164 2e2b681035db40a1878b3362f793ffe7 3ce780c7548047428b5ddbba4416c237 40f7a793673841a080db293e66e40d81
-#, fuzzy
 msgid "macOS"
 msgstr "macOS"
 
@@ -66,7 +65,6 @@ msgid "Hello World Tutorial 4 dialog, on macOS"
 msgstr "Tutoriel Hello World 4 dialogue, sur macOS"
 
 #: ../../tutorial/tutorial-4.rst:41 ../../tutorial/tutorial-4.rst:81 ../../tutorial/tutorial-4.rst:185 42308678bc2b482db2281fb875b4a3b4 c8ce8abc2b584b4993d5bd96f3565b45 e5a6ade2541e43c6bec891e8c30243be
-#, fuzzy
 msgid "Linux"
 msgstr "Linux"
 
@@ -76,7 +74,6 @@ msgid "Hello World Tutorial 4 dialog, on Linux"
 msgstr "Tutoriel Hello World 4 dialogue, sur Linux"
 
 #: ../../tutorial/tutorial-4.rst:46 ../../tutorial/tutorial-4.rst:98 ../../tutorial/tutorial-4.rst:213 087ed0fa187a45b8911c0e121fd1e5ed abad56c1148741a3ab416f5f87c428de dacbeb65c2214a3ea17abb862d27167a
-#, fuzzy
 msgid "Windows"
 msgstr "Windows"
 
@@ -151,7 +148,6 @@ msgid "The package command also accepts the ``-u`` argument, so if you make a ch
 msgstr "La commande package accepte aussi l'argument ``-u``, donc si vous faites un changement dans le code de votre application et que vous voulez repackager immédiatement, vous pouvez lancer ``briefcase package -u``."
 
 #: ../../tutorial/tutorial-4.rst:234 8af764dacceb41f291fce27b91879c5e
-#, fuzzy
 msgid "Next steps"
 msgstr "Étapes suivantes"
 
