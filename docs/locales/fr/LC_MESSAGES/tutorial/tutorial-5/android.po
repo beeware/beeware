@@ -1,19 +1,19 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-06 18:04+0800\n"
-"PO-Revision-Date: 2024-01-06 20:03+0800\n"
-"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
-"Language-Team: fr <LL@li.org>\n"
+"PO-Revision-Date: 2024-01-14 01:02+0000\n"
+"Last-Translator: Lancelot Fouillet <lancelot.fouillet@orange.fr>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/beeware/tutorial/"
+"tutorial-5/android/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.4-dev\n"
 "Generated-By: Babel 2.14.0\n"
-"X-Generator: Poedit 3.4.2\n"
 
 #: ../../tutorial/tutorial-5/android.rst:3 86f96e40ce5d492bb043e2d389583001
 #, fuzzy
@@ -41,17 +41,14 @@ msgid "First, run the ``create`` command. This downloads an Android app template
 msgstr "Tout d'abord, lancez la commande ``create``. Celle-ci télécharge un modèle d'application Android et y ajoute votre code Python."
 
 #: ../../tutorial/tutorial-5/android.rst:21 ../../tutorial/tutorial-5/android.rst:118 ../../tutorial/tutorial-5/android.rst:195 ../../tutorial/tutorial-5/android.rst:312 0f3ea886d85a452aabe3e18f131bdd00 36fb84c6a3c7463a95896f0aa8060a4a 568db5494b87477fa476df5c5472b7f2 6994ab0f0d9848df8ca3c1cdc0beb383
-#, fuzzy
 msgid "macOS"
 msgstr "macOS"
 
 #: ../../tutorial/tutorial-5/android.rst:48 ../../tutorial/tutorial-5/android.rst:136 ../../tutorial/tutorial-5/android.rst:207 ../../tutorial/tutorial-5/android.rst:326 b29b90a1422041c493414678c9205ace b41414d800464d3a85a038cee690d823 c6576e833f414245b375fc422b97aafe d38c420506c44aff96318153776a61e7
-#, fuzzy
 msgid "Linux"
 msgstr "Linux"
 
 #: ../../tutorial/tutorial-5/android.rst:75 ../../tutorial/tutorial-5/android.rst:154 ../../tutorial/tutorial-5/android.rst:219 ../../tutorial/tutorial-5/android.rst:340 8af7005be4514dd788a11c7ce0888c75 9cf894cffeb54cbebac76f7ef7d2ab62 afa21fa0b31d4e85bf41bac7f3ab730b b0814ea816bf409ba2407120f792ca58
-#, fuzzy
 msgid "Windows"
 msgstr "Windows"
 
@@ -221,7 +218,6 @@ msgid "If your device appears, but is listed as \"Unknown device (not authorized
 msgstr "Si votre appareil apparaît, mais qu'il est listé comme \"Unknown device (not authorized for development)\", le mode développeur n'a pas été correctement activé. Réexécutez `les étapes pour activer les options de développement <https://developer.android.com/studio/debug/dev-options#enable>`__, et réexécutez ``briefcase run android``."
 
 #: ../../tutorial/tutorial-5/android.rst:372 83bfaa582d5249899089dbe4a82a53b7
-#, fuzzy
 msgid "Next steps"
 msgstr "Étapes suivantes"
 
