@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-06 18:04+0800\n"
-"PO-Revision-Date: 2024-01-10 22:12+0000\n"
+"PO-Revision-Date: 2024-01-14 12:29+0000\n"
 "Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
 "tutorial-0/de/>\n"
@@ -135,7 +135,6 @@ msgid "**Fedora**"
 msgstr "**Fedora**"
 
 #: ../../tutorial/tutorial-0.rst:106 2fdf6d1bb1c742629ea6d624806b6fe8
-#, fuzzy
 msgid "**Arch, Manjaro**"
 msgstr "**Arch, Manjaro**"
 
