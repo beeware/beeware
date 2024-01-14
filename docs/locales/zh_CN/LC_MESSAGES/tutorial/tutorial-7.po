@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-06 18:04+0800\n"
-"PO-Revision-Date: 2024-01-13 02:06+0000\n"
-"Last-Translator: Sheep Cat <xymsyh@gmail.com>\n"
+"PO-Revision-Date: 2024-01-14 12:29+0000\n"
+"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "beeware/tutorial/tutorial-7/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -66,9 +66,8 @@ msgid "Then modify the ``say_hello()`` callback so it looks like this::"
 msgstr "然后修改 ``say_hello()`` 回调，使其看起来像这样：："
 
 #: ../../tutorial/tutorial-7.rst:56 63fffe4e06de4459b53d2afeefcd7e5f
-#, fuzzy
 msgid "This will change the ``say_hello()`` callback so that when it is invoked, it will:"
-msgstr "这将更改 ``say_hello()`` 回调，使它在被调用时，会"
+msgstr "这将更改 ``say_hello()`` 回调，使它在被调用时，会:"
 
 #: ../../tutorial/tutorial-7.rst:59 83ef2db9c558441e975326257fed14ef
 #, fuzzy
