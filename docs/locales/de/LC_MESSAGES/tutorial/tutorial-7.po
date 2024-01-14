@@ -1,19 +1,19 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-06 18:04+0800\n"
-"PO-Revision-Date: 2024-01-06 20:03+0800\n"
+"PO-Revision-Date: 2024-01-14 12:29+0000\n"
 "Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
-"Language-Team: de <LL@li.org>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
+"tutorial-7/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.4-dev\n"
 "Generated-By: Babel 2.14.0\n"
-"X-Generator: Poedit 3.4.2\n"
 
 #: ../../tutorial/tutorial-7.rst:3 8ad7bf512a0341b6aeb95e5d97c7c838
 #, fuzzy
@@ -53,7 +53,12 @@ msgstr "Die Python-Standardbibliothek enthält alle Werkzeuge, die Sie für den 
 #: ../../tutorial/tutorial-7.rst:33 af3ad600eb7e4669a5b7c6f4d78aa619
 #, fuzzy
 msgid "As a result, people have developed third-party libraries that wrap the built-in APIs and provide a simpler API that is a closer match for the everyday browser experience. We're going to use one of those libraries to access the {JSON} Placeholder API - a library called `httpx <https://www.python-httpx.org>`__."
-msgstr "Infolgedessen haben Leute Bibliotheken von Drittanbietern entwickelt, die die eingebauten APIs umhüllen und eine einfachere API bereitstellen, die der alltäglichen Browsererfahrung besser entspricht. Wir werden eine dieser Bibliotheken verwenden, um auf die {JSON} Platzhalter-API zuzugreifen - eine Bibliothek namens `httpx <https://www.python-httpx.org>`__."
+msgstr ""
+"Infolgedessen haben Leute Bibliotheken von Drittanbietern entwickelt, die "
+"eingebauten APIs umhüllen und eine einfachere API bereitstellen, die der "
+"alltäglichen Browsererfahrung besser entspricht. Wir werden eine dieser "
+"Bibliotheken verwenden, um auf die {JSON} Platzhalter-API zuzugreifen - eine "
+"Bibliothek namens `httpx <https://www.python-httpx.org>`__."
 
 #: ../../tutorial/tutorial-7.rst:38 f1e8759bfb5f4a1088d9fd1280370626
 #, fuzzy
@@ -223,7 +228,11 @@ msgstr "``pyproject.toml`` ist in Abschnitte unterteilt; einer der Abschnitte be
 #: ../../tutorial/tutorial-7.rst:349 4ea8acaba5ce4e85806f3db4e19fe8a0
 #, fuzzy
 msgid "The ``requires`` option describes the dependencies of our application. It is a list of strings, specifying libraries (and, optionally, versions) of libraries that you want to be included with your app."
-msgstr "Die Option ``requires`` beschreibt die Abhängigkeiten unserer Anwendung. Es handelt sich um eine Liste von Strings, die die Bibliotheken (und optional die Versionen) der Bibliotheken angeben, die Sie in Ihre Anwendung aufnehmen möchten."
+msgstr ""
+"Die Option ``requires`` beschreibt die Abhängigkeiten unserer Anwendung. Es "
+"handelt sich um eine Liste von Strings, die Bibliotheken (und optional die "
+"Versionen) der Bibliotheken angeben, die Sie in Ihre Anwendung aufnehmen "
+"möchten."
 
 #: ../../tutorial/tutorial-7.rst:353 215b6bf62ec8482691874d27e5c3097a
 #, fuzzy
