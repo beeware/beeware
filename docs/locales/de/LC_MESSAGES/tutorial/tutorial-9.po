@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-06 18:04+0800\n"
-"PO-Revision-Date: 2024-01-10 22:12+0000\n"
+"PO-Revision-Date: 2024-01-14 12:29+0000\n"
 "Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
 "tutorial-9/de/>\n"
@@ -73,7 +73,10 @@ msgstr "Lassen Sie uns diesen Platzhaltertest durch einen Test ersetzen, der üb
 #: ../../tutorial/tutorial-9.rst:130 1115980da7fc4e0e8134cc02e00cbb17
 #, fuzzy
 msgid "This defines two new tests, verifying the two behaviors we expect to see: the output when a name is provided, and the output when the name is empty."
-msgstr "Dies definiert zwei neue Tests, die die beiden erwarteten Verhaltensweisen überprüfen: die Ausgabe, wenn ein Name angegeben wird, und die Ausgabe, wenn der Name leer ist."
+msgstr ""
+"Dies definiert zwei neue Tests, die beiden erwarteten Verhaltensweisen "
+"überprüfen: die Ausgabe, wenn ein Name angegeben wird, und die Ausgabe, wenn "
+"der Name leer ist."
 
 #: ../../tutorial/tutorial-9.rst:133 8737194522ec4aa1a6141458810b5e7f
 #, fuzzy
@@ -137,7 +140,11 @@ msgstr "Wie bei ``briefcase dev --test`` wird die Option ``-r`` nur bei der erst
 #: ../../tutorial/tutorial-9.rst:512 ca610c1d4952409a8be471506cd75623
 #, fuzzy
 msgid "You can also use the ``--test`` option on mobile backends: - so ``briefcase run iOS --test`` and ``briefcase run android --test`` will both work, running the test suite on the mobile device you select."
-msgstr "Sie können auch die Option ``--test`` auf mobilen Backends verwenden: - so funktionieren ``briefcase run iOS --test`` und ``briefcase run android --test``, die die Testsuite auf dem von Ihnen ausgewählten mobilen Gerät ausführen."
+msgstr ""
+"Sie können auch die Option ``--test`` auf mobilen Backends verwenden: - so "
+"funktionieren ``briefcase run iOS --test`` und ``briefcase run android "
+"--test``, die Testsuite auf dem von Ihnen ausgewählten mobilen Gerät "
+"ausführen."
 
 #: ../../tutorial/tutorial-9.rst:517 71f93ac75c724e4daeba2125d30305a9
 #, fuzzy
