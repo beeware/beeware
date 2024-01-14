@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-06 18:04+0800\n"
-"PO-Revision-Date: 2024-01-13 02:06+0000\n"
-"Last-Translator: Sheep Cat <xymsyh@gmail.com>\n"
+"PO-Revision-Date: 2024-01-14 12:29+0000\n"
+"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "beeware/tutorial/tutorial-3/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -41,9 +41,9 @@ msgid "Creating your application scaffold"
 msgstr "创建应用程序脚手架"
 
 #: ../../tutorial/tutorial-3.rst:19 e4a82af20e3948548087a6293c088f08
-#, fuzzy
 msgid "Since this is the first time we're packaging our application, we need to create some configuration files and other scaffolding to support the packaging process. From the ``helloworld`` directory, run:"
-msgstr "由于这是第一次打包应用程序，我们需要创建一些配置文件和其他脚手架来支持打包过程。在 ``helloworld`` 目录中，运行"
+msgstr "由于这是第一次打包应用程序，我们需要创建一些配置文件和其他脚手架来支持打包过"
+"程。在 ``helloworld`` 目录中，运行:"
 
 #: ../../tutorial/tutorial-3.rst:25 ../../tutorial/tutorial-3.rst:174 ../../tutorial/tutorial-3.rst:257 ../../tutorial/tutorial-3.rst:351 099ee50f8f0743afa538b05a9a9aa7c1 701af6cf5fd14f23a4284b9ae631fd4e 84a9dff60fbd42e09bf700aeccf02dcc f03d8b5bbbe74508ac296b18fb4856a6
 msgid "macOS"
@@ -188,9 +188,9 @@ msgid "When you're ready to publish a real application, check out the Briefcase 
 msgstr "当您准备发布真正的应用程序时，请查看关于 \"设置 macOS 代码签名身份 <https://briefcase.readthedocs.io/en/latest/how-to/code-signing/macOS.html>`__\" 的公文包操作指南。"
 
 #: ../../tutorial/tutorial-3.rst:388 6277fafc898d4f7682269e55577b94bc
-#, fuzzy
 msgid "The output of the package step will be slightly different depending on your Linux distribution. If you're on a Debian-derived distribution, you'll see:"
-msgstr "软件包步骤的输出会因 Linux 发行版的不同而略有不同。如果你使用的是 Debian 衍生发行版，你会看到"
+msgstr "软件包步骤的输出会因 Linux 发行版的不同而略有不同。如果你使用的是 Debian "
+"衍生发行版，你会看到:"
 
 #: ../../tutorial/tutorial-3.rst:410 00f1238e5d104721a05c09c92a58c424
 #, fuzzy
@@ -233,9 +233,8 @@ msgid "Official installers for `Docker Engine <https://docs.docker.com/engine/in
 msgstr "Docker Engine <https://docs.docker.com/engine/install>`__ 的官方安装程序适用于一系列 Unix 发行版。请按照您所在平台的说明进行操作；不过，请确保不要在 \"无根 \"模式下安装 Docker。"
 
 #: ../../tutorial/tutorial-3.rst:472 c81e6ac37b1b4ad6b52102f679a53ead
-#, fuzzy
 msgid "Once you've installed Docker, you should be able to start an Linux container - for example:"
-msgstr "安装好 Docker 后，你就可以启动 Linux 容器了，例如"
+msgstr "安装好 Docker 后，你就可以启动 Linux 容器了，例如:"
 
 #: ../../tutorial/tutorial-3.rst:479 552176a735584970ab9cf06997345103
 #, fuzzy
@@ -243,9 +242,11 @@ msgid "will show you a Unix prompt (something like ``root@84444e31cff9:/#``) ins
 msgstr "将显示 Ubuntu 22.04 Docker 容器中的 Unix 提示（类似于 ``root@84444e31cff9:/#``）。键入 Ctrl-D 退出 Docker 并返回本地 shell。"
 
 #: ../../tutorial/tutorial-3.rst:483 cc8105ff411947a786788196adfe4ea5
-#, fuzzy
 msgid "Once you've got Docker installed, you can use Briefcase to build a package for any Linux distribution that Briefcase supports by passing in a Docker image as an argument. For example, to build a DEB package for Ubuntu 22.04 (Jammy), regardless of the operating system you're on, you can run:"
-msgstr "一旦安装了 Docker，只要将 Docker 镜像作为参数传递，就可以使用 Briefcase 为 Briefcase 支持的任何 Linux 发行版构建软件包。例如，要为 Ubuntu 22.04 (Jammy) 构建一个 DEB 包，无论你使用的是哪种操作系统，你都可以运行"
+msgstr ""
+"一旦安装了 Docker，只要将 Docker 镜像作为参数传递，就可以使用 Briefcase 为 "
+"Briefcase 支持的任何 Linux 发行版构建软件包。例如，要为 Ubuntu 22.04 (Jammy) "
+"构建一个 DEB 包，无论你使用的是哪种操作系统，你都可以运行:"
 
 #: ../../tutorial/tutorial-3.rst:492 91815e290c754f838026ef5f77f4406b
 #, fuzzy
