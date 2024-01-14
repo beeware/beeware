@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-06 18:04+0800\n"
-"PO-Revision-Date: 2024-01-13 02:06+0000\n"
-"Last-Translator: Sheep Cat <xymsyh@gmail.com>\n"
+"PO-Revision-Date: 2024-01-14 12:29+0000\n"
+"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "beeware/tutorial/tutorial-1/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -73,9 +73,10 @@ msgid "Bootstrap a new project"
 msgstr "引导新项目"
 
 #: ../../tutorial/tutorial-1.rst:58 857cba15deb840c4ae6c5d8c25c2c371
-#, fuzzy
 msgid "Let's start our first BeeWare project!  We're going to use the Briefcase ``new`` command to create an application called **Hello World**. Run the following from your command prompt:"
-msgstr "让我们开始第一个 BeeWare 项目！  我们将使用 Briefcase ``new`` 命令创建一个名为 **Hello World** 的应用程序。在命令提示符下运行以下命令"
+msgstr ""
+"让我们开始第一个 BeeWare 项目！  我们将使用 Briefcase ``new`` "
+"命令创建一个名为 **Hello World** 的应用程序。在命令提示符下运行以下命令:"
 
 #: ../../tutorial/tutorial-1.rst:82 1e01bec2f5fd473997361db27f3fc506
 #, fuzzy
