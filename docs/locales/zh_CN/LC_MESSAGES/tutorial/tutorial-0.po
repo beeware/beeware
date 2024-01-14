@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-06 18:04+0800\n"
-"PO-Revision-Date: 2024-01-13 02:06+0000\n"
-"Last-Translator: Sheep Cat <xymsyh@gmail.com>\n"
+"PO-Revision-Date: 2024-01-14 12:29+0000\n"
+"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "beeware/tutorial/tutorial-0/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -175,7 +175,7 @@ msgstr "如果使用 PowerShell 时收到错误信息：："
 #: ../../tutorial/tutorial-0.rst:169 255f848cc0e04bd5a4fcabb91dfa1391
 #, fuzzy
 msgid "Your Windows account doesn't have permissions to run scripts. To fix this:"
-msgstr "您的 Windows 账户没有运行脚本的权限。要解决这个问题"
+msgstr "您的 Windows 账户没有运行脚本的权限。要解决这个问题:"
 
 #: ../../tutorial/tutorial-0.rst:171 877c1dd85f5a48cf829b5d12b30003af
 #, fuzzy
