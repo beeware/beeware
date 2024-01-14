@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-07 09:54+0800\n"
-"PO-Revision-Date: 2024-01-10 22:12+0000\n"
+"PO-Revision-Date: 2024-01-14 12:29+0000\n"
 "Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
 "tutorial-2/de/>\n"
@@ -199,7 +199,12 @@ msgstr "Damit ist unser Layout fertiggestellt; der Rest der Startup-Methode ist 
 #: ../../tutorial/tutorial-2.rst:218 060650c8738e4a90bd6af19fe4705ed8
 #, fuzzy
 msgid "The last thing we need to do is define the handler for the button. A handler can be any method, generator, or asynchronous co-routine; it accepts the widget that generated the event as an argument, and will be invoked whenever the button is pressed::"
-msgstr "Als Letztes müssen wir den Handler für die Schaltfläche definieren. Ein Handler kann eine beliebige Methode, ein Generator oder eine asynchrone Co-Routine sein; er akzeptiert das Widget, das das Ereignis erzeugt hat, als Argument und wird immer dann aufgerufen, wenn die Schaltfläche gedrückt wird::"
+msgstr ""
+"Als Letztes müssen wir den Handler für die Schaltfläche definieren. Ein "
+"Handler kann eine beliebige Methode, ein Generator oder eine asynchrone Co-"
+"Routine sein; er akzeptiert das Widget, das Ereignis erzeugt hat, als "
+"Argument und wird immer dann aufgerufen, wenn die Schaltfläche gedrückt "
+"wird::"
 
 #: ../../tutorial/tutorial-2.rst:226 cb7c4f688c204cd79f4f5c1532b3314c
 #, fuzzy
