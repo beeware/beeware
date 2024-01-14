@@ -23,7 +23,8 @@ The first thing we'll need is a working Python interpreter.
       $ python3 --version
 
     If Python is installed, you'll see its version number. Otherwise, you'll
-    be prompted to install the command line developer tools.
+    be prompted to install the command line developer tools. Make sure that the
+    Python Version is between 3.8 and 3.11.
 
   .. group-tab:: Linux
 
