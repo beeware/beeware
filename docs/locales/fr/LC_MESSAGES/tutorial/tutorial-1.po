@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-06 18:04+0800\n"
-"PO-Revision-Date: 2024-01-14 01:02+0000\n"
+"PO-Revision-Date: 2024-01-15 15:06+0000\n"
 "Last-Translator: Lancelot Fouillet <lancelot.fouillet@orange.fr>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/beeware/tutorial/"
 "tutorial-1/fr/>\n"
@@ -16,24 +16,26 @@ msgstr ""
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../tutorial/tutorial-1.rst:3 6b15f54bec2546c79f0a21b50b918daa
-#, fuzzy
 msgid "Tutorial 1 - Your first app"
 msgstr "Tutoriel 1 - Votre première application"
 
 #: ../../tutorial/tutorial-1.rst:5 51df89d7190b4a91a2c5fe6d7143643a
-#, fuzzy
 msgid "We're ready to create our first application."
 msgstr "Nous sommes prêts à créer notre première application."
 
 #: ../../tutorial/tutorial-1.rst:8 7d3a0673b5374beea440391921843b45
-#, fuzzy
 msgid "Install the BeeWare tools"
 msgstr "Installer les outils BeeWare"
 
 #: ../../tutorial/tutorial-1.rst:10 f998a24067f4456281a877ebe6e53a42
-#, fuzzy
 msgid "First, we need to install **Briefcase**. Briefcase is a BeeWare tool that can be used to package your application for distribution to end users - but it can also be used to bootstrap a new project. Make sure you're in the ``beeware-tutorial`` directory you created in :doc:`Tutorial 0 <tutorial-0>`, with the ``beeware-venv`` virtual environment activated, and run:"
-msgstr "Tout d'abord, nous devons installer **Briefcase**. Briefcase est un outil BeeWare qui peut être utilisé pour empaqueter votre application afin de la distribuer aux utilisateurs finaux - mais il peut également être utilisé pour démarrer un nouveau projet. Assurez-vous d'être dans le répertoire ``beeware-tutorial`` que vous avez créé dans :doc:`Tutorial 0 <tutorial-0>`, avec l'environnement virtuel ``beeware-venv`` activé, et lancez :"
+msgstr ""
+"Tout d'abord, nous devons installer **Briefcase**. Briefcase est un outil "
+"BeeWare qui peut être utilisé pour empaqueter votre application afin de la "
+"distribuer aux utilisateurs finaux – mais il peut également être utilisé "
+"pour démarrer un nouveau projet. Assurez-vous d'être dans le répertoire "
+"``beeware-tutorial`` que vous avez créé dans :doc:`Tutorial 0 <tutorial-0>`, "
+"avec l'environnement virtuel ``beeware-venv`` activé, et lancez :"
 
 #: ../../tutorial/tutorial-1.rst:18 ../../tutorial/tutorial-1.rst:64 ../../tutorial/tutorial-1.rst:163 ../../tutorial/tutorial-1.rst:206 29eb3427ac404ea79b348996b9eada95 9b68194071074e4e846f6bc195da9b4e a43fae5f4b954f859b0fceceae7b41ad ed897f448baa40c4b125a30aead48e41
 msgid "macOS"
@@ -44,48 +46,58 @@ msgid "Linux"
 msgstr "Linux"
 
 #: ../../tutorial/tutorial-1.rst:30 ../../tutorial/tutorial-1.rst:43 f5955aff55b84203bc5dc86171a03de8 f733848915e84f57a580698d2a06c61b
-#, fuzzy
 msgid "Possible errors during installation"
 msgstr "Erreurs possibles lors de l'installation"
 
 #: ../../tutorial/tutorial-1.rst:32 4f46fd89e5a64e309fc0fefaee9ac1d7
-#, fuzzy
 msgid "If you see errors during installation, it's almost certainly because some of the system requirements haven't been installed. Make sure you have :ref:`installed all the platform pre-requisites <install-dependencies>`."
-msgstr "Si vous rencontrez des erreurs pendant l'installation, c'est très certainement parce que certains des pré-requis du système n'ont pas été installés. Assurez-vous d'avoir :ref:`installé tous les pré-requis de la plateforme <install-dependencies>`."
+msgstr ""
+"Si vous rencontrez des erreurs pendant l'installation, c'est très "
+"certainement parce que certains des prérequis du système n'ont pas été "
+"installés. Assurez-vous d'avoir :ref:`installé tous les prérequis de la "
+"plateforme <install-dependencies>`."
 
 #: ../../tutorial/tutorial-1.rst:37 ../../tutorial/tutorial-1.rst:76 ../../tutorial/tutorial-1.rst:189 ../../tutorial/tutorial-1.rst:216 572fb98f93f2482b8cd97ae0228ada50 8930f98d45994ca1ae7f849ba2eced6e dc2e0a487cd4434598f283de98efeec3 ee6bd27c82104f298ba5d9e54b264801
 msgid "Windows"
 msgstr "Windows"
 
 #: ../../tutorial/tutorial-1.rst:45 39abb37c670c4787b635443c9d355d1e
-#, fuzzy
 msgid "It is important that you use ``python -m pip``, rather than a bare ``pip``. Briefcase needs to ensure that it has an up-to-date version of ``pip`` and ``setuptools``, and a bare invocation of ``pip`` can't self-update. If you want to know more, `Brett Cannon has a detailed blog post about the issue <https://snarky.ca/why-you-should-use-python-m-pip/>`__."
-msgstr "Il est important que vous utilisiez ``python -m pip``, plutôt qu'un simple ``pip``. Briefcase doit s'assurer qu'il a une version à jour de ``pip`` et de ``setuptools``, et une invocation simple de ``pip`` ne peut pas s'auto-mettre à jour. Si vous voulez en savoir plus, `Brett Cannon a publié un billet de blog détaillé sur ce problème <https://snarky.ca/why-you-should-use-python-m-pip/>`__."
+msgstr ""
+"Il est important que vous utilisiez ``python -m pip``, plutôt qu'un simple "
+"``pip``. Briefcase doit s'assurer qu'il a une version à jour de ``pip`` et "
+"de ``setuptools``, et une simple utilisation de ``pip`` ne peut pas se "
+"mettre à jour d'elle-même. Si vous voulez en savoir plus, `Brett Cannon a "
+"publié un billet de blog détaillé sur ce problème <https://snarky.ca/"
+"why-you-should-use-python-m-pip/>`__."
 
 #: ../../tutorial/tutorial-1.rst:51 21e0b2dc22684b0d938ad248f2d614ef
-#, fuzzy
 msgid "One of the BeeWare tools is **Briefcase**. Briefcase can be used to package your application for distribution to end users - but it can also be used to bootstrap a new project."
-msgstr "L'un des outils de BeeWare est **Briefcase**. Briefcase peut être utilisé pour empaqueter votre application afin de la distribuer aux utilisateurs finaux, mais il peut également être utilisé pour démarrer un nouveau projet."
+msgstr ""
+"L'un des outils de BeeWare est **Briefcase**. Briefcase peut être utilisé "
+"pour empaqueter votre application afin de la distribuer aux utilisateurs "
+"finaux, mais il peut également être utilisé pour démarrer un nouveau projet."
 
 #: ../../tutorial/tutorial-1.rst:56 82d99b2cce94417b8214c68541122f62
-#, fuzzy
 msgid "Bootstrap a new project"
 msgstr "Créer un nouveau projet"
 
 #: ../../tutorial/tutorial-1.rst:58 857cba15deb840c4ae6c5d8c25c2c371
-#, fuzzy
 msgid "Let's start our first BeeWare project!  We're going to use the Briefcase ``new`` command to create an application called **Hello World**. Run the following from your command prompt:"
-msgstr "Commençons notre premier projet BeeWare !  Nous allons utiliser la commande ``new`` de Briefcase pour créer une application appelée **Hello World**. Exécutez la commande suivante à partir de votre invite de commande :"
+msgstr ""
+"Commençons notre premier projet BeeWare ! Nous allons utiliser la commande "
+"``new`` de Briefcase pour créer une application appelée **Hello World**. "
+"Exécutez la commande suivante à partir de votre invite de commande :"
 
 #: ../../tutorial/tutorial-1.rst:82 1e01bec2f5fd473997361db27f3fc506
-#, fuzzy
 msgid "Briefcase will ask us for some details of our new application. For the purposes of this tutorial, use the following:"
-msgstr "Briefcase nous demandera quelques détails sur notre nouvelle application. Pour les besoins de ce tutoriel, nous utiliserons les éléments suivants :"
+msgstr ""
+"Briefcase nous demandera quelques détails sur notre nouvelle application. "
+"Pour les besoins de ce tutoriel, nous utiliserons les éléments suivants :"
 
 #: ../../tutorial/tutorial-1.rst:85 5dfa078a8ad445fd92c029670496c7ea
-#, fuzzy
 msgid "**Formal Name** - Accept the default value: ``Hello World``."
-msgstr "**Nom officiel** - Acceptez la valeur par défaut : ``Hello World``."
+msgstr "**Nom formel** – Acceptez la valeur par défaut : ``Hello World``."
 
 #: ../../tutorial/tutorial-1.rst:87 07c0048f705e4d1cb2228da2ba96a971
 #, fuzzy
