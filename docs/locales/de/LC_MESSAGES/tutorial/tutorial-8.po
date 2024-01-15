@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-06 18:04+0800\n"
-"PO-Revision-Date: 2024-01-14 12:29+0000\n"
+"PO-Revision-Date: 2024-01-15 09:06+0000\n"
 "Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
 "tutorial-8/de/>\n"
@@ -106,7 +106,16 @@ msgstr "Asynchrone Funktionen (so genannte *Co-Routinen*) müssen ausdrücklich 
 #: ../../tutorial/tutorial-8.rst:78 7959d9ed3a64421fa7ffc09b0887d9c4
 #, fuzzy
 msgid "In Python, asynchronous programming is implemented using the ``async`` and ``await`` keywords, and the `asyncio <https://docs.python.org/3/library/asyncio.html>`__ module in the standard library. The ``async`` keyword allows us to declare that a function is an asynchronous co-routine. The ``await`` keyword provides a way to declare when an opportunity exists to change context to another co-routine. The `asyncio <https://docs.python.org/3/library/asyncio.html>`__ module provides some other useful tools and primitives for asynchronous coding."
-msgstr "In Python wird die asynchrone Programmierung mit den Schlüsselwörtern ``async`` und ``await`` und dem Modul `asyncio <https://docs.python.org/3/library/asyncio.html>`__ in der Standardbibliothek implementiert. Mit dem Schlüsselwort ``async`` können wir eine Funktion als asynchrone Co-Routine deklarieren. Mit dem Schlüsselwort ``await`` kann man angeben, wann die Möglichkeit besteht, den Kontext zu einer anderen Co-Routine zu wechseln. Das Modul `asyncio <https://docs.python.org/3/library/asyncio.html>`__ bietet einige andere nützliche Werkzeuge und Primitive für asynchrone Programmierung."
+msgstr ""
+"In Python wird die asynchrone Programmierung mit den Schlüsselwörtern "
+"``async`` und ``await``, und dem Modul `asyncio <https://docs.python.org/3/"
+"library/asyncio.html>`__ in der Standardbibliothek implementiert. Mit dem "
+"Schlüsselwort ``async`` können wir eine Funktion als asynchrone Co-Routine "
+"deklarieren. Mit dem Schlüsselwort ``await`` kann man angeben, wann die "
+"Möglichkeit besteht, den Kontext zu einer anderen Co-Routine zu wechseln. "
+"Das Modul `asyncio <https://docs.python.org/3/library/asyncio.html>`__ "
+"bietet einige andere nützliche Werkzeuge und Primitive für asynchrone "
+"Programmierung."
 
 #: ../../tutorial/tutorial-8.rst:88 77865dc75945439094e3b222e71b3c2c
 #, fuzzy
