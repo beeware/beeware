@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-06 18:04+0800\n"
-"PO-Revision-Date: 2024-01-18 12:00+0000\n"
-"Last-Translator: Kamborio <Kamborio15@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2024-01-18 18:00+0000\n"
+"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/"
 "tutorial-10/es/>\n"
 "Language: es\n"
@@ -21,17 +21,17 @@ msgid "Tutorial 10 - Make this app your own"
 msgstr "Tutorial 10 - Haz tuya esta aplicación"
 
 #: ../../tutorial/tutorial-10.rst:7 cf6d0c81b00b49a799a6f8e4a4d1c37e
-#, fuzzy
 msgid "So far, our app has used a default \"gray bee\" icon. How do we update the app to use our own icon?"
-msgstr "Hasta ahora, nuestra aplicación utilizaba un icono de \"abeja gris\" por defecto. Cómo actualizamos la aplicación para que utilice nuestro propio icono?"
+msgstr ""
+"Hasta ahora, nuestra aplicación ha utilizado un ícono predeterminado de "
+"\"abeja gris\". ¿Cómo actualizamos la aplicación para usar nuestro propio "
+"ícono?"
 
 #: ../../tutorial/tutorial-10.rst:11 8d544e586a094fcf9ce8778feb304db2
-#, fuzzy
 msgid "Adding an icon"
 msgstr "Añadir un icono"
 
 #: ../../tutorial/tutorial-10.rst:13 60c9ddb282cd44699f9e83b1e857b013
-#, fuzzy
 msgid "**Coming soon**"
 msgstr "**Próximamente**"
 
@@ -40,6 +40,8 @@ msgid "Next steps"
 msgstr "Siguientes pasos"
 
 #: ../../tutorial/tutorial-10.rst:18 bee80af130bb4037bf17213f2decaa74
-#, fuzzy
 msgid "We've now got an application with a custom icon on our desktop and phone! How do we share this application with everyone else? Turn to :doc:`Tutorial 11 <tutorial-11>` to find out..."
-msgstr "¡Ya tenemos una aplicación con un icono personalizado en nuestro escritorio y teléfono! ¿Cómo compartimos esta aplicación con los demás? Visita :doc:`Tutorial 11 <tutorial-11>` para averiguarlo..."
+msgstr ""
+"¡Ya tenemos una aplicación con un icono personalizado en nuestro escritorio "
+"y teléfono! ¿Cómo compartimos esta aplicación con los demás? Visita :doc:`"
+"Tutorial 11 <tutorial-11>` para descubrirlo..."
