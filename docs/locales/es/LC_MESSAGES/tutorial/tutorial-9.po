@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-06 18:04+0800\n"
-"PO-Revision-Date: 2024-01-18 12:00+0000\n"
-"Last-Translator: Kamborio <Kamborio15@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2024-01-18 18:00+0000\n"
+"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/"
 "tutorial-9/es/>\n"
 "Language: es\n"
@@ -137,21 +137,25 @@ msgid "Next steps"
 msgstr "Siguientes pasos"
 
 #: ../../tutorial/tutorial-9.rst:519 b576805fd1b04f66ae424268666f57bc
-#, fuzzy
 msgid "This has been a taste for what you can do with the tools provided by the BeeWare project. What you do from here is up to you!"
-msgstr "Esto ha sido una muestra de lo que puedes hacer con las herramientas que te proporciona el proyecto BeeWare. Lo que hagas a partir de aquí depende de ti"
+msgstr ""
+"Esta ha sido una muestra de lo que se puede hacer con las herramientas que "
+"proporciona el proyecto BeeWare. ¡Lo que hagas desde aquí depende de ti!"
 
 #: ../../tutorial/tutorial-9.rst:522 546eb57cefca4aa881586503c6ffa85a
-#, fuzzy
 msgid "Some places to go from here:"
-msgstr "Algunos lugares a los que ir desde aquí:"
+msgstr "Algunos sitios a los que ir desde aquí:"
 
 #: ../../tutorial/tutorial-9.rst:524 70dcdd69f7e3487ba44fef863a357d4e
-#, fuzzy
 msgid "Tutorials demonstrating `features of the Toga widget toolkit <https://toga.readthedocs.io/en/latest/tutorial/index.html>`__."
-msgstr "Tutoriales que demuestran `características del conjunto de herramientas de widgets Toga <https://toga.readthedocs.io/en/latest/tutorial/index.html>`__."
+msgstr ""
+"Tutoriales que demuestran `características del conjunto de las herramientas "
+"del widgets Toga <https://toga.readthedocs.io/en/latest/tutorial/index."
+"html>`__."
 
 #: ../../tutorial/tutorial-9.rst:526 22ea03aceefa4368912b405b5f42f136
-#, fuzzy
 msgid "Details on the `options available when configuring your Briefcase project <https://briefcase.readthedocs.io/en/latest/reference/index.html>`__."
-msgstr "Detalles sobre las `opciones disponibles al configurar su proyecto Briefcase <https://briefcase.readthedocs.io/en/latest/reference/index.html>`__."
+msgstr ""
+"Detalles sobre las `opciones disponibles al configurar su proyecto en "
+"Briefcase <https://briefcase.readthedocs.io/en/latest/reference/index."
+"html>`__."
