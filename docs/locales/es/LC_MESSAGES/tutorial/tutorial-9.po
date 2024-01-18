@@ -1,19 +1,19 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-06 18:04+0800\n"
-"PO-Revision-Date: 2024-01-06 20:03+0800\n"
-"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
-"Language-Team: es <LL@li.org>\n"
+"PO-Revision-Date: 2024-01-18 12:00+0000\n"
+"Last-Translator: Kamborio <Kamborio15@users.noreply.hosted.weblate.org>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/"
+"tutorial-9/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.4-dev\n"
 "Generated-By: Babel 2.14.0\n"
-"X-Generator: Poedit 3.4.2\n"
 
 #: ../../tutorial/tutorial-9.rst:3 6c187687d357400e8159acfc2310f3ad
 #, fuzzy
@@ -46,17 +46,14 @@ msgid "We can run this test suite using the ``--test`` option to ``briefcase dev
 msgstr "Podemos ejecutar este conjunto de pruebas utilizando la opción ``--test`` de ``briefcase dev``. Como es la primera vez que ejecutamos pruebas, también necesitamos pasar la opción ``-r`` para asegurarnos de que también se instalan los requisitos de las pruebas:"
 
 #: ../../tutorial/tutorial-9.rst:34 ../../tutorial/tutorial-9.rst:139 ../../tutorial/tutorial-9.rst:209 ../../tutorial/tutorial-9.rst:326 ../../tutorial/tutorial-9.rst:396 2d0972cbbeeb4e77895e7aae91dd4c59 688015a82c4146f7b30fb258b0bcc40f b6a7250a1ab84134b7428005cbf4171a dfa1302f47744c64ac41ead479b9ede3 ebac0b692c99495186922ae86d966858
-#, fuzzy
 msgid "macOS"
 msgstr "macOS"
 
 #: ../../tutorial/tutorial-9.rst:57 ../../tutorial/tutorial-9.rst:156 ../../tutorial/tutorial-9.rst:241 ../../tutorial/tutorial-9.rst:344 ../../tutorial/tutorial-9.rst:438 0d2fe9341c874dc9af33d8ba5e387d1a 19337f530c3b4f11ab90830942df9782 b20c52fa79bf49169c8ea1b9b54dc512 c9240e5a002948a386fb2a4684bac677 f704bfa369654e50857610d716194c88
-#, fuzzy
 msgid "Linux"
 msgstr "Linux"
 
 #: ../../tutorial/tutorial-9.rst:83 ../../tutorial/tutorial-9.rst:173 ../../tutorial/tutorial-9.rst:275 ../../tutorial/tutorial-9.rst:362 ../../tutorial/tutorial-9.rst:471 0485d7cdc0704947b2ad032c7b1fec43 275a5a4bf83245328e341ddacc601c46 2b614984d7494cbbaaeabc1f1016424f 6226e747fa7c4b79ab5395dbc46f7018 c3f6b483b851411786e9fa6212489a14
-#, fuzzy
 msgid "Windows"
 msgstr "Windows"
 
@@ -136,7 +133,6 @@ msgid "You can also use the ``--test`` option on mobile backends: - so ``briefca
 msgstr "También puedes utilizar la opción ``--test`` en backends móviles: - así ``briefcase run iOS --test`` y ``briefcase run android --test`` funcionarán, ejecutando el conjunto de pruebas en el dispositivo móvil que selecciones."
 
 #: ../../tutorial/tutorial-9.rst:517 71f93ac75c724e4daeba2125d30305a9
-#, fuzzy
 msgid "Next steps"
 msgstr "Siguientes pasos"
 
