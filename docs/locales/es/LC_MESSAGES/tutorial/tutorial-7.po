@@ -1,19 +1,19 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-06 18:04+0800\n"
-"PO-Revision-Date: 2024-01-06 20:03+0800\n"
-"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
-"Language-Team: es <LL@li.org>\n"
+"PO-Revision-Date: 2024-01-18 12:00+0000\n"
+"Last-Translator: Kamborio <Kamborio15@users.noreply.hosted.weblate.org>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/"
+"tutorial-7/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.4-dev\n"
 "Generated-By: Babel 2.14.0\n"
-"X-Generator: Poedit 3.4.2\n"
 
 #: ../../tutorial/tutorial-7.rst:3 8ad7bf512a0341b6aeb95e5d97c7c838
 #, fuzzy
@@ -96,17 +96,14 @@ msgid "Lets run our updated app in Briefcase developer mode to check that our ch
 msgstr "Vamos a ejecutar nuestra aplicación actualizada en el modo de desarrollador de Briefcase para comprobar que nuestro cambio ha funcionado."
 
 #: ../../tutorial/tutorial-7.rst:72 ../../tutorial/tutorial-7.rst:138 ../../tutorial/tutorial-7.rst:187 ../../tutorial/tutorial-7.rst:409 7bdd2fffeb32409f8bcc7143ecccb2e2 910885354fee4bfca9ffe18022ac1c56 9ce215aaab6f4c2fb3f457e14d6cecae b2dcfff9372146899d2309f5741d1106
-#, fuzzy
 msgid "macOS"
 msgstr "macOS"
 
 #: ../../tutorial/tutorial-7.rst:92 ../../tutorial/tutorial-7.rst:151 ../../tutorial/tutorial-7.rst:224 ../../tutorial/tutorial-7.rst:430 42a7ad1beb784da287fb2e34526e9bc1 a3473c3453594db9af1399e08fe4d8c3 df70e9d40c2d436e8fa6ed053d6325cd f42850071bd0417699ecc616bee89009
-#, fuzzy
 msgid "Linux"
 msgstr "Linux"
 
 #: ../../tutorial/tutorial-7.rst:112 ../../tutorial/tutorial-7.rst:164 ../../tutorial/tutorial-7.rst:277 ../../tutorial/tutorial-7.rst:458 0d1a69cd2f4a414cae311ca89484e190 3729ec0e47464fe38cce2e5cc8456a20 c8ba6792ac64463dbc6d4167d40c0a71 e429f78fe30548c2872e2ec7945b3128
-#, fuzzy
 msgid "Windows"
 msgstr "Windows"
 
@@ -301,7 +298,6 @@ msgid "The ``-r`` option for updating requirements is also honored by the ``buil
 msgstr "La opción ``-r`` para actualizar los requisitos también es respetada por los comandos ``build`` y ``run``, así que si quieres actualizar, construir y ejecutar en un solo paso, puedes usar ``briefcase run -u -r``."
 
 #: ../../tutorial/tutorial-7.rst:490 70d1d14b15d64985b7f6bcc6cc830fad
-#, fuzzy
 msgid "Next steps"
 msgstr "Siguientes pasos"
 
