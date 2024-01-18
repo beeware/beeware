@@ -1,19 +1,19 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-06 18:04+0800\n"
-"PO-Revision-Date: 2024-01-06 20:03+0800\n"
-"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
-"Language-Team: es <LL@li.org>\n"
+"PO-Revision-Date: 2024-01-18 12:00+0000\n"
+"Last-Translator: Kamborio <Kamborio15@users.noreply.hosted.weblate.org>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/"
+"tutorial-6/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.4-dev\n"
 "Generated-By: Babel 2.14.0\n"
-"X-Generator: Poedit 3.4.2\n"
 
 #: ../../tutorial/tutorial-6.rst:3 2a532cc3806d417fa3be690ab757a4b2
 #, fuzzy
@@ -51,17 +51,14 @@ msgid "The process of deploying as a single-page web app follows the same famili
 msgstr "El proceso de despliegue de una aplicación web de una sola página sigue el mismo patrón familiar: se crea la aplicación, se compila y se ejecuta. Sin embargo, Briefcase puede ser un poco inteligente; si intentas ejecutar una aplicación, y Briefcase determina que no ha sido creada o construida para la plataforma a la que se dirige, realizará los pasos de creación y construcción por ti. Dado que esta es la primera vez que ejecutamos la aplicación para la web, podemos realizar los tres pasos con un solo comando:"
 
 #: ../../tutorial/tutorial-6.rst:34 510f5b2ca0884038a8e30fb9a096af4d
-#, fuzzy
 msgid "macOS"
 msgstr "macOS"
 
 #: ../../tutorial/tutorial-6.rst:72 52e1585ec59c40f781a5ca2464633807
-#, fuzzy
 msgid "Linux"
 msgstr "Linux"
 
 #: ../../tutorial/tutorial-6.rst:110 fa0f7530ac0f457581d5b701b434bdae
-#, fuzzy
 msgid "Windows"
 msgstr "Windows"
 
@@ -96,7 +93,6 @@ msgid "But when you press the button, you're running Python code... how does tha
 msgstr "Pero cuando pulsas el botón, estás ejecutando código Python... ¿cómo funciona eso? Toga utiliza `PyScript <https://pyscript.net>`__ para proporcionar un intérprete de Python en el navegador. Briefcase empaqueta el código de tu aplicación como ruedas que PyScript puede cargar en el navegador. Cuando se carga la página, el código de la aplicación se ejecuta en el navegador, construyendo la interfaz de usuario utilizando el DOM del navegador. Cuando pulsas un botón, ese botón ejecuta el código de gestión de eventos en el navegador."
 
 #: ../../tutorial/tutorial-6.rst:173 c0712cbbdbb5474fae8a3b7ea9e1f165
-#, fuzzy
 msgid "Next steps"
 msgstr "Siguientes pasos"
 
