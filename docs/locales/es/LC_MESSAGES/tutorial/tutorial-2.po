@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-07 09:54+0800\n"
-"PO-Revision-Date: 2024-01-18 12:00+0000\n"
-"Last-Translator: Kamborio <Kamborio15@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2024-01-23 12:02+0000\n"
+"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/"
 "tutorial-2/es/>\n"
 "Language: es\n"
@@ -21,29 +21,37 @@ msgid "Tutorial 2 - Making it interesting"
 msgstr "Tutorial 2 - Hacerlo interesante"
 
 #: ../../tutorial/tutorial-2.rst:5 9243ae1890a444c1a2ac5ed207ffb2b9
-#, fuzzy
 msgid "In :doc:`Tutorial 1 <tutorial-1>`, we generated a stub project that was able to run, but we didn't write any code ourselves. Let's take a look at what was generated for us."
-msgstr "En :doc:`Tutorial 1 <tutorial-1>`, generamos un proyecto stub que era capaz de ejecutarse, pero no escribimos ningún código nosotros mismos. Echemos un vistazo a lo que se generó para nosotros."
+msgstr ""
+"En :doc:`Tutorial 1 <tutorial-1>`, generamos un proyecto stub que era capaz "
+"de ejecutarse, pero no escribimos ningún código nosotros mismos. Echemos un "
+"vistazo a lo que se generó para nosotros."
 
 #: ../../tutorial/tutorial-2.rst:10 e9ebf421d32d4033b9798ae970b813ab
-#, fuzzy
 msgid "What was generated"
-msgstr "Lo que se generó"
+msgstr "Qué se generó"
 
 #: ../../tutorial/tutorial-2.rst:12 50b605789b834bc7b4fbf912c0adb10b
-#, fuzzy
 msgid "In the ``src/helloworld`` directory, you should see 3 files: ``__init__.py``, ``__main__.py`` and ``app.py``."
-msgstr "En el directorio ``src/helloworld``, deberías ver 3 archivos: ``__init__.py``, ``__main__.py`` y ``app.py``."
+msgstr ""
+"En el directorio ``src/helloworld``, deberías ver 3 archivos: ``__init__.py``"
+", ``__main__.py`` y ``app.py``."
 
 #: ../../tutorial/tutorial-2.rst:15 3f2c12dc8d5d441fb7808bf022dc78e5
-#, fuzzy
 msgid "``__init__.py`` marks the ``helloworld`` directory as an importable Python module. It is an empty file; the very fact it exists tells the Python interpreter that the ``helloworld`` directory defines a module."
-msgstr "``__init__.py`` marca el directorio ``helloworld`` como un módulo importable de Python. Es un archivo vacío; el mero hecho de que exista le dice al intérprete de Python que el directorio ``helloworld`` define un módulo."
+msgstr ""
+"``__init__.py`` marca el directorio ``helloworld`` como un módulo importable "
+"de Python. Es un archivo vacío; el mero hecho de que exista le dice al "
+"intérprete de Python que el directorio ``helloworld`` define un módulo."
 
 #: ../../tutorial/tutorial-2.rst:19 3aa0f503e2fa4451bb9838717732de67
-#, fuzzy
 msgid "``__main__.py`` marks the ``helloworld`` module as a special kind of module - an executable module. If you try to run the ``helloworld`` module using ``python -m helloworld``, the ``__main__.py`` file is where Python will start executing. The contents of ``__main__.py`` is relatively simple::"
-msgstr "``__main__.py`` marca el módulo ``helloworld`` como un tipo especial de módulo - un módulo ejecutable. Si intentas ejecutar el módulo ``helloworld`` usando ``python -m helloworld``, el archivo ``__main__.py`` es donde Python empezará a ejecutarse. El contenido de ``__main__.py`` es relativamente simple::"
+msgstr ""
+"``__main__.py`` marca el módulo ``helloworld`` como un tipo especial de "
+"módulo - un módulo ejecutable. Si intentas ejecutar el módulo ``helloworld`` "
+"usando ``python -m helloworld``, el archivo ``__main__.py`` es donde Python "
+"empezará a ejecutarse. El contenido de ``__main__.py`` es relativamente "
+"simple::"
 
 #: ../../tutorial/tutorial-2.rst:29 2cb39aab85b34665b518db1e45270039
 #, fuzzy
