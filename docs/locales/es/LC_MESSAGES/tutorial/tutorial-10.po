@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-06 18:04+0800\n"
-"PO-Revision-Date: 2024-01-18 18:00+0000\n"
+"PO-Revision-Date: 2024-01-23 12:02+0000\n"
 "Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/"
 "tutorial-10/es/>\n"
@@ -16,9 +16,8 @@ msgstr ""
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../tutorial/tutorial-10.rst:5 41f1bed0da4649b39dad21024689a3c9
-#, fuzzy
 msgid "Tutorial 10 - Make this app your own"
-msgstr "Tutorial 10 - Haz tuya esta aplicación"
+msgstr "Tutorial 10 – Crea tu propia aplicación"
 
 #: ../../tutorial/tutorial-10.rst:7 cf6d0c81b00b49a799a6f8e4a4d1c37e
 msgid "So far, our app has used a default \"gray bee\" icon. How do we update the app to use our own icon?"
