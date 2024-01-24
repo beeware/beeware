@@ -1,0 +1,45 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Russell Keith-Magee
+# This file is distributed under the same license as the BeeWare package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BeeWare 0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-24 17:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: pt <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../tutorial/tutorial-10.rst:5 6a4818dc5b674e9c9416e6739d64ded3
+msgid "Tutorial 10 - Make this app your own"
+msgstr ""
+
+#: ../../tutorial/tutorial-10.rst:7 076c3e8e3ba1400096c4b44204f39273
+msgid "So far, our app has used a default \"gray bee\" icon. How do we update the app to use our own icon?"
+msgstr ""
+
+#: ../../tutorial/tutorial-10.rst:11 3fc513b35f3f407d9f91cad6ca12fc87
+msgid "Adding an icon"
+msgstr ""
+
+#: ../../tutorial/tutorial-10.rst:13 80eb9b32e0a04d9199ffb70f37fe8caa
+msgid "**Coming soon**"
+msgstr ""
+
+#: ../../tutorial/tutorial-10.rst:16 8d1fc845b4fd4417a631e9fd89d4304a
+msgid "Next steps"
+msgstr ""
+
+#: ../../tutorial/tutorial-10.rst:18 5704f3132e154214a68bffd08950db99
+msgid "We've now got an application with a custom icon on our desktop and phone! How do we share this application with everyone else? Turn to :doc:`Tutorial 11 <tutorial-11>` to find out..."
+msgstr ""
+

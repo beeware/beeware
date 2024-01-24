@@ -1,0 +1,149 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Russell Keith-Magee
+# This file is distributed under the same license as the BeeWare package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BeeWare 0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-24 17:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: pt <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../tutorial/tutorial-9.rst:3 7283ab2e1b7b4b2496b80a98a9234683
+msgid "Tutorial 9 - Testing times"
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:5 360dd3eff30840e1a78aaf7330d53cf2
+msgid "Most software development doesn't involve writing new code - it's modifying existing code. Ensuring that existing code continues to work in the way we expect is a key part of the software development process. One way to do ensure the behavior of our app is with a *test suite*."
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:11 6526c9d3ca944002857a6771a8029c28
+msgid "Running the test suite"
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:13 ef19396c6a3042de9704d600bce16fc4
+msgid "It turns out our project already has a test suite! When we originally generated our project, two top-level directories were generated: ``src`` and ``tests``. The ``src`` folder contains the code for our app; the ``tests`` folder contains our test suite. Inside the ``tests`` folder is a file named ``test_app.py`` with the following content::"
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:23 c04cdffc07a5434095c27fb2ad16165e
+msgid "This is a `Pytest <https://pytest.org>`__ *test case* - a block of code that can be executed to verify some behavior of your app. In this case, the test is a placeholder, and doesn't test anything about our app - but it is a test that we can perform."
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:28 3ac9cafa37f3465285d0a84217b71310
+msgid "We can run this test suite using the ``--test`` option to ``briefcase dev``. As this is the first time we are running tests, we also need to pass in the ``-r`` option to ensure that the test requirements are also installed:"
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:34 ../../tutorial/tutorial-9.rst:139
+#: ../../tutorial/tutorial-9.rst:209 ../../tutorial/tutorial-9.rst:326
+#: ../../tutorial/tutorial-9.rst:396 08ea652d31ab44eab8feca11b018df28
+#: 0e55a82faf4b4104b89532e9c6425595 8a1d197abd5647c8b8bd6fe94c19d2fd
+#: 9483cf95f88f460896fb82f83ed186c6 e3466cb5eb7349cf826d41914b921215
+msgid "macOS"
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:57 ../../tutorial/tutorial-9.rst:156
+#: ../../tutorial/tutorial-9.rst:241 ../../tutorial/tutorial-9.rst:344
+#: ../../tutorial/tutorial-9.rst:438 0c65afd3acd442f4bad4e4d404843a78
+#: 166e6a657e924689b8c6f3908a2a997d 7cab7a4121d74b7a9be5ab35e78f8bc1
+#: 889c34bf73a746528090f5bbff8c50ca b378b7be0b8e4c5a893fe9c0a1e46c3e
+msgid "Linux"
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:83 ../../tutorial/tutorial-9.rst:173
+#: ../../tutorial/tutorial-9.rst:275 ../../tutorial/tutorial-9.rst:362
+#: ../../tutorial/tutorial-9.rst:471 0cf136fd233942239ad689a188c012a9
+#: 272fec9125914a428d1e5b591743d596 3f6c7e152b814ebabbec3c0ba171f014
+#: 4aa749d5fa2c4e769837e4483adca5ad ccfdf876071048938f326824894b3072
+msgid "Windows"
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:109 9e23174ff2d343d5805d71756247bc53
+msgid "Success! We've just executed a single test that verifies Python math works in the way we'd expect (What a relief!)."
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:112 865cfdb2172f49a9bbb403b7777a2b45
+msgid "Let's replace this placeholder test with a test to verify that our ``greeting()`` method behaves the way we'd expect. Replace the contents of ``test_app.py`` with the following::"
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:130 7e3beba114314cc693c2c16f787fb3e8
+msgid "This defines two new tests, verifying the two behaviors we expect to see: the output when a name is provided, and the output when the name is empty."
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:133 ba6642b0a0134b988c907ba554d3013f
+msgid "We can now re-run the test suite. This time, we don't need to provided the ``-r`` option, as the test requirements have already been installed; we only need to use the ``--test`` option:"
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:190 ffc106d3bad2468895a2e050e0f54eb6
+msgid "Excellent! Our ``greeting()`` utility method is working as expected."
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:193 9476f5d519fd4062adbb84b12f2adc64
+msgid "Test driven development"
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:195 c473fbd801d340079a33d400fe0024bc
+msgid "Now that we have a test suite, we can use it to drive the development of new features. Let's modify our app to have a special greeting for one particular user. We can start by adding a test case for the new behavior that we'd like to see to the bottom of ``test_app.py``::"
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:205 173ffb5fae2744b0a6003bd9e76d6d13
+msgid "Then, run the test suite with this new test:"
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:307 afb9c10b930c4332a142195094ccf11b
+msgid "This time, we see a test failure - and the output explains the source of the failure: the test is expecting the output \"BeeWare the IDEs of Python!\", but our implementation of ``greeting()`` is returning \"Hello, Brutus\". Let's modify the implementation of ``greeting()`` in ``src/helloworld/app.py`` to have the new behavior::"
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:322 27287aec2fa74edba5b4265a2a4cc5e4
+msgid "If we run the tests again, we'll now see our tests pass:"
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:381 b7eb9bc174444e76bbbb4234c7c7e9c0
+msgid "Runtime tests"
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:383 333eb0ca0bf244998b2f827620112453
+msgid "So far, we've been running the tests in development mode. This is especially useful when you're developing new features, as you can rapidly iterate on adding tests, and adding code to make those tests pass. However, at some point, you'll want to verify that your code also runs correctly when inside the bundle app environment."
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:389 00bff0dfddd04d60b0c6d3706df3b477
+msgid "The ``--test`` and ``-r`` options can also be passed to the ``run`` command. If you use ``briefcase run --test -r``, the same test suite will run, but it will run inside the packaged application bundle rather than your development environment:"
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:508 6b1b7331d9894d22b405f7355d9bc2ca
+msgid "As with ``briefcase dev --test``, the ``-r`` option is only needed the first time you run the test suite to ensure that the test dependencies are present. On subsequent runs, you can omit this option."
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:512 47ab5d86e45d4a0faaee7c6985c0c581
+msgid "You can also use the ``--test`` option on mobile backends: - so ``briefcase run iOS --test`` and ``briefcase run android --test`` will both work, running the test suite on the mobile device you select."
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:517 b8835b84adee4e48adffb41923962f04
+msgid "Next steps"
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:519 a39f9e5f749c4c3d8dfa22b75019ec03
+msgid "This has been a taste for what you can do with the tools provided by the BeeWare project. What you do from here is up to you!"
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:522 0e3c3d888cc04a3e9b6ce455d8c9eebd
+msgid "Some places to go from here:"
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:524 2d0690a05f574b818f85147d803b513e
+msgid "Tutorials demonstrating `features of the Toga widget toolkit <https://toga.readthedocs.io/en/latest/tutorial/index.html>`__."
+msgstr ""
+
+#: ../../tutorial/tutorial-9.rst:526 bbc55f4a754c44adaf7a4a253c61bb25
+msgid "Details on the `options available when configuring your Briefcase project <https://briefcase.readthedocs.io/en/latest/reference/index.html>`__."
+msgstr ""
+

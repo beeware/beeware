@@ -17,7 +17,8 @@ the common tasks that you'll need to do as an app developer, such as testing you
       available in
       `Deutsch <https://docs.beeware.org/de>`__,
       `Español <https://docs.beeware.org/es>`__,
-      `Français <https://docs.beeware.org/fr>`__, and
+      `Français <https://docs.beeware.org/fr>`__,
+      `Português <https://docs.beeware.org/pt>`__, and
       `汉语 <https://docs.beeware.org/zh-cn>`__.
 
 
