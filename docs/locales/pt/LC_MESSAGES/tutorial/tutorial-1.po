@@ -1,0 +1,175 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Russell Keith-Magee
+# This file is distributed under the same license as the BeeWare package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BeeWare 0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-24 17:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: pt <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../tutorial/tutorial-1.rst:3 00656b633bf34148a7e01c901296aaa2
+msgid "Tutorial 1 - Your first app"
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:5 bbe6f49cf77f4eecaaf01838717a40d8
+msgid "We're ready to create our first application."
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:8 8b7bd844c8fb45519682dc6e358e6e5d
+msgid "Install the BeeWare tools"
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:10 d3cafee8befb4beaa722cc93e8481612
+msgid "First, we need to install **Briefcase**. Briefcase is a BeeWare tool that can be used to package your application for distribution to end users - but it can also be used to bootstrap a new project. Make sure you're in the ``beeware-tutorial`` directory you created in :doc:`Tutorial 0 <tutorial-0>`, with the ``beeware-venv`` virtual environment activated, and run:"
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:18 ../../tutorial/tutorial-1.rst:64
+#: ../../tutorial/tutorial-1.rst:163 ../../tutorial/tutorial-1.rst:206
+#: 12f9a4b1147340aab74e98a369ac84cc 3e7ebafa2843479a808374d0bc03f3ba
+#: 787d6175e28a4aa19cda723f4de3f000 da27c80ca9304b36b0a8fb73aff7c558
+msgid "macOS"
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:24 ../../tutorial/tutorial-1.rst:70
+#: ../../tutorial/tutorial-1.rst:176 ../../tutorial/tutorial-1.rst:211
+#: 440be97d9d8d42bf93ce784eb22aff77 5fc6f548a7fd441fb341fb498886386c
+#: 8432ae09983d48ab91fe98d4cb2ff6a2 ee220d7865774f26acc1a47b543b9ed7
+msgid "Linux"
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:30 ../../tutorial/tutorial-1.rst:43
+#: 3a207e0974ac43d492a2e6eadc0be142 bf94433582064a59b76b7e281fbbe521
+msgid "Possible errors during installation"
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:32 6ea8a0f916c14cce90bb695f15fbb3c1
+msgid "If you see errors during installation, it's almost certainly because some of the system requirements haven't been installed. Make sure you have :ref:`installed all the platform pre-requisites <install-dependencies>`."
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:37 ../../tutorial/tutorial-1.rst:76
+#: ../../tutorial/tutorial-1.rst:189 ../../tutorial/tutorial-1.rst:216
+#: 43d52eae3b9549a2a1c9dcee8c930362 97fd82ec5ab8425a98f0b161296eb493
+#: f4b648c79b51407d9053c3a1121cf836 fc88e201ba1a418e88bbc0cb83b75e14
+msgid "Windows"
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:45 cf09244156004ba2927e625102d51fa4
+msgid "It is important that you use ``python -m pip``, rather than a bare ``pip``. Briefcase needs to ensure that it has an up-to-date version of ``pip`` and ``setuptools``, and a bare invocation of ``pip`` can't self-update. If you want to know more, `Brett Cannon has a detailed blog post about the issue <https://snarky.ca/why-you-should-use-python-m-pip/>`__."
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:51 e5a9e41edc7049e88781c35cdb3ed76d
+msgid "One of the BeeWare tools is **Briefcase**. Briefcase can be used to package your application for distribution to end users - but it can also be used to bootstrap a new project."
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:56 c84a6e3d09cd48acae7a7d09a2e15cf6
+msgid "Bootstrap a new project"
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:58 1d584a918ad9417f81cbebc2f06df8c3
+msgid "Let's start our first BeeWare project!  We're going to use the Briefcase ``new`` command to create an application called **Hello World**. Run the following from your command prompt:"
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:82 cbc1a7989f3b419da9e283d73413b279
+msgid "Briefcase will ask us for some details of our new application. For the purposes of this tutorial, use the following:"
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:85 3a7905a3b9f04cf69133db4d13b266c0
+msgid "**Formal Name** - Accept the default value: ``Hello World``."
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:87 a6f3efc7b2a1478eae5e6b42ec762b78
+msgid "**App Name** - Accept the default value: ``helloworld``."
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:89 abc6bf9fbfc64ccea85e2816fb024a7c
+msgid "**Bundle** - If you own your own domain, enter that domain in reversed order. (For example, if you own the domain \"cupcakes.com\", enter ``com.cupcakes`` as the bundle). If you don't own your own domain, accept the default bundle (``com.example``)."
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:94 a67266a10b9a4b2bbd912a413a30e383
+msgid "**Project Name** - Accept the default value: ``Hello World``."
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:96 fcc571952fc84e1baea53f61e29878ce
+msgid "**Description** - Accept the default value (or, if you want to be really creative, come up with your own description!)"
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:99 2f3f1e4c1c3f4b15a21e66f91770804d
+msgid "**Author** - Enter your own name here."
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:101 3fbde8c40e69494d835c73f92b3c0cd6
+msgid "**Author's email** - Enter your own email address. This will be used in the configuration file, in help text, and anywhere that an email is required when submitting the app to an app store."
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:105 4db81cc4166343ba8a0f8b28b5cd4e01
+msgid "**URL** - The URL of the landing page for your application. Again, if you own your own domain, enter a URL at that domain (including the ``https://``). Otherwise, just accept the default URL (``https://example.com/helloworld``). This URL doesn't need to actually exist (for now); it will only be used if you publish your application to an app store."
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:111 77ac3288fa15439ba8fe6046e41ff160
+msgid "**License** - Accept the default license (BSD). This won't affect anything about the operation of the tutorial, though - so if you have particularly strong feelings about license choice, feel free to choose another license."
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:116 246515c80ff54515bcdc35cbeaf31648
+msgid "**GUI framework** - Accept the default option, Toga (BeeWare's own GUI toolkit)."
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:119 d397d4e2d0b14056a2bdc63eda3f890a
+msgid "Briefcase will then generate a project skeleton for you to use. If you've followed this tutorial so far, and accepted the defaults as described, your file system should look something like::"
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:145 d12c68258b8244d893b9a8a9d44eb724
+msgid "This skeleton is actually a fully functioning application without adding anything else. The ``src`` folder contains all the code for the application, the ``tests`` folder contains an initial test suite, and the ``pyproject.toml`` file describes how to package the application for distribution. If you open ``pyproject.toml`` in an editor, you'll see the configuration details you just provided to Briefcase."
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:152 e0a87b0427bb407d86d5545455774b2b
+msgid "Now that we have a stub application, we can use Briefcase to run the application."
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:156 e879b8712ed3427d9922ea74803f0ea2
+msgid "Run the app in developer mode"
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:158 071f377b25104e919f33622b2bc8f76e
+msgid "Move into the ``helloworld`` project directory and tell briefcase to start the project in Developer (or ``dev``) mode:"
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:202 8922df425bd244cb8b15c3293a01d08e
+msgid "This should open a GUI window:"
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst a0b3f2ae2c0b47c58d947c4d9b50d385
+msgid "Hello World Tutorial 1 window, on macOS"
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst 9a3e6a01628147b5a3b87a274dd72685
+msgid "Hello World Tutorial 1 window, on Linux"
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst faecf87f26d94e4d80eee3f601eb3279
+msgid "Hello World Tutorial 1 window, on Windows"
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:221 93393dfc229f46ffbdf25baa39608d7a
+msgid "Press the close button (or select Quit from the application's menu), and you're done! Congratulations - you've just written a standalone, native application in Python!"
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:226 86360e4f63ec45a29b08d8941e3f55b0
+msgid "Next steps"
+msgstr ""
+
+#: ../../tutorial/tutorial-1.rst:228 4f31c167af9445c1af55641578ddd152
+msgid "We now have a working application, running in developer mode. Now we can add some logic of our own to make our application do something a little more interesting. In :doc:`Tutorial 2 <tutorial-2>`, we'll put a more useful user interface onto our application."
+msgstr ""
+
