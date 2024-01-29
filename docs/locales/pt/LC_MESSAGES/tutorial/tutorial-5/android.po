@@ -3,20 +3,21 @@
 # This file is distributed under the same license as the BeeWare package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-24 17:48+0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2024-01-29 22:01+0000\n"
+"Last-Translator: joaovitorpmoreira <programacaojoaopm@gmail.com>\n"
+"Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/"
+"tutorial/tutorial-5/android/pt/>\n"
 "Language: pt\n"
-"Language-Team: pt <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.4-dev\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../tutorial/tutorial-5/android.rst:3 239e73746f42442db4b2010358671e98
@@ -46,7 +47,7 @@ msgstr ""
 #: 5dabcc88b18146089aefc34464fbb930 618e4466bdf841edbb774abf8c5f9a74
 #: 812253e37ece40f29506261afebfe122
 msgid "macOS"
-msgstr ""
+msgstr "macOS"
 
 #: ../../tutorial/tutorial-5/android.rst:48
 #: ../../tutorial/tutorial-5/android.rst:136
@@ -55,7 +56,7 @@ msgstr ""
 #: e1cafe4b51a0465182d3d0acb5a76d8d f66f661ccdc5475e8840162761cd866d
 #: fbcc00b4658c409e82e28093eba3a17b
 msgid "Linux"
-msgstr ""
+msgstr "Linux"
 
 #: ../../tutorial/tutorial-5/android.rst:75
 #: ../../tutorial/tutorial-5/android.rst:154
@@ -64,7 +65,7 @@ msgstr ""
 #: 6415b6631c3a436da0055f092b517804 b9b63c22d00748c58e9f0adeeecc1f27
 #: f4add9c9a9fe4a62a09265eace708f9b
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: ../../tutorial/tutorial-5/android.rst:102 0d0ad488429d4c238ca9aca4b3363406
 msgid "When you run ``briefcase create android`` for the first time, Briefcase downloads a Java JDK, and the Android SDK. File sizes and download times can be considerable; this may take a while (10 minutes or longer, depending on the speed of your Internet connection). When the download has completed, you will be prompted to accept Google's Android SDK license."
@@ -203,9 +204,8 @@ msgstr ""
 
 #: ../../tutorial/tutorial-5/android.rst:372 b7bc9ed7948a4f5db2d0a0458dfd143e
 msgid "Next steps"
-msgstr ""
+msgstr "Próximos passos"
 
 #: ../../tutorial/tutorial-5/android.rst:374 6f5dd15324324598a495a242f2843e61
 msgid "We've now got an application on our phone! Is there anywhere else we can deploy a BeeWare app? Turn to :doc:`Tutorial 6 <../tutorial-6>` to find out..."
 msgstr ""
-
