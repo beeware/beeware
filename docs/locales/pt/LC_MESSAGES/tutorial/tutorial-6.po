@@ -3,20 +3,21 @@
 # This file is distributed under the same license as the BeeWare package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-24 17:48+0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2024-01-29 22:01+0000\n"
+"Last-Translator: joaovitorpmoreira <programacaojoaopm@gmail.com>\n"
+"Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/"
+"tutorial/tutorial-6/pt/>\n"
 "Language: pt\n"
-"Language-Team: pt <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.4-dev\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../tutorial/tutorial-6.rst:3 86ed1df7b28e481184dcee23d0e7da6f
@@ -49,15 +50,15 @@ msgstr ""
 
 #: ../../tutorial/tutorial-6.rst:34 f735de1635d5496e914177c0ac70f5d4
 msgid "macOS"
-msgstr ""
+msgstr "macOS"
 
 #: ../../tutorial/tutorial-6.rst:72 9c5a07798eb44b90852231de5cd48d84
 msgid "Linux"
-msgstr ""
+msgstr "Linux"
 
 #: ../../tutorial/tutorial-6.rst:110 b47bbba97a354fa8a875469360a24df8
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: ../../tutorial/tutorial-6.rst:148 0034a6c6fdf54c2ea2cd4cc09384f99d
 msgid "This will open a web browser, pointing at `http://127.0.0.1:8080 <http://127.0.0.1:8080>`__:"
@@ -85,9 +86,8 @@ msgstr ""
 
 #: ../../tutorial/tutorial-6.rst:173 122d17f0ad0d4e8ab0e442f96fad590b
 msgid "Next steps"
-msgstr ""
+msgstr "Próximos passos"
 
 #: ../../tutorial/tutorial-6.rst:175 212de898d2df409dbbc74628b3ba00f4
 msgid "Although we've now deployed this app on desktop, mobile and the web, the app is fairly simple, and doesn't involve any third-party libraries. Can we include libraries from the Python Package Index (PyPI) in our app? Turn to :doc:`Tutorial 7 <tutorial-7>` to find out..."
 msgstr ""
-
