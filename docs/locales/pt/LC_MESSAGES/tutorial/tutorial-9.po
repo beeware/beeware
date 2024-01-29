@@ -3,20 +3,21 @@
 # This file is distributed under the same license as the BeeWare package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-24 17:48+0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2024-01-29 22:01+0000\n"
+"Last-Translator: joaovitorpmoreira <programacaojoaopm@gmail.com>\n"
+"Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/"
+"tutorial/tutorial-9/pt/>\n"
 "Language: pt\n"
-"Language-Team: pt <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.4-dev\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../tutorial/tutorial-9.rst:3 7283ab2e1b7b4b2496b80a98a9234683
@@ -49,7 +50,7 @@ msgstr ""
 #: 0e55a82faf4b4104b89532e9c6425595 8a1d197abd5647c8b8bd6fe94c19d2fd
 #: 9483cf95f88f460896fb82f83ed186c6 e3466cb5eb7349cf826d41914b921215
 msgid "macOS"
-msgstr ""
+msgstr "macOS"
 
 #: ../../tutorial/tutorial-9.rst:57 ../../tutorial/tutorial-9.rst:156
 #: ../../tutorial/tutorial-9.rst:241 ../../tutorial/tutorial-9.rst:344
@@ -57,7 +58,7 @@ msgstr ""
 #: 166e6a657e924689b8c6f3908a2a997d 7cab7a4121d74b7a9be5ab35e78f8bc1
 #: 889c34bf73a746528090f5bbff8c50ca b378b7be0b8e4c5a893fe9c0a1e46c3e
 msgid "Linux"
-msgstr ""
+msgstr "Linux"
 
 #: ../../tutorial/tutorial-9.rst:83 ../../tutorial/tutorial-9.rst:173
 #: ../../tutorial/tutorial-9.rst:275 ../../tutorial/tutorial-9.rst:362
@@ -65,7 +66,7 @@ msgstr ""
 #: 272fec9125914a428d1e5b591743d596 3f6c7e152b814ebabbec3c0ba171f014
 #: 4aa749d5fa2c4e769837e4483adca5ad ccfdf876071048938f326824894b3072
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: ../../tutorial/tutorial-9.rst:109 9e23174ff2d343d5805d71756247bc53
 msgid "Success! We've just executed a single test that verifies Python math works in the way we'd expect (What a relief!)."
@@ -129,7 +130,7 @@ msgstr ""
 
 #: ../../tutorial/tutorial-9.rst:517 b8835b84adee4e48adffb41923962f04
 msgid "Next steps"
-msgstr ""
+msgstr "Próximos passos"
 
 #: ../../tutorial/tutorial-9.rst:519 a39f9e5f749c4c3d8dfa22b75019ec03
 msgid "This has been a taste for what you can do with the tools provided by the BeeWare project. What you do from here is up to you!"
@@ -146,4 +147,3 @@ msgstr ""
 #: ../../tutorial/tutorial-9.rst:526 bbc55f4a754c44adaf7a4a253c61bb25
 msgid "Details on the `options available when configuring your Briefcase project <https://briefcase.readthedocs.io/en/latest/reference/index.html>`__."
 msgstr ""
-
