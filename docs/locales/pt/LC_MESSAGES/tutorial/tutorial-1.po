@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-24 17:48+0800\n"
-"PO-Revision-Date: 2024-01-29 22:01+0000\n"
+"PO-Revision-Date: 2024-01-30 17:01+0000\n"
 "Last-Translator: joaovitorpmoreira <programacaojoaopm@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/"
 "tutorial/tutorial-1/pt/>\n"
@@ -64,6 +64,9 @@ msgstr "Possíveis erros durante a instalação"
 #: ../../tutorial/tutorial-1.rst:32 6ea8a0f916c14cce90bb695f15fbb3c1
 msgid "If you see errors during installation, it's almost certainly because some of the system requirements haven't been installed. Make sure you have :ref:`installed all the platform pre-requisites <install-dependencies>`."
 msgstr ""
+"Se você encontrar erros durante a instalação, é bem provável que alguns dos "
+"requisitos do sistema não estejam instalados. Certifique-se de ter :ref:`"
+"instalado todas os pré-requisitos da plataforma <install-dependencies>`."
 
 #: ../../tutorial/tutorial-1.rst:37 ../../tutorial/tutorial-1.rst:76
 #: ../../tutorial/tutorial-1.rst:189 ../../tutorial/tutorial-1.rst:216
@@ -75,22 +78,36 @@ msgstr "Windows"
 #: ../../tutorial/tutorial-1.rst:45 cf09244156004ba2927e625102d51fa4
 msgid "It is important that you use ``python -m pip``, rather than a bare ``pip``. Briefcase needs to ensure that it has an up-to-date version of ``pip`` and ``setuptools``, and a bare invocation of ``pip`` can't self-update. If you want to know more, `Brett Cannon has a detailed blog post about the issue <https://snarky.ca/why-you-should-use-python-m-pip/>`__."
 msgstr ""
+"É importante usar o comando ``python -m pip``, em vez de apenas ``pip``. "
+"Isso porque o Briefcase precisa garantir que as versões do ``pip`` e "
+"``setuptools`` estejam atualizadas, pois o ``pip`` usado sozinho não "
+"consegue se atualizar. Se quiser entender melhor o motivo, o `Brett Cannon "
+"escreveu um post detalhado no blog dele <https://snarky.ca/"
+"why-you-should-use-python-m-pip/>`__."
 
 #: ../../tutorial/tutorial-1.rst:51 e5a9e41edc7049e88781c35cdb3ed76d
 msgid "One of the BeeWare tools is **Briefcase**. Briefcase can be used to package your application for distribution to end users - but it can also be used to bootstrap a new project."
 msgstr ""
+"Uma das ferramentas do BeeWare é o Briefcase. O Briefcase pode ser usado "
+"para empacotar sua aplicação para distribuição aos usuários finais - mas ele "
+"também pode ser usado para iniciar um novo projeto."
 
 #: ../../tutorial/tutorial-1.rst:56 c84a6e3d09cd48acae7a7d09a2e15cf6
 msgid "Bootstrap a new project"
-msgstr ""
+msgstr "Iniciar um novo projeto"
 
 #: ../../tutorial/tutorial-1.rst:58 1d584a918ad9417f81cbebc2f06df8c3
 msgid "Let's start our first BeeWare project!  We're going to use the Briefcase ``new`` command to create an application called **Hello World**. Run the following from your command prompt:"
 msgstr ""
+"Vamos começar nosso primeiro projeto BeeWare! Usaremos o comando ``new `` do "
+"Briefcase para criar um aplicativo chamado **Hello World**. Execute o "
+"seguinte comando no seu prompt de comando/terminal:"
 
 #: ../../tutorial/tutorial-1.rst:82 cbc1a7989f3b419da9e283d73413b279
 msgid "Briefcase will ask us for some details of our new application. For the purposes of this tutorial, use the following:"
 msgstr ""
+"O Briefcase solicitará alguns detalhes sobre nosso novo aplicativo. Para os "
+"propósitos deste tutorial, utilize o seguinte:"
 
 #: ../../tutorial/tutorial-1.rst:85 3a7905a3b9f04cf69133db4d13b266c0
 msgid "**Formal Name** - Accept the default value: ``Hello World``."
