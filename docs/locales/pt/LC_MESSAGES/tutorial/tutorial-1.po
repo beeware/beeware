@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-24 17:48+0800\n"
-"PO-Revision-Date: 2024-01-30 17:01+0000\n"
+"PO-Revision-Date: 2024-01-30 22:01+0000\n"
 "Last-Translator: joaovitorpmoreira <programacaojoaopm@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/"
 "tutorial/tutorial-1/pt/>\n"
@@ -111,83 +111,119 @@ msgstr ""
 
 #: ../../tutorial/tutorial-1.rst:85 3a7905a3b9f04cf69133db4d13b266c0
 msgid "**Formal Name** - Accept the default value: ``Hello World``."
-msgstr ""
+msgstr "**Formal Name** - Aceite o valor padrão:`` Hello World``."
 
 #: ../../tutorial/tutorial-1.rst:87 a6f3efc7b2a1478eae5e6b42ec762b78
 msgid "**App Name** - Accept the default value: ``helloworld``."
-msgstr ""
+msgstr "**App Name** - Aceite o valor padrão: ``helloworld``."
 
 #: ../../tutorial/tutorial-1.rst:89 abc6bf9fbfc64ccea85e2816fb024a7c
 msgid "**Bundle** - If you own your own domain, enter that domain in reversed order. (For example, if you own the domain \"cupcakes.com\", enter ``com.cupcakes`` as the bundle). If you don't own your own domain, accept the default bundle (``com.example``)."
 msgstr ""
+"**Bundle** - Se você possui seu próprio domínio, insira esse domínio "
+"invertido. (Por exemplo, se você possui o domínio \"cupcakes.com\", insira "
+"``com.cupcakes`` como nome do bundle). Se você não possui seu próprio "
+"domínio, aceite o padrão (``com.example``)."
 
 #: ../../tutorial/tutorial-1.rst:94 a67266a10b9a4b2bbd912a413a30e383
 msgid "**Project Name** - Accept the default value: ``Hello World``."
-msgstr ""
+msgstr "**Project Name** - Aceite o valor padrão: ``Hello World``."
 
 #: ../../tutorial/tutorial-1.rst:96 fcc571952fc84e1baea53f61e29878ce
 msgid "**Description** - Accept the default value (or, if you want to be really creative, come up with your own description!)"
 msgstr ""
+"**Description** - Aceite o valor padrão (ou, se quiser ser realmente "
+"criativo, crie sua própria descrição!)"
 
 #: ../../tutorial/tutorial-1.rst:99 2f3f1e4c1c3f4b15a21e66f91770804d
 msgid "**Author** - Enter your own name here."
-msgstr ""
+msgstr "**Author** - Insira seu próprio nome."
 
 #: ../../tutorial/tutorial-1.rst:101 3fbde8c40e69494d835c73f92b3c0cd6
 msgid "**Author's email** - Enter your own email address. This will be used in the configuration file, in help text, and anywhere that an email is required when submitting the app to an app store."
 msgstr ""
+"**Author's email** - Insira seu próprio endereço de e-mail. Ele será usado "
+"no arquivo de configuração, em textos de ajuda e em qualquer lugar onde um e-"
+"mail seja necessário ao enviar o aplicativo para uma loja de aplicativos."
 
 #: ../../tutorial/tutorial-1.rst:105 4db81cc4166343ba8a0f8b28b5cd4e01
 msgid "**URL** - The URL of the landing page for your application. Again, if you own your own domain, enter a URL at that domain (including the ``https://``). Otherwise, just accept the default URL (``https://example.com/helloworld``). This URL doesn't need to actually exist (for now); it will only be used if you publish your application to an app store."
 msgstr ""
+"**URL** - A URL da página inicial do seu aplicativo. Novamente, se você "
+"possui seu próprio domínio, insira uma URL nesse domínio (incluindo o "
+"``https://``). Caso contrário, apenas aceite a URL padrão (``https://example."
+"com/helloworld``). Esta URL não precisa realmente existir (por enquanto); "
+"ela será usada apenas se você publicar sua aplicação em uma loja de "
+"aplicativos."
 
 #: ../../tutorial/tutorial-1.rst:111 77ac3288fa15439ba8fe6046e41ff160
 msgid "**License** - Accept the default license (BSD). This won't affect anything about the operation of the tutorial, though - so if you have particularly strong feelings about license choice, feel free to choose another license."
 msgstr ""
+"**License** - Aceite o valor padrão (BSD). Isso não afetará nada sobre o "
+"funcionamento do tutorial. Se você tem preferências particulares em relação "
+"à escolha de licença, sinta-se à vontade para escolher outra licença."
 
 #: ../../tutorial/tutorial-1.rst:116 246515c80ff54515bcdc35cbeaf31648
 msgid "**GUI framework** - Accept the default option, Toga (BeeWare's own GUI toolkit)."
 msgstr ""
+"**GUI framework** - Aceite a opção padrão, Toga (a própria biblioteca de "
+"interface gráfica da BeeWare)."
 
 #: ../../tutorial/tutorial-1.rst:119 d397d4e2d0b14056a2bdc63eda3f890a
 msgid "Briefcase will then generate a project skeleton for you to use. If you've followed this tutorial so far, and accepted the defaults as described, your file system should look something like::"
 msgstr ""
+"O Briefcase então gerará uma estrutura básica de projeto para você usar. Se "
+"você seguiu este tutorial até agora e aceitou as configurações padrão como "
+"descrito, seu sistema de arquivos deve se parecer com algo assim:"
 
 #: ../../tutorial/tutorial-1.rst:145 d12c68258b8244d893b9a8a9d44eb724
 msgid "This skeleton is actually a fully functioning application without adding anything else. The ``src`` folder contains all the code for the application, the ``tests`` folder contains an initial test suite, and the ``pyproject.toml`` file describes how to package the application for distribution. If you open ``pyproject.toml`` in an editor, you'll see the configuration details you just provided to Briefcase."
 msgstr ""
+"Essa estrutura atual já é um aplicativo totalmente funcional sem adicionar "
+"mais nada. A pasta ``src`` contém todo o código do aplicativo, a pasta "
+"``tests`` contém uma suíte de testes inicial, e o arquivo ``pyproject.toml`` "
+"descreve como empacotar o aplicativo para distribuição. Se você abrir o "
+"``pyproject.toml`` em um editor, verá os detalhes de configuração que você "
+"acabou de fornecer ao Briefcase."
 
 #: ../../tutorial/tutorial-1.rst:152 e0a87b0427bb407d86d5545455774b2b
 msgid "Now that we have a stub application, we can use Briefcase to run the application."
 msgstr ""
+"Agora que temos um aplicativo inicial, podemos usar o Briefcase para "
+"executar a aplicação."
 
 #: ../../tutorial/tutorial-1.rst:156 e879b8712ed3427d9922ea74803f0ea2
 msgid "Run the app in developer mode"
-msgstr ""
+msgstr "Inicie o app no modo de desenvolvedor"
 
 #: ../../tutorial/tutorial-1.rst:158 071f377b25104e919f33622b2bc8f76e
 msgid "Move into the ``helloworld`` project directory and tell briefcase to start the project in Developer (or ``dev``) mode:"
 msgstr ""
+"Vá para o diretório do projeto ``helloworld`` e peça ao Briefcase para "
+"iniciar o projeto no modo de Desenvolvedor (ou ``dev``):"
 
 #: ../../tutorial/tutorial-1.rst:202 8922df425bd244cb8b15c3293a01d08e
 msgid "This should open a GUI window:"
-msgstr ""
+msgstr "Isso deve abrir uma janela GUI:"
 
 #: ../../tutorial/tutorial-1.rst a0b3f2ae2c0b47c58d947c4d9b50d385
 msgid "Hello World Tutorial 1 window, on macOS"
-msgstr ""
+msgstr "Janela do Tutorial 1 “Hello World”, no macOS"
 
 #: ../../tutorial/tutorial-1.rst 9a3e6a01628147b5a3b87a274dd72685
 msgid "Hello World Tutorial 1 window, on Linux"
-msgstr ""
+msgstr "Janela do Tutorial 1 “Hello World”, no Linux"
 
 #: ../../tutorial/tutorial-1.rst faecf87f26d94e4d80eee3f601eb3279
 msgid "Hello World Tutorial 1 window, on Windows"
-msgstr ""
+msgstr "Janela do Tutorial 1 “Hello World”, no Windows"
 
 #: ../../tutorial/tutorial-1.rst:221 93393dfc229f46ffbdf25baa39608d7a
 msgid "Press the close button (or select Quit from the application's menu), and you're done! Congratulations - you've just written a standalone, native application in Python!"
 msgstr ""
+"Pressione o botão de fechar (ou selecione “Sair” no menu do aplicativo) e "
+"pronto! Parabéns - você acabou de criar um aplicativo autônomo e nativo em "
+"Python!"
 
 #: ../../tutorial/tutorial-1.rst:226 86360e4f63ec45a29b08d8941e3f55b0
 msgid "Next steps"
@@ -196,3 +232,7 @@ msgstr "Próximos passos"
 #: ../../tutorial/tutorial-1.rst:228 4f31c167af9445c1af55641578ddd152
 msgid "We now have a working application, running in developer mode. Now we can add some logic of our own to make our application do something a little more interesting. In :doc:`Tutorial 2 <tutorial-2>`, we'll put a more useful user interface onto our application."
 msgstr ""
+"Agora temos um aplicativo funcional, em execução no modo de desenvolvedor. "
+"Podemos adicionar alguma lógica própria para tornar nosso aplicativo um "
+"pouco mais interessante. No :doc:`Tutorial 2 <tutorial-2>`, vamos colocar "
+"uma interface de usuário mais útil em nossa aplicação."
