@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-24 17:48+0800\n"
-"PO-Revision-Date: 2024-01-29 22:01+0000\n"
+"PO-Revision-Date: 2024-01-30 22:01+0000\n"
 "Last-Translator: joaovitorpmoreira <programacaojoaopm@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/"
 "tutorial/tutorial-2/pt/>\n"
@@ -22,23 +22,31 @@ msgstr ""
 
 #: ../../tutorial/tutorial-2.rst:3 ed19d384a60c4dcd8a2795489e25549f
 msgid "Tutorial 2 - Making it interesting"
-msgstr ""
+msgstr "Tutorial 2 - Tornando as coisas interessantes"
 
 #: ../../tutorial/tutorial-2.rst:5 4c7ae2eb6c534eec941ea1e592464107
 msgid "In :doc:`Tutorial 1 <tutorial-1>`, we generated a stub project that was able to run, but we didn't write any code ourselves. Let's take a look at what was generated for us."
 msgstr ""
+"No :doc:`Tutorial 1 <tutorial-1>`, geramos um projeto inicial que executava, "
+"mas não escrevemos nenhum código por conta própria. Vamos dar uma olhada no "
+"que foi criado para nós."
 
 #: ../../tutorial/tutorial-2.rst:10 001b1e0c94d14b77b452de91598ff360
 msgid "What was generated"
-msgstr ""
+msgstr "O que foi gerado"
 
 #: ../../tutorial/tutorial-2.rst:12 576fc1a1fa2243698d4e11a7962cb03f
 msgid "In the ``src/helloworld`` directory, you should see 3 files: ``__init__.py``, ``__main__.py`` and ``app.py``."
 msgstr ""
+"No diretório ``src/helloworld``, você deverá ver 3 arquivos: ``__init__.py``"
+", ``__main__.py`` e ``app.py``."
 
 #: ../../tutorial/tutorial-2.rst:15 78f1109d7cec423686f8d735208cb205
 msgid "``__init__.py`` marks the ``helloworld`` directory as an importable Python module. It is an empty file; the very fact it exists tells the Python interpreter that the ``helloworld`` directory defines a module."
 msgstr ""
+"``__init__.py`` torna o diretório ``helloworld`` um módulo Python "
+"importável. Trata-se de um arquivo vazio; sua simples existência indica ao "
+"interpretador Python que há um módulo definido pelo diretório `helloworld`."
 
 #: ../../tutorial/tutorial-2.rst:19 0e50753eaa7142d8a585c3059d361b35
 msgid "``__main__.py`` marks the ``helloworld`` module as a special kind of module - an executable module. If you try to run the ``helloworld`` module using ``python -m helloworld``, the ``__main__.py`` file is where Python will start executing. The contents of ``__main__.py`` is relatively simple::"
@@ -197,7 +205,7 @@ msgstr ""
 
 #: ../../tutorial/tutorial-2.rst:268 34fff12e32d64c74b95276ce17e01ada
 msgid "This should open a GUI window:"
-msgstr ""
+msgstr "Isso deve abrir uma janela GUI:"
 
 #: ../../tutorial/tutorial-2.rst ba4274a6bf7d44c2bd446cd97135cb87
 msgid "Hello World Tutorial 2 window, on macOS"
