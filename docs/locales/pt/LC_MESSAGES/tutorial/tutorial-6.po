@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-24 17:48+0800\n"
-"PO-Revision-Date: 2024-01-29 22:01+0000\n"
+"PO-Revision-Date: 2024-01-31 21:02+0000\n"
 "Last-Translator: joaovitorpmoreira <programacaojoaopm@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/"
 "tutorial/tutorial-6/pt/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../tutorial/tutorial-6.rst:3 86ed1df7b28e481184dcee23d0e7da6f
 msgid "Tutorial 6 - Put it on the web!"
-msgstr ""
+msgstr "Tutorial 6 - Coloque na web!"
 
 #: ../../tutorial/tutorial-6.rst:5 c76e1152ed1b46d4b1c9a217c2fd5e6e
 msgid "In addition to supporting mobile platforms, the Toga widget toolkit also supports the web! Using the same API that you used to deploy your desktop and mobile applications, you can deploy your application as a single-page web app."
