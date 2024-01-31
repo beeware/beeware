@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-24 17:48+0800\n"
-"PO-Revision-Date: 2024-01-30 22:01+0000\n"
+"PO-Revision-Date: 2024-01-31 17:01+0000\n"
 "Last-Translator: joaovitorpmoreira <programacaojoaopm@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/"
 "tutorial/tutorial-2/pt/>\n"
@@ -51,18 +51,29 @@ msgstr ""
 #: ../../tutorial/tutorial-2.rst:19 0e50753eaa7142d8a585c3059d361b35
 msgid "``__main__.py`` marks the ``helloworld`` module as a special kind of module - an executable module. If you try to run the ``helloworld`` module using ``python -m helloworld``, the ``__main__.py`` file is where Python will start executing. The contents of ``__main__.py`` is relatively simple::"
 msgstr ""
+"``__main__.py`` define o módulo ``helloworld`` como um tipo especial de "
+"módulo - um módulo executável. Ao tentar executar o módulo ``helloworld`` "
+"usando ``python -m helloworld``, o Python iniciará a execução no arquivo "
+"``__main__.py``. O conteúdo de ``__main__.py`` é relativamente simples::"
 
 #: ../../tutorial/tutorial-2.rst:29 26ba2157882c4970aff874641b54c0a3
 msgid "That is - it imports the ``main`` method from the ``helloworld`` app; and if it's being executed as an entry point, calls the main() method, and starts the application's main loop. The main loop is the way a GUI application listens for user input (like mouse clicks and keyboard presses)."
 msgstr ""
+"Isto é - ele importa o método ``main`` do aplicativo ``helloworld``; quando "
+"executado como ponto de entrada, esse método main() é chamado, dando início "
+"ao loop principal da aplicação. Nesse loop, a aplicação de interface gráfica "
+"(GUI) espera pelas interações do usuário (como cliques do mouse e "
+"pressionamentos de teclas)."
 
 #: ../../tutorial/tutorial-2.rst:34 7a78058048e247548b4acfb5d67a5d38
 msgid "The more interesting file is ``app.py`` - this contains the logic that creates our application window::"
 msgstr ""
+"O arquivo mais interessante é o ``app.py`` - nele está contido a lógica que "
+"cria a janela da nossa aplicação::"
 
 #: ../../tutorial/tutorial-2.rst:52 3413be62cde4427ebdac923c6ff06ade
 msgid "Let's go through this line by line::"
-msgstr ""
+msgstr "Vamos analisar isso linha por linha::"
 
 #: ../../tutorial/tutorial-2.rst:58 3740df2cbc4643909fc960d95aba22e3
 msgid "First, we import the ``toga`` widget toolkit, as well as some style-related utility classes and constants. Our code doesn't use these yet - but we'll make use of them shortly."
