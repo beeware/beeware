@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-24 17:48+0800\n"
-"PO-Revision-Date: 2024-01-29 22:01+0000\n"
+"PO-Revision-Date: 2024-01-31 21:02+0000\n"
 "Last-Translator: joaovitorpmoreira <programacaojoaopm@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/"
 "tutorial/tutorial-4/pt/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../tutorial/tutorial-4.rst:3 9e1ca74391fb440d8d7851b04b00ef86
 msgid "Tutorial 4 - Updating your application"
-msgstr ""
+msgstr "Tutorial 4 - Atualizando sua aplicação"
 
 #: ../../tutorial/tutorial-4.rst:5 8dba8bb8b0b344379273378b34130a86
 msgid "In the last tutorial, we packaged our application as a native application. If you're dealing with a real-world app, that isn't going to be the end of the story - you'll likely do some testing, discover problems, and need to make some changes. Even if your application is perfect, you'll eventually want to publish version 2 of your application with improvements."
