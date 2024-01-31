@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-24 17:48+0800\n"
-"PO-Revision-Date: 2024-01-31 17:01+0000\n"
+"PO-Revision-Date: 2024-01-31 21:02+0000\n"
 "Last-Translator: joaovitorpmoreira <programacaojoaopm@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/"
 "tutorial/tutorial-2/pt/>\n"
@@ -78,30 +78,45 @@ msgstr "Vamos analisar isso linha por linha::"
 #: ../../tutorial/tutorial-2.rst:58 3740df2cbc4643909fc960d95aba22e3
 msgid "First, we import the ``toga`` widget toolkit, as well as some style-related utility classes and constants. Our code doesn't use these yet - but we'll make use of them shortly."
 msgstr ""
+"Primeiro, importamos a biblioteca de widgets ``toga``, juntamente com "
+"algumas classes e constantes que são úteis para o estilo. Por enquanto, "
+"nosso código ainda não faz uso delas, mas em breve começaremos a utilizá-las."
 
 #: ../../tutorial/tutorial-2.rst:62 358712e8e0614bd7895fe8c87b96b015
 msgid "Then, we define a class::"
-msgstr ""
+msgstr "Em seguida, definimos uma classe::"
 
 #: ../../tutorial/tutorial-2.rst:66 eaf8328e7fbc4592a45a9978a82905bc
 msgid "Each Toga application has a single ``toga.App`` instance, representing the running entity that is the application. The app may end up managing multiple windows; but for simple applications, there will be a single main window."
 msgstr ""
+"Cada aplicação Toga possui uma única instância chamada ``toga.App``, que "
+"representa o aplicativo em si sendo executado. A aplicação pode acabar "
+"gerenciando várias janelas; mas para aplicativos simples, haverá uma única "
+"janela principal."
 
 #: ../../tutorial/tutorial-2.rst:70 22d9a18dbbd24bb7a40753d0e45c330e
 msgid "Next, we define a ``startup()`` method::"
-msgstr ""
+msgstr "Depois, definimos um método chamado ``startup()``::"
 
 #: ../../tutorial/tutorial-2.rst:75 6deb906bea6240d19bcd5ad0130c7399
 msgid "The first thing the startup method does is to define a main box. Toga's layout scheme behaves similar to HTML. You build an application by constructing a collection of boxes, each of which contains other boxes, or actual widgets. You then apply styles to these boxes to define how they will consume the available window space."
 msgstr ""
+"A primeira coisa que o método startup() faz é definir uma caixa principal. O "
+"esquema de layout do Toga se comporta de maneira semelhante ao HTML. Você "
+"constrói um aplicativo construindo uma coleção de caixas, cada uma das quais "
+"contém outras caixas ou widgets reais. Em seguida, você aplica estilos a "
+"essas caixas para definir como elas ocuparão o espaço disponível na janela."
 
 #: ../../tutorial/tutorial-2.rst:81 d203237d233845a0bafe0fce1f66c076
 msgid "In this application, we define a single box, but we don't put anything into it."
 msgstr ""
+"Neste aplicativo, definimos uma única caixa, mas não colocamos nada dentro "
+"dela."
 
 #: ../../tutorial/tutorial-2.rst:83 2cb1eb40c1904fb687838881942beeb9
 msgid "Next, we define a window into which we can put this empty box::"
 msgstr ""
+"Em seguida, definimos uma janela na qual podemos colocar esta caixa vazia::"
 
 #: ../../tutorial/tutorial-2.rst:87 81854208e3814a248ba19864398ad262
 msgid "This creates an instance of a ``toga.MainWindow``, which will have a title matching the application's name. A Main Window is a special kind of window in Toga - it's a window that is closely bound to the life cycle of the app. When the Main Window is closed, the application exits. The Main Window is also the window that has the application's menu (if you're on a platform like Windows where menu bars are part of the window)"
@@ -110,10 +125,14 @@ msgstr ""
 #: ../../tutorial/tutorial-2.rst:94 f9f2765e2e5a41a3a3619667c0c21db6
 msgid "We then add our empty box as the content of the main window, and instruct the application to show our window::"
 msgstr ""
+"Então, adicionamos nossa caixa vazia como conteúdo da janela principal e "
+"instruímos o aplicativo a mostrar nossa janela::"
 
 #: ../../tutorial/tutorial-2.rst:100 586f8c79321e4a57975898d3629d3d7c
 msgid "Last of all, we define a ``main()`` method. This is what creates the instance of our application::"
 msgstr ""
+"Por último, definimos um método chamado ``main()``. Isso é o que cria a "
+"instância de nossa aplicação::"
 
 #: ../../tutorial/tutorial-2.rst:106 f713f32cc9e8483d81e4c203e396b14c
 msgid "This ``main()`` method is the one that is imported and invoked by ``__main__.py``. It creates and returns an instance of our ``HelloWorld`` application."
@@ -125,15 +144,19 @@ msgstr ""
 
 #: ../../tutorial/tutorial-2.rst:114 cf7b196937ed497abd6143a4e6ec44de
 msgid "Adding some content of our own"
-msgstr ""
+msgstr "Adicionando conteúdo personalizado"
 
 #: ../../tutorial/tutorial-2.rst:116 f701be5ec15e430a8b67e64419a4dd79
 msgid "Modify your ``HelloWorld`` class inside ``src/helloworld/app.py`` so that it looks like this::"
 msgstr ""
+"Modifique sua classe ``HelloWorld`` dentro de ``src/helloworld/app.py`` para "
+"que fique assim:"
 
 #: ../../tutorial/tutorial-2.rst:151 bb3ef0f76cc84780b7816092541d8509
 msgid "Don't remove the imports at the top of the file , or the ``main()`` at the bottom. You only need to update the ``HelloWorld`` class."
 msgstr ""
+"Não remova as importações já feitas no topo do arquivo ou o ``main()`` ao "
+"final. Você só precisa atualizar a classe ``HelloWorld``."
 
 #: ../../tutorial/tutorial-2.rst:154 911423a764974fe1aa82c37ed8cab523
 msgid "Let's look in detail at what has changed."
