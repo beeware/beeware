@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-24 17:48+0800\n"
-"PO-Revision-Date: 2024-01-31 07:01+0000\n"
-"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
+"PO-Revision-Date: 2024-01-31 21:02+0000\n"
+"Last-Translator: joaovitorpmoreira <programacaojoaopm@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/"
 "tutorial/tutorial-1/pt/>\n"
 "Language: pt\n"
@@ -111,7 +111,7 @@ msgstr ""
 
 #: ../../tutorial/tutorial-1.rst:85 3a7905a3b9f04cf69133db4d13b266c0
 msgid "**Formal Name** - Accept the default value: ``Hello World``."
-msgstr "**Formal Name** - Aceite o valor padrão:`` Hello World``."
+msgstr "**Formal Name** - Aceite o valor padrão: ``Hello World``."
 
 #: ../../tutorial/tutorial-1.rst:87 a6f3efc7b2a1478eae5e6b42ec762b78
 msgid "**App Name** - Accept the default value: ``helloworld``."
