@@ -1,19 +1,19 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-06 18:04+0800\n"
-"PO-Revision-Date: 2024-01-06 20:03+0800\n"
-"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
-"Language-Team: de <LL@li.org>\n"
+"PO-Revision-Date: 2024-02-02 22:01+0000\n"
+"Last-Translator: Marco Esters <mesters@anaconda.com>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
+"tutorial-3/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.4-dev\n"
 "Generated-By: Babel 2.14.0\n"
-"X-Generator: Poedit 3.4.2\n"
 
 #: ../../tutorial/tutorial-3.rst:3 fdd0a9a4b9c346bbb0cca0346cf0dd5e
 #, fuzzy
@@ -46,17 +46,14 @@ msgid "Since this is the first time we're packaging our application, we need to 
 msgstr "Da dies das erste Mal ist, dass wir unsere Anwendung paketieren, müssen wir einige Konfigurationsdateien und andere Gerüste erstellen, um den Paketierungsprozess zu unterstützen. Starten Sie im Verzeichnis ``helloworld``:"
 
 #: ../../tutorial/tutorial-3.rst:25 ../../tutorial/tutorial-3.rst:174 ../../tutorial/tutorial-3.rst:257 ../../tutorial/tutorial-3.rst:351 099ee50f8f0743afa538b05a9a9aa7c1 701af6cf5fd14f23a4284b9ae631fd4e 84a9dff60fbd42e09bf700aeccf02dcc f03d8b5bbbe74508ac296b18fb4856a6
-#, fuzzy
 msgid "macOS"
 msgstr "macOS"
 
 #: ../../tutorial/tutorial-3.rst:52 ../../tutorial/tutorial-3.rst:193 ../../tutorial/tutorial-3.rst:280 ../../tutorial/tutorial-3.rst:386 06f18d7cf1d34c7a9238874a85ec9dbd aaa0490b949e4506953c17c3af523197 e420e6a025a5402a93902f0335c2a8bc e55b98a2403141789b00986d63c24e60
-#, fuzzy
 msgid "Linux"
 msgstr "Linux"
 
 #: ../../tutorial/tutorial-3.rst:86 ../../tutorial/tutorial-3.rst:228 ../../tutorial/tutorial-3.rst:307 ../../tutorial/tutorial-3.rst:497 0e46df37edc148c98635503102c47419 0f71d7b7664c434cac12fa308d5ce9c6 e6300b9c02c240fea8e2f921dcbc70c6 ee735a24396f483ca54d53335c9a4444
-#, fuzzy
 msgid "Windows"
 msgstr "Windows"
 
@@ -261,7 +258,6 @@ msgid "Once this step completes, the ``dist`` folder will contain a file named `
 msgstr "Sobald dieser Schritt abgeschlossen ist, enthält der Ordner ``dist`` eine Datei mit dem Namen ``Hello_World-0.0.1.msi``. Wenn Sie auf dieses Installationsprogramm doppelklicken, um es zu starten, sollten Sie den bekannten Windows-Installationsprozess durchlaufen. Sobald die Installation abgeschlossen ist, finden Sie einen \"Hello World\"-Eintrag in Ihrem Startmenü."
 
 #: ../../tutorial/tutorial-3.rst:522 3677dce6788c428d81f66379410c3484
-#, fuzzy
 msgid "Next steps"
 msgstr "Nächste Schritte"
 
