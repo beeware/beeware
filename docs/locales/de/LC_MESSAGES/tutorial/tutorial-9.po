@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-06 18:04+0800\n"
-"PO-Revision-Date: 2024-01-14 12:29+0000\n"
-"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
+"PO-Revision-Date: 2024-02-02 22:01+0000\n"
+"Last-Translator: Marco Esters <mesters@anaconda.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
 "tutorial-9/de/>\n"
 "Language: de\n"
@@ -46,17 +46,14 @@ msgid "We can run this test suite using the ``--test`` option to ``briefcase dev
 msgstr "Wir können diese Testsuite mit der Option ``--test`` für ``briefcase dev`` ausführen. Da dies das erste Mal ist, dass wir Tests ausführen, müssen wir auch die Option ``-r`` übergeben, um sicherzustellen, dass die Testanforderungen auch installiert werden:"
 
 #: ../../tutorial/tutorial-9.rst:34 ../../tutorial/tutorial-9.rst:139 ../../tutorial/tutorial-9.rst:209 ../../tutorial/tutorial-9.rst:326 ../../tutorial/tutorial-9.rst:396 2d0972cbbeeb4e77895e7aae91dd4c59 688015a82c4146f7b30fb258b0bcc40f b6a7250a1ab84134b7428005cbf4171a dfa1302f47744c64ac41ead479b9ede3 ebac0b692c99495186922ae86d966858
-#, fuzzy
 msgid "macOS"
 msgstr "macOS"
 
 #: ../../tutorial/tutorial-9.rst:57 ../../tutorial/tutorial-9.rst:156 ../../tutorial/tutorial-9.rst:241 ../../tutorial/tutorial-9.rst:344 ../../tutorial/tutorial-9.rst:438 0d2fe9341c874dc9af33d8ba5e387d1a 19337f530c3b4f11ab90830942df9782 b20c52fa79bf49169c8ea1b9b54dc512 c9240e5a002948a386fb2a4684bac677 f704bfa369654e50857610d716194c88
-#, fuzzy
 msgid "Linux"
 msgstr "Linux"
 
 #: ../../tutorial/tutorial-9.rst:83 ../../tutorial/tutorial-9.rst:173 ../../tutorial/tutorial-9.rst:275 ../../tutorial/tutorial-9.rst:362 ../../tutorial/tutorial-9.rst:471 0485d7cdc0704947b2ad032c7b1fec43 275a5a4bf83245328e341ddacc601c46 2b614984d7494cbbaaeabc1f1016424f 6226e747fa7c4b79ab5395dbc46f7018 c3f6b483b851411786e9fa6212489a14
-#, fuzzy
 msgid "Windows"
 msgstr "Windows"
 
@@ -147,7 +144,6 @@ msgstr ""
 "ausführen."
 
 #: ../../tutorial/tutorial-9.rst:517 71f93ac75c724e4daeba2125d30305a9
-#, fuzzy
 msgid "Next steps"
 msgstr "Nächste Schritte"
 
