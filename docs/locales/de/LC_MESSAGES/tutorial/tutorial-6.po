@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-06 18:04+0800\n"
-"PO-Revision-Date: 2024-01-14 01:02+0000\n"
-"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
+"PO-Revision-Date: 2024-02-02 22:01+0000\n"
+"Last-Translator: Marco Esters <mesters@anaconda.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
 "tutorial-6/de/>\n"
 "Language: de\n"
@@ -50,17 +50,14 @@ msgid "The process of deploying as a single-page web app follows the same famili
 msgstr "Der Prozess der Bereitstellung als einseitige Webanwendung folgt dem gleichen bekannten Muster - Sie erstellen die Anwendung, bauen die Anwendung und führen sie dann aus. Wenn Sie versuchen, eine Anwendung auszuführen und Briefcase feststellt, dass sie nicht für die angestrebte Plattform erstellt oder gebaut wurde, führt es die Schritte zum Erstellen und Bauen für Sie aus. Da wir die Anwendung zum ersten Mal für das Web ausführen, können wir alle drei Schritte mit einem Befehl ausführen:"
 
 #: ../../tutorial/tutorial-6.rst:34 510f5b2ca0884038a8e30fb9a096af4d
-#, fuzzy
 msgid "macOS"
 msgstr "macOS"
 
 #: ../../tutorial/tutorial-6.rst:72 52e1585ec59c40f781a5ca2464633807
-#, fuzzy
 msgid "Linux"
 msgstr "Linux"
 
 #: ../../tutorial/tutorial-6.rst:110 fa0f7530ac0f457581d5b701b434bdae
-#, fuzzy
 msgid "Windows"
 msgstr "Windows"
 
@@ -95,7 +92,6 @@ msgid "But when you press the button, you're running Python code... how does tha
 msgstr "Aber wenn Sie die Taste drücken, führen Sie Python-Code aus... wie funktioniert das? Toga verwendet `PyScript <https://pyscript.net>`__, um einen Python-Interpreter im Browser bereitzustellen. Briefcase verpackt den Code Ihrer Anwendung als Rädchen, die PyScript im Browser laden kann. Wenn die Seite geladen wird, läuft der Anwendungscode im Browser und baut die Benutzeroberfläche mit Hilfe des Browser-DOMs auf. Wenn Sie auf eine Schaltfläche klicken, führt diese Schaltfläche den Code zur Ereignisbehandlung im Browser aus."
 
 #: ../../tutorial/tutorial-6.rst:173 c0712cbbdbb5474fae8a3b7ea9e1f165
-#, fuzzy
 msgid "Next steps"
 msgstr "Nächste Schritte"
 
