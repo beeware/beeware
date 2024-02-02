@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-06 18:04+0800\n"
-"PO-Revision-Date: 2024-01-15 09:06+0000\n"
-"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
+"PO-Revision-Date: 2024-02-02 22:01+0000\n"
+"Last-Translator: Marco Esters <mesters@anaconda.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
 "tutorial-8/de/>\n"
 "Language: de\n"
@@ -183,7 +183,6 @@ msgid "If you try to open an app menu, the menu will appear immediately."
 msgstr "Wenn Sie versuchen, ein Anwendungsmenü zu öffnen, wird das Menü sofort angezeigt."
 
 #: ../../tutorial/tutorial-8.rst:141 9112ebc92c224bd4899d5ced54429733
-#, fuzzy
 msgid "Next steps"
 msgstr "Nächste Schritte"
 
