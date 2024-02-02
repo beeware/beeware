@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-07 09:54+0800\n"
-"PO-Revision-Date: 2024-02-02 22:01+0000\n"
+"PO-Revision-Date: 2024-02-03 01:43+0000\n"
 "Last-Translator: Marco Esters <mesters@anaconda.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
 "tutorial-2/de/>\n"
@@ -20,34 +20,47 @@ msgid "Tutorial 2 - Making it interesting"
 msgstr "Tutorial 2 - Es wird interessant"
 
 #: ../../tutorial/tutorial-2.rst:5 9243ae1890a444c1a2ac5ed207ffb2b9
-#, fuzzy
 msgid "In :doc:`Tutorial 1 <tutorial-1>`, we generated a stub project that was able to run, but we didn't write any code ourselves. Let's take a look at what was generated for us."
-msgstr "In :doc:`Tutorial 1 <tutorial-1>` haben wir ein Stub-Projekt generiert, das lauffähig war, aber wir haben keinen eigenen Code geschrieben. Schauen wir uns an, was für uns generiert wurde."
+msgstr ""
+"In :doc:`Tutorial 1 <tutorial-1>` haben wir ein lauffähiges Rumpfprojekt "
+"erstellt, aber eigenen Code haben wir nicht geschrieben. Schauen wir uns an, "
+"was für uns generiert wurde."
 
 #: ../../tutorial/tutorial-2.rst:10 e9ebf421d32d4033b9798ae970b813ab
-#, fuzzy
 msgid "What was generated"
-msgstr "Was wurde erzeugt"
+msgstr "Was generiert wurde"
 
 #: ../../tutorial/tutorial-2.rst:12 50b605789b834bc7b4fbf912c0adb10b
-#, fuzzy
 msgid "In the ``src/helloworld`` directory, you should see 3 files: ``__init__.py``, ``__main__.py`` and ``app.py``."
-msgstr "In dem Verzeichnis ``src/helloworld`` sollten Sie 3 Dateien sehen: ``__init__.py``, ``__main__.py`` und ``app.py``."
+msgstr ""
+"In dem Verzeichnis ``src/helloworld`` sollten 3 Dateien zu sehen sein: "
+"``__init__.py``, ``__main__.py`` und ``app.py``."
 
 #: ../../tutorial/tutorial-2.rst:15 3f2c12dc8d5d441fb7808bf022dc78e5
-#, fuzzy
 msgid "``__init__.py`` marks the ``helloworld`` directory as an importable Python module. It is an empty file; the very fact it exists tells the Python interpreter that the ``helloworld`` directory defines a module."
-msgstr "``__init__.py`` markiert das ``helloworld``-Verzeichnis als importierbares Python-Modul. Es ist eine leere Datei; allein die Tatsache, dass sie existiert, sagt dem Python-Interpreter, dass das ``helloworld``-Verzeichnis ein Modul definiert."
+msgstr ""
+"``__init__.py`` markiert das ``helloworld``-Verzeichnis als importierbares "
+"Python-Modul. Es ist eine leere Datei; allein die Tatsache, dass sie "
+"existiert, sagt dem Python-Interpreter, dass das ``helloworld``-Verzeichnis "
+"ein Modul definiert."
 
 #: ../../tutorial/tutorial-2.rst:19 3aa0f503e2fa4451bb9838717732de67
-#, fuzzy
 msgid "``__main__.py`` marks the ``helloworld`` module as a special kind of module - an executable module. If you try to run the ``helloworld`` module using ``python -m helloworld``, the ``__main__.py`` file is where Python will start executing. The contents of ``__main__.py`` is relatively simple::"
-msgstr "``__main__.py`` markiert das ``helloworld`` Modul als eine besondere Art von Modul - ein ausführbares Modul. Wenn Sie versuchen, das Modul ``helloworld`` mit ``python -m helloworld`` zu starten, ist die Datei ``__main__.py`` der Ort, an dem Python mit der Ausführung beginnt. Der Inhalt von ``__main__.py`` ist relativ einfach::"
+msgstr ""
+"``__main__.py`` markiert das ``helloworld`` Modul als eine besondere Art von "
+"Modul - ein ausführbares Modul. Wenn Sie versuchen, das Modul ``helloworld`` "
+"mit ``python -m helloworld`` zu starten, ist die Datei ``__main__.py`` der "
+"Ort, an dem Python mit der Ausführung beginnt. Der Inhalt von ``__main__.py``"
+" ist relativ einfach::"
 
 #: ../../tutorial/tutorial-2.rst:29 2cb39aab85b34665b518db1e45270039
-#, fuzzy
 msgid "That is - it imports the ``main`` method from the ``helloworld`` app; and if it's being executed as an entry point, calls the main() method, and starts the application's main loop. The main loop is the way a GUI application listens for user input (like mouse clicks and keyboard presses)."
-msgstr "Das heißt, es importiert die Methode ``main`` aus der Anwendung ``helloworld``; und wenn es als Einstiegspunkt ausgeführt wird, ruft es die Methode main() auf und startet die Hauptschleife der Anwendung. Die Hauptschleife ist die Art und Weise, wie eine GUI-Anwendung auf Benutzereingaben (wie Mausklicks und Tastatureingaben) wartet."
+msgstr ""
+"Das heißt, es importiert die Methode ``main`` aus der Anwendung "
+"``helloworld``; und wenn es als Einstiegspunkt ausgeführt wird, ruft es die "
+"Methode main() auf und startet die Hauptschleife der Anwendung. Die "
+"Hauptschleife ist die Art und Weise, wie eine GUI-Anwendung auf "
+"Benutzereingaben (wie Mausklicks und Tastatureingaben) wartet."
 
 #: ../../tutorial/tutorial-2.rst:34 0253dd1324ab47efb80c942735486f4c
 #, fuzzy
