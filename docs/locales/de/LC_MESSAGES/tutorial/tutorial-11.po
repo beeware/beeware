@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-06 18:04+0800\n"
-"PO-Revision-Date: 2024-01-10 22:12+0000\n"
-"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
+"PO-Revision-Date: 2024-02-02 22:01+0000\n"
+"Last-Translator: Marco Esters <mesters@anaconda.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
 "tutorial-11/de/>\n"
 "Language: de\n"
@@ -30,7 +30,6 @@ msgid "**Coming soon**"
 msgstr "**Kommt bald**"
 
 #: ../../tutorial/tutorial-11.rst:14 2da5c96620f24002b6bd6312ba4f360b
-#, fuzzy
 msgid "Next steps"
 msgstr "Nächste Schritte"
 
