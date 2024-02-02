@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-07 09:54+0800\n"
-"PO-Revision-Date: 2024-01-14 12:29+0000\n"
-"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
+"PO-Revision-Date: 2024-02-02 22:01+0000\n"
+"Last-Translator: Marco Esters <mesters@anaconda.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
 "tutorial-2/de/>\n"
 "Language: de\n"
@@ -218,19 +218,16 @@ msgstr "Nachdem wir nun diese Änderungen vorgenommen haben, können wir sehen, 
 
 #: ../../tutorial/tutorial-2.rst:235 ../../tutorial/tutorial-2.rst:272
 #: 33a0be631b2741cdbf4d66c68588ff90 4f95885535034dd7bc6f03a823b01d7c
-#, fuzzy
 msgid "macOS"
 msgstr "macOS"
 
 #: ../../tutorial/tutorial-2.rst:244 ../../tutorial/tutorial-2.rst:277
 #: 13268e27f8dd4fa7aa97178728669ea8 96fa7564618e4e2ca326bb6b4f22eae8
-#, fuzzy
 msgid "Linux"
 msgstr "Linux"
 
 #: ../../tutorial/tutorial-2.rst:253 ../../tutorial/tutorial-2.rst:282
 #: 58ff99756da94e00b1cb0145584a5640 b29c7dbc8ce542a890606f0cd47c02fc
-#, fuzzy
 msgid "Windows"
 msgstr "Windows"
 
@@ -240,7 +237,6 @@ msgid "You'll notice that this time, it *doesn't* install dependencies. Briefcas
 msgstr "Sie werden feststellen, dass dieses Mal *keine* Abhängigkeiten installiert werden. Briefcase kann erkennen, dass die Anwendung schon einmal ausgeführt wurde, und um Zeit zu sparen, wird nur die Anwendung ausgeführt. Wenn Sie neue Abhängigkeiten zu Ihrer Anwendung hinzufügen, können Sie sicherstellen, dass diese installiert werden, indem Sie die Option ``-r`` beim Aufruf von ``briefcase dev`` mitgeben."
 
 #: ../../tutorial/tutorial-2.rst:268 92453cd6aaee46c2a98bb7ec356815ff
-#, fuzzy
 msgid "This should open a GUI window:"
 msgstr "Dies sollte ein GUI-Fenster öffnen:"
 
@@ -265,7 +261,6 @@ msgid "If you enter a name in the text box, and press the GUI button, you should
 msgstr "Wenn Sie einen Namen in das Textfeld eingeben und die Schaltfläche GUI drücken, sollte die Ausgabe in der Konsole erscheinen, in der Sie die Anwendung gestartet haben."
 
 #: ../../tutorial/tutorial-2.rst:291 e08d3a86b82245a8916624e9794ae970
-#, fuzzy
 msgid "Next steps"
 msgstr "Nächste Schritte"
 
