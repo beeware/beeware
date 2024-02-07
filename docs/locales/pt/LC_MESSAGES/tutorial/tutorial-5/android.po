@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-24 17:48+0800\n"
-"PO-Revision-Date: 2024-01-29 22:01+0000\n"
+"PO-Revision-Date: 2024-02-07 15:02+0000\n"
 "Last-Translator: joaovitorpmoreira <programacaojoaopm@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/"
 "tutorial/tutorial-5/android/pt/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../tutorial/tutorial-5/android.rst:3 239e73746f42442db4b2010358671e98
 msgid "Tutorial 5 - Taking it mobile: Android"
-msgstr ""
+msgstr "Tutorial 5 - Levando para o Mobile: Android"
 
 #: ../../tutorial/tutorial-5/android.rst:5 f17fd7b57dee4dbea26b07fc7292f200
 msgid "Now, we're going to take our application, and deploy it as an Android application."
