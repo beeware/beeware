@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-24 17:48+0800\n"
-"PO-Revision-Date: 2024-01-29 22:01+0000\n"
+"PO-Revision-Date: 2024-02-07 15:02+0000\n"
 "Last-Translator: joaovitorpmoreira <programacaojoaopm@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/"
 "tutorial/tutorial-5/ios/pt/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../tutorial/tutorial-5/iOS.rst:3 e64015aa8cf04dd986ee8e55d0bcdccc
 msgid "Tutorial 5 - Taking it mobile: iOS"
-msgstr ""
+msgstr "Tutorial 5 - Levando para o Mobile: iOS"
 
 #: ../../tutorial/tutorial-5/iOS.rst:5 b72aa6488d004e318fb991aeebfb9610
 msgid "To compile iOS applications we'll need Xcode, which is available for free from `the macOS App Store <https://apps.apple.com/au/app/xcode/id497799835?mt=12>`__."
