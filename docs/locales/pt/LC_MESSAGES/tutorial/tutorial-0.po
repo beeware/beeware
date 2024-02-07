@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-24 17:48+0800\n"
-"PO-Revision-Date: 2024-01-30 22:01+0000\n"
+"PO-Revision-Date: 2024-02-07 20:01+0000\n"
 "Last-Translator: joaovitorpmoreira <programacaojoaopm@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/"
 "tutorial/tutorial-0/pt/>\n"
@@ -148,7 +148,7 @@ msgstr "Para criar aplicativos BeeWare no macOS, é necessário:"
 #: ../../tutorial/tutorial-0.rst:81 a8d4b6b5703c40c895c18475445274ab
 msgid "**Git**, a version control system. This is included with Xcode or the command line developer tools, which you installed above."
 msgstr ""
-"Git, um sistema de controle de versão. Ele está incluso no Xcode ou nas "
+"**Git**, um sistema de controle de versão. Ele está incluso no Xcode ou nas "
 "ferramentas de linha de comando, que você instalou acima."
 
 #: ../../tutorial/tutorial-0.rst:86 33ace55b4bfe4e138cca4292b47122ab
