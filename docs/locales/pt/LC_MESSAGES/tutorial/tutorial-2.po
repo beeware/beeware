@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-24 17:48+0800\n"
-"PO-Revision-Date: 2024-02-07 00:01+0000\n"
+"PO-Revision-Date: 2024-02-07 05:01+0000\n"
 "Last-Translator: joaovitorpmoreira <programacaojoaopm@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/"
 "tutorial/tutorial-2/pt/>\n"
@@ -101,7 +101,7 @@ msgstr "Depois, definimos um método chamado ``startup()``::"
 #: ../../tutorial/tutorial-2.rst:75 6deb906bea6240d19bcd5ad0130c7399
 msgid "The first thing the startup method does is to define a main box. Toga's layout scheme behaves similar to HTML. You build an application by constructing a collection of boxes, each of which contains other boxes, or actual widgets. You then apply styles to these boxes to define how they will consume the available window space."
 msgstr ""
-"A primeira coisa que o método startup() faz é definir uma container "
+"A primeira coisa que o método startup() faz é definir um container "
 "principal. O esquema de layout do Toga se comporta de maneira semelhante ao "
 "HTML. A construção de uma aplicação se dá por meio da criação de uma coleção "
 "de containers, cada um contendo outros containers ou os widgets propriamente "
@@ -184,18 +184,34 @@ msgstr ""
 #: ../../tutorial/tutorial-2.rst:160 76287b7a213d412aa066e0d7b569bc45
 msgid "Toga's built-in layout system is called \"Pack\". It behaves a lot like CSS. You define objects in a hierarchy - in HTML, the objects are ``<div>``, ``<span>``, and other DOM elements; in Toga, they're widgets and boxes. You can then assign styles to the individual elements. In this case, we're indicating that this is a ``COLUMN`` box - that is, it is a box that will consume all the available width, and will expand its height as content is added, but it will try to be as short as possible."
 msgstr ""
+"O Toga possui um sistema de layout interno denominado \"Pack\". Seu "
+"funcionamento se assemelha ao CSS. Você define objetos em uma hierarquia - "
+"no HTML, os objetos são ``<div>`` e ``<span>``, e outros elementos do DOM; "
+"enquanto no Toga, são widgets e containers. Estilos podem ser atribuídos a "
+"cada elemento individualmente. Neste caso específico, estamos indicando que "
+"o container é um ``'COLUMN'`` - isto é, ele ocupará toda a largura "
+"disponível e aumentará sua altura à medida que conteúdo for adicionado, "
+"porém buscando sempre ser o mais compacto possível."
 
 #: ../../tutorial/tutorial-2.rst:167 20a193b1e9cc44d78695adb5ae2ea2f6
 msgid "Next, we define a couple of widgets::"
-msgstr ""
+msgstr "A seguir, vamos definir dois widgets::"
 
 #: ../../tutorial/tutorial-2.rst:175 62d0562f9a44420fa88713f837a6a9b4
 msgid "Here, we define a Label and a TextInput. Both widgets have styles associated with them; the label will have 5px of padding on its left and right, and no padding on the top and bottom. The TextInput is marked as being flexible - that is, it will absorb all available space in its layout axis."
 msgstr ""
+"Nesta etapa, definimos um Label e um TextInput. Ambos os widgets possuem "
+"estilos associados; o Label terá 5px de preenchimento à esquerda e à "
+"direita, e nenhum preenchimento na parte superior e inferior. O TextInput é "
+"marcado como flexível, ou seja, ele absorverá todo o espaço disponível em "
+"seu eixo de layout."
 
 #: ../../tutorial/tutorial-2.rst:180 ffde83dd7e8c4d1388ba750f4f201ee6
 msgid "The TextInput is assigned as an instance variable of the class. This gives us easy access to the widget instance - something that we'll use in a moment."
 msgstr ""
+"O TextInput é atribuído como uma variável de instância da classe. Isso nos "
+"permite acessar facilmente a instância do widget, o que será utilizado em "
+"breve."
 
 #: ../../tutorial/tutorial-2.rst:183 43b50ca0d5fb4573ad7fe4374b81c1c1
 msgid "Next, we define a box to hold these two widgets::"
