@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-24 17:48+0800\n"
-"PO-Revision-Date: 2024-01-31 21:02+0000\n"
+"PO-Revision-Date: 2024-02-09 00:01+0000\n"
 "Last-Translator: joaovitorpmoreira <programacaojoaopm@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/"
 "tutorial/tutorial-3/pt/>\n"
@@ -27,22 +27,34 @@ msgstr "Tutorial 3 - Empacotando para Distribuição"
 #: ../../tutorial/tutorial-3.rst:5 023340c53cb2412c8b4430b28f040e65
 msgid "So far, we've been running our application in \"Developer mode\". This makes it easy for us to run our application locally - but what we really want is to be able to give our application to others."
 msgstr ""
+"Até o momento, executamos nossa aplicação no \"modo de desenvolvedor\". Isso "
+"facilita a execução da nossa aplicação localmente - mas o que realmente "
+"queremos é poder fornecer nossa aplicação para outras pessoas."
 
 #: ../../tutorial/tutorial-3.rst:9 3fb3c92dd37d40edbbd782bb616ff644
 msgid "However, we don't want to have to teach our users how to install Python, create a virtual environment, clone a git repository, and run Briefcase in developer mode. We'd rather just give them an installer, and have the application Just Work."
 msgstr ""
+"Entretanto, não queremos ter que ensinar aos nossos usuários como instalar o "
+"Python, criar um ambiente virtual, clonar um repositório git e executar o "
+"Briefcase no modo de desenvolvedor. Queremos é fornecer um instalador, "
+"garantindo a execução imediata da aplicação."
 
 #: ../../tutorial/tutorial-3.rst:14 6eda3c8e2d7749eea0f5e0fe1e9cea6f
 msgid "Briefcase can be used to package your application for distribution in this way."
 msgstr ""
+"O Briefcase pode ser usado para empacotar sua aplicação para distribuição "
+"dessa maneira."
 
 #: ../../tutorial/tutorial-3.rst:17 eae6b5c5f00b42e891d888f95fecbd01
 msgid "Creating your application scaffold"
-msgstr ""
+msgstr "Criando a estrutura da sua aplicação"
 
 #: ../../tutorial/tutorial-3.rst:19 a078ef38486741c2b1924b280130b0dd
 msgid "Since this is the first time we're packaging our application, we need to create some configuration files and other scaffolding to support the packaging process. From the ``helloworld`` directory, run:"
 msgstr ""
+"Como esta é a primeira vez que estamos empacotando nossa aplicação, "
+"precisamos criar alguns arquivos de configuração e outras estruturas de "
+"suporte ao processo de empacotamento. No diretório ``helloworld``, execute:"
 
 #: ../../tutorial/tutorial-3.rst:25 ../../tutorial/tutorial-3.rst:174
 #: ../../tutorial/tutorial-3.rst:257 ../../tutorial/tutorial-3.rst:351
@@ -68,30 +80,64 @@ msgstr "Windows"
 #: ../../tutorial/tutorial-3.rst:110 a1f98fa9baeb4dc69afb1129a26c482c
 msgid "You've probably just seen pages of content go past in your terminal... so what just happened? Briefcase has done the following:"
 msgstr ""
+"É provável que você tenha observado uma grande quantidade de texto passando "
+"pelo seu terminal... mas o que exatamente aconteceu? O Briefcase fez o "
+"seguinte:"
 
 #: ../../tutorial/tutorial-3.rst:113 1257cd9743264ce3a05ffa137a15a9a0
 msgid "It **generated an application template**. There's a lot of files and configurations required to build a native installer, above and beyond the code of your actual application. This extra scaffolding is almost the same for every application on the same platform, except for the name of the actual application being constructed - so Briefcase provides an application template for each platform it supports. This step rolls out the template, substituting the name of your application, bundle ID, and other properties of your configuration file as required to support the platform you're building on."
 msgstr ""
+"Ele **gerou um modelo de aplicação** (template). Existem muitos arquivos e "
+"configurações necessárias para construir um instalador nativo, além do "
+"código da sua aplicação. Essa estrutura extra é quase igual para todas as "
+"aplicações na mesma plataforma, exceto pelo nome da aplicação que está sendo "
+"construída - um modelo de aplicação (template) é fornecido pelo Briefcase "
+"para cada plataforma que ele suporta. Esta etapa implementa o modelo, "
+"substituindo o nome da sua aplicação, ID do pacote e outras propriedades do "
+"seu arquivo de configuração conforme necessário para suportar a plataforma "
+"na qual você está construindo."
 
 #: ../../tutorial/tutorial-3.rst:123 1bf0793c27934aafbe7de043096da634
 msgid "If you're not happy with the template provided by Briefcase, you can provide your own. However, you probably don't want to do this until you've got a bit more experience using Briefcase's default template."
 msgstr ""
+"Caso o modelo fornecido pelo Briefcase não seja satisfatório, é possível "
+"você fornecer um modelo próprio. Entretanto, é recomendável que isso não "
+"seja feito antes de se obter maior familiaridade com o modelo padrão do "
+"Briefcase."
 
 #: ../../tutorial/tutorial-3.rst:127 17bb8f842a6e4e55ab572650288a1dd6
 msgid "It **downloaded and installed a support package**. The packaging approach taken by briefcase is best described as \"the simplest thing that could possibly work\" - it ships a complete, isolated Python interpreter as part of every application it builds. This is slightly space inefficient - if you have 5 applications packaged with Briefcase, you'll have 5 copies of the Python interpreter. However, this approach guarantees that every application is completely independent, using a specific version of Python that is known to work with the application."
 msgstr ""
+"Ele **baixou e instalou um pacote de suporte**. A abordagem de empacotamento "
+"adotada pelo Briefcase é melhor descrita como \"a coisa mais simples que "
+"poderia funcionar\" - ele inclui um interpretador Python completo e isolado "
+"como parte de cada aplicativo criado. Isso apresenta uma ligeira "
+"ineficiência em termos de espaço - se você tiver 5 aplicativos empacotados "
+"com o Briefcase, terá 5 cópias do interpretador Python. No entanto, essa "
+"abordagem garante que cada aplicação seja completamente independente, usando "
+"uma versão específica do Python que comprovadamente funciona com tal "
+"aplicação."
 
 #: ../../tutorial/tutorial-3.rst:136 ca31016cca5746bd927e2b76da1d94af
 msgid "Again, Briefcase provides a default support package for each platform; if you want, you can provide your own support package, and have that package included as part of the build process. You may want to do this if you have particular options in the Python interpreter that you need to have enabled, or if you want to strip modules out of the standard library that you don't need at runtime."
 msgstr ""
+"Novamente, o Briefcase fornece um pacote de suporte padrão para cada "
+"plataforma; entretanto, caso deseje, você pode fornecer seu próprio pacote "
+"de suporte e incluí-lo como parte do processo de construção. Isso pode ser "
+"útil se você necessita de opções específicas habilitadas no interpretador "
+"Python, ou se deseja remover módulos da biblioteca padrão que não são "
+"necessários em tempo de execução."
 
 #: ../../tutorial/tutorial-3.rst:143 c4ae2d97a4c0406890a46496a117b25f
 msgid "Briefcase maintains a local cache of support packages, so once you've downloaded a specific support package, that cached copy will be used on future builds."
 msgstr ""
+"O Briefcase mantém um cache local de pacotes de suporte. Portanto, uma vez "
+"que você tenha baixado um pacote de suporte específico, essa cópia "
+"armazenada será utilizada em compilações futuras."
 
 #: ../../tutorial/tutorial-3.rst:147 9060ff492be142ee8d686c53285e2dad
 msgid "It **installed application requirements**. Your application can specify any third-party modules that are required at runtime. These will be installed using ``pip`` into your application's installer."
-msgstr ""
+msgstr "Ele **instalou os requisitos da aplicação**."
 
 #: ../../tutorial/tutorial-3.rst:151 4063c77b72b8475cab3723c229c63b6e
 msgid "It **Installed your application code**. Your application will have its own code and resources (e.g., images that are needed at runtime); these files are copied into the installer."
@@ -107,7 +153,7 @@ msgstr ""
 
 #: ../../tutorial/tutorial-3.rst:166 3b63d298c65e4f81bd50457cad04151f
 msgid "Building your application"
-msgstr ""
+msgstr "Compilando sua aplicação"
 
 #: ../../tutorial/tutorial-3.rst:168 470f1aca093344ffb92526b8b879aef2
 msgid "You can now compile your application. This step performs any binary compilation that is necessary for your application to be executable on your target platform."
@@ -135,11 +181,11 @@ msgstr ""
 
 #: ../../tutorial/tutorial-3.rst:251 81c94c4e935e4ab3862de1ca9bcd5c81
 msgid "Running your app"
-msgstr ""
+msgstr "Rodando sua aplicação"
 
 #: ../../tutorial/tutorial-3.rst:253 adad2879871a43bd94b69f9046226c06
 msgid "You can now use Briefcase to run your application:"
-msgstr ""
+msgstr "Agora você pode utilizar o Briefcase para executar sua aplicação:"
 
 #: ../../tutorial/tutorial-3.rst:329 9cfea38441aa4915bb6e37482b0be058
 msgid "This will start to run your native application, using the output of the ``build`` command."
@@ -151,7 +197,7 @@ msgstr ""
 
 #: ../../tutorial/tutorial-3.rst:341 8c6e066943e14164aa385b525a87be39
 msgid "Building your installer"
-msgstr ""
+msgstr "Criando o seu instalador"
 
 #: ../../tutorial/tutorial-3.rst:343 4423eaa0fd3a4310bc4b5343433ff709
 msgid "You can now package your application for distribution, using the ``package`` command. The package command does any compilation that is required to convert the scaffolded project into a final, distributable product. Depending on the platform, this may involve compiling an installer, performing code signing, or doing other pre-distribution tasks."
