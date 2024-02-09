@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-24 17:48+0800\n"
-"PO-Revision-Date: 2024-02-09 00:01+0000\n"
+"PO-Revision-Date: 2024-02-09 05:01+0000\n"
 "Last-Translator: joaovitorpmoreira <programacaojoaopm@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/"
 "tutorial/tutorial-3/pt/>\n"
@@ -137,7 +137,10 @@ msgstr ""
 
 #: ../../tutorial/tutorial-3.rst:147 9060ff492be142ee8d686c53285e2dad
 msgid "It **installed application requirements**. Your application can specify any third-party modules that are required at runtime. These will be installed using ``pip`` into your application's installer."
-msgstr "Ele **instalou os requisitos da aplicação**."
+msgstr ""
+"Ele **instalou os requisitos da aplicação**. Seu aplicativo pode especificar "
+"quaisquer módulos de terceiros necessários em tempo de execução. Estes serão "
+"instalados utilizando o ``pip`` no instalador da sua aplicação."
 
 #: ../../tutorial/tutorial-3.rst:151 4063c77b72b8475cab3723c229c63b6e
 msgid "It **Installed your application code**. Your application will have its own code and resources (e.g., images that are needed at runtime); these files are copied into the installer."
