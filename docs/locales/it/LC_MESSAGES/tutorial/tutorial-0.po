@@ -1,0 +1,195 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Russell Keith-Magee
+# This file is distributed under the same license as the BeeWare package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BeeWare 0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-13 11:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: it\n"
+"Language-Team: it <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../tutorial/tutorial-0.rst:3 fc9afe81744b476b87cea6fa1f847022
+msgid "Tutorial 0 - Let's get set up!"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:5 d0753e664d3a4561ad741496f633b5cb
+msgid "Before we build our first BeeWare app, we have to make sure we've got all the prerequisites for running BeeWare."
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:9 b8066e3c61a945db877b593081303603
+msgid "Install Python"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:11 f35e4b00b99e422abace7b597f815a3f
+msgid "The first thing we'll need is a working Python interpreter."
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:15 ../../tutorial/tutorial-0.rst:77
+#: ../../tutorial/tutorial-0.rst:136 01706c3bf33d41c4a2807e3251c32fd5
+#: a71844a4dfb548fe9b8fc9b62840a16d ff731a9b56f74d78adc0d824f8501a4a
+msgid "macOS"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:17 b726d7a9055049d5b4b2999354ebe163
+msgid "If you're on macOS, a recent version of Python is included with Xcode or the command line developer tools. To check if you already have it, run the following command:"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:25 a94d285f62144523923da015bb8e2895
+msgid "If Python is installed, you'll see its version number. Otherwise, you'll be prompted to install the command line developer tools."
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:28 ../../tutorial/tutorial-0.rst:84
+#: ../../tutorial/tutorial-0.rst:145 437fcfded57b450ab6fd99ec546ae6d4
+#: 76ab9239d2134568a34ba7f8d2cfb243 d8545f5912714e86af2fab6abeca10b0
+msgid "Linux"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:30 6caed12e429b4caa8fcaabf8a79af86f
+msgid "If you're on Linux, you'll install Python using the system package manager (``apt`` on Debian/Ubuntu/Mint, ``dnf`` on Fedora, or ``pacman`` on Arch)."
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:33 01f6e578a87f402ea271fe17d7e6c4f4
+msgid "You should ensure that the system Python is Python 3.8 or newer; if it isn't (e.g., Ubuntu 18.04 ships with Python 3.6), you'll need to upgrade your Linux distribution to something more recent."
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:37 1eb69a5593634128b8830cdf2516ecff
+msgid "Support for Raspberry Pi is limited at this time."
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:39 ../../tutorial/tutorial-0.rst:112
+#: ../../tutorial/tutorial-0.rst:154 6f1e94c24c4547a69e5d505050664686
+#: c7e06825c8a64c8eab106357631320a7 ca985ef1c79e4c4a9d33760c0c502062
+msgid "Windows"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:41 51f6b051c67d432789feddcdf998dc26
+msgid "If you're on Windows, you can get the official installer from `the Python website <https://www.python.org/downloads>`_. You can use any stable version of Python from 3.8 onward. We'd advise avoiding alphas, betas, and release candidates unless you *really* know what you're doing."
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:46 3a6e84f40f1d41039c2420413d99cfce
+msgid "Alternative Python distributions"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:48 07ef568f63614ba79a5bf1a19f859840
+msgid "There are lots of different ways of installing Python. You can install Python through `homebrew <https://docs.brew.sh/Homebrew-and-Python>`__. You can use `pyenv <https://github.com/pyenv/pyenv#simple-python-version-management-pyenv>`__ to manage multiple Python installs on the same machine. Windows users can install Python from the Windows App Store. Users from a data science background might want to use `Anaconda <https://docs.anaconda.com/anaconda/install/>`__ or `Miniconda <https://docs.conda.io/en/latest/miniconda.html>`__."
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:58 b7e30364383d4ffb94fb94f39d1fa035
+msgid "If you're on macOS or Windows, it doesn't matter *how* you've installed Python - it only matters that you can run ``python3`` from your operating system's command prompt/terminal application, and get a working Python interpreter."
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:63 21e163a01b2445f1a8f1f4965a30b895
+msgid "If you're on Linux, you should use the system Python provided by your operating system. You will be able to complete *most* of this tutorial using a non-system Python, but you won't be able to package your application for distribution to others."
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:71 6598108a51f644bd99c6bbad570e64d4
+msgid "Install dependencies"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:73 bf8361658fb84853940f3f4fef91e20b
+msgid "Next, install the additional dependencies needed for your operating system:"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:79 9e2efe2a425544efa9dff13f9241364c
+msgid "Building BeeWare apps on macOS requires:"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:81 a5406d3a99c541d29f7f61de575cbd29
+msgid "**Git**, a version control system. This is included with Xcode or the command line developer tools, which you installed above."
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:86 683df0741df44f5dbcce94be304ffb00
+msgid "To support local development, you'll need to install some system packages. The list of packages required varies depending on your distribution:"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:89 d16d951d3f044be6bcae1bc8ab492c53
+msgid "**Ubuntu 20.04+ / Debian 10+**"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:100 163b20c1259d4dc98ff5b614ce618883
+msgid "**Fedora**"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:106 da38ab80895047f988c7c865371f670e
+msgid "**Arch, Manjaro**"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:114 28e816c3ffdb49d280be378e1d6ee306
+msgid "Building BeeWare apps on Windows requires:"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:116 f2e0a1fbac95478dba80c10fbb506520
+msgid "**Git**, a version control system. You can download Git from from `git-scm.org <https://git-scm.com/download/>`__."
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:119 5639a95073b441439a94b8abddddb7b6
+msgid "After installing these tools, you should ensure you restart any terminal sessions. Windows will only expose newly installed tools terminals started *after* the install has completed."
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:124 400399b1913844738d7dc49cfc5ba5d1
+msgid "Set up a virtual environment"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:126 5986dba90bcd4460815a1b021d90201c
+msgid "We're now going to create a virtual environment - a \"sandbox\" that we can use to isolate our work on this tutorial from our main Python installation. If we install packages into the virtual environment, our main Python installation (and any other Python projects on our computer) won't be affected. If we make a complete mess of our virtual environment, we'll be able to simply delete it and start again, without affecting any other Python project on our computer, and without the need to re-install Python."
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:163 472f7bb57f984ca6b8b680d008719f16
+msgid "Errors running PowerShell Scripts"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:165 ff022e77c3c942d88d5774c4043dbc6c
+msgid "If you're using PowerShell, and you receive the error::"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:169 25fee417ccb14798b4b50cdf68678e1d
+msgid "Your Windows account doesn't have permissions to run scripts. To fix this:"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:171 975c2e1658ce48149f8e014f5fe5e503
+msgid "Run Windows PowerShell as Administrator."
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:172 8c7e8b529771493ea8c2bc6e3df9d920
+msgid "Run ``set-executionpolicy RemoteSigned``"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:173 955cf60212fa4ff987c2e2e36a82bbe3
+msgid "Select ``Y`` to change the execution policy."
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:175 11c33586e93a4a13a2a8368551ad2b9a
+msgid "Once you've done this you can rerun ``beeware-venv\\Scripts\\activate.ps1`` in your original PowerShell session (or a new session in the same directory)."
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:179 967a944aacdf4d33b76a8acef5066b91
+msgid "If this worked, your prompt should now be changed - it should have a ``(beeware-venv)`` prefix. This lets you know that you're currently in your BeeWare virtual environment. Whenever you're working on this tutorial, you should make sure your virtual environment is activated. If it isn't, re-run the last command (the ``activate`` command) to re-activate your environment."
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:185 202e77a489e34d7c853a91586fed9f52
+msgid "Alternative virtual environments"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:187 7e12119123d545dc85739226086813dc
+msgid "If you're using Anaconda or miniconda, you may be more familiar with using conda environments. You might also have heard of ``virtualenv``, a predecessor to Python's built in ``venv`` module. As with Python installs - if you're on macOS or Windows, it doesn't matter *how* you create your virtual environment, as long as you have one. If you're on Linux, you should stick to ``venv`` and the system Python."
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:195 0d344bb538b84768b187921dd9a68b04
+msgid "Next steps"
+msgstr ""
+
+#: ../../tutorial/tutorial-0.rst:197 b148a35055b445b6be0db1650ad8c7a4
+msgid "We've now set up our environment. We're ready to :doc:`create our first BeeWare application <tutorial-1>`."
+msgstr ""
+

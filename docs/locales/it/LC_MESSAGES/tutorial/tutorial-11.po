@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Russell Keith-Magee
+# This file is distributed under the same license as the BeeWare package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BeeWare 0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-13 11:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: it\n"
+"Language-Team: it <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../tutorial/tutorial-11.rst:5 658a9d1f961f4e28adbfa8e621ebbcf9
+msgid "Tutorial 11 - Publishing your app!"
+msgstr ""
+
+#: ../../tutorial/tutorial-11.rst:7 14786ab9b843446d876196a58c3ecfe2
+msgid "Once you've built an installer for your application, you're going to want to share it with the world. Briefcase provides a command - ``publish`` to manage this process, with a range of options for how to publish your application."
+msgstr ""
+
+#: ../../tutorial/tutorial-11.rst:11 ffbf9dff674449fbbd552dc26a6846e6
+msgid "**Coming soon**"
+msgstr ""
+
+#: ../../tutorial/tutorial-11.rst:14 3e525143200d46b98d31519ceefe149a
+msgid "Next steps"
+msgstr ""
+
+#: ../../tutorial/tutorial-11.rst:16 1a96af664e89429f8e1817db789f5239
+msgid "This has been a taste for what you can do with the tools provided by the BeeWare project. What you do from here is up to you!"
+msgstr ""
+
+#: ../../tutorial/tutorial-11.rst:19 22d92dbd7cae44dfb227327189a2bb89
+msgid "Some places to go from here:"
+msgstr ""
+
+#: ../../tutorial/tutorial-11.rst:21 8c741af15f9c41a4a0a33ad4322f2fff
+msgid "Tutorials demonstrating `features of the Toga widget toolkit <https://toga.readthedocs.io/en/latest/tutorial/index.html>`__."
+msgstr ""
+
+#: ../../tutorial/tutorial-11.rst:23 b083b0296a974b9f8f2c8faad41b64d2
+msgid "Details on the `options available when configuring your Briefcase project <https://briefcase.readthedocs.io/en/latest/reference/index.html>`__."
+msgstr ""
+

@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Russell Keith-Magee
+# This file is distributed under the same license as the BeeWare package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BeeWare 0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-13 11:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: it\n"
+"Language-Team: it <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../tutorial/tutorial-5/iOS.rst:3 06d69b16a6ef4384a477ee585fde4ef9
+msgid "Tutorial 5 - Taking it mobile: iOS"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/iOS.rst:5 ad2115a7575d464d9120e2aa2134523c
+msgid "To compile iOS applications we'll need Xcode, which is available for free from `the macOS App Store <https://apps.apple.com/au/app/xcode/id497799835?mt=12>`__."
+msgstr ""
+
+#: ../../tutorial/tutorial-5/iOS.rst:8 9e342c56f86946f3bdc6939989e2499a
+msgid "Once we've got Xcode installed, we can take our application and deploy it as an iOS app."
+msgstr ""
+
+#: ../../tutorial/tutorial-5/iOS.rst:10 1431a8e97a7040b2b3d9eeac93d00bfd
+msgid "The process of deploying an application to iOS is very similar to the process for deploying as a desktop application. First, you run the ``create`` command - but this time, we specify that we want to create an iOS application:"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/iOS.rst:39 5bef258f19ff407b8b607a3b6af60b09
+msgid "Once this completes, we'll have a ``build/helloworld/ios/xcode`` directory containing an Xcode project, as well as the support libraries and the application code needed for the application."
+msgstr ""
+
+#: ../../tutorial/tutorial-5/iOS.rst:43 2f7c1e7f67a64bccae7bbdd50445ceef
+msgid "You can then use Briefcase to compile your app using ``briefcase build iOS``:"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/iOS.rst:58 c156d84be4374f429feb7283334ca259
+msgid "We're now ready to run our application, using ``briefcase run iOS``. You'll be prompted to select a device to compile for; if you've got simulators for multiple iOS SDK versions installed, you may also be asked which iOS version you want to target. The options you are shown may differ from the options show in this output - at the very least, the list of devices will likely be different. For our purposes, it doesn't matter which simulator you pick."
+msgstr ""
+
+#: ../../tutorial/tutorial-5/iOS.rst:107 dedc1e0edf244061bb43068c2b7e2b8a
+msgid "This will start the iOS simulator, install your app, and start it. You should see the simulator start, and eventually open your iOS application:"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/iOS.rst:-1 da445c7fea52495e9ad23730b5c4d148
+msgid "Hello World Tutorial 5 window, on iOS"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/iOS.rst:113 9d4948c7335841ce93c474411079f6ad
+msgid "If you know ahead of time which iOS simulator you want to target, you can tell Briefcase to use that simulator by providing a ``-d`` (or ``--device``) option. Using the name of the device you selected when you built your application, run:"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/iOS.rst:121 46bb46df67c145579b9eeff452e592ee
+msgid "If you have multiple iOS versions available, Briefcase will pick the highest iOS version; if you want to pick a particular iOS version, you tell it to use that specific version:"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/iOS.rst:129 7d1b22970489463ea1f3ab300c517014
+msgid "Or, you can name a specific device UDID:"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/iOS.rst:136 4de800b5e7fb46c690fb2d932c14fab7
+msgid "Next steps"
+msgstr ""
+
+#: ../../tutorial/tutorial-5/iOS.rst:138 2a9416a6838e45429d8e37a8b24c6a6a
+msgid "We've now got an application on our phone! Is there anywhere else we can deploy a BeeWare app? Turn to :doc:`Tutorial 6 <../tutorial-6>` to find out..."
+msgstr ""
+
