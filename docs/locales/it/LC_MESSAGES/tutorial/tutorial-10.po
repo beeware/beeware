@@ -9,37 +9,42 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-13 11:48+0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: it\n"
+"PO-Revision-Date: 2024-02-13 12:14+0800\n"
+"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
 "Language-Team: it <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #: ../../tutorial/tutorial-10.rst:5 490be03cfd224e4f881be8bacfbce637
+#, fuzzy
 msgid "Tutorial 10 - Make this app your own"
-msgstr ""
+msgstr "Esercitazione 10 - Create la vostra applicazione"
 
 #: ../../tutorial/tutorial-10.rst:7 f2aca3b7515848f4a73579d716e157d7
+#, fuzzy
 msgid "So far, our app has used a default \"gray bee\" icon. How do we update the app to use our own icon?"
-msgstr ""
+msgstr "Finora la nostra applicazione ha utilizzato l'icona predefinita \"ape grigia\". Come possiamo aggiornare l'app per utilizzare la nostra icona?"
 
 #: ../../tutorial/tutorial-10.rst:11 7cb75e080bc34e1c875182e019d050ce
+#, fuzzy
 msgid "Adding an icon"
-msgstr ""
+msgstr "Aggiunta di un'icona"
 
 #: ../../tutorial/tutorial-10.rst:13 562012ab866644019ad3930f580e78a1
+#, fuzzy
 msgid "**Coming soon**"
-msgstr ""
+msgstr "**Prossimamente**"
 
 #: ../../tutorial/tutorial-10.rst:16 bbfa71ee6f0146a789a1f36b79d5a0af
 msgid "Next steps"
-msgstr ""
+msgstr "Prossimi passi"
 
 #: ../../tutorial/tutorial-10.rst:18 f8bdec68549c4d9c9311da01a4ec0491
+#, fuzzy
 msgid "We've now got an application with a custom icon on our desktop and phone! How do we share this application with everyone else? Turn to :doc:`Tutorial 11 <tutorial-11>` to find out..."
-msgstr ""
-
+msgstr "Ora abbiamo un'applicazione con un'icona personalizzata sul desktop e sul telefono! Come possiamo condividere questa applicazione con tutti gli altri? Consultate :doc:`Tutorial 11 <tutorial-11>` per scoprirlo..."
