@@ -8,46 +8,52 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-24 17:48+0800\n"
-"PO-Revision-Date: 2024-01-29 22:01+0000\n"
-"Last-Translator: joaovitorpmoreira <programacaojoaopm@gmail.com>\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/"
-"tutorial/tutorial-11/pt/>\n"
+"PO-Revision-Date: 2024-02-13 12:06+0800\n"
+"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
+"Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-11/pt/>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Poedit 3.4.2\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../tutorial/tutorial-11.rst:5 592463b4960b42afb9209622a8422b51
+#, fuzzy
 msgid "Tutorial 11 - Publishing your app!"
-msgstr ""
+msgstr "Tutorial 11 - Publicando seu aplicativo!"
 
 #: ../../tutorial/tutorial-11.rst:7 49514937dbad447c91b8be2b846b5ef6
+#, fuzzy
 msgid "Once you've built an installer for your application, you're going to want to share it with the world. Briefcase provides a command - ``publish`` to manage this process, with a range of options for how to publish your application."
-msgstr ""
+msgstr "Depois de criar um instalador para o seu aplicativo, você vai querer compartilhá-lo com o mundo. O Briefcase fornece um comando - ``publish`` - para gerenciar esse processo, com várias opções de como publicar o aplicativo."
 
 #: ../../tutorial/tutorial-11.rst:11 eabc82f4f6b64b649c5c3e4b20706987
+#, fuzzy
 msgid "**Coming soon**"
-msgstr ""
+msgstr "**Em breve**"
 
 #: ../../tutorial/tutorial-11.rst:14 3dac91e598464401ad89d85658ccf8b9
 msgid "Next steps"
 msgstr "Próximos passos"
 
 #: ../../tutorial/tutorial-11.rst:16 44dde2e5842041bb9b828e11788a7c2a
+#, fuzzy
 msgid "This has been a taste for what you can do with the tools provided by the BeeWare project. What you do from here is up to you!"
-msgstr ""
+msgstr "Esta foi uma amostra do que você pode fazer com as ferramentas fornecidas pelo projeto BeeWare. O que você fizer a partir daqui é com você!"
 
 #: ../../tutorial/tutorial-11.rst:19 38894d3946dd47a29f1064df1e30b5a2
+#, fuzzy
 msgid "Some places to go from here:"
-msgstr ""
+msgstr "Alguns lugares para ir a partir daqui:"
 
 #: ../../tutorial/tutorial-11.rst:21 90563acbea8849b5a2f199f5fc7bef7b
+#, fuzzy
 msgid "Tutorials demonstrating `features of the Toga widget toolkit <https://toga.readthedocs.io/en/latest/tutorial/index.html>`__."
-msgstr ""
+msgstr "Tutoriais que demonstram `recursos do kit de ferramentas de widget Toga <https://toga.readthedocs.io/en/latest/tutorial/index.html>`__."
 
 #: ../../tutorial/tutorial-11.rst:23 dabdf03291d047548495780be1389f19
+#, fuzzy
 msgid "Details on the `options available when configuring your Briefcase project <https://briefcase.readthedocs.io/en/latest/reference/index.html>`__."
-msgstr ""
+msgstr "Detalhes sobre as `opções disponíveis ao configurar seu projeto Briefcase <https://briefcase.readthedocs.io/en/latest/reference/index.html>`__."
