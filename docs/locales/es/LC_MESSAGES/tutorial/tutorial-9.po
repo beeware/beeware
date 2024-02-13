@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-06 18:04+0800\n"
-"PO-Revision-Date: 2024-01-18 18:00+0000\n"
-"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
+"PO-Revision-Date: 2024-02-13 12:01+0000\n"
+"Last-Translator: KevinRodriguez777 <turcioskevinr@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/"
 "tutorial-9/es/>\n"
 "Language: es\n"
@@ -16,34 +16,48 @@ msgstr ""
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../tutorial/tutorial-9.rst:3 6c187687d357400e8159acfc2310f3ad
-#, fuzzy
 msgid "Tutorial 9 - Testing times"
-msgstr "Tutorial 9 - Tiempos de prueba"
+msgstr "Tutorial 9 - Tiempo de Ejecución del conjunto de pruebas"
 
 #: ../../tutorial/tutorial-9.rst:5 b72366c14e754abea97dc62bc5188609
-#, fuzzy
 msgid "Most software development doesn't involve writing new code - it's modifying existing code. Ensuring that existing code continues to work in the way we expect is a key part of the software development process. One way to do ensure the behavior of our app is with a *test suite*."
-msgstr "La mayor parte del desarrollo de software no consiste en escribir código nuevo, sino en modificar el existente. Garantizar que el código existente sigue funcionando de la forma que esperamos es una parte clave del proceso de desarrollo de software. Una forma de asegurar el comportamiento de nuestra aplicación es con un *suite de pruebas*."
+msgstr ""
+"La mayor parte del desarrollo de software no consiste en escribir código "
+"nuevo, sino en modificar el existente. Garantizar que el código existente "
+"sigue funcionando de la forma que esperamos es una parte clave del proceso "
+"de desarrollo de software. Una forma de asegurar el comportamiento de "
+"nuestra aplicación es con un *conjunto de pruebas*."
 
 #: ../../tutorial/tutorial-9.rst:11 9bf2c9977b9749e68f83228ff7427dc1
-#, fuzzy
 msgid "Running the test suite"
 msgstr "Ejecución del conjunto de pruebas"
 
 #: ../../tutorial/tutorial-9.rst:13 1d0866cff0cf4a2287f754aec3a2e8a9
-#, fuzzy
 msgid "It turns out our project already has a test suite! When we originally generated our project, two top-level directories were generated: ``src`` and ``tests``. The ``src`` folder contains the code for our app; the ``tests`` folder contains our test suite. Inside the ``tests`` folder is a file named ``test_app.py`` with the following content::"
-msgstr "Resulta que nuestro proyecto ya tiene un conjunto de pruebas Cuando originalmente generamos nuestro proyecto, se generaron dos directorios de nivel superior: ``src`` y ``tests``. La carpeta ``src`` contiene el código de nuestra aplicación; la carpeta ``tests`` contiene nuestro conjunto de pruebas. Dentro de la carpeta ``tests`` hay un archivo llamado ``test_app.py`` con el siguiente contenido::"
+msgstr ""
+"Resulta que nuestro proyecto ya tiene un conjunto de pruebas! Cuando "
+"originalmente generamos nuestro proyecto, se generaron dos directorios de "
+"nivel superior: ``src`` y ``tests``. La carpeta ``src`` contiene el código "
+"de nuestra aplicación; la carpeta ``tests`` contiene nuestro conjunto de "
+"pruebas. Dentro de la carpeta ``tests`` hay un archivo llamado ``test_app."
+"py`` con el siguiente contenido::"
 
 #: ../../tutorial/tutorial-9.rst:23 4cffb17ca8d34ebfa581f3a4bd572b12
-#, fuzzy
 msgid "This is a `Pytest <https://pytest.org>`__ *test case* - a block of code that can be executed to verify some behavior of your app. In this case, the test is a placeholder, and doesn't test anything about our app - but it is a test that we can perform."
-msgstr "Esto es un `Pytest <https://pytest.org>`__ *caso de prueba* - un bloque de código que puede ser ejecutado para verificar algún comportamiento de tu aplicación. En este caso, la prueba es un marcador de posición, y no prueba nada acerca de nuestra aplicación - pero es una prueba que podemos realizar."
+msgstr ""
+"Esto es un `Pytest <https://pytest.org>`__ *caso de prueba* - un bloque de "
+"código que puede ser ejecutado para verificar algún comportamiento de tu "
+"aplicación. En este caso, la prueba es un marcador de posición, y no "
+"verifica nada específico sobre nuestra aplicación, pero es una prueba que "
+"podemos realizar."
 
 #: ../../tutorial/tutorial-9.rst:28 024b6a4ae422481d9d75777fbe694897
-#, fuzzy
 msgid "We can run this test suite using the ``--test`` option to ``briefcase dev``. As this is the first time we are running tests, we also need to pass in the ``-r`` option to ensure that the test requirements are also installed:"
-msgstr "Podemos ejecutar este conjunto de pruebas utilizando la opción ``--test`` de ``briefcase dev``. Como es la primera vez que ejecutamos pruebas, también necesitamos pasar la opción ``-r`` para asegurarnos de que también se instalan los requisitos de las pruebas:"
+msgstr ""
+"Podemos ejecutar este conjunto de pruebas utilizando la opción ``--test`` de "
+"``briefcase dev``. Como es la primera vez que ejecutamos pruebas, también "
+"necesitamos pasar la opción ``-r`` para asegurarnos de que también se "
+"instalan los requisitos de las pruebas:"
 
 #: ../../tutorial/tutorial-9.rst:34 ../../tutorial/tutorial-9.rst:139 ../../tutorial/tutorial-9.rst:209 ../../tutorial/tutorial-9.rst:326 ../../tutorial/tutorial-9.rst:396 2d0972cbbeeb4e77895e7aae91dd4c59 688015a82c4146f7b30fb258b0bcc40f b6a7250a1ab84134b7428005cbf4171a dfa1302f47744c64ac41ead479b9ede3 ebac0b692c99495186922ae86d966858
 msgid "macOS"
@@ -58,24 +72,32 @@ msgid "Windows"
 msgstr "Windows"
 
 #: ../../tutorial/tutorial-9.rst:109 7c15f54a1940452482322c251981c252
-#, fuzzy
 msgid "Success! We've just executed a single test that verifies Python math works in the way we'd expect (What a relief!)."
-msgstr "¡Un éxito! Acabamos de ejecutar una única prueba que verifica que las matemáticas de Python funcionan como esperábamos (¡Qué alivio!)."
+msgstr ""
+"¡Un éxito! Acabamos de ejecutar una única prueba que verifica que las "
+"matemáticas de Python funcionan como esperábamos (¡Qué alivio!)."
 
 #: ../../tutorial/tutorial-9.rst:112 c7977e8737bd43439e19b318bdcdca4d
 #, fuzzy
 msgid "Let's replace this placeholder test with a test to verify that our ``greeting()`` method behaves the way we'd expect. Replace the contents of ``test_app.py`` with the following::"
-msgstr "Reemplacemos esta prueba con una prueba para verificar que nuestro método ``greeting()`` se comporta como esperamos. Sustituye el contenido de ``test_app.py`` por el siguiente::"
+msgstr ""
+"Vamos a reemplazar esta prueba de marcador de posición con una prueba para "
+"verificar que nuestro método ``greeting()`` se comporta como esperamos. "
+"Sustituye el contenido de ``test_app.py`` por el siguiente::"
 
 #: ../../tutorial/tutorial-9.rst:130 1115980da7fc4e0e8134cc02e00cbb17
-#, fuzzy
 msgid "This defines two new tests, verifying the two behaviors we expect to see: the output when a name is provided, and the output when the name is empty."
-msgstr "Esto define dos nuevas pruebas, verificando los dos comportamientos que esperamos ver: la salida cuando se proporciona un nombre, y la salida cuando el nombre está vacío."
+msgstr ""
+"Esto define dos nuevos casos de pruebas, verificando los dos comportamientos "
+"que esperamos ver: la salida cuando se proporciona un nombre, y la salida "
+"cuando el nombre está vacío."
 
 #: ../../tutorial/tutorial-9.rst:133 8737194522ec4aa1a6141458810b5e7f
-#, fuzzy
 msgid "We can now re-run the test suite. This time, we don't need to provided the ``-r`` option, as the test requirements have already been installed; we only need to use the ``--test`` option:"
-msgstr "Ahora podemos volver a ejecutar el conjunto de pruebas. Esta vez, no necesitamos proporcionar la opción ``-r``, ya que los requisitos de prueba ya se han instalado; sólo tenemos que utilizar la opción ``--test``:"
+msgstr ""
+"Ahora podemos volver a ejecutar el conjunto de pruebas. Esta vez, no "
+"necesitamos proporcionar la opción ``-r``, ya que los requisitos de la "
+"prueba ya se han instalado; sólo tenemos que utilizar la opción ``--test``:"
 
 #: ../../tutorial/tutorial-9.rst:190 5c28907574ab4795bf7a7af5941c8c69
 #, fuzzy
