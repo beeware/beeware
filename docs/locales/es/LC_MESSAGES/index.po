@@ -1,17 +1,18 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-13 11:48+0800\n"
-"PO-Revision-Date: 2024-01-23 12:02+0000\n"
-"Last-Translator: Kamborio <Kamborio15@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2024-02-18 19:01+0000\n"
+"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/"
+"index/es/>\n"
 "Language: es\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/index/es/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.4\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../index.rst:3 c92014dae721419795a6af2c206ee066
@@ -31,9 +32,13 @@ msgid "Translations are available"
 msgstr "Las traducciones están disponibles"
 
 #: ../../index.rst:16 5bb28557326446ed8d8ff839b8ef4723
-#, fuzzy
 msgid "If you're not comfortable with English, translations of this tutorial are available in `Deutsch <https://docs.beeware.org/de>`__, `Español <https://docs.beeware.org/es>`__, `Français <https://docs.beeware.org/fr>`__, `Italiano <https://docs.beeware.org/it>`__, `Português <https://docs.beeware.org/pt>`__, and `汉语 <https://docs.beeware.org/zh-cn>`__."
-msgstr "Si no te sientes cómodo con el inglés, este tutorial está traducido en `Deutsch <https://docs.beeware.org/de>`__, `Español <https://docs.beeware.org/es>`__, `Français <https://docs.beeware.org/fr>`__, y `汉语 <https://docs.beeware.org/zh-cn>`__."
+msgstr ""
+"Si no se siente cómodo con el inglés, hay traducciones de este tutorial "
+"disponibles en `Deutsch <https://docs.beeware.org/de>`__, `Español "
+"<https://docs.beeware.org/es>`__, `Français <https://docs.beeware.org/fr>`"
+"__, `Italiano <https://docs.beeware.org/it>`__, `Português <https://docs."
+"beeware.org/pt>`__, y `汉语 <https://docs.beeware.org/zh-cn>`__."
 
 #: ../../index.rst:28 e69d5d8d4e2043db97479220713abcb1
 msgid "This is a machine translation!"
