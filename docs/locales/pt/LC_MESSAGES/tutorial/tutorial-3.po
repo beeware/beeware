@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-24 17:48+0800\n"
-"PO-Revision-Date: 2024-02-13 12:01+0000\n"
+"PO-Revision-Date: 2024-03-04 19:01+0000\n"
 "Last-Translator: joaovitorpmoreira <programacaojoaopm@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/"
 "tutorial/tutorial-3/pt/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.5-dev\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../tutorial/tutorial-3.rst:3 a6022b8c42d3457c960c220a2f3f3a5d
@@ -119,9 +119,8 @@ msgid "On Windows, the ``build`` command doesn't need to *compile* anything, but
 msgstr "No Windows, o comando ``build`` não precisa *compilar* nada, mas é preciso registrar alguns metadados para que a aplicação reconheça seu nome, versão e outras coisas assim."
 
 #: ../../tutorial/tutorial-3.rst:241 0f7f8e0cfb314312afaf84de414238c4
-#, fuzzy
 msgid "Triggering antivirus"
-msgstr "Acionamento do antivírus"
+msgstr "Notificação de antivírus"
 
 #: ../../tutorial/tutorial-3.rst:243 76c0e0b39b1245e2b5a00479238c18d4
 msgid "Since this metadata is being written directly in to the pre-compiled binary rolled out from the template during the ``create`` command, this may trigger antivirus software running on your machine and prevent the metadata from being written. In that case, instruct the antivirus to allow the tool (named ``rcedit-x64.exe``) to run and re-run the command above."
