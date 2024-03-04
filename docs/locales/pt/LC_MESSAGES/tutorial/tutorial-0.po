@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-24 17:48+0800\n"
-"PO-Revision-Date: 2024-02-07 20:01+0000\n"
+"PO-Revision-Date: 2024-03-04 19:01+0000\n"
 "Last-Translator: joaovitorpmoreira <programacaojoaopm@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/beeware/"
 "tutorial/tutorial-0/pt/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.5-dev\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../tutorial/tutorial-0.rst:3 b75930dc46324bb59cdf84dd23b5e66d
@@ -38,7 +38,7 @@ msgstr "Instalando o Python"
 msgid "The first thing we'll need is a working Python interpreter."
 msgstr ""
 "A primeira coisa que precisaremos é de um interpretador Python instalado e "
-"operacional."
+"funcionando."
 
 #: ../../tutorial/tutorial-0.rst:15 ../../tutorial/tutorial-0.rst:77
 #: ../../tutorial/tutorial-0.rst:136 01e942e89e90480b8ef827302d09e43e
