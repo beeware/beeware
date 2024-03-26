@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-06 18:04+0800\n"
-"PO-Revision-Date: 2024-01-18 12:00+0000\n"
-"Last-Translator: Kamborio <Kamborio15@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2024-03-27 04:01+0000\n"
+"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/"
 "tutorial-1/es/>\n"
 "Language: es\n"
@@ -12,11 +12,10 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.5-dev\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../tutorial/tutorial-1.rst:3 6b15f54bec2546c79f0a21b50b918daa
-#, fuzzy
 msgid "Tutorial 1 - Your first app"
 msgstr "Tutorial 1 - Tu primera aplicación"
 
