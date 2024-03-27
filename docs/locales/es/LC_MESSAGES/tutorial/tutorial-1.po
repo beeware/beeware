@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-06 18:04+0800\n"
-"PO-Revision-Date: 2024-03-27 04:01+0000\n"
+"PO-Revision-Date: 2024-03-27 18:01+0000\n"
 "Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/"
 "tutorial-1/es/>\n"
@@ -20,19 +20,22 @@ msgid "Tutorial 1 - Your first app"
 msgstr "Tutorial 1 - Tu primera aplicación"
 
 #: ../../tutorial/tutorial-1.rst:5 51df89d7190b4a91a2c5fe6d7143643a
-#, fuzzy
 msgid "We're ready to create our first application."
 msgstr "Estamos listos para crear nuestra primera aplicación."
 
 #: ../../tutorial/tutorial-1.rst:8 7d3a0673b5374beea440391921843b45
-#, fuzzy
 msgid "Install the BeeWare tools"
 msgstr "Instalar las herramientas BeeWare"
 
 #: ../../tutorial/tutorial-1.rst:10 f998a24067f4456281a877ebe6e53a42
-#, fuzzy
 msgid "First, we need to install **Briefcase**. Briefcase is a BeeWare tool that can be used to package your application for distribution to end users - but it can also be used to bootstrap a new project. Make sure you're in the ``beeware-tutorial`` directory you created in :doc:`Tutorial 0 <tutorial-0>`, with the ``beeware-venv`` virtual environment activated, and run:"
-msgstr "En primer lugar, tenemos que instalar **Briefcase**. Briefcase es una herramienta de BeeWare que se puede utilizar para empaquetar su aplicación para la distribución a los usuarios finales - pero también se puede utilizar para arrancar un nuevo proyecto. Asegúrate de que estás en el directorio ``beeware-tutorial`` que creaste en :doc:`Tutorial 0 <tutorial-0>`, con el entorno virtual ``beeware-venv`` activado, y ejecuta:"
+msgstr ""
+"En primer lugar, tenemos que instalar **Briefcase**. Briefcase es una "
+"herramienta de BeeWare que se puede utilizar para empaquetar su aplicación "
+"para la distribución a los usuarios finales - pero también se puede utilizar "
+"para arrancar un nuevo proyecto. Asegúrate de que estás en el directorio "
+"``beeware-tutorial`` que creaste en :doc:`Tutorial 0 <tutorial-0>`, con el "
+"entorno virtual ``beeware-venv`` activado, y ejecuta:"
 
 #: ../../tutorial/tutorial-1.rst:18 ../../tutorial/tutorial-1.rst:64 ../../tutorial/tutorial-1.rst:163 ../../tutorial/tutorial-1.rst:206 29eb3427ac404ea79b348996b9eada95 9b68194071074e4e846f6bc195da9b4e a43fae5f4b954f859b0fceceae7b41ad ed897f448baa40c4b125a30aead48e41
 msgid "macOS"
@@ -43,23 +46,29 @@ msgid "Linux"
 msgstr "Linux"
 
 #: ../../tutorial/tutorial-1.rst:30 ../../tutorial/tutorial-1.rst:43 f5955aff55b84203bc5dc86171a03de8 f733848915e84f57a580698d2a06c61b
-#, fuzzy
 msgid "Possible errors during installation"
 msgstr "Posibles errores durante la instalación"
 
 #: ../../tutorial/tutorial-1.rst:32 4f46fd89e5a64e309fc0fefaee9ac1d7
-#, fuzzy
 msgid "If you see errors during installation, it's almost certainly because some of the system requirements haven't been installed. Make sure you have :ref:`installed all the platform pre-requisites <install-dependencies>`."
-msgstr "Si aparecen errores durante la instalación, es casi seguro que se deba a que no se han instalado algunos de los requisitos del sistema. Asegúrese de haber :ref:`instalado todos los requisitos previos de la plataforma <install-dependencies>`."
+msgstr ""
+"Si aparecen errores durante la instalación, es casi seguro que se deba a que "
+"no se han instalado algunos de los requisitos del sistema. Asegúrese de "
+"haber :ref:`instalado todos los requisitos previos de la plataforma <install-"
+"dependencies>`."
 
 #: ../../tutorial/tutorial-1.rst:37 ../../tutorial/tutorial-1.rst:76 ../../tutorial/tutorial-1.rst:189 ../../tutorial/tutorial-1.rst:216 572fb98f93f2482b8cd97ae0228ada50 8930f98d45994ca1ae7f849ba2eced6e dc2e0a487cd4434598f283de98efeec3 ee6bd27c82104f298ba5d9e54b264801
 msgid "Windows"
 msgstr "Windows"
 
 #: ../../tutorial/tutorial-1.rst:45 39abb37c670c4787b635443c9d355d1e
-#, fuzzy
 msgid "It is important that you use ``python -m pip``, rather than a bare ``pip``. Briefcase needs to ensure that it has an up-to-date version of ``pip`` and ``setuptools``, and a bare invocation of ``pip`` can't self-update. If you want to know more, `Brett Cannon has a detailed blog post about the issue <https://snarky.ca/why-you-should-use-python-m-pip/>`__."
-msgstr "Es importante que utilices ``python -m pip``, en lugar de ``pip``. Briefcase necesita asegurarse de que tiene una versión actualizada de ``pip`` y ``setuptools``, y una invocación de ``pip`` no puede auto-actualizarse. Si quieres saber más, `Brett Cannon tiene una entrada de blog detallada sobre el problema <https://snarky.ca/why-you-should-use-python-m-pip/>`__."
+msgstr ""
+"Es importante que utilices ``python -m pip``, en lugar de ``pip``. Briefcase "
+"necesita asegurarse de que tiene una versión actualizada de ``pip`` y "
+"``setuptools``, y una invocación de ``pip`` no puede auto-actualizarse. Si "
+"quieres saber más, `Brett Cannon tiene una entrada de blog detallada sobre "
+"el problema <https://snarky.ca/why-you-should-use-python-m-pip/>`__."
 
 #: ../../tutorial/tutorial-1.rst:51 21e0b2dc22684b0d938ad248f2d614ef
 #, fuzzy
