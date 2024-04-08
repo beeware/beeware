@@ -208,20 +208,20 @@ msgstr "Isso deve abrir uma janela GUI:"
 
 #: ../../tutorial/tutorial-1.rst a0b3f2ae2c0b47c58d947c4d9b50d385
 msgid "Hello World Tutorial 1 window, on macOS"
-msgstr "Janela do Tutorial 1 “Hello World”, no macOS"
+msgstr "Janela do Tutorial 1 ``Hello World``, no macOS"
 
 #: ../../tutorial/tutorial-1.rst 9a3e6a01628147b5a3b87a274dd72685
 msgid "Hello World Tutorial 1 window, on Linux"
-msgstr "Janela do Tutorial 1 “Hello World”, no Linux"
+msgstr "Janela do Tutorial 1 ``Hello World``, no Linux"
 
 #: ../../tutorial/tutorial-1.rst faecf87f26d94e4d80eee3f601eb3279
 msgid "Hello World Tutorial 1 window, on Windows"
-msgstr "Janela do Tutorial 1 “Hello World”, no Windows"
+msgstr "Janela do Tutorial 1 ``Hello World``, no Windows"
 
 #: ../../tutorial/tutorial-1.rst:221 93393dfc229f46ffbdf25baa39608d7a
 msgid "Press the close button (or select Quit from the application's menu), and you're done! Congratulations - you've just written a standalone, native application in Python!"
 msgstr ""
-"Pressione o botão de fechar (ou selecione “Sair” no menu do aplicativo) e "
+"Pressione o botão de fechar (ou selecione ``Sair`` no menu do aplicativo) e "
 "pronto! Parabéns - você acabou de criar um aplicativo autônomo e nativo em "
 "Python!"
 
