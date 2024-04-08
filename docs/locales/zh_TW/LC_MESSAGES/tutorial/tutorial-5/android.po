@@ -1,0 +1,251 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Russell Keith-Magee
+# This file is distributed under the same license as the BeeWare package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BeeWare 0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-08 10:13+0800\n"
+"PO-Revision-Date: 2024-04-08 11:59+0800\n"
+"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
+"Language-Team: zh_TW <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.14.0\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#: ../../tutorial/tutorial-5/android.rst:3 86f96e40ce5d492bb043e2d389583001
+#, fuzzy
+msgid "Tutorial 5 - Taking it mobile: Android"
+msgstr "教學 5 - 行動裝置：Android"
+
+#: ../../tutorial/tutorial-5/android.rst:5 0180e28ff09344b99da80d74c047fcc1
+#, fuzzy
+msgid "Now, we're going to take our application, and deploy it as an Android application."
+msgstr "現在，我們將獲取我們的應用程序，並將其部署為 Android 應用程式。"
+
+#: ../../tutorial/tutorial-5/android.rst:8 f35484476e8f40df8b4a3aa58441fd03
+#, fuzzy
+msgid "The process of deploying an application to Android is very similar to the process for deploying as a desktop application. Briefcase handles installing dependencies for Android, including the Android SDK, the Android emulator, and a Java compiler."
+msgstr "將應用程式部署到 Android 的過程與部署為桌面應用程式的過程非常相似。 Briefcase 負責安裝 Android 依賴項，包括 Android SDK、Android 模擬器和 Java 編譯器。"
+
+#: ../../tutorial/tutorial-5/android.rst:14 a45c21d7977c4ea8a5da6f5f0982ae89
+#, fuzzy
+msgid "Create an Android app and compile it"
+msgstr "創建一個 Android 應用程式並編譯它"
+
+#: ../../tutorial/tutorial-5/android.rst:16 dbd790ca755846b68edf40b48cb9a82f
+#, fuzzy
+msgid "First, run the ``create`` command. This downloads an Android app template and adds your Python code to it."
+msgstr "首先，執行``create``命令。這將下載 Android 應用程式模板並向其中添加您的 Python 程式碼。"
+
+#: ../../tutorial/tutorial-5/android.rst:21
+#: ../../tutorial/tutorial-5/android.rst:118
+#: ../../tutorial/tutorial-5/android.rst:195
+#: ../../tutorial/tutorial-5/android.rst:312 0f3ea886d85a452aabe3e18f131bdd00
+#: 36fb84c6a3c7463a95896f0aa8060a4a 568db5494b87477fa476df5c5472b7f2
+#: 6994ab0f0d9848df8ca3c1cdc0beb383
+#, fuzzy
+msgid "macOS"
+msgstr "蘋果系統"
+
+#: ../../tutorial/tutorial-5/android.rst:48
+#: ../../tutorial/tutorial-5/android.rst:136
+#: ../../tutorial/tutorial-5/android.rst:207
+#: ../../tutorial/tutorial-5/android.rst:326 b29b90a1422041c493414678c9205ace
+#: b41414d800464d3a85a038cee690d823 c6576e833f414245b375fc422b97aafe
+#: d38c420506c44aff96318153776a61e7
+msgid "Linux"
+msgstr "Linux"
+
+#: ../../tutorial/tutorial-5/android.rst:75
+#: ../../tutorial/tutorial-5/android.rst:154
+#: ../../tutorial/tutorial-5/android.rst:219
+#: ../../tutorial/tutorial-5/android.rst:340 8af7005be4514dd788a11c7ce0888c75
+#: 9cf894cffeb54cbebac76f7ef7d2ab62 afa21fa0b31d4e85bf41bac7f3ab730b
+#: b0814ea816bf409ba2407120f792ca58
+msgid "Windows"
+msgstr "視窗"
+
+#: ../../tutorial/tutorial-5/android.rst:102 093ecaa5d30340ce8ff7d6307a7e0440
+#, fuzzy
+msgid "When you run ``briefcase create android`` for the first time, Briefcase downloads a Java JDK, and the Android SDK. File sizes and download times can be considerable; this may take a while (10 minutes or longer, depending on the speed of your Internet connection). When the download has completed, you will be prompted to accept Google's Android SDK license."
+msgstr "當您第一次執行``briefcase create android``時，Briefcase 會下載 Java JDK 和 Android SDK。文件大小和下載時間可能相當大；這可能需要一段時間（10 分鐘或更長時間，具體取決於您的 Internet 連線速度）。下載完成後，系統會提示您接受 Google 的 Android SDK 授權。"
+
+#: ../../tutorial/tutorial-5/android.rst:108 3b5ac6f9de2d408b8ab5804091cb6d20
+#, fuzzy
+msgid "Once this completes, we'll have a ``build\\helloworld\\android\\gradle`` directory in our project, which will contain an Android project with a Gradle build configuration. This project will contain your application code, and a support package containing the Python interpreter."
+msgstr "完成後，我們的專案中將有一個 ``build\\helloworld\\android\\gradle`` 目錄，其中包含具有 Gradle 建置配置的 Android 專案。該專案將包含您的應用程式程式碼以及包含 Python 解釋器的支援套件。"
+
+#: ../../tutorial/tutorial-5/android.rst:113 963f92b2788f4e54a40d11c95d479b99
+#, fuzzy
+msgid "We can then use Briefcase's ``build`` command to compile this into an Android APK app file."
+msgstr "然後我們可以使用 Briefcase 的 ``build`` 命令將其編譯成 Android APK 應用程式檔案。"
+
+#: ../../tutorial/tutorial-5/android.rst:172 a9aa01b8e00e425a93947402d004a56c
+#, fuzzy
+msgid "Gradle may look stuck"
+msgstr "Gradle 可能看起來卡住了"
+
+#: ../../tutorial/tutorial-5/android.rst:174 792f21b09ec243cbb6ca0e769f84990f
+#, fuzzy
+msgid "During the ``briefcase build android`` step, Gradle (the Android platform build tool) will print ``CONFIGURING: 100%``, and appear to be doing nothing. Don't worry, it's not stuck - it's downloading more Android SDK components. Depending on your Internet connection speed, this may take another 10 minutes (or longer). This lag should only happen the very first time you run ``build``; the tools are cached, and on your next build, the cached versions will be used."
+msgstr "在``briefcase build android``步驟中，Gradle（Android 平台建置工具）將列印``CONFIGURING: 100%``，似乎什麼也沒做。別擔心，它並沒有卡住 - 它正在下載更多 Android SDK 組件。根據您的網路連線速度，這可能還需要 10 分鐘（或更長）。這種滯後應該只在你第一次執行``build``時發生；這些工具會被緩存，並且在您的下一個建置中，將使用快取的版本。"
+
+#: ../../tutorial/tutorial-5/android.rst:183 b7e022d3d12f4050906eb2999bb6d8cb
+#, fuzzy
+msgid "Run the app on a virtual device"
+msgstr "在虛擬設備上運行應用程式"
+
+#: ../../tutorial/tutorial-5/android.rst:185 6ae8c1c1b93a4062832eee0f447855d0
+#, fuzzy
+msgid "We're now ready to run our application. You can use Briefcase's ``run`` command to run the app on an Android device. Let's start by running on an Android emulator."
+msgstr "現在我們已經準備好運行我們的應用程式了。您可以使用 Briefcase 的``run``命令在 Android 裝置上執行該應用程式。讓我們從在 Android 模擬器上運行開始。"
+
+#: ../../tutorial/tutorial-5/android.rst:189 0f16d0c1a81a4790a64c9c75302cd3ad
+#, fuzzy
+msgid "To run your application, run ``briefcase run android``. When you do this, you'll be prompted with a list of devices that you could run the app on. The last item will always be an option to create a new Android emulator."
+msgstr "要運行您的應用程序，請運行``briefcase run android``。當您執行此操作時，系統會提示您提供可以執行該應用程式的裝置清單。最後一項始終是建立新 Android 模擬器的選項。"
+
+#: ../../tutorial/tutorial-5/android.rst:231 8f745464a50948e7a2ecc2bc4f2c5a72
+#, fuzzy
+msgid "We can now choose our desired device. Select the \"Create a new Android emulator\" option, and accept the default choice for the device name (``beePhone``)."
+msgstr "我們現在可以選擇我們想要的設備。選擇``建立新的 Android 模擬器``選項，並接受裝置名稱的預設選擇 (``beePhone``)。"
+
+#: ../../tutorial/tutorial-5/android.rst:235 cd14fb0ef4a648a0a643c06d2e5ec6e0
+#, fuzzy
+msgid "Briefcase ``run`` will automatically boot the virtual device. When the device is booting, you will see the Android logo:"
+msgstr "公事包``run``將自動啟動虛擬設備。當裝置啟動時，您將看到 Android 標誌："
+
+#: ../../tutorial/tutorial-5/android.rst:243 58554f8e421f4b43925b2e1d4e5ff412
+#: 809d290799cc47c9a5133065ca4c61af
+#, fuzzy
+msgid "Android virtual device booting"
+msgstr "Android虛擬裝置啟動"
+
+#: ../../tutorial/tutorial-5/android.rst:245 0342b56a83084609b5204c8ef41cffde
+#, fuzzy
+msgid "Once the device has finished booting, Briefcase will install your app on the device. You will briefly see a launcher screen:"
+msgstr "裝置完成啟動後，Briefcase 將在裝置上安裝您的應用程式。您將短暫地看到一個啟動器畫面："
+
+#: ../../tutorial/tutorial-5/android.rst:253 90c6645250c448bfbae3712f391e687f
+#: 9f1c71911b8d42cd80c0763cecae5f90
+#, fuzzy
+msgid "Android virtual device fully started, on the launcher screen"
+msgstr "Android 虛擬裝置已完全啟動，位於啟動器螢幕上"
+
+#: ../../tutorial/tutorial-5/android.rst:255 a8ab91f29dab4b7c99db0e6c3893f1f1
+#, fuzzy
+msgid "The app will then start. You'll see a splash screen while the app starts up:"
+msgstr "然後該應用程式將啟動。應用程式啟動時您將看到啟動畫面："
+
+#: ../../tutorial/tutorial-5/android.rst:262 5e9a6d5818264f6c9086348a0e225685
+#: d0e96ce2344d464a94d1fc8c49edc080
+#, fuzzy
+msgid "App splash screen"
+msgstr "應用程式啟動畫面"
+
+#: ../../tutorial/tutorial-5/android.rst:264 511b60029e594859b637b28ec5618959
+#, fuzzy
+msgid "The emulator didn't start!"
+msgstr "模擬器沒有啟動！"
+
+#: ../../tutorial/tutorial-5/android.rst:266 406968252f134f99b00ee8af60428639
+#, fuzzy
+msgid "The Android emulator is a complex piece of software that relies on a number of hardware and operating system features - features that may not be available or enabled on older machines. If you experience any difficulties starting the Android emulator, consult the `Requirements and recommendations <https://developer.android.com/studio/run/emulator#requirements>`__ section of the Android developer documentation."
+msgstr "Android 模擬器是一款複雜的軟體，依賴許多硬體和作業系統功能 - 這些功能在舊機器上可能無法使用或啟用。如果您在啟動 Android 模擬器時遇到任何困難，請參閱 Android 開發人員文件的``要求與建議 <https://developer.android.com/studio/run/emulator#requirements>`__ 部分。"
+
+#: ../../tutorial/tutorial-5/android.rst:273 dbb1a79f73dd4108aba773b084e4262b
+#, fuzzy
+msgid "The first time the app starts, it needs to unpack itself onto the device. This may take a few seconds. Once it's unpacked, you'll see the Android version of our desktop app:"
+msgstr "應用程式第一次啟動時，需要將自身解壓縮到裝置上。這可能需要幾秒鐘。解壓縮後，您將看到我們桌面應用程式的 Android 版本："
+
+#: ../../tutorial/tutorial-5/android.rst:282 b1539d823e91434eb09a825a88225f7c
+#, fuzzy
+msgid "App from Tutorial 2, fully launched"
+msgstr "教程 2 中的應用程式已全面啟動"
+
+#: ../../tutorial/tutorial-5/android.rst:282 0571128f615a402d881d81b5346c7349
+#, fuzzy
+msgid "Demo app fully launched"
+msgstr "演示應用程式全面啟動"
+
+#: ../../tutorial/tutorial-5/android.rst:284 f4f2479ea58146338e0bb258b018e999
+#, fuzzy
+msgid "If you fail to see your app launching, you may need to check your terminal where you ran ``briefcase run`` and look for any error messages."
+msgstr "如果您無法看到應用程式啟動，您可能需要檢查執行``briefcase run``的終端並查找任何錯誤訊息。"
+
+#: ../../tutorial/tutorial-5/android.rst:287 68cc3982f00f4b7a8683d180c1e56b49
+#, fuzzy
+msgid "In future, if you want to run on this device without using the menu, you can provide the emulator's name to Briefcase, using ``briefcase run android -d @beePhone`` to run on the virtual device directly."
+msgstr "將來，如果您想在該裝置上運行而不使用選單，您可以將模擬器的名稱提供給Briefcase，使用``briefcase run android -d @beePhone``直接在虛擬裝置上執行。"
+
+#: ../../tutorial/tutorial-5/android.rst:292 8a2695be5b3946549b901765816eeaa6
+#, fuzzy
+msgid "Run the app on a physical device"
+msgstr "在物理設備上運行應用程式"
+
+#: ../../tutorial/tutorial-5/android.rst:294 8f9688950a7f4a81aada0c2f68a1f345
+#, fuzzy
+msgid "If you have a physical Android phone or tablet, you can connect it to your computer with a USB cable, and then use the Briefcase to target your physical device."
+msgstr "如果您有實體 Android 手機或平板電腦，則可以使用 USB 電纜將其連接到計算機，然後使用公文包定位您的實體設備。"
+
+#: ../../tutorial/tutorial-5/android.rst:298 43c7235ad0414905bdabca9ee91bb652
+#, fuzzy
+msgid "Android requires that you prepare your device before it can be used for development. You will need to make 2 changes to the options on your device:"
+msgstr "Android 要求您先準備好設備，然後才能用於開發。您需要對裝置上的選項進行 2 項變更："
+
+#: ../../tutorial/tutorial-5/android.rst:301 4cd9ae145cc6472cbc717761a6072f82
+#, fuzzy
+msgid "Enable developer options"
+msgstr "啟用開發者選項"
+
+#: ../../tutorial/tutorial-5/android.rst:302 20d3f6f8fce14a50852a491943f08cb2
+#, fuzzy
+msgid "Enable USB debugging"
+msgstr "啟用USB調試"
+
+#: ../../tutorial/tutorial-5/android.rst:304 6bacfad4515b46c1aae27b50c71fa5ca
+#, fuzzy
+msgid "Details on how to make these changes can be found `in the Android developer documentation <https://developer.android.com/studio/debug/dev-options#enable>`__."
+msgstr "有關如何進行這些更改的詳細信息，請參閱``Android 開發人員文件 <https://developer.android.com/studio/debug/dev-options#enable>``。"
+
+#: ../../tutorial/tutorial-5/android.rst:307 bbdf4755bed54b1c9db8d0ae2c463fdb
+#, fuzzy
+msgid "Once these steps have been completed, your device should appear in the list of available devices when you run ``briefcase run android``."
+msgstr "完成這些步驟後，當您執行``briefcase run android``時，您的裝置應該會出現在可用裝置清單中。"
+
+#: ../../tutorial/tutorial-5/android.rst:354 b2b2edc44e6848f695fd732c826d9b65
+#, fuzzy
+msgid "Here we can see a new physical device with it's serial number on the deployment list - in this case, a Pixel 3a. In the future, if you want to run on this device without using the menu, you can provide the phone's serial number to Briefcase (in this case, ``briefcase run android -d 94ZZY0LNE8``). This will run on the device directly, without prompting."
+msgstr "在這裡，我們可以在部署清單中看到一個新的實體設備及其序號 - 在本例中為 Pixel 3a。將來，如果您想在該裝置上運行而不使用選單，您可以向Briefcase提供手機的序號（在本例中為``briefcase run android -d 94ZZY0LNE8``）。這將直接在設備上運行，無需提示。"
+
+#: ../../tutorial/tutorial-5/android.rst:360 8d8cb986787746a0af032209b9ecd45d
+#, fuzzy
+msgid "My device doesn't appear!"
+msgstr "我的設備沒有出現！"
+
+#: ../../tutorial/tutorial-5/android.rst:362 97a8da96fcac4acaa7e89c6fd53fa82d
+#, fuzzy
+msgid "If your device doesn't appear on this list at all, either you haven't enabled USB debugging, (or the device isn't plugged in!)."
+msgstr "如果您的裝置完全沒有出現在此清單中，則可能是您尚未啟用 USB 偵錯（或裝置未插入！）。"
+
+#: ../../tutorial/tutorial-5/android.rst:365 ae3739649e704f5abb326ba85f5e8ae2
+#, fuzzy
+msgid "If your device appears, but is listed as \"Unknown device (not authorized for development)\", developer mode hasn't been correctly enabled. Re-run `the steps to enable developer options <https://developer.android.com/studio/debug/dev-options#enable>`__, and re-run ``briefcase run android``."
+msgstr "如果您的裝置出現，但被列為``未知裝置（未授權開發）``，則表示開發者模式尚未正確啟用。重新執行`啟用開發人員選項的步驟<https://developer.android.com/studio/debug/dev-options#enable>`__，並重新執行``briefcase run android``。"
+
+#: ../../tutorial/tutorial-5/android.rst:372 83bfaa582d5249899089dbe4a82a53b7
+msgid "Next steps"
+msgstr "下一步"
+
+#: ../../tutorial/tutorial-5/android.rst:374 93dbc252ef7e4cf28533e2bb9490d14c
+#, fuzzy
+msgid "We've now got an application on our phone! Is there anywhere else we can deploy a BeeWare app? Turn to :doc:`Tutorial 6 <../tutorial-6>` to find out..."
+msgstr "現在我們的手機上已經有一個應用程式了！我們還有其他地方可以部署 BeeWare 應用程式嗎？請參閱 :doc:`教學 6 <../tutorial-6>` 以了解..."
