@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-08 12:43+0800\n"
+"POT-Creation-Date: 2024-04-08 13:10+0800\n"
 "PO-Revision-Date: 2024-01-13 03:33+0000\n"
 "Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
 "Language: zh_CN\n"
@@ -32,7 +32,7 @@ msgstr "本页中文文档基于BeeWare的英文文档翻译，已经由人工�
 
 #: ../../index.rst:16 f67c60d4558b429dbb0ed51be44daf33
 #, fuzzy
-msgid "If you're not comfortable with English, translations of this tutorial are available in `Deutsch <https://docs.beeware.org/de>`__, `Español <https://docs.beeware.org/es>`__, `Français <https://docs.beeware.org/fr>`__, `Italiano <https://docs.beeware.org/it>`__, `Português <https://docs.beeware.org/pt>`__, `简体中文 <https://docs.beeware.org/zh-cn>`__, and `繁體中文 <https://docs.beeware.org/zh-tw>`__."
+msgid "If you're not comfortable with English, translations of this tutorial are available in `Deutsch <https://docs.beeware.org/de>`__, `Español <https://docs.beeware.org/es>`__, `Français <https://docs.beeware.org/fr>`__, `Italiano <https://docs.beeware.org/it>`__, `Português <https://docs.beeware.org/pt>`__, `中文(简体) <https://docs.beeware.org/zh-cn>`__, and `中文(繁體) <https://docs.beeware.org/zh-tw>`__."
 msgstr "如果您不熟悉中文，本教程提供了以下语言的翻译：`Deutsch <https://docs.beeware.org/de>`__ （德语）、`Español <https://docs.beeware.org/es>`__ （西班牙语）、`Français <https://docs.beeware.org/fr>`__ （法语）和 `汉语 <https://docs.beeware.org/zh-cn>`__ （中文）。\"如果您不熟悉中文，本教程提供了以下语言的翻译：`Deutsch <https://docs.beeware.org/de>`__（德语）、`Español <https://docs.beeware.org/es>`__（西班牙语）、`Français <https://docs.beeware.org/fr>`__（法语）和 `汉语 <https://docs.beeware.org/zh-cn>`__（中文）\"。如果您不熟悉中文，本教程提供了以下语言的翻译：`Deutsch <https://docs.beeware.org/de>`__ （德语）、`Español <https://docs.beeware.org/es>`__ （西班牙语）、`Français <https://docs.beeware.org/fr>`__ （法语）和 `汉语 <https://docs.beeware.org/zh-cn>`__ （中文）。"
 
 #: ../../index.rst:29 4cb3c707502044b1b0c6b0111876568b

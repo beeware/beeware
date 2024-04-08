@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-08 12:43+0800\n"
+"POT-Creation-Date: 2024-04-08 13:10+0800\n"
 "PO-Revision-Date: 2024-01-14 12:29+0000\n"
 "Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
 "Language: de\n"
@@ -32,7 +32,7 @@ msgid "Translations are available"
 msgstr ""
 
 #: ../../index.rst:16 f67c60d4558b429dbb0ed51be44daf33
-msgid "If you're not comfortable with English, translations of this tutorial are available in `Deutsch <https://docs.beeware.org/de>`__, `Español <https://docs.beeware.org/es>`__, `Français <https://docs.beeware.org/fr>`__, `Italiano <https://docs.beeware.org/it>`__, `Português <https://docs.beeware.org/pt>`__, `简体中文 <https://docs.beeware.org/zh-cn>`__, and `繁體中文 <https://docs.beeware.org/zh-tw>`__."
+msgid "If you're not comfortable with English, translations of this tutorial are available in `Deutsch <https://docs.beeware.org/de>`__, `Español <https://docs.beeware.org/es>`__, `Français <https://docs.beeware.org/fr>`__, `Italiano <https://docs.beeware.org/it>`__, `Português <https://docs.beeware.org/pt>`__, `中文(简体) <https://docs.beeware.org/zh-cn>`__, and `中文(繁體) <https://docs.beeware.org/zh-tw>`__."
 msgstr ""
 
 #: ../../index.rst:29 4cb3c707502044b1b0c6b0111876568b
@@ -107,5 +107,8 @@ msgid "Ready to try BeeWare for yourself? :doc:`Let's build a cross platform app
 msgstr "Sind Sie bereit, BeeWare selbst auszuprobieren? :doc:`Lassen Sie uns eine plattformübergreifende Anwendung in Python erstellen! <tutorial/tutorial-0>`"
 
 #~ msgid "If you're not comfortable with English, translations of this tutorial are available in `Deutsch <https://docs.beeware.org/de>`__, `Español <https://docs.beeware.org/es>`__, `Français <https://docs.beeware.org/fr>`__, `Italiano <https://docs.beeware.org/it>`__, `Português <https://docs.beeware.org/pt>`__, `中文 (汉语) <https://docs.beeware.org/zh-cn>`__, and `中文 (漢語) <https://docs.beeware.org/zh-tw>`__."
+#~ msgstr ""
+
+#~ msgid "If you're not comfortable with English, translations of this tutorial are available in `Deutsch <https://docs.beeware.org/de>`__, `Español <https://docs.beeware.org/es>`__, `Français <https://docs.beeware.org/fr>`__, `Italiano <https://docs.beeware.org/it>`__, `Português <https://docs.beeware.org/pt>`__, `简体中文 <https://docs.beeware.org/zh-cn>`__, and `繁體中文 <https://docs.beeware.org/zh-tw>`__."
 #~ msgstr ""
 

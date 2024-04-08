@@ -20,8 +20,8 @@ the common tasks that you'll need to do as an app developer, such as testing you
       `Français <https://docs.beeware.org/fr>`__,
       `Italiano <https://docs.beeware.org/it>`__,
       `Português <https://docs.beeware.org/pt>`__,
-      `简体中文 <https://docs.beeware.org/zh-cn>`__, and
-      `繁體中文 <https://docs.beeware.org/zh-tw>`__.
+      `中文(简体) <https://docs.beeware.org/zh-cn>`__, and
+      `中文(繁體) <https://docs.beeware.org/zh-tw>`__.
 
 
 .. only:: machine_translation

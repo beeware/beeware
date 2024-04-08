@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-08 12:43+0800\n"
+"POT-Creation-Date: 2024-04-08 13:10+0800\n"
 "PO-Revision-Date: 2024-04-08 11:58+0800\n"
 "Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
 "Language: zh_TW\n"
@@ -41,7 +41,7 @@ msgstr "提供翻譯"
 
 #: ../../index.rst:16 f67c60d4558b429dbb0ed51be44daf33
 #, fuzzy
-msgid "If you're not comfortable with English, translations of this tutorial are available in `Deutsch <https://docs.beeware.org/de>`__, `Español <https://docs.beeware.org/es>`__, `Français <https://docs.beeware.org/fr>`__, `Italiano <https://docs.beeware.org/it>`__, `Português <https://docs.beeware.org/pt>`__, `简体中文 <https://docs.beeware.org/zh-cn>`__, and `繁體中文 <https://docs.beeware.org/zh-tw>`__."
+msgid "If you're not comfortable with English, translations of this tutorial are available in `Deutsch <https://docs.beeware.org/de>`__, `Español <https://docs.beeware.org/es>`__, `Français <https://docs.beeware.org/fr>`__, `Italiano <https://docs.beeware.org/it>`__, `Português <https://docs.beeware.org/pt>`__, `中文(简体) <https://docs.beeware.org/zh-cn>`__, and `中文(繁體) <https://docs.beeware.org/zh-tw>`__."
 msgstr "If you're not comfortable with English, translations of this tutorial are available in `Deutsch <https://docs.beeware.org/de>`__, `Español <https://docs.beeware.org/es>`__, `Français <https://docs.beeware.org/fr>`__, `Italiano <https://docs.beeware.org/it>`__, `Português <https://docs.beeware.org/pt>`__, `简体中文 <https://docs.beeware.org/zh-cn>`__, and `繁體中文 <https://docs.beeware.org/zh-tw>`__."
 
 #: ../../index.rst:29 4cb3c707502044b1b0c6b0111876568b
@@ -119,3 +119,4 @@ msgstr "我們走吧！"
 #, fuzzy
 msgid "Ready to try BeeWare for yourself? :doc:`Let's build a cross platform application in Python! <tutorial/tutorial-0>`"
 msgstr "準備好親自嘗試 BeeWare 了嗎？ :doc:`讓我們用 Python 建立一個跨平台應用程式！ <tutorial/tutorial-0>`"
+
