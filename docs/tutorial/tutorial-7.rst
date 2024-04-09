@@ -347,7 +347,8 @@ the settings for your app::
     [tool.briefcase.app.helloworld]
     formal_name = "Hello World"
     description = "A Tutorial app"
-    icon = "src/helloworld/resources/helloworld"
+    long_description = """More details about the app should go here.
+    """
     sources = ["src/helloworld"]
     requires = []
 
