@@ -272,16 +272,19 @@ This should open a GUI window:
   .. group-tab:: macOS
 
     .. image:: images/macOS/tutorial-2.png
+       :align: center
        :alt: Hello World Tutorial 2 window, on macOS
 
   .. group-tab:: Linux
 
     .. image:: images/linux/tutorial-2.png
+       :align: center
        :alt: Hello World Tutorial 2 window, on Linux
 
   .. group-tab:: Windows
 
     .. image:: images/windows/tutorial-2.png
+       :align: center
        :alt: Hello World Tutorial 2 window, on Windows
 
 If you enter a name in the text box, and press the GUI button, you should see

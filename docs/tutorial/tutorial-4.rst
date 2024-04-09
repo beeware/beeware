@@ -36,16 +36,19 @@ new dialog box:
   .. group-tab:: macOS
 
     .. image:: images/macOS/tutorial-4.png
+       :align: center
        :alt: Hello World Tutorial 4 dialog, on macOS
 
   .. group-tab:: Linux
 
     .. image:: images/linux/tutorial-4.png
+       :align: center
        :alt: Hello World Tutorial 4 dialog, on Linux
 
   .. group-tab:: Windows
 
     .. image:: images/windows/tutorial-4.png
+       :align: center
        :alt: Hello World Tutorial 4 dialog, on Windows
 
 However, if you run ``briefcase run``, the dialog box won't appear.
