@@ -3,22 +3,22 @@
 # This file is distributed under the same license as the BeeWare package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-08 10:13+0800\n"
-"PO-Revision-Date: 2024-04-08 11:56+0800\n"
-"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
-"Language-Team: zh_TW <LL@li.org>\n"
+"PO-Revision-Date: 2024-04-10 21:02+0000\n"
+"Last-Translator: sus <jeffpeng2012@gmail.com>\n"
+"Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
+"beeware/tutorial/tutorial-7/zh_Hant/>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.5-dev\n"
 "Generated-By: Babel 2.14.0\n"
-"X-Generator: Poedit 3.4.2\n"
 
 #: ../../tutorial/tutorial-7.rst:3 8ad7bf512a0341b6aeb95e5d97c7c838
 #, fuzzy
@@ -104,9 +104,8 @@ msgstr "讓我們在公文包開發者模式下運行更新後的應用程序，
 #: ../../tutorial/tutorial-7.rst:187 ../../tutorial/tutorial-7.rst:409
 #: 7bdd2fffeb32409f8bcc7143ecccb2e2 910885354fee4bfca9ffe18022ac1c56
 #: 9ce215aaab6f4c2fb3f457e14d6cecae b2dcfff9372146899d2309f5741d1106
-#, fuzzy
 msgid "macOS"
-msgstr "蘋果系統"
+msgstr "macOS"
 
 #: ../../tutorial/tutorial-7.rst:92 ../../tutorial/tutorial-7.rst:151
 #: ../../tutorial/tutorial-7.rst:224 ../../tutorial/tutorial-7.rst:430
@@ -120,7 +119,7 @@ msgstr "Linux"
 #: 0d1a69cd2f4a414cae311ca89484e190 3729ec0e47464fe38cce2e5cc8456a20
 #: c8ba6792ac64463dbc6d4167d40c0a71 e429f78fe30548c2872e2ec7945b3128
 msgid "Windows"
-msgstr "視窗"
+msgstr "Windows"
 
 #: ../../tutorial/tutorial-7.rst:132 51d25b00996b4dcb99190ed7b4dd7dd2
 #, fuzzy
