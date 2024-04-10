@@ -3,20 +3,21 @@
 # This file is distributed under the same license as the BeeWare package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-08 12:43+0800\n"
-"PO-Revision-Date: 2024-04-08 11:57+0800\n"
-"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
+"PO-Revision-Date: 2024-04-10 21:02+0000\n"
+"Last-Translator: sus <jeffpeng2012@gmail.com>\n"
+"Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
+"beeware/tutorial/tutorial-2/zh_Hant/>\n"
 "Language: zh_TW\n"
-"Language-Team: zh_TW <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.5-dev\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../tutorial/tutorial-2.rst:3 4f3fe457b5844a86b273c450f149c796
@@ -216,9 +217,8 @@ msgstr "現在我們已經進行了這些更改，我們可以透過再次啟動
 
 #: ../../tutorial/tutorial-2.rst:235 ../../tutorial/tutorial-2.rst:272
 #: 7ff777f17063404f8de92d38a6d76627 8a120da6346b4b4f8f1a36817dd4dfce
-#, fuzzy
 msgid "macOS"
-msgstr "蘋果系統"
+msgstr "macOS"
 
 #: ../../tutorial/tutorial-2.rst:244 ../../tutorial/tutorial-2.rst:277
 #: 8872b1ae04c0420785fadb94167d9084 b05864e73d044b7e8b7ecdb75903f5fb
@@ -228,7 +228,7 @@ msgstr "Linux"
 #: ../../tutorial/tutorial-2.rst:253 ../../tutorial/tutorial-2.rst:282
 #: 1758c71771e64870a5439f7cbf9b8567 6886d2040ab84d1eb93dc15b60500850
 msgid "Windows"
-msgstr "視窗"
+msgstr "Windows"
 
 #: ../../tutorial/tutorial-2.rst:262 e8b058976f0c433ebded74edf26f1bc6
 #, fuzzy
@@ -268,4 +268,3 @@ msgstr "下一步"
 #, fuzzy
 msgid "We've now got an application that does something a little more interesting. But it only runs on our own computer. Let's package this application for distribution. In :doc:`Tutorial 3 <tutorial-3>`, we'll wrap our application up as a standalone installer that we could send to a friend, a customer, or upload to an App Store."
 msgstr "我們現在有了一個可以做一些更有趣的事情的應用程式。但它只能在我們自己的計算機上運行。讓我們打包這個應用程式以進行分發。在 :doc:`教程 3 中<tutorial-3>`，我們將把我們的應用程式打包為一個獨立的安裝程序，我們可以將其發送給朋友、客戶，或上傳到應用程式商店。"
-
