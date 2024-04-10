@@ -3,22 +3,22 @@
 # This file is distributed under the same license as the BeeWare package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-08 10:13+0800\n"
-"PO-Revision-Date: 2024-04-08 11:57+0800\n"
-"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
-"Language-Team: zh_TW <LL@li.org>\n"
+"PO-Revision-Date: 2024-04-10 21:02+0000\n"
+"Last-Translator: sus <jeffpeng2012@gmail.com>\n"
+"Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
+"beeware/tutorial/tutorial-1/zh_Hant/>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.5-dev\n"
 "Generated-By: Babel 2.14.0\n"
-"X-Generator: Poedit 3.4.2\n"
 
 #: ../../tutorial/tutorial-1.rst:3 6b15f54bec2546c79f0a21b50b918daa
 #, fuzzy
@@ -44,9 +44,8 @@ msgstr "首先，我們需要安裝 **Briefcase**。 Briefcase 是一個 BeeWare
 #: ../../tutorial/tutorial-1.rst:163 ../../tutorial/tutorial-1.rst:206
 #: 29eb3427ac404ea79b348996b9eada95 9b68194071074e4e846f6bc195da9b4e
 #: a43fae5f4b954f859b0fceceae7b41ad ed897f448baa40c4b125a30aead48e41
-#, fuzzy
 msgid "macOS"
-msgstr "蘋果系統"
+msgstr "macOS"
 
 #: ../../tutorial/tutorial-1.rst:24 ../../tutorial/tutorial-1.rst:70
 #: ../../tutorial/tutorial-1.rst:176 ../../tutorial/tutorial-1.rst:211
@@ -71,7 +70,7 @@ msgstr "如果您在安裝過程中看到錯誤，幾乎可以肯定是因為某
 #: 572fb98f93f2482b8cd97ae0228ada50 8930f98d45994ca1ae7f849ba2eced6e
 #: dc2e0a487cd4434598f283de98efeec3 ee6bd27c82104f298ba5d9e54b264801
 msgid "Windows"
-msgstr "視窗"
+msgstr "Windows"
 
 #: ../../tutorial/tutorial-1.rst:45 39abb37c670c4787b635443c9d355d1e
 #, fuzzy
