@@ -3,40 +3,37 @@
 # This file is distributed under the same license as the BeeWare package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-08 10:13+0800\n"
-"PO-Revision-Date: 2024-04-08 11:55+0800\n"
-"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
-"Language-Team: zh_TW <LL@li.org>\n"
+"PO-Revision-Date: 2024-04-10 21:02+0000\n"
+"Last-Translator: sus <jeffpeng2012@gmail.com>\n"
+"Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
+"beeware/tutorial/tutorial-10/zh_Hant/>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.5-dev\n"
 "Generated-By: Babel 2.14.0\n"
-"X-Generator: Poedit 3.4.2\n"
 
 #: ../../tutorial/tutorial-10.rst:5 41f1bed0da4649b39dad21024689a3c9
-#, fuzzy
 msgid "Tutorial 10 - Make this app your own"
 msgstr "教程 10 - 打造您自己的應用程式"
 
 #: ../../tutorial/tutorial-10.rst:7 cf6d0c81b00b49a799a6f8e4a4d1c37e
-#, fuzzy
 msgid "So far, our app has used a default \"gray bee\" icon. How do we update the app to use our own icon?"
-msgstr "到目前為止，我們的應用程式使用了預設的``灰色蜜蜂``圖示。我們如何更新應用程式以使用我們自己的圖標？"
+msgstr "到目前為止，我們的應用程式使用了預設的 ``灰色蜜蜂`` "
+"圖示。我們如何更新應用程式以使用我們自己的圖標？"
 
 #: ../../tutorial/tutorial-10.rst:11 8d544e586a094fcf9ce8778feb304db2
-#, fuzzy
 msgid "Adding an icon"
 msgstr "新增圖示"
 
 #: ../../tutorial/tutorial-10.rst:13 60c9ddb282cd44699f9e83b1e857b013
-#, fuzzy
 msgid "**Coming soon**"
 msgstr "**即將推出**"
 
@@ -45,6 +42,7 @@ msgid "Next steps"
 msgstr "下一步"
 
 #: ../../tutorial/tutorial-10.rst:18 bee80af130bb4037bf17213f2decaa74
-#, fuzzy
 msgid "We've now got an application with a custom icon on our desktop and phone! How do we share this application with everyone else? Turn to :doc:`Tutorial 11 <tutorial-11>` to find out..."
-msgstr "我們現在在桌面和手機上有了一個帶有自訂圖示的應用程式！我們如何與其他人分享這個應用程式？到 :doc:`教程 11<tutorial-11>` 找出..."
+msgstr ""
+"我們現在在桌面和手機上有了一個帶有自訂圖示的應用程式！我們如何與其他人分享這"
+"個應用程式？到 :doc:`教程 11<tutorial-11>` 找找看..."
