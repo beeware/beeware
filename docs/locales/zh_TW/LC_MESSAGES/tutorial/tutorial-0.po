@@ -3,22 +3,22 @@
 # This file is distributed under the same license as the BeeWare package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-08 10:13+0800\n"
-"PO-Revision-Date: 2024-04-08 11:58+0800\n"
-"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
-"Language-Team: zh_TW <LL@li.org>\n"
+"PO-Revision-Date: 2024-04-10 21:02+0000\n"
+"Last-Translator: sus <jeffpeng2012@gmail.com>\n"
+"Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
+"beeware/tutorial/tutorial-0/zh_Hant/>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.5-dev\n"
 "Generated-By: Babel 2.14.0\n"
-"X-Generator: Poedit 3.4.2\n"
 
 #: ../../tutorial/tutorial-0.rst:3 da7047648df8422ca10b095700768f86
 #, fuzzy
@@ -43,9 +43,8 @@ msgstr "我們首先需要的是一個可用的 Python 解釋器。"
 #: ../../tutorial/tutorial-0.rst:15 ../../tutorial/tutorial-0.rst:77
 #: ../../tutorial/tutorial-0.rst:136 35d69d0d9f7b4bc4a461552ffa1ea1a6
 #: 91d99e415473445f847abc0f44203618 bec1fa85435a41cc9e1d3066fe0a54c9
-#, fuzzy
 msgid "macOS"
-msgstr "蘋果系統"
+msgstr "macOS"
 
 #: ../../tutorial/tutorial-0.rst:17 bee1c9a8da0548cc9a6d32284c8cc6a3
 #, fuzzy
@@ -82,7 +81,7 @@ msgstr "目前對 Raspberry Pi 的支援有限。"
 #: ../../tutorial/tutorial-0.rst:154 0118da7bcbbe454497de1c7b3ab90617
 #: 1005c9afd4764e2abfbe701f1e19eb63 d134440922944702ae8086e9a2c263d2
 msgid "Windows"
-msgstr "視窗"
+msgstr "Windows"
 
 #: ../../tutorial/tutorial-0.rst:41 e7eaca5ce5ba489688707217ed7739b0
 #, fuzzy
