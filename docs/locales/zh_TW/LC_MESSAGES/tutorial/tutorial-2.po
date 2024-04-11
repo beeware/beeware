@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-08 12:43+0800\n"
-"PO-Revision-Date: 2024-04-10 21:02+0000\n"
+"PO-Revision-Date: 2024-04-11 17:01+0000\n"
 "Last-Translator: sus <jeffpeng2012@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "beeware/tutorial/tutorial-2/zh_Hant/>\n"
@@ -236,7 +236,6 @@ msgid "You'll notice that this time, it *doesn't* install dependencies. Briefcas
 msgstr "您會注意到，這一次，它``不``安裝依賴項。公文包可以檢測到該應用程式之前已經運行過，為了節省時間，只會運行該應用程式。如果您為應用程式新增的依賴項，則可以在執行``briefcase dev``時傳入``-r``選項來確保它們已安裝。"
 
 #: ../../tutorial/tutorial-2.rst:268 0b926222020e4b8bac585011ca98048f
-#, fuzzy
 msgid "This should open a GUI window:"
 msgstr "這應該打開一個 GUI 視窗："
 
