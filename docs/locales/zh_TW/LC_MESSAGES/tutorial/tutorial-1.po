@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-08 10:13+0800\n"
-"PO-Revision-Date: 2024-04-11 17:01+0000\n"
+"PO-Revision-Date: 2024-04-11 22:01+0000\n"
 "Last-Translator: sus <jeffpeng2012@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "beeware/tutorial/tutorial-1/zh_Hant/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../tutorial/tutorial-1.rst:3 6b15f54bec2546c79f0a21b50b918daa
 msgid "Tutorial 1 - Your first app"
-msgstr "教程 1 - 您的第一個應用程式"
+msgstr "教學 1 - 您的第一個應用程式"
 
 #: ../../tutorial/tutorial-1.rst:5 51df89d7190b4a91a2c5fe6d7143643a
 msgid "We're ready to create our first application."
@@ -37,7 +37,7 @@ msgid "First, we need to install **Briefcase**. Briefcase is a BeeWare tool that
 msgstr ""
 "首先，我們需要安裝 **Briefcase**。 它是一個 BeeWare 工具，"
 "可用於打包應用程式以分發給最終用戶 - 但它也可用於引導新專案。確保您位於 "
-":doc:`教程 0 <tutorial-0>` 中建立的 ``beeware-tutorial`` 目錄中，啟動 "
+":doc:`教學 0 <tutorial-0>` 中建立的 ``beeware-tutorial`` 目錄中，啟動 "
 "``beeware-venv`` 虛擬環境，然後執行："
 
 #: ../../tutorial/tutorial-1.rst:18 ../../tutorial/tutorial-1.rst:64
