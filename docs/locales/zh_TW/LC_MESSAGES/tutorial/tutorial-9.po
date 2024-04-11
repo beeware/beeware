@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-08 10:13+0800\n"
-"PO-Revision-Date: 2024-04-11 10:01+0000\n"
+"PO-Revision-Date: 2024-04-11 22:01+0000\n"
 "Last-Translator: sus <jeffpeng2012@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "beeware/tutorial/tutorial-9/zh_Hant/>\n"
@@ -22,14 +22,14 @@ msgstr ""
 
 #: ../../tutorial/tutorial-9.rst:3 6c187687d357400e8159acfc2310f3ad
 msgid "Tutorial 9 - Testing times"
-msgstr "教程 9 - 測試時間"
+msgstr "教學 9 - 測試時間"
 
 #: ../../tutorial/tutorial-9.rst:5 b72366c14e754abea97dc62bc5188609
 msgid "Most software development doesn't involve writing new code - it's modifying existing code. Ensuring that existing code continues to work in the way we expect is a key part of the software development process. One way to do ensure the behavior of our app is with a *test suite*."
 msgstr ""
 "大多數軟體開發並不涉及編寫新程式碼，而是修改現有程式碼。確保現有程式碼繼續按"
-"照我們期望的方式運作是軟體開發過程的關鍵部分。確保我們的應用程式行為的一種方"
-"法是使用*測試套件*。"
+"照我們期望的方式運作是軟體開發過程的關鍵部分。"
+"確保我們的應用程式行為的一種方法是使用 *測試套件* 。"
 
 #: ../../tutorial/tutorial-9.rst:11 9bf2c9977b9749e68f83228ff7427dc1
 msgid "Running the test suite"
@@ -46,7 +46,7 @@ msgstr ""
 #: ../../tutorial/tutorial-9.rst:23 4cffb17ca8d34ebfa581f3a4bd572b12
 msgid "This is a `Pytest <https://pytest.org>`__ *test case* - a block of code that can be executed to verify some behavior of your app. In this case, the test is a placeholder, and doesn't test anything about our app - but it is a test that we can perform."
 msgstr ""
-"這是一個 `Pytest <https://pytest.org>`__ 的*測試範例* - "
+"這是一個 `Pytest <https://pytest.org>`__ 的 *測試範例* - "
 "可以執行以驗證應用程式的某些行為的程式碼區塊。在本例中，測試僅是一個範例，"
 "不會測試有關我們應用程式的任何內容 - 但它是我們可以執行的測試。"
 
@@ -126,7 +126,7 @@ msgid "This time, we see a test failure - and the output explains the source of 
 msgstr ""
 "這次，我們看到測試失敗 - 輸出解釋了失敗的根源：測試期望輸出 ``BeeWare the "
 "IDEs of Python!`` ，但我們的 ``greeting()`` 實現返回 ``Hello, Brutus`` 。"
-"讓我們修改 greeting() 在 src/helloworld/app.py 中的實作以獲得新的行為："
+"讓我們修改 src/helloworld/app.py 中的 greeting() 實作以獲得新的行為："
 
 #: ../../tutorial/tutorial-9.rst:322 cf2afa3b8cfd4a84bc81eb7b6f04f7d3
 msgid "If we run the tests again, we'll now see our tests pass:"
