@@ -3,52 +3,55 @@
 # This file is distributed under the same license as the BeeWare package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-08 10:13+0800\n"
-"PO-Revision-Date: 2024-04-08 11:55+0800\n"
-"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
-"Language-Team: zh_TW <LL@li.org>\n"
+"PO-Revision-Date: 2024-04-11 17:01+0000\n"
+"Last-Translator: sus <jeffpeng2012@gmail.com>\n"
+"Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
+"beeware/tutorial/tutorial-8/zh_Hant/>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.5-dev\n"
 "Generated-By: Babel 2.14.0\n"
-"X-Generator: Poedit 3.4.2\n"
 
 #: ../../tutorial/tutorial-8.rst:3 a946f2302e7547e0b4b41dd736e198e4
-#, fuzzy
 msgid "Tutorial 8 - Making it Smooooth"
-msgstr "教學 8 - 使其平滑"
+msgstr "教學 8 - 使其順～暢"
 
 #: ../../tutorial/tutorial-8.rst:5 7036d4eddaaa44bd9ed21fa3594e9bcd
-#, fuzzy
 msgid "Unless you've got a *really* fast internet connection, you may notice that when you press the button, the GUI for your app locks up for a little bit. This is because the web request we have made is *synchronous*. When our application makes the web request, it waits for the API to return a response before continuing. While it's waiting, it *isn't* allowing the application to redraw - and as a result, the application locks up."
-msgstr "除非您擁有``真正``快速的網路連接，否則您可能會注意到，當您按下按鈕時，應用程式的 GUI 會鎖定一點。這是因為我們發出的 Web 請求是*同步*的。當我們的應用程式發出 Web 請求時，它會等待 API 回傳回應，然後再繼續。在等待時，它``不允許``應用程式重繪 - 結果，應用程式鎖定。"
+msgstr ""
+"除非您擁有 **真正** 快速的網路連接，否則您可能會注意到，當您按下按鈕時，"
+"應用程式的 GUI 會鎖定一點。這是因為我們發出的 Web 請求是 **同步** 的。"
+"當我們的應用程式發出 Web 請求時，它會等待 API "
+"回傳回應，然後再繼續。在等待時，它 ``不允許`` 應用程式重繪 - "
+"結果，應用程式停止回應。"
 
 #: ../../tutorial/tutorial-8.rst:13 63b2b41e2ea44cf084528cba1c37e633
-#, fuzzy
 msgid "GUI Event Loops"
-msgstr "GUI 事件循環"
+msgstr "GUI 事件循環(Event loop)"
 
 #: ../../tutorial/tutorial-8.rst:15 d9d2012a95114548a70e1a9e1df66838
-#, fuzzy
 msgid "To understand why this happens, we need to dig into the details of how a GUI application works. The specifics vary depending on the platform; but the high level concepts are the same, no matter the platform or GUI environment you're using."
-msgstr "為了理解為什麼會發生這種情況，我們需要深入研究 GUI 應用程式如何運作的細節。具體情況因平台而異；但無論您使用什麼平台或 GUI 環境，進階概念都是相同的。"
+msgstr ""
+"為了理解為什麼會發生這種情況，我們需要深入研究 GUI "
+"應用程式如何運作的細節。具體情況因平台而異；但無論您使用什麼平台或 GUI "
+"環境，概念都是相同的。"
 
 #: ../../tutorial/tutorial-8.rst:20 ff7a8bc84d0b4c16957cba69fa919436
-#, fuzzy
 msgid "A GUI app is, fundamentally, a single loop that looks something like::"
-msgstr "從根本上來說，GUI 應用程式是一個看起來像這樣的循環："
+msgstr "從根本上來說，GUI 應用程式是一個看起來像這樣的循環::"
 
 #: ../../tutorial/tutorial-8.rst:26 b1878dd9c8694cb0bc31f9e51ebf8818
-#, fuzzy
 msgid "This loop is called the *Event Loop*. (These aren't actual method names - it's an illustration of what is going on in \"pseudo-code\")."
-msgstr "此循環稱為*事件循環*。 （這些不是實際的方法名稱 - 它是``偽代碼``中發生的情況的說明）。"
+msgstr "此循環稱為 *事件循環* 。 （這些不是實際的方法名稱 - 它是 ``偽代碼`` "
+"中發生的情況的說明）。"
 
 #: ../../tutorial/tutorial-8.rst:29 34bced5f22e64b0795f818c3d98f6583
 #, fuzzy
