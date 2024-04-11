@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-08 10:13+0800\n"
-"PO-Revision-Date: 2024-04-10 21:02+0000\n"
+"PO-Revision-Date: 2024-04-11 17:01+0000\n"
 "Last-Translator: sus <jeffpeng2012@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "beeware/tutorial/tutorial-0/zh_Hant/>\n"
@@ -21,24 +21,21 @@ msgstr ""
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../tutorial/tutorial-0.rst:3 da7047648df8422ca10b095700768f86
-#, fuzzy
 msgid "Tutorial 0 - Let's get set up!"
 msgstr "教學 0 - 讓我們開始設定吧！"
 
 #: ../../tutorial/tutorial-0.rst:5 5b093b2dc7ea445aa519bdbe2bd12b44
-#, fuzzy
 msgid "Before we build our first BeeWare app, we have to make sure we've got all the prerequisites for running BeeWare."
-msgstr "在建立第一個 BeeWare 應用程式之前，我們必須確保具備運行 BeeWare 的所有先決條件。"
+msgstr "在建立第一個 BeeWare 應用程式之前，我們必須確保具備運行 BeeWare "
+"的所有先決條件。"
 
 #: ../../tutorial/tutorial-0.rst:9 16b7bae8deb54dafa79bfaa85413fa6d
-#, fuzzy
 msgid "Install Python"
 msgstr "安裝Python"
 
 #: ../../tutorial/tutorial-0.rst:11 a2815649f8084e9bbef5e2e53a00a7dc
-#, fuzzy
 msgid "The first thing we'll need is a working Python interpreter."
-msgstr "我們首先需要的是一個可用的 Python 解釋器。"
+msgstr "我們首先需要的是一個可用的 Python 直譯器。"
 
 #: ../../tutorial/tutorial-0.rst:15 ../../tutorial/tutorial-0.rst:77
 #: ../../tutorial/tutorial-0.rst:136 35d69d0d9f7b4bc4a461552ffa1ea1a6
@@ -47,14 +44,14 @@ msgid "macOS"
 msgstr "macOS"
 
 #: ../../tutorial/tutorial-0.rst:17 bee1c9a8da0548cc9a6d32284c8cc6a3
-#, fuzzy
 msgid "If you're on macOS, a recent version of Python is included with Xcode or the command line developer tools. To check if you already have it, run the following command:"
-msgstr "如果您使用的是 macOS，則 Xcode 或命令列開發人員工具中包含最新版本的 Python。要檢查您是否已經擁有它，請執行以下命令："
+msgstr "如果您使用的是 macOS，則 Xcode 或命令列開發人員工具中包含最新版本的 "
+"Python。要檢查您是否已經擁有它，請執行以下命令："
 
 #: ../../tutorial/tutorial-0.rst:25 21efc165fd8f4a76aba5dd1194bdcac4
-#, fuzzy
 msgid "If Python is installed, you'll see its version number. Otherwise, you'll be prompted to install the command line developer tools."
-msgstr "如果安裝了 Python，您將看到其版本號。否則，系統將提示您安裝命令列開發人員工具。"
+msgstr "如果安裝了 "
+"Python，您將看到其版本號。否則，系統將提示您安裝命令列開發人員工具。"
 
 #: ../../tutorial/tutorial-0.rst:28 ../../tutorial/tutorial-0.rst:84
 #: ../../tutorial/tutorial-0.rst:145 54cfa3bb6d5a41fa8c00b7e3f5465bf3
@@ -63,17 +60,18 @@ msgid "Linux"
 msgstr "Linux"
 
 #: ../../tutorial/tutorial-0.rst:30 0cd9267132df4b038421fb1bf7147226
-#, fuzzy
 msgid "If you're on Linux, you'll install Python using the system package manager (``apt`` on Debian/Ubuntu/Mint, ``dnf`` on Fedora, or ``pacman`` on Arch)."
-msgstr "如果您使用的是 Linux，則會使用系統套件管理器（Debian/Ubuntu/Mint 上的 apt 、Fedora 上的 dnf 或 Arch 上的 pacman ）安裝 Python。"
+msgstr ""
+"如果您使用的是 Linux，則會使用系統套件管理器（Debian/Ubuntu/Mint 上的 ``apt``"
+" 、Fedora 上的 ``dnf`` 或 Arch 上的 ``pacman`` ）安裝 Python。"
 
 #: ../../tutorial/tutorial-0.rst:33 5cecb1c3ba4b4916ba962977f266a252
-#, fuzzy
 msgid "You should ensure that the system Python is Python 3.8 or newer; if it isn't (e.g., Ubuntu 18.04 ships with Python 3.6), you'll need to upgrade your Linux distribution to something more recent."
-msgstr "您應該確保系統Python是Python 3.8或更高版本；如果不是（例如，Ubuntu 18.04 附帶 Python 3.6），則需要將 Linux 發行版升級到更新的版本。"
+msgstr ""
+"您應該確保系統Python是Python 3.8或更高版本；如果不是（例如，Ubuntu 18.04 "
+"附帶 Python 3.6），則需要將 Linux 發行版升級到更新的版本。"
 
 #: ../../tutorial/tutorial-0.rst:37 c3791f87bbeb41a6821ee239f9483a4b
-#, fuzzy
 msgid "Support for Raspberry Pi is limited at this time."
 msgstr "目前對 Raspberry Pi 的支援有限。"
 
@@ -84,150 +82,159 @@ msgid "Windows"
 msgstr "Windows"
 
 #: ../../tutorial/tutorial-0.rst:41 e7eaca5ce5ba489688707217ed7739b0
-#, fuzzy
 msgid "If you're on Windows, you can get the official installer from `the Python website <https://www.python.org/downloads>`_. You can use any stable version of Python from 3.8 onward. We'd advise avoiding alphas, betas, and release candidates unless you *really* know what you're doing."
-msgstr "如果您使用的是 Windows，則可以從``Python 網站 <https://www.python.org/downloads>``取得官方安裝程式。您可以使用 3.8 及以上的任何穩定版本的 Python。我們建議避免 alpha、beta 和候選版本，除非您``真的``知道自己在做什麼。"
+msgstr ""
+"如果您使用的是 Windows，則可以從 `Python 網站 <https://www.python.org/"
+"downloads>`_ 取得官方安裝程式。您可以使用 3.8 及以上的任何穩定版本的 Python。"
+"我們建議避免 alpha、beta 和候選版本，除非您 **真的** 知道自己在做什麼。"
 
 #: ../../tutorial/tutorial-0.rst:46 1d4a1f0c1b164bb1bcdbf61a1a9bbeb6
-#, fuzzy
 msgid "Alternative Python distributions"
-msgstr "替代 Python 發行版"
+msgstr "替代的 Python 發行版"
 
 #: ../../tutorial/tutorial-0.rst:48 1f031a99c39f4f92a31325f45287fa01
-#, fuzzy
 msgid "There are lots of different ways of installing Python. You can install Python through `homebrew <https://docs.brew.sh/Homebrew-and-Python>`__. You can use `pyenv <https://github.com/pyenv/pyenv#simple-python-version-management-pyenv>`__ to manage multiple Python installs on the same machine. Windows users can install Python from the Windows App Store. Users from a data science background might want to use `Anaconda <https://docs.anaconda.com/anaconda/install/>`__ or `Miniconda <https://docs.conda.io/en/latest/miniconda.html>`__."
-msgstr "安裝 Python 有很多不同的方法。您可以透過 `homebrew <https://docs.brew.sh/Homebrew-and-Python>`__ 安裝 Python。您可以使用 pyenv <https://github.com/pyenv/pyenv#simple-python-version-management-pyenv>`__ 來管理同一台電腦上的多個 Python 安裝。 Windows 使用者可以從 Windows App Store 安裝 Python。有數據科學背景的用戶可能希望使用``Anaconda <https://docs.anaconda.com/anaconda/install/>``或``Miniconda <https://docs.conda.io/en/latest/miniconda``。html >`__."
+msgstr ""
+"安裝 Python 有很多不同的方法。您可以透過 `homebrew <https://docs.brew.sh/"
+"Homebrew-and-Python>`__ 安裝 Python。您可以使用 `pyenv <https://github.com/"
+"pyenv/pyenv#simple-python-version-management-pyenv>`__ "
+"來管理同一台電腦上的多個 Python 安裝。 Windows 使用者可以從 Windows App "
+"Store 安裝 Python。有數據科學背景的用戶可能希望使用 `Anaconda <https://docs."
+"anaconda.com/anaconda/install/>`_ 或`Miniconda <https://docs.conda.io/en/"
+"latest/miniconda.html >`__ 。"
 
 #: ../../tutorial/tutorial-0.rst:58 7c023f559c7c40beabd2554d1bfd0a79
-#, fuzzy
 msgid "If you're on macOS or Windows, it doesn't matter *how* you've installed Python - it only matters that you can run ``python3`` from your operating system's command prompt/terminal application, and get a working Python interpreter."
-msgstr "如果你在 macOS 或 Windows 上，你如何安裝 Python 並不重要 - 重要的是你可以從作業系統的命令提示字元/終端應用程式運行``python3``，並獲得一個可用的 Python口譯員。"
+msgstr ""
+"如果你在 macOS 或 Windows 上，你如何安裝 Python 並不重要 - "
+"重要的是你可以從作業系統的命令提示字元/終端應用程式運行 ``python3`` ，"
+"並獲得一個可用的 Python 直譯器。"
 
 #: ../../tutorial/tutorial-0.rst:63 0a34b679ab014331bdd00d4c77b2e5ac
-#, fuzzy
 msgid "If you're on Linux, you should use the system Python provided by your operating system. You will be able to complete *most* of this tutorial using a non-system Python, but you won't be able to package your application for distribution to others."
-msgstr "如果您使用的是 Linux，則應該使用作業系統提供的系統 Python。您將能夠使用非系統 Python 完成本教程的*大部分*，但您將無法打包您的應用程式以分發給其他人。"
+msgstr ""
+"如果您使用的是 Linux，則應該使用作業系統提供的系統 Python。"
+"您將能夠使用非系統 Python 完成本教程的 *大部分* "
+"，但您將無法打包您的應用程式以分發給其他人。"
 
 #: ../../tutorial/tutorial-0.rst:71 436baf0482fe45a49725df974a9e7cf2
-#, fuzzy
 msgid "Install dependencies"
 msgstr "安裝依賴項"
 
 #: ../../tutorial/tutorial-0.rst:73 168186d5413f41e192c77d3587e0b09a
-#, fuzzy
 msgid "Next, install the additional dependencies needed for your operating system:"
 msgstr "接下來，安裝作業系統所需的其他依賴項："
 
 #: ../../tutorial/tutorial-0.rst:79 ea99e50863bb4b4f8148ddb356985ee1
-#, fuzzy
 msgid "Building BeeWare apps on macOS requires:"
 msgstr "在 macOS 上建立 BeeWare 應用程式需要："
 
 #: ../../tutorial/tutorial-0.rst:81 3e101057f8234d6d99813bbc7ad09f6a
-#, fuzzy
 msgid "**Git**, a version control system. This is included with Xcode or the command line developer tools, which you installed above."
-msgstr "**Git**，版本控制系統。它包含在您上面安裝的 Xcode 或命令列開發人員工具中。"
+msgstr "**Git** ，版本控制系統。它包含在您上面安裝的 Xcode 或命令列開發人員工具中。"
 
 #: ../../tutorial/tutorial-0.rst:86 ff8582640e1a4403a3be9c8d3dc48308
-#, fuzzy
 msgid "To support local development, you'll need to install some system packages. The list of packages required varies depending on your distribution:"
-msgstr "為了支援本地開發，您需要安裝一些系統軟體包。所需的軟體包清單因您的發行版而異："
+msgstr "為了支援本地開發，您需要安裝一些系統軟體包。所需的軟體包清單因您的發行版而異"
+"："
 
 #: ../../tutorial/tutorial-0.rst:89 34be494db3b54f7eaa105ea1d9e6b971
-#, fuzzy
 msgid "**Ubuntu 20.04+ / Debian 10+**"
 msgstr "**Ubuntu 20.04+ / Debian 10+**"
 
 #: ../../tutorial/tutorial-0.rst:100 115ea0be9bf44130b9469514868e4988
-#, fuzzy
 msgid "**Fedora**"
-msgstr "**軟呢帽**"
+msgstr "**Fedora**"
 
 #: ../../tutorial/tutorial-0.rst:106 2fdf6d1bb1c742629ea6d624806b6fe8
-#, fuzzy
 msgid "**Arch, Manjaro**"
-msgstr "**拱門，曼扎羅**"
+msgstr "**Arch, Manjaro**"
 
 #: ../../tutorial/tutorial-0.rst:114 eead89b6cc4a40c9bf81b6114966c609
-#, fuzzy
 msgid "Building BeeWare apps on Windows requires:"
 msgstr "在 Windows 上建立 BeeWare 應用程式需要："
 
 #: ../../tutorial/tutorial-0.rst:116 7ff84c0f6bec42388a1896b721d2d623
-#, fuzzy
 msgid "**Git**, a version control system. You can download Git from from `git-scm.org <https://git-scm.com/download/>`__."
-msgstr "**Git**，版本控制系統。您可以從 `git-scm.org <https://git-scm.com/download/>`__ 下載 Git。"
+msgstr ""
+"**Git** ，版本控制系統。您可以從 `git-scm.org <https://git-scm.com/download/"
+">`__ 下載 Git。"
 
 #: ../../tutorial/tutorial-0.rst:119 9bfc5833bdad49fcb00853a94472fb74
-#, fuzzy
 msgid "After installing these tools, you should ensure you restart any terminal sessions. Windows will only expose newly installed tools terminals started *after* the install has completed."
-msgstr "安裝這些工具後，您應該確保重新啟動所有終端會話。 Windows 只會公開安裝完成*之後*啟動的新安裝的工具終端。"
+msgstr "安裝這些工具後，您應該確保重新啟動所有終端會話。 Windows 只會公開安裝完成 "
+"*之後* 啟動的新安裝的工具終端。"
 
 #: ../../tutorial/tutorial-0.rst:124 9cea4ab1ad33491ea5654bb7d627ba95
-#, fuzzy
 msgid "Set up a virtual environment"
 msgstr "設定虛擬環境"
 
 #: ../../tutorial/tutorial-0.rst:126 2a8179e283964e9b8ef830c102eee090
-#, fuzzy
 msgid "We're now going to create a virtual environment - a \"sandbox\" that we can use to isolate our work on this tutorial from our main Python installation. If we install packages into the virtual environment, our main Python installation (and any other Python projects on our computer) won't be affected. If we make a complete mess of our virtual environment, we'll be able to simply delete it and start again, without affecting any other Python project on our computer, and without the need to re-install Python."
-msgstr "現在，我們將創建一個虛擬環境 - 一個``沙箱``，我們可以使用它來將本教程的工作與主 Python 安裝隔離。如果我們將套件安裝到虛擬環境中，我們的主要 Python 安裝（以及我們電腦上的任何其他 Python 專案）將不會受到影響。如果我們把虛擬環境弄得一團糟，我們只需刪除它並重新開始，就不會影響我們電腦上的任何其他 Python 項目，也不需要重新安裝 Python。"
+msgstr ""
+"現在，我們將創建一個虛擬環境 - 一個 ``沙箱`` ，"
+"我們可以使用它來將本教程的工作與主 Python "
+"安裝隔離。如果我們將套件安裝到虛擬環境中，我們的主要 Python 安裝（"
+"以及我們電腦上的任何其他 Python 專案）將不會受到影響。如果我們把虛擬環境弄得"
+"一團糟，我們只需刪除它並重新開始，就不會影響我們電腦上的任何其他 Python "
+"項目，也不需要重新安裝 Python。"
 
 #: ../../tutorial/tutorial-0.rst:163 a5c2ec7ebabb4abd9322f51f853b85c9
-#, fuzzy
 msgid "Errors running PowerShell Scripts"
 msgstr "執行 PowerShell 腳本時發生錯誤"
 
 #: ../../tutorial/tutorial-0.rst:165 222efb20eff44030a5d6836e0867212e
-#, fuzzy
 msgid "If you're using PowerShell, and you receive the error::"
-msgstr "如果您使用 PowerShell，並且收到錯誤：："
+msgstr "如果您使用 PowerShell，並且收到錯誤::"
 
 #: ../../tutorial/tutorial-0.rst:169 255f848cc0e04bd5a4fcabb91dfa1391
-#, fuzzy
 msgid "Your Windows account doesn't have permissions to run scripts. To fix this:"
 msgstr "您的 Windows 帳戶沒有執行腳本的權限。要解決此問題："
 
 #: ../../tutorial/tutorial-0.rst:171 877c1dd85f5a48cf829b5d12b30003af
-#, fuzzy
 msgid "Run Windows PowerShell as Administrator."
 msgstr "以管理員身分執行 Windows PowerShell。"
 
 #: ../../tutorial/tutorial-0.rst:172 7b95daa943504f4db7dc87337e1b25de
-#, fuzzy
 msgid "Run ``set-executionpolicy RemoteSigned``"
-msgstr "運行``set-executionpolicy RemoteSigned``"
+msgstr "運行 ``set-executionpolicy RemoteSigned``"
 
 #: ../../tutorial/tutorial-0.rst:173 38bbc27963ea4bb794f81d00d3eb5442
-#, fuzzy
 msgid "Select ``Y`` to change the execution policy."
-msgstr "選擇``Y``更改執行策略。"
+msgstr "選擇 ``Y`` 更改執行策略。"
 
 #: ../../tutorial/tutorial-0.rst:175 7b5a085f2b6440c2a8c25820a3060b25
-#, fuzzy
 msgid "Once you've done this you can rerun ``beeware-venv\\Scripts\\activate.ps1`` in your original PowerShell session (or a new session in the same directory)."
-msgstr "完成此操作後，您可以在原始 PowerShell 會話（或同一目錄中的新會話）中重新執行``beeware-venv\\Scripts\\activate.ps1``。"
+msgstr ""
+"完成此操作後，您可以在原始 PowerShell 會話（或同一目錄中的新會話）中重新執行 "
+"``beeware-venv\\Scripts\\activate.ps1`` 。"
 
 #: ../../tutorial/tutorial-0.rst:179 dc73d7231e394fed90832edc9d91c3cd
-#, fuzzy
 msgid "If this worked, your prompt should now be changed - it should have a ``(beeware-venv)`` prefix. This lets you know that you're currently in your BeeWare virtual environment. Whenever you're working on this tutorial, you should make sure your virtual environment is activated. If it isn't, re-run the last command (the ``activate`` command) to re-activate your environment."
-msgstr "如果這有效，你的提示現在應該改變 - 它應該有一個 ``(beeware-venv)`` 前綴。這可以讓您知道您目前處於 BeeWare 虛擬環境。每當您學習本教學時，您都應該確保您的虛擬環境已啟動。如果不是，請重新執行最後一個命令（``activate`` 命令）以重新啟動您的環境。"
+msgstr ""
+"如果這有效，你的提示現在應該改變 - 它應該有一個 ``(beeware-venv)`` 前綴。"
+"這可以讓您知道您目前處於 BeeWare 虛擬環境。每當您學習本教學時，您都應該確保您"
+"的虛擬環境已啟動。如果不是，請重新執行最後一個命令（ ``activate`` "
+"命令）以啟動您的虛擬環境。"
 
 #: ../../tutorial/tutorial-0.rst:185 fc1cb4d260a64b7095edc2178135d716
-#, fuzzy
 msgid "Alternative virtual environments"
-msgstr "替代虛擬環境"
+msgstr "替代的虛擬環境"
 
 #: ../../tutorial/tutorial-0.rst:187 7d487374db0f42e6b4630ba8d9082055
-#, fuzzy
 msgid "If you're using Anaconda or miniconda, you may be more familiar with using conda environments. You might also have heard of ``virtualenv``, a predecessor to Python's built in ``venv`` module. As with Python installs - if you're on macOS or Windows, it doesn't matter *how* you create your virtual environment, as long as you have one. If you're on Linux, you should stick to ``venv`` and the system Python."
-msgstr "如果您使用 Anaconda 或 miniconda，您可能會更熟悉使用 conda 環境。您可能也聽說過 ``virtualenv``，它是 Python 內建的 ``venv`` 模組的前身。與 Python 安裝一樣 - 如果您使用的是 macOS 或 Windows，只要您有一個虛擬環境，*如何* 建立虛擬環境並不重要。如果您使用的是 Linux，則應該堅持使用 ``venv`` 和系統 Python。"
+msgstr ""
+"如果您使用 Anaconda 或 miniconda，您可能會更熟悉使用 conda 環境。"
+"您可能也聽說過 ``virtualenv`` ，它是 Python 內建的 ``venv`` 模組的前身。與 "
+"Python 安裝一樣 - 如果您使用的是 macOS 或 Windows，只要您有一個虛擬環境， "
+"*如何* 建立虛擬環境並不重要。如果您使用的是 Linux，則應該堅持使用 ``venv`` "
+"和系統 Python。"
 
 #: ../../tutorial/tutorial-0.rst:195 6fba72a61ac9453fb6fa6abbc5608981
 msgid "Next steps"
 msgstr "下一步"
 
 #: ../../tutorial/tutorial-0.rst:197 8575ae9d6d29474d9b902a9afc9eff7c
-#, fuzzy
 msgid "We've now set up our environment. We're ready to :doc:`create our first BeeWare application <tutorial-1>`."
-msgstr "我們現在已經設定好了我們的環境。我們準備好 :doc:`創建我們的第一個 BeeWare 應用程序<tutorial-1>`。"
+msgstr "我們現在已經設定好了我們的環境。我們準備好 :doc:`創建我們的第一個 BeeWare "
+"應用程式<tutorial-1>`。"
