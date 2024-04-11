@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-08 13:10+0800\n"
-"PO-Revision-Date: 2024-04-10 21:02+0000\n"
+"PO-Revision-Date: 2024-04-11 10:01+0000\n"
 "Last-Translator: sus <jeffpeng2012@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "beeware/tutorial/index/zh_Hant/>\n"
@@ -62,8 +62,8 @@ msgstr "此版本的教學是透過機器翻譯產生的。我們知道這並不
 #: ad49e511c20d43a68573c21dde7c0182
 msgid "If you'd like the help improve the translation, get in touch! We have a ``#translations`` channel in `Discord <https://beeware.org/bee/chat/>`__. Introduce yourself there and we will add you to the translation team."
 msgstr ""
-"如果您想要協助改進翻譯，請聯絡我們！我們在 ``Discord <https://beeware.org/"
-"bee/chat/>`` 中有一個 ``#translations`` "
+"如果您想要協助改進翻譯，請聯絡我們！我們在 `Discord <https://beeware.org/bee/"
+"chat/>`__ 中有一個 ``#translations`` "
 "頻道。在那裡進行自我介紹，我們會將您加入翻譯團隊。"
 
 #: ../../index.rst:41 39c3c41304ed4caaa96a99f6f0d91135
@@ -99,7 +99,7 @@ msgstr ""
 #: ../../index.rst:61 66b749de007849f6966b3e2b7c573478
 msgid "Libraries (such as `Rubicon ObjC <https://rubicon-objc.readthedocs.io>`__) for accessing platform-native libraries;"
 msgstr ""
-"用於存取各個平臺的原生庫的庫（例如`Rubicon ObjC <https://rubicon-objc."
+"用於存取各個平臺的原生庫的庫（例如 `Rubicon ObjC <https://rubicon-objc."
 "readthedocs.io>`__ ）;"
 
 #: ../../index.rst:63 2de154b714cd4f68b8939e7d1f439da1
@@ -116,7 +116,7 @@ msgstr ""
 #: ../../index.rst:71 01d00af14844431abafb7db394a0f5c8
 msgid "The BeeWare suite is available on macOS, Windows, Linux (using GTK); on mobile platforms such as Android and iOS; and for the Web."
 msgstr "BeeWare 套件可在 macOS、Windows、Linux（使用 "
-"GTK）上使用；在Android和iOS等行動平台上；以及網頁。"
+"GTK）上使用，也在Android和iOS等行動平台上，甚至是網頁。"
 
 #: ../../index.rst:75 be926e608f1e4133a438d0127509c15c
 msgid "Lets go!"
