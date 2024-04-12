@@ -30,3 +30,29 @@ jobs:
   package:
     name: Python package
     uses: beeware/.github/.github/workflows/python-package-create.yml@main
+
+  test:
+    name: Test Python package
+    needs: package
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Get packages
+        uses: actions/download-artifact@v4.1.4
+        with:
+          name: ${{ needs.package.outputs.artifact-name }}
+          path: dist
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install package
+        run: |
+          python -m pip install dist/beeware*.whl
+
+      - name: Verifies that briefcase is installed and working
+        run: |
+          briefcase -V
