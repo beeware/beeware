@@ -193,7 +193,7 @@ want to rebuild the app to make sure the icon takes effect. To do this, we call
       Installing src/helloworld... done
 
       [helloworld] Updating application resources...
-      Unable to find icons/helloworld.icns for application icon; using default
+      Installing icons/helloworld.icns as application icon... done
 
       [helloworld] Removing unneeded app content...
       Removing unneeded app bundle content... done
@@ -243,7 +243,7 @@ want to rebuild the app to make sure the icon takes effect. To do this, we call
       Installing src/helloworld... done
 
       [helloworld] Updating application resources...
-      Unable to find icons/helloworld.ico for application icon; using default
+      Installing icons/helloworld.ico as application icon... done
 
       [helloworld] Removing unneeded app content...
       Removing unneeded app bundle content... done
@@ -335,18 +335,9 @@ With our icons installed, we can now run our app with the new icon:
 
     .. code-block:: doscon
 
-      (beeware-venv) C:\...>briefcase update --update-resources
+      (beeware-venv) C:\...>briefcase run
 
-      [helloworld] Updating application code...
-      Installing src/helloworld... done
-
-      [helloworld] Updating application resources...
-      Unable to find icons/helloworld.ico for application icon; using default
-
-      [helloworld] Removing unneeded app content...
-      Removing unneeded app bundle content... done
-
-      [helloworld] Application updated.
+      [helloworld] Starting app...
 
   .. group-tab:: Android
 
@@ -385,9 +376,11 @@ So - in addition to configuring Briefcase to use the new icon for the binary and
 installer, we also need to provide updated icons for our app to use at runtime.
 
 If you look in the app's ``src/helloworld/resources`` folder, you can see the
-icons that are being used at runtime. We can overwrite these files with versions
-from our ``icons`` folder, then update and re-run our app (using the ``-u`` flag
-to update and run in a single command):
+icons that are being used by Toga at runtime. We can overwrite these files with
+versions from our ``icons`` folder, then update and re-run our app. We use the
+``-u`` flag to update the application before running - as these runtime icons
+are contained in the a location referenced by ``sources``, they'll be
+updated as part of a "source" update:
 
 .. tabs::
 
@@ -470,146 +463,6 @@ to update and run in a single command):
     icons.
 
 This time, when the app runs, you should see the new green snake icon.
-
-Splash screens
-==============
-
-Mobile platforms have an additional customization option in addition to icons -
-they have a splash screen. Let's replace the default "Made with BeeWare" splash
-screen with something custom.
-
-Edit your ``pyproject.toml``, adding a new ``splash`` configuration item in the
-``[tool.briefcase.app.helloworld]`` configuration section, just after the
-``icon`` definition::
-
-    splash = "splash/helloworld"
-
-As before, this configures a filename prefix; each platform will add to this
-prefix to generate the final filenames. Download :download:`this splash.zip bundle
-<./resources/splash.zip>`, and unpack it into the root of your project
-directory to provide the splash images. The splash images are large, square
-images with a transparent background, in a range of sizes.
-
-Again, there's a lot of images, representing all the sizes required to provide
-splash screens for Android and iOS - but they should all look the same: a green
-snake with the text "Hello world":
-
-.. image:: resources/splash.png
-    :align: center
-    :alt: Icon of green snake with a blue background
-
-We can then re-run the app, forcing a resource update to ensure the new splash
-images are copied in the app, and the app is re-built before being started:
-
-.. tabs::
-
-  .. group-tab:: macOS
-
-     This step isn't required on macOS, as macOS apps don't have splash screens.
-
-  .. group-tab:: Linux
-
-     This step isn't required on Linux, as Linux apps don't have splash screens.
-
-  .. group-tab:: Windows
-
-     This step isn't required on Windows, as Windows apps don't have splash screens.
-
-  .. group-tab:: Android
-
-    .. code-block:: console
-
-      (beeware-venv) $ briefcase run android --update-resources
-
-      [helloworld] Updating application code...
-      Installing src/helloworld... done
-
-      [helloworld] Updating application resources...
-      Installing icons/helloworld-round-48.png as 48px round application icon... done
-      Installing icons/helloworld-round-72.png as 72px round application icon... done
-      Installing icons/helloworld-round-96.png as 96px round application icon... done
-      Installing icons/helloworld-round-144.png as 144px round application icon... done
-      Installing icons/helloworld-round-192.png as 192px round application icon... done
-      Installing icons/helloworld-square-48.png as 48px square application icon... done
-      Installing icons/helloworld-square-72.png as 72px square application icon... done
-      Installing icons/helloworld-square-96.png as 96px square application icon... done
-      Installing icons/helloworld-square-144.png as 144px square application icon... done
-      Installing icons/helloworld-square-192.png as 192px square application icon... done
-      Installing splash/helloworld-normal-320.png as 320px normal splash image... done
-      Installing splash/helloworld-normal-480.png as 480px normal splash image... done
-      Installing splash/helloworld-normal-640.png as 640px normal splash image... done
-      Installing splash/helloworld-normal-960.png as 960px normal splash image... done
-      Installing splash/helloworld-normal-1280.png as 1280px normal splash image... done
-      Installing splash/helloworld-large-480.png as 480px large splash image... done
-      Installing splash/helloworld-large-720.png as 720px large splash image... done
-      Installing splash/helloworld-large-960.png as 960px large splash image... done
-      Installing splash/helloworld-large-1440.png as 1440px large splash image... done
-      Installing splash/helloworld-large-1920.png as 1920px large splash image... done
-      Installing splash/helloworld-xlarge-720.png as 720px xlarge splash image... done
-      Installing splash/helloworld-xlarge-1080.png as 1080px xlarge splash image... done
-      Installing splash/helloworld-xlarge-1440.png as 1440px xlarge splash image... done
-      Installing splash/helloworld-xlarge-2160.png as 2160px xlarge splash image... done
-      Installing splash/helloworld-xlarge-2880.png as 2880px xlarge splash image... done
-
-      [helloworld] Removing unneeded app content...
-      Removing unneeded app bundle content... done
-
-      [helloworld] Application updated.
-
-      [helloworld] Updating app metadata...
-      Setting main module... done
-
-      [helloworld] Building Android APK...
-      ...
-      Building... done
-
-      [helloworld] Built build/helloworld/android/gradle/app/build/outputs/apk/debug/app-debug.apk
-
-      [helloworld] Starting app...
-
-  .. group-tab:: iOS
-
-    .. code-block:: console
-
-      (beeware-venv) $ briefcase build iOS --update-resources
-
-      [helloworld] Updating application code...
-      Installing src/helloworld... done
-
-      [helloworld] Updating application resources...
-      Installing icons/helloworld-20.png as 20px application icon... done
-      Installing icons/helloworld-29.png as 29px application icon... done
-      Installing icons/helloworld-40.png as 40px application icon... done
-      Installing icons/helloworld-58.png as 58px application icon... done
-      Installing icons/helloworld-60.png as 60px application icon... done
-      Installing icons/helloworld-76.png as 76px application icon... done
-      Installing icons/helloworld-80.png as 80px application icon... done
-      Installing icons/helloworld-87.png as 87px application icon... done
-      Installing icons/helloworld-120.png as 120px application icon... done
-      Installing icons/helloworld-152.png as 152px application icon... done
-      Installing icons/helloworld-167.png as 167px application icon... done
-      Installing icons/helloworld-180.png as 180px application icon... done
-      Installing icons/helloworld-1024.png as 1024px application icon... done
-      Installing splash/helloworld-800.png as 800px splash image... done
-      Installing splash/helloworld-1600.png as 1600px splash image... done
-      Installing splash/helloworld-2400.png as 2400px splash image... done
-
-      [helloworld] Removing unneeded app content...
-      Removing unneeded app bundle content... done
-
-      [helloworld] Application updated.
-
-      [helloworld] Updating app metadata...
-      Setting main module... done
-
-      [helloworld] Building Xcode project...
-      Building... done
-
-      [helloworld] Built build/helloworld/ios/xcode/build/Debug-iphonesimulator/Hello World.app
-
-      [helloworld] Starting app...
-
-We now have a fully customized app!
 
 Next steps
 ==========
