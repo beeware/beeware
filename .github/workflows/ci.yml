@@ -40,7 +40,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - name: Get packages
-        uses: actions/download-artifact@v4.1.4
+        uses: actions/download-artifact@v4.1.5
         with:
           name: ${{ needs.package.outputs.artifact-name }}
           path: dist
