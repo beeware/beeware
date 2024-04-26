@@ -4,8 +4,8 @@
 Tutorial 10 - Make this app your own
 ====================================
 
-So far, our app has used a default "gray bee" icon. Let's personalize our
-application by configuring it to use our own icon.
+So far, our app has used a default "gray bee" icon when it is packaged. Let's
+personalize our application by configuring it to use our own icon.
 
 Adding an icon
 ==============
@@ -355,114 +355,10 @@ With our icons installed, we can now run our app with the new icon:
 
       [helloworld] Starting app...
 
-When you start the app on a desktop platform, you might briefly notice a green
-snake icon... but then the gray bee icon returns. What happened?
-
-Well, an application really has *three* different icons:
-
-* The icon for the app's binary;
-* The icon that the app uses at runtime; and
-* The icon used by the app's installation mechanism.
-
-In most cases, these three icons will be the same - but they don't have to be.
-Briefcase is able to set the first and third of these icons; however, the icon
-used at runtime is determined by the GUI framework. Many GUI frameworks will
-fall back to the icon in the application binary at runtime. However, in some
-cases, this won't be possible; and some frameworks allow you to modify the
-binary to indicate something about the application state (for example, to show
-an unread indicator on the app's icon).
-
-So - in addition to configuring Briefcase to use the new icon for the binary and
-installer, we also need to provide updated icons for our app to use at runtime.
-
-If you look in the app's ``src/helloworld/resources`` folder, you can see the
-icons that are being used by Toga at runtime. We can overwrite these files with
-versions from our ``icons`` folder, then update and re-run our app. We use the
-``-u`` flag to update the application before running - as these runtime icons
-are contained in the a location referenced by ``sources``, they'll be
-updated as part of a "source" update:
-
-.. tabs::
-
-  .. group-tab:: macOS
-
-    .. code-block:: console
-
-      (beeware-venv) $ cp icons/helloworld.icns src/helloworld/resources
-      (beeware-venv) $ briefcase run -u
-
-      [helloworld] Updating application code...
-      Installing src/helloworld... done
-
-      [helloworld] Removing unneeded app content...
-      Removing unneeded app bundle content... done
-
-      [helloworld] Application updated.
-
-      [helloworld] Building application...
-      ...
-
-      [helloworld] Built build/helloworld/macos/app/Hello World.app
-
-      [helloworld] Starting app...
-
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-      (beeware-venv) $ cp icons/helloworld-72.png src/helloworld/resources
-      (beeware-venv) $ briefcase run -u
-
-      [helloworld] Finalizing application configuration...
-      Targeting ubuntu:jammy (Vendor base debian)
-      Determining glibc version... done
-
-      Targeting glibc 2.35
-      Targeting Python3.10
-
-      [helloworld] Updating application code...
-      Installing src/helloworld... done
-
-      [helloworld] Removing unneeded app content...
-      Removing unneeded app bundle content... done
-
-      [helloworld] Application updated.
-
-      [helloworld] Building application...
-      ...
-
-      [helloworld] Built build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld
-
-      [helloworld] Starting app...
-
-  .. group-tab:: Windows
-
-    .. code-block:: doscon
-
-      (beeware-venv) C:\...>copy icons\helloworld.ico src\helloworld\resources
-      (beeware-venv) C:\...>briefcase run -u
-
-      [helloworld] Updating application code...
-      Installing src/helloworld... done
-
-      [helloworld] Removing unneeded app content...
-      Removing unneeded app bundle content... done
-
-      [helloworld] Application updated.
-
-      [helloworld] Starting app...
-
-  .. group-tab:: Android
-
-    This step isn't needed on Android, as mobile platforms don't have runtime
-    icons.
-
-  .. group-tab:: iOS
-
-    This step isn't needed on iOS, as mobile platforms don't have runtime
-    icons.
-
-This time, when the app runs, you should see the new green snake icon.
+Just as Briefcase provides an option to update *code* before running the app with the
+``-u`` option, you can also update resources before running. If you run ``briefcase run
+--update-resources``, the app's resources will be updated, and then the app will be
+started.
 
 Next steps
 ==========
