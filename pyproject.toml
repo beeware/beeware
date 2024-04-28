@@ -49,7 +49,7 @@ dev = [
     "pytest == 8.1.1",
     "pytest-tldr == 0.2.5",
     "setuptools_scm == 8.0.4",
-    "tox == 4.14.2",
+    "tox == 4.15.0",
 ]
 docs = [
     "furo == 2024.1.29",
