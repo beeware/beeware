@@ -1,34 +1,37 @@
-.. image:: https://beeware.org/static/images/brutus-270.png
+.. |logo| image:: https://beeware.org/static/images/brutus-270.png
    :width: 72px
    :target: https://beeware.org
+
+.. |pyversions| image:: https://img.shields.io/pypi/pyversions/beeware.svg
+   :target: https://pypi.python.org/pypi/beeware
+   :alt: Python Versions
+
+.. |version| image:: https://img.shields.io/pypi/v/beeware.svg
+   :target: https://pypi.python.org/pypi/beeware
+   :alt: PyPI Version
+
+.. |maturity| image:: https://img.shields.io/pypi/status/beeware.svg
+   :target: https://pypi.python.org/pypi/beeware
+   :alt: Maturity
+
+.. |license| image:: https://img.shields.io/pypi/l/beeware.svg
+   :target: https://github.com/beeware/beeware/blob/main/LICENSE
+   :alt: BSD License
+
+.. |ci| image:: https://github.com/beeware/beeware/workflows/CI/badge.svg?branch=main
+   :target: https://github.com/beeware/beeware/actions
+   :alt: Build Status
+
+.. |social| image:: https://img.shields.io/discord/836455665257021440?label=Discord%20Chat&logo=discord&style=plastic
+   :target: https://beeware.org/bee/chat/
+   :alt: Discord server
+
+|logo|
 
 BeeWare
 =======
 
-.. image:: https://img.shields.io/pypi/pyversions/beeware.svg
-   :target: https://pypi.python.org/pypi/beeware
-   :alt: Python Versions
-
-.. image:: https://img.shields.io/pypi/v/beeware.svg
-   :target: https://pypi.python.org/pypi/beeware
-   :alt: PyPI Version
-
-.. image:: https://img.shields.io/pypi/status/beeware.svg
-   :target: https://pypi.python.org/pypi/beeware
-   :alt: Maturity
-
-.. image:: https://img.shields.io/pypi/l/beeware.svg
-   :target: https://github.com/beeware/beeware/blob/main/LICENSE
-   :alt: BSD License
-
-.. image:: https://github.com/beeware/beeware/workflows/CI/badge.svg?branch=main
-   :target: https://github.com/beeware/beeware/actions
-   :alt: Build Status
-
-.. image:: https://img.shields.io/discord/836455665257021440?label=Discord%20Chat&logo=discord&style=plastic
-   :target: https://beeware.org/bee/chat/
-   :alt: Discord server
-
+|pyversions| |version| |maturity| |license| |ci| |social|
 
 BeeWare is a collection of tools and libraries for building and distributing
 native applications in Python.
