@@ -354,13 +354,28 @@ or doing other pre-distribution tasks.
 
       (beeware-venv) $ briefcase package --adhoc-sign
 
-      [helloworld] Signing app with adhoc identity...
-      ...
-      Signing build/helloworld/macos/app/Hello World.app
+      [helloworld] Signing app...
+
+      *************************************************************************
+      ** WARNING: Signing with an ad-hoc identity                            **
+      *************************************************************************
+
+          This app is being signed with an ad-hoc identity. The resulting
+          app will run on this computer, but will not run on anyone else's
+          computer.
+
+          To generate an app that can be distributed to others, you must
+          obtain an application distribution certificate from Apple, and
+          select the developer identity associated with that certificate
+          when running 'briefcase package'.
+
+      *************************************************************************
+
+      Signing app with ad-hoc identity...
            ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.0% • 00:07
 
       [helloworld] Building DMG...
-      Signing dist/Hello World-0.0.1.dmg
+      Building dist/Hello World-0.0.1.dmg
 
       [helloworld] Packaged dist/Hello World-0.0.1.dmg
 
@@ -500,17 +515,43 @@ or doing other pre-distribution tasks.
 
       (beeware-venv) C:\...>briefcase package
 
+      *************************************************************************
+      ** WARNING: No signing identity provided                               **
+      *************************************************************************
+
+          Briefcase will not sign the app. To provide a signing identity,
+          use the `--identity` option; or, to explicitly disable signing,
+          use `--adhoc-sign`.
+
+      *************************************************************************
+
       [helloworld] Building MSI...
       Compiling application manifest...
       Compiling... done
+
       Compiling application installer...
       helloworld.wxs
       helloworld-manifest.wxs
       Compiling... done
+
       Linking application installer...
       Linking... done
 
       [helloworld] Packaged dist\Hello_World-0.0.1.msi
+
+    In this example, we're not signing our app. As a result, when you use the
+    installer, you'll get a system warning that the application comes from an
+    unknown developer. We've done this to keep the tutorial simple. Setting up
+    code signing identities is a little fiddly, and they're only *required* if
+    you're intending to distribute your application to others. If we were
+    publishing a real application for others to use, we would need to specify a
+    real signing identity; when that signed app is installed, the system will
+    notify the user that the application is from the known identity associated
+    with the certificate.
+
+    When you're ready to publish a real application, check out the Briefcase
+    How-To guide on `Setting up a Windows code signing identity
+    <https://briefcase.readthedocs.io/en/latest/how-to/code-signing/windows.html>`__
 
     Once this step completes, the ``dist`` folder will contain a file named
     ``Hello_World-0.0.1.msi``. If you double click on this installer to run it,

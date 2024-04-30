@@ -56,13 +56,13 @@ Then modify the ``say_hello()`` callback so it looks like this::
 This will change the ``say_hello()`` callback so that when it is invoked, it
 will:
 
- * make a GET request on the JSON placeholder API to obtain post 42;
+* make a GET request on the JSON placeholder API to obtain post 42;
 
- * decode the response as JSON;
+* decode the response as JSON;
 
- * extract the body of the post; and
+* extract the body of the post; and
 
- * include the body of that post as the text of the dialog.
+* include the body of that post as the text of the dialog.
 
 Lets run our updated app in Briefcase developer mode to check that our change
 has worked.
@@ -146,6 +146,7 @@ with ``pip``, and then re-running ``briefcase dev``:
     looks something like:
 
     .. image:: images/macOS/tutorial-7.png
+       :align: center
        :alt: Hello World Tutorial 7 dialog, on macOS
 
   .. group-tab:: Linux
@@ -159,6 +160,7 @@ with ``pip``, and then re-running ``briefcase dev``:
     looks something like:
 
     .. image:: images/linux/tutorial-7.png
+       :align: center
        :alt: Hello World Tutorial 7 dialog, on Linux
 
   .. group-tab:: Windows
@@ -172,6 +174,7 @@ with ``pip``, and then re-running ``briefcase dev``:
     looks something like:
 
     .. image:: images/windows/tutorial-7.png
+       :align: center
        :alt: Hello World Tutorial 7 dialog, on Windows
 
 We've now got a working app, using a third party library, running in development mode!
@@ -219,6 +222,7 @@ we've made code changes, we need to follow the same steps as in :doc:`Tutorial 4
     dialog:
 
     .. image:: images/macOS/tutorial-7-crash.png
+       :align: center
        :alt: Hello World Tutorial 7 app crash, on macOS
 
   .. group-tab:: Linux
@@ -309,6 +313,7 @@ we've made code changes, we need to follow the same steps as in :doc:`Tutorial 4
     dialog:
 
     .. image:: images/windows/tutorial-7-crash.png
+       :align: center
        :alt: Hello World Tutorial 7 app crash, on Windows
 
 Once again, the app has failed to start because ``httpx`` has been installed - but
@@ -342,7 +347,8 @@ the settings for your app::
     [tool.briefcase.app.helloworld]
     formal_name = "Hello World"
     description = "A Tutorial app"
-    icon = "src/helloworld/resources/helloworld"
+    long_description = """More details about the app should go here.
+    """
     sources = ["src/helloworld"]
     requires = []
 
@@ -360,12 +366,12 @@ By adding this setting, we're telling Briefcase "when you build my app, run
 ``pip install httpx`` into the application bundle". Anything that would be legal
 input to ``pip install`` can be used here - so, you could specify:
 
- * A specific library version (e.g., ``"httpx==0.19.0"``);
- * A range of library versions (e.g., ``"httpx>=0.19"``);
- * A path to a git repository (e.g., ``"git+https://github.com/encode/httpx"``);
-   or
- * A local file path (However - be warned: if you give your code to someone
-   else, this path probably won't exist on their machine!)
+* A specific library version (e.g., ``"httpx==0.19.0"``);
+* A range of library versions (e.g., ``"httpx>=0.19"``);
+* A path to a git repository (e.g., ``"git+https://github.com/encode/httpx"``);
+  or
+* A local file path (However - be warned: if you give your code to someone
+  else, this path probably won't exist on their machine!)
 
 Further down in ``pyproject.toml``, you'll notice other sections that are
 operating system dependent, like ``[tool.briefcase.app.helloworld.macOS]`` and

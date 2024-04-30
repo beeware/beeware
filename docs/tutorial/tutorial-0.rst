@@ -22,8 +22,15 @@ The first thing we'll need is a working Python interpreter.
 
       $ python3 --version
 
-    If Python is installed, you'll see its version number. Otherwise, you'll
-    be prompted to install the command line developer tools.
+    If Python is installed, you'll see its version number. Otherwise, you'll be
+    prompted to install the command line developer tools.
+
+    You should ensure that you are using Python 3.8 or newer. If it isn't,
+    you'll need to upgrade your Python install. You can get the official
+    installer from `the Python website <https://www.python.org/downloads>`_. You
+    can use any stable version of Python from 3.8 onward. We'd advise avoiding
+    alphas, betas, and release candidates unless you *really* know what you're
+    doing.
 
   .. group-tab:: Linux
 
@@ -95,19 +102,19 @@ Next, install the additional dependencies needed for your operating system:
     .. code-block:: console
 
       $ sudo apt update
-      $ sudo apt install build-essential git pkg-config python3-dev python3-venv libgirepository1.0-dev libcairo2-dev gir1.2-webkit2-4.0 libcanberra-gtk3-module
+      $ sudo apt install build-essential git pkg-config python3-dev python3-venv libgirepository1.0-dev libcairo2-dev libcanberra-gtk3-module
 
     **Fedora**
 
     .. code-block:: console
 
-      $ sudo dnf install git pkg-config rpm-build python3-devel gobject-introspection-devel cairo-gobject-devel webkit2gtk3 libcanberra-gtk3
+      $ sudo dnf install git pkg-config rpm-build python3-devel gobject-introspection-devel cairo-gobject-devel libcanberra-gtk3
 
     **Arch, Manjaro**
 
     .. code-block:: console
 
-      $ sudo pacman -Syu base-devel git pkgconf python3 gobject-introspection cairo webkit2gtk libcanberra
+      $ sudo pacman -Syu base-devel git pkgconf python3 gobject-introspection cairo libcanberra
 
   .. group-tab:: Windows
 
