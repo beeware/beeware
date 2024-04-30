@@ -22,9 +22,11 @@ Edit your ``pyproject.toml``, adding a new ``icon`` configuration item in the
 
     icon = "icons/helloworld"
 
-This icon definition doesn't specify any file extension. The value will be used as
-a prefix; each platform will add additional items to this prefix to build the files
-needed for each platform.
+This icon definition doesn't specify any file extension. The value will be used
+as a prefix; each platform will add additional items to this prefix to build the
+files needed for each platform. Some platforms require *multiple* icon files;
+this prefix will be combined with file size and variant modifiers to generate
+the list of icon files that are used.
 
 We can now run ``briefcase update`` again - but this time, we pass in the
 ``--update-resources`` flag, telling Briefcase that we want to install new
@@ -108,6 +110,16 @@ application resources (i.e., the icons):
       Unable to find icons/helloworld-square-96.png for 96px square application icon; using default
       Unable to find icons/helloworld-square-144.png for 144px square application icon; using default
       Unable to find icons/helloworld-square-192.png for 192px square application icon; using default
+      Unable to find icons/helloworld-square-320.png for 320px square application icon; using default
+      Unable to find icons/helloworld-square-480.png for 480px square application icon; using default
+      Unable to find icons/helloworld-square-640.png for 640px square application icon; using default
+      Unable to find icons/helloworld-square-960.png for 960px square application icon; using default
+      Unable to find icons/helloworld-square-1280.png for 1280px square application icon; using default
+      Unable to find icons/helloworld-adaptive-108.png for 108px adaptive application icon; using default
+      Unable to find icons/helloworld-adaptive-162.png for 162px adaptive application icon; using default
+      Unable to find icons/helloworld-adaptive-216.png for 216px adaptive application icon; using default
+      Unable to find icons/helloworld-adaptive-324.png for 324px adaptive application icon; using default
+      Unable to find icons/helloworld-adaptive-432.png for 432px adaptive application icon; using default
 
       [helloworld] Removing unneeded app content...
       Removing unneeded app bundle content... done
@@ -136,7 +148,10 @@ application resources (i.e., the icons):
         Unable to find icons/helloworld-152.png for 152px application icon; using default
         Unable to find icons/helloworld-167.png for 167px application icon; using default
         Unable to find icons/helloworld-180.png for 180px application icon; using default
+        Unable to find icons/helloworld-640.png for 640px application icon; using default
         Unable to find icons/helloworld-1024.png for 1024px application icon; using default
+        Unable to find icons/helloworld-1280.png for 1280px application icon; using default
+        Unable to find icons/helloworld-1920.png for 1920px application icon; using default
 
         [helloworld] Removing unneeded app content...
         Removing unneeded app bundle content... done
@@ -145,7 +160,7 @@ application resources (i.e., the icons):
 
 This reports the specific icon file (or files) that Briefcase is expecting.
 However, as we haven't provided the actual icon files, the install fails, and
-falls back to a default value (the same "gray bee" icon).
+Briefcase falls back to a default value (the same "gray bee" icon).
 
 Let's provide some actual icons. Download :download:`this icons.zip bundle
 <./resources/icons.zip>`, and unpack it into the root of your project
@@ -166,20 +181,23 @@ directory. After unpacking, your project directory should look something like::
             src/
             ...
 
-There's a *lot* of icons in this folder - but they should all look the same: a
-green snake on a light blue background:
+There's a *lot* of icons in this folder, but most of them should look the same:
+a green snake on a light blue background:
 
 .. image:: resources/icon.png
     :align: center
-    :alt: Icon of green snake with a blue background
+    :alt: Icon of green snake with a light blue background
 
-This represents all the different icon sizes and shapes you need to support an
-app on every platform that Briefcase supports.
+The only exception will be the icons with ``-adaptive-`` in their name; these
+will have a transparent background. This represents all the different icon sizes
+and shapes you need to support an app on every platform that Briefcase supports.
 
-Now that we have icons, we can update the application again. ``briefcase
-update`` will only copy the updated resources into the build directory; we also
-want to rebuild the app to make sure the icon takes effect. To do this, we call
-``briefcase build``, passing in the same ``--update-resources`` argument:
+Now that we have icons, we can update the application again. However,
+``briefcase update`` will only copy the updated resources into the build
+directory; we also want to rebuild the app to make sure the new icon is
+included, then start the app. We can shortcut this process by passing
+``--update-resources`` to our call to ``run`` - this will update the app, update
+the app's resources, and then start the app:
 
 .. tabs::
 
@@ -187,7 +205,7 @@ want to rebuild the app to make sure the icon takes effect. To do this, we call
 
     .. code-block:: console
 
-      (beeware-venv) $ briefcase build --update-resources
+      (beeware-venv) $ briefcase run --update-resources
 
       [helloworld] Updating application code...
       Installing src/helloworld... done
@@ -205,11 +223,13 @@ want to rebuild the app to make sure the icon takes effect. To do this, we call
 
       [helloworld] Built build/helloworld/macos/app/Hello World.app
 
+      [helloworld] Starting app...
+
   .. group-tab:: Linux
 
     .. code-block:: console
 
-      (beeware-venv) $ briefcase build --update-resources
+      (beeware-venv) $ briefcase run --update-resources
 
       [helloworld] Updating application code...
       Installing src/helloworld... done
@@ -232,6 +252,8 @@ want to rebuild the app to make sure the icon takes effect. To do this, we call
       ...
 
       [helloworld] Built build/helloworld/linux/ubuntu/jammy/helloworld-0.0.1/usr/bin/helloworld
+
+      [helloworld] Starting app...
 
   .. group-tab:: Windows
 
@@ -256,6 +278,8 @@ want to rebuild the app to make sure the icon takes effect. To do this, we call
 
       [helloworld] Built build\helloworld\windows\app\src\Hello World.exe
 
+      [helloworld] Starting app...
+
   .. group-tab:: Android
 
     .. code-block:: console
@@ -276,11 +300,30 @@ want to rebuild the app to make sure the icon takes effect. To do this, we call
       Installing icons/helloworld-square-96.png as 96px square application icon... done
       Installing icons/helloworld-square-144.png as 144px square application icon... done
       Installing icons/helloworld-square-192.png as 192px square application icon... done
+      Installing icons/helloworld-square-320.png as 320px square application icon... done
+      Installing icons/helloworld-square-480.png as 480px square application icon... done
+      Installing icons/helloworld-square-640.png as 640px square application icon... done
+      Installing icons/helloworld-square-960.png as 960px square application icon... done
+      Installing icons/helloworld-square-1280.png as 1280px square application icon... done
+      Installing icons/helloworld-adaptive-108.png as 108px adaptive application icon... done
+      Installing icons/helloworld-adaptive-162.png as 162px adaptive application icon... done
+      Installing icons/helloworld-adaptive-216.png as 216px adaptive application icon... done
+      Installing icons/helloworld-adaptive-324.png as 324px adaptive application icon... done
+      Installing icons/helloworld-adaptive-432.png as 432px adaptive application icon... done
 
       [helloworld] Removing unneeded app content...
       Removing unneeded app bundle content... done
 
       [helloworld] Application updated.
+
+      [helloworld] Starting app...
+
+    .. note::
+
+       If you're using a recent version of Android, you may notice that the
+       app icon has been changed to a green snake, but the background of
+       the icon is *white*, rather than light blue. We'll fix this in the next
+       step.
 
   .. group-tab:: iOS
 
@@ -304,14 +347,33 @@ want to rebuild the app to make sure the icon takes effect. To do this, we call
       Installing icons/helloworld-152.png as 152px application icon... done
       Installing icons/helloworld-167.png as 167px application icon... done
       Installing icons/helloworld-180.png as 180px application icon... done
+      Installing icons/helloworld-640.png as 640px application icon... done
       Installing icons/helloworld-1024.png as 1024px application icon... done
+      Installing icons/helloworld-1280.png as 1280px application icon... done
+      Installing icons/helloworld-1920.png as 1920px application icon... done
 
       [helloworld] Removing unneeded app content...
       Removing unneeded app bundle content... done
 
       [helloworld] Application updated.
 
-With our icons installed, we can now run our app with the new icon:
+      [helloworld] Starting app...
+
+When you run the app on iOS or Android, in addition to the icon change, you
+should also notice that the splash screen incorporates the new icon. However,
+the light blue background of the icon looks a little out of place against the
+white background of the splash screen. We can fix this by customizing the
+background color of the splash screen. Add the following definition to your
+``pyproject.toml``, just after the ``icon`` definition::
+
+    splash_background_color = "#D3E6F5"
+
+Unfortunately, Briefcase isn't able to apply this change to an already generated
+project, as it requires making modifications to one of the files that was
+generated during the original call to ``briefcase create``. To apply this
+change, we have to re-create the app by re-running ``briefcase create``. When we
+do this, we'll be prompted to confirm that we want to overwrite the existing
+project:
 
 .. tabs::
 
@@ -319,46 +381,88 @@ With our icons installed, we can now run our app with the new icon:
 
     .. code-block:: console
 
-      (beeware-venv) $ briefcase run
+      (beeware-venv) $ briefcase create
 
-      [helloworld] Starting app...
+      Application 'helloworld' already exists; overwrite [y/N]? y
+
+      [helloworld] Removing old application bundle...
+
+      [helloworld] Generating application template...
+      ...
+
+      [helloworld] Created build/helloworld/macos/app
 
   .. group-tab:: Linux
 
     .. code-block:: console
 
-      (beeware-venv) $ briefcase run
+      (beeware-venv) $ briefcase create
 
-      [helloworld] Starting app...
+      Application 'helloworld' already exists; overwrite [y/N]? y
+
+      [helloworld] Removing old application bundle...
+
+      [helloworld] Generating application template...
+      ...
+
+      [helloworld] Created build/helloworld/linux/ubuntu/jammy
 
   .. group-tab:: Windows
 
     .. code-block:: doscon
 
-      (beeware-venv) C:\...>briefcase run
+      (beeware-venv) C:\...>briefcase create
 
-      [helloworld] Starting app...
+      Application 'helloworld' already exists; overwrite [y/N]? y
+
+      [helloworld] Removing old application bundle...
+
+      [helloworld] Generating application template...
+      ...
+
+      [helloworld] Created build\helloworld\windows\app
 
   .. group-tab:: Android
 
     .. code-block:: console
 
-      (beeware-venv) $ briefcase run android
+      (beeware-venv) $ briefcase create android
 
-      [helloworld] Starting app...
+      Application 'helloworld' already exists; overwrite [y/N]? y
+
+      [helloworld] Removing old application bundle...
+
+      [helloworld] Generating application template...
+      ...
+      [helloworld] Created build/helloworld/android/gradle
 
   .. group-tab:: iOS
 
     .. code-block:: console
 
-      (beeware-venv) $ briefcase run iOS
+      (beeware-venv) $ briefcase create iOS
 
-      [helloworld] Starting app...
+      Application 'helloworld' already exists; overwrite [y/N]? y
 
-Just as Briefcase provides an option to update *code* before running the app with the
-``-u`` option, you can also update resources before running. If you run ``briefcase run
---update-resources``, the app's resources will be updated, and then the app will be
-started.
+      [helloworld] Removing old application bundle...
+
+      [helloworld] Generating application template...
+      ...
+      [helloworld] Created build/helloworld/ios/xcode
+
+You can then re-build and re-run the app using ``briefcase run``. You won't
+notice any changes to the desktop app; but the Android or iOS apps should now
+have a light blue splash screen background.
+
+You'll need to re-create the app like this whenever you make a change to your
+``pyproject.toml`` that doesn't relate to source code or dependencies. Any
+change to descriptions, version numbers, colors, or permissions will require a
+re-create step. Because of this, while you are developing your project, you
+shouldn't make any manual changes to the contents of the ``build`` folder, and
+you shouldn't add the ``build`` folder to your version control system. The
+``build`` folder should be considered entirely ephemeral - an output of the
+build system that can be recreated as needed to reflect the current
+configuration of your project.
 
 Next steps
 ==========
