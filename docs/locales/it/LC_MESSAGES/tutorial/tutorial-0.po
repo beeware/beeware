@@ -8,226 +8,231 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-13 11:48+0800\n"
+"POT-Creation-Date: 2024-04-30 17:27+0000\n"
 "PO-Revision-Date: 2024-02-13 12:10+0800\n"
 "Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
-"Language-Team: it <LL@li.org>\n"
 "Language: it\n"
+"Language-Team: it <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
-"X-Generator: Poedit 3.4.2\n"
 
-#: ../../tutorial/tutorial-0.rst:3 fc9afe81744b476b87cea6fa1f847022
+#: ../../tutorial/tutorial-0.rst:3 14acbf4075844f0db91ccd850ac90098
 #, fuzzy
 msgid "Tutorial 0 - Let's get set up!"
 msgstr "Esercitazione 0 - Configuriamoci!"
 
-#: ../../tutorial/tutorial-0.rst:5 d0753e664d3a4561ad741496f633b5cb
+#: ../../tutorial/tutorial-0.rst:5 14d5fdcefca44a369a85deb4edab7402
 #, fuzzy
 msgid "Before we build our first BeeWare app, we have to make sure we've got all the prerequisites for running BeeWare."
 msgstr "Prima di creare la nostra prima applicazione BeeWare, dobbiamo assicurarci di avere tutti i prerequisiti per l'esecuzione di BeeWare."
 
-#: ../../tutorial/tutorial-0.rst:9 b8066e3c61a945db877b593081303603
+#: ../../tutorial/tutorial-0.rst:9 975b213dc89d4c46a9c41c473ffc1ae1
 #, fuzzy
 msgid "Install Python"
 msgstr "Installare Python"
 
-#: ../../tutorial/tutorial-0.rst:11 f35e4b00b99e422abace7b597f815a3f
+#: ../../tutorial/tutorial-0.rst:11 17050eaa6e2f4ce081f6bcc56db02c7d
 #, fuzzy
 msgid "The first thing we'll need is a working Python interpreter."
 msgstr "La prima cosa di cui abbiamo bisogno è un interprete Python funzionante."
 
-#: ../../tutorial/tutorial-0.rst:15 ../../tutorial/tutorial-0.rst:77
-#: ../../tutorial/tutorial-0.rst:136 01706c3bf33d41c4a2807e3251c32fd5
-#: a71844a4dfb548fe9b8fc9b62840a16d ff731a9b56f74d78adc0d824f8501a4a
+#: ../../tutorial/tutorial-0.rst:15 ../../tutorial/tutorial-0.rst:84
+#: ../../tutorial/tutorial-0.rst:143 496eba4781da420abb837c607bada146
+#: 7fa99ea62aea4acda2ad7102efd17f19 8d07d90a2aea42968f2713efd3409bb4
 msgid "macOS"
 msgstr "macOS"
 
-#: ../../tutorial/tutorial-0.rst:17 b726d7a9055049d5b4b2999354ebe163
+#: ../../tutorial/tutorial-0.rst:17 76cca6fb504f4639965f5ce3c5c7c165
 #, fuzzy
 msgid "If you're on macOS, a recent version of Python is included with Xcode or the command line developer tools. To check if you already have it, run the following command:"
 msgstr "Se si utilizza macOS, una versione recente di Python è inclusa in Xcode o negli strumenti di sviluppo a riga di comando. Per verificare se ne disponete già, eseguite il seguente comando:"
 
-#: ../../tutorial/tutorial-0.rst:25 a94d285f62144523923da015bb8e2895
+#: ../../tutorial/tutorial-0.rst:25 78f57dc56e9b456f8edfdda23e9a7a2a
 #, fuzzy
 msgid "If Python is installed, you'll see its version number. Otherwise, you'll be prompted to install the command line developer tools."
 msgstr "Se Python è installato, verrà visualizzato il suo numero di versione. In caso contrario, verrà richiesto di installare gli strumenti di sviluppo a riga di comando."
 
-#: ../../tutorial/tutorial-0.rst:28 ../../tutorial/tutorial-0.rst:84
-#: ../../tutorial/tutorial-0.rst:145 437fcfded57b450ab6fd99ec546ae6d4
-#: 76ab9239d2134568a34ba7f8d2cfb243 d8545f5912714e86af2fab6abeca10b0
+#: ../../tutorial/tutorial-0.rst:28 856682f181fb4b99ba3c38795a39fed4
+#, fuzzy
+msgid "You should ensure that you are using Python 3.8 or newer. If it isn't, you'll need to upgrade your Python install. You can get the official installer from `the Python website <https://www.python.org/downloads>`_. You can use any stable version of Python from 3.8 onward. We'd advise avoiding alphas, betas, and release candidates unless you *really* know what you're doing."
+msgstr "Se si utilizza Windows, è possibile ottenere il programma di installazione ufficiale dal sito web di Python <https://www.python.org/downloads>`_. È possibile utilizzare qualsiasi versione stabile di Python dalla 3.8 in poi. Si consiglia di evitare le alpha, le beta e le release candidate a meno che non si sappia veramente cosa si sta facendo."
+
+#: ../../tutorial/tutorial-0.rst:35 ../../tutorial/tutorial-0.rst:91
+#: ../../tutorial/tutorial-0.rst:152 46e2b5908b8246aba0e997bba98281d2
+#: 6a19a1d8f41d4860adb6a9275d73f719 910bfecd24f54c63a0813f7d6ae2a728
 msgid "Linux"
 msgstr "Linux"
 
-#: ../../tutorial/tutorial-0.rst:30 6caed12e429b4caa8fcaabf8a79af86f
+#: ../../tutorial/tutorial-0.rst:37 7b9f234b7a1046c8bb80e783fbb0993e
 #, fuzzy
 msgid "If you're on Linux, you'll install Python using the system package manager (``apt`` on Debian/Ubuntu/Mint, ``dnf`` on Fedora, or ``pacman`` on Arch)."
 msgstr "Se siete su Linux, installerete Python usando il gestore di pacchetti del sistema (``apt`` su Debian/Ubuntu/Mint, ``dnf`` su Fedora, o ``pacman`` su Arch)."
 
-#: ../../tutorial/tutorial-0.rst:33 01f6e578a87f402ea271fe17d7e6c4f4
+#: ../../tutorial/tutorial-0.rst:40 297012e76a7e4df28141eebc852aaa0b
 #, fuzzy
 msgid "You should ensure that the system Python is Python 3.8 or newer; if it isn't (e.g., Ubuntu 18.04 ships with Python 3.6), you'll need to upgrade your Linux distribution to something more recent."
 msgstr "Dovete assicurarvi che il sistema Python sia Python 3.8 o più recente; se non lo è (ad esempio, Ubuntu 18.04 viene fornito con Python 3.6), dovrete aggiornare la vostra distribuzione Linux con qualcosa di più recente."
 
-#: ../../tutorial/tutorial-0.rst:37 1eb69a5593634128b8830cdf2516ecff
+#: ../../tutorial/tutorial-0.rst:44 fcf5307896f74be2af500e82ed9c80a8
 #, fuzzy
 msgid "Support for Raspberry Pi is limited at this time."
 msgstr "Il supporto per Raspberry Pi è al momento limitato."
 
-#: ../../tutorial/tutorial-0.rst:39 ../../tutorial/tutorial-0.rst:112
-#: ../../tutorial/tutorial-0.rst:154 6f1e94c24c4547a69e5d505050664686
-#: c7e06825c8a64c8eab106357631320a7 ca985ef1c79e4c4a9d33760c0c502062
+#: ../../tutorial/tutorial-0.rst:46 ../../tutorial/tutorial-0.rst:119
+#: ../../tutorial/tutorial-0.rst:161 77536b2d4f6b4149afcc2c022f17419c
+#: 83a6c79d90854806aba50a7918e8f02b bc42cf196ce04e2eb317ce848e5d442d
 msgid "Windows"
 msgstr "Windows"
 
-#: ../../tutorial/tutorial-0.rst:41 51f6b051c67d432789feddcdf998dc26
+#: ../../tutorial/tutorial-0.rst:48 d6cfbfc99a60422c9e00a7460f67b939
 #, fuzzy
 msgid "If you're on Windows, you can get the official installer from `the Python website <https://www.python.org/downloads>`_. You can use any stable version of Python from 3.8 onward. We'd advise avoiding alphas, betas, and release candidates unless you *really* know what you're doing."
 msgstr "Se si utilizza Windows, è possibile ottenere il programma di installazione ufficiale dal sito web di Python <https://www.python.org/downloads>`_. È possibile utilizzare qualsiasi versione stabile di Python dalla 3.8 in poi. Si consiglia di evitare le alpha, le beta e le release candidate a meno che non si sappia veramente cosa si sta facendo."
 
-#: ../../tutorial/tutorial-0.rst:46 3a6e84f40f1d41039c2420413d99cfce
+#: ../../tutorial/tutorial-0.rst:53 e5135a02c3ec47feb850209a46af33f4
 #, fuzzy
 msgid "Alternative Python distributions"
 msgstr "Distribuzioni Python alternative"
 
-#: ../../tutorial/tutorial-0.rst:48 07ef568f63614ba79a5bf1a19f859840
+#: ../../tutorial/tutorial-0.rst:55 a7b4f41a75e54fb0bce12081d1029e46
 #, fuzzy
 msgid "There are lots of different ways of installing Python. You can install Python through `homebrew <https://docs.brew.sh/Homebrew-and-Python>`__. You can use `pyenv <https://github.com/pyenv/pyenv#simple-python-version-management-pyenv>`__ to manage multiple Python installs on the same machine. Windows users can install Python from the Windows App Store. Users from a data science background might want to use `Anaconda <https://docs.anaconda.com/anaconda/install/>`__ or `Miniconda <https://docs.conda.io/en/latest/miniconda.html>`__."
 msgstr "Esistono molti modi diversi per installare Python. Si può installare Python tramite `homebrew <https://docs.brew.sh/Homebrew-and-Python>`__. Si può usare `pyenv <https://github.com/pyenv/pyenv#simple-python-version-management-pyenv>`__ per gestire più installazioni di Python sulla stessa macchina. Gli utenti di Windows possono installare Python dal Windows App Store. Gli utenti con un background di scienza dei dati potrebbero voler usare `Anaconda <https://docs.anaconda.com/anaconda/install/>`__ o `Miniconda <https://docs.conda.io/en/latest/miniconda.html>`__."
 
-#: ../../tutorial/tutorial-0.rst:58 b7e30364383d4ffb94fb94f39d1fa035
+#: ../../tutorial/tutorial-0.rst:65 e4de035109024b2e8806c8b444058d1c
 #, fuzzy
 msgid "If you're on macOS or Windows, it doesn't matter *how* you've installed Python - it only matters that you can run ``python3`` from your operating system's command prompt/terminal application, and get a working Python interpreter."
 msgstr "Se siete su macOS o Windows, non importa *come* avete installato Python: importa solo che possiate eseguire ``python3`` dal prompt dei comandi/terminale del vostro sistema operativo e ottenere un interprete Python funzionante."
 
-#: ../../tutorial/tutorial-0.rst:63 21e163a01b2445f1a8f1f4965a30b895
+#: ../../tutorial/tutorial-0.rst:70 ee79eb8c79694bf4b37d8d940b17c5b3
 #, fuzzy
 msgid "If you're on Linux, you should use the system Python provided by your operating system. You will be able to complete *most* of this tutorial using a non-system Python, but you won't be able to package your application for distribution to others."
 msgstr "Se utilizzate Linux, dovreste usare il Python di sistema fornito dal vostro sistema operativo. Sarete in grado di completare *la maggior parte* di questo tutorial utilizzando un Python non di sistema, ma non sarete in grado di pacchettizzare la vostra applicazione per distribuirla ad altri."
 
-#: ../../tutorial/tutorial-0.rst:71 6598108a51f644bd99c6bbad570e64d4
+#: ../../tutorial/tutorial-0.rst:78 b13d627b43ac48c4844b4aba9fffc939
 #, fuzzy
 msgid "Install dependencies"
 msgstr "Installare le dipendenze"
 
-#: ../../tutorial/tutorial-0.rst:73 bf8361658fb84853940f3f4fef91e20b
+#: ../../tutorial/tutorial-0.rst:80 f59a038f1dd546bfaaf4be07adbbea6e
 #, fuzzy
 msgid "Next, install the additional dependencies needed for your operating system:"
 msgstr "Successivamente, installate le dipendenze aggiuntive necessarie per il vostro sistema operativo:"
 
-#: ../../tutorial/tutorial-0.rst:79 9e2efe2a425544efa9dff13f9241364c
+#: ../../tutorial/tutorial-0.rst:86 1f95101244974949a905e3b83af845bd
 #, fuzzy
 msgid "Building BeeWare apps on macOS requires:"
 msgstr "La creazione di applicazioni BeeWare su macOS richiede:"
 
-#: ../../tutorial/tutorial-0.rst:81 a5406d3a99c541d29f7f61de575cbd29
+#: ../../tutorial/tutorial-0.rst:88 997ca684cf5d46f9a790852de8216da1
 #, fuzzy
 msgid "**Git**, a version control system. This is included with Xcode or the command line developer tools, which you installed above."
 msgstr "**Git**, un sistema di controllo delle versioni. È incluso in Xcode o negli strumenti per sviluppatori a riga di comando, installati in precedenza."
 
-#: ../../tutorial/tutorial-0.rst:86 683df0741df44f5dbcce94be304ffb00
+#: ../../tutorial/tutorial-0.rst:93 4fc9ea9467b149cb86654f8bcfb06929
 #, fuzzy
 msgid "To support local development, you'll need to install some system packages. The list of packages required varies depending on your distribution:"
 msgstr "Per supportare lo sviluppo locale, è necessario installare alcuni pacchetti di sistema. L'elenco dei pacchetti necessari varia a seconda della distribuzione:"
 
-#: ../../tutorial/tutorial-0.rst:89 d16d951d3f044be6bcae1bc8ab492c53
+#: ../../tutorial/tutorial-0.rst:96 67a7436d2e224c489e8c29968f76970a
 #, fuzzy
 msgid "**Ubuntu 20.04+ / Debian 10+**"
 msgstr "**Ubuntu 20.04+ / Debian 10+**"
 
-#: ../../tutorial/tutorial-0.rst:100 163b20c1259d4dc98ff5b614ce618883
+#: ../../tutorial/tutorial-0.rst:107 dcfd60aebc11424fb640bb5d17bc6e30
 #, fuzzy
 msgid "**Fedora**"
 msgstr "**Fedora**"
 
-#: ../../tutorial/tutorial-0.rst:106 da38ab80895047f988c7c865371f670e
+#: ../../tutorial/tutorial-0.rst:113 0e29549715de451ea1cc91097f07dc53
 #, fuzzy
 msgid "**Arch, Manjaro**"
 msgstr "**Arch, Manjaro**"
 
-#: ../../tutorial/tutorial-0.rst:114 28e816c3ffdb49d280be378e1d6ee306
+#: ../../tutorial/tutorial-0.rst:121 3420d1203a4b432ba36d9941e52b09f0
 #, fuzzy
 msgid "Building BeeWare apps on Windows requires:"
 msgstr "La creazione di applicazioni BeeWare su Windows richiede:"
 
-#: ../../tutorial/tutorial-0.rst:116 f2e0a1fbac95478dba80c10fbb506520
+#: ../../tutorial/tutorial-0.rst:123 eb2fb71b0a7147c19f99955c61ae6be1
 #, fuzzy
 msgid "**Git**, a version control system. You can download Git from from `git-scm.org <https://git-scm.com/download/>`__."
 msgstr "**Git**, un sistema di controllo delle versioni. È possibile scaricare Git da `git-scm.org <https://git-scm.com/download/>`__."
 
-#: ../../tutorial/tutorial-0.rst:119 5639a95073b441439a94b8abddddb7b6
+#: ../../tutorial/tutorial-0.rst:126 be0c467f87c841dbb27313d0fea26fa6
 #, fuzzy
 msgid "After installing these tools, you should ensure you restart any terminal sessions. Windows will only expose newly installed tools terminals started *after* the install has completed."
 msgstr "Dopo l'installazione di questi strumenti, è necessario assicurarsi di riavviare tutte le sessioni di terminale. Windows esporrà i terminali degli strumenti appena installati solo dopo il completamento dell'installazione."
 
-#: ../../tutorial/tutorial-0.rst:124 400399b1913844738d7dc49cfc5ba5d1
+#: ../../tutorial/tutorial-0.rst:131 e4ce868720eb4b0c9d5035be9b86f0f3
 #, fuzzy
 msgid "Set up a virtual environment"
 msgstr "Impostare un ambiente virtuale"
 
-#: ../../tutorial/tutorial-0.rst:126 5986dba90bcd4460815a1b021d90201c
+#: ../../tutorial/tutorial-0.rst:133 e7658f41d06f44f8b995c37da34d725d
 #, fuzzy
 msgid "We're now going to create a virtual environment - a \"sandbox\" that we can use to isolate our work on this tutorial from our main Python installation. If we install packages into the virtual environment, our main Python installation (and any other Python projects on our computer) won't be affected. If we make a complete mess of our virtual environment, we'll be able to simply delete it and start again, without affecting any other Python project on our computer, and without the need to re-install Python."
 msgstr "Ora creeremo un ambiente virtuale, una \"sandbox\" che potremo usare per isolare il nostro lavoro su questo tutorial dalla nostra installazione principale di Python. Se installiamo dei pacchetti nell'ambiente virtuale, la nostra installazione principale di Python (e qualsiasi altro progetto Python sul nostro computer) non ne risentirà. Se facciamo un pasticcio completo nel nostro ambiente virtuale, potremo semplicemente cancellarlo e ricominciare da capo, senza influenzare nessun altro progetto Python sul nostro computer e senza la necessità di reinstallare Python."
 
-#: ../../tutorial/tutorial-0.rst:163 472f7bb57f984ca6b8b680d008719f16
+#: ../../tutorial/tutorial-0.rst:170 31246bdf3ef84705b564f7e05ad1363b
 #, fuzzy
 msgid "Errors running PowerShell Scripts"
 msgstr "Errori nell'esecuzione degli script PowerShell"
 
-#: ../../tutorial/tutorial-0.rst:165 ff022e77c3c942d88d5774c4043dbc6c
+#: ../../tutorial/tutorial-0.rst:172 43d725a748e640fcb0d3ab3a0324f988
 #, fuzzy
 msgid "If you're using PowerShell, and you receive the error::"
 msgstr "Se si utilizza PowerShell e si riceve l'errore::"
 
-#: ../../tutorial/tutorial-0.rst:169 25fee417ccb14798b4b50cdf68678e1d
+#: ../../tutorial/tutorial-0.rst:176 de8ba5305e964547b6579d6bb066bad7
 #, fuzzy
 msgid "Your Windows account doesn't have permissions to run scripts. To fix this:"
 msgstr "L'account di Windows non ha i permessi per eseguire gli script. Per risolvere il problema:"
 
-#: ../../tutorial/tutorial-0.rst:171 975c2e1658ce48149f8e014f5fe5e503
+#: ../../tutorial/tutorial-0.rst:178 6d04cd9c4de8481191b22d2668f0b038
 #, fuzzy
 msgid "Run Windows PowerShell as Administrator."
 msgstr "Eseguire Windows PowerShell come amministratore."
 
-#: ../../tutorial/tutorial-0.rst:172 8c7e8b529771493ea8c2bc6e3df9d920
+#: ../../tutorial/tutorial-0.rst:179 efda025cf9874a38a0813a408d285fe2
 #, fuzzy
 msgid "Run ``set-executionpolicy RemoteSigned``"
 msgstr "Eseguire ``set-executionpolicy RemoteSigned``"
 
-#: ../../tutorial/tutorial-0.rst:173 955cf60212fa4ff987c2e2e36a82bbe3
+#: ../../tutorial/tutorial-0.rst:180 1e56a9bd1c3046d98a21f7a6419cf47e
 #, fuzzy
 msgid "Select ``Y`` to change the execution policy."
 msgstr "Selezionare ``Y`` per modificare il criterio di esecuzione."
 
-#: ../../tutorial/tutorial-0.rst:175 11c33586e93a4a13a2a8368551ad2b9a
+#: ../../tutorial/tutorial-0.rst:182 a61e2eda1e4a4527acd74823609498e9
 #, fuzzy
 msgid "Once you've done this you can rerun ``beeware-venv\\Scripts\\activate.ps1`` in your original PowerShell session (or a new session in the same directory)."
 msgstr "Una volta fatto questo, si può rieseguire ``beeware-venv\\Scripts\\activate.ps1`` nella sessione PowerShell originale (o in una nuova sessione nella stessa directory)."
 
-#: ../../tutorial/tutorial-0.rst:179 967a944aacdf4d33b76a8acef5066b91
+#: ../../tutorial/tutorial-0.rst:186 c32a267898a54ea2b6aef10d7e960ff7
 #, fuzzy
 msgid "If this worked, your prompt should now be changed - it should have a ``(beeware-venv)`` prefix. This lets you know that you're currently in your BeeWare virtual environment. Whenever you're working on this tutorial, you should make sure your virtual environment is activated. If it isn't, re-run the last command (the ``activate`` command) to re-activate your environment."
 msgstr "Se questo ha funzionato, il prompt dovrebbe essere cambiato: dovrebbe avere il prefisso ``(beeware-venv)``. Questo permette di sapere che ci si trova nell'ambiente virtuale BeeWare. Ogni volta che si lavora a questo tutorial, bisogna assicurarsi che l'ambiente virtuale sia attivato. In caso contrario, eseguire nuovamente l'ultimo comando (il comando ``activate``) per riattivare l'ambiente."
 
-#: ../../tutorial/tutorial-0.rst:185 202e77a489e34d7c853a91586fed9f52
+#: ../../tutorial/tutorial-0.rst:192 f2d5ae6c676142698fa63246a75542c7
 #, fuzzy
 msgid "Alternative virtual environments"
 msgstr "Ambienti virtuali alternativi"
 
-#: ../../tutorial/tutorial-0.rst:187 7e12119123d545dc85739226086813dc
+#: ../../tutorial/tutorial-0.rst:194 638cd06d13044805a1d82358997e28d7
 #, fuzzy
 msgid "If you're using Anaconda or miniconda, you may be more familiar with using conda environments. You might also have heard of ``virtualenv``, a predecessor to Python's built in ``venv`` module. As with Python installs - if you're on macOS or Windows, it doesn't matter *how* you create your virtual environment, as long as you have one. If you're on Linux, you should stick to ``venv`` and the system Python."
 msgstr "Se si usa Anaconda o miniconda, forse si ha più familiarità con l'uso degli ambienti conda. Potreste anche aver sentito parlare di ``virtualenv``, un predecessore del modulo ``venv`` integrato in Python. Come per le installazioni di Python, se siete su macOS o Windows, non importa *come* create il vostro ambiente virtuale, purché ne abbiate uno. Se siete su Linux, dovreste usare ``venv`` e il Python di sistema."
 
-#: ../../tutorial/tutorial-0.rst:195 0d344bb538b84768b187921dd9a68b04
+#: ../../tutorial/tutorial-0.rst:202 fdd0cca760c14ccfa88d58022a8dd4ee
 msgid "Next steps"
 msgstr "Prossimi passi"
 
-#: ../../tutorial/tutorial-0.rst:197 b148a35055b445b6be0db1650ad8c7a4
+#: ../../tutorial/tutorial-0.rst:204 67d28129da7e4f75801352edace8a472
 #, fuzzy
 msgid "We've now set up our environment. We're ready to :doc:`create our first BeeWare application <tutorial-1>`."
 msgstr "Ora abbiamo configurato il nostro ambiente. Siamo pronti a :doc:`creare la nostra prima applicazione BeeWare <tutorial-1>`."
+

@@ -7,182 +7,142 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-08 10:13+0800\n"
+"POT-Creation-Date: 2024-04-30 17:27+0000\n"
 "PO-Revision-Date: 2024-04-11 22:01+0000\n"
 "Last-Translator: sus <jeffpeng2012@gmail.com>\n"
-"Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
-"beeware/tutorial/tutorial-9/zh_Hant/>\n"
 "Language: zh_TW\n"
+"Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-9/zh_Hant/>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.5-dev\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: ../../tutorial/tutorial-9.rst:3 6c187687d357400e8159acfc2310f3ad
+#: ../../tutorial/tutorial-9.rst:3 aeef8be59f2c4d4eb5bff4d71d02d58c
 msgid "Tutorial 9 - Testing times"
 msgstr "教學 9 - 測試時間"
 
-#: ../../tutorial/tutorial-9.rst:5 b72366c14e754abea97dc62bc5188609
+#: ../../tutorial/tutorial-9.rst:5 035cf073ccad4319b3846341a3f9576e
 msgid "Most software development doesn't involve writing new code - it's modifying existing code. Ensuring that existing code continues to work in the way we expect is a key part of the software development process. One way to do ensure the behavior of our app is with a *test suite*."
-msgstr ""
-"大多數軟體開發並不涉及編寫新程式碼，而是修改現有程式碼。確保現有程式碼繼續按"
-"照我們期望的方式運作是軟體開發過程的關鍵部分。"
-"確保我們的應用程式行為的一種方法是使用 *測試套件* 。"
+msgstr "大多數軟體開發並不涉及編寫新程式碼，而是修改現有程式碼。確保現有程式碼繼續按照我們期望的方式運作是軟體開發過程的關鍵部分。確保我們的應用程式行為的一種方法是使用 *測試套件* 。"
 
-#: ../../tutorial/tutorial-9.rst:11 9bf2c9977b9749e68f83228ff7427dc1
+#: ../../tutorial/tutorial-9.rst:11 273ac408f7f146c0ade1bd079200f5e3
 msgid "Running the test suite"
 msgstr "運行測試套件"
 
-#: ../../tutorial/tutorial-9.rst:13 1d0866cff0cf4a2287f754aec3a2e8a9
+#: ../../tutorial/tutorial-9.rst:13 09c92fbb8b164f6fa46458fba4009628
 msgid "It turns out our project already has a test suite! When we originally generated our project, two top-level directories were generated: ``src`` and ``tests``. The ``src`` folder contains the code for our app; the ``tests`` folder contains our test suite. Inside the ``tests`` folder is a file named ``test_app.py`` with the following content::"
-msgstr ""
-"事實上，我們的專案已經有測試套件了！當我們最初產生專案時，產生了兩個資料夾： "
-"``src`` 和 ``tests`` 。 ``src`` 資料夾包含我們應用程式的程式碼； ``tests`` "
-"資料夾包含我們的測試套件。在 ``tests`` 資料夾內有一個名為 ``test_app.py`` "
-"的文件，其中包含以下內容："
+msgstr "事實上，我們的專案已經有測試套件了！當我們最初產生專案時，產生了兩個資料夾： ``src`` 和 ``tests`` 。 ``src`` 資料夾包含我們應用程式的程式碼； ``tests`` 資料夾包含我們的測試套件。在 ``tests`` 資料夾內有一個名為 ``test_app.py`` 的文件，其中包含以下內容："
 
-#: ../../tutorial/tutorial-9.rst:23 4cffb17ca8d34ebfa581f3a4bd572b12
+#: ../../tutorial/tutorial-9.rst:23 a59b93a912854067b72e4dc131f63887
 msgid "This is a `Pytest <https://pytest.org>`__ *test case* - a block of code that can be executed to verify some behavior of your app. In this case, the test is a placeholder, and doesn't test anything about our app - but it is a test that we can perform."
-msgstr ""
-"這是一個 `Pytest <https://pytest.org>`__ 的 *測試範例* - "
-"可以執行以驗證應用程式的某些行為的程式碼區塊。在本例中，測試僅是一個範例，"
-"不會測試有關我們應用程式的任何內容 - 但它是我們可以執行的測試。"
+msgstr "這是一個 `Pytest <https://pytest.org>`__ 的 *測試範例* - 可以執行以驗證應用程式的某些行為的程式碼區塊。在本例中，測試僅是一個範例，不會測試有關我們應用程式的任何內容 - 但它是我們可以執行的測試。"
 
-#: ../../tutorial/tutorial-9.rst:28 024b6a4ae422481d9d75777fbe694897
+#: ../../tutorial/tutorial-9.rst:28 4d9dbd44684b46638128fdf048729189
 msgid "We can run this test suite using the ``--test`` option to ``briefcase dev``. As this is the first time we are running tests, we also need to pass in the ``-r`` option to ensure that the test requirements are also installed:"
-msgstr ""
-"我們可以使用 ``briefcase dev`` 的 ``--test`` "
-"選項來執行這個測試套件。由於這是我們第一次執行測試，我們還需要傳入 ``-r`` "
-"選項以確保測試要求也已安裝："
+msgstr "我們可以使用 ``briefcase dev`` 的 ``--test`` 選項來執行這個測試套件。由於這是我們第一次執行測試，我們還需要傳入 ``-r`` 選項以確保測試要求也已安裝："
 
 #: ../../tutorial/tutorial-9.rst:34 ../../tutorial/tutorial-9.rst:139
 #: ../../tutorial/tutorial-9.rst:209 ../../tutorial/tutorial-9.rst:326
-#: ../../tutorial/tutorial-9.rst:396 2d0972cbbeeb4e77895e7aae91dd4c59
-#: 688015a82c4146f7b30fb258b0bcc40f b6a7250a1ab84134b7428005cbf4171a
-#: dfa1302f47744c64ac41ead479b9ede3 ebac0b692c99495186922ae86d966858
+#: ../../tutorial/tutorial-9.rst:396 6b371ee840fa423f89e70cbe3f16f5ab
+#: 7d737be606774089a4a5979fa2ec76f7 c3446d0bc83c41b393818dc56646f3df
+#: efa9001848c34815955fc7a63d07848d fc88bd37865d42d1a448807d82c34a40
 msgid "macOS"
 msgstr "macOS"
 
 #: ../../tutorial/tutorial-9.rst:57 ../../tutorial/tutorial-9.rst:156
 #: ../../tutorial/tutorial-9.rst:241 ../../tutorial/tutorial-9.rst:344
-#: ../../tutorial/tutorial-9.rst:438 0d2fe9341c874dc9af33d8ba5e387d1a
-#: 19337f530c3b4f11ab90830942df9782 b20c52fa79bf49169c8ea1b9b54dc512
-#: c9240e5a002948a386fb2a4684bac677 f704bfa369654e50857610d716194c88
+#: ../../tutorial/tutorial-9.rst:438 02861222759a45cf8338631549c785ca
+#: 0a00047dbaf947168624a74453123ed2 4a0ff02cc68449f498b652bcff379b57
+#: f24e91b790ff40d199ab7de902b6ab31 f955d23018a54fee9b0fe607594980a0
 msgid "Linux"
 msgstr "Linux"
 
 #: ../../tutorial/tutorial-9.rst:83 ../../tutorial/tutorial-9.rst:173
 #: ../../tutorial/tutorial-9.rst:275 ../../tutorial/tutorial-9.rst:362
-#: ../../tutorial/tutorial-9.rst:471 0485d7cdc0704947b2ad032c7b1fec43
-#: 275a5a4bf83245328e341ddacc601c46 2b614984d7494cbbaaeabc1f1016424f
-#: 6226e747fa7c4b79ab5395dbc46f7018 c3f6b483b851411786e9fa6212489a14
+#: ../../tutorial/tutorial-9.rst:471 3e69d1ae50aa48edb84bc3726cef322c
+#: 7376c756445847ddb5ec0d893debb866 dae0ad5506904e6790461682885a2559
+#: e4c815ae09434549959836fee63d2bfe e594b247167743c2ad4688a62c7b80cb
 msgid "Windows"
 msgstr "Windows"
 
-#: ../../tutorial/tutorial-9.rst:109 7c15f54a1940452482322c251981c252
+#: ../../tutorial/tutorial-9.rst:109 4ee7e5a2ed604cdd88d7c0b0d7d5aab6
 msgid "Success! We've just executed a single test that verifies Python math works in the way we'd expect (What a relief!)."
-msgstr "成功了！我們剛剛執行了一個測試，證實了 Python "
-"的數學按照我們期望的方式工作（真是鬆了一口氣！）。"
+msgstr "成功了！我們剛剛執行了一個測試，證實了 Python 的數學按照我們期望的方式工作（真是鬆了一口氣！）。"
 
-#: ../../tutorial/tutorial-9.rst:112 c7977e8737bd43439e19b318bdcdca4d
+#: ../../tutorial/tutorial-9.rst:112 075cb21da3a54abdba43182366f6554a
 msgid "Let's replace this placeholder test with a test to verify that our ``greeting()`` method behaves the way we'd expect. Replace the contents of ``test_app.py`` with the following::"
-msgstr ""
-"讓我們用一個測試來取代這個範例，以驗證我們的 ``greeting()`` "
-"方法的行為是否符合我們的預期。將 ``test_app.py`` 的內容替換為以下內容："
+msgstr "讓我們用一個測試來取代這個範例，以驗證我們的 ``greeting()`` 方法的行為是否符合我們的預期。將 ``test_app.py`` 的內容替換為以下內容："
 
-#: ../../tutorial/tutorial-9.rst:130 1115980da7fc4e0e8134cc02e00cbb17
+#: ../../tutorial/tutorial-9.rst:130 3911037704b24843b30fc87144226ceb
 msgid "This defines two new tests, verifying the two behaviors we expect to see: the output when a name is provided, and the output when the name is empty."
-msgstr "這定義了兩個新的測試，驗證我們期望看到的兩個行為：提供名稱時的輸出，以及名稱"
-"為空時的輸出。"
+msgstr "這定義了兩個新的測試，驗證我們期望看到的兩個行為：提供名稱時的輸出，以及名稱為空時的輸出。"
 
-#: ../../tutorial/tutorial-9.rst:133 8737194522ec4aa1a6141458810b5e7f
+#: ../../tutorial/tutorial-9.rst:133 281cadf9d1bc477a9f8adbb213f53211
 msgid "We can now re-run the test suite. This time, we don't need to provided the ``-r`` option, as the test requirements have already been installed; we only need to use the ``--test`` option:"
-msgstr "我們現在可以重新運行測試套件。這次，我們不需要提供 ``-r`` "
-"選項，因為測試要求已經安裝了；我們只需要使用 ``--test`` 選項："
+msgstr "我們現在可以重新運行測試套件。這次，我們不需要提供 ``-r`` 選項，因為測試要求已經安裝了；我們只需要使用 ``--test`` 選項："
 
-#: ../../tutorial/tutorial-9.rst:190 5c28907574ab4795bf7a7af5941c8c69
+#: ../../tutorial/tutorial-9.rst:190 f6793768beb04843b7089ebf90a0d712
 msgid "Excellent! Our ``greeting()`` utility method is working as expected."
 msgstr "非常好！我們的 ``greeting()`` 實用方法按預期工作。"
 
-#: ../../tutorial/tutorial-9.rst:193 d44bbd8adf784ee28c9b6ed6b22c7fe4
+#: ../../tutorial/tutorial-9.rst:193 00ec17fba6fd48bc9443bcd3114a9f86
 msgid "Test driven development"
 msgstr "用測試來驅動開發"
 
-#: ../../tutorial/tutorial-9.rst:195 086ec3b5bba949e39d2af4ab91105a8a
+#: ../../tutorial/tutorial-9.rst:195 af38e016b4494ded99ff84e4a854ab72
 msgid "Now that we have a test suite, we can use it to drive the development of new features. Let's modify our app to have a special greeting for one particular user. We can start by adding a test case for the new behavior that we'd like to see to the bottom of ``test_app.py``::"
-msgstr ""
-"現在我們有了測試套件，我們可以用它來驅動新功能的開發。讓我們修改我們的應用程"
-"序，為某個特定用戶提供特殊的問候語。我們可以先為我們希望在 ``test_app.py`` "
-"底部看到的新行為新增一個測試案例::"
+msgstr "現在我們有了測試套件，我們可以用它來驅動新功能的開發。讓我們修改我們的應用程序，為某個特定用戶提供特殊的問候語。我們可以先為我們希望在 ``test_app.py`` 底部看到的新行為新增一個測試案例::"
 
-#: ../../tutorial/tutorial-9.rst:205 b555e3b534a843498a55f7d38995b911
+#: ../../tutorial/tutorial-9.rst:205 3f5bcdb2f18c487bacc726b46150b1b3
 msgid "Then, run the test suite with this new test:"
 msgstr "然後，使用這個新測試來執行測試套件："
 
-#: ../../tutorial/tutorial-9.rst:307 945423335a9e4ee3938f2cdc0e207a64
+#: ../../tutorial/tutorial-9.rst:307 a18fd7b9f69c4e51bf13b2178368d84d
 msgid "This time, we see a test failure - and the output explains the source of the failure: the test is expecting the output \"BeeWare the IDEs of Python!\", but our implementation of ``greeting()`` is returning \"Hello, Brutus\". Let's modify the implementation of ``greeting()`` in ``src/helloworld/app.py`` to have the new behavior::"
-msgstr ""
-"這次，我們看到測試失敗 - 輸出解釋了失敗的根源：測試期望輸出 ``BeeWare the "
-"IDEs of Python!`` ，但我們的 ``greeting()`` 實現返回 ``Hello, Brutus`` 。"
-"讓我們修改 src/helloworld/app.py 中的 greeting() 實作以獲得新的行為："
+msgstr "這次，我們看到測試失敗 - 輸出解釋了失敗的根源：測試期望輸出 ``BeeWare the IDEs of Python!`` ，但我們的 ``greeting()`` 實現返回 ``Hello, Brutus`` 。讓我們修改 src/helloworld/app.py 中的 greeting() 實作以獲得新的行為："
 
-#: ../../tutorial/tutorial-9.rst:322 cf2afa3b8cfd4a84bc81eb7b6f04f7d3
+#: ../../tutorial/tutorial-9.rst:322 f32631a5038e4c878e9dd3a9fe067386
 msgid "If we run the tests again, we'll now see our tests pass:"
 msgstr "如果我們再次運行測試，我們現在將看到測試通過："
 
-#: ../../tutorial/tutorial-9.rst:381 443064d8b3dc403da15f4224238fffa3
+#: ../../tutorial/tutorial-9.rst:381 6ff3035bb2294957a642d851702f4e22
 msgid "Runtime tests"
 msgstr "運行時測試"
 
-#: ../../tutorial/tutorial-9.rst:383 a38dfba53f3b449baef928abb7cb161d
+#: ../../tutorial/tutorial-9.rst:383 3fcdbeec1ebf4cf28c48a634f6da8ced
 msgid "So far, we've been running the tests in development mode. This is especially useful when you're developing new features, as you can rapidly iterate on adding tests, and adding code to make those tests pass. However, at some point, you'll want to verify that your code also runs correctly when inside the bundle app environment."
-msgstr ""
-"到目前為止，我們一直在開發模式下執行測試。當您開發新功能時，這特別有用，因為"
-"您可以快速迭代添加測試，並添加程式碼以使這些測試通過。但是，在某些時候，您需"
-"要驗證您的程式碼在部署的環境中是否也可以正確運行。"
+msgstr "到目前為止，我們一直在開發模式下執行測試。當您開發新功能時，這特別有用，因為您可以快速迭代添加測試，並添加程式碼以使這些測試通過。但是，在某些時候，您需要驗證您的程式碼在部署的環境中是否也可以正確運行。"
 
-#: ../../tutorial/tutorial-9.rst:389 e4f8722d4328445c8ecd3addf3eb91b6
+#: ../../tutorial/tutorial-9.rst:389 0ab123fec4fa421ebcd01f5498675ecb
 msgid "The ``--test`` and ``-r`` options can also be passed to the ``run`` command. If you use ``briefcase run --test -r``, the same test suite will run, but it will run inside the packaged application bundle rather than your development environment:"
-msgstr ""
-"``--test`` 和 ``-r`` 選項也可以傳遞給 ``run`` 指令。如果您使用 ``briefcase "
-"run --test -r`` ，將運行相同的測試套件，但它將在部署的環境中運行，而不是在您"
-"的開發環境中運行："
+msgstr "``--test`` 和 ``-r`` 選項也可以傳遞給 ``run`` 指令。如果您使用 ``briefcase run --test -r`` ，將運行相同的測試套件，但它將在部署的環境中運行，而不是在您的開發環境中運行："
 
-#: ../../tutorial/tutorial-9.rst:508 0bae040587d8427c81e03b9b112dd8b2
+#: ../../tutorial/tutorial-9.rst:508 258cdcbd93bc4326989cb659e476a855
 msgid "As with ``briefcase dev --test``, the ``-r`` option is only needed the first time you run the test suite to ensure that the test dependencies are present. On subsequent runs, you can omit this option."
-msgstr ""
-"與 ``briefcase dev --test`` 一樣，僅在第一次執行測試套件時才需要 ``-r`` "
-"選項，以確保測試依賴項存在。在後續運行中，您可以忽略此選項。"
+msgstr "與 ``briefcase dev --test`` 一樣，僅在第一次執行測試套件時才需要 ``-r`` 選項，以確保測試依賴項存在。在後續運行中，您可以忽略此選項。"
 
-#: ../../tutorial/tutorial-9.rst:512 ca610c1d4952409a8be471506cd75623
+#: ../../tutorial/tutorial-9.rst:512 5bdcaccd83054bc0b5d91a40e9bf0f00
 msgid "You can also use the ``--test`` option on mobile backends: - so ``briefcase run iOS --test`` and ``briefcase run android --test`` will both work, running the test suite on the mobile device you select."
-msgstr ""
-"您還可以在移動環境下使用 ``--test`` 選項： - 因此 ``briefcase run iOS "
-"--test`` 和 ``briefcase run android --test`` "
-"都可以工作，在您選擇的移動設備上運行測試套件。"
+msgstr "您還可以在移動環境下使用 ``--test`` 選項： - 因此 ``briefcase run iOS --test`` 和 ``briefcase run android --test`` 都可以工作，在您選擇的移動設備上運行測試套件。"
 
-#: ../../tutorial/tutorial-9.rst:517 71f93ac75c724e4daeba2125d30305a9
+#: ../../tutorial/tutorial-9.rst:517 25dee6c2ad704e26ad008f713c0770b0
 msgid "Next steps"
 msgstr "下一步"
 
-#: ../../tutorial/tutorial-9.rst:519 b576805fd1b04f66ae424268666f57bc
-msgid "This has been a taste for what you can do with the tools provided by the BeeWare project. What you do from here is up to you!"
-msgstr "這是您對 BeeWare 專案提供的工具的嘗試。您可以決定要從哪做起！"
-
-#: ../../tutorial/tutorial-9.rst:522 546eb57cefca4aa881586503c6ffa85a
-msgid "Some places to go from here:"
-msgstr "可以去的一些地方："
-
-#: ../../tutorial/tutorial-9.rst:524 70dcdd69f7e3487ba44fef863a357d4e
-msgid "Tutorials demonstrating `features of the Toga widget toolkit <https://toga.readthedocs.io/en/latest/tutorial/index.html>`__."
+#: ../../tutorial/tutorial-9.rst:519 de845c7c4bb440caab7634cdc872d9bb
+msgid "We've now got a a test suite for our application. But it still looks like a tutorial app. Is there anything we can do about that? Turn to :doc:`Tutorial 10 <tutorial-10>` to find out..."
 msgstr ""
-"示範 `Toga 小工具工具包的功能 <https://toga.readthedocs.io/en/latest/"
-"tutorial/index.html>`__ 的教學。"
 
-#: ../../tutorial/tutorial-9.rst:526 22ea03aceefa4368912b405b5f42f136
-msgid "Details on the `options available when configuring your Briefcase project <https://briefcase.readthedocs.io/en/latest/reference/index.html>`__."
-msgstr ""
-"`有關配置 Briefcase 項目時可用的選項的詳細資訊 <https://briefcase.readthedocs"
-".io/en/latest/reference/index.html>`__ 。"
+#~ msgid "This has been a taste for what you can do with the tools provided by the BeeWare project. What you do from here is up to you!"
+#~ msgstr "這是您對 BeeWare 專案提供的工具的嘗試。您可以決定要從哪做起！"
+
+#~ msgid "Some places to go from here:"
+#~ msgstr "可以去的一些地方："
+
+#~ msgid "Tutorials demonstrating `features of the Toga widget toolkit <https://toga.readthedocs.io/en/latest/tutorial/index.html>`__."
+#~ msgstr "示範 `Toga 小工具工具包的功能 <https://toga.readthedocs.io/en/latest/tutorial/index.html>`__ 的教學。"
+
+#~ msgid "Details on the `options available when configuring your Briefcase project <https://briefcase.readthedocs.io/en/latest/reference/index.html>`__."
+#~ msgstr "`有關配置 Briefcase 項目時可用的選項的詳細資訊 <https://briefcase.readthedocs.io/en/latest/reference/index.html>`__ 。"
+

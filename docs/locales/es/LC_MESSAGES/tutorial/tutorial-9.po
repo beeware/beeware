@@ -1,183 +1,156 @@
+
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-06 18:04+0800\n"
+"POT-Creation-Date: 2024-04-30 17:27+0000\n"
 "PO-Revision-Date: 2024-02-13 12:01+0000\n"
 "Last-Translator: KevinRodriguez777 <turcioskevinr@gmail.com>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/"
-"tutorial-9/es/>\n"
 "Language: es\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-9/es/>\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.4-dev\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: ../../tutorial/tutorial-9.rst:3 6c187687d357400e8159acfc2310f3ad
+#: ../../tutorial/tutorial-9.rst:3 aeef8be59f2c4d4eb5bff4d71d02d58c
 msgid "Tutorial 9 - Testing times"
 msgstr "Tutorial 9 - Tiempo de Ejecución del conjunto de pruebas"
 
-#: ../../tutorial/tutorial-9.rst:5 b72366c14e754abea97dc62bc5188609
+#: ../../tutorial/tutorial-9.rst:5 035cf073ccad4319b3846341a3f9576e
 msgid "Most software development doesn't involve writing new code - it's modifying existing code. Ensuring that existing code continues to work in the way we expect is a key part of the software development process. One way to do ensure the behavior of our app is with a *test suite*."
-msgstr ""
-"La mayor parte del desarrollo de software no consiste en escribir código "
-"nuevo, sino en modificar el existente. Garantizar que el código existente "
-"sigue funcionando de la forma que esperamos es una parte clave del proceso "
-"de desarrollo de software. Una forma de asegurar el comportamiento de "
-"nuestra aplicación es con un *conjunto de pruebas*."
+msgstr "La mayor parte del desarrollo de software no consiste en escribir código nuevo, sino en modificar el existente. Garantizar que el código existente sigue funcionando de la forma que esperamos es una parte clave del proceso de desarrollo de software. Una forma de asegurar el comportamiento de nuestra aplicación es con un *conjunto de pruebas*."
 
-#: ../../tutorial/tutorial-9.rst:11 9bf2c9977b9749e68f83228ff7427dc1
+#: ../../tutorial/tutorial-9.rst:11 273ac408f7f146c0ade1bd079200f5e3
 msgid "Running the test suite"
 msgstr "Ejecución del conjunto de pruebas"
 
-#: ../../tutorial/tutorial-9.rst:13 1d0866cff0cf4a2287f754aec3a2e8a9
+#: ../../tutorial/tutorial-9.rst:13 09c92fbb8b164f6fa46458fba4009628
 msgid "It turns out our project already has a test suite! When we originally generated our project, two top-level directories were generated: ``src`` and ``tests``. The ``src`` folder contains the code for our app; the ``tests`` folder contains our test suite. Inside the ``tests`` folder is a file named ``test_app.py`` with the following content::"
-msgstr ""
-"Resulta que nuestro proyecto ya tiene un conjunto de pruebas! Cuando "
-"originalmente generamos nuestro proyecto, se generaron dos directorios de "
-"nivel superior: ``src`` y ``tests``. La carpeta ``src`` contiene el código "
-"de nuestra aplicación; la carpeta ``tests`` contiene nuestro conjunto de "
-"pruebas. Dentro de la carpeta ``tests`` hay un archivo llamado ``test_app."
-"py`` con el siguiente contenido::"
+msgstr "Resulta que nuestro proyecto ya tiene un conjunto de pruebas! Cuando originalmente generamos nuestro proyecto, se generaron dos directorios de nivel superior: ``src`` y ``tests``. La carpeta ``src`` contiene el código de nuestra aplicación; la carpeta ``tests`` contiene nuestro conjunto de pruebas. Dentro de la carpeta ``tests`` hay un archivo llamado ``test_app.py`` con el siguiente contenido::"
 
-#: ../../tutorial/tutorial-9.rst:23 4cffb17ca8d34ebfa581f3a4bd572b12
+#: ../../tutorial/tutorial-9.rst:23 a59b93a912854067b72e4dc131f63887
 msgid "This is a `Pytest <https://pytest.org>`__ *test case* - a block of code that can be executed to verify some behavior of your app. In this case, the test is a placeholder, and doesn't test anything about our app - but it is a test that we can perform."
-msgstr ""
-"Esto es un `Pytest <https://pytest.org>`__ *caso de prueba* - un bloque de "
-"código que puede ser ejecutado para verificar algún comportamiento de tu "
-"aplicación. En este caso, la prueba es un marcador de posición, y no "
-"verifica nada específico sobre nuestra aplicación, pero es una prueba que "
-"podemos realizar."
+msgstr "Esto es un `Pytest <https://pytest.org>`__ *caso de prueba* - un bloque de código que puede ser ejecutado para verificar algún comportamiento de tu aplicación. En este caso, la prueba es un marcador de posición, y no verifica nada específico sobre nuestra aplicación, pero es una prueba que podemos realizar."
 
-#: ../../tutorial/tutorial-9.rst:28 024b6a4ae422481d9d75777fbe694897
+#: ../../tutorial/tutorial-9.rst:28 4d9dbd44684b46638128fdf048729189
 msgid "We can run this test suite using the ``--test`` option to ``briefcase dev``. As this is the first time we are running tests, we also need to pass in the ``-r`` option to ensure that the test requirements are also installed:"
-msgstr ""
-"Podemos ejecutar este conjunto de pruebas utilizando la opción ``--test`` de "
-"``briefcase dev``. Como es la primera vez que ejecutamos pruebas, también "
-"necesitamos pasar la opción ``-r`` para asegurarnos de que también se "
-"instalan los requisitos de las pruebas:"
+msgstr "Podemos ejecutar este conjunto de pruebas utilizando la opción ``--test`` de ``briefcase dev``. Como es la primera vez que ejecutamos pruebas, también necesitamos pasar la opción ``-r`` para asegurarnos de que también se instalan los requisitos de las pruebas:"
 
-#: ../../tutorial/tutorial-9.rst:34 ../../tutorial/tutorial-9.rst:139 ../../tutorial/tutorial-9.rst:209 ../../tutorial/tutorial-9.rst:326 ../../tutorial/tutorial-9.rst:396 2d0972cbbeeb4e77895e7aae91dd4c59 688015a82c4146f7b30fb258b0bcc40f b6a7250a1ab84134b7428005cbf4171a dfa1302f47744c64ac41ead479b9ede3 ebac0b692c99495186922ae86d966858
+#: ../../tutorial/tutorial-9.rst:34 ../../tutorial/tutorial-9.rst:139
+#: ../../tutorial/tutorial-9.rst:209 ../../tutorial/tutorial-9.rst:326
+#: ../../tutorial/tutorial-9.rst:396 6b371ee840fa423f89e70cbe3f16f5ab
+#: 7d737be606774089a4a5979fa2ec76f7 c3446d0bc83c41b393818dc56646f3df
+#: efa9001848c34815955fc7a63d07848d fc88bd37865d42d1a448807d82c34a40
 msgid "macOS"
 msgstr "macOS"
 
-#: ../../tutorial/tutorial-9.rst:57 ../../tutorial/tutorial-9.rst:156 ../../tutorial/tutorial-9.rst:241 ../../tutorial/tutorial-9.rst:344 ../../tutorial/tutorial-9.rst:438 0d2fe9341c874dc9af33d8ba5e387d1a 19337f530c3b4f11ab90830942df9782 b20c52fa79bf49169c8ea1b9b54dc512 c9240e5a002948a386fb2a4684bac677 f704bfa369654e50857610d716194c88
+#: ../../tutorial/tutorial-9.rst:57 ../../tutorial/tutorial-9.rst:156
+#: ../../tutorial/tutorial-9.rst:241 ../../tutorial/tutorial-9.rst:344
+#: ../../tutorial/tutorial-9.rst:438 02861222759a45cf8338631549c785ca
+#: 0a00047dbaf947168624a74453123ed2 4a0ff02cc68449f498b652bcff379b57
+#: f24e91b790ff40d199ab7de902b6ab31 f955d23018a54fee9b0fe607594980a0
 msgid "Linux"
 msgstr "Linux"
 
-#: ../../tutorial/tutorial-9.rst:83 ../../tutorial/tutorial-9.rst:173 ../../tutorial/tutorial-9.rst:275 ../../tutorial/tutorial-9.rst:362 ../../tutorial/tutorial-9.rst:471 0485d7cdc0704947b2ad032c7b1fec43 275a5a4bf83245328e341ddacc601c46 2b614984d7494cbbaaeabc1f1016424f 6226e747fa7c4b79ab5395dbc46f7018 c3f6b483b851411786e9fa6212489a14
+#: ../../tutorial/tutorial-9.rst:83 ../../tutorial/tutorial-9.rst:173
+#: ../../tutorial/tutorial-9.rst:275 ../../tutorial/tutorial-9.rst:362
+#: ../../tutorial/tutorial-9.rst:471 3e69d1ae50aa48edb84bc3726cef322c
+#: 7376c756445847ddb5ec0d893debb866 dae0ad5506904e6790461682885a2559
+#: e4c815ae09434549959836fee63d2bfe e594b247167743c2ad4688a62c7b80cb
 msgid "Windows"
 msgstr "Windows"
 
-#: ../../tutorial/tutorial-9.rst:109 7c15f54a1940452482322c251981c252
+#: ../../tutorial/tutorial-9.rst:109 4ee7e5a2ed604cdd88d7c0b0d7d5aab6
 msgid "Success! We've just executed a single test that verifies Python math works in the way we'd expect (What a relief!)."
-msgstr ""
-"¡Un éxito! Acabamos de ejecutar una única prueba que verifica que las "
-"matemáticas de Python funcionan como esperábamos (¡Qué alivio!)."
+msgstr "¡Un éxito! Acabamos de ejecutar una única prueba que verifica que las matemáticas de Python funcionan como esperábamos (¡Qué alivio!)."
 
-#: ../../tutorial/tutorial-9.rst:112 c7977e8737bd43439e19b318bdcdca4d
+#: ../../tutorial/tutorial-9.rst:112 075cb21da3a54abdba43182366f6554a
 #, fuzzy
 msgid "Let's replace this placeholder test with a test to verify that our ``greeting()`` method behaves the way we'd expect. Replace the contents of ``test_app.py`` with the following::"
-msgstr ""
-"Vamos a reemplazar esta prueba de marcador de posición con una prueba para "
-"verificar que nuestro método ``greeting()`` se comporta como esperamos. "
-"Sustituye el contenido de ``test_app.py`` por el siguiente::"
+msgstr "Vamos a reemplazar esta prueba de marcador de posición con una prueba para verificar que nuestro método ``greeting()`` se comporta como esperamos. Sustituye el contenido de ``test_app.py`` por el siguiente::"
 
-#: ../../tutorial/tutorial-9.rst:130 1115980da7fc4e0e8134cc02e00cbb17
+#: ../../tutorial/tutorial-9.rst:130 3911037704b24843b30fc87144226ceb
 msgid "This defines two new tests, verifying the two behaviors we expect to see: the output when a name is provided, and the output when the name is empty."
-msgstr ""
-"Esto define dos nuevos casos de pruebas, verificando los dos comportamientos "
-"que esperamos ver: la salida cuando se proporciona un nombre, y la salida "
-"cuando el nombre está vacío."
+msgstr "Esto define dos nuevos casos de pruebas, verificando los dos comportamientos que esperamos ver: la salida cuando se proporciona un nombre, y la salida cuando el nombre está vacío."
 
-#: ../../tutorial/tutorial-9.rst:133 8737194522ec4aa1a6141458810b5e7f
+#: ../../tutorial/tutorial-9.rst:133 281cadf9d1bc477a9f8adbb213f53211
 msgid "We can now re-run the test suite. This time, we don't need to provided the ``-r`` option, as the test requirements have already been installed; we only need to use the ``--test`` option:"
-msgstr ""
-"Ahora podemos volver a ejecutar el conjunto de pruebas. Esta vez, no "
-"necesitamos proporcionar la opción ``-r``, ya que los requisitos de la "
-"prueba ya se han instalado; sólo tenemos que utilizar la opción ``--test``:"
+msgstr "Ahora podemos volver a ejecutar el conjunto de pruebas. Esta vez, no necesitamos proporcionar la opción ``-r``, ya que los requisitos de la prueba ya se han instalado; sólo tenemos que utilizar la opción ``--test``:"
 
-#: ../../tutorial/tutorial-9.rst:190 5c28907574ab4795bf7a7af5941c8c69
+#: ../../tutorial/tutorial-9.rst:190 f6793768beb04843b7089ebf90a0d712
 #, fuzzy
 msgid "Excellent! Our ``greeting()`` utility method is working as expected."
 msgstr "Excelente Nuestro método de utilidad ``greeting()`` está funcionando como se esperaba."
 
-#: ../../tutorial/tutorial-9.rst:193 d44bbd8adf784ee28c9b6ed6b22c7fe4
+#: ../../tutorial/tutorial-9.rst:193 00ec17fba6fd48bc9443bcd3114a9f86
 #, fuzzy
 msgid "Test driven development"
 msgstr "Desarrollo basado en pruebas"
 
-#: ../../tutorial/tutorial-9.rst:195 086ec3b5bba949e39d2af4ab91105a8a
+#: ../../tutorial/tutorial-9.rst:195 af38e016b4494ded99ff84e4a854ab72
 #, fuzzy
 msgid "Now that we have a test suite, we can use it to drive the development of new features. Let's modify our app to have a special greeting for one particular user. We can start by adding a test case for the new behavior that we'd like to see to the bottom of ``test_app.py``::"
 msgstr "Ahora que tenemos un conjunto de pruebas, podemos utilizarlo para impulsar el desarrollo de nuevas funciones. Vamos a modificar nuestra aplicación para que tenga un saludo especial para un usuario en particular. Podemos empezar por añadir un caso de prueba para el nuevo comportamiento que nos gustaría ver en la parte inferior de ``test_app.py``::"
 
-#: ../../tutorial/tutorial-9.rst:205 b555e3b534a843498a55f7d38995b911
+#: ../../tutorial/tutorial-9.rst:205 3f5bcdb2f18c487bacc726b46150b1b3
 #, fuzzy
 msgid "Then, run the test suite with this new test:"
 msgstr "A continuación, ejecute el conjunto de pruebas con esta nueva prueba:"
 
-#: ../../tutorial/tutorial-9.rst:307 945423335a9e4ee3938f2cdc0e207a64
+#: ../../tutorial/tutorial-9.rst:307 a18fd7b9f69c4e51bf13b2178368d84d
 #, fuzzy
 msgid "This time, we see a test failure - and the output explains the source of the failure: the test is expecting the output \"BeeWare the IDEs of Python!\", but our implementation of ``greeting()`` is returning \"Hello, Brutus\". Let's modify the implementation of ``greeting()`` in ``src/helloworld/app.py`` to have the new behavior::"
 msgstr "Esta vez, vemos un fallo en el test - y la salida explica el origen del fallo: el test está esperando la salida \"¡BeeWare los IDEs de Python!\", pero nuestra implementación de ``greeting()`` está devolviendo \"Hola, Brutus\". Modifiquemos la implementación de ``greeting()`` en ``src/helloworld/app.py`` para que tenga el nuevo comportamiento::"
 
-#: ../../tutorial/tutorial-9.rst:322 cf2afa3b8cfd4a84bc81eb7b6f04f7d3
+#: ../../tutorial/tutorial-9.rst:322 f32631a5038e4c878e9dd3a9fe067386
 #, fuzzy
 msgid "If we run the tests again, we'll now see our tests pass:"
 msgstr "Si ejecutamos las pruebas de nuevo, ahora veremos que nuestras pruebas pasan:"
 
-#: ../../tutorial/tutorial-9.rst:381 443064d8b3dc403da15f4224238fffa3
+#: ../../tutorial/tutorial-9.rst:381 6ff3035bb2294957a642d851702f4e22
 #, fuzzy
 msgid "Runtime tests"
 msgstr "Pruebas en tiempo real"
 
-#: ../../tutorial/tutorial-9.rst:383 a38dfba53f3b449baef928abb7cb161d
+#: ../../tutorial/tutorial-9.rst:383 3fcdbeec1ebf4cf28c48a634f6da8ced
 #, fuzzy
 msgid "So far, we've been running the tests in development mode. This is especially useful when you're developing new features, as you can rapidly iterate on adding tests, and adding code to make those tests pass. However, at some point, you'll want to verify that your code also runs correctly when inside the bundle app environment."
 msgstr "Hasta ahora, hemos estado ejecutando las pruebas en modo de desarrollo. Esto es especialmente útil cuando estás desarrollando nuevas características, ya que puedes iterar rápidamente en la adición de pruebas, y la adición de código para hacer que esas pruebas pasen. Sin embargo, en algún momento, usted querrá verificar que su código también se ejecuta correctamente cuando dentro del entorno de aplicación paquete."
 
-#: ../../tutorial/tutorial-9.rst:389 e4f8722d4328445c8ecd3addf3eb91b6
+#: ../../tutorial/tutorial-9.rst:389 0ab123fec4fa421ebcd01f5498675ecb
 #, fuzzy
 msgid "The ``--test`` and ``-r`` options can also be passed to the ``run`` command. If you use ``briefcase run --test -r``, the same test suite will run, but it will run inside the packaged application bundle rather than your development environment:"
 msgstr "Las opciones ``--test`` y ``-r`` también se pueden pasar al comando ``run``. Si utilizas ``briefcase run --test -r``, se ejecutará el mismo conjunto de pruebas, pero se ejecutará dentro del paquete de aplicaciones empaquetado en lugar de en tu entorno de desarrollo:"
 
-#: ../../tutorial/tutorial-9.rst:508 0bae040587d8427c81e03b9b112dd8b2
+#: ../../tutorial/tutorial-9.rst:508 258cdcbd93bc4326989cb659e476a855
 #, fuzzy
 msgid "As with ``briefcase dev --test``, the ``-r`` option is only needed the first time you run the test suite to ensure that the test dependencies are present. On subsequent runs, you can omit this option."
 msgstr "Al igual que con ``briefcase dev --test``, la opción ``-r`` sólo es necesaria la primera vez que se ejecuta el conjunto de pruebas para asegurarse de que las dependencias de prueba están presentes. En las siguientes ejecuciones, puede omitir esta opción."
 
-#: ../../tutorial/tutorial-9.rst:512 ca610c1d4952409a8be471506cd75623
+#: ../../tutorial/tutorial-9.rst:512 5bdcaccd83054bc0b5d91a40e9bf0f00
 #, fuzzy
 msgid "You can also use the ``--test`` option on mobile backends: - so ``briefcase run iOS --test`` and ``briefcase run android --test`` will both work, running the test suite on the mobile device you select."
 msgstr "También puedes utilizar la opción ``--test`` en backends móviles: - así ``briefcase run iOS --test`` y ``briefcase run android --test`` funcionarán, ejecutando el conjunto de pruebas en el dispositivo móvil que selecciones."
 
-#: ../../tutorial/tutorial-9.rst:517 71f93ac75c724e4daeba2125d30305a9
+#: ../../tutorial/tutorial-9.rst:517 25dee6c2ad704e26ad008f713c0770b0
 msgid "Next steps"
 msgstr "Siguientes pasos"
 
-#: ../../tutorial/tutorial-9.rst:519 b576805fd1b04f66ae424268666f57bc
-msgid "This has been a taste for what you can do with the tools provided by the BeeWare project. What you do from here is up to you!"
+#: ../../tutorial/tutorial-9.rst:519 de845c7c4bb440caab7634cdc872d9bb
+msgid "We've now got a a test suite for our application. But it still looks like a tutorial app. Is there anything we can do about that? Turn to :doc:`Tutorial 10 <tutorial-10>` to find out..."
 msgstr ""
-"Esta ha sido una muestra de lo que se puede hacer con las herramientas que "
-"proporciona el proyecto BeeWare. ¡Lo que hagas desde aquí depende de ti!"
 
-#: ../../tutorial/tutorial-9.rst:522 546eb57cefca4aa881586503c6ffa85a
-msgid "Some places to go from here:"
-msgstr "Algunos sitios a los que ir desde aquí:"
+#~ msgid "This has been a taste for what you can do with the tools provided by the BeeWare project. What you do from here is up to you!"
+#~ msgstr "Esta ha sido una muestra de lo que se puede hacer con las herramientas que proporciona el proyecto BeeWare. ¡Lo que hagas desde aquí depende de ti!"
 
-#: ../../tutorial/tutorial-9.rst:524 70dcdd69f7e3487ba44fef863a357d4e
-msgid "Tutorials demonstrating `features of the Toga widget toolkit <https://toga.readthedocs.io/en/latest/tutorial/index.html>`__."
-msgstr ""
-"Tutoriales que demuestran `características del conjunto de las herramientas "
-"del widgets Toga <https://toga.readthedocs.io/en/latest/tutorial/index."
-"html>`__."
+#~ msgid "Some places to go from here:"
+#~ msgstr "Algunos sitios a los que ir desde aquí:"
 
-#: ../../tutorial/tutorial-9.rst:526 22ea03aceefa4368912b405b5f42f136
-msgid "Details on the `options available when configuring your Briefcase project <https://briefcase.readthedocs.io/en/latest/reference/index.html>`__."
-msgstr ""
-"Detalles sobre las `opciones disponibles al configurar su proyecto en "
-"Briefcase <https://briefcase.readthedocs.io/en/latest/reference/index."
-"html>`__."
+#~ msgid "Tutorials demonstrating `features of the Toga widget toolkit <https://toga.readthedocs.io/en/latest/tutorial/index.html>`__."
+#~ msgstr "Tutoriales que demuestran `características del conjunto de las herramientas del widgets Toga <https://toga.readthedocs.io/en/latest/tutorial/index.html>`__."
+
+#~ msgid "Details on the `options available when configuring your Briefcase project <https://briefcase.readthedocs.io/en/latest/reference/index.html>`__."
+#~ msgstr "Detalles sobre las `opciones disponibles al configurar su proyecto en Briefcase <https://briefcase.readthedocs.io/en/latest/reference/index.html>`__."
+
