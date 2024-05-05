@@ -93,28 +93,35 @@ Next, install the additional dependencies needed for your operating system:
     To support local development, you'll need to install some system packages.
     The list of packages required varies depending on your distribution:
 
-    **Ubuntu 20.04+ / Debian 10+**
+    **Ubuntu / Debian**
 
     ..
-      The package list should be the same as in ci.yml and tutorial-0.rst in the Toga
-      repository.
+      The package list should be the same as in ci.yml and unix-prerequisites.rst in the
+      Toga repository.
 
     .. code-block:: console
 
       $ sudo apt update
-      $ sudo apt install build-essential git pkg-config python3-dev python3-venv libgirepository1.0-dev libcairo2-dev libcanberra-gtk3-module
+      $ sudo apt install git build-essential pkg-config python3-dev python3-venv libgirepository1.0-dev libcairo2-dev gir1.2-gtk-3.0 libcanberra-gtk3-module
 
     **Fedora**
 
     .. code-block:: console
 
-      $ sudo dnf install git pkg-config rpm-build python3-devel gobject-introspection-devel cairo-gobject-devel libcanberra-gtk3
+      $ sudo dnf install git gcc make pkg-config rpm-build python3-devel gobject-introspection-devel cairo-gobject-devel gtk3 libcanberra-gtk3
 
-    **Arch, Manjaro**
+    **Arch / Manjaro**
 
     .. code-block:: console
 
-      $ sudo pacman -Syu base-devel git pkgconf python3 gobject-introspection cairo libcanberra
+      $ sudo pacman -Syu git base-devel pkgconf python3 gobject-introspection cairo gtk3 libcanberra
+
+    **OpenSUSE Tumbleweed**
+
+    .. code-block:: console
+
+      $ sudo zypper install git patterns-devel-base-devel_basis pkgconf-pkg-config python3-devel gobject-introspection-devel cairo-devel gtk3 'typelib(Gtk)=3.0' libcanberra-gtk3-module
+
 
   .. group-tab:: Windows
 
