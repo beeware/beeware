@@ -105,6 +105,23 @@ considerable; this may take a while (10 minutes or longer, depending on the
 speed of your Internet connection). When the download has completed, you will
 be prompted to accept Google's Android SDK license.
 
+.. admonition:: I end up with a "PermissionError: [WinError 5] Access denied:" error!
+
+    In case your system needs it, the "briefcase create android" command will try to
+    "Installing Android SDK Command-Line Tools" and you may encounter this error.
+    It may be the case that the system didn't create the folder of the specific version
+    you're trying to install and at the same time it's trying to address it.
+    Check at the path:
+    "AppData\Local\BeeWare\briefcase\Cache\tools\android_sdk\cmdline-tools\cmdline-tools".
+    In case the folder with the version number your system is looking for is missing, create it manually.
+
+    As an example:
+    if the error reads
+    "PermissionError: [WinError 5] Access denied: 'C:\\...\\AppData\\Local\\BeeWare\\briefcase\\Cache\\tools\\android_sdk\\cmdline-tools\\cmdline-tools' ->  
+    'C:\\...\\AppData\\Local\\BeeWare\\briefcase\\Cache\\tools\\android_sdk\\cmdline-tools\\9.0'"
+    and you can't find the "9.0" folder at that path, just create it and then launch again the
+    ``briefcase create android`` command.
+
 Once this completes, we'll have a
 ``build\helloworld\android\gradle`` directory in our project, which will contain
 an Android project with a Gradle build configuration. This project will contain
