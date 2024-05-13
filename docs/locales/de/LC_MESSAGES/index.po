@@ -1,17 +1,18 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-08 13:10+0800\n"
-"PO-Revision-Date: 2024-01-14 12:29+0000\n"
-"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
+"PO-Revision-Date: 2024-05-13 12:00+0000\n"
+"Last-Translator: AJ <niko@syncding.com>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
+"index/de/>\n"
 "Language: de\n"
-"Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/index/de/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.5.5-dev\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../index.rst:3 6f7128377ca84a5292ae2dc1d11d1a5a
@@ -20,7 +21,7 @@ msgstr "Willkommen zum BeeWare-Tutorial!"
 
 #: ../../index.rst:5 2a16966fad4b4b64b8e9c710f5fe8ca3
 msgid "**Write Python. Run Anywhere.**"
-msgstr "**Schreiben Sie Python. Führen Sie es überall aus.**"
+msgstr "**Einmal schreiben. Überall ausführen.**"
 
 #: ../../index.rst:7 163e1b86e8b946f681c0a773912a1a9e
 #, fuzzy
@@ -111,4 +112,3 @@ msgstr "Sind Sie bereit, BeeWare selbst auszuprobieren? :doc:`Lassen Sie uns ein
 
 #~ msgid "If you're not comfortable with English, translations of this tutorial are available in `Deutsch <https://docs.beeware.org/de>`__, `Español <https://docs.beeware.org/es>`__, `Français <https://docs.beeware.org/fr>`__, `Italiano <https://docs.beeware.org/it>`__, `Português <https://docs.beeware.org/pt>`__, `简体中文 <https://docs.beeware.org/zh-cn>`__, and `繁體中文 <https://docs.beeware.org/zh-tw>`__."
 #~ msgstr ""
-
