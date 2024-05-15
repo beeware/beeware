@@ -4,6 +4,8 @@ backend
 backends
 beachball
 conda
+coroutine
+coroutines
 Ctrl
 dialogs
 distributable

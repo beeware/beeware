@@ -71,16 +71,16 @@ a way to describe a program that allows the interpreter to run multiple
 functions at the same time, sharing resources between all the concurrently running
 functions.
 
-Asynchronous functions (known as *co-routines*) need to be explicitly declared
+Asynchronous functions (known as *coroutines*) need to be explicitly declared
 as being asynchronous. They also need to internally declare when an opportunity
-exists to change context to another co-routine.
+exists to change context to another coroutine.
 
 In Python, asynchronous programming is implemented using the ``async`` and
 ``await`` keywords, and the `asyncio
 <https://docs.python.org/3/library/asyncio.html>`__ module in the standard
 library. The ``async`` keyword allows us to declare that a function is an
-asynchronous co-routine. The ``await`` keyword provides a way to declare when an
-opportunity exists to change context to another co-routine. The `asyncio
+asynchronous coroutine. The ``await`` keyword provides a way to declare when an
+opportunity exists to change context to another coroutine. The `asyncio
 <https://docs.python.org/3/library/asyncio.html>`__ module provides some other
 useful tools and primitives for asynchronous coding.
 
@@ -104,7 +104,7 @@ it looks like this::
 There are only 4 changes in this code from the previous version:
 
 1. The method is defined as ``async def``, rather than just ``def``. This tells
-   Python that the method is an asynchronous co-routine.
+   Python that the method is an asynchronous coroutine.
 
 2. The client that is created is an asynchronous ``AsyncClient()``, rather than a
    synchronous ``Client()``. This tells ``httpx`` that it should operate in
@@ -118,7 +118,7 @@ There are only 4 changes in this code from the previous version:
    while we are waiting for the response from the network, the app can release control
    to the event loop.
 
-Toga allows you to use regular methods or asynchronous co-routines as handlers;
+Toga allows you to use regular methods or asynchronous coroutines as handlers;
 Toga manages everything behind the scenes to make sure the handler is invoked
 or awaited as required.
 

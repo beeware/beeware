@@ -29,7 +29,7 @@ From the ``helloworld`` directory, run:
       (beeware-venv) $ briefcase create
 
       [helloworld] Generating application template...
-      Using app template: https://github.com/beeware/briefcase-macOS-app-template.git, branch v0.3.14
+      Using app template: https://github.com/beeware/briefcase-macOS-app-template.git, branch v0.3.18
       ...
 
       [helloworld] Installing support package...
@@ -45,7 +45,7 @@ From the ``helloworld`` directory, run:
       ...
 
       [helloworld] Removing unneeded app content...
-      ...
+      Removing unneeded app bundle content... done
 
       [helloworld] Created build/helloworld/macos/app
 
@@ -58,12 +58,11 @@ From the ``helloworld`` directory, run:
       [helloworld] Finalizing application configuration...
       Targeting ubuntu:jammy (Vendor base debian)
       Determining glibc version... done
-
       Targeting glibc 2.35
       Targeting Python3.10
 
       [helloworld] Generating application template...
-      Using app template: https://github.com/beeware/briefcase-linux-AppImage-template.git, branch v0.3.14
+      Using app template: https://github.com/beeware/briefcase-linux-AppImage-template.git, branch v0.3.18
       ...
 
       [helloworld] Installing support package...
@@ -79,7 +78,7 @@ From the ``helloworld`` directory, run:
       ...
 
       [helloworld] Removing unneeded app content...
-      ...
+      Removing unneeded app bundle content... done
 
       [helloworld] Created build/helloworld/linux/ubuntu/jammy
 
@@ -90,7 +89,7 @@ From the ``helloworld`` directory, run:
       (beeware-venv) C:\...>briefcase create
 
       [helloworld] Generating application template...
-      Using app template: https://github.com/beeware/briefcase-windows-app-template.git, branch v0.3.14
+      Using app template: https://github.com/beeware/briefcase-windows-app-template.git, branch v0.3.18
       ...
 
       [helloworld] Installing support package...
@@ -125,13 +124,13 @@ just happened? Briefcase has done the following:
    got a bit more experience using Briefcase's default template.
 
 2. It **downloaded and installed a support package**. The packaging approach
-   taken by briefcase is best described as "the simplest thing that could
+   taken by Briefcase is best described as "the simplest thing that could
    possibly work" - it ships a complete, isolated Python interpreter as part of
-   every application it builds. This is slightly space inefficient - if you
-   have 5 applications packaged with Briefcase, you'll have 5 copies of the
-   Python interpreter. However, this approach guarantees that every application
-   is completely independent, using a specific version of Python that is known
-   to work with the application.
+   every application it builds (except for Linux native system package builds).
+   This is slightly space inefficient - if you have 5 applications packaged with
+   Briefcase, you'll have 5 copies of the Python interpreter. However, this
+   approach guarantees that every application is completely independent, using
+   a specific version of Python that is known to work with the application.
 
    Again, Briefcase provides a default support package for each platform; if
    you want, you can provide your own support package, and have that package
@@ -143,6 +142,11 @@ just happened? Briefcase has done the following:
    Briefcase maintains a local cache of support packages, so once you've
    downloaded a specific support package, that cached copy will be used on
    future builds.
+
+   As noted above, when Briefcase packages an app as a native Linux system
+   package (the default package format for Linux), a support package is not
+   included with the app. Instead, the app will use the Python that is provided
+   by the distribution of Linux being targeted.
 
 3. It **installed application requirements**. Your application can specify any
    third-party modules that are required at runtime. These will be installed
@@ -199,7 +203,6 @@ target platform.
       [helloworld] Finalizing application configuration...
       Targeting ubuntu:jammy (Vendor base debian)
       Determining glibc version... done
-
       Targeting glibc 2.35
       Targeting Python3.10
 
@@ -212,8 +215,6 @@ target platform.
       Installing license... done
       Installing changelog... done
       Installing man page... done
-      Update file permissions...
-      ...
       Updating file permissions... done
       Stripping binary... done
 
@@ -286,7 +287,6 @@ You can now use Briefcase to run your application:
       [helloworld] Finalizing application configuration...
       Targeting ubuntu:jammy (Vendor base debian)
       Determining glibc version... done
-
       Targeting glibc 2.35
       Targeting Python3.10
 
@@ -326,8 +326,8 @@ You can now use Briefcase to run your application:
       Running app module: helloworld
       ---------------------------------------------------------------------------
 
-This will start to run your native application, using the output of the
-``build`` command.
+This will start to run your native application, using the app bundle created by
+the ``build`` command.
 
 You might notice some small differences in the way your application looks
 when it's running. For example, icons and the name displayed by the operating
@@ -396,7 +396,7 @@ or doing other pre-distribution tasks.
 
     When you're ready to publish a real application, check out the Briefcase
     How-To guide on `Setting up a macOS code signing identity
-    <https://briefcase.readthedocs.io/en/latest/how-to/code-signing/macOS.html>`__
+    <https://briefcase.readthedocs.io/en/latest/how-to/code-signing/macOS.html>`__.
 
   .. group-tab:: Linux
 
@@ -410,7 +410,6 @@ or doing other pre-distribution tasks.
       [helloworld] Finalizing application configuration...
       Targeting ubuntu:jammy (Vendor base debian)
       Determining glibc version... done
-
       Targeting glibc 2.35
       Targeting Python3.10
 
@@ -431,11 +430,10 @@ or doing other pre-distribution tasks.
       (beeware-venv) $ briefcase package
 
       [helloworld] Finalizing application configuration...
-      Targeting fedora:36 (Vendor base rhel)
+      Targeting fedora:40 (Vendor base rhel)
       Determining glibc version... done
-
-      Targeting glibc 2.35
-      Targeting Python3.10
+      Targeting glibc 2.39
+      Targeting Python3.12
 
       [helloworld] Building .rpm package...
       Generating rpmbuild layout... done
@@ -450,7 +448,7 @@ or doing other pre-distribution tasks.
       + exit 0
       Building RPM package... done
 
-      [helloworld] Packaged dist/helloworld-0.0.1-1.fc36.x86_64.rpm
+      [helloworld] Packaged dist/helloworld-0.0.1-1.fc40.x86_64.rpm
 
     The ``dist`` folder will contain the ``.rpm`` file that was generated.
 
@@ -461,10 +459,10 @@ or doing other pre-distribution tasks.
       (beeware-venv) $ briefcase package
 
       [helloworld] Finalizing application configuration...
-      Targeting arch:rolling (Vendor base arch)
+      Targeting arch:20240101 (Vendor base arch)
       Determining glibc version... done
-      Targeting glibc 2.37
-      Targeting Python3.10
+      Targeting glibc 2.38
+      Targeting Python3.12
 
       [helloworld] Building .pkg.tar.zst package...
       ...
@@ -489,7 +487,7 @@ or doing other pre-distribution tasks.
 
     .. code-block:: console
 
-      $ docker run -it ubuntu:22.04
+      $ docker run --rm -it ubuntu:22.04
 
     will show you a Unix prompt (something like ``root@84444e31cff9:/#``)
     inside an Ubuntu 22.04 Docker container. Type Ctrl-D to exit Docker and

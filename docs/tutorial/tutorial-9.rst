@@ -444,7 +444,6 @@ environment:
       [helloworld] Finalizing application configuration...
       Targeting ubuntu:jammy (Vendor base debian)
       Determining glibc version... done
-
       Targeting glibc 2.35
       Targeting Python3.10
 
