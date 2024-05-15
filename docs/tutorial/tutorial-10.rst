@@ -167,19 +167,19 @@ Let's provide some actual icons. Download :download:`this icons.zip bundle
 directory. After unpacking, your project directory should look something like::
 
     beeware-tutorial/
-        beeware-venv/
-            ...
-        helloworld/
-            ...
-            pyproject.toml
-            icons/
-                helloworld.icns
-                helloworld.ico
-                helloworld.png
-                helloworld-16.png
-                ...
-            src/
-            ...
+    ├── beeware-venv/
+    │   └── ...
+    └── helloworld/
+        ├── ...
+        └── pyproject.toml
+            ├── icons/
+            │   ├── helloworld.icns
+            │   ├── helloworld.ico
+            │   ├── helloworld.png
+            │   ├── helloworld-16.png
+            │   ├── ...
+            └── src/
+                └── ...
 
 There's a *lot* of icons in this folder, but most of them should look the same:
 a green snake on a light blue background:

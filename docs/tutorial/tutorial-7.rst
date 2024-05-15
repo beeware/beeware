@@ -423,10 +423,10 @@ packaging our app again. Ensure that you've saved your changes to
 
       [helloworld] Updating requirements...
       Collecting httpx
-        Using cached httpx-0.19.0-py3-none-any.whl (77 kB)
+        Using cached httpx-0.27.0-py3-none-any.whl.metadata (7.2 kB)
       ...
-      Installing collected packages: sniffio, idna, travertino, rfc3986, h11, anyio, toga-core, rubicon-objc, httpcore, charset-normalizer, certifi, toga-cocoa, httpx
-      Successfully installed anyio-3.3.2 certifi-2021.10.8 charset-normalizer-2.0.6 h11-0.12.0 httpcore-0.13.7 httpx-0.19.0 idna-3.2 rfc3986-1.5.0 rubicon-objc-0.4.1 sniffio-1.2.0 toga-cocoa-0.3.0.dev28 toga-core-0.3.0.dev28 travertino-0.1.3
+      Installing collected packages: zipp, typing-extensions, travertino, sniffio, pycairo, idna, h11, exceptiongroup, certifi, pygobject, importlib-metadata, httpcore, anyio, toga-core, httpx, gbulb, toga-gtk
+      Successfully installed anyio-4.3.0 certifi-2024.2.2 exceptiongroup-1.2.1 gbulb-0.6.5 h11-0.14.0 httpcore-1.0.5 httpx-0.27.0 idna-3.7 importlib-metadata-7.1.0 pycairo-1.26.0 pygobject-3.48.2 sniffio-1.3.1 toga-core-0.4.4 toga-gtk-0.4.4 travertino-0.3.0 typing-extensions-4.11.0 zipp-3.18.1
 
       [helloworld] Removing unneeded app content...
       ...
@@ -442,7 +442,6 @@ packaging our app again. Ensure that you've saved your changes to
       [helloworld] Finalizing application configuration...
       Targeting ubuntu:jammy (Vendor base debian)
       Determining glibc version... done
-
       Targeting glibc 2.35
       Targeting Python3.10
 
@@ -451,10 +450,10 @@ packaging our app again. Ensure that you've saved your changes to
 
       [helloworld] Updating requirements...
       Collecting httpx
-        Using cached httpx-0.19.0-py3-none-any.whl (77 kB)
-      ...
-      Installing collected packages: sniffio, idna, travertino, rfc3986, h11, anyio, toga-core, rubicon-objc, httpcore, charset-normalizer, certifi, toga-cocoa, httpx
-      Successfully installed anyio-3.3.2 certifi-2021.10.8 charset-normalizer-2.0.6 h11-0.12.0 httpcore-0.13.7 httpx-0.19.0 idna-3.2 rfc3986-1.5.0 rubicon-objc-0.4.1 sniffio-1.2.0 toga-cocoa-0.3.0.dev28 toga-core-0.3.0.dev28 travertino-0.1.3
+        Using cached httpx-0.27.0-py3-none-any.whl.metadata (7.2 kB)
+              ...
+      Installing collected packages: zipp, typing-extensions, travertino, sniffio, pycairo, idna, h11, exceptiongroup, certifi, pygobject, importlib-metadata, httpcore, anyio, toga-core, httpx, gbulb, toga-gtk
+      Successfully installed anyio-4.3.0 certifi-2024.2.2 exceptiongroup-1.2.1 gbulb-0.6.5 h11-0.14.0 httpcore-1.0.5 httpx-0.27.0 idna-3.7 importlib-metadata-7.1.0 pycairo-1.26.0 pygobject-3.48.2 sniffio-1.3.1 toga-core-0.4.4 toga-gtk-0.4.4 travertino-0.3.0 typing-extensions-4.11.0 zipp-3.18.1
 
       [helloworld] Removing unneeded app content...
       ...
@@ -472,10 +471,10 @@ packaging our app again. Ensure that you've saved your changes to
 
       [helloworld] Updating requirements...
       Collecting httpx
-        Using cached httpx-0.19.0-py3-none-any.whl (77 kB)
-      ...
-      Installing collected packages: sniffio, idna, travertino, rfc3986, h11, anyio, toga-core, rubicon-objc, httpcore, charset-normalizer, certifi, toga-cocoa, httpx
-      Successfully installed anyio-3.3.2 certifi-2021.10.8 charset-normalizer-2.0.6 h11-0.12.0 httpcore-0.13.7 httpx-0.19.0 idna-3.2 rfc3986-1.5.0 rubicon-objc-0.4.1 sniffio-1.2.0 toga-cocoa-0.3.0.dev28 toga-core-0.3.0.dev28 travertino-0.1.3
+        Using cached httpx-0.27.0-py3-none-any.whl.metadata (7.2 kB)
+              ...
+      Installing collected packages: zipp, typing-extensions, travertino, sniffio, pycairo, idna, h11, exceptiongroup, certifi, pygobject, importlib-metadata, httpcore, anyio, toga-core, httpx, gbulb, toga-gtk
+      Successfully installed anyio-4.3.0 certifi-2024.2.2 exceptiongroup-1.2.1 gbulb-0.6.5 h11-0.14.0 httpcore-1.0.5 httpx-0.27.0 idna-3.7 importlib-metadata-7.1.0 pycairo-1.26.0 pygobject-3.48.2 sniffio-1.3.1 toga-core-0.4.4 toga-gtk-0.4.4 travertino-0.3.0 typing-extensions-4.11.0 zipp-3.18.1
 
       [helloworld] Removing unneeded app content...
       ...

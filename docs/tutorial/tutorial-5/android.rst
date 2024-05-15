@@ -25,7 +25,7 @@ adds your Python code to it.
       (beeware-venv) $ briefcase create android
 
       [helloworld] Generating application template...
-      Using app template: https://github.com/beeware/briefcase-android-gradle-template.git, branch v0.3.14
+      Using app template: https://github.com/beeware/briefcase-android-gradle-template.git, branch v0.3.18
       ...
 
       [helloworld] Installing support package...
@@ -52,7 +52,7 @@ adds your Python code to it.
       (beeware-venv) $ briefcase create android
 
       [helloworld] Generating application template...
-      Using app template: https://github.com/beeware/briefcase-android-gradle-template.git, branch v0.3.14
+      Using app template: https://github.com/beeware/briefcase-android-gradle-template.git, branch v0.3.18
       ...
 
       [helloworld] Installing support package...
@@ -79,7 +79,7 @@ adds your Python code to it.
       (beeware-venv) C:\...>briefcase create android
 
       [helloworld] Generating application template...
-      Using app template: https://github.com/beeware/briefcase-android-gradle-template.git, branch v0.3.14
+      Using app template: https://github.com/beeware/briefcase-android-gradle-template.git, branch v0.3.18
       ...
 
       [helloworld] Installing support package...
@@ -286,7 +286,7 @@ where you ran ``briefcase run`` and look for any error messages.
 
 In future, if you want to run on this device without using the menu, you can
 provide the emulator's name to Briefcase, using ``briefcase run android -d
-@beePhone`` to run on the virtual device directly.
+"@beePhone"`` to run on the virtual device directly.
 
 Run the app on a physical device
 ================================

@@ -23,7 +23,7 @@ executing. The contents of ``__main__.py`` is relatively simple::
 
     from helloworld.app import main
 
-    if __name__ == '__main__':
+    if __name__ == "__main__":
         main().main_loop()
 
 That is - it imports the ``main`` method from the ``helloworld`` app; and if
@@ -89,7 +89,7 @@ matching the application's name. A Main Window is a special kind of window in
 Toga - it's a window that is closely bound to the life cycle of the app. When
 the Main Window is closed, the application exits. The Main Window is also the
 window that has the application's menu (if you're on a platform like Windows
-where menu bars are part of the window)
+where menu bars are part of the window).
 
 We then add our empty box as the content of the main window, and instruct the
 application to show our window::
@@ -122,7 +122,7 @@ looks like this::
 
             name_label = toga.Label(
                 "Your name: ",
-                style=Pack(padding=(0, 5))
+                style=Pack(padding=(0, 5)),
             )
             self.name_input = toga.TextInput(style=Pack(flex=1))
 
@@ -133,7 +133,7 @@ looks like this::
             button = toga.Button(
                 "Say Hello!",
                 on_press=self.say_hello,
-                style=Pack(padding=5)
+                style=Pack(padding=5),
             )
 
             main_box.add(name_box)
@@ -168,7 +168,7 @@ Next, we define a couple of widgets::
 
             name_label = toga.Label(
                 "Your name: ",
-                style=Pack(padding=(0, 5))
+                style=Pack(padding=(0, 5)),
             )
             self.name_input = toga.TextInput(style=Pack(flex=1))
 
@@ -196,7 +196,7 @@ Now we define a button::
             button = toga.Button(
                 "Say Hello!",
                 on_press=self.say_hello,
-                style=Pack(padding=5)
+                style=Pack(padding=5),
             )
 
 The button also has 5px of padding on all sides. We also define a *handler* -
@@ -208,7 +208,7 @@ Then, we add the name box and the button to the main box::
             main_box.add(button)
 
 This completes our layout; the rest of the startup method is as it was
-previously - defining a MainWindow, and assigning the main box as the window's
+previously - defining a ``MainWindow``, and assigning the main box as the window's
 content::
 
             self.main_window = toga.MainWindow(title=self.formal_name)
@@ -216,7 +216,7 @@ content::
             self.main_window.show()
 
 The last thing we need to do is define the handler for the button. A handler
-can be any method, generator, or asynchronous co-routine; it accepts the widget
+can be any method, generator, or asynchronous coroutine; it accepts the widget
 that generated the event as an argument, and will be invoked whenever the
 button is pressed::
 

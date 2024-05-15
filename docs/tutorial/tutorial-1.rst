@@ -121,26 +121,24 @@ followed this tutorial so far, and accepted the defaults as described, your
 file system should look something like::
 
     beeware-tutorial/
-        beeware-venv/
-            ...
-        helloworld/
-            CHANGELOG
-            LICENSE
-            README.rst
-            pyproject.toml
-            src/
-                helloworld/
-                    resources/
-                        helloworld.icns
-                        helloworld.ico
-                        helloworld.png
-                    __init__.py
-                    __main__.py
-                    app.py
-            tests/
-                __init__.py
-                helloworld.py
-                test_app.py
+    ├── beeware-venv/
+    │   └── ...
+    └── helloworld/
+        ├── CHANGELOG
+        ├── LICENSE
+        ├── pyproject.toml
+        ├── README.rst
+        ├── src/
+        │   └── helloworld/
+        │       ├── app.py
+        │       ├── __init__.py
+        │       ├── __main__.py
+        │       └── resources/
+        │           └── README
+        └── tests/
+            ├── helloworld.py
+            ├── __init__.py
+            └── test_app.py
 
 This skeleton is actually a fully functioning application without adding
 anything else. The ``src`` folder contains all the code for the application, the

@@ -23,7 +23,7 @@ Modify the ``say_hello`` callback so it looks like this::
     def say_hello(self, widget):
         self.main_window.info_dialog(
             f"Hello, {self.name_input.value}",
-            "Hi there!"
+            "Hi there!",
         )
 
 This directs Toga to open a modal dialog box when the button is pressed.
@@ -87,14 +87,18 @@ code for your existing bundled application:
 
       (beeware-venv) $ briefcase update
 
+      [helloworld] Finalizing application configuration...
+      Targeting ubuntu:jammy (Vendor base debian)
+      Determining glibc version... done
+      Targeting glibc 2.35
+      Targeting Python3.10
+
       [helloworld] Updating application code...
       Installing src/helloworld... done
 
       [helloworld] Removing unneeded app content...
       Removing unneeded app bundle content... done
 
-      [helloworld] Removing unneeded app content...
-      Removing unneeded app bundle content... done
 
       [helloworld] Application updated.
 
@@ -194,7 +198,6 @@ new logic works; then update, build and run the app with one command:
       [helloworld] Finalizing application configuration...
       Targeting ubuntu:jammy (Vendor base debian)
       Determining glibc version... done
-
       Targeting glibc 2.35
       Targeting Python3.10
 
