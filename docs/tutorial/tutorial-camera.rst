@@ -15,8 +15,7 @@ Prerequisites
 Make sure you at least have gotten to the point where you have the skeleton
 application running in developer mode. See the :doc:`first <tutorial-0>`
 :doc:`two <tutorial-1>` tutorials for details. Short story shorter, run the
-following commands in an empty directory.
-
+following commands in an empty directory and accept all the default options.
 
 .. tabs::
     .. group-tab:: macOS
@@ -49,18 +48,16 @@ following commands in an empty directory.
             (beeware-venv) C:\...>cd helloworld
             (beeware-venv) C:\...>briefcase dev
 
-
 The skeleton application should appear on your development machine. Exit the
 window and continue.
 
 Take a photo
 ============
 
-In order to add camera support, the highlighted code needs to be added to the
-code in your project's ``app.py`` file. If you've accepted all the default
-settings while bootstrapping the application, the full path of the file will be
+The highlighted code needs to be added to the code in your project's ``app.py``
+file. If you've accepted all the default settings while bootstrapping the
+application, the full path of the file will be
 ``helloworld/src/helloworld/app.py``.
-
 
 .. code-block:: python
     :emphasize-lines: 20-28, 34-51
@@ -121,13 +118,15 @@ settings while bootstrapping the application, the full path of the file will be
     def main():
         return HelloWorld()
 
+The first highlighted code block creates two widgets and adds them to the GUI
+layout. The user can click the ``Button`` widget to take a photo, which will
+then be displayed in the ``ImageView`` widget. The second highlighted code
+block defines the event handler that either launches the camera or displays an
+error message. If the camera is successfully launched and a picture is taken,
+the image is set to the ``ImageView`` widget's ``image`` attribute and
+displayed.
 
-The first highlighted code block creates two widgets, an ``ImageView`` to
-display the photo and a ``Button`` to take the photo, and adds them to the GUI
-layout. The second highlighted code block defines the event handler that
-either takes the photo or throws an appropriate error.
-
-Device Permissions
+Device permissions
 ==================
 
 We will try to run the application on our mobile device, but find we are not
@@ -188,17 +187,15 @@ commands to deploy the application to your mobile device.
 For more details on installing your application to a mobile device, see
 :doc:`Tutorial 5 <tutorial-5/index>`.
 
-Once the app has successfully started on your mobile device, you will notice
-that you are still not yet able to take a picture. This is because the project
-did not specify it will need camera permissions in the ``pyproject.toml`` file.
-Add the following line:
+If you click the button to take a photo, you will see an error. This is because
+the project did not specify the necessary camera permissions. Add the following
+line to the ``pyproject.toml`` file.
 
 .. code-block:: toml
 
     [tool.briefcase.app.helloworld]
     ...
     permission.camera = "App will take mugshots."
-
 
 Deploy the application to the mobile device again.
 
@@ -245,10 +242,8 @@ Deploy the application to the mobile device again.
                 (beeware-venv) C:\...>briefcase build iOS
                 (beeware-venv) C:\...>briefcase run iOS
 
-
 This also doesn't work. This is because modifications to the ``pyproject.toml``
 file require completely recreating the project. 
-
 
 .. tabs::
 
@@ -300,6 +295,5 @@ file require completely recreating the project.
                 (beeware-venv) C:\...>briefcase build iOS
                 (beeware-venv) C:\...>briefcase run iOS
 
-
-The application should launch on your mobile device, click the button to take a
+The application should launch on your mobile device. Click the button to take a
 picture and it should appear in the GUI.
