@@ -134,55 +134,56 @@ We will try to run the application on our mobile device, but find we are not
 quite there yet. From the directory with the ``pyproject.toml`` file, run the
 commands to deploy the application to your mobile device.
 
-
 .. tabs::
 
-  .. group-tab:: Android
+  .. group-tab:: macOS
     .. tabs::
-        .. group-tab:: macOS
+      .. group-tab:: Android
             .. code-block:: console
 
                 (beeware-venv)$ briefcase create android
                 (beeware-venv)$ briefcase build android
                 (beeware-venv)$ briefcase run android
 
-        .. group-tab:: Linux
+      .. group-tab:: iOS
+            .. code-block:: console
+
+                (beeware-venv)$ briefcase create iOS
+                (beeware-venv)$ briefcase build iOS
+                (beeware-venv)$ briefcase run iOS
+
+  .. group-tab:: Linux
+    .. tabs::
+      .. group-tab:: Android
             .. code-block:: console
 
                 (beeware-venv)$ briefcase create android
                 (beeware-venv)$ briefcase build android
                 (beeware-venv)$ briefcase run android
 
-        .. group-tab:: Windows
+      .. group-tab:: iOS
+            .. code-block:: console
+
+                (beeware-venv)$ briefcase create iOS
+                (beeware-venv)$ briefcase build iOS
+                (beeware-venv)$ briefcase run iOS
+
+  .. group-tab:: Windows
+    .. tabs::
+      .. group-tab:: Android
             .. code-block:: doscon
 
                 (beeware-venv) C:\...>briefcase create android
                 (beeware-venv) C:\...>briefcase build android
                 (beeware-venv) C:\...>briefcase run android
 
-
-  .. group-tab:: iOS
-    .. tabs::
-        .. group-tab:: macOS
-            .. code-block:: console
-
-                (beeware-venv)$ briefcase create iOS
-                (beeware-venv)$ briefcase build iOS
-                (beeware-venv)$ briefcase run iOS
-
-        .. group-tab:: Linux
-            .. code-block:: console
-
-                (beeware-venv)$ briefcase create iOS
-                (beeware-venv)$ briefcase build iOS
-                (beeware-venv)$ briefcase run iOS
-
-        .. group-tab:: Windows
+      .. group-tab:: iOS
             .. code-block:: doscon
 
                 (beeware-venv) C:\...>briefcase create iOS
                 (beeware-venv) C:\...>briefcase build iOS
                 (beeware-venv) C:\...>briefcase run iOS
+
 
 For more details on installing your application to a mobile device, see
 :doc:`Tutorial 5 <tutorial-5/index>`.
@@ -203,42 +204,42 @@ Deploy the application to the mobile device again.
 
 .. tabs::
 
-  .. group-tab:: Android
+  .. group-tab:: macOS
     .. tabs::
-        .. group-tab:: macOS
+      .. group-tab:: Android
+            .. code-block:: console
+
+                (beeware-venv)$ briefcase build android
+                (beeware-venv)$ briefcase run android
+      .. group-tab:: iOS
+            .. code-block:: console
+
+                (beeware-venv)$ briefcase build iOS
+                (beeware-venv)$ briefcase run iOS
+
+  .. group-tab:: Linux
+    .. tabs::
+      .. group-tab:: Android
             .. code-block:: console
 
                 (beeware-venv)$ briefcase build android
                 (beeware-venv)$ briefcase run android
 
-        .. group-tab:: Linux
+      .. group-tab:: iOS
             .. code-block:: console
 
-                (beeware-venv)$ briefcase build android
-                (beeware-venv)$ briefcase run android
+                (beeware-venv)$ briefcase build iOS
+                (beeware-venv)$ briefcase run iOS
 
-        .. group-tab:: Windows
+  .. group-tab:: Windows
+    .. tabs::
+      .. group-tab:: Android
             .. code-block:: doscon
 
                 (beeware-venv) C:\...>briefcase build android
                 (beeware-venv) C:\...>briefcase run android
 
-
-  .. group-tab:: iOS
-    .. tabs::
-        .. group-tab:: macOS
-            .. code-block:: console
-
-                (beeware-venv)$ briefcase build iOS
-                (beeware-venv)$ briefcase run iOS
-
-        .. group-tab:: Linux
-            .. code-block:: console
-
-                (beeware-venv)$ briefcase build iOS
-                (beeware-venv)$ briefcase run iOS
-
-        .. group-tab:: Windows
+      .. group-tab:: iOS
             .. code-block:: doscon
 
                 (beeware-venv) C:\...>briefcase build iOS
@@ -248,49 +249,51 @@ Deploy the application to the mobile device again.
 This also doesn't work. This is because modifications to the ``pyproject.toml``
 file require completely recreating the project. 
 
+
 .. tabs::
 
-  .. group-tab:: Android
+  .. group-tab:: macOS
     .. tabs::
-        .. group-tab:: macOS
+      .. group-tab:: Android
             .. code-block:: console
 
                 (beeware-venv)$ briefcase create android
                 (beeware-venv)$ briefcase build android
                 (beeware-venv)$ briefcase run android
 
-        .. group-tab:: Linux
+      .. group-tab:: iOS
+            .. code-block:: console
+
+                (beeware-venv)$ briefcase create iOS
+                (beeware-venv)$ briefcase build iOS
+                (beeware-venv)$ briefcase run iOS
+
+  .. group-tab:: Linux
+    .. tabs::
+      .. group-tab:: Android
             .. code-block:: console
 
                 (beeware-venv)$ briefcase create android
                 (beeware-venv)$ briefcase build android
                 (beeware-venv)$ briefcase run android
 
-        .. group-tab:: Windows
+      .. group-tab:: iOS
+            .. code-block:: console
+
+                (beeware-venv)$ briefcase create iOS
+                (beeware-venv)$ briefcase build iOS
+                (beeware-venv)$ briefcase run iOS
+
+  .. group-tab:: Windows
+    .. tabs::
+      .. group-tab:: Android
             .. code-block:: doscon
 
                 (beeware-venv) C:\...>briefcase create android
                 (beeware-venv) C:\...>briefcase build android
                 (beeware-venv) C:\...>briefcase run android
 
-
-  .. group-tab:: iOS
-    .. tabs::
-        .. group-tab:: macOS
-            .. code-block:: console
-
-                (beeware-venv)$ briefcase create iOS
-                (beeware-venv)$ briefcase build iOS
-                (beeware-venv)$ briefcase run iOS
-
-        .. group-tab:: Linux
-            .. code-block:: console
-
-                (beeware-venv)$ briefcase create iOS
-                (beeware-venv)$ briefcase build iOS
-                (beeware-venv)$ briefcase run iOS
-
-        .. group-tab:: Windows
+      .. group-tab:: iOS
             .. code-block:: doscon
 
                 (beeware-venv) C:\...>briefcase create iOS
