@@ -93,3 +93,4 @@ Python! <tutorial/tutorial-0>`
     tutorial/tutorial-9
     tutorial/tutorial-10
     tutorial/tutorial-11
+    tutorial/tutorial-camera
