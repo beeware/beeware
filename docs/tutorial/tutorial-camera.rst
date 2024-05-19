@@ -243,7 +243,7 @@ Deploy the application to the mobile device again.
                 (beeware-venv) C:\...>briefcase run iOS
 
 This also doesn't work. This is because modifications to the ``pyproject.toml``
-file require completely recreating the project. 
+file require completely recreating the project.
 
 .. tabs::
 
