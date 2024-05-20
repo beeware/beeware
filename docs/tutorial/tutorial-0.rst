@@ -87,9 +87,9 @@ Next, install the additional dependencies needed for your operating system:
 
     * **Git**, a version control system. This is included with Xcode or the
       command line developer tools, which you installed above.
-    * You may need to open Xcode for the first time in order for Git to work 
-      in your terminal session. If it still doesn't register that Git is installed, 
-      you may need to restart your terminal session.
+    * You may need to open Xcode for the first time in order for Git to work
+      in your terminal session. If it still doesn't register that Git is
+      installed, you may need to restart your terminal session.
 
   .. group-tab:: Linux
 
