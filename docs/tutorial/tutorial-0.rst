@@ -182,7 +182,7 @@ and without the need to re-install Python.
 
       Your Windows account doesn't have permissions to run scripts. To fix this:
 
-      1. Run Windows PowerShell as Administrator.
+      1. Run `Windows PowerShell as Administrator <https://learn.microsoft.com/en-us/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7.4>`_.
       2. Run ``set-executionpolicy RemoteSigned``
       3. Select ``Y`` to change the execution policy.
 
