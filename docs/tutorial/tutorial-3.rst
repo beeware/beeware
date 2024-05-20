@@ -81,6 +81,15 @@ From the ``helloworld`` directory, run:
       Removing unneeded app bundle content... done
 
       [helloworld] Created build/helloworld/linux/ubuntu/jammy
+  
+  .. admonition:: Errors running briefcase create
+
+      If you receive the error:
+
+          The version of Python being used to run Briefcase (3.xx) is not the system python3 (3.yy).
+
+      You will need to recreate your virtual environment using the system python3.  Using the system
+      python is a requirement for packaging your application. 
 
   .. group-tab:: Windows
 
