@@ -1,9 +1,9 @@
-==================
-Topic subtutorials
-==================
+============
+Subtutorials
+============
 
-These topic subtutorials can be completed in any order, but the main tutorials
-are considered prerequisites.
+These subtutorials can be completed in any order, but the main tutorials are
+considered prerequisites.
 
 .. grid:: 1 1 2 2
 

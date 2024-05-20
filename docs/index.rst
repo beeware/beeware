@@ -92,4 +92,4 @@ Python! <tutorial/tutorial-0>`
     tutorial/tutorial-8
     tutorial/tutorial-9
     tutorial/tutorial-10
-    tutorial/topic-subtutorials/index
+    tutorial/subtutorials/index
