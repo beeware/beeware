@@ -97,7 +97,7 @@ application to show our window::
             self.main_window.content = main_box
             self.main_window.show()
 
-Last of all, we define a ``main()`` method. This is what creates the instance
+Last of all, we define a ``main()`` function. This is what creates the instance
 of our application::
 
     def main():
