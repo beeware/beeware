@@ -185,10 +185,10 @@ and without the need to re-install Python.
       1. Run `Windows PowerShell as Administrator <https://learn.microsoft.com/en-us/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7.4>`_.
       2. Run ``set-executionpolicy RemoteSigned``
       3. Select ``Y`` to change the execution policy.
+
       Once you've done this you can rerun
       ``beeware-venv\Scripts\activate.ps1`` in your original PowerShell
       session (or a new session in the same directory).
-
 
 If this worked, your prompt should now be changed - it should have a
 ``(beeware-venv)`` prefix. This lets you know that you're currently in your
