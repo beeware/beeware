@@ -189,6 +189,7 @@ and without the need to re-install Python.
       ``beeware-venv\Scripts\activate.ps1`` in your original PowerShell
       session (or a new session in the same directory).
 
+
 If this worked, your prompt should now be changed - it should have a
 ``(beeware-venv)`` prefix. This lets you know that you're currently in your
 BeeWare virtual environment. Whenever you're working on this tutorial, you
