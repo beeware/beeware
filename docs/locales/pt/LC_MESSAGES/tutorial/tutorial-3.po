@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-15 18:36+0000\n"
+"POT-Creation-Date: 2024-05-21 20:05+0000\n"
 "PO-Revision-Date: 2024-03-04 19:01+0000\n"
 "Last-Translator: joaovitorpmoreira <programacaojoaopm@gmail.com>\n"
 "Language: pt\n"
@@ -18,251 +18,267 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: ../../tutorial/tutorial-3.rst:3 8aaa249f1a774fd2ae69ec737dc7348c
+#: ../../tutorial/tutorial-3.rst:3 783cd122e9b5462ab3aad6e7560ec9be
 msgid "Tutorial 3 - Packaging for distribution"
 msgstr "Tutorial 3 - Empacotando para Distribuição"
 
-#: ../../tutorial/tutorial-3.rst:5 1841469143a948178b4bcced979d4179
+#: ../../tutorial/tutorial-3.rst:5 174ad237b26f489c937a7fd0e53cef4c
 msgid "So far, we've been running our application in \"Developer mode\". This makes it easy for us to run our application locally - but what we really want is to be able to give our application to others."
 msgstr "Até o momento, executamos nossa aplicação no \"modo de desenvolvedor\". Isso facilita a execução da nossa aplicação localmente - mas o que realmente queremos é poder fornecer nossa aplicação para outras pessoas."
 
-#: ../../tutorial/tutorial-3.rst:9 0192c8892c794ba9b6ec3bd8ff0efa28
+#: ../../tutorial/tutorial-3.rst:9 2f82bd665eb04ff79fbad00e59848009
 msgid "However, we don't want to have to teach our users how to install Python, create a virtual environment, clone a git repository, and run Briefcase in developer mode. We'd rather just give them an installer, and have the application Just Work."
 msgstr "Entretanto, não queremos ter que ensinar aos nossos usuários como instalar o Python, criar um ambiente virtual, clonar um repositório git e executar o Briefcase no modo de desenvolvedor. Queremos é fornecer um instalador, garantindo a execução imediata da aplicação."
 
-#: ../../tutorial/tutorial-3.rst:14 a9de6b522ace470099649bc9073dff2a
+#: ../../tutorial/tutorial-3.rst:14 38972c40f114461085f600d9eab89465
 msgid "Briefcase can be used to package your application for distribution in this way."
 msgstr "O Briefcase pode ser usado para empacotar sua aplicação para distribuição dessa maneira."
 
-#: ../../tutorial/tutorial-3.rst:17 eecd4d8133bb489c9770dccf298edfc1
+#: ../../tutorial/tutorial-3.rst:17 282a291c1efa4084a1ee48f114d3e5c5
 msgid "Creating your application scaffold"
 msgstr "Criando a estrutura da sua aplicação"
 
-#: ../../tutorial/tutorial-3.rst:19 c0fd40f8a30b443081250ad207e91ff7
+#: ../../tutorial/tutorial-3.rst:19 f370483d43ee4f1d9953edbe765aa277
 msgid "Since this is the first time we're packaging our application, we need to create some configuration files and other scaffolding to support the packaging process. From the ``helloworld`` directory, run:"
 msgstr "Como esta é a primeira vez que estamos empacotando nossa aplicação, precisamos criar alguns arquivos de configuração e outras estruturas de suporte ao processo de empacotamento. No diretório ``helloworld``, execute:"
 
-#: ../../tutorial/tutorial-3.rst:25 ../../tutorial/tutorial-3.rst:178
-#: ../../tutorial/tutorial-3.rst:258 ../../tutorial/tutorial-3.rst:351
-#: 39beb5ae45284f22a922917ab7436ec0 3d36358cf2ca43b98b4b240fb3e76377
-#: 6d594e36726c4c23baac2e5e8003f86c 8877960440e94c959e441c595779a4f7
+#: ../../tutorial/tutorial-3.rst:25 ../../tutorial/tutorial-3.rst:188
+#: ../../tutorial/tutorial-3.rst:268 ../../tutorial/tutorial-3.rst:361
+#: 45c1f1cb688247dca8911bc5620af87c 6157a848e6f0463d809d09d4dff9dfcb
+#: 76dfcb48f286471ea44f4cdbe35bf7df cef00bb6b55d45cd8f3fa1c9638b0863
 msgid "macOS"
 msgstr "macOS"
 
-#: ../../tutorial/tutorial-3.rst:52 ../../tutorial/tutorial-3.rst:197
-#: ../../tutorial/tutorial-3.rst:281 ../../tutorial/tutorial-3.rst:401
-#: 777fe4a1bae7479a8a0e1d1d746150d5 7a1eca4ee0f142119aa64f97bc2fb807
-#: 8763df82862f4337bbad58ebd474bf28 94cd237b3e1148b2895fc3d8a085a4be
+#: ../../tutorial/tutorial-3.rst:52 ../../tutorial/tutorial-3.rst:207
+#: ../../tutorial/tutorial-3.rst:291 ../../tutorial/tutorial-3.rst:411
+#: 2a63313e6f744099987f2d6c2a0f0393 3c37d49e9c3d45eb8625c2e158336351
+#: a9a91a6acd2a4cf9aff23a4f96d835f3 f89f8b094ecf4426864bf149447292b5
 msgid "Linux"
 msgstr "Linux"
 
-#: ../../tutorial/tutorial-3.rst:85 ../../tutorial/tutorial-3.rst:229
-#: ../../tutorial/tutorial-3.rst:307 ../../tutorial/tutorial-3.rst:510
-#: 4f58b9d5a3ab449b8da6a1e33c7c5659 6c4254b40dec419aaa9867431e243f79
-#: a3456d58ec764b349356ce9ba0777324 dd4a48505bd543858c5fbeb4cf9cd17c
+#: ../../tutorial/tutorial-3.rst:85 df9569858d4541029f4acbcae57ccb70
+msgid "Errors about Python versions"
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:87 16f10ac3180c4f909344dc2bbb09ecae
+msgid "If you receive an error that reads something like:"
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:89 6442e2b47e6d4868830dcf881db44d50
+msgid "The version of Python being used to run Briefcase (3.12) is not the system python3 (3.10)."
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:91 6f2956dd0c5446df952acbc3b1041e31
+msgid "You will need to recreate your virtual environment using the system ``python3``. Using the system Python is a requirement for packaging your application."
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:95 ../../tutorial/tutorial-3.rst:239
+#: ../../tutorial/tutorial-3.rst:317 ../../tutorial/tutorial-3.rst:520
+#: 2985b30a72b34e9cacaff5b2d10ab2c5 92e03afd61f64e1c858346b0dddd6399
+#: 93ff07d330984e4186087ec1d9d51aa6 c4d368e8ecb2448a9ea4574357249745
 msgid "Windows"
 msgstr "Windows"
 
-#: ../../tutorial/tutorial-3.rst:109 f9078ef62bde434aaf6bbcae3c0b4bba
+#: ../../tutorial/tutorial-3.rst:119 6b06ba4445c34aac84cd43908ff754aa
 msgid "You've probably just seen pages of content go past in your terminal... so what just happened? Briefcase has done the following:"
 msgstr "É provável que você tenha observado uma grande quantidade de texto passando pelo seu terminal... mas o que exatamente aconteceu? O Briefcase fez o seguinte:"
 
-#: ../../tutorial/tutorial-3.rst:112 89d6d4d0467c495185cd06e1ef2f3ff5
+#: ../../tutorial/tutorial-3.rst:122 cac63722e4c740c0bace3890a30195ae
 msgid "It **generated an application template**. There's a lot of files and configurations required to build a native installer, above and beyond the code of your actual application. This extra scaffolding is almost the same for every application on the same platform, except for the name of the actual application being constructed - so Briefcase provides an application template for each platform it supports. This step rolls out the template, substituting the name of your application, bundle ID, and other properties of your configuration file as required to support the platform you're building on."
 msgstr "Ele **gerou um modelo de aplicação** (template). Existem muitos arquivos e configurações necessárias para construir um instalador nativo, além do código da sua aplicação. Essa estrutura extra é quase igual para todas as aplicações na mesma plataforma, exceto pelo nome da aplicação que está sendo construída - um modelo de aplicação (template) é fornecido pelo Briefcase para cada plataforma que ele suporta. Esta etapa implementa o modelo, substituindo o nome da sua aplicação, ID do pacote e outras propriedades do seu arquivo de configuração conforme necessário para suportar a plataforma na qual você está construindo."
 
-#: ../../tutorial/tutorial-3.rst:122 1a8e6fa32dbf4671a1841c6274eda94a
+#: ../../tutorial/tutorial-3.rst:132 7081152944f44b95b760d7b787343c41
 msgid "If you're not happy with the template provided by Briefcase, you can provide your own. However, you probably don't want to do this until you've got a bit more experience using Briefcase's default template."
 msgstr "Caso o modelo fornecido pelo Briefcase não seja satisfatório, é possível você fornecer um modelo próprio. Entretanto, é recomendável que isso não seja feito antes de se obter maior familiaridade com o modelo padrão do Briefcase."
 
-#: ../../tutorial/tutorial-3.rst:126 fa9f500e2672441ea9ce85f7e72749cb
+#: ../../tutorial/tutorial-3.rst:136 2ee399d8f98346a4b92234c6aafcfba6
 #, fuzzy
 msgid "It **downloaded and installed a support package**. The packaging approach taken by Briefcase is best described as \"the simplest thing that could possibly work\" - it ships a complete, isolated Python interpreter as part of every application it builds (except for Linux native system package builds). This is slightly space inefficient - if you have 5 applications packaged with Briefcase, you'll have 5 copies of the Python interpreter. However, this approach guarantees that every application is completely independent, using a specific version of Python that is known to work with the application."
 msgstr "Ele **baixou e instalou um pacote de suporte**. A abordagem de empacotamento adotada pelo Briefcase é melhor descrita como \"a coisa mais simples que poderia funcionar\" - ele inclui um interpretador Python completo e isolado como parte de cada aplicativo criado. Isso apresenta uma ligeira ineficiência em termos de espaço - se você tiver 5 aplicativos empacotados com o Briefcase, terá 5 cópias do interpretador Python. No entanto, essa abordagem garante que cada aplicação seja completamente independente, usando uma versão específica do Python que comprovadamente funciona com tal aplicação."
 
-#: ../../tutorial/tutorial-3.rst:135 9de06b18ef944db4b74bd90c6b137f05
+#: ../../tutorial/tutorial-3.rst:145 62b4f9e7432b4d46b96eb5768743c948
 msgid "Again, Briefcase provides a default support package for each platform; if you want, you can provide your own support package, and have that package included as part of the build process. You may want to do this if you have particular options in the Python interpreter that you need to have enabled, or if you want to strip modules out of the standard library that you don't need at runtime."
 msgstr "Novamente, o Briefcase fornece um pacote de suporte padrão para cada plataforma; entretanto, caso deseje, você pode fornecer seu próprio pacote de suporte e incluí-lo como parte do processo de construção. Isso pode ser útil se você necessita de opções específicas habilitadas no interpretador Python, ou se deseja remover módulos da biblioteca padrão que não são necessários em tempo de execução."
 
-#: ../../tutorial/tutorial-3.rst:142 ae4f319e61034aafb7d8c335c101e9e6
+#: ../../tutorial/tutorial-3.rst:152 3b4bf5aa53f6491db4093edbd5bf466a
 msgid "Briefcase maintains a local cache of support packages, so once you've downloaded a specific support package, that cached copy will be used on future builds."
 msgstr "O Briefcase mantém um cache local de pacotes de suporte. Portanto, uma vez que você tenha baixado um pacote de suporte específico, essa cópia armazenada será utilizada em compilações futuras."
 
-#: ../../tutorial/tutorial-3.rst:146 7baaf143dc794e09b62fc9f05a901b1b
+#: ../../tutorial/tutorial-3.rst:156 b2bca2be97ca48af9ae714099ddabc93
 msgid "As noted above, when Briefcase packages an app as a native Linux system package (the default package format for Linux), a support package is not included with the app. Instead, the app will use the Python that is provided by the distribution of Linux being targeted."
 msgstr ""
 
-#: ../../tutorial/tutorial-3.rst:151 6ffe6aafece2458d8ede425ea94f5975
+#: ../../tutorial/tutorial-3.rst:161 82f2ded1f6f0458d84be19c1db28af0c
 msgid "It **installed application requirements**. Your application can specify any third-party modules that are required at runtime. These will be installed using ``pip`` into your application's installer."
 msgstr "Ele **instalou os requisitos da aplicação**. Seu aplicativo pode especificar quaisquer módulos de terceiros necessários em tempo de execução. Estes serão instalados utilizando o ``pip`` no instalador da sua aplicação."
 
-#: ../../tutorial/tutorial-3.rst:155 12893adbfb9a4b5da3a08ffb4640b1c0
+#: ../../tutorial/tutorial-3.rst:165 f380d568066c4e819010a1e42bddaf64
 msgid "It **Installed your application code**. Your application will have its own code and resources (e.g., images that are needed at runtime); these files are copied into the installer."
 msgstr "Ele **instalou o código da sua aplicação**. Sua aplicação terá seu próprio código e recursos (por exemplo, imagens necessárias em tempo de execução); estes arquivos são copiados para o instalador."
 
-#: ../../tutorial/tutorial-3.rst:159 4dc60a1270a847f28bf43172dc789920
+#: ../../tutorial/tutorial-3.rst:169 fd8c6bcd3e7c46769f5b40315d1d436e
 msgid "It **installed your resources needed by your application.** Lastly, it adds any additional resources that are needed by the installer itself. This includes things like icons that need to be attached to the final application and splash screen images."
 msgstr "Ele **instalou os recursos requeridos pela sua aplicação.** Por fim, são adicionados recursos adicionais requeridos pelo próprio instalador. Isso inclui elementos como ícones que serão anexados à aplicação final e imagens de tela de abertura."
 
-#: ../../tutorial/tutorial-3.rst:164 0fbc9c9beeaa4ae0a96987baa19f93ac
+#: ../../tutorial/tutorial-3.rst:174 a886f291f63845fcb7d3bfebff56549b
 msgid "Once this completes, if you look in the project directory, you should now see a directory corresponding to your platform (``macOS``, ``linux``, or ``windows``) that contains additional files. This is the platform-specific packaging configuration for your application."
 msgstr "Assim que concluído, ao verificar o diretório do projeto, você deverá encontrar um diretório correspondente à sua plataforma (``macOS``, ``linux`` ou ``windows``) contendo arquivos adicionais. Esta é a configuração de empacotamento específica para a plataforma da sua aplicação."
 
-#: ../../tutorial/tutorial-3.rst:170 a5dc10cd939c44d992b2574a8bdbc471
+#: ../../tutorial/tutorial-3.rst:180 c8386ea1fe53447eb6835280cab8d4d3
 msgid "Building your application"
 msgstr "Compilando sua aplicação"
 
-#: ../../tutorial/tutorial-3.rst:172 0755f8ec3697455c874de9615aa339ca
+#: ../../tutorial/tutorial-3.rst:182 f2eb504aefd840d5ad2a82905fb83596
 msgid "You can now compile your application. This step performs any binary compilation that is necessary for your application to be executable on your target platform."
 msgstr "Agora você pode compilar sua aplicação. Este passo executa qualquer compilação binária necessária para que sua aplicação seja executável na plataforma de destino."
 
-#: ../../tutorial/tutorial-3.rst:191 3fc269d3dc6e48e89b67848ccc9889aa
+#: ../../tutorial/tutorial-3.rst:201 de581576a03146fcbd5a70d62b4f3d65
 msgid "On macOS, the ``build`` command doesn't need to *compile* anything, but it does need to sign the contents of binary so that it can be executed. This signature is an *ad hoc* signature - it will only work on *your* machine; if you want to distribute the application to others, you'll need to provide a full signature."
 msgstr "No macOS, o comando ``build`` não necessita *compilar* nada, mas precisa assinar o conteúdo do binário para que ele possa ser executado. Essa assinatura é do tipo *ad hoc* - só funcionará no *seu* computador. Se você deseja distribuir a aplicação para outras pessoas, será necessário fornecer uma assinatura completa."
 
-#: ../../tutorial/tutorial-3.rst:223 be600eb5c0ce40b4858b6fd848c5466f
+#: ../../tutorial/tutorial-3.rst:233 80ee65756ee54ded9a1b6d4cf16d9e2b
 msgid "Once this step completes, the ``build`` folder will contain a ``helloworld-0.0.1`` folder that contains a mirror of a Linux ``/usr`` file system. This file system mirror will contain a ``bin`` folder with a ``helloworld`` binary, plus ``lib`` and ``share`` folders needed to support the binary."
 msgstr "Após a conclusão dessa etapa, a pasta ``build`` conterá uma pasta ``helloworld-0.0.1`` com uma estrutura semelhante ao sistema de arquivos ``/usr`` do Linux. Ela conterá uma pasta ``bin`` com um binário ``helloworld``, além das pastas ``lib`` e ``share`` necessárias para dar suporte ao binário."
 
-#: ../../tutorial/tutorial-3.rst:238 42df6aae5c2f4be3bd85248168b9c9e3
+#: ../../tutorial/tutorial-3.rst:248 c27b60d649e04f148c8c545becfe9730
 msgid "On Windows, the ``build`` command doesn't need to *compile* anything, but it does need to write some metadata so that the application knows its name, version, and so on."
 msgstr "No Windows, o comando ``build`` não precisa *compilar* nada, mas é preciso registrar alguns metadados para que a aplicação reconheça seu nome, versão e outras coisas assim."
 
-#: ../../tutorial/tutorial-3.rst:242 c8951108813e4e1aae1d0db432401905
+#: ../../tutorial/tutorial-3.rst:252 7fd9012577b3477da033c5e9180eb4c4
 msgid "Triggering antivirus"
 msgstr "Notificação de antivírus"
 
-#: ../../tutorial/tutorial-3.rst:244 c6228623c2764a688177187b3166ba52
+#: ../../tutorial/tutorial-3.rst:254 f244f0ffe07140f0b8966a155ec84c4e
 msgid "Since this metadata is being written directly in to the pre-compiled binary rolled out from the template during the ``create`` command, this may trigger antivirus software running on your machine and prevent the metadata from being written. In that case, instruct the antivirus to allow the tool (named ``rcedit-x64.exe``) to run and re-run the command above."
 msgstr "Como esses metadados estão sendo gravados diretamente no binário pré-compilado que sai do modelo durante o comando ``create``, isso pode acionar o software antivírus em execução no computador e impedir que os metadados sejam gravados. Nesse caso, instrua o antivírus a permitir que a ferramenta (denominada ``rcedit-x64.exe``) seja executada e execute novamente o comando acima."
 
-#: ../../tutorial/tutorial-3.rst:252 28d01684df184ad8b7d54a08e38bfd1d
+#: ../../tutorial/tutorial-3.rst:262 273d2f3244484b03af931621a1981955
 msgid "Running your app"
 msgstr "Rodando sua aplicação"
 
-#: ../../tutorial/tutorial-3.rst:254 a7a2f681498248dcbdaddc0c18d99c9a
+#: ../../tutorial/tutorial-3.rst:264 6a94f53565944cf494f957c4e1bae5a2
 msgid "You can now use Briefcase to run your application:"
 msgstr "Agora você pode utilizar o Briefcase para executar sua aplicação:"
 
-#: ../../tutorial/tutorial-3.rst:329 1033df845d3b4d098f71100380c55919
+#: ../../tutorial/tutorial-3.rst:339 d9f3aec28218449eac6f47f10e5b3c51
 #, fuzzy
 msgid "This will start to run your native application, using the app bundle created by the ``build`` command."
 msgstr "Isso iniciará a execução de seu aplicativo nativo, usando a saída do comando ``build``."
 
-#: ../../tutorial/tutorial-3.rst:332 22202ac1b51b4220a0bc50251f86277a
+#: ../../tutorial/tutorial-3.rst:342 1ce6ca4c85cc49b28f48111b41d27974
 #, fuzzy
 msgid "You might notice some small differences in the way your application looks when it's running. For example, icons and the name displayed by the operating system may be slightly different to those you saw when running under developer mode. This is also because you're using the packaged application, not just running Python code. From the operating system's perspective, you're now running \"an app\", not \"a Python program\", and this is reflected in how the application appears."
 msgstr "Você pode notar algumas pequenas diferenças na aparência do seu aplicativo quando ele estiver em execução. Por exemplo, os ícones e o nome exibidos pelo sistema operacional podem ser ligeiramente diferentes daqueles vistos durante a execução no modo de desenvolvedor. Isso também ocorre porque você está usando o aplicativo empacotado, e não apenas executando o código Python. Do ponto de vista do sistema operacional, agora você está executando \"um aplicativo\", não \"um programa Python\", e isso se reflete na aparência do aplicativo."
 
-#: ../../tutorial/tutorial-3.rst:341 35baf3848dda4dc4a161cead0408dc6f
+#: ../../tutorial/tutorial-3.rst:351 40c46e18b3c24ba6aa5b708a802fbeac
 msgid "Building your installer"
 msgstr "Criando o seu instalador"
 
-#: ../../tutorial/tutorial-3.rst:343 b7899eb453b14035a9f21f42aaffc517
+#: ../../tutorial/tutorial-3.rst:353 2538da06246c4584a04029fe7ac1f55f
 #, fuzzy
 msgid "You can now package your application for distribution, using the ``package`` command. The package command does any compilation that is required to convert the scaffolded project into a final, distributable product. Depending on the platform, this may involve compiling an installer, performing code signing, or doing other pre-distribution tasks."
 msgstr "Agora você pode empacotar seu aplicativo para distribuição, usando o comando ``package``. O comando package faz qualquer compilação necessária para converter o projeto de andaime em um produto final e distribuível. Dependendo da plataforma, isso pode envolver a compilação de um instalador, a execução de assinatura de código ou outras tarefas de pré-distribuição."
 
-#: ../../tutorial/tutorial-3.rst:382 a2dc1d38a6734ac6a43a48aee3cbd188
+#: ../../tutorial/tutorial-3.rst:392 13a89fffb95a408cbb5ed84244063ae2
 #, fuzzy
 msgid "The ``dist`` folder will contain a file named ``Hello World-0.0.1.dmg``. If you locate this file in the Finder, and double click on its icon, you'll mount the DMG, giving you a copy of the Hello World app, and a link to your Applications folder for easy installation. Drag the app file into Applications, and you've installed your application. Send the DMG file to a friend, and they should be able to do the same."
 msgstr "A pasta ``dist`` conterá um arquivo chamado ``Hello World-0.0.1.dmg``. Se você localizar esse arquivo no Finder e clicar duas vezes em seu ícone, montará o DMG, fornecendo uma cópia do aplicativo Hello World e um link para a pasta Applications para facilitar a instalação. Arraste o arquivo do aplicativo para Applications e você terá instalado o aplicativo. Envie o arquivo DMG para um amigo e ele poderá fazer o mesmo."
 
-#: ../../tutorial/tutorial-3.rst:389 ffdd23150cde49f5909153298b2e7ff3
+#: ../../tutorial/tutorial-3.rst:399 dc6b6c3ff7e7400ca92b75ba87a35ad7
 #, fuzzy
 msgid "In this example, we've used the ``--adhoc-sign`` option - that is, we're signing our application with *ad hoc* credentials - temporary credentials that will only work on your machine. We've done this to keep the tutorial simple. Setting up code signing identities is a little fiddly, and they're only *required* if you're intending to distribute your application to others. If we were publishing a real application for others to use, we would need to specify real credentials."
 msgstr "Neste exemplo, usamos a opção ``--adhoc-sign``, ou seja, estamos assinando nosso aplicativo com credenciais *ad hoc*, credenciais temporárias que só funcionarão em seu computador. Fizemos isso para manter a simplicidade do tutorial. A configuração de identidades de assinatura de código é um pouco complicada, e elas só são *necessárias* se você pretende distribuir o aplicativo para outras pessoas. Se estivéssemos publicando um aplicativo real para ser usado por outras pessoas, precisaríamos especificar credenciais reais."
 
-#: ../../tutorial/tutorial-3.rst:397 6d4e77765f16419c9ae889f186b79b3c
+#: ../../tutorial/tutorial-3.rst:407 eda740b65e314653b27c81f372ee065d
 #, fuzzy
 msgid "When you're ready to publish a real application, check out the Briefcase How-To guide on `Setting up a macOS code signing identity <https://briefcase.readthedocs.io/en/latest/how-to/code-signing/macOS.html>`__."
 msgstr "Quando estiver pronto para publicar um aplicativo real, consulte o guia de instruções da Briefcase sobre `Configuração de uma identidade de assinatura de código do macOS <https://briefcase.readthedocs.io/en/latest/how-to/code-signing/macOS.html>`__"
 
-#: ../../tutorial/tutorial-3.rst:403 3af538520ab14f96b33c504e1443600a
+#: ../../tutorial/tutorial-3.rst:413 cdd0c0e958cc44fc998146fa0aa830a4
 #, fuzzy
 msgid "The output of the package step will be slightly different depending on your Linux distribution. If you're on a Debian-derived distribution, you'll see:"
 msgstr "A saída da etapa do pacote será ligeiramente diferente, dependendo de sua distribuição Linux. Se estiver em uma distribuição derivada do Debian, você verá:"
 
-#: ../../tutorial/tutorial-3.rst:424 b2087c1641b448b296f8ba9974eb390f
+#: ../../tutorial/tutorial-3.rst:434 7d37674198e844a89de6ba3f35541e53
 #, fuzzy
 msgid "The ``dist`` folder will contain the ``.deb`` file that was generated."
 msgstr "A pasta ``dist`` conterá o arquivo ``.deb`` que foi gerado."
 
-#: ../../tutorial/tutorial-3.rst:426 a0e1300798764b848a1f5c630ef74fe8
+#: ../../tutorial/tutorial-3.rst:436 ac3e8e2c2a7044afae63607c121e6fed
 #, fuzzy
 msgid "If you're on a RHEL-based distribution, you'll see:"
 msgstr "Se estiver em uma distribuição baseada em RHEL, você verá:"
 
-#: ../../tutorial/tutorial-3.rst:453 25ff0caa46574a19a744e82c9115ab06
+#: ../../tutorial/tutorial-3.rst:463 d914a625c58e42228e2dcdf016036e44
 #, fuzzy
 msgid "The ``dist`` folder will contain the ``.rpm`` file that was generated."
 msgstr "A pasta ``dist`` conterá o arquivo ``.rpm`` que foi gerado."
 
-#: ../../tutorial/tutorial-3.rst:455 8e544daa60e14f058b587d7976a54910
+#: ../../tutorial/tutorial-3.rst:465 1eb970fdb4c541a3a14ac7c9f92dc103
 #, fuzzy
 msgid "If you're on an Arch-based distribution, you'll see:"
 msgstr "Se estiver em uma distribuição baseada no Arch, você verá:"
 
-#: ../../tutorial/tutorial-3.rst:473 5f57eed50fa04f8f98dc2f4619315ffe
+#: ../../tutorial/tutorial-3.rst:483 2edfcadc08714408843661a89b498528
 #, fuzzy
 msgid "The ``dist`` folder will contain the ``.pkg.tar.zst`` file that was generated."
 msgstr "A pasta ``dist`` conterá o arquivo ``.pkg.tar.zst`` que foi gerado."
 
-#: ../../tutorial/tutorial-3.rst:475 f731da68762041c2a6ec609e1c74999a
+#: ../../tutorial/tutorial-3.rst:485 9343dfd2286449758f31eb48653d3ecc
 #, fuzzy
 msgid "Other Linux distributions aren't currently supported for packaging."
 msgstr "No momento, não há suporte para o empacotamento de outras distribuições do Linux."
 
-#: ../../tutorial/tutorial-3.rst:477 62ffc827a7c844d6b43cad09dac7fdfd
+#: ../../tutorial/tutorial-3.rst:487 05259a8dbcfe42a5b166730322e5fb25
 #, fuzzy
 msgid "If you want to build a package for a Linux distribution other than the one you're using, Briefcase can also help - but you'll need to install Docker."
 msgstr "Se quiser criar um pacote para uma distribuição Linux diferente da que você está usando, o Briefcase também pode ajudar, mas você precisará instalar o Docker."
 
-#: ../../tutorial/tutorial-3.rst:480 23bdc7fabfdb4c2faa342e010cb57034
+#: ../../tutorial/tutorial-3.rst:490 2d26af7087fa40b3a53d2de6e2337a93
 #, fuzzy
 msgid "Official installers for `Docker Engine <https://docs.docker.com/engine/install>`__ are available for a range of Unix distributions. Follow the instructions for your platform; however, ensure you don't install Docker in \"rootless\" mode."
 msgstr "Os instaladores oficiais do `Docker Engine <https://docs.docker.com/engine/install>`__ estão disponíveis para uma série de distribuições Unix. Siga as instruções para sua plataforma; no entanto, certifique-se de não instalar o Docker no modo \"sem raiz\"."
 
-#: ../../tutorial/tutorial-3.rst:485 72bb234839934c24984bcaf175e7a147
+#: ../../tutorial/tutorial-3.rst:495 345c4521cf1b482cb954c3cb25effb3c
 #, fuzzy
 msgid "Once you've installed Docker, you should be able to start an Linux container - for example:"
 msgstr "Depois de instalar o Docker, você deve ser capaz de iniciar um contêiner Linux - por exemplo:"
 
-#: ../../tutorial/tutorial-3.rst:492 45c82b4c685a4447b25167f164004e9e
+#: ../../tutorial/tutorial-3.rst:502 32036b63b7bf46e485709b48ad3b82e3
 #, fuzzy
 msgid "will show you a Unix prompt (something like ``root@84444e31cff9:/#``) inside an Ubuntu 22.04 Docker container. Type Ctrl-D to exit Docker and return to your local shell."
 msgstr "mostrará um prompt do Unix (algo como ``root@84444e31cff9:/#``) dentro de um contêiner do Docker do Ubuntu 22.04. Digite Ctrl-D para sair do Docker e retornar ao seu shell local."
 
-#: ../../tutorial/tutorial-3.rst:496 ce678788f2624831bde580dc6d36e8db
+#: ../../tutorial/tutorial-3.rst:506 3558ccbb61af4a98bc87aeb9ee80150c
 #, fuzzy
 msgid "Once you've got Docker installed, you can use Briefcase to build a package for any Linux distribution that Briefcase supports by passing in a Docker image as an argument. For example, to build a DEB package for Ubuntu 22.04 (Jammy), regardless of the operating system you're on, you can run:"
 msgstr "Depois de instalar o Docker, você pode usar o Briefcase para criar um pacote para qualquer distribuição Linux compatível com o Briefcase, passando uma imagem do Docker como argumento. Por exemplo, para criar um pacote DEB para o Ubuntu 22.04 (Jammy), independentemente do sistema operacional em que você estiver, execute:"
 
-#: ../../tutorial/tutorial-3.rst:505 df8f2502debc4074a4f7dc3be6ffd355
+#: ../../tutorial/tutorial-3.rst:515 6d883dc77fec463592d74c258f8ed0b8
 #, fuzzy
 msgid "This will download the Docker image for your selected operating system, create a container that is able to run Briefcase builds, and build the app package inside the image. Once it's completed, the ``dist`` folder will contain the package for the target Linux distribution."
 msgstr "Isso fará o download da imagem do Docker para o sistema operacional selecionado, criará um contêiner capaz de executar as compilações do Briefcase e compilará o pacote do aplicativo dentro da imagem. Após a conclusão, a pasta ``dist`` conterá o pacote para a distribuição Linux de destino."
 
-#: ../../tutorial/tutorial-3.rst:540 3e5cd04aa2f7472b9b0d4e10ac47f024
+#: ../../tutorial/tutorial-3.rst:550 2e6c365b743945e0856e015529adb6d6
 #, fuzzy
 msgid "In this example, we're not signing our app. As a result, when you use the installer, you'll get a system warning that the application comes from an unknown developer. We've done this to keep the tutorial simple. Setting up code signing identities is a little fiddly, and they're only *required* if you're intending to distribute your application to others. If we were publishing a real application for others to use, we would need to specify a real signing identity; when that signed app is installed, the system will notify the user that the application is from the known identity associated with the certificate."
 msgstr "Neste exemplo, usamos a opção ``--adhoc-sign``, ou seja, estamos assinando nosso aplicativo com credenciais *ad hoc*, credenciais temporárias que só funcionarão em seu computador. Fizemos isso para manter a simplicidade do tutorial. A configuração de identidades de assinatura de código é um pouco complicada, e elas só são *necessárias* se você pretende distribuir o aplicativo para outras pessoas. Se estivéssemos publicando um aplicativo real para ser usado por outras pessoas, precisaríamos especificar credenciais reais."
 
-#: ../../tutorial/tutorial-3.rst:550 7167b640307a449d8eb784146b944816
+#: ../../tutorial/tutorial-3.rst:560 f629b35851824a0c8cf49593f5c928bd
 #, fuzzy
 msgid "When you're ready to publish a real application, check out the Briefcase How-To guide on `Setting up a Windows code signing identity <https://briefcase.readthedocs.io/en/latest/how-to/code-signing/windows.html>`__"
 msgstr "Quando estiver pronto para publicar um aplicativo real, consulte o guia de instruções da Briefcase sobre `Configuração de uma identidade de assinatura de código do macOS <https://briefcase.readthedocs.io/en/latest/how-to/code-signing/macOS.html>`__"
 
-#: ../../tutorial/tutorial-3.rst:554 0a25501538bf4b7db9244f4f34ab0a0a
+#: ../../tutorial/tutorial-3.rst:564 a6a69770494f413a9982fa82d53144f3
 #, fuzzy
 msgid "Once this step completes, the ``dist`` folder will contain a file named ``Hello_World-0.0.1.msi``. If you double click on this installer to run it, you should go through a familiar Windows installation process. Once this installation completes, there will be a \"Hello World\" entry in your start menu."
 msgstr "Quando essa etapa for concluída, a pasta ``dist`` conterá um arquivo chamado ``Hello_World-0.0.1.msi``. Se você clicar duas vezes nesse instalador para executá-lo, deverá passar por um processo familiar de instalação do Windows. Após a conclusão da instalação, haverá uma entrada \"Hello World\" em seu menu Iniciar."
 
-#: ../../tutorial/tutorial-3.rst:561 f467f2604a0d4a79a25785da14d8ab31
+#: ../../tutorial/tutorial-3.rst:571 20bb9a4144764f7b8bc3790e84daa8af
 msgid "Next steps"
 msgstr "Próximos passos"
 
-#: ../../tutorial/tutorial-3.rst:563 92813ec4f5fb4cd7958418a36769c4f8
+#: ../../tutorial/tutorial-3.rst:573 4b580f2e01834597a7af1aace42bbe29
 #, fuzzy
 msgid "We now have our application packaged for distribution on desktop platforms. But what happens when we need to update the code in our application? How do we get those updates into our packaged application? Turn to :doc:`Tutorial 4 <./tutorial-4>` to find out..."
 msgstr "Agora temos nosso aplicativo empacotado para distribuição em plataformas de desktop. Mas o que acontece quando precisamos atualizar o código em nosso aplicativo? Como podemos colocar essas atualizações em nosso aplicativo empacotado? Consulte o :doc:`Tutorial 4 <./tutorial-4>` para descobrir..."
