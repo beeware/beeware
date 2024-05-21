@@ -316,8 +316,8 @@ we've made code changes, we need to follow the same steps as in :doc:`Tutorial 4
        :align: center
        :alt: Hello World Tutorial 7 app crash, on Windows
 
-Once again, the app has failed to start because ``httpx`` has been installed - but
-why? Haven't we already installed ``httpx``?
+Once again, the app has failed to start because ``httpx`` has not been installed -
+but why? Haven't we already installed ``httpx``?
 
 We have - but only in the development environment. Your development environment
 is entirely local to your machine - and is only enabled when you explicitly
