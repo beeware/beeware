@@ -34,9 +34,8 @@ The first thing we'll need is a working Python interpreter.
 
   .. group-tab:: Linux
 
-    If you're on Linux, you'll use the system Python and install it using the
-    system package manager (``apt`` on Debian/Ubuntu/Mint, ``dnf`` on Fedora,
-    or ``pacman`` on Arch).
+    If you're on Linux, you'll install Python using the system package manager
+    (``apt`` on Debian/Ubuntu/Mint, ``dnf`` on Fedora, or ``pacman`` on Arch).
 
     You should ensure that the system Python is Python 3.8 or newer; if it isn't
     (e.g., Ubuntu 18.04 ships with Python 3.6), you'll need to upgrade your

@@ -89,7 +89,7 @@ From the ``helloworld`` directory, run:
           The version of Python being used to run Briefcase (3.12) is not the system python3 (3.10).
 
       You will need to recreate your virtual environment using the system
-      ``python3``. Using the system python is a requirement for packaging your
+      ``python3``. Using the system Python is a requirement for packaging your
       application.
 
   .. group-tab:: Windows
