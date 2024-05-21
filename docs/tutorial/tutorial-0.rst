@@ -67,10 +67,10 @@ The first thing we'll need is a working Python interpreter.
     system's command prompt/terminal application, and get a working Python
     interpreter.
 
-    If you're on Linux, you should use the system Python provided by your
-    operating system. You will be able to complete *most* of this tutorial
-    using a non-system Python, but you won't be able to package your
-    application for distribution to others.
+    If you're on Linux, you *must* use the system Python provided by your
+    operating system. You will be able to complete *most* of this tutorial using
+    a non-system Python, but you won't be able to package your application for
+    distribution to others.
 
 .. _install-dependencies:
 
