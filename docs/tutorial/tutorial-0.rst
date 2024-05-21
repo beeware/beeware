@@ -50,7 +50,7 @@ The first thing we'll need is a working Python interpreter.
     of Python from 3.8 onward. We'd advise avoiding alphas, betas, and release
     candidates unless you *really* know what you're doing.
 
-.. admonition:: Alternative Python distributions / installations
+.. admonition:: Alternative Python distributions
 
     There are lots of different ways of installing Python. You can install
     Python through `homebrew
@@ -67,11 +67,10 @@ The first thing we'll need is a working Python interpreter.
     system's command prompt/terminal application, and get a working Python
     interpreter.
 
-    If you're on Linux, you should use the system Python provided by your
-    operating system rather than an alternate Python (e.g., installed from
-    source). You will be able to complete *most* of this tutorial
-    using a non-system Python, but you won't be able to package your
-    application for distribution to others.
+    If you're on Linux, you *must* use the system Python provided by your
+    operating system. You will be able to complete *most* of this tutorial using
+    a non-system Python, but you won't be able to package your application for
+    distribution to others.
 
 .. _install-dependencies:
 
