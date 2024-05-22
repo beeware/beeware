@@ -113,12 +113,13 @@ content into the application, and make the app do something interesting.
 Adding some content of our own
 ==============================
 
-Now we are going to do something more interesting in the ``HelloWorld`` class.
+Lets do something more interesting with our ``HelloWorld`` app.
 
 .. note::
 
-    keep the imports at the top of the file and the ``main()`` at the
-    bottom.
+    When you make these changes, make sure you keep the imports at the top of the file, 
+    and the ``main()`` at the bottom of the file. You only need to update the 
+    ``HelloWorld`` class.
 
 Modify your ``HelloWorld`` class inside ``src/helloworld/app.py`` so that it
 looks like this::
