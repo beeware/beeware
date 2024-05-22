@@ -7,167 +7,166 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-08 10:13+0800\n"
+"POT-Creation-Date: 2024-05-22 20:34+0000\n"
 "PO-Revision-Date: 2024-04-10 21:02+0000\n"
 "Last-Translator: sus <jeffpeng2012@gmail.com>\n"
-"Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
-"beeware/tutorial/tutorial-4/zh_Hant/>\n"
 "Language: zh_TW\n"
+"Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-4/zh_Hant/>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.5-dev\n"
-"Generated-By: Babel 2.14.0\n"
+"Generated-By: Babel 2.15.0\n"
 
-#: ../../tutorial/tutorial-4.rst:3 7fe4cbf2a0064eb09013538f9bdfef61
+#: ../../tutorial/tutorial-4.rst:3 81af2f2f9d934e0f857be485f6983b65
 #, fuzzy
 msgid "Tutorial 4 - Updating your application"
 msgstr "教程 4 - 更新您的應用程式"
 
-#: ../../tutorial/tutorial-4.rst:5 7795a54c281248c1a275a5af0ba5b84b
+#: ../../tutorial/tutorial-4.rst:5 096518b290154aab889d454cb34b1b35
 #, fuzzy
 msgid "In the last tutorial, we packaged our application as a native application. If you're dealing with a real-world app, that isn't going to be the end of the story - you'll likely do some testing, discover problems, and need to make some changes. Even if your application is perfect, you'll eventually want to publish version 2 of your application with improvements."
 msgstr "在上一個教程中，我們將應用程式打包為本機應用程式。如果您正在處理現實世界的應用程序，這不會是故事的結局 - 您可能會進行一些測試，發現問題，並需要進行一些更改。即使您的應用程式非常完美，您最終也會希望發布經過改進的應用程式的第 2 版。"
 
-#: ../../tutorial/tutorial-4.rst:11 0f4d04d9e5c84fdf8dd50c949ce73e90
+#: ../../tutorial/tutorial-4.rst:11 bf125630493c41278a765a35a5c53308
 #, fuzzy
 msgid "So - how do you update your installed app when you make code changes?"
 msgstr "那麼 - 當您更改程式碼時如何更新已安裝的應用程式？"
 
-#: ../../tutorial/tutorial-4.rst:14 bbc58556ef884a23b31ae8824e16501b
+#: ../../tutorial/tutorial-4.rst:14 3ed3c6e9b25d41f4a2696a57ca181ab2
 #, fuzzy
 msgid "Updating application code"
 msgstr "更新應用程式程式碼"
 
-#: ../../tutorial/tutorial-4.rst:16 3b1c50a09a6b4e57a377bbc7e3d26a68
+#: ../../tutorial/tutorial-4.rst:16 204de491c6ca46f6a913265cfefb3823
 #, fuzzy
 msgid "Our application currently prints to the console when you press the button. However, GUI applications shouldn't really use the console for output. They need to use dialogs to communicate with users."
 msgstr "目前，當您按下按鈕時，我們的應用程式會列印到控制台。然而，GUI 應用程式不應該真正使用控制台進行輸出。他們需要使用對話框與使用者進行交流。"
 
-#: ../../tutorial/tutorial-4.rst:20 187e9a4a64ea40f086a59f62a6f0a1d9
+#: ../../tutorial/tutorial-4.rst:20 536d19088ae94a789e93518e41073d16
 #, fuzzy
 msgid "Let's add a dialog box to say hello, instead of writing to the console. Modify the ``say_hello`` callback so it looks like this::"
 msgstr "讓我們新增一個對話框來打招呼，而不是寫入控制台。修改``say_hello``回調，使其看起來像這樣::"
 
-#: ../../tutorial/tutorial-4.rst:29 6122859cfe804077939ffbd134781545
+#: ../../tutorial/tutorial-4.rst:29 2c8c5437e4e741f19d598a46f9710e59
 #, fuzzy
 msgid "This directs Toga to open a modal dialog box when the button is pressed."
 msgstr "這會指示 Toga 在按下按鈕時開啟模式對話方塊。"
 
-#: ../../tutorial/tutorial-4.rst:31 d03b59bdec0b4ff89f10b24d8085168b
+#: ../../tutorial/tutorial-4.rst:31 1877fe45af3741c0bddbd006275bb95b
 #, fuzzy
 msgid "If you run ``briefcase dev``, enter a name, and press the button, you'll see the new dialog box:"
 msgstr "如果執行``briefcase dev``，輸入名稱，然後按按鈕，您將看到新的對話方塊："
 
-#: ../../tutorial/tutorial-4.rst:36 ../../tutorial/tutorial-4.rst:67
-#: ../../tutorial/tutorial-4.rst:164 2e2b681035db40a1878b3362f793ffe7
-#: 3ce780c7548047428b5ddbba4416c237 40f7a793673841a080db293e66e40d81
+#: ../../tutorial/tutorial-4.rst:36 ../../tutorial/tutorial-4.rst:70
+#: ../../tutorial/tutorial-4.rst:171 4e3c6ea49c2648669bc95bf2ca80ccff
+#: 788e3ccb03364b7ca93260043d0f0075 d3570893649f4872964f25a0357c4f87
 msgid "macOS"
 msgstr "macOS"
 
-#: ../../tutorial/tutorial-4.rst 55cf1f4746394c2e900748b443d33ee6
+#: ../../tutorial/tutorial-4.rst:38 8f8eafde8c1941c9a47663285f02b9e4
 #, fuzzy
 msgid "Hello World Tutorial 4 dialog, on macOS"
 msgstr "Hello World 教學 4 對話框，在 macOS 上"
 
-#: ../../tutorial/tutorial-4.rst:41 ../../tutorial/tutorial-4.rst:81
-#: ../../tutorial/tutorial-4.rst:185 42308678bc2b482db2281fb875b4a3b4
-#: c8ce8abc2b584b4993d5bd96f3565b45 e5a6ade2541e43c6bec891e8c30243be
+#: ../../tutorial/tutorial-4.rst:42 ../../tutorial/tutorial-4.rst:84
+#: ../../tutorial/tutorial-4.rst:192 0583040fede74fd088e7237c47af9b35
+#: 6b8b1b066cfa4b388d6d63168d65b9d2 8f897c297d1142ef9721fc00960b6346
 msgid "Linux"
 msgstr "Linux"
 
-#: ../../tutorial/tutorial-4.rst f17df05a76d34c1a82089d328c1530a2
+#: ../../tutorial/tutorial-4.rst:44 67ade2774277458ba84e4b21ff7b443c
 #, fuzzy
 msgid "Hello World Tutorial 4 dialog, on Linux"
 msgstr "Linux 上的 Hello World 教學 4 對話框"
 
-#: ../../tutorial/tutorial-4.rst:46 ../../tutorial/tutorial-4.rst:98
-#: ../../tutorial/tutorial-4.rst:213 087ed0fa187a45b8911c0e121fd1e5ed
-#: abad56c1148741a3ab416f5f87c428de dacbeb65c2214a3ea17abb862d27167a
+#: ../../tutorial/tutorial-4.rst:48 ../../tutorial/tutorial-4.rst:105
+#: ../../tutorial/tutorial-4.rst:219 10b321bb4c47451aa388cda2b4b4252d
+#: c003c132e59149e7aa8d39f8a2259eb2 da1bf4f3853943dca85c742b10425527
 msgid "Windows"
 msgstr "Windows"
 
-#: ../../tutorial/tutorial-4.rst 8f8ecba0fae743158ef67ae04f4c2078
+#: ../../tutorial/tutorial-4.rst:50 28e6b043da224ec29332daa36f478273
 #, fuzzy
 msgid "Hello World Tutorial 4 dialog, on Windows"
 msgstr "Hello World 教學 4 對話框，在 Windows 上"
 
-#: ../../tutorial/tutorial-4.rst:51 0be35d0d8c8f4827a69b22ee6a09146f
+#: ../../tutorial/tutorial-4.rst:54 5987fb8a5ccc44dd905470d8005ba24b
 #, fuzzy
 msgid "However, if you run ``briefcase run``, the dialog box won't appear."
 msgstr "但是，如果執行``briefcase run``，則不會出現該對話方塊。"
 
-#: ../../tutorial/tutorial-4.rst:53 ee5596fb417e460d8ff1f60917632d00
+#: ../../tutorial/tutorial-4.rst:56 bb64de1b907c4ef1b663491ba0547298
 #, fuzzy
 msgid "Why is this? Well, ``briefcase dev`` operates by running your code in place - it tries to produce as realistic runtime environment for your code as possible, but it doesn't provide or use any of the platform infrastructure for wrapping your code as an application. Part of the process of packaging your app involves copying your code *into* the application bundle - and at the moment, your application still has the old code in it."
 msgstr "為什麼是這樣？好吧，``briefcase dev`` 通過就地運行您的代碼來運行- 它嘗試為您的代碼生成盡可能真實的運行時環境，但它不提供或使用任何平台基礎設施來將您的代碼包裝為應用程式.打包應用程式的過程的一部分涉及將程式碼複製到應用程式包中 - 目前，您的應用程式中仍然包含舊程式碼。"
 
-#: ../../tutorial/tutorial-4.rst:60 dca1084338a040f3947fe75bed0db0b9
+#: ../../tutorial/tutorial-4.rst:63 10fb038a9ae64928aa739c41d478b265
 #, fuzzy
 msgid "So - we need to tell briefcase to update your app, copying in the new version of the code. We *could* do this by deleting the old platform directory and starting from scratch. However, Briefcase provides an easier way - you can update the code for your existing bundled application:"
 msgstr "因此 - 我們需要告訴公文包更新您的應用程序，複製新版本的代碼。我們*可以*透過刪除舊平台目錄並從頭開始來做到這一點。但是，Briefcase 提供了一種更簡單的方法 - 您可以更新現有捆綁應用程式的程式碼："
 
-#: ../../tutorial/tutorial-4.rst:112 6d6badffe71e45ce9212a278e55c18b3
+#: ../../tutorial/tutorial-4.rst:119 45fff7b2b88f44f0bb3c977d8ae3a182
 #, fuzzy
 msgid "If Briefcase can't find the scaffolded template, it will automatically invoke ``create`` to generate a fresh scaffold."
 msgstr "如果Briefcase找不到鷹架模板，它會自動呼叫``create``來產生一個新的鷹架。"
 
-#: ../../tutorial/tutorial-4.rst:115 784a4d4f60b24b82949bfcc41eaf34e1
+#: ../../tutorial/tutorial-4.rst:122 0714d924439f43f285de6ed63fe5b1a5
 #, fuzzy
 msgid "Now that we've updated the installer code, we can then run ``briefcase build`` to re-compile the app, ``briefcase run`` to run the updated app, and ``briefcase package`` to repackage the application for distribution."
 msgstr "現在我們已經更新了安裝程式碼，然後我們可以運行``briefcase build``來重新編譯應用程序，運行``briefcase run``來運行更新後的應用程序，以及運行``briefcase package``來重新打包應用程式用於分發。"
 
-#: ../../tutorial/tutorial-4.rst:119 f8e923cd3ccc4cb681a37af89cba9c0b
+#: ../../tutorial/tutorial-4.rst:126 2013bac3f9464f479195b31a11bcd4c9
 #, fuzzy
 msgid "(macOS users, remember that as noted in :doc:`Tutorial 3 <tutorial-3>`, for the tutorial we recommend running ``briefcase package`` with the ``--adhoc-sign`` flag to avoid the complexity of setting up a code signing identity and keep the tutorial as simple as possible.)"
 msgstr "（macOS 用戶，請記住，如 :doc:`教學 3 所述<tutorial-3>`，對於本教程，我們建議使用``--adhoc-sign``標誌運行``briefcase package``，以避免設置代碼簽名身份的複雜性，並使教程盡可能簡單。）"
 
-#: ../../tutorial/tutorial-4.rst:125 d47a8a4cfaf04fd883a2f423e5079aa0
+#: ../../tutorial/tutorial-4.rst:132 3a7bbaaf5d1149fab1603c01c2ec4926
 #, fuzzy
 msgid "Update and run in one step"
 msgstr "一步更新並運行"
 
-#: ../../tutorial/tutorial-4.rst:127 9762f8947b0c4384a3aa7a6ce1caf29d
+#: ../../tutorial/tutorial-4.rst:134 17abe865898841c4b49065c98d5afb37
 #, fuzzy
 msgid "If you're rapidly iterating code changes, you'll likely want to make a code change, update the application, and immediately re-run your application. For most purposes, developer mode (``briefcase dev``) will be the easiest way to do this sort of rapid iteration; however, if you're testing something about how your application runs as a native binary, or hunting a bug that only manifests when your application is in packaged form, you may need to use repeated calls to ``briefcase run``. To simplify the process of updating and running the bundled app, Briefcase has a shortcut to support this usage pattern - the ``-u`` (or ``--update``) option on the ``run`` command."
 msgstr "如果您快速迭代程式碼更改，您可能需要更改程式碼、更新應用程序，然後立即重新執行您的應用程式。對於大多數目的，開發人員模式（``briefcase dev``）將是進行這種快速迭代的最簡單方法；但是，如果您正在測試應用程式如何作為本機二進位檔案運行，或者尋找僅在應用程式處於打包形式時才會出現的錯誤，則可能需要重複調用``briefcase run``。為了簡化更新和執行捆綁應用程式的過程，Briefcase 有一個快捷方式來支援這種使用模式 - ``run`` 命令上的``-u``（或``--update``）選項。"
 
-#: ../../tutorial/tutorial-4.rst:137 d54987c8d0124f38beda56b8bea9cf22
+#: ../../tutorial/tutorial-4.rst:144 7eb94911b89b46479d7bb4b045ce1c56
 #, fuzzy
 msgid "Let's try making another change. You may have noticed that if you don't type a name in the text input box, the dialog will say \"Hello, \". Let's modify the ``say_hello`` function again to handle this edge case."
-msgstr "讓我們嘗試進行另一個更改。您可能已經注意到，如果您不在文字輸入方塊中鍵入姓名，則對話方塊將顯示 "Hello，"。讓我們再次修改 ``say_hello`` 函數來處理這種邊緣情況。"
+msgstr "讓我們嘗試進行另一個更改。您可能已經注意到，如果您不在文字輸入方塊中鍵入姓名，則對話方塊將顯示 \"Hello，\"。讓我們再次修改 ``say_hello`` 函數來處理這種邊緣情況。"
 
-#: ../../tutorial/tutorial-4.rst:141 3b8a2ee2b7e349cba2c338e0835f9516
+#: ../../tutorial/tutorial-4.rst:148 4569daa20471470c8285519bd82d39cf
 #, fuzzy
-msgid "At the top of the file, between the imports and the ``class HelloWorld`` definition, add a utility methods to generate an appropriate greeting depending on the value of the name that has been provided::"
+msgid "At the top of the file, between the imports and the ``class HelloWorld`` definition, add a utility method to generate an appropriate greeting depending on the value of the name that has been provided::"
 msgstr "在檔案頂部的匯入和``class HelloWorld``定義之間，新增實用程式方法以根據已提供的名稱值產生適當的問候語："
 
-#: ../../tutorial/tutorial-4.rst:151 fc1fb0583615469c847de885fc14aee6
+#: ../../tutorial/tutorial-4.rst:158 f90ce1b044b344a890aad290887b26a5
 #, fuzzy
 msgid "Then, modify the ``say_hello`` callback to use this new utility method::"
 msgstr "然後，修改``say_hello``回調以使用這個新的實用方法："
 
-#: ../../tutorial/tutorial-4.rst:159 6a19eb37cf8c40d08e6cad4eed780f8a
+#: ../../tutorial/tutorial-4.rst:166 edbf14680e434c5aa53c72efe1cd8e04
 #, fuzzy
 msgid "Run your app in development mode (with ``briefcase dev``) to confirm that the new logic works; then update, build and run the app with one command:"
 msgstr "在開發模式下運行您的應用程式（使用``briefcase dev``）以確認新邏輯有效；然後使用一個命令更新、建置和運行應用程式："
 
-#: ../../tutorial/tutorial-4.rst:229 9e4f16ac85094be6a6b3d5d6caa58217
+#: ../../tutorial/tutorial-4.rst:235 00a799533e764a0c9523516cd41f62f0
 #, fuzzy
 msgid "The package command also accepts the ``-u`` argument, so if you make a change to your application code and want to repackage immediately, you can run ``briefcase package -u``."
 msgstr "package 命令也接受``-u``參數，因此如果您對應用程式程式碼進行了更改並希望立即重新打包，則可以運行``briefcase package -u``。"
 
-#: ../../tutorial/tutorial-4.rst:234 8af764dacceb41f291fce27b91879c5e
+#: ../../tutorial/tutorial-4.rst:240 a770df897d0c49e9bcb6ab6765a0997d
 msgid "Next steps"
 msgstr "下一步"
 
-#: ../../tutorial/tutorial-4.rst:236 2bd6a387bb8d4c9daf8cd528e4b7af05
+#: ../../tutorial/tutorial-4.rst:242 6a13a3003ac4428aa33f56b81cda101f
 #, fuzzy
 msgid "We now have our application packaged for distribution on desktop platforms, and we've been able to update the code in our application."
 msgstr "現在，我們已經將應用程式打包以便在桌面平台上分發，並且我們已經能夠更新應用程式中的程式碼。"
 
-#: ../../tutorial/tutorial-4.rst:239 d206e2e549a84c60bcc9eb543b4e0adb
+#: ../../tutorial/tutorial-4.rst:245 ac66197fc35e4a19bd88a4ff43b88c03
 #, fuzzy
 msgid "But what about mobile? In :doc:`Tutorial 5 <tutorial-5/index>`, we'll convert our application into a mobile application, and deploy it onto a device simulator, and onto a phone."
 msgstr "但行動裝置呢？在 :doc:`教程 5 <tutorial-5/index>` 中，我們會將應用程式轉換為行動應用程序，並將其部署到裝置模擬器和手機上。"
+
