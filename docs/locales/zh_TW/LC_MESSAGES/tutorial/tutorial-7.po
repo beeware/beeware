@@ -7,324 +7,323 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-08 10:13+0800\n"
+"POT-Creation-Date: 2024-05-22 18:48+0000\n"
 "PO-Revision-Date: 2024-04-10 21:02+0000\n"
 "Last-Translator: sus <jeffpeng2012@gmail.com>\n"
-"Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
-"beeware/tutorial/tutorial-7/zh_Hant/>\n"
 "Language: zh_TW\n"
+"Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-7/zh_Hant/>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.5-dev\n"
-"Generated-By: Babel 2.14.0\n"
+"Generated-By: Babel 2.15.0\n"
 
-#: ../../tutorial/tutorial-7.rst:3 8ad7bf512a0341b6aeb95e5d97c7c838
+#: ../../tutorial/tutorial-7.rst:3 6b2615ec94ae43e5903abac442c3b41a
 #, fuzzy
 msgid "Tutorial 7 - Get this (third)-party started"
 msgstr "教學 7 - 啟動此（第三方）"
 
-#: ../../tutorial/tutorial-7.rst:5 dccb6e45fcb546afae3b5c0ec3814092
+#: ../../tutorial/tutorial-7.rst:5 80041d02f6a345c09a2e699420bb553b
 #, fuzzy
 msgid "So far, the app we've built has only used our own code, plus the code provided by BeeWare. However, in a real-world app, you'll likely want to use a third-party library, downloaded from the Python Package Index (PyPI)."
 msgstr "到目前為止，我們建立的應用程式只使用了我們自己的程式碼，加上 BeeWare 提供的程式碼。但是，在現實應用程式中，您可能需要使用從 Python Package Index (PyPI) 下載的第三方程式庫。"
 
-#: ../../tutorial/tutorial-7.rst:9 9c72680e426c4971ad48c69a5f1b6fd8
+#: ../../tutorial/tutorial-7.rst:9 52a52a7c1bb44e08a6bdbe3397150a34
 #, fuzzy
 msgid "Let's modify our app to include a third-party library."
 msgstr "讓我們修改我們的應用程式以包含第三方程式庫。"
 
-#: ../../tutorial/tutorial-7.rst:12 aee775bc57e0476cb41dd06723ebc78d
+#: ../../tutorial/tutorial-7.rst:12 d247c262837d497db2b5c94ac83a06d8
 #, fuzzy
 msgid "Accessing an API"
 msgstr "存取 API"
 
-#: ../../tutorial/tutorial-7.rst:14 02b45d1c8d304308929f8c26ac51cd22
+#: ../../tutorial/tutorial-7.rst:14 a9c040274a504711ae46fb2f6c6026b2
 #, fuzzy
 msgid "A common task an app will need to perform is to make a request on a web API to retrieve data, and display that data to the user. This is a toy app, so we don't have a *real* API to work with, so we'll use the `{JSON} Placeholder API <https://jsonplaceholder.typicode.com>`__ as a source of data."
 msgstr "應用程式需要執行的常見任務是在 Web API 上發出請求以檢索數據，並向使用者顯示該數據。這是一個玩具應用程序，因此我們沒有*真正的* API 可供使用，因此我們將使用 `{JSON} Placeholder API <https://jsonplaceholder.typicode.com>`__ 作為來源資料。"
 
-#: ../../tutorial/tutorial-7.rst:19 daea622b5596467f911c43d70e1c255c
+#: ../../tutorial/tutorial-7.rst:19 205d631a08064522a4e40125ad81b899
 #, fuzzy
 msgid "The {JSON} Placeholder API has a number of \"fake\" API endpoints you can use as test data. One of those APIs is the ``/posts/`` endpoint, which returns fake blog posts. If you open ``https://jsonplaceholder.typicode.com/posts/42`` in your browser, you'll get a JSON payload describing a single post - some `Lorum ipsum <https://en.wikipedia.org/wiki/Lorem_ipsum>`__ content for a blog post with ID 42."
 msgstr "{JSON} Placeholder API 有許多``假``API 端點，您可以將其用作測試資料。這些 API 之一是``/posts/``端點，它會傳回虛假的部落格文章。如果您在瀏覽器中開啟 ``https://jsonplaceholder.typicode.com/posts/42``，您將獲得一個描述單一貼文的 JSON 有效負載 - 一些 `Lorum ipsum <https://en.wikipedia.org/wiki/Lorem_ipsum>`__ ID 為42 的部落格文章的內容。"
 
-#: ../../tutorial/tutorial-7.rst:26 c2c679657f134405b867a2a59eaa858f
+#: ../../tutorial/tutorial-7.rst:26 1a0c6d30a2ec4c8491bde7ec9de0e1f8
 #, fuzzy
 msgid "The Python standard library contains all the tools you'd need to access an API. However, the built-in APIs are very low level. They are good implementations of the HTTP protocol - but they require the user to manage lots of low-level details, like URL redirection, sessions, authentication, and payload encoding. As a \"normal browser user\" you're probably used to taking these details for granted, as a browser manages these details for you."
 msgstr "Python 標準函式庫包含存取 API 所需的所有工具。然而，內建的 API 等級非常低。它們是 HTTP 協定的良好實作 - 但它們要求使用者管理大量低階細節，例如 URL 重新導向、會話、驗證和有效負載編碼。作為``普通瀏覽器用戶``，您可能習慣於將這些詳細資訊視為理所當然，因為瀏覽器會為您管理這些詳細資訊。"
 
-#: ../../tutorial/tutorial-7.rst:33 af3ad600eb7e4669a5b7c6f4d78aa619
+#: ../../tutorial/tutorial-7.rst:33 b71de501e0cb42ebb1a287687b58fffe
 #, fuzzy
 msgid "As a result, people have developed third-party libraries that wrap the built-in APIs and provide a simpler API that is a closer match for the everyday browser experience. We're going to use one of those libraries to access the {JSON} Placeholder API - a library called `httpx <https://www.python-httpx.org>`__."
 msgstr "因此，人們開發了第三方函式庫來包裝內建 API，並提供更簡單的 API，更適合日常瀏覽器體驗。我們將使用其中一個函式庫來存取 {JSON} Placeholder API - 一個名為 `httpx <https://www.python-httpx.org>`__ 的函式庫。"
 
-#: ../../tutorial/tutorial-7.rst:38 f1e8759bfb5f4a1088d9fd1280370626
+#: ../../tutorial/tutorial-7.rst:38 9b19a31caae445e7862bff5d14539c32
 #, fuzzy
 msgid "Let's add a ``httpx`` API call to our app. Add an import to the top of the ``app.py`` to import ``httpx``::"
 msgstr "讓我們為我們的應用程式新增一個``httpx`` API 呼叫。將導入新增至``app.py``頂部以導入``httpx``::"
 
-#: ../../tutorial/tutorial-7.rst:43 c697793e25ab4f09855b3b7dee7a04c8
+#: ../../tutorial/tutorial-7.rst:43 491a4cb9f2c348df94ffe85b2628dded
 #, fuzzy
 msgid "Then modify the ``say_hello()`` callback so it looks like this::"
 msgstr "然後修改``say_hello()``回調，使其看起來像這樣::"
 
-#: ../../tutorial/tutorial-7.rst:56 63fffe4e06de4459b53d2afeefcd7e5f
+#: ../../tutorial/tutorial-7.rst:56 14ac9987b58e443f8beadaf9a0e81ef2
 #, fuzzy
 msgid "This will change the ``say_hello()`` callback so that when it is invoked, it will:"
 msgstr "這將更改``say_hello()``回調，以便在調用它時，它將："
 
-#: ../../tutorial/tutorial-7.rst:59 83ef2db9c558441e975326257fed14ef
+#: ../../tutorial/tutorial-7.rst:59 d6ff754f12794860a35eeb68e2dbaf68
 #, fuzzy
 msgid "make a GET request on the JSON placeholder API to obtain post 42;"
 msgstr "對 JSON 佔位符 API 發出 GET 請求以取得 post 42；"
 
-#: ../../tutorial/tutorial-7.rst:61 7870ca0e9bce444d9bf1137ee7edfbee
+#: ../../tutorial/tutorial-7.rst:61 af5c1a6b42a8444086938423724fc698
 #, fuzzy
 msgid "decode the response as JSON;"
 msgstr "將回應解碼為 JSON；"
 
-#: ../../tutorial/tutorial-7.rst:63 56982d0bf31f47b882c7f3c0fbd6e972
+#: ../../tutorial/tutorial-7.rst:63 40fd1491d9934f2086b0208b4be8cb1c
 #, fuzzy
 msgid "extract the body of the post; and"
 msgstr "擷取貼文內文；和"
 
-#: ../../tutorial/tutorial-7.rst:65 2e494ff3c906400eb0a3673c5505d795
+#: ../../tutorial/tutorial-7.rst:65 d3678e0de20447e68fedebd87c279cad
 #, fuzzy
 msgid "include the body of that post as the text of the dialog."
 msgstr "包括該帖子的正文作為對話框的文字。"
 
-#: ../../tutorial/tutorial-7.rst:67 1a18c6090bb4424a808b3a39b6c9bd48
+#: ../../tutorial/tutorial-7.rst:67 fc7a8fe98ad34f13ae20d573a6ebe0e2
 #, fuzzy
 msgid "Lets run our updated app in Briefcase developer mode to check that our change has worked."
 msgstr "讓我們在公文包開發者模式下運行更新後的應用程序，以檢查我們的更改是否有效。"
 
 #: ../../tutorial/tutorial-7.rst:72 ../../tutorial/tutorial-7.rst:138
-#: ../../tutorial/tutorial-7.rst:187 ../../tutorial/tutorial-7.rst:409
-#: 7bdd2fffeb32409f8bcc7143ecccb2e2 910885354fee4bfca9ffe18022ac1c56
-#: 9ce215aaab6f4c2fb3f457e14d6cecae b2dcfff9372146899d2309f5741d1106
+#: ../../tutorial/tutorial-7.rst:190 ../../tutorial/tutorial-7.rst:415
+#: 005c87468e614b289490bb0ae8ed6c50 5a726f5b33554f3381dfcdbad9c059b7
+#: c86313bb53b44c2a901260d849299455 dd3b1812eb1f4efdaef4c0104f23a920
 msgid "macOS"
 msgstr "macOS"
 
-#: ../../tutorial/tutorial-7.rst:92 ../../tutorial/tutorial-7.rst:151
-#: ../../tutorial/tutorial-7.rst:224 ../../tutorial/tutorial-7.rst:430
-#: 42a7ad1beb784da287fb2e34526e9bc1 a3473c3453594db9af1399e08fe4d8c3
-#: df70e9d40c2d436e8fa6ed053d6325cd f42850071bd0417699ecc616bee89009
+#: ../../tutorial/tutorial-7.rst:92 ../../tutorial/tutorial-7.rst:152
+#: ../../tutorial/tutorial-7.rst:228 ../../tutorial/tutorial-7.rst:436
+#: 2d204be785cc4b5bb66b02ceb68dcd70 44eb6135adb34195bee8bff6b3b80d15
+#: 6c34301bae3f4d4d8776b408249130b6 abc9269eaca64324a07c22cf1938ec9d
 msgid "Linux"
 msgstr "Linux"
 
-#: ../../tutorial/tutorial-7.rst:112 ../../tutorial/tutorial-7.rst:164
-#: ../../tutorial/tutorial-7.rst:277 ../../tutorial/tutorial-7.rst:458
-#: 0d1a69cd2f4a414cae311ca89484e190 3729ec0e47464fe38cce2e5cc8456a20
-#: c8ba6792ac64463dbc6d4167d40c0a71 e429f78fe30548c2872e2ec7945b3128
+#: ../../tutorial/tutorial-7.rst:112 ../../tutorial/tutorial-7.rst:166
+#: ../../tutorial/tutorial-7.rst:281 ../../tutorial/tutorial-7.rst:463
+#: 63b5f67e4270458abe3f8db2965aa560 8327e73b93834958a6342cdb74c1ba51
+#: ae724ee6ee4a4d5784d9feca04d6a5ac bd2c829408fd4a0cb63bae016761e8d5
 msgid "Windows"
 msgstr "Windows"
 
-#: ../../tutorial/tutorial-7.rst:132 51d25b00996b4dcb99190ed7b4dd7dd2
+#: ../../tutorial/tutorial-7.rst:132 b7726b9114294f7ea4f73df574fe4cb3
 #, fuzzy
 msgid "What happened? We've added ``httpx`` to our *code*, but we haven't added it to our development virtual environment. We can fix this by installing ``httpx`` with ``pip``, and then re-running ``briefcase dev``:"
 msgstr "發生了什麼事？我們已將``httpx``新增至我們的*程式碼*中，但我們尚未將其新增至我們的開發虛擬環境。我們可以透過用``pip``安裝``httpx``來解決這個問題，然後重新執行``briefcase dev``："
 
-#: ../../tutorial/tutorial-7.rst:145 ../../tutorial/tutorial-7.rst:158
-#: ../../tutorial/tutorial-7.rst:171 5df27d3381e5431192736e432e52ded1
-#: 5e97330de379435d88d7b62f07dd2129 690bcd952e1747e99c60ab895cb92f54
+#: ../../tutorial/tutorial-7.rst:145 ../../tutorial/tutorial-7.rst:159
+#: ../../tutorial/tutorial-7.rst:173 0792d266d0344daeaab81c859ae1a1c5
+#: 0d472a11fac44f50bd7eb5f3dc94bb12 2e682b874b204ecab0ce740944342a93
 #, fuzzy
 msgid "When you enter a name and press the button, you should see a dialog that looks something like:"
 msgstr "當您輸入名稱並按下按鈕時，您應該會看到一個類似以下內容的對話框："
 
-#: ../../tutorial/tutorial-7.rst babb8ed72b064215813323e7389370c7
+#: ../../tutorial/tutorial-7.rst:148 bc46ec09af714ce6902ec59091027160
 #, fuzzy
 msgid "Hello World Tutorial 7 dialog, on macOS"
 msgstr "Hello World 教學 7 對話框，在 macOS 上"
 
-#: ../../tutorial/tutorial-7.rst 5697f4d791744f598ceac06e15f8bd7e
+#: ../../tutorial/tutorial-7.rst:162 dcebe9d73e6145f392886878a48e13c0
 #, fuzzy
 msgid "Hello World Tutorial 7 dialog, on Linux"
 msgstr "Linux 上的 Hello World 教學 7 對話框"
 
-#: ../../tutorial/tutorial-7.rst 77f97efd518f412d8cf6b34280931ad2
+#: ../../tutorial/tutorial-7.rst:176 cd2c446246514eb0b4bb5a97e3d98049
 #, fuzzy
 msgid "Hello World Tutorial 7 dialog, on Windows"
 msgstr "Hello World 教學 7 對話框，在 Windows 上"
 
-#: ../../tutorial/tutorial-7.rst:177 241cb25384834649aede9e5aec456a6d
+#: ../../tutorial/tutorial-7.rst:180 49da8dcc057743b5a92bf8991c669d88
 #, fuzzy
 msgid "We've now got a working app, using a third party library, running in development mode!"
 msgstr "我們現在有了一個可以使用的應用程序，使用第三方庫，在開發模式下運行！"
 
-#: ../../tutorial/tutorial-7.rst:180 cf59213a33d54b56967a0705c8196612
+#: ../../tutorial/tutorial-7.rst:183 3650561f23644430a8eace5387c044ac
 #, fuzzy
 msgid "Running the updated app"
 msgstr "運行更新的應用程式"
 
-#: ../../tutorial/tutorial-7.rst:182 c26364778503455c82449f4879cf54b4
+#: ../../tutorial/tutorial-7.rst:185 6acba9855f7841949c7df5d5e03d58f5
 #, fuzzy
 msgid "Let's get this updated application code packaged as a standalone app. Since we've made code changes, we need to follow the same steps as in :doc:`Tutorial 4 <tutorial-4>`:"
 msgstr "讓我們將此更新的應用程式程式碼打包為獨立應用程式。由於我們已經更改了程式碼，因此我們需要遵循 :doc:`教程 4 <tutorial-4>` 中的相同步驟："
 
-#: ../../tutorial/tutorial-7.rst:189 ../../tutorial/tutorial-7.rst:226
-#: ../../tutorial/tutorial-7.rst:279 32cb8170093641049fad2dea51b567f7
-#: f281d7b242ef47d68baa1081be6a931b f8093e859aff406a9441c133613a90b2
+#: ../../tutorial/tutorial-7.rst:192 ../../tutorial/tutorial-7.rst:230
+#: ../../tutorial/tutorial-7.rst:283 52b54a2820c9434182c3a320a646cb84
+#: 581c1bd09efa4811847d7e6e1722fd9c f1cdd70af5bd4f1db4dd01fec0aa527a
 #, fuzzy
 msgid "Update the code in the packaged app:"
 msgstr "更新打包應用程式中的程式碼："
 
-#: ../../tutorial/tutorial-7.rst:200 ../../tutorial/tutorial-7.rst:237
-#: ../../tutorial/tutorial-7.rst:290 21fdec9ea8384464a3ecceb1ba4f6aa4
-#: 3c45139a08f54bf5a8224607a452973d b13970edbd1f4fbcb1f3976d5622cbb1
+#: ../../tutorial/tutorial-7.rst:203 ../../tutorial/tutorial-7.rst:241
+#: ../../tutorial/tutorial-7.rst:294 927cb0a7819e48e3869927dcfc84ded3
+#: a908a9f8c9b046d1899a46a3886581a0 fc97caf71a254be098ac118f44f88871
 #, fuzzy
 msgid "Rebuild the app:"
 msgstr "重建應用程式："
 
-#: ../../tutorial/tutorial-7.rst:209 ../../tutorial/tutorial-7.rst:251
-#: ../../tutorial/tutorial-7.rst:299 310516fec9fe44f1af2943231c50ba92
-#: b948d6423ff544768fa91da2d7f83c4e e2040cd02a284c0090373c3bfd45a940
+#: ../../tutorial/tutorial-7.rst:212 ../../tutorial/tutorial-7.rst:255
+#: ../../tutorial/tutorial-7.rst:303 3eae5d516d1f49ee9cde2c5ea3a37951
+#: 44290f640fb840f1af700b1e58c4a864 e9959105c9924cfca235b1ae2aa7a903
 #, fuzzy
 msgid "And finally, run the app:"
 msgstr "最後，運行應用程式："
 
-#: ../../tutorial/tutorial-7.rst:218 ../../tutorial/tutorial-7.rst:308
-#: 7361548a2dc146eeb3880c1f3f5fa755 d4b9d0993cbd41daae7db8170ff83296
+#: ../../tutorial/tutorial-7.rst:221 ../../tutorial/tutorial-7.rst:312
+#: 0b48c996416a4e3e9b5891a6100f137b 0edd1ba5d53e413fa6ef42630814bffa
 #, fuzzy
 msgid "However, when the app runs, you'll see an error in the console, plus a crash dialog:"
 msgstr "但是，當應用程式運行時，您會在控制台中看到錯誤，以及崩潰對話框："
 
-#: ../../tutorial/tutorial-7.rst 11a394bdeb6c479e841c7a9116d52132
+#: ../../tutorial/tutorial-7.rst:224 8fc48d7a6a2d41a4a782b0de38e9b595
 #, fuzzy
 msgid "Hello World Tutorial 7 app crash, on macOS"
 msgstr "Hello World 教學 7 應用程式崩潰，在 macOS 上"
 
-#: ../../tutorial/tutorial-7.rst:260 ba158fdca2e64649b5349cf77f465d2f
+#: ../../tutorial/tutorial-7.rst:264 9d69e9a4804d4fcbbf7cc8ae3ea9626a
 #, fuzzy
 msgid "However, when the app runs, you'll see an error in the console:"
 msgstr "但是，當應用程式運行時，您會在控制台中看到錯誤："
 
-#: ../../tutorial/tutorial-7.rst 34954f42a5874dcc8116b9fb0bac4504
+#: ../../tutorial/tutorial-7.rst:315 b668aa40c3444555bc975af37c9ffc0c
 #, fuzzy
 msgid "Hello World Tutorial 7 app crash, on Windows"
 msgstr "Hello World 教學 7 應用程式崩潰，在 Windows 上"
 
-#: ../../tutorial/tutorial-7.rst:314 d0a43ec40cf14c2d902c6f7521fb07ef
+#: ../../tutorial/tutorial-7.rst:319 c08292ac303f4471a64dc3f5a243e023
 #, fuzzy
-msgid "Once again, the app has failed to start because ``httpx`` has been installed - but why? Haven't we already installed ``httpx``?"
+msgid "Once again, the app has failed to start because ``httpx`` has not been installed - but why? Haven't we already installed ``httpx``?"
 msgstr "再一次，應用程式無法啟動，因為``httpx``已安裝 - 但為什麼呢？我們不是已經安裝了``httpx``了嗎？"
 
-#: ../../tutorial/tutorial-7.rst:317 91d48bbb0b5f439caf0a416281530682
+#: ../../tutorial/tutorial-7.rst:322 5a221f18dbcf4efcb588589f81f7bd8c
 #, fuzzy
 msgid "We have - but only in the development environment. Your development environment is entirely local to your machine - and is only enabled when you explicitly activate it. Although Briefcase has a development mode, the main reason you'd use Briefcase is to package up your code so you can give it to someone else."
 msgstr "我們有 - 但僅限於開發環境。您的開發環境完全位於您的電腦本機 - 並且僅在您明確啟動它時才啟用。儘管Briefcase 有開發模式，但您使用Briefcase 的主要原因是打包您的程式碼，以便提供給其他人。"
 
-#: ../../tutorial/tutorial-7.rst:322 8aa3be8efcac48748a6957016cc19786
+#: ../../tutorial/tutorial-7.rst:327 06dfc884bfb1494992a5a89417dea1d9
 #, fuzzy
 msgid "The only way to guarantee that someone else will have a Python environment that contains everything it needs is to build a completely isolated Python environment. This means there's a completely isolated Python install, and a completely isolated set of dependencies. This is what Briefcase is building when you run ``briefcase build`` - an isolated Python environment. This also explains why ``httpx`` isn't installed - it has been installed in your *development* environment, but not in the packaged app."
 msgstr "確保其他人擁有一個包含其所需一切的Python環境的唯一方法是建立一個完全隔離的Python環境。這意味著有一個完全隔離的 Python 安裝和一組完全隔離的依賴項。這就是當您執行``briefcase build``時，Briefcase 正在建置的內容—一個獨立的 Python 環境。這也解釋了為什麼未安裝``httpx`` - 它已安裝在您的*開發*環境中，但未安裝在打包的應用程式中。"
 
-#: ../../tutorial/tutorial-7.rst:330 5c13ed8e04ea41fdb4f70d48d7742f47
+#: ../../tutorial/tutorial-7.rst:335 6d79f1eae58945178440c0c5f1d1db15
 #, fuzzy
 msgid "So - we need to tell Briefcase that our app has an external dependency."
 msgstr "因此 - 我們需要告訴 Briefcase 我們的應用程式具有外部相依性。"
 
-#: ../../tutorial/tutorial-7.rst:333 fe6c4b6d4a644df0943e51c488ca8cfa
+#: ../../tutorial/tutorial-7.rst:338 628218220a2048b9b6bf2df96e52ed10
 #, fuzzy
 msgid "Updating dependencies"
 msgstr "更新依賴項"
 
-#: ../../tutorial/tutorial-7.rst:335 1b2579e49522498fb4c01afe3c98d5b3
+#: ../../tutorial/tutorial-7.rst:340 7c1679c7b05c44f687c814043bca099c
 #, fuzzy
 msgid "In the root directory of your app, there is a file named ``pyproject.toml``. This file contains all the app configuration details that you provided when you originally ran ``briefcase new``."
 msgstr "在應用程式的根目錄中，有一個名為``pyproject.toml``的檔案。該檔案包含您最初執行``briefcase new``時提供的所有應用程式設定詳細資訊。"
 
-#: ../../tutorial/tutorial-7.rst:339 bd03dc6e3a034288bad78d7b8bd03e98
+#: ../../tutorial/tutorial-7.rst:344 82bd2f27411d47d082dacd7291cbe243
 #, fuzzy
 msgid "``pyproject.toml`` is broken up into sections; one of the sections describes the settings for your app::"
 msgstr "``pyproject.toml`` 被分成幾個部分；其中一節描述了您的應用程式的設定：："
 
-#: ../../tutorial/tutorial-7.rst:349 4ea8acaba5ce4e85806f3db4e19fe8a0
+#: ../../tutorial/tutorial-7.rst:355 520b01c82e214d299ed45f2111bb021a
 #, fuzzy
 msgid "The ``requires`` option describes the dependencies of our application. It is a list of strings, specifying libraries (and, optionally, versions) of libraries that you want to be included with your app."
 msgstr "``requires`` 選項描述了我們應用程式的依賴關係。它是一個字串列表，指定您想要包含在應用程式中的庫（以及可選的版本）。"
 
-#: ../../tutorial/tutorial-7.rst:353 215b6bf62ec8482691874d27e5c3097a
+#: ../../tutorial/tutorial-7.rst:359 9760cbe1817748748feaa290ad9fc728
 #, fuzzy
 msgid "Modify the ``requires`` setting so that it reads::"
 msgstr "修改``requires``設置，使其顯示為："
 
-#: ../../tutorial/tutorial-7.rst:359 f63c8a1e56404495a968591b8fa270da
+#: ../../tutorial/tutorial-7.rst:365 61820fdbbb0e46ec9115f572b61f6f8a
 #, fuzzy
 msgid "By adding this setting, we're telling Briefcase \"when you build my app, run ``pip install httpx`` into the application bundle\". Anything that would be legal input to ``pip install`` can be used here - so, you could specify:"
 msgstr "透過添加此設置，我們告訴 Briefcase``當您建立我的應用程式時，在應用程式包中執行``pip install httpx````。任何可以作為``pip install``合法輸入的內容都可以在這裡使用 - 因此，您可以指定："
 
-#: ../../tutorial/tutorial-7.rst:363 09ca251dbb694feba999515deed93980
+#: ../../tutorial/tutorial-7.rst:369 376b4955126a4c6791d0db69fbe7d4a6
 #, fuzzy
 msgid "A specific library version (e.g., ``\"httpx==0.19.0\"``);"
 msgstr "特定的庫版本（例如``httpx==0.19.0``）；"
 
-#: ../../tutorial/tutorial-7.rst:364 9aafe81552a7412ba26e094fafb4b174
+#: ../../tutorial/tutorial-7.rst:370 223ec130d6af4756a03b2e5765232033
 #, fuzzy
 msgid "A range of library versions (e.g., ``\"httpx>=0.19\"``);"
 msgstr "一系列庫版本（例如``httpx>=0.19``）；"
 
-#: ../../tutorial/tutorial-7.rst:365 24b64c60bace453fa04c00832c77d67c
+#: ../../tutorial/tutorial-7.rst:371 93586212104c43b6b4bb7d1813561513
 #, fuzzy
 msgid "A path to a git repository (e.g., ``\"git+https://github.com/encode/httpx\"``); or"
 msgstr "git 儲存庫的路徑（例如，``\"git+https://github.com/encode/httpx\"``）；或者"
 
-#: ../../tutorial/tutorial-7.rst:367 9f192659ee0e44a79a5f0bc050f2d089
+#: ../../tutorial/tutorial-7.rst:373 870a13884c6c42419cc3479955426bc5
 #, fuzzy
 msgid "A local file path (However - be warned: if you give your code to someone else, this path probably won't exist on their machine!)"
 msgstr "本機檔案路徑（但是 - 請注意：如果您將程式碼提供給其他人，則該路徑可能不會存在於他們的電腦上！）"
 
-#: ../../tutorial/tutorial-7.rst:370 1ef80ec77a4a4174815557e319951667
+#: ../../tutorial/tutorial-7.rst:376 f66cd98d7a064027bc175a35ee5eed36
 #, fuzzy
 msgid "Further down in ``pyproject.toml``, you'll notice other sections that are operating system dependent, like ``[tool.briefcase.app.helloworld.macOS]`` and ``[tool.briefcase.app.helloworld.windows]``. These sections *also* have a ``requires`` setting. These settings allow you to define additional platform-specific dependencies - so, for example, if you need a platform-specific library to handle some aspect of your app, you can specify that library in the platform-specific ``requires`` section, and that setting will only be used for that platform. You will notice that the ``toga`` libraries are all specified in the platform-specific ``requires`` section - this is because the libraries needed to display a user interface are platform specific."
 msgstr "在``pyproject.toml``中，您會注意到與作業系統相關的其他部分，例如``[tool.briefcase.app.helloworld.macOS]``和``[tool.briefcase.app.helloworld``.windows]`` 。這些部分*也*有一個``requires``設定。這些設定允許您定義其他特定於平台的依賴項 - 因此，例如，如果您需要特定於平台的庫來處理應用程式的某些方面，您可以在特定於平台的``requires``部分中指定該庫，並且該設定將僅用於該平台。您會注意到``toga``庫都是在特定於平台的``requires``部分中指定的 - 這是因為顯示使用者介面所需的庫是特定於平台的。"
 
-#: ../../tutorial/tutorial-7.rst:381 9e7f8d1151764405ad0c0a2a1fcaafa2
+#: ../../tutorial/tutorial-7.rst:387 ff3211a08e4444058f40842405f5b338
 #, fuzzy
 msgid "In our case, we want ``httpx`` to be installed on all platforms, so we use the app-level ``requires`` setting. The app-level dependencies will always be installed; the platform-specific dependencies are installed *in addition* to the app-level ones."
 msgstr "在我們的例子中，我們希望在所有平台上安裝``httpx``，因此我們使用應用程式層級``requires``設定。應用程式級相依性將始終被安裝；除了*應用程式層級的依賴項之外，還會安裝特定於平台的依賴項。"
 
-#: ../../tutorial/tutorial-7.rst:386 d80d4d5c595a467f987bcdef56be01cf
+#: ../../tutorial/tutorial-7.rst:392 f62620cc05644c429e0d0c3e83a0d701
 #, fuzzy
 msgid "Some binary packages may not be available"
 msgstr "某些二進位套件可能不可用"
 
-#: ../../tutorial/tutorial-7.rst:388 90920f02725e4cc680f90d536982a186
+#: ../../tutorial/tutorial-7.rst:394 dcb74cf2800f4006b402c0dc6f4f9d6a
 #, fuzzy
 msgid "On desktop platforms (macOS, Windows, Linux), any ``pip``-installable can be added to your requirements. On mobile and web platforms, `your options are slightly limited <https://briefcase.readthedocs.io/en/latest/background/faq.html#can-i-use-third-party-python-packages-in-my-app>`__."
 msgstr "在桌面平台（macOS、Windows、Linux）上，任何可安裝的``pip``都可以加入您的需求。在行動和網路平台上，`您的選擇略有限制 <https://briefcase.readthedocs.io/en/latest/background/faq.html#can-i-use-third-party-python-packages-in-my-app>`__。"
 
-#: ../../tutorial/tutorial-7.rst:392 6b785744b7ce43d7bdcf085259c8c6ee
+#: ../../tutorial/tutorial-7.rst:398 f1958699f45c42c495cd5bcd4690076d
 #, fuzzy
 msgid "In short; any *pure Python* package (i.e., packages that do *not* contain a binary module) can be used without difficulty. However, if your dependency contains a binary component, it must be compiled; at this time, most Python packages don't provide compilation support for non-desktop platforms."
 msgstr "簡而言之;任何 *純Python* 套件（即，*不* 包含二進位模組的套件）都可以毫無困難地使用。但是，如果您的依賴項包含二進位元件，則必須對其進行編譯；目前，大多數Python套件不提供非桌面平台的編譯支援。"
 
-#: ../../tutorial/tutorial-7.rst:397 98f1a73578774af5a572423df4373721
+#: ../../tutorial/tutorial-7.rst:403 be0cdfd36daa4c958b7533c25ac54fea
 #, fuzzy
 msgid "BeeWare can provide binaries for some popular binary modules (including ``numpy``, ``pandas``, and ``cryptography``). It's *usually* possible to compile packages for mobile platforms, but it's not easy to set up -- well outside the scope of an introductory tutorial like this one."
 msgstr "BeeWare 可以為一些流行的二進位模組（包括``numpy``、``pandas``和``cryptography``）提供二進位檔案。 *通常* 可以為行動平台編譯軟體包，但設定起來並不容易——這遠遠超出了像本教程這樣的介紹性教程的範圍。"
 
-#: ../../tutorial/tutorial-7.rst:402 b12b94bf4507414fb158be2da02fc662
+#: ../../tutorial/tutorial-7.rst:408 e552ddaa2b0e40d682339de86944977f
 #, fuzzy
 msgid "Now that we've told Briefcase about our additional requirements, we can try packaging our app again. Ensure that you've saved your changes to ``pyproject.toml``, and then update your app again - this time, passing in the ``-r`` flag. This tells Briefcase to update requirements in the packaged app:"
 msgstr "現在我們已經告訴 Briefcase 我們的附加要求，我們可以嘗試再次打包我們的應用程式。確保您已將變更儲存到``pyproject.toml``，然後再次更新您的應用程式 - 這次傳入``-r``標誌。這告訴 Briefcase 更新打包應用程式中的要求："
 
-#: ../../tutorial/tutorial-7.rst:479 ef300c9d587542dbbba930f3c2aa42d7
+#: ../../tutorial/tutorial-7.rst:484 d9075479e19f4140995dca5686ce0592
 #, fuzzy
 msgid "Once you've updated, you can run ``briefcase build`` and ``briefcase run`` - and you should see your packaged app, with the new dialog behavior."
 msgstr "更新後，您可以運行``briefcase build``和``briefcase run`` - 您應該會看到打包的應用程序，具有新的對話框行為。"
 
-#: ../../tutorial/tutorial-7.rst:484 b21457ac7f364935af4f372957d506a4
+#: ../../tutorial/tutorial-7.rst:489 cc31748b60e04679a6b5b504175f6f72
 #, fuzzy
 msgid "The ``-r`` option for updating requirements is also honored by the ``build`` and ``run`` command, so if you want to update, build, and run in one step, you could use ``briefcase run -u -r``."
 msgstr "用於更新需求的``-r``選項也受到``build``和``run``命令的支持，因此如果您想一步更新、構建和運行，您可以使用``briefcase``運行-u -r``。"
 
-#: ../../tutorial/tutorial-7.rst:490 70d1d14b15d64985b7f6bcc6cc830fad
+#: ../../tutorial/tutorial-7.rst:495 18bc1c45506e437392ea95e7eac5cab3
 msgid "Next steps"
 msgstr "下一步"
 
-#: ../../tutorial/tutorial-7.rst:492 82852a8edaca43c6b335998302820ed0
+#: ../../tutorial/tutorial-7.rst:497 d28d07daaa9c4572843b8297ff44a7a4
 #, fuzzy
 msgid "We've now got an app that uses a third-party library! However, you may have noticed that when you press the button, the app becomes a little unresponsive. Can we do anything to fix this? Turn to :doc:`Tutorial 8 <tutorial-8>` to find out..."
 msgstr "我們現在有了一個使用第三方函式庫的應用程式！但是，您可能已經注意到，當您按下按鈕時，應用程式變得有點無響應。我們能做些什麼來解決這個問題嗎？前往 :doc:`教學 8 <tutorial-8>` 找出..."
+
