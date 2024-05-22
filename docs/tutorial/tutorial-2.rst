@@ -117,8 +117,8 @@ Lets do something more interesting with our ``HelloWorld`` app.
 
 .. note::
 
-    When you make these changes, make sure you keep the imports at the top of the file, 
-    and the ``main()`` at the bottom of the file. You only need to update the 
+    When you make these changes, make sure you keep the imports at the top of the file,
+    and the ``main()`` at the bottom of the file. You only need to update the
     ``HelloWorld`` class.
 
 Modify your ``HelloWorld`` class inside ``src/helloworld/app.py`` so that it
