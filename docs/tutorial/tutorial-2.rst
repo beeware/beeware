@@ -113,6 +113,13 @@ content into the application, and make the app do something interesting.
 Adding some content of our own
 ==============================
 
+Now we are going to do something more interesting in the ``HelloWorld`` class.
+
+.. note::
+
+    keep the imports at the top of the file and the ``main()`` at the
+    bottom.
+
 Modify your ``HelloWorld`` class inside ``src/helloworld/app.py`` so that it
 looks like this::
 
@@ -146,10 +153,6 @@ looks like this::
         def say_hello(self, widget):
             print(f"Hello, {self.name_input.value}")
 
-.. note::
-
-    Don't remove the imports at the top of the file , or the ``main()`` at the
-    bottom. You only need to update the ``HelloWorld`` class.
 
 Let's look in detail at what has changed.
 
