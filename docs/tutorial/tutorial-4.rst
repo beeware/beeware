@@ -146,7 +146,7 @@ a name in the text input box, the dialog will say "Hello, ". Let's modify the
 ``say_hello`` function again to handle this edge case.
 
 At the top of the file, between the imports and the ``class HelloWorld``
-definition, add a utility methods to generate an appropriate greeting depending
+definition, add a utility method to generate an appropriate greeting depending
 on the value of the name that has been provided::
 
     def greeting(name):
