@@ -80,3 +80,8 @@ combine_as_imports = true
 
 [tool.setuptools_scm]
 # To enable SCM versioning, we need an empty tool configuration for setuptools_scm
+
+[tool.check-wheel-contents]
+# WOO7: wheel library is empty
+# W008: wheel is empty
+ignore = "W007,W008"
