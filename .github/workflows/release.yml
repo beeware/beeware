@@ -9,6 +9,8 @@ jobs:
   ci:
     name: CI
     uses: ./.github/workflows/ci.yml
+    with:
+      attest-package: "true"
 
   docs:
     name: Verify Docs Build
