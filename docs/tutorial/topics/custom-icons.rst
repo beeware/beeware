@@ -1,11 +1,10 @@
-:orphan:
+=================
+Customizing icons
+=================
 
-====================================
-Tutorial 10 - Make this app your own
-====================================
-
-So far, our app has used a default "gray bee" icon when it is packaged. Let's
-personalize our application by configuring it to use our own icon.
+The app we developed in the main tutorial uses a default "gray bee" icon when it
+is packaged. Let's personalize this application by configuring it to use our own
+icon.
 
 Adding an icon
 ==============
@@ -163,7 +162,7 @@ However, as we haven't provided the actual icon files, the install fails, and
 Briefcase falls back to a default value (the same "gray bee" icon).
 
 Let's provide some actual icons. Download :download:`this icons.zip bundle
-<./resources/icons.zip>`, and unpack it into the root of your project
+<../resources/icons.zip>`, and unpack it into the root of your project
 directory. After unpacking, your project directory should look something like::
 
     beeware-tutorial/
@@ -184,7 +183,7 @@ directory. After unpacking, your project directory should look something like::
 There's a *lot* of icons in this folder, but most of them should look the same:
 a green snake on a light blue background:
 
-.. image:: resources/icon.png
+.. image:: ../resources/icon.png
     :align: center
     :alt: Icon of green snake with a light blue background
 
@@ -463,20 +462,3 @@ you shouldn't add the ``build`` folder to your version control system. The
 ``build`` folder should be considered entirely ephemeral - an output of the
 build system that can be recreated as needed to reflect the current
 configuration of your project.
-
-Next steps
-==========
-
-This has been a taste for what you can do with the tools provided by the
-BeeWare project. What you do from here is up to you!
-
-Some places to go from here:
-
-* Tutorials demonstrating `features of the Toga widget toolkit
-  <https://toga.readthedocs.io/en/latest/tutorial/index.html>`__.
-* Details on the `options available when configuring your Briefcase project
-  <https://briefcase.readthedocs.io/en/latest/reference/index.html>`__.
-
-.. We've now got an application with a custom icon on our desktop and phone! How do
-.. we share this application with everyone else? Turn to :doc:`Tutorial 11
-.. <tutorial-11>` to find out...

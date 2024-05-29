@@ -1,6 +1,6 @@
-==========================
-Tutorial 9 - Testing times
-==========================
+=============
+Testing times
+=============
 
 Most software development doesn't involve writing new code - it's modifying
 existing code. Ensuring that existing code continues to work in the way we
@@ -10,11 +10,11 @@ the behavior of our app is with a *test suite*.
 Running the test suite
 ======================
 
-It turns out our project already has a test suite! When we originally generated
-our project, two top-level directories were generated: ``src`` and ``tests``.
-The ``src`` folder contains the code for our app; the ``tests`` folder contains
-our test suite. Inside the ``tests`` folder is a file named ``test_app.py`` with
-the following content::
+It turns out the project from the core tutorial already has a test suite! When
+we originally generated our project, two top-level directories were generated:
+``src`` and ``tests``. The ``src`` folder contains the code for our app; the
+``tests`` folder contains our test suite. Inside the ``tests`` folder is a file
+named ``test_app.py`` with the following content::
 
     def test_first():
         "An initial test for the app"
@@ -511,10 +511,3 @@ subsequent runs, you can omit this option.
 You can also use the ``--test`` option on mobile backends: - so ``briefcase run
 iOS --test`` and ``briefcase run android --test`` will both work, running the
 test suite on the mobile device you select.
-
-Next steps
-==========
-
-We've now got a a test suite for our application. But it still looks like a
-tutorial app. Is there anything we can do about that? Turn to :doc:`Tutorial 10
-<tutorial-10>` to find out...

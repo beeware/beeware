@@ -1,0 +1,56 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Russell Keith-Magee
+# This file is distributed under the same license as the BeeWare package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BeeWare 0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-29 08:29+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.15.0\n"
+
+#: ../../tutorial/topics/index.rst:3 06ab4f13785c480ba9768a9303bb9183
+msgid "Going further"
+msgstr ""
+
+#: ../../tutorial/topics/index.rst:5 f44f4b884a0a479080c8b9d2499c68fa
+msgid "Want to go deeper on specific topics? Here are some additional tutorials that explore common aspects of application development. Each tutorial is standalone, and can be completed in any order; but they all assume you've completed the core tutorial."
+msgstr ""
+
+#: ../../tutorial/topics/index.rst:12 7301241a7d4342a09a76d6748695d0a8
+msgid "Customizing icons"
+msgstr ""
+
+#: ../../tutorial/topics/index.rst:14 be9a16e0f2124586b4243262d456de0d
+msgid "Customize your application's appearance by replace the default \"gray bee\" icon."
+msgstr ""
+
+#: ../../tutorial/topics/index.rst:16 25cdbf085e17462ebd5e8b1fbd783134
+msgid "Application Testing"
+msgstr ""
+
+#: ../../tutorial/topics/index.rst:18 8deeb37f194d4e4b8d2ce0b36a9d88c3
+msgid "How do you ensure that your application works, and stays working? By adding a test suite to your project!"
+msgstr ""
+
+#: ../../tutorial/topics/index.rst:21 dd77e84de7e0433da094f2bdcf38cb56
+msgid "Camera access"
+msgstr ""
+
+#: ../../tutorial/topics/index.rst:23 4371433de6274488a9c45f8d7e1b5afc
+msgid "Use the camera on your mobile or desktop device to take and view a picture from within your application."
+msgstr ""
+
+#~ msgid "Want to go deeper on specific topics? Here are some additional standalone tutorials that demonstrate common aspects of application development. Each tutorial is standalone, and can be completed in any order; but they all assume you've completed the core tutorial."
+#~ msgstr ""
+

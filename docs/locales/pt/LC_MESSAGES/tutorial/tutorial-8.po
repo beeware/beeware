@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-15 18:36+0000\n"
+"POT-Creation-Date: 2024-05-29 10:14+0800\n"
 "PO-Revision-Date: 2024-02-13 12:07+0800\n"
 "Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
 "Language: pt\n"
@@ -18,161 +18,214 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: ../../tutorial/tutorial-8.rst:3 556c592788284b54ba48ea05b406a6a5
+#: ../../tutorial/tutorial-8.rst:3 b97df07147f44bab84e8cff65e3e0a59
 msgid "Tutorial 8 - Making it Smooooth"
 msgstr "Tutorial 8 - Suavizando o Processo"
 
-#: ../../tutorial/tutorial-8.rst:5 f84b73f81d7f40ecbc456054d04bfa8d
+#: ../../tutorial/tutorial-8.rst:5 9e06620f76b0420491deacf7485a3370
 #, fuzzy
 msgid "Unless you've got a *really* fast internet connection, you may notice that when you press the button, the GUI for your app locks up for a little bit. This is because the web request we have made is *synchronous*. When our application makes the web request, it waits for the API to return a response before continuing. While it's waiting, it *isn't* allowing the application to redraw - and as a result, the application locks up."
 msgstr "A menos que você tenha uma conexão de Internet *muito* rápida, poderá perceber que, ao pressionar o botão, a GUI do seu aplicativo trava um pouco. Isso ocorre porque a solicitação da Web que fizemos é *síncrona*. Quando nosso aplicativo faz a solicitação da Web, ele espera que a API retorne uma resposta antes de continuar. Enquanto espera, ele não permite que o aplicativo seja redesenhado e, como resultado, o aplicativo trava."
 
-#: ../../tutorial/tutorial-8.rst:13 d223e38f8d6b46bcace4d235f8ac59b4
+#: ../../tutorial/tutorial-8.rst:13 4076642e45ca47a19626ee4d1317eb55
 #, fuzzy
 msgid "GUI Event Loops"
 msgstr "Loops de eventos da GUI"
 
-#: ../../tutorial/tutorial-8.rst:15 1b6fb0927d294dd9b6dcd41d055567fb
+#: ../../tutorial/tutorial-8.rst:15 af86e37dad5e4a9fbae42435b4349332
 #, fuzzy
 msgid "To understand why this happens, we need to dig into the details of how a GUI application works. The specifics vary depending on the platform; but the high level concepts are the same, no matter the platform or GUI environment you're using."
 msgstr "Para entender por que isso acontece, precisamos nos aprofundar nos detalhes de como funciona um aplicativo de GUI. Os detalhes variam de acordo com a plataforma, mas os conceitos de alto nível são os mesmos, independentemente da plataforma ou do ambiente de GUI que você estiver usando."
 
-#: ../../tutorial/tutorial-8.rst:20 81bb6a81de17416d86baf57d49e89492
+#: ../../tutorial/tutorial-8.rst:20 360c289e8d6c45e99f84a4e0e353beb7
 #, fuzzy
 msgid "A GUI app is, fundamentally, a single loop that looks something like::"
 msgstr "Um aplicativo de GUI é, basicamente, um único loop que se parece com::"
 
-#: ../../tutorial/tutorial-8.rst:26 4fb28fe9c91d483cb11992027ff51a12
+#: ../../tutorial/tutorial-8.rst:26 c35c55a6e04b49e28e0ab062ba4cf050
 #, fuzzy
 msgid "This loop is called the *Event Loop*. (These aren't actual method names - it's an illustration of what is going on in \"pseudo-code\")."
 msgstr "Esse loop é chamado de *Event Loop*. (Esses não são nomes de métodos reais - é uma ilustração do que está acontecendo no \"pseudocódigo\")."
 
-#: ../../tutorial/tutorial-8.rst:29 6da8604b0e0548a9a1bac096d5dcad7e
+#: ../../tutorial/tutorial-8.rst:29 aaf7d9b44a0c48ceac6866e314acd8d3
 #, fuzzy
 msgid "When you click on a button, or drag a scroll bar, or type a key, you are generating an \"event\". That \"event\" is put onto a queue, and the app will process the queue of events when it next has the opportunity to do so. The user code that is triggered in response to the event is called an *event handler*. These event handlers are invoked as part of the ``process_events()`` call."
 msgstr "Quando você clica em um botão, arrasta uma barra de rolagem ou digita uma tecla, está gerando um \"evento\". Esse \"evento\" é colocado em uma fila, e o aplicativo processará a fila de eventos quando tiver a oportunidade de fazê-lo. O código do usuário que é acionado em resposta ao evento é chamado de *manipulador de eventos*. Esses manipuladores de eventos são invocados como parte da chamada ``process_events()``."
 
-#: ../../tutorial/tutorial-8.rst:35 e0f563132cb24e07a511d8fd1591509c
+#: ../../tutorial/tutorial-8.rst:35 19c6513201a541109790a471de968e4a
 #, fuzzy
 msgid "Once an app has processed all the available events, it will ``redraw()`` the GUI. This takes into account any changes that the events have caused to the display of the app, as well as anything else that is going on in the operating system - for example, the windows of another app may obscure or reveal part of our app's window, and our app's redraw will need to reflect the portion of the window that is currently visible."
 msgstr "Depois que um aplicativo tiver processado todos os eventos disponíveis, ele ``redraw()`` a GUI. Isso leva em conta todas as alterações que os eventos causaram na exibição do aplicativo, bem como qualquer outra coisa que esteja acontecendo no sistema operacional - por exemplo, as janelas de outro aplicativo podem obscurecer ou revelar parte da janela do nosso aplicativo, e o redesenho do nosso aplicativo precisará refletir a parte da janela que está visível no momento."
 
-#: ../../tutorial/tutorial-8.rst:42 b357254112514abf8a51ee058553ca33
+#: ../../tutorial/tutorial-8.rst:42 d9424f5471d94be3a27038d4e53fc405
 #, fuzzy
 msgid "The important detail to notice: while an application is processing an event, *it can't redraw*, and *it can't process other events*."
 msgstr "O detalhe importante a ser observado: enquanto um aplicativo estiver processando um evento, *ele não pode redesenhar* e *não pode processar outros eventos*."
 
-#: ../../tutorial/tutorial-8.rst:45 21269aba18514cf5a6aec28bfa89e4bb
+#: ../../tutorial/tutorial-8.rst:45 2dbd9514c6a04e8baf823e9c847c5109
 #, fuzzy
 msgid "This means any user logic contained in an event handler needs to complete quickly. Any delay in completing the event handler will be observed by the user as a slowdown (or stop) in GUI updates. If this delay is long enough, your operating system may report this as a problem - the macOS \"beachball\" and Windows \"spinner\" icons are the operating system telling you that your app is taking too long in an event handler."
 msgstr "Isso significa que qualquer lógica de usuário contida em um manipulador de eventos precisa ser concluída rapidamente. Qualquer atraso na conclusão do manipulador de eventos será observado pelo usuário como uma desaceleração (ou parada) nas atualizações da GUI. Se esse atraso for longo o suficiente, seu sistema operacional poderá informar isso como um problema - os ícones \"bola de praia\" do macOS e \"botão giratório\" do Windows são o sistema operacional informando que seu aplicativo está demorando demais em um manipulador de eventos."
 
-#: ../../tutorial/tutorial-8.rst:52 20a24d7063aa4b2182c0b10a5f3e4519
+#: ../../tutorial/tutorial-8.rst:52 17451cf78a8c4fa98acb9c392ad4385a
 #, fuzzy
 msgid "Simple operations like \"update a label\", or \"recompute the total of the inputs\" are easy to complete quickly. However, there are a lot of operations that can't be completed quickly. If you're performing a complex mathematical calculation, or indexing all the files on a file system, or performing a large network request, you can't \"just do it quickly\" - the operations are inherently slow."
 msgstr "Operações simples como \"atualizar um rótulo\" ou \"recomputar o total das entradas\" são fáceis de concluir rapidamente. Entretanto, há muitas operações que não podem ser concluídas rapidamente. Se estiver realizando um cálculo matemático complexo, ou indexando todos os arquivos em um sistema de arquivos, ou realizando uma grande solicitação de rede, não é possível \"simplesmente fazer isso rapidamente\" - as operações são inerentemente lentas."
 
-#: ../../tutorial/tutorial-8.rst:58 57cae938081c439d946aed6209186d69
+#: ../../tutorial/tutorial-8.rst:58 bbd786de4d51471db85ac2658b67ae5e
 #, fuzzy
 msgid "So - how do we perform long-lived operations in a GUI application?"
 msgstr "Então, como realizamos operações de longa duração em um aplicativo de GUI?"
 
-#: ../../tutorial/tutorial-8.rst:61 b4537b665df14c83a5ebcc254f3f3f4d
+#: ../../tutorial/tutorial-8.rst:61 d56e57f6b50b46eab69b7b211de0f9d1
 #, fuzzy
 msgid "Asynchronous programming"
 msgstr "Programação assíncrona"
 
-#: ../../tutorial/tutorial-8.rst:63 5e93dba1ea784e64b364e245d07136a1
+#: ../../tutorial/tutorial-8.rst:63 68c2e5072fb04d218d5529972696aa79
 #, fuzzy
 msgid "What we need is a way to tell an app in the middle of a long-lived event handler that it is OK to temporarily release control back to the event loop, as long as we can resume where we left off. It's up to the app to determine when this release can occur; but if the app releases control to the event loop regularly, we can have a long-running event handler *and* maintain a responsive UI."
 msgstr "O que precisamos é de uma maneira de informar a um aplicativo no meio de um manipulador de eventos de longa duração que não há problema em liberar temporariamente o controle de volta para o loop de eventos, desde que possamos retomar de onde paramos. Cabe ao aplicativo determinar quando essa liberação pode ocorrer; mas se o aplicativo liberar o controle para o loop de eventos regularmente, poderemos ter um manipulador de eventos de longa duração *e* manter uma interface de usuário responsiva."
 
-#: ../../tutorial/tutorial-8.rst:69 d298c7170f8d4c9189ff573185bab13c
+#: ../../tutorial/tutorial-8.rst:69 3ab1b6534f7d407299e406e5b7f337cc
 #, fuzzy
 msgid "We can do this by using *asynchronous programming*. Asynchronous programming is a way to describe a program that allows the interpreter to run multiple functions at the same time, sharing resources between all the concurrently running functions."
 msgstr "Podemos fazer isso usando a *programação assíncrona*. A programação assíncrona é uma maneira de descrever um programa que permite que o intérprete execute várias funções ao mesmo tempo, compartilhando recursos entre todas as funções executadas simultaneamente."
 
-#: ../../tutorial/tutorial-8.rst:74 1ddd6cf42f644b428056151964ee842d
+#: ../../tutorial/tutorial-8.rst:74 c0e6baee10d14f55a1bfbe7908dcc567
 #, fuzzy
 msgid "Asynchronous functions (known as *coroutines*) need to be explicitly declared as being asynchronous. They also need to internally declare when an opportunity exists to change context to another coroutine."
 msgstr "As funções assíncronas (conhecidas como *co-rotinas*) precisam ser explicitamente declaradas como assíncronas. Elas também precisam declarar internamente quando existe uma oportunidade de mudar o contexto para outra co-rotina."
 
-#: ../../tutorial/tutorial-8.rst:78 a5b3b71ff20f4dec8c8cd6678f9766d1
+#: ../../tutorial/tutorial-8.rst:78 a912e9ed543246dda963074688243f9d
 #, fuzzy
 msgid "In Python, asynchronous programming is implemented using the ``async`` and ``await`` keywords, and the `asyncio <https://docs.python.org/3/library/asyncio.html>`__ module in the standard library. The ``async`` keyword allows us to declare that a function is an asynchronous coroutine. The ``await`` keyword provides a way to declare when an opportunity exists to change context to another coroutine. The `asyncio <https://docs.python.org/3/library/asyncio.html>`__ module provides some other useful tools and primitives for asynchronous coding."
 msgstr "Em Python, a programação assíncrona é implementada usando as palavras-chave ``async`` e ``await`` e o módulo `asyncio <https://docs.python.org/3/library/asyncio.html>`__ na biblioteca padrão. A palavra-chave ``async`` nos permite declarar que uma função é uma co-rotina assíncrona. A palavra-chave ``await`` fornece uma maneira de declarar quando existe uma oportunidade de mudar o contexto para outra co-rotina. O módulo `asyncio <https://docs.python.org/3/library/asyncio.html>`__ fornece algumas outras ferramentas e primitivas úteis para codificação assíncrona."
 
-#: ../../tutorial/tutorial-8.rst:88 2f6f82d2ae894c9ca9663642daa505fb
+#: ../../tutorial/tutorial-8.rst:88 f0279d5f77e94699a7604b0076c80ef5
 #, fuzzy
-msgid "Making the tutorial Asynchronous"
+msgid "Making the tutorial asynchronous"
 msgstr "Tornando o tutorial assíncrono"
 
-#: ../../tutorial/tutorial-8.rst:90 f498d82d9bb0484f83eadb2c3f521bee
+#: ../../tutorial/tutorial-8.rst:90 a6173083cca149f1bc1b2c395b8ab18e
 #, fuzzy
 msgid "To make our tutorial asynchronous, modify the ``say_hello()`` event handler so it looks like this::"
 msgstr "Para tornar nosso tutorial assíncrono, modifique o manipulador de eventos ``say_hello()`` para que ele tenha a seguinte aparência::"
 
-#: ../../tutorial/tutorial-8.rst:104 0342df74a5324a3888064b3c7cb55667
+#: ../../tutorial/tutorial-8.rst:104 35c56dff243b4e09a63bbdc5e8f9c7e5
 #, fuzzy
 msgid "There are only 4 changes in this code from the previous version:"
 msgstr "Há apenas 4 alterações nesse código em relação à versão anterior:"
 
-#: ../../tutorial/tutorial-8.rst:106 85e8e96a3a3241258577e4d2c48c9d07
+#: ../../tutorial/tutorial-8.rst:106 42b74e72bdfc43348a9857b0b353258c
 #, fuzzy
 msgid "The method is defined as ``async def``, rather than just ``def``. This tells Python that the method is an asynchronous coroutine."
 msgstr "O método é definido como ``async def``, em vez de apenas ``def``. Isso informa ao Python que o método é uma co-rotina assíncrona."
 
-#: ../../tutorial/tutorial-8.rst:109 c1cd4f5936914987ba42c1831865450a
+#: ../../tutorial/tutorial-8.rst:109 0a956647650d4229928b4c93f670a370
 #, fuzzy
 msgid "The client that is created is an asynchronous ``AsyncClient()``, rather than a synchronous ``Client()``. This tells ``httpx`` that it should operate in asynchronous mode, rather than synchronous mode."
 msgstr "O cliente criado é um ``AsyncClient()`` assíncrono, em vez de um ``Client()`` síncrono. Isso informa ao ``httpx`` que ele deve operar no modo assíncrono, e não no modo síncrono."
 
-#: ../../tutorial/tutorial-8.rst:113 c21357274ab34629b982696257353eea
+#: ../../tutorial/tutorial-8.rst:113 b8266ae114fd4266ace4fdd9e9f0b7d7
 #, fuzzy
 msgid "The context manager used to create the client is marked as ``async``. This tells Python that there is an opportunity to release control as the context manager is entered and exited."
 msgstr "O gerenciador de contexto usado para criar o cliente é marcado como ``async``. Isso informa ao Python que há uma oportunidade de liberar o controle à medida que o gerenciador de contexto entra e sai."
 
-#: ../../tutorial/tutorial-8.rst:117 3405471bdfd44d9b8edb9db2ba0a839b
+#: ../../tutorial/tutorial-8.rst:117 de51b60f3fed43ada6926456bc76585c
 #, fuzzy
 msgid "The ``get`` call is made with an ``await`` keyword. This instructs the app that while we are waiting for the response from the network, the app can release control to the event loop."
 msgstr "A chamada ``get`` é feita com uma palavra-chave ``await``. Isso instrui o aplicativo que, enquanto aguardamos a resposta da rede, ele pode liberar o controle para o loop de eventos."
 
-#: ../../tutorial/tutorial-8.rst:121 abb07a45ce8a4aa0a7e9c5080f23e7ad
+#: ../../tutorial/tutorial-8.rst:121 33c049a3a8744919b04c1e12d767068a
 #, fuzzy
 msgid "Toga allows you to use regular methods or asynchronous coroutines as handlers; Toga manages everything behind the scenes to make sure the handler is invoked or awaited as required."
 msgstr "A Toga permite que você use métodos regulares ou co-rotinas assíncronas como manipuladores; a Toga gerencia tudo nos bastidores para garantir que o manipulador seja chamado ou aguardado conforme necessário."
 
-#: ../../tutorial/tutorial-8.rst:125 6ca21ee4df7f4702b07c4068d9e65452
+#: ../../tutorial/tutorial-8.rst:125 cce22e9535254e089c1ccfbf46e00fc8
 #, fuzzy
 msgid "If you save these changes and re-run the app (either with ``briefcase dev`` in development mode, or by updating and re-running the packaged app), there won't be any obvious changes to the app. However, when you click on the button to trigger the dialog, you may notice a number of subtle improvements:"
 msgstr "Se você salvar essas alterações e executar novamente o aplicativo (com o ``briefcase dev`` no modo de desenvolvimento ou atualizando e executando novamente o aplicativo empacotado), não haverá nenhuma alteração óbvia no aplicativo. No entanto, ao clicar no botão para acionar a caixa de diálogo, você poderá notar uma série de melhorias sutis:"
 
-#: ../../tutorial/tutorial-8.rst:130 5a61a1d318e9440eb47fc1468c0da34d
+#: ../../tutorial/tutorial-8.rst:130 c3133bf9110b407b9cbc051e7857bcf7
 #, fuzzy
 msgid "The button returns to an \"unclicked\" state, rather than being stuck in a \"clicked\" state."
 msgstr "O botão retorna a um estado \"não clicado\", em vez de ficar preso em um estado \"clicado\"."
 
-#: ../../tutorial/tutorial-8.rst:133 8efd4236b64a4ebdb82f66aa861fe45a
+#: ../../tutorial/tutorial-8.rst:133 2a7d376632a1443c9d6b1237dedab3ce
 #, fuzzy
 msgid "The \"beachball\"/\"spinner\" icon won't appear"
 msgstr "O ícone \"bola de praia\"/\"botão giratório\" não é exibido"
 
-#: ../../tutorial/tutorial-8.rst:135 ae7b37ee9882480180a76bc25aa3d979
+#: ../../tutorial/tutorial-8.rst:135 ef83417216bd49c69742bcb7fd84ddc0
 #, fuzzy
 msgid "If you move/resize the app window while waiting for the dialog to appear, the window will redraw."
 msgstr "Se você mover/redimensionar a janela do aplicativo enquanto aguarda a exibição da caixa de diálogo, a janela será redesenhada."
 
-#: ../../tutorial/tutorial-8.rst:138 beb45cd915f8471888d2ce35504f1d42
+#: ../../tutorial/tutorial-8.rst:138 3cbfbcd025c2411294fcffa1835c17fa
 #, fuzzy
 msgid "If you try to open an app menu, the menu will appear immediately."
 msgstr "Se você tentar abrir um menu de aplicativo, o menu será exibido imediatamente."
 
-#: ../../tutorial/tutorial-8.rst:141 92949b6ed994435dbccf80bb3550a7c2
+#: ../../tutorial/tutorial-8.rst:141 32a173a7e81e473489d699427cfe8852
 msgid "Next steps"
 msgstr "Próximos passos"
 
-#: ../../tutorial/tutorial-8.rst:143 585cf6650e6e42c88e3f39dbf1505848
-#, fuzzy
-msgid "We've now got an application that is slick and responsive, even when it's waiting on a slow API. But how can we make sure that the app keeps working as we continue to develop it further? How do we test our app? Turn to :doc:`Tutorial 9 <tutorial-9>` to find out..."
-msgstr "Agora temos um aplicativo que é elegante e responsivo, mesmo quando está esperando em uma API lenta. Mas como podemos ter certeza de que o aplicativo continuará funcionando à medida que continuarmos a desenvolvê-lo? Como testamos nosso aplicativo? Consulte o :doc:`Tutorial 9 <tutorial-9>` para descobrir..."
+#: ../../tutorial/tutorial-8.rst:143 094e45e24f9d40e98daff251cc713fd5
+msgid "This has been a taste for what you can do with the tools provided by the BeeWare project. Over the course of this tutorial, you have:"
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:146 4feec21c0f394e899dd54f58654c745c
+msgid "Created a new GUI app project;"
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:147 9c062cfe7c7c4e8cb3c83dc27067949a
+msgid "Run that app in development mode;"
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:148 fd3864f3cdb4478b826216f81f3556c2
+msgid "Built the app as a standalone binary for a desktop operating system;"
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:149 92419a5605d9428b8f8ae08de6713204
+msgid "Packaged that project for distribution to others;"
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:150 8757a5bd6cca4c05b2931660f5f482c4
+msgid "Run the app on a mobile simulator and/or device;"
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:151 aaa1bc7b67a64a47a10166a092b525ad
+msgid "Run the app as a web app;"
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:152 bbacbcfde29e4df2b20660066b4121e2
+msgid "Added a third-party dependency to your app; and"
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:153 008215b8288843ae86a353b434e8a108
+msgid "Modified the app so that it remains responsive."
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:155 f0409113c57642b1873db5cc141447ef
+msgid "So - where to from here?"
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:157 aec31ee8c77d4c00952fcd1d331297f4
+msgid "If you'd like to go further, there are some additional :doc:`topic tutorials </tutorial/topics/index>` that go into detail on specific aspects of application development."
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:160 9b5c35fe788e47d79e245e62396c1def
+msgid "If you'd like to know more about how to build complex user interfaces with Toga, you can dive into `Toga's documentation <https://toga.readthedocs.io>`__. Toga also has it's own tutorial `demonstrating how to use various features of the widget toolkit <https://toga.readthedocs.io/en/latest/tutorial/index.html>`__."
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:165 1e0d15fd8f8c46e8b920aaf6b220fd8f
+msgid "If you'd like to know more about the capabilities of Briefcase, you can dive into `Briefcase's documentation <https://briefcase.readthedocs.io>`__."
+msgstr ""
+
+#~ msgid "We've now got an application that is slick and responsive, even when it's waiting on a slow API. But how can we make sure that the app keeps working as we continue to develop it further? How do we test our app? Turn to :doc:`Tutorial 9 <tutorial-9>` to find out..."
+#~ msgstr "Agora temos um aplicativo que é elegante e responsivo, mesmo quando está esperando em uma API lenta. Mas como podemos ter certeza de que o aplicativo continuará funcionando à medida que continuarmos a desenvolvê-lo? Como testamos nosso aplicativo? Consulte o :doc:`Tutorial 9 <tutorial-9>` para descobrir..."
+
+#~ msgid "Built the app as a standalone binary for a desktop operating syste;"
+#~ msgstr ""
 
