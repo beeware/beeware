@@ -38,8 +38,7 @@ jobs:
       id-token: write
       contents: read
       attestations: write
-#    uses: beeware/.github/.github/workflows/python-package-create.yml@main
-    uses: rmartin16/.github-beeware/.github/workflows/python-package-create.yml@hynek-build
+    uses: beeware/.github/.github/workflows/python-package-create.yml@main
     with:
       attest: ${{ inputs.attest-package }}
 
