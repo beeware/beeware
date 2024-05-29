@@ -1,0 +1,140 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Russell Keith-Magee
+# This file is distributed under the same license as the BeeWare package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BeeWare 0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-29 08:28+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_TW\n"
+"Language-Team: zh_TW <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.15.0\n"
+
+#: ../../tutorial/topics/camera-access.rst:3 dee56df037fe494fa6bfff5a582c8ed8
+msgid "Camera access"
+msgstr ""
+
+#: ../../tutorial/topics/camera-access.rst:5 9c862ed0465b412486913441948dfb06
+msgid "In this tutorial, we will use the camera on a mobile device. Important clarification, this will only work when installing the application on an actual mobile device; it will *not* work using an emulator on your development machine and will *not* work using the desktop or web versions of the application."
+msgstr ""
+
+#: ../../tutorial/topics/camera-access.rst:11 8855e598daa64000925a9ada190a6b34
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../tutorial/topics/camera-access.rst:13 fc7886eb98de49f38959af9239e71cef
+msgid "Make sure you at least have gotten to the point where you have the skeleton application running in developer mode. See the :doc:`first <../tutorial-0>` :doc:`two <../tutorial-1>` tutorials for details. Short story shorter, run the following commands in an empty directory and accept all the default options."
+msgstr ""
+
+#: ../../tutorial/topics/camera-access.rst:19
+#: ../../tutorial/topics/camera-access.rst:136
+#: ../../tutorial/topics/camera-access.rst:202
+#: ../../tutorial/topics/camera-access.rst:248 1d2cc2a52abc4797a2e8cf9cbad54884
+#: 358b1095f17641e5a932cbf6467542d8 895d61012da34470aa7460797af48b06
+#: aec48a5799624c0c86c8097af40d8675
+msgid "macOS"
+msgstr ""
+
+#: ../../tutorial/topics/camera-access.rst:29
+#: ../../tutorial/topics/camera-access.rst:152
+#: ../../tutorial/topics/camera-access.rst:215
+#: ../../tutorial/topics/camera-access.rst:264 4c378121517747c08f0941e88fe62145
+#: 6a934d170d044ddbb7d15010d2905e22 90afa5bc176a45df82c599e0d4e2ab28
+#: cb37e6fe18774b81840ccaaf0f08f3ab
+msgid "Linux"
+msgstr ""
+
+#: ../../tutorial/topics/camera-access.rst:39
+#: ../../tutorial/topics/camera-access.rst:168
+#: ../../tutorial/topics/camera-access.rst:229
+#: ../../tutorial/topics/camera-access.rst:280 14d31801f8914e6ab1bfeaa555935daf
+#: 28ac27418d0b4b05ba2e697f9a109ed1 aaaa875a65394fb5b296415a27311d56
+#: ec1a79d4f8034099affb8d8105bf0d80
+msgid "Windows"
+msgstr ""
+
+#: ../../tutorial/topics/camera-access.rst:49 640f5a74b7e742b696acd8cd3921fbd5
+msgid "The skeleton application should appear on your development machine. Exit the window and continue."
+msgstr ""
+
+#: ../../tutorial/topics/camera-access.rst:53 25070c5c81d0470099cc1a7ac4d6a91e
+msgid "Take a photo"
+msgstr ""
+
+#: ../../tutorial/topics/camera-access.rst:55 b1a9ff6f6d0e48de94e4e6d31582a295
+msgid "The highlighted code needs to be added to the code in your project's ``app.py`` file. If you've accepted all the default settings while bootstrapping the application, the full path of the file will be ``helloworld/src/helloworld/app.py``."
+msgstr ""
+
+#: ../../tutorial/topics/camera-access.rst:119 43fa5d68f7cf4cc68c52c88ac2e8b5b1
+msgid "The first highlighted code block creates two widgets and adds them to the GUI layout. The user can click the ``Button`` widget to take a photo, which will then be displayed in the ``ImageView`` widget. The second highlighted code block defines the event handler that either launches the camera or displays an error message. If the camera is successfully launched and a picture is taken, the image is set to the ``ImageView`` widget's ``image`` attribute and displayed."
+msgstr ""
+
+#: ../../tutorial/topics/camera-access.rst:128 6148e1698eba467cae798cf7a38e78cc
+msgid "Device permissions"
+msgstr ""
+
+#: ../../tutorial/topics/camera-access.rst:130 e4a419eade6c4948a6e75b997b386048
+msgid "We will try to run the application on our mobile device, but find we are not quite there yet. From the directory with the ``pyproject.toml`` file, run the commands to deploy the application to your mobile device."
+msgstr ""
+
+#: ../../tutorial/topics/camera-access.rst:138
+#: ../../tutorial/topics/camera-access.rst:154
+#: ../../tutorial/topics/camera-access.rst:170
+#: ../../tutorial/topics/camera-access.rst:204
+#: ../../tutorial/topics/camera-access.rst:217
+#: ../../tutorial/topics/camera-access.rst:231
+#: ../../tutorial/topics/camera-access.rst:250
+#: ../../tutorial/topics/camera-access.rst:266
+#: ../../tutorial/topics/camera-access.rst:282 0f8621ce6b84447b90de0cdbfe840186
+#: 21c6112b4f0044829cdb31b5faec1804 2a0fb003afce47319376d500108cc379
+#: 31f460a774f74ff59eb6d8cacb3163d7 57cfab9f02a64a868afda30eb9753eb1
+#: 93b811c5f4a84ea18bf8abf79ad20c6f 94d5a2962e4a497baaa30721d2478284
+#: f1de8c92791b401fa668d6f95b9eead9 f8f0cb82efbd46d29c17b63e90e8601d
+msgid "Android"
+msgstr ""
+
+#: ../../tutorial/topics/camera-access.rst:145
+#: ../../tutorial/topics/camera-access.rst:161
+#: ../../tutorial/topics/camera-access.rst:177
+#: ../../tutorial/topics/camera-access.rst:209
+#: ../../tutorial/topics/camera-access.rst:223
+#: ../../tutorial/topics/camera-access.rst:237
+#: ../../tutorial/topics/camera-access.rst:257
+#: ../../tutorial/topics/camera-access.rst:273
+#: ../../tutorial/topics/camera-access.rst:289 072247e7c95540d8b3d26276373f6df3
+#: 3bf1687565e0404ba04e58539abba659 3d0a82a6be31450c83996ef385f62c9d
+#: 47f2ec21e5bd43959ddb6b26a635962e 654a4d435e354e9687c69f38f7f9d0b9
+#: 89fe3f4b1c4049a8b749f335ac876f65 9b5296ee81124366aa500ab22de91cbf
+#: b72d792122fd4c56a3b40cc2b0d538ea ec9f68677ad24f2694b17b511887de64
+msgid "iOS"
+msgstr ""
+
+#: ../../tutorial/topics/camera-access.rst:185 23deb5c9ff9048969d8a27495ec1ef16
+msgid "For more details on installing your application to a mobile device, see :doc:`Tutorial 5 <../tutorial-5/index>`."
+msgstr ""
+
+#: ../../tutorial/topics/camera-access.rst:188 c68190abb6a84699987708d8adc8af9a
+msgid "If you click the button to take a photo, you will see an error. This is because the project did not specify the necessary camera permissions. Add the following line to the ``pyproject.toml`` file."
+msgstr ""
+
+#: ../../tutorial/topics/camera-access.rst:198 a37d71d5d23e4645b000eb488b43f5b8
+msgid "Deploy the application to the mobile device again."
+msgstr ""
+
+#: ../../tutorial/topics/camera-access.rst:243 f820f12b54d7475f8f7d2e1db2271f96
+msgid "This also doesn't work. This is because modifications to the ``pyproject.toml`` file require completely recreating the project."
+msgstr ""
+
+#: ../../tutorial/topics/camera-access.rst:296 70521887b37042a8825c1165827ec2d2
+msgid "The application should launch on your mobile device. Click the button to take a picture and it should appear in the GUI."
+msgstr ""
+

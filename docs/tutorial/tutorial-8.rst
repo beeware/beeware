@@ -84,7 +84,7 @@ opportunity exists to change context to another coroutine. The `asyncio
 <https://docs.python.org/3/library/asyncio.html>`__ module provides some other
 useful tools and primitives for asynchronous coding.
 
-Making the tutorial Asynchronous
+Making the tutorial asynchronous
 ================================
 
 To make our tutorial asynchronous, modify the ``say_hello()`` event handler so
@@ -140,7 +140,27 @@ trigger the dialog, you may notice a number of subtle improvements:
 Next steps
 ==========
 
-We've now got an application that is slick and responsive, even when it's
-waiting on a slow API. But how can we make sure that the app keeps working as we
-continue to develop it further? How do we test our app? Turn to :doc:`Tutorial 9
-<tutorial-9>` to find out...
+This has been a taste for what you can do with the tools provided by the
+BeeWare project. Over the course of this tutorial, you have:
+
+* Created a new GUI app project;
+* Run that app in development mode;
+* Built the app as a standalone binary for a desktop operating system;
+* Packaged that project for distribution to others;
+* Run the app on a mobile simulator and/or device;
+* Run the app as a web app;
+* Added a third-party dependency to your app; and
+* Modified the app so that it remains responsive.
+
+So - where to from here?
+
+* If you'd like to go further, there are some additional :doc:`topic tutorials
+  </tutorial/topics/index>` that go into detail on specific aspects of
+  application development.
+* If you'd like to know more about how to build complex user interfaces with
+  Toga, you can dive into `Toga's documentation
+  <https://toga.readthedocs.io>`__. Toga also has it's own tutorial
+  `demonstrating how to use various features of the widget toolkit
+  <https://toga.readthedocs.io/en/latest/tutorial/index.html>`__.
+* If you'd like to know more about the capabilities of Briefcase, you can dive
+  into `Briefcase's documentation <https://briefcase.readthedocs.io>`__.

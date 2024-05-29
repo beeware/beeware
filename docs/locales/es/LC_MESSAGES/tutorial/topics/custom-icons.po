@@ -1,0 +1,268 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: BeeWare 0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-29 08:55+0800\n"
+"PO-Revision-Date: 2024-01-23 12:02+0000\n"
+"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
+"Language: es\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-10/es/>\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.15.0\n"
+
+#: ../../tutorial/topics/custom-icons.rst:3 3f95c5bbbfeb484a865ba56ba3cf2d5c
+msgid "Customizing icons"
+msgstr ""
+
+#: ../../tutorial/topics/custom-icons.rst:5 4dbb6afe140441c29ac0923e2956b041
+#, fuzzy
+msgid "So far, our app has used a default \"gray bee\" icon when it is packaged. Let's personalize our application by configuring it to use our own icon."
+msgstr "Hasta ahora, nuestra aplicación ha utilizado un ícono predeterminado de \"abeja gris\". ¿Cómo actualizamos la aplicación para usar nuestro propio ícono?"
+
+#: ../../tutorial/topics/custom-icons.rst:9 354bbc4171694fe28d7616f0cfbc5565
+msgid "Adding an icon"
+msgstr "Añadir un icono"
+
+#: ../../tutorial/topics/custom-icons.rst:11 b039533bbd3442bb8c4e5f6a1a7b82f6
+msgid "Every platform uses a different format for application icons - and some platforms need *multiple* icons in different sizes and shapes. To account for this, Briefcase provides a shorthand way to configure an icon once, and then have that definition expand in to all the different icons needed for each individual platform."
+msgstr ""
+
+#: ../../tutorial/topics/custom-icons.rst:17 ec1b6116af084d78a9182f34a4b97924
+msgid "Edit your ``pyproject.toml``, adding a new ``icon`` configuration item in the ``[tool.briefcase.app.helloworld]`` configuration section, just above the ``sources`` definition::"
+msgstr ""
+
+#: ../../tutorial/topics/custom-icons.rst:23 1a14408ba0f24d9f9e121f59fe678e9b
+msgid "This icon definition doesn't specify any file extension. The value will be used as a prefix; each platform will add additional items to this prefix to build the files needed for each platform. Some platforms require *multiple* icon files; this prefix will be combined with file size and variant modifiers to generate the list of icon files that are used."
+msgstr ""
+
+#: ../../tutorial/topics/custom-icons.rst:29 4198aaca40d24272861649478010d44a
+msgid "We can now run ``briefcase update`` again - but this time, we pass in the ``--update-resources`` flag, telling Briefcase that we want to install new application resources (i.e., the icons):"
+msgstr ""
+
+#: ../../tutorial/topics/custom-icons.rst:35
+#: ../../tutorial/topics/custom-icons.rst:202
+#: ../../tutorial/topics/custom-icons.rst:378 128c8188faa74a21a02a58f46cbb724d
+#: 28845b96cecb4b5e9b52f90e77da3697 8c98fd03cad740aa8be96881e857d1d4
+msgid "macOS"
+msgstr ""
+
+#: ../../tutorial/topics/custom-icons.rst:52
+#: ../../tutorial/topics/custom-icons.rst:226
+#: ../../tutorial/topics/custom-icons.rst:393 61920dad96944b8b91f24f8d142cce02
+#: 7c37c7fdec5f44f194af7a54dea174d6 d41c31722933433ea6cf1653d8cbf761
+msgid "Linux"
+msgstr ""
+
+#: ../../tutorial/topics/custom-icons.rst:74
+#: ../../tutorial/topics/custom-icons.rst:256
+#: ../../tutorial/topics/custom-icons.rst:408 1ba291fba94d46e1b4c56dc0f728b9a3
+#: 6039288e24c74f0097eed28aa04dfe20 e4314c0833364146838343755d1ac04d
+msgid "Windows"
+msgstr ""
+
+#: ../../tutorial/topics/custom-icons.rst:91
+#: ../../tutorial/topics/custom-icons.rst:281
+#: ../../tutorial/topics/custom-icons.rst:423 54a0b9be0f27436d8e1d8b0d77a7ea22
+#: 72215ebea47b47db87a640a274a68c23 9f91b34dc8c4404eac2049238dea4865
+msgid "Android"
+msgstr ""
+
+#: ../../tutorial/topics/custom-icons.rst:127
+#: ../../tutorial/topics/custom-icons.rst:326
+#: ../../tutorial/topics/custom-icons.rst:437 0a9eb6e84bac446992e1376b39d7eb76
+#: 84c7ee2340bf451b982b1868376ef1ac 85a5cc66309645abb50b346a12793ea4
+msgid "iOS"
+msgstr ""
+
+#: ../../tutorial/topics/custom-icons.rst:159 8e9ad84fbcce49aaa9be7efc559f5a69
+msgid "This reports the specific icon file (or files) that Briefcase is expecting. However, as we haven't provided the actual icon files, the install fails, and Briefcase falls back to a default value (the same \"gray bee\" icon)."
+msgstr ""
+
+#: ../../tutorial/topics/custom-icons.rst:163 f82c2a25a41348869827b81f31004ecf
+msgid "Let's provide some actual icons. Download :download:`this icons.zip bundle <../resources/icons.zip>`, and unpack it into the root of your project directory. After unpacking, your project directory should look something like::"
+msgstr ""
+
+#: ../../tutorial/topics/custom-icons.rst:182 7949f843c13c43ee85ba9b2811caa31e
+msgid "There's a *lot* of icons in this folder, but most of them should look the same: a green snake on a light blue background:"
+msgstr ""
+
+#: ../../tutorial/topics/custom-icons.rst:185 68fbaedd753946f195aec310da462ce3
+msgid "Icon of green snake with a light blue background"
+msgstr ""
+
+#: ../../tutorial/topics/custom-icons.rst:189 c26bab4b693040349c6482465f77381e
+msgid "The only exception will be the icons with ``-adaptive-`` in their name; these will have a transparent background. This represents all the different icon sizes and shapes you need to support an app on every platform that Briefcase supports."
+msgstr ""
+
+#: ../../tutorial/topics/custom-icons.rst:193 29c4478b95ef40449fee047c9ed16c6a
+msgid "Now that we have icons, we can update the application again. However, ``briefcase update`` will only copy the updated resources into the build directory; we also want to rebuild the app to make sure the new icon is included, then start the app. We can shortcut this process by passing ``--update-resources`` to our call to ``run`` - this will update the app, update the app's resources, and then start the app:"
+msgstr ""
+
+#: ../../tutorial/topics/custom-icons.rst:321 3de02c84f75b46a5bff176f5a5be2cae
+msgid "If you're using a recent version of Android, you may notice that the app icon has been changed to a green snake, but the background of the icon is *white*, rather than light blue. We'll fix this in the next step."
+msgstr ""
+
+#: ../../tutorial/topics/custom-icons.rst:360 76b96c8cb15e4afa94e232ef9754b096
+msgid "When you run the app on iOS or Android, in addition to the icon change, you should also notice that the splash screen incorporates the new icon. However, the light blue background of the icon looks a little out of place against the white background of the splash screen. We can fix this by customizing the background color of the splash screen. Add the following definition to your ``pyproject.toml``, just after the ``icon`` definition::"
+msgstr ""
+
+#: ../../tutorial/topics/custom-icons.rst:369 dea00b7fabc74a2b8ab4a5a77f2fa3a2
+msgid "Unfortunately, Briefcase isn't able to apply this change to an already generated project, as it requires making modifications to one of the files that was generated during the original call to ``briefcase create``. To apply this change, we have to re-create the app by re-running ``briefcase create``. When we do this, we'll be prompted to confirm that we want to overwrite the existing project:"
+msgstr ""
+
+#: ../../tutorial/topics/custom-icons.rst:451 4b07c90f855b4684a29c982a852e25de
+msgid "You can then re-build and re-run the app using ``briefcase run``. You won't notice any changes to the desktop app; but the Android or iOS apps should now have a light blue splash screen background."
+msgstr ""
+
+#: ../../tutorial/topics/custom-icons.rst:455 3016bd4f351e4c88a83bb6ad18637562
+msgid "You'll need to re-create the app like this whenever you make a change to your ``pyproject.toml`` that doesn't relate to source code or dependencies. Any change to descriptions, version numbers, colors, or permissions will require a re-create step. Because of this, while you are developing your project, you shouldn't make any manual changes to the contents of the ``build`` folder, and you shouldn't add the ``build`` folder to your version control system. The ``build`` folder should be considered entirely ephemeral - an output of the build system that can be recreated as needed to reflect the current configuration of your project."
+msgstr ""
+
+#~ msgid "**Coming soon**"
+#~ msgstr "**Próximamente**"
+
+#~ msgid "We've now got an application with a custom icon on our desktop and phone! How do we share this application with everyone else? Turn to :doc:`Tutorial 11 <tutorial-11>` to find out..."
+#~ msgstr "¡Ya tenemos una aplicación con un icono personalizado en nuestro escritorio y teléfono! ¿Cómo compartimos esta aplicación con los demás? Visita :doc:`Tutorial 11 <tutorial-11>` para descubrirlo..."
+
+#~ msgid "This icon definition doesn't specify any file extension. The value will be used as a prefix; each platform will add additional items to this prefix to build the files needed for each platform. Some platforms require *multiple* icon files; this prefix will be combined with file size and variant modifiers to generate the list of icon files that are used."
+#~ msgstr ""
+
+#~ msgid "This reports the specific icon file (or files) that Briefcase is expecting. However, as we haven't provided the actual icon files, the install fails, and Briefcase falls back to a default value (the same \"gray bee\" icon)."
+#~ msgstr ""
+
+#~ msgid "There's a *lot* of icons in this folder, but most of them should look the same: a green snake on a light blue background:"
+#~ msgstr ""
+
+#~ msgid "Icon of green snake with a light blue background"
+#~ msgstr ""
+
+#~ msgid "The only exception will be the icons with ``-adaptive-`` in their name; these will have a transparent background. This represents all the different icon sizes and shapes you need to support an app on every platform that Briefcase supports."
+#~ msgstr ""
+
+#~ msgid "Now that we have icons, we can update the application again. However, ``briefcase update`` will only copy the updated resources into the build directory; we also want to rebuild the app to make sure the new icon is included, then start the app. We can shortcut this process by passing ``--update-resources`` to our call to ``run`` - this will update the app, update the app's resources, and then start the app:"
+#~ msgstr ""
+
+#~ msgid "If you're using a recent version of Android, you may notice that the app icon has been changed to a green snake, but the background of the icon is *white*, rather than light blue. We'll fix this in the next step."
+#~ msgstr ""
+
+#~ msgid "When you run the app on iOS or Android, in addition to the icon change, you should also notice that the splash screen incorporates the new icon. However, the light blue background of the icon looks a little out of place against the white background of the splash screen. We can fix this by customizing the background color of the splash screen. Add the following definition to your ``pyproject.toml``, just after the ``icon`` definition::"
+#~ msgstr ""
+
+#~ msgid "Unfortunately, Briefcase isn't able to apply this change to an already generated project, as it requires making modifications to one of the files that was generated during the original call to ``briefcase create``. To apply this change, we have to re-create the app by re-running ``briefcase create``. When we do this, we'll be prompted to confirm that we want to overwrite the existing project:"
+#~ msgstr ""
+
+#~ msgid "You can then re-build and re-run the app using ``briefcase run``. You won't notice any changes to the desktop app; but the Android or iOS apps should now have a light blue splash screen background."
+#~ msgstr ""
+
+#~ msgid "You'll need to re-create the app like this whenever you make a change to your ``pyproject.toml`` that doesn't relate to source code or dependencies. Any change to descriptions, version numbers, colors, or permissions will require a re-create step. Because of this, while you are developing your project, you shouldn't make any manual changes to the contents of the ``build`` folder, and you shouldn't add the ``build`` folder to your version control system. The ``build`` folder should be considered entirely ephemeral - an output of the build system that can be recreated as needed to reflect the current configuration of your project."
+#~ msgstr ""
+
+#~ msgid "Tutorial 10 - Make this app your own"
+#~ msgstr "Tutorial 10 – Crea tu propia aplicación"
+
+#~ msgid "This icon definition doesn't specify any file extension. The value will be used as a prefix; each platform will add additional items to this prefix to build the files needed for each platform."
+#~ msgstr ""
+
+#~ msgid "This reports the specific icon file (or files) that Briefcase is expecting. However, as we haven't provided the actual icon files, the install fails, and falls back to a default value (the same \"gray bee\" icon)."
+#~ msgstr ""
+
+#~ msgid "Let's provide some actual icons. Download :download:`this icons.zip bundle <./resources/icons.zip>`, and unpack it into the root of your project directory. After unpacking, your project directory should look something like::"
+#~ msgstr ""
+
+#~ msgid "There's a *lot* of icons in this folder - but they should all look the same: a green snake on a light blue background:"
+#~ msgstr ""
+
+#~ msgid "Icon of green snake with a blue background"
+#~ msgstr ""
+
+#~ msgid "This represents all the different icon sizes and shapes you need to support an app on every platform that Briefcase supports."
+#~ msgstr ""
+
+#~ msgid "Now that we have icons, we can update the application again. ``briefcase update`` will only copy the updated resources into the build directory; we also want to rebuild the app to make sure the icon takes effect. To do this, we call ``briefcase build``, passing in the same ``--update-resources`` argument:"
+#~ msgstr ""
+
+#~ msgid "With our icons installed, we can now run our app with the new icon:"
+#~ msgstr ""
+
+#~ msgid "When you start the app on a desktop platform, you might briefly notice a green snake icon... but then the gray bee icon returns. What happened?"
+#~ msgstr ""
+
+#~ msgid "Well, an application really has *three* different icons:"
+#~ msgstr ""
+
+#~ msgid "The icon for the app's binary;"
+#~ msgstr ""
+
+#~ msgid "The icon that the app uses at runtime; and"
+#~ msgstr ""
+
+#~ msgid "The icon used by the app's installation mechanism."
+#~ msgstr ""
+
+#~ msgid "In most cases, these three icons will be the same - but they don't have to be. Briefcase is able to set the first and third of these icons; however, the icon used at runtime is determined by the GUI framework. Many GUI frameworks will fall back to the icon in the application binary at runtime. However, in some cases, this won't be possible; and some frameworks allow you to modify the binary to indicate something about the application state (for example, to show an unread indicator on the app's icon)."
+#~ msgstr ""
+
+#~ msgid "So - in addition to configuring Briefcase to use the new icon for the binary and installer, we also need to provide updated icons for our app to use at runtime."
+#~ msgstr ""
+
+#~ msgid "If you look in the app's ``src/helloworld/resources`` folder, you can see the icons that are being used at runtime. We can overwrite these files with versions from our ``icons`` folder, then update and re-run our app (using the ``-u`` flag to update and run in a single command):"
+#~ msgstr ""
+
+#~ msgid "This step isn't needed on Android, as mobile platforms don't have runtime icons."
+#~ msgstr ""
+
+#~ msgid "This step isn't needed on iOS, as mobile platforms don't have runtime icons."
+#~ msgstr ""
+
+#~ msgid "This time, when the app runs, you should see the new green snake icon."
+#~ msgstr ""
+
+#~ msgid "Splash screens"
+#~ msgstr ""
+
+#~ msgid "Mobile platforms have an additional customization option in addition to icons - they have a splash screen. Let's replace the default \"Made with BeeWare\" splash screen with something custom."
+#~ msgstr ""
+
+#~ msgid "Edit your ``pyproject.toml``, adding a new ``splash`` configuration item in the ``[tool.briefcase.app.helloworld]`` configuration section, just after the ``icon`` definition::"
+#~ msgstr ""
+
+#~ msgid "As before, this configures a filename prefix; each platform will add to this prefix to generate the final filenames. Download :download:`this splash.zip bundle <./resources/splash.zip>`, and unpack it into the root of your project directory to provide the splash images. The splash images are large, square images with a transparent background, in a range of sizes."
+#~ msgstr ""
+
+#~ msgid "Again, there's a lot of images, representing all the sizes required to provide splash screens for Android and iOS - but they should all look the same: a green snake with the text \"Hello world\":"
+#~ msgstr ""
+
+#~ msgid "We can then re-run the app, forcing a resource update to ensure the new splash images are copied in the app, and the app is re-built before being started:"
+#~ msgstr ""
+
+#~ msgid "This step isn't required on macOS, as macOS apps don't have splash screens."
+#~ msgstr ""
+
+#~ msgid "This step isn't required on Linux, as Linux apps don't have splash screens."
+#~ msgstr ""
+
+#~ msgid "This step isn't required on Windows, as Windows apps don't have splash screens."
+#~ msgstr ""
+
+#~ msgid "We now have a fully customized app!"
+#~ msgstr ""
+
+#~ msgid "Next steps"
+#~ msgstr "Siguientes pasos"
+
+#~ msgid "This has been a taste for what you can do with the tools provided by the BeeWare project. What you do from here is up to you!"
+#~ msgstr ""
+
+#~ msgid "Some places to go from here:"
+#~ msgstr ""
+
+#~ msgid "Tutorials demonstrating `features of the Toga widget toolkit <https://toga.readthedocs.io/en/latest/tutorial/index.html>`__."
+#~ msgstr ""
+
+#~ msgid "Details on the `options available when configuring your Briefcase project <https://briefcase.readthedocs.io/en/latest/reference/index.html>`__."
+#~ msgstr ""
+
