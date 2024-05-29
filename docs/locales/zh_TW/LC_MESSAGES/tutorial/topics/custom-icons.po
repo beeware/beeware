@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-29 08:55+0800\n"
+"POT-Creation-Date: 2024-05-29 10:14+0800\n"
 "PO-Revision-Date: 2024-04-10 21:02+0000\n"
 "Last-Translator: sus <jeffpeng2012@gmail.com>\n"
 "Language: zh_TW\n"
@@ -24,105 +24,105 @@ msgstr ""
 
 #: ../../tutorial/topics/custom-icons.rst:5 4dbb6afe140441c29ac0923e2956b041
 #, fuzzy
-msgid "So far, our app has used a default \"gray bee\" icon when it is packaged. Let's personalize our application by configuring it to use our own icon."
+msgid "The app we developed in the main tutorial uses a default \"gray bee\" icon when it is packaged. Let's personalize this application by configuring it to use our own icon."
 msgstr "到目前為止，我們的應用程式使用了預設的 ``灰色蜜蜂`` 圖示。我們如何更新應用程式以使用我們自己的圖標？"
 
-#: ../../tutorial/topics/custom-icons.rst:9 354bbc4171694fe28d7616f0cfbc5565
+#: ../../tutorial/topics/custom-icons.rst:10 354bbc4171694fe28d7616f0cfbc5565
 msgid "Adding an icon"
 msgstr "新增圖示"
 
-#: ../../tutorial/topics/custom-icons.rst:11 b039533bbd3442bb8c4e5f6a1a7b82f6
+#: ../../tutorial/topics/custom-icons.rst:12 b039533bbd3442bb8c4e5f6a1a7b82f6
 msgid "Every platform uses a different format for application icons - and some platforms need *multiple* icons in different sizes and shapes. To account for this, Briefcase provides a shorthand way to configure an icon once, and then have that definition expand in to all the different icons needed for each individual platform."
 msgstr ""
 
-#: ../../tutorial/topics/custom-icons.rst:17 ec1b6116af084d78a9182f34a4b97924
+#: ../../tutorial/topics/custom-icons.rst:18 ec1b6116af084d78a9182f34a4b97924
 msgid "Edit your ``pyproject.toml``, adding a new ``icon`` configuration item in the ``[tool.briefcase.app.helloworld]`` configuration section, just above the ``sources`` definition::"
 msgstr ""
 
-#: ../../tutorial/topics/custom-icons.rst:23 1a14408ba0f24d9f9e121f59fe678e9b
+#: ../../tutorial/topics/custom-icons.rst:24 1a14408ba0f24d9f9e121f59fe678e9b
 msgid "This icon definition doesn't specify any file extension. The value will be used as a prefix; each platform will add additional items to this prefix to build the files needed for each platform. Some platforms require *multiple* icon files; this prefix will be combined with file size and variant modifiers to generate the list of icon files that are used."
 msgstr ""
 
-#: ../../tutorial/topics/custom-icons.rst:29 4198aaca40d24272861649478010d44a
+#: ../../tutorial/topics/custom-icons.rst:30 4198aaca40d24272861649478010d44a
 msgid "We can now run ``briefcase update`` again - but this time, we pass in the ``--update-resources`` flag, telling Briefcase that we want to install new application resources (i.e., the icons):"
 msgstr ""
 
-#: ../../tutorial/topics/custom-icons.rst:35
-#: ../../tutorial/topics/custom-icons.rst:202
-#: ../../tutorial/topics/custom-icons.rst:378 128c8188faa74a21a02a58f46cbb724d
+#: ../../tutorial/topics/custom-icons.rst:36
+#: ../../tutorial/topics/custom-icons.rst:203
+#: ../../tutorial/topics/custom-icons.rst:379 128c8188faa74a21a02a58f46cbb724d
 #: 28845b96cecb4b5e9b52f90e77da3697 8c98fd03cad740aa8be96881e857d1d4
 msgid "macOS"
 msgstr ""
 
-#: ../../tutorial/topics/custom-icons.rst:52
-#: ../../tutorial/topics/custom-icons.rst:226
-#: ../../tutorial/topics/custom-icons.rst:393 61920dad96944b8b91f24f8d142cce02
+#: ../../tutorial/topics/custom-icons.rst:53
+#: ../../tutorial/topics/custom-icons.rst:227
+#: ../../tutorial/topics/custom-icons.rst:394 61920dad96944b8b91f24f8d142cce02
 #: 7c37c7fdec5f44f194af7a54dea174d6 d41c31722933433ea6cf1653d8cbf761
 msgid "Linux"
 msgstr ""
 
-#: ../../tutorial/topics/custom-icons.rst:74
-#: ../../tutorial/topics/custom-icons.rst:256
-#: ../../tutorial/topics/custom-icons.rst:408 1ba291fba94d46e1b4c56dc0f728b9a3
+#: ../../tutorial/topics/custom-icons.rst:75
+#: ../../tutorial/topics/custom-icons.rst:257
+#: ../../tutorial/topics/custom-icons.rst:409 1ba291fba94d46e1b4c56dc0f728b9a3
 #: 6039288e24c74f0097eed28aa04dfe20 e4314c0833364146838343755d1ac04d
 msgid "Windows"
 msgstr ""
 
-#: ../../tutorial/topics/custom-icons.rst:91
-#: ../../tutorial/topics/custom-icons.rst:281
-#: ../../tutorial/topics/custom-icons.rst:423 54a0b9be0f27436d8e1d8b0d77a7ea22
+#: ../../tutorial/topics/custom-icons.rst:92
+#: ../../tutorial/topics/custom-icons.rst:282
+#: ../../tutorial/topics/custom-icons.rst:424 54a0b9be0f27436d8e1d8b0d77a7ea22
 #: 72215ebea47b47db87a640a274a68c23 9f91b34dc8c4404eac2049238dea4865
 msgid "Android"
 msgstr ""
 
-#: ../../tutorial/topics/custom-icons.rst:127
-#: ../../tutorial/topics/custom-icons.rst:326
-#: ../../tutorial/topics/custom-icons.rst:437 0a9eb6e84bac446992e1376b39d7eb76
+#: ../../tutorial/topics/custom-icons.rst:128
+#: ../../tutorial/topics/custom-icons.rst:327
+#: ../../tutorial/topics/custom-icons.rst:438 0a9eb6e84bac446992e1376b39d7eb76
 #: 84c7ee2340bf451b982b1868376ef1ac 85a5cc66309645abb50b346a12793ea4
 msgid "iOS"
 msgstr ""
 
-#: ../../tutorial/topics/custom-icons.rst:159 8e9ad84fbcce49aaa9be7efc559f5a69
+#: ../../tutorial/topics/custom-icons.rst:160 8e9ad84fbcce49aaa9be7efc559f5a69
 msgid "This reports the specific icon file (or files) that Briefcase is expecting. However, as we haven't provided the actual icon files, the install fails, and Briefcase falls back to a default value (the same \"gray bee\" icon)."
 msgstr ""
 
-#: ../../tutorial/topics/custom-icons.rst:163 f82c2a25a41348869827b81f31004ecf
+#: ../../tutorial/topics/custom-icons.rst:164 f82c2a25a41348869827b81f31004ecf
 msgid "Let's provide some actual icons. Download :download:`this icons.zip bundle <../resources/icons.zip>`, and unpack it into the root of your project directory. After unpacking, your project directory should look something like::"
 msgstr ""
 
-#: ../../tutorial/topics/custom-icons.rst:182 7949f843c13c43ee85ba9b2811caa31e
+#: ../../tutorial/topics/custom-icons.rst:183 7949f843c13c43ee85ba9b2811caa31e
 msgid "There's a *lot* of icons in this folder, but most of them should look the same: a green snake on a light blue background:"
 msgstr ""
 
-#: ../../tutorial/topics/custom-icons.rst:185 68fbaedd753946f195aec310da462ce3
+#: ../../tutorial/topics/custom-icons.rst:186 68fbaedd753946f195aec310da462ce3
 msgid "Icon of green snake with a light blue background"
 msgstr ""
 
-#: ../../tutorial/topics/custom-icons.rst:189 c26bab4b693040349c6482465f77381e
+#: ../../tutorial/topics/custom-icons.rst:190 c26bab4b693040349c6482465f77381e
 msgid "The only exception will be the icons with ``-adaptive-`` in their name; these will have a transparent background. This represents all the different icon sizes and shapes you need to support an app on every platform that Briefcase supports."
 msgstr ""
 
-#: ../../tutorial/topics/custom-icons.rst:193 29c4478b95ef40449fee047c9ed16c6a
+#: ../../tutorial/topics/custom-icons.rst:194 29c4478b95ef40449fee047c9ed16c6a
 msgid "Now that we have icons, we can update the application again. However, ``briefcase update`` will only copy the updated resources into the build directory; we also want to rebuild the app to make sure the new icon is included, then start the app. We can shortcut this process by passing ``--update-resources`` to our call to ``run`` - this will update the app, update the app's resources, and then start the app:"
 msgstr ""
 
-#: ../../tutorial/topics/custom-icons.rst:321 3de02c84f75b46a5bff176f5a5be2cae
+#: ../../tutorial/topics/custom-icons.rst:322 3de02c84f75b46a5bff176f5a5be2cae
 msgid "If you're using a recent version of Android, you may notice that the app icon has been changed to a green snake, but the background of the icon is *white*, rather than light blue. We'll fix this in the next step."
 msgstr ""
 
-#: ../../tutorial/topics/custom-icons.rst:360 76b96c8cb15e4afa94e232ef9754b096
+#: ../../tutorial/topics/custom-icons.rst:361 76b96c8cb15e4afa94e232ef9754b096
 msgid "When you run the app on iOS or Android, in addition to the icon change, you should also notice that the splash screen incorporates the new icon. However, the light blue background of the icon looks a little out of place against the white background of the splash screen. We can fix this by customizing the background color of the splash screen. Add the following definition to your ``pyproject.toml``, just after the ``icon`` definition::"
 msgstr ""
 
-#: ../../tutorial/topics/custom-icons.rst:369 dea00b7fabc74a2b8ab4a5a77f2fa3a2
+#: ../../tutorial/topics/custom-icons.rst:370 dea00b7fabc74a2b8ab4a5a77f2fa3a2
 msgid "Unfortunately, Briefcase isn't able to apply this change to an already generated project, as it requires making modifications to one of the files that was generated during the original call to ``briefcase create``. To apply this change, we have to re-create the app by re-running ``briefcase create``. When we do this, we'll be prompted to confirm that we want to overwrite the existing project:"
 msgstr ""
 
-#: ../../tutorial/topics/custom-icons.rst:451 4b07c90f855b4684a29c982a852e25de
+#: ../../tutorial/topics/custom-icons.rst:452 4b07c90f855b4684a29c982a852e25de
 msgid "You can then re-build and re-run the app using ``briefcase run``. You won't notice any changes to the desktop app; but the Android or iOS apps should now have a light blue splash screen background."
 msgstr ""
 
-#: ../../tutorial/topics/custom-icons.rst:455 3016bd4f351e4c88a83bb6ad18637562
+#: ../../tutorial/topics/custom-icons.rst:456 3016bd4f351e4c88a83bb6ad18637562
 msgid "You'll need to re-create the app like this whenever you make a change to your ``pyproject.toml`` that doesn't relate to source code or dependencies. Any change to descriptions, version numbers, colors, or permissions will require a re-create step. Because of this, while you are developing your project, you shouldn't make any manual changes to the contents of the ``build`` folder, and you shouldn't add the ``build`` folder to your version control system. The ``build`` folder should be considered entirely ephemeral - an output of the build system that can be recreated as needed to reflect the current configuration of your project."
 msgstr ""
 

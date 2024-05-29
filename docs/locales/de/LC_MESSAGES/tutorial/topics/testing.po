@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-29 08:55+0800\n"
+"POT-Creation-Date: 2024-05-29 10:14+0800\n"
 "PO-Revision-Date: 2024-02-02 22:01+0000\n"
 "Last-Translator: Marco Esters <mesters@anaconda.com>\n"
 "Language: de\n"
@@ -31,7 +31,7 @@ msgstr "Ausführen der Testsuite"
 
 #: ../../tutorial/topics/testing.rst:13 e55d23b4fa494b09a62a3c55ee0d0ebb
 #, fuzzy
-msgid "It turns out our project already has a test suite! When we originally generated our project, two top-level directories were generated: ``src`` and ``tests``. The ``src`` folder contains the code for our app; the ``tests`` folder contains our test suite. Inside the ``tests`` folder is a file named ``test_app.py`` with the following content::"
+msgid "It turns out the project from the core tutorial already has a test suite! When we originally generated our project, two top-level directories were generated: ``src`` and ``tests``. The ``src`` folder contains the code for our app; the ``tests`` folder contains our test suite. Inside the ``tests`` folder is a file named ``test_app.py`` with the following content::"
 msgstr "Es stellt sich heraus, dass unser Projekt bereits eine Testsuite hat! Als wir unser Projekt ursprünglich erzeugten, wurden zwei Verzeichnisse der obersten Ebene erzeugt: ``src`` und ``tests``. Der Ordner ``src`` enthält den Code für unsere Anwendung; der Ordner ``tests`` enthält unsere Testsuite. Innerhalb des Ordners ``tests`` befindet sich eine Datei namens ``test_app.py`` mit folgendem Inhalt::"
 
 #: ../../tutorial/topics/testing.rst:23 12578aff26fb4372963fa5ccd8005e18

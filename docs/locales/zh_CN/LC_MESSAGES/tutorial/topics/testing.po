@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-29 08:55+0800\n"
+"POT-Creation-Date: 2024-05-29 10:14+0800\n"
 "PO-Revision-Date: 2024-01-13 02:06+0000\n"
 "Last-Translator: Sheep Cat <xymsyh@gmail.com>\n"
 "Language: zh_CN\n"
@@ -31,7 +31,7 @@ msgstr "运行测试套件"
 
 #: ../../tutorial/topics/testing.rst:13 e55d23b4fa494b09a62a3c55ee0d0ebb
 #, fuzzy
-msgid "It turns out our project already has a test suite! When we originally generated our project, two top-level directories were generated: ``src`` and ``tests``. The ``src`` folder contains the code for our app; the ``tests`` folder contains our test suite. Inside the ``tests`` folder is a file named ``test_app.py`` with the following content::"
+msgid "It turns out the project from the core tutorial already has a test suite! When we originally generated our project, two top-level directories were generated: ``src`` and ``tests``. The ``src`` folder contains the code for our app; the ``tests`` folder contains our test suite. Inside the ``tests`` folder is a file named ``test_app.py`` with the following content::"
 msgstr "原来我们的项目已经有了一个测试套件！我们最初生成项目时，会生成两个顶级目录：src \"和 \"tests\"。src \"文件夹包含应用程序的代码；\"tests \"文件夹包含测试套件。在 ``tests`` 文件夹中，有一个名为 ``test_app.py`` 的文件，内容如下：："
 
 #: ../../tutorial/topics/testing.rst:23 12578aff26fb4372963fa5ccd8005e18

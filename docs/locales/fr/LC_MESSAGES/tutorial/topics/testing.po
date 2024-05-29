@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-29 08:55+0800\n"
+"POT-Creation-Date: 2024-05-29 10:14+0800\n"
 "PO-Revision-Date: 2024-01-14 01:02+0000\n"
 "Last-Translator: Lancelot Fouillet <lancelot.fouillet@orange.fr>\n"
 "Language: fr\n"
@@ -31,7 +31,7 @@ msgstr "Exécution de la suite de tests"
 
 #: ../../tutorial/topics/testing.rst:13 e55d23b4fa494b09a62a3c55ee0d0ebb
 #, fuzzy
-msgid "It turns out our project already has a test suite! When we originally generated our project, two top-level directories were generated: ``src`` and ``tests``. The ``src`` folder contains the code for our app; the ``tests`` folder contains our test suite. Inside the ``tests`` folder is a file named ``test_app.py`` with the following content::"
+msgid "It turns out the project from the core tutorial already has a test suite! When we originally generated our project, two top-level directories were generated: ``src`` and ``tests``. The ``src`` folder contains the code for our app; the ``tests`` folder contains our test suite. Inside the ``tests`` folder is a file named ``test_app.py`` with the following content::"
 msgstr "Il s'avère que notre projet possède déjà une suite de tests ! Lorsque nous avons généré notre projet à l'origine, deux répertoires de premier niveau ont été générés : ``src`` et ``tests``. Le dossier ``src`` contient le code de notre application ; le dossier ``tests`` contient notre suite de tests. Dans le dossier ``tests`` se trouve un fichier nommé ``test_app.py`` avec le contenu suivant: :"
 
 #: ../../tutorial/topics/testing.rst:23 12578aff26fb4372963fa5ccd8005e18

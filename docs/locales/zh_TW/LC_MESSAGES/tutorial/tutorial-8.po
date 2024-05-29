@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-29 08:28+0800\n"
+"POT-Creation-Date: 2024-05-29 10:14+0800\n"
 "PO-Revision-Date: 2024-04-11 22:01+0000\n"
 "Last-Translator: sus <jeffpeng2012@gmail.com>\n"
 "Language: zh_TW\n"
@@ -18,187 +18,190 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: ../../tutorial/tutorial-8.rst:3 4ea3e9895c6e411b8dda7e237ed379ce
+#: ../../tutorial/tutorial-8.rst:3 b97df07147f44bab84e8cff65e3e0a59
 msgid "Tutorial 8 - Making it Smooooth"
 msgstr "教學 8 - 使其順～暢"
 
-#: ../../tutorial/tutorial-8.rst:5 ecf2a10835e64119b925d4021e0c811a
+#: ../../tutorial/tutorial-8.rst:5 9e06620f76b0420491deacf7485a3370
 msgid "Unless you've got a *really* fast internet connection, you may notice that when you press the button, the GUI for your app locks up for a little bit. This is because the web request we have made is *synchronous*. When our application makes the web request, it waits for the API to return a response before continuing. While it's waiting, it *isn't* allowing the application to redraw - and as a result, the application locks up."
 msgstr "除非您擁有 **真正** 快速的網路連接，否則您可能會注意到，當您按下按鈕時，應用程式的 GUI 會鎖定一點。這是因為我們發出的 Web 請求是 **同步** 的。當我們的應用程式發出 Web 請求時，它會等待 API 回傳回應，然後再繼續。在等待時，它 **不允許** 應用程式重繪 - 結果，應用程式停止回應。"
 
-#: ../../tutorial/tutorial-8.rst:13 36b97a91f81547c4b22596a02b310caa
+#: ../../tutorial/tutorial-8.rst:13 4076642e45ca47a19626ee4d1317eb55
 msgid "GUI Event Loops"
 msgstr "GUI 事件循環(Event loop)"
 
-#: ../../tutorial/tutorial-8.rst:15 e646315887ab45d39477764dceddb906
+#: ../../tutorial/tutorial-8.rst:15 af86e37dad5e4a9fbae42435b4349332
 msgid "To understand why this happens, we need to dig into the details of how a GUI application works. The specifics vary depending on the platform; but the high level concepts are the same, no matter the platform or GUI environment you're using."
 msgstr "為了理解為什麼會發生這種情況，我們需要深入研究 GUI 應用程式如何運作的細節。具體情況因平台而異；但無論您使用什麼平台或 GUI 環境，概念都是相同的。"
 
-#: ../../tutorial/tutorial-8.rst:20 9b181e6b7b2f4b88b949f75b1f6b5dd1
+#: ../../tutorial/tutorial-8.rst:20 360c289e8d6c45e99f84a4e0e353beb7
 msgid "A GUI app is, fundamentally, a single loop that looks something like::"
 msgstr "從根本上來說，GUI 應用程式是一個看起來像這樣的循環::"
 
-#: ../../tutorial/tutorial-8.rst:26 0d5f9871af5b4d63b8cb57075b6ae979
+#: ../../tutorial/tutorial-8.rst:26 c35c55a6e04b49e28e0ab062ba4cf050
 msgid "This loop is called the *Event Loop*. (These aren't actual method names - it's an illustration of what is going on in \"pseudo-code\")."
 msgstr "此循環稱為 *事件循環* 。 （這些不是實際的方法名稱 - 它是 ``偽代碼`` 中發生的情況的說明）。"
 
-#: ../../tutorial/tutorial-8.rst:29 dc07c0c300534ed1ad27645db309332a
+#: ../../tutorial/tutorial-8.rst:29 aaf7d9b44a0c48ceac6866e314acd8d3
 msgid "When you click on a button, or drag a scroll bar, or type a key, you are generating an \"event\". That \"event\" is put onto a queue, and the app will process the queue of events when it next has the opportunity to do so. The user code that is triggered in response to the event is called an *event handler*. These event handlers are invoked as part of the ``process_events()`` call."
 msgstr "當您按一下按鈕、拖曳捲軸或按下按鍵時，代表你產生一個 ``事件`` 。該 ``事件`` 被放入佇列中，應用程式將在下次有機會處理事件佇列時處理該事件。響應事件而觸發的程式碼稱為 ``event handler`` 。這些事件處理程序作為 ``process_events()`` 呼叫的一部分被呼叫。"
 
-#: ../../tutorial/tutorial-8.rst:35 fe44fcc75deb4dec969984c83735eea3
+#: ../../tutorial/tutorial-8.rst:35 19c6513201a541109790a471de968e4a
 msgid "Once an app has processed all the available events, it will ``redraw()`` the GUI. This takes into account any changes that the events have caused to the display of the app, as well as anything else that is going on in the operating system - for example, the windows of another app may obscure or reveal part of our app's window, and our app's redraw will need to reflect the portion of the window that is currently visible."
 msgstr "一旦應用程式處理完所有可用事件，它將 ``redraw()`` GUI。這考慮了事件對應用程式顯示造成的任何變化，以及作業系統中發生的任何其他變化 - 例如，另一個應用程式的視窗可能會遮蓋或顯示我們應用程式視窗的一部分，我們的應用程式的重繪需要反映目前可見的視窗部分。"
 
-#: ../../tutorial/tutorial-8.rst:42 e03c962b343f48ceaf4f48a2cd665722
+#: ../../tutorial/tutorial-8.rst:42 d9424f5471d94be3a27038d4e53fc405
 msgid "The important detail to notice: while an application is processing an event, *it can't redraw*, and *it can't process other events*."
 msgstr "需要注意的重要細節：當應用程式正在處理事件時， *它無法重繪* ，並且 *它無法處理其他事件* 。"
 
-#: ../../tutorial/tutorial-8.rst:45 2980d818f7a74653bfef50b2c098ee52
+#: ../../tutorial/tutorial-8.rst:45 2dbd9514c6a04e8baf823e9c847c5109
 msgid "This means any user logic contained in an event handler needs to complete quickly. Any delay in completing the event handler will be observed by the user as a slowdown (or stop) in GUI updates. If this delay is long enough, your operating system may report this as a problem - the macOS \"beachball\" and Windows \"spinner\" icons are the operating system telling you that your app is taking too long in an event handler."
 msgstr "這意味著事件處理程序中包含的任何使用者邏輯都需要快速完成。使用者將觀察到完成事件處理程序的任何延遲，因為 GUI 更新速度會減慢（或停止）。如果延遲足夠長，您的作業系統可能會將此報告為問題 - macOS ``beachball`` 和 Windows ``spinner`` 圖示是作業系統告訴您您的應用程式在事件處理程序中花費的時間太長。"
 
-#: ../../tutorial/tutorial-8.rst:52 1565ba4de22e4097a3c331dbf6a305dd
+#: ../../tutorial/tutorial-8.rst:52 17451cf78a8c4fa98acb9c392ad4385a
 msgid "Simple operations like \"update a label\", or \"recompute the total of the inputs\" are easy to complete quickly. However, there are a lot of operations that can't be completed quickly. If you're performing a complex mathematical calculation, or indexing all the files on a file system, or performing a large network request, you can't \"just do it quickly\" - the operations are inherently slow."
 msgstr "``更新標籤`` 或 ``重新計算輸入總數`` 等簡單操作很容易快速完成。然而，有許多操作無法快速完成。如果您正在執行複雜的數學計算，或對檔案系統上的所有檔案進行索引，或執行網路請求，則您無法 ``快速完成`` - 那些操作本質上很慢。"
 
-#: ../../tutorial/tutorial-8.rst:58 78abbefad7cd46ac86663e3d39805377
+#: ../../tutorial/tutorial-8.rst:58 bbd786de4d51471db85ac2658b67ae5e
 msgid "So - how do we perform long-lived operations in a GUI application?"
 msgstr "那麼，我們如何在 GUI 應用程式中執行耗時的操作呢？"
 
-#: ../../tutorial/tutorial-8.rst:61 9af14b255d7a4c3ca4e6f42cfbb60495
+#: ../../tutorial/tutorial-8.rst:61 d56e57f6b50b46eab69b7b211de0f9d1
 msgid "Asynchronous programming"
 msgstr "非同步程式設計"
 
-#: ../../tutorial/tutorial-8.rst:63 62ecf1ae9cf146e6a57728c73119c862
+#: ../../tutorial/tutorial-8.rst:63 68c2e5072fb04d218d5529972696aa79
 msgid "What we need is a way to tell an app in the middle of a long-lived event handler that it is OK to temporarily release control back to the event loop, as long as we can resume where we left off. It's up to the app to determine when this release can occur; but if the app releases control to the event loop regularly, we can have a long-running event handler *and* maintain a responsive UI."
 msgstr "我們需要的是一種方法讓耗時的event handler執行時告訴應用程序，只要可以從中斷的地方恢復，就可以暫時將控制權釋放回事件循環。由應用程式決定何時釋放它；但如果應用程式定期釋放對事件循環的控制，我們就可以擁有一個長時間運行的事件處理程序 *並* 維護一個響應式 UI。"
 
-#: ../../tutorial/tutorial-8.rst:69 63873be20d984e41acf11798c1aa0dc5
+#: ../../tutorial/tutorial-8.rst:69 3ab1b6534f7d407299e406e5b7f337cc
 msgid "We can do this by using *asynchronous programming*. Asynchronous programming is a way to describe a program that allows the interpreter to run multiple functions at the same time, sharing resources between all the concurrently running functions."
 msgstr "我們可以透過使用 ``非同步程式設計`` 來做到這一點。非同步程式設計是一種描述程式的方式，允許解釋器同時運行多個函數，在所有並發運行的函數之間共用資源。"
 
-#: ../../tutorial/tutorial-8.rst:74 4546259e241247d09aa167e514ed0640
+#: ../../tutorial/tutorial-8.rst:74 c0e6baee10d14f55a1bfbe7908dcc567
 #, fuzzy
 msgid "Asynchronous functions (known as *coroutines*) need to be explicitly declared as being asynchronous. They also need to internally declare when an opportunity exists to change context to another coroutine."
 msgstr "非同步函數（稱為 *協程* ）需要明確宣告為非同步。他們還需要在內部聲明何時存在將上下文更改為另一個協程的機會。"
 
-#: ../../tutorial/tutorial-8.rst:78 55ef7fbb39f14df58ab6f16a04b13a1f
+#: ../../tutorial/tutorial-8.rst:78 a912e9ed543246dda963074688243f9d
 #, fuzzy
 msgid "In Python, asynchronous programming is implemented using the ``async`` and ``await`` keywords, and the `asyncio <https://docs.python.org/3/library/asyncio.html>`__ module in the standard library. The ``async`` keyword allows us to declare that a function is an asynchronous coroutine. The ``await`` keyword provides a way to declare when an opportunity exists to change context to another coroutine. The `asyncio <https://docs.python.org/3/library/asyncio.html>`__ module provides some other useful tools and primitives for asynchronous coding."
 msgstr "在Python中，非同步程式設計是使用 ``async`` 和 ``await`` 關鍵字以及 `asyncio <https://docs.python.org/3/library/asyncio.html>`_ 中的模組來實現的。標準庫。 ``async`` 關鍵字允許我們宣告函數是非同步協同例程。 ``await`` 關鍵字提供了一種聲明何時存在將上下文更改為另一個協同例程的機會的方法。 `asyncio <https://docs.python.org/3/library/asyncio.html>`__ 模組為非同步程式設計提供了一些其他有用的工具和語法。"
 
-#: ../../tutorial/tutorial-8.rst:88 d92dac28d4f64735832c9f6edea43197
+#: ../../tutorial/tutorial-8.rst:88 f0279d5f77e94699a7604b0076c80ef5
 #, fuzzy
 msgid "Making the tutorial asynchronous"
 msgstr "使教學異步"
 
-#: ../../tutorial/tutorial-8.rst:90 fb0f24c0df4747aa96c15066a9ae5ae2
+#: ../../tutorial/tutorial-8.rst:90 a6173083cca149f1bc1b2c395b8ab18e
 msgid "To make our tutorial asynchronous, modify the ``say_hello()`` event handler so it looks like this::"
 msgstr "要使我們的教程異步，請修改 ``say_hello()`` 事件處理程序，使其如下所示："
 
-#: ../../tutorial/tutorial-8.rst:104 ff5489c4ad2244c7bf45dff812e3a8cc
+#: ../../tutorial/tutorial-8.rst:104 35c56dff243b4e09a63bbdc5e8f9c7e5
 msgid "There are only 4 changes in this code from the previous version:"
 msgstr "與先前的版本相比，此程式碼僅發生了 4 處變更："
 
-#: ../../tutorial/tutorial-8.rst:106 8bfdd9a06fe945a39c0b2b98b4063754
+#: ../../tutorial/tutorial-8.rst:106 42b74e72bdfc43348a9857b0b353258c
 #, fuzzy
 msgid "The method is defined as ``async def``, rather than just ``def``. This tells Python that the method is an asynchronous coroutine."
 msgstr "該方法被定義為 ``async def`` ，而不僅僅是 ``def`` 。這告訴 Python 該方法是一個非同步協同例程。"
 
-#: ../../tutorial/tutorial-8.rst:109 7fe58e2a7f614425b4bf8498e5892fbe
+#: ../../tutorial/tutorial-8.rst:109 0a956647650d4229928b4c93f670a370
 msgid "The client that is created is an asynchronous ``AsyncClient()``, rather than a synchronous ``Client()``. This tells ``httpx`` that it should operate in asynchronous mode, rather than synchronous mode."
 msgstr "建立的客戶端是異步 ``AsyncClient()`` ，而不是同步 ``Client()`` 。這告訴 ``httpx`` 它應該以非同步模式運行，而不是同步模式。"
 
-#: ../../tutorial/tutorial-8.rst:113 cd3d48c132714c979ad67c2097b11770
+#: ../../tutorial/tutorial-8.rst:113 b8266ae114fd4266ace4fdd9e9f0b7d7
 msgid "The context manager used to create the client is marked as ``async``. This tells Python that there is an opportunity to release control as the context manager is entered and exited."
 msgstr "用於建立客戶端的上下文管理器被標記為 ``async`` 。這告訴Python，當進入和退出上下文管理器時，有機會釋放控制權。"
 
-#: ../../tutorial/tutorial-8.rst:117 fec61cb7755347d1aea6b100402c6a5f
+#: ../../tutorial/tutorial-8.rst:117 de51b60f3fed43ada6926456bc76585c
 msgid "The ``get`` call is made with an ``await`` keyword. This instructs the app that while we are waiting for the response from the network, the app can release control to the event loop."
 msgstr "``get`` 呼叫是使用 ``await`` 關鍵字進行的。這指示應用程式在等待網路回應時，應用程式可以釋放對事件循環的控制。"
 
-#: ../../tutorial/tutorial-8.rst:121 4fe316f576e143dea6d0180f25d88158
+#: ../../tutorial/tutorial-8.rst:121 33c049a3a8744919b04c1e12d767068a
 #, fuzzy
 msgid "Toga allows you to use regular methods or asynchronous coroutines as handlers; Toga manages everything behind the scenes to make sure the handler is invoked or awaited as required."
 msgstr "Toga 允許您使用常規方法或非同步協同例程作為處理程序； Toga 管理幕後的一切，以確保根據需要呼叫或等待處理程序。"
 
-#: ../../tutorial/tutorial-8.rst:125 0f3d830f446e472488deeda27b16ea38
+#: ../../tutorial/tutorial-8.rst:125 cce22e9535254e089c1ccfbf46e00fc8
 msgid "If you save these changes and re-run the app (either with ``briefcase dev`` in development mode, or by updating and re-running the packaged app), there won't be any obvious changes to the app. However, when you click on the button to trigger the dialog, you may notice a number of subtle improvements:"
 msgstr "如果您儲存這些變更並重新執行應用程式（在開發模式下使用 ``briefcase dev`` ，或透過更新並重新執行打包的應用程式），應用程式不會有任何明顯的變更。但是，當您單擊按鈕觸發對話框時，您可能會注意到一些細微的改進："
 
-#: ../../tutorial/tutorial-8.rst:130 88002ff192ea456ea4db3f8acb2fd670
+#: ../../tutorial/tutorial-8.rst:130 c3133bf9110b407b9cbc051e7857bcf7
 msgid "The button returns to an \"unclicked\" state, rather than being stuck in a \"clicked\" state."
 msgstr "該按鈕返回到 ``未單擊`` 狀態，而不是停留在 ``單擊`` 狀態。"
 
-#: ../../tutorial/tutorial-8.rst:133 25465e32e52a477cb119e1de9ab07108
+#: ../../tutorial/tutorial-8.rst:133 2a7d376632a1443c9d6b1237dedab3ce
 msgid "The \"beachball\"/\"spinner\" icon won't appear"
 msgstr "\"沙灘球\"/\"漏斗\" 圖示不會再出現"
 
-#: ../../tutorial/tutorial-8.rst:135 a0d2f4ac202c4ae7ade76888d9bf3bc7
+#: ../../tutorial/tutorial-8.rst:135 ef83417216bd49c69742bcb7fd84ddc0
 msgid "If you move/resize the app window while waiting for the dialog to appear, the window will redraw."
 msgstr "如果您在等待對話方塊出現時移動/調整應用程式視窗的大小，則該視窗將會重新繪製。"
 
-#: ../../tutorial/tutorial-8.rst:138 62869e580f29498d9dcd0e51b690f361
+#: ../../tutorial/tutorial-8.rst:138 3cbfbcd025c2411294fcffa1835c17fa
 msgid "If you try to open an app menu, the menu will appear immediately."
 msgstr "如果您嘗試開啟應用程式選單，該選單將立即出現。"
 
-#: ../../tutorial/tutorial-8.rst:141 47dcfbf2cb9842e7b72e156f79d1910a
+#: ../../tutorial/tutorial-8.rst:141 32a173a7e81e473489d699427cfe8852
 msgid "Next steps"
 msgstr "下一步"
 
-#: ../../tutorial/tutorial-8.rst:143 048cedc45aee43d9aa411a2dfeab725f
+#: ../../tutorial/tutorial-8.rst:143 094e45e24f9d40e98daff251cc713fd5
 msgid "This has been a taste for what you can do with the tools provided by the BeeWare project. Over the course of this tutorial, you have:"
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:146 95debb139d544917adb28729c18b489e
+#: ../../tutorial/tutorial-8.rst:146 4feec21c0f394e899dd54f58654c745c
 msgid "Created a new GUI app project;"
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:147 bbebf0f3869a4bc697b3d11685c013f1
+#: ../../tutorial/tutorial-8.rst:147 9c062cfe7c7c4e8cb3c83dc27067949a
 msgid "Run that app in development mode;"
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:148 09e90dcd8028473e88baebc830eb2ce1
-msgid "Built the app as a standalone binary for a desktop operating syste;"
+#: ../../tutorial/tutorial-8.rst:148 fd3864f3cdb4478b826216f81f3556c2
+msgid "Built the app as a standalone binary for a desktop operating system;"
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:149 ab89212fa6cd4d458b88bff8228bd10e
+#: ../../tutorial/tutorial-8.rst:149 92419a5605d9428b8f8ae08de6713204
 msgid "Packaged that project for distribution to others;"
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:150 5e7b014dc8e54683a3562943d4370d88
+#: ../../tutorial/tutorial-8.rst:150 8757a5bd6cca4c05b2931660f5f482c4
 msgid "Run the app on a mobile simulator and/or device;"
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:151 3d9d39c5826645cb8df24235e635aacc
+#: ../../tutorial/tutorial-8.rst:151 aaa1bc7b67a64a47a10166a092b525ad
 msgid "Run the app as a web app;"
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:152 6dcd33286c1547328eb6772fe28bdf04
+#: ../../tutorial/tutorial-8.rst:152 bbacbcfde29e4df2b20660066b4121e2
 msgid "Added a third-party dependency to your app; and"
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:153 960fb9b2ab57497dbc1d9d8c5821e79f
+#: ../../tutorial/tutorial-8.rst:153 008215b8288843ae86a353b434e8a108
 msgid "Modified the app so that it remains responsive."
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:155 be92e33e56864195afcea29a305cc1fa
+#: ../../tutorial/tutorial-8.rst:155 f0409113c57642b1873db5cc141447ef
 msgid "So - where to from here?"
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:157 7f12946f58a6430193b084d5a9dee425
+#: ../../tutorial/tutorial-8.rst:157 aec31ee8c77d4c00952fcd1d331297f4
 msgid "If you'd like to go further, there are some additional :doc:`topic tutorials </tutorial/topics/index>` that go into detail on specific aspects of application development."
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:160 1b065e65d8f74376b18457f68d929bb0
+#: ../../tutorial/tutorial-8.rst:160 9b5c35fe788e47d79e245e62396c1def
 msgid "If you'd like to know more about how to build complex user interfaces with Toga, you can dive into `Toga's documentation <https://toga.readthedocs.io>`__. Toga also has it's own tutorial `demonstrating how to use various features of the widget toolkit <https://toga.readthedocs.io/en/latest/tutorial/index.html>`__."
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:165 0d30af7cf47848bfa569b19fe3924a13
+#: ../../tutorial/tutorial-8.rst:165 1e0d15fd8f8c46e8b920aaf6b220fd8f
 msgid "If you'd like to know more about the capabilities of Briefcase, you can dive into `Briefcase's documentation <https://briefcase.readthedocs.io>`__."
 msgstr ""
 
 #~ msgid "We've now got an application that is slick and responsive, even when it's waiting on a slow API. But how can we make sure that the app keeps working as we continue to develop it further? How do we test our app? Turn to :doc:`Tutorial 9 <tutorial-9>` to find out..."
 #~ msgstr "我們現在擁有一個流暢且響應迅速的應用程序，即使它正在等待緩慢的 API。但是，當我們繼續進一步開發應用程式時，如何確保該應用程式繼續運行？我們如何測試我們的應用程式？前往 :doc:`教學 9<tutorial-9>` 找找看..."
+
+#~ msgid "Built the app as a standalone binary for a desktop operating syste;"
+#~ msgstr ""
 

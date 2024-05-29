@@ -1,82 +1,69 @@
-=============
-Camera access
-=============
+================
+Using the camera
+================
 
-In this tutorial, we will use the camera on a mobile device. Important
-clarification, this will only work when installing the application on an actual
-mobile device; it will *not* work using an emulator on your development machine
-and will *not* work using the desktop or web versions of the application.
+Almost every modern computing device has a camera of some sort. In this tutorial,
+we'll write new application that is able to request access to this camera, take
+a photograph, and then display that photograph in the app.
+new application that uses your device's camera.
 
-Prerequisites
-=============
+.. admonition:: This tutorial won't work on all platforms!
 
-Make sure you at least have gotten to the point where you have the skeleton
-application running in developer mode. See the :doc:`first <../tutorial-0>`
-:doc:`two <../tutorial-1>` tutorials for details. Short story shorter, run the
-following commands in an empty directory and accept all the default options.
+    Unfortunately, at present, this tutorial will only work on macOS and
+    Android.
 
-.. tabs::
-    .. group-tab:: macOS
-        .. code-block:: console
+    Although iPhones all have cameras, the iOS *Simulator* doesn't have a
+    working camera. Windows and Linux devices also have cameras, but Toga
+    doesn't currently have the ability to access the camera on these platforms.
 
-            $ python3 -m venv beeware-venv
-            $ source beeware-venv/bin/activate
-            (beeware-venv)$ python -m pip install briefcase
-            (beeware-venv)$ briefcase new
-            (beeware-venv)$ cd helloworld
-            (beeware-venv)$ briefcase dev
+    The code presented here will *run* on Windows or Linux; but it will raise an
+    error when you try to take a photograph.
 
-    .. group-tab:: Linux
-        .. code-block:: console
+    The code will work if it is run on an actual iOS device, but will fail to
+    take a photograph if deployed to the iOS simulator.
 
-            $ python3 -m venv beeware-venv
-            $ source beeware-venv/bin/activate
-            (beeware-venv)$ python -m pip install briefcase
-            (beeware-venv)$ briefcase new
-            (beeware-venv)$ cd helloworld
-            (beeware-venv)$ briefcase dev
+Start a new project
+===================
 
-    .. group-tab:: Windows
-        .. code-block:: doscon
+For this tutorial, we're not going to build onto the application from the core
+tutorial - we're going to start a fresh project. You can use the same virtual
+environment you used in the first project; but we need to re-run the ``briefcase
+new`` wizard.
 
-            C:\...>py -m venv beeware-venv
-            C:\...>beeware-venv\Scripts\activate
-            (beeware-venv) C:\...>python -m pip install briefcase
-            (beeware-venv) C:\...>briefcase new
-            (beeware-venv) C:\...>cd helloworld
-            (beeware-venv) C:\...>briefcase dev
+Change back to the directory that contains the ``helloworld`` project folder,
+and start a new project named "Hello Camera":
 
-The skeleton application should appear on your development machine. Exit the
-window and continue.
+.. code-block:: console
 
-Take a photo
-============
+    (beeware-venv) $ cd ..
+    (beeware-venv) $ briefcase new
+    ...
+    [hellocamera] Generated new application 'Hello Camera'
 
-The highlighted code needs to be added to the code in your project's ``app.py``
-file. If you've accepted all the default settings while bootstrapping the
-application, the full path of the file will be
-``helloworld/src/helloworld/app.py``.
+    To run your application, type:
+
+        $ cd hellocamera
+        $ briefcase dev
+
+    (beeware-venv) $ cd hellocamera
+
+Add code to take a photo
+========================
+
+The wizard has generated a new empty Toga project. We can now add the code to
+take and display a photograph. Edit the ``app.py`` for the new application so
+that it has the following content:
 
 .. code-block:: python
-    :emphasize-lines: 20-28, 34-51
-
-    """
-    My first application
-    """
+    :emphasize-lines: 10-18, 24-41
 
     import toga
     from toga.style import Pack
     from toga.style.pack import COLUMN, ROW
 
 
-    class HelloWorld(toga.App):
+    class HelloCamera(toga.App):
         def startup(self):
-            """Construct and show the Toga application.
-
-            Usually, you would add your application to a main content box.
-            We then create a main window (with a name matching the app), and
-            show the main window.
-            """
             main_box = toga.Box()
 
             self.photo = toga.ImageView(style=Pack(height=300, padding=5))
@@ -114,184 +101,87 @@ application, the full path of the file will be
 
 
     def main():
-        return HelloWorld()
+        return HelloCamera()
 
-The first highlighted code block creates two widgets and adds them to the GUI
-layout. The user can click the ``Button`` widget to take a photo, which will
-then be displayed in the ``ImageView`` widget. The second highlighted code
-block defines the event handler that either launches the camera or displays an
-error message. If the camera is successfully launched and a picture is taken,
-the image is set to the ``ImageView`` widget's ``image`` attribute and
-displayed.
+This code has two changes over the default app that is generated by Briefcase.
+These additions are highlighted in yellow:
 
-Device permissions
-==================
+1. The first highlighted code block (in the ``startup()`` method) adds the two
+   widgets needed to control the camera: an ``ImageView`` to display a photo;
+   and a ``Button`` to trigger the camera.
 
-We will try to run the application on our mobile device, but find we are not
-quite there yet. From the directory with the ``pyproject.toml`` file, run the
-commands to deploy the application to your mobile device.
+2. The second highlighted code block (the ``take_photo()`` method) defines the
+   event handler when the button is pressed. This handler first confirms if the
+   application has permission to take a photo; if permission doesn't exist, it
+   is requested. Then, a photo is taken. The request for permission and the
+   request to take a photo are both asynchronous requests, so they require the
+   use of ``await``; while the app is waiting for the user to confirm permissions or
+   take the photo, the app's event loop can continue in the background.
 
-.. tabs::
+If the camera successfully takes a photo, it will return an ``Image`` object
+that can be assigned as the content of the ``ImageView``. If the photo request
+was canceled by the user, the ``self.camera.take_photo()`` call will return
+``None``, and the result can be ignored. If the user doesn't grant permission to
+use the camera, or the camera isn't implemented on the current platform, an
+error will be raised, and a dialog will be shown to the user.
 
-  .. group-tab:: macOS
-    .. tabs::
-      .. group-tab:: Android
-            .. code-block:: console
+Adding device permissions
+=========================
 
-                (beeware-venv)$ briefcase create android
-                (beeware-venv)$ briefcase build android
-                (beeware-venv)$ briefcase run android
+Part of this code we've just added asks for permission to use the camera. This
+is a common feature of modern app platforms - you can't access hardware features
+without explicitly asking the user's permission first.
 
-      .. group-tab:: iOS
-            .. code-block:: console
+However, this request comes in two parts. The first is in the code we've just
+seen; but before the app can ask for permissions, it needs to declare the
+permissions it is going to ask for.
 
-                (beeware-venv)$ briefcase create iOS
-                (beeware-venv)$ briefcase build iOS
-                (beeware-venv)$ briefcase run iOS
-
-  .. group-tab:: Linux
-    .. tabs::
-      .. group-tab:: Android
-            .. code-block:: console
-
-                (beeware-venv)$ briefcase create android
-                (beeware-venv)$ briefcase build android
-                (beeware-venv)$ briefcase run android
-
-      .. group-tab:: iOS
-            .. code-block:: console
-
-                (beeware-venv)$ briefcase create iOS
-                (beeware-venv)$ briefcase build iOS
-                (beeware-venv)$ briefcase run iOS
-
-  .. group-tab:: Windows
-    .. tabs::
-      .. group-tab:: Android
-            .. code-block:: doscon
-
-                (beeware-venv) C:\...>briefcase create android
-                (beeware-venv) C:\...>briefcase build android
-                (beeware-venv) C:\...>briefcase run android
-
-      .. group-tab:: iOS
-            .. code-block:: doscon
-
-                (beeware-venv) C:\...>briefcase create iOS
-                (beeware-venv) C:\...>briefcase build iOS
-                (beeware-venv) C:\...>briefcase run iOS
-
-
-For more details on installing your application to a mobile device, see
-:doc:`Tutorial 5 <../tutorial-5/index>`.
-
-If you click the button to take a photo, you will see an error. This is because
-the project did not specify the necessary camera permissions. Add the following
-line to the ``pyproject.toml`` file.
+The permissions required by each platform are slightly different, but Briefcase
+has a cross-platform representation for many common hardware permissions. In the
+``[tool.briefcase.app.helloworld]`` configuration section of your app's
+``pyproject.toml`` file, add the following (just above the ``sources``
+declaration):
 
 .. code-block:: toml
 
-    [tool.briefcase.app.helloworld]
-    ...
     permission.camera = "App will take mugshots."
 
-Deploy the application to the mobile device again.
+This declares that your app needs to access the camera, and provides a short
+description why the camera is required. This description is needed on some
+platforms (most notably macOS and iOS) and will be displayed to the user as a
+additional information when the permission dialog is presented.
+
+We can now generate and run the app:
 
 .. tabs::
 
   .. group-tab:: macOS
-    .. tabs::
-      .. group-tab:: Android
-            .. code-block:: console
+    .. code-block:: console
 
-                (beeware-venv)$ briefcase build android
-                (beeware-venv)$ briefcase run android
-      .. group-tab:: iOS
-            .. code-block:: console
+        (beeware-venv)$ briefcase create
+        (beeware-venv)$ briefcase build
+        (beeware-venv)$ briefcase run
 
-                (beeware-venv)$ briefcase build iOS
-                (beeware-venv)$ briefcase run iOS
+  .. group-tab:: Android
+    .. code-block:: console
 
-  .. group-tab:: Linux
-    .. tabs::
-      .. group-tab:: Android
-            .. code-block:: console
+        (beeware-venv)$ briefcase create android
+        (beeware-venv)$ briefcase build android
+        (beeware-venv)$ briefcase run android
 
-                (beeware-venv)$ briefcase build android
-                (beeware-venv)$ briefcase run android
+When the app runs, you'll be presented with a button. Press the button, and the
+platform's default camera dialog will be displayed. Take a photo; the camera
+dialog will disappear, and the photo will be displayed on in the app, just above
+the button. You could then take another photo; this will replace the first
+photo.
 
-      .. group-tab:: iOS
-            .. code-block:: console
+Adding more permissions
+=======================
 
-                (beeware-venv)$ briefcase build iOS
-                (beeware-venv)$ briefcase run iOS
-
-  .. group-tab:: Windows
-    .. tabs::
-      .. group-tab:: Android
-            .. code-block:: doscon
-
-                (beeware-venv) C:\...>briefcase build android
-                (beeware-venv) C:\...>briefcase run android
-
-      .. group-tab:: iOS
-            .. code-block:: doscon
-
-                (beeware-venv) C:\...>briefcase build iOS
-                (beeware-venv) C:\...>briefcase run iOS
-
-This also doesn't work. This is because modifications to the ``pyproject.toml``
-file require completely recreating the project.
-
-.. tabs::
-
-  .. group-tab:: macOS
-    .. tabs::
-      .. group-tab:: Android
-            .. code-block:: console
-
-                (beeware-venv)$ briefcase create android
-                (beeware-venv)$ briefcase build android
-                (beeware-venv)$ briefcase run android
-
-      .. group-tab:: iOS
-            .. code-block:: console
-
-                (beeware-venv)$ briefcase create iOS
-                (beeware-venv)$ briefcase build iOS
-                (beeware-venv)$ briefcase run iOS
-
-  .. group-tab:: Linux
-    .. tabs::
-      .. group-tab:: Android
-            .. code-block:: console
-
-                (beeware-venv)$ briefcase create android
-                (beeware-venv)$ briefcase build android
-                (beeware-venv)$ briefcase run android
-
-      .. group-tab:: iOS
-            .. code-block:: console
-
-                (beeware-venv)$ briefcase create iOS
-                (beeware-venv)$ briefcase build iOS
-                (beeware-venv)$ briefcase run iOS
-
-  .. group-tab:: Windows
-    .. tabs::
-      .. group-tab:: Android
-            .. code-block:: doscon
-
-                (beeware-venv) C:\...>briefcase create android
-                (beeware-venv) C:\...>briefcase build android
-                (beeware-venv) C:\...>briefcase run android
-
-      .. group-tab:: iOS
-            .. code-block:: doscon
-
-                (beeware-venv) C:\...>briefcase create iOS
-                (beeware-venv) C:\...>briefcase build iOS
-                (beeware-venv) C:\...>briefcase run iOS
-
-The application should launch on your mobile device. Click the button to take a
-picture and it should appear in the GUI.
+Permissions are declared in the files that are generated during the original
+call to ``briefcase create``. Unfortunately, Briefcase can't update these files
+once they've been initially generated; so if you want to add a new permission to
+your app, or modify existing permissions, you'll need to re-create the app. You
+can do this by re-running ``briefcase create``; this will warn you that the
+existing app will be overwritten, and then regenerate the application with the
+new permissions.
