@@ -1,22 +1,23 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-29 10:14+0800\n"
-"PO-Revision-Date: 2024-02-02 22:01+0000\n"
-"Last-Translator: Marco Esters <mesters@anaconda.com>\n"
+"PO-Revision-Date: 2024-06-17 13:09+0000\n"
+"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
+"topics/custom-icons/de/>\n"
 "Language: de\n"
-"Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-10/de/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.6-dev\n"
 "Generated-By: Babel 2.15.0\n"
 
 #: ../../tutorial/topics/custom-icons.rst:3 3f95c5bbbfeb484a865ba56ba3cf2d5c
 msgid "Customizing icons"
-msgstr ""
+msgstr "Symbole anpassen"
 
 #: ../../tutorial/topics/custom-icons.rst:5 4dbb6afe140441c29ac0923e2956b041
 #, fuzzy
@@ -266,4 +267,3 @@ msgstr ""
 
 #~ msgid "Details on the `options available when configuring your Briefcase project <https://briefcase.readthedocs.io/en/latest/reference/index.html>`__."
 #~ msgstr ""
-
