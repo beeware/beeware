@@ -3,20 +3,21 @@
 # This file is distributed under the same license as the BeeWare package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-29 08:29+0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2024-06-17 13:09+0000\n"
+"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
+"topics/index/de/>\n"
 "Language: de\n"
-"Language-Team: de <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.6-dev\n"
 "Generated-By: Babel 2.15.0\n"
 
 #: ../../tutorial/topics/index.rst:3 06ab4f13785c480ba9768a9303bb9183
@@ -29,7 +30,7 @@ msgstr ""
 
 #: ../../tutorial/topics/index.rst:12 7301241a7d4342a09a76d6748695d0a8
 msgid "Customizing icons"
-msgstr ""
+msgstr "Symbole anpassen"
 
 #: ../../tutorial/topics/index.rst:14 be9a16e0f2124586b4243262d456de0d
 msgid "Customize your application's appearance by replace the default \"gray bee\" icon."
@@ -53,4 +54,3 @@ msgstr ""
 
 #~ msgid "Want to go deeper on specific topics? Here are some additional standalone tutorials that demonstrate common aspects of application development. Each tutorial is standalone, and can be completed in any order; but they all assume you've completed the core tutorial."
 #~ msgstr ""
-
