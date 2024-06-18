@@ -222,7 +222,3 @@ msgstr ""
 
 #~ msgid "We've now got an application that is slick and responsive, even when it's waiting on a slow API. But how can we make sure that the app keeps working as we continue to develop it further? How do we test our app? Turn to :doc:`Tutorial 9 <tutorial-9>` to find out..."
 #~ msgstr "Ahora tenemos una aplicación que es ágil y sensible, incluso cuando está esperando en una API lenta. Pero, ¿cómo podemos asegurarnos de que la aplicación sigue funcionando a medida que continuamos desarrollándola? ¿Cómo probamos nuestra aplicación? Visita :doc:`Tutorial 9 <tutorial-9>` para descubrirlo..."
-
-#~ msgid "Built the app as a standalone binary for a desktop operating syste;"
-#~ msgstr ""
-

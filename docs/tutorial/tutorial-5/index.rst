@@ -8,13 +8,17 @@ can be deployed to your mobile device, too!
 
 .. grid:: 1 1 2 2
 
-    .. grid-item-card:: :doc:`iOS <iOS>`
+    .. grid-item-card:: iOS
+       :link: iOS
+       :link-type: doc
 
-        iOS applications can only be compiled on macOS.
+       iOS applications can only be compiled on macOS.
 
-    .. grid-item-card:: :doc:`Android <android>`
+    .. grid-item-card:: Android
+       :link: android
+       :link-type: doc
 
-        Android applications can be compiled on macOS, Windows or Linux.
+       Android applications can be compiled on macOS, Windows or Linux.
 
 .. toctree::
     :maxdepth: 1
