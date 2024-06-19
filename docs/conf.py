@@ -212,6 +212,10 @@ htmlhelp_basename = "beewaredoc"
 
 html_theme = "furo"
 
+html_css_files = [
+    "resources/custom.css",
+]
+
 # -- Options for LaTeX output --------------------------------------------------
 
 latex_elements = {

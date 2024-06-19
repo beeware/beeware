@@ -1,0 +1,4 @@
+/* Render card titles in link color so that there is a cue that they're links. */
+.sd-card-title {
+    color: var(--color-link);
+}

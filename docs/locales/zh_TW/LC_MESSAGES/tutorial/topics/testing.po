@@ -135,8 +135,6 @@ msgstr "您還可以在移動環境下使用 ``--test`` 選項： - 因此 ``bri
 #~ msgid "Tutorials demonstrating `features of the Toga widget toolkit <https://toga.readthedocs.io/en/latest/tutorial/index.html>`__."
 #~ msgstr "示範 `Toga 小工具工具包的功能 <https://toga.readthedocs.io/en/latest/tutorial/index.html>`__ 的教學。"
 
-#~ msgid "Details on the `options available when configuring your Briefcase project <https://briefcase.readthedocs.io/en/latest/reference/index.html>`__."
-#~ msgstr ""
 #~ "`有關配置 Briefcase 項目時可用的選項的詳細資訊 <https://briefcase.readthedocs.io/en/latest/reference/index.html>`__ 。Plural-Forms: nplurals=1; plural=0;\n"
 #~ "MIME-Version: 1.0\n"
 #~ "Content-Type: text/plain; charset=utf-8\n"
@@ -148,4 +146,3 @@ msgstr "您還可以在移動環境下使用 ``--test`` 選項： - 因此 ``bri
 
 #~ msgid "Next steps"
 #~ msgstr "下一步"
-

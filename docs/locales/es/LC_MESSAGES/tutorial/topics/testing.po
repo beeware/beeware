@@ -136,21 +136,5 @@ msgstr "Al igual que con ``briefcase dev --test``, la opción ``-r`` sólo es ne
 msgid "You can also use the ``--test`` option on mobile backends: - so ``briefcase run iOS --test`` and ``briefcase run android --test`` will both work, running the test suite on the mobile device you select."
 msgstr "También puedes utilizar la opción ``--test`` en backends móviles: - así ``briefcase run iOS --test`` y ``briefcase run android --test`` funcionarán, ejecutando el conjunto de pruebas en el dispositivo móvil que selecciones."
 
-#~ msgid "This has been a taste for what you can do with the tools provided by the BeeWare project. What you do from here is up to you!"
-#~ msgstr ""
-
-#~ msgid "Some places to go from here:"
-#~ msgstr ""
-
-#~ msgid "Tutorials demonstrating `features of the Toga widget toolkit <https://toga.readthedocs.io/en/latest/tutorial/index.html>`__."
-#~ msgstr ""
-
-#~ msgid "Details on the `options available when configuring your Briefcase project <https://briefcase.readthedocs.io/en/latest/reference/index.html>`__."
-#~ msgstr ""
-
-#~ msgid "We've now got a a test suite for our application. But it still looks like a tutorial app. Is there anything we can do about that? Turn to :doc:`Tutorial 10 <tutorial-10>` to find out..."
-#~ msgstr ""
-
 #~ msgid "Next steps"
 #~ msgstr "Siguientes pasos"
-
