@@ -55,7 +55,7 @@ dev = [
 docs = [
     "furo == 2024.7.18",
     "pyenchant == 3.2.2",
-    "sphinx == 7.4.7",
+    "sphinx == 8.0.2",
     "sphinx_design == 0.6.1",
     "sphinx_tabs == 3.4.5",
     "sphinx-autobuild == 2024.4.16",
