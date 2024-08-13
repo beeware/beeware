@@ -1,21 +1,21 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-18 09:27+0800\n"
-"PO-Revision-Date: 2024-06-17 13:09+0000\n"
-"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
+"PO-Revision-Date: 2024-08-14 00:09+0000\n"
+"Last-Translator: tct123 <tct1234@protonmail.com>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
+"topics/custom-icons/de/>\n"
 "Language: de\n"
-"Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/topics/custom-icons/de/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.7-dev\n"
 "Generated-By: Babel 2.15.0\n"
 
 #: ../../tutorial/topics/custom-icons.rst:3 f39acbe565834f4a938dbd3500c1ce64
-#, fuzzy
 msgid "Customizing icons"
 msgstr "Symbole anpassen"
 
@@ -71,14 +71,14 @@ msgstr ""
 #: ../../tutorial/topics/custom-icons.rst:424 22d9f144295b4e449fc0cb398dddf9b3
 #: 3931a25720304081aa006d5412935c50 c75e035a8343431d93321dac7ae7c925
 msgid "Android"
-msgstr ""
+msgstr "Android"
 
 #: ../../tutorial/topics/custom-icons.rst:128
 #: ../../tutorial/topics/custom-icons.rst:327
 #: ../../tutorial/topics/custom-icons.rst:438 4e10d2e3806442bd98e889b62d067a1b
 #: 751d550e10eb446a840aa3fe988be207 b3f9073e49c1497c9cc34df2b2a7fe9a
 msgid "iOS"
-msgstr ""
+msgstr "iOS"
 
 #: ../../tutorial/topics/custom-icons.rst:160 878a9a6dfce24608b10122666e1c202f
 msgid "This reports the specific icon file (or files) that Briefcase is expecting. However, as we haven't provided the actual icon files, the install fails, and Briefcase falls back to a default value (the same \"gray bee\" icon)."
