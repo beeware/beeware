@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-29 10:14+0800\n"
-"PO-Revision-Date: 2024-07-23 23:51+0000\n"
-"Last-Translator: Jake Atwell <jake.atwell@gmail.com>\n"
+"PO-Revision-Date: 2024-08-14 00:09+0000\n"
+"Last-Translator: tct123 <tct1234@protonmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
 "topics/camera-access/de/>\n"
 "Language: de\n"
@@ -114,7 +114,7 @@ msgstr ""
 
 #: ../../tutorial/topics/camera-access.rst:165 9f08f9dfa1e24b798533fa8747e3429f
 msgid "Android"
-msgstr ""
+msgstr "Android"
 
 #: ../../tutorial/topics/camera-access.rst:172 7a60f78517794a34925f15d80e2f2d8e
 msgid "When the app runs, you'll be presented with a button. Press the button, and the platform's default camera dialog will be displayed. Take a photo; the camera dialog will disappear, and the photo will be displayed on in the app, just above the button. You could then take another photo; this will replace the first photo."
