@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-08 13:10+0800\n"
-"PO-Revision-Date: 2024-05-13 12:00+0000\n"
-"Last-Translator: AJ <niko@syncding.com>\n"
+"PO-Revision-Date: 2024-08-16 14:09+0000\n"
+"Last-Translator: tct123 <tct1234@protonmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
 "index/de/>\n"
 "Language: de\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5.5-dev\n"
+"X-Generator: Weblate 5.7\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../index.rst:3 6f7128377ca84a5292ae2dc1d11d1a5a
@@ -24,17 +24,27 @@ msgid "**Write Python. Run Anywhere.**"
 msgstr "**Einmal schreiben. Überall ausführen.**"
 
 #: ../../index.rst:7 163e1b86e8b946f681c0a773912a1a9e
-#, fuzzy
 msgid "Welcome to BeeWare! In this tutorial, we're going to build a graphical user interface using Python, and deploy it as a desktop application, as a mobile application, and as a single page web app. We'll also look at how you can use BeeWare tools to perform some of the common tasks that you'll need to do as an app developer, such as testing your app."
-msgstr "Willkommen bei BeeWare! In diesem Tutorial werden wir eine grafische Benutzeroberfläche mit Python erstellen und sie als Desktop-, Mobil- und Web-Anwendung bereitstellen. Außerdem sehen wir uns an, wie Sie die BeeWare-Tools nutzen können, um übliche Aufgaben als App-Entwickler zu erledigen, wie zum Beispiel das Testen Ihrer App."
+msgstr ""
+"Willkommen bei BeeWare! In diesem Tutorial werden wir eine grafische "
+"Benutzeroberfläche mit Python erstellen und sie als Desktop-, Mobil- und Web-"
+"Anwendung bereitstellen. Außerdem sehen wir uns an, wie Sie die BeeWare-"
+"Tools nutzen können, um übliche Aufgaben als App-Entwickler zu erledigen, "
+"wie zum Beispiel das Testen Ihrer App."
 
 #: ../../index.rst:14 cb62b53d5fc34f008e00a4ed703b3862
 msgid "Translations are available"
-msgstr ""
+msgstr "Übersetzungen sind verfügbar"
 
 #: ../../index.rst:16 f67c60d4558b429dbb0ed51be44daf33
 msgid "If you're not comfortable with English, translations of this tutorial are available in `Deutsch <https://docs.beeware.org/de>`__, `Español <https://docs.beeware.org/es>`__, `Français <https://docs.beeware.org/fr>`__, `Italiano <https://docs.beeware.org/it>`__, `Português <https://docs.beeware.org/pt>`__, `中文(简体) <https://docs.beeware.org/zh-cn>`__, and `中文(繁體) <https://docs.beeware.org/zh-tw>`__."
 msgstr ""
+"Wenn Sie mit Englisch nicht vertraut sind, sind Übersetzungen dieses "
+"Tutorials in `Deutsch <https://docs.beeware.org/de>`__ und `Español "
+"<https://docs.beeware.org/es>`__ verfügbar __, `Français <https://docs."
+"beeware.org/fr>`__, `Italiano <https://docs.beeware.org/it>`__, `Português "
+"<https://docs.beeware.org /pt>`__, `中文(简体) <https://docs.beeware.org/zh-"
+"cn>`__ und `中文(繁体) <https://docs.beeware.org/zh-tw> `__."
 
 #: ../../index.rst:29 4cb3c707502044b1b0c6b0111876568b
 msgid "This is a machine translation!"
@@ -46,9 +56,12 @@ msgstr "Diese Version des Tutorials wurde durch maschinelle Übersetzung erstell
 
 #: ../../index.rst:35 ../../index.rst:47 a96cef4e3f184a49b27fd0801976b764
 #: ad49e511c20d43a68573c21dde7c0182
-#, fuzzy
 msgid "If you'd like the help improve the translation, get in touch! We have a ``#translations`` channel in `Discord <https://beeware.org/bee/chat/>`__. Introduce yourself there and we will add you to the translation team."
-msgstr "Wenn du helfen möchtest, die Übersetzung zu verbessern, melde dich! Wir haben einen ``#translations``-Kanal in `Discord <https://beeware.org/bee/chat/>`__; stellen Sie sich dort vor und wir werden Sie dem Übersetzungsteam hinzufügen."
+msgstr ""
+"Wenn du helfen möchtest, die Übersetzung zu verbessern, melde dich! Wir "
+"haben einen ``#translations``-Kanal in `Discord <https://beeware.org/bee/"
+"chat/>`__. Stellen Sie sich dort vor und wir werden Sie dem Übersetzungsteam "
+"hinzufügen."
 
 #: ../../index.rst:41 39c3c41304ed4caaa96a99f6f0d91135
 msgid "This is a translation!"
@@ -59,47 +72,58 @@ msgid "This document is a translation of the English version. The translation ha
 msgstr "Dieses Dokument ist eine Übersetzung der englischen Version. Die Übersetzung wurde von Menschen überprüft, aber neuere Abschnitte können durch maschinelle Übersetzung erstellt oder überhaupt nicht übersetzt worden sein."
 
 #: ../../index.rst:52 67cb5a165e9448e8ab813b1f81156ef3
-#, fuzzy
 msgid "What is BeeWare?"
 msgstr "Was ist BeeWare?"
 
 #: ../../index.rst:54 3650f6f307754a1e86f031240b335eb4
-#, fuzzy
 msgid "BeeWare is not a single product, or tool, or library - it's a collection of tools and libraries, each of which works together to help you write cross platform Python applications with a native GUI. It includes:"
-msgstr "BeeWare ist kein einzelnes Produkt, Werkzeug oder eine Bibliothek - es ist eine Sammlung von Werkzeugen und Bibliotheken, die alle zusammenarbeiten, um Ihnen zu helfen, plattformübergreifende Python-Anwendungen mit einer nativen GUI zu schreiben. Es umfasst:"
+msgstr ""
+"BeeWare ist kein einzelnes Produkt, Werkzeug oder eine Bibliothek - es ist "
+"eine Sammlung von Werkzeugen und Bibliotheken, die alle zusammenarbeiten, um "
+"Ihnen zu helfen, plattformübergreifende Python-Anwendungen mit einer nativen "
+"GUI zu schreiben. Es umfasst:"
 
 #: ../../index.rst:58 6265a3a23fc64e208b698544ea5c79d6
-#, fuzzy
 msgid "`Toga <https://toga.readthedocs.io>`__, a cross platform widget toolkit;"
-msgstr "`Toga <https://toga.readthedocs.io>`__, ein plattformübergreifendes Widget-Toolkit;"
+msgstr ""
+"`Toga <https://toga.readthedocs.io>`__, ein plattformübergreifendes Widget-"
+"Toolkit;"
 
 #: ../../index.rst:59 d7cc6d030b684c0d8fbda93accebc8af
-#, fuzzy
 msgid "`Briefcase <https://briefcase.readthedocs.io>`__, a tool for packaging Python projects as distributable artefacts that can be shipped to end users;"
-msgstr "`Briefcase <https://briefcase.readthedocs.io>`__, ein Werkzeug zum Verpacken von Python-Projekten als verteilbare Artefakte, die an Endbenutzer ausgeliefert werden können;"
+msgstr ""
+"`Briefcase <https://briefcase.readthedocs.io>`__, ein Werkzeug zum Verpacken "
+"von Python-Projekten als verteilbare Artefakte, die an Endbenutzer "
+"ausgeliefert werden können;"
 
 #: ../../index.rst:61 66b749de007849f6966b3e2b7c573478
-#, fuzzy
 msgid "Libraries (such as `Rubicon ObjC <https://rubicon-objc.readthedocs.io>`__) for accessing platform-native libraries;"
-msgstr "Bibliotheken (wie `Rubicon ObjC <https://rubicon-objc.readthedocs.io>`__) für den Zugriff auf plattformspezifische Bibliotheken;"
+msgstr ""
+"Bibliotheken (wie `Rubicon ObjC <https://rubicon-objc.readthedocs.io>`__) "
+"für den Zugriff auf plattformspezifische Bibliotheken;"
 
 #: ../../index.rst:63 2de154b714cd4f68b8939e7d1f439da1
-#, fuzzy
 msgid "Pre-compiled builds of Python that can be used on platforms where official Python installers aren't available."
-msgstr "Vorkompilierte Python-Builds, die auf Plattformen verwendet werden können, für die keine offiziellen Python-Installationsprogramme verfügbar sind."
+msgstr ""
+"Vorkompilierte Python-Builds, die auf Plattformen verwendet werden können, "
+"für die keine offiziellen Python-Installationsprogramme verfügbar sind."
 
 #: ../../index.rst:66 dd3c7f616d3d496992200e67340ba1d6
-#, fuzzy
 msgid "In this tutorial, we'll be using all these tools, but as a user, you'll only need to interact with the first two (Toga and Briefcase). However, each of the tools can also be used individually - for example, you can use Briefcase to deploy an app without using Toga as a GUI toolkit."
-msgstr "In diesem Tutorium werden wir alle diese Tools verwenden, aber als Benutzer müssen Sie nur mit den ersten beiden (Toga und Briefcase) interagieren. Jedes der Tools kann jedoch auch einzeln verwendet werden - zum Beispiel können Sie Briefcase verwenden, um eine App bereitzustellen, ohne Toga als GUI-Toolkit zu verwenden."
+msgstr ""
+"In diesem Tutorium werden wir alle diese Tools verwenden, aber als Benutzer "
+"müssen Sie nur mit den ersten beiden (Toga und Briefcase) interagieren. "
+"Jedes der Tools kann jedoch auch einzeln verwendet werden - zum Beispiel "
+"können Sie Briefcase verwenden, um eine App bereitzustellen, ohne Toga als "
+"GUI-Toolkit zu verwenden."
 
 #: ../../index.rst:71 01d00af14844431abafb7db394a0f5c8
-#, fuzzy
 msgid "The BeeWare suite is available on macOS, Windows, Linux (using GTK); on mobile platforms such as Android and iOS; and for the Web."
-msgstr "Die BeeWare-Suite ist für macOS, Windows, Linux (unter Verwendung von GTK), für mobile Plattformen wie Android und iOS und für das Web verfügbar."
+msgstr ""
+"Die BeeWare-Suite ist für macOS, Windows, Linux (unter Verwendung von GTK), "
+"für mobile Plattformen wie Android und iOS und für das Web verfügbar."
 
 #: ../../index.rst:75 be926e608f1e4133a438d0127509c15c
-#, fuzzy
 msgid "Lets go!"
 msgstr "Los geht's!"
 
