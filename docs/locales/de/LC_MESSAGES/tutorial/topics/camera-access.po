@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-29 10:14+0800\n"
-"PO-Revision-Date: 2024-08-14 00:09+0000\n"
+"PO-Revision-Date: 2024-08-19 17:09+0000\n"
 "Last-Translator: tct123 <tct1234@protonmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
 "topics/camera-access/de/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Weblate 5.7\n"
 "Generated-By: Babel 2.15.0\n"
 
 #: ../../tutorial/topics/camera-access.rst:3 dbceb55336a94cc3989281eefac9c042
@@ -27,90 +27,153 @@ msgstr "Kameranutzung"
 #: ../../tutorial/topics/camera-access.rst:5 4bf5494a1c41402db939501e20900c3b
 msgid "Almost every modern computing device has a camera of some sort. In this tutorial, we'll write new application that is able to request access to this camera, take a photograph, and then display that photograph in the app. new application that uses your device's camera."
 msgstr ""
+"Fast jedes moderne Computergerät verfügt über eine Kamera. In diesem "
+"Tutorial schreiben wir eine neue Anwendung, die Zugriff auf diese Kamera "
+"anfordern, ein Foto aufnehmen und dieses Foto dann in der App anzeigen kann. "
+"Neue Anwendung, die die Kamera Ihres Geräts verwendet."
 
 #: ../../tutorial/topics/camera-access.rst:10 07d496e573b4472fb7713ac057c6d41d
 msgid "This tutorial won't work on all platforms!"
-msgstr ""
+msgstr "Dieses Tutorial funktioniert nicht auf allen Plattformen!"
 
 #: ../../tutorial/topics/camera-access.rst:12 cdbf59620c874669a34065e11ebade2a
 msgid "Unfortunately, at present, this tutorial will only work on macOS and Android."
-msgstr ""
+msgstr "Leider funktioniert dieses Tutorial derzeit nur auf macOS und Android."
 
 #: ../../tutorial/topics/camera-access.rst:15 743b319ea6ed4d109fe121d5f305eded
 msgid "Although iPhones all have cameras, the iOS *Simulator* doesn't have a working camera. Windows and Linux devices also have cameras, but Toga doesn't currently have the ability to access the camera on these platforms."
 msgstr ""
+"Obwohl alle iPhones über Kameras verfügen, verfügt der iOS-*Simulator* nicht "
+"über eine funktionierende Kamera. Windows- und Linux-Geräte verfügen "
+"ebenfalls über Kameras, aber Toga kann derzeit auf diesen Plattformen nicht "
+"auf die Kamera zugreifen."
 
 #: ../../tutorial/topics/camera-access.rst:19 c5d875e7488e4b44ab10643b57bb386b
 msgid "The code presented here will *run* on Windows or Linux; but it will raise an error when you try to take a photograph."
 msgstr ""
+"Der hier dargestellte Code *läuft* unter Windows oder Linux, löst jedoch "
+"einen Fehler aus, wenn Sie versuchen, ein Foto aufzunehmen."
 
 #: ../../tutorial/topics/camera-access.rst:22 b7cd1388797d46138d0d3b6eb56f3c9d
 msgid "The code will work if it is run on an actual iOS device, but will fail to take a photograph if deployed to the iOS simulator."
 msgstr ""
+"Der Code funktioniert, wenn er auf einem echten iOS-Gerät ausgeführt wird, "
+"kann jedoch kein Foto aufnehmen, wenn er im iOS-Simulator bereitgestellt "
+"wird."
 
 #: ../../tutorial/topics/camera-access.rst:26 f3b7ce9838c24bf0bb7290b3b3ce9f2d
 msgid "Start a new project"
-msgstr ""
+msgstr "Neues Projekt starten"
 
 #: ../../tutorial/topics/camera-access.rst:28 ea6a0b326b3e4c6f91b1ca9abab81264
 msgid "For this tutorial, we're not going to build onto the application from the core tutorial - we're going to start a fresh project. You can use the same virtual environment you used in the first project; but we need to re-run the ``briefcase new`` wizard."
 msgstr ""
+"Für dieses Tutorial werden wir nicht auf der Anwendung aus dem Kerntutorial "
+"aufbauen, sondern ein neues Projekt beginnen. Sie können dieselbe virtuelle "
+"Umgebung verwenden, die Sie im ersten Projekt verwendet haben. Wir müssen "
+"jedoch den Assistenten „Aktenkoffer neu“ erneut ausführen."
 
 #: ../../tutorial/topics/camera-access.rst:33 e110e1dd2dd2443082b8186c8221343e
 msgid "Change back to the directory that contains the ``helloworld`` project folder, and start a new project named \"Hello Camera\":"
 msgstr ""
+"Wechseln Sie zurück in das Verzeichnis, das den Projektordner ``helloworld`` "
+"enthält, und starten Sie ein neues Projekt mit dem Namen „Hello Camera“:"
 
 #: ../../tutorial/topics/camera-access.rst:51 04081240f76f4101bfcf4534968047e0
 msgid "Add code to take a photo"
-msgstr ""
+msgstr "Fügen Sie Code hinzu, um ein Foto aufzunehmen"
 
 #: ../../tutorial/topics/camera-access.rst:53 0248fa23596c435eaad732f474acb14d
 msgid "The wizard has generated a new empty Toga project. We can now add the code to take and display a photograph. Edit the ``app.py`` for the new application so that it has the following content:"
 msgstr ""
+"Der Assistent hat ein neues leeres Toga-Projekt generiert. Wir können jetzt "
+"den Code zum Aufnehmen und Anzeigen eines Fotos hinzufügen. Bearbeiten Sie "
+"die Datei ``app.py`` für die neue Anwendung, sodass sie den folgenden Inhalt "
+"hat:"
 
 #: ../../tutorial/topics/camera-access.rst:106 a79fd8474b3247c3b38f636f15393cc3
 msgid "This code has two changes over the default app that is generated by Briefcase. These additions are highlighted in yellow:"
 msgstr ""
+"Dieser Code weist gegenüber der von Briefcase generierten Standard-App zwei "
+"Änderungen auf. Diese Ergänzungen sind gelb hervorgehoben:"
 
 #: ../../tutorial/topics/camera-access.rst:109 abea0ef112f14d43b1111f7756399e8b
 msgid "The first highlighted code block (in the ``startup()`` method) adds the two widgets needed to control the camera: an ``ImageView`` to display a photo; and a ``Button`` to trigger the camera."
 msgstr ""
+"Der erste hervorgehobene Codeblock (in der Methode ``startup()``) fügt die "
+"beiden Widgets hinzu, die zur Steuerung der Kamera erforderlich sind: ein "
+"``ImageView`` zum Anzeigen eines Fotos und einen ``Button`` zum Auslösen der "
+"Kamera."
 
 #: ../../tutorial/topics/camera-access.rst:113 38f73ff6bd934d05930c190a159536a3
 msgid "The second highlighted code block (the ``take_photo()`` method) defines the event handler when the button is pressed. This handler first confirms if the application has permission to take a photo; if permission doesn't exist, it is requested. Then, a photo is taken. The request for permission and the request to take a photo are both asynchronous requests, so they require the use of ``await``; while the app is waiting for the user to confirm permissions or take the photo, the app's event loop can continue in the background."
 msgstr ""
+"Der zweite hervorgehobene Codeblock (die Methode ``take_photo()``) definiert "
+"den Ereignishandler, wenn die Schaltfläche gedrückt wird. Dieser Handler "
+"bestätigt zunächst, ob die Anwendung die Berechtigung zum Aufnehmen eines "
+"Fotos hat. Wenn keine Berechtigung vorliegt, wird sie angefordert. Dann wird "
+"ein Foto aufgenommen. Die Anforderung der Berechtigung und die Anforderung "
+"zum Aufnehmen eines Fotos sind beide asynchrone Anforderungen, sodass die "
+"Verwendung von ``await`` erforderlich ist. Während die App darauf wartet, "
+"dass der Benutzer die Berechtigung bestätigt oder das Foto aufnimmt, kann "
+"die Ereignisschleife der App im Hintergrund fortgesetzt werden."
 
 #: ../../tutorial/topics/camera-access.rst:121 026a1cfea37144feb5d78e467d72489d
 msgid "If the camera successfully takes a photo, it will return an ``Image`` object that can be assigned as the content of the ``ImageView``. If the photo request was canceled by the user, the ``self.camera.take_photo()`` call will return ``None``, and the result can be ignored. If the user doesn't grant permission to use the camera, or the camera isn't implemented on the current platform, an error will be raised, and a dialog will be shown to the user."
 msgstr ""
+"Wenn die Kamera erfolgreich ein Foto aufnimmt, gibt sie ein „Image“-Objekt "
+"zurück, das als Inhalt der ``ImageView`` zugewiesen werden kann. Wenn die "
+"Fotoanforderung vom Benutzer abgebrochen wurde, gibt der Aufruf ``self.camera"
+".take_photo()`` ``None`` zurück und das Ergebnis kann ignoriert werden. Wenn "
+"der Benutzer keine Berechtigung zur Verwendung der Kamera erteilt oder die "
+"Kamera auf der aktuellen Plattform nicht implementiert ist, wird ein Fehler "
+"ausgelöst und dem Benutzer ein Dialogfeld angezeigt."
 
 #: ../../tutorial/topics/camera-access.rst:129 8ee0159c48894c99b5cc176f6d896bb2
 msgid "Adding device permissions"
-msgstr ""
+msgstr "Geräteberechtigungen hinzufügen"
 
 #: ../../tutorial/topics/camera-access.rst:131 ddcd94cc1a7643a995a112a60fa0ed17
 msgid "Part of this code we've just added asks for permission to use the camera. This is a common feature of modern app platforms - you can't access hardware features without explicitly asking the user's permission first."
 msgstr ""
+"Ein Teil des Codes, den wir gerade hinzugefügt haben, fragt nach der "
+"Erlaubnis, die Kamera zu verwenden. Dies ist eine gängige Funktion moderner "
+"App-Plattformen – Sie können nicht auf Hardwarefunktionen zugreifen, ohne "
+"vorher ausdrücklich die Erlaubnis des Benutzers einzuholen."
 
 #: ../../tutorial/topics/camera-access.rst:135 615d220f27664cd08f52cbfbc4f83758
 msgid "However, this request comes in two parts. The first is in the code we've just seen; but before the app can ask for permissions, it needs to declare the permissions it is going to ask for."
 msgstr ""
+"Diese Anfrage besteht aus zwei Teilen. Der erste Teil befindet sich im Code, "
+"den wir gerade gesehen haben. Bevor die App jedoch Berechtigungen anfordern "
+"kann, muss sie die Berechtigungen deklarieren, die sie anfordern wird."
 
 #: ../../tutorial/topics/camera-access.rst:139 f67eeddc5f614b7f96392b137738a4f8
 msgid "The permissions required by each platform are slightly different, but Briefcase has a cross-platform representation for many common hardware permissions. In the ``[tool.briefcase.app.helloworld]`` configuration section of your app's ``pyproject.toml`` file, add the following (just above the ``sources`` declaration):"
 msgstr ""
+"Die für jede Plattform erforderlichen Berechtigungen unterscheiden sich "
+"geringfügig, aber Briefcase bietet eine plattformübergreifende Darstellung "
+"für viele gängige Hardwareberechtigungen. Fügen Sie im "
+"Konfigurationsabschnitt ``[tool.briefcase.app.helloworld]`` der Datei "
+"``pyproject.toml`` Ihrer App Folgendes hinzu (direkt über der Deklaration "
+"``Sources``):"
 
 #: ../../tutorial/topics/camera-access.rst:149 4d06d1b17a544258907f2d0914a6b9e2
 msgid "This declares that your app needs to access the camera, and provides a short description why the camera is required. This description is needed on some platforms (most notably macOS and iOS) and will be displayed to the user as a additional information when the permission dialog is presented."
 msgstr ""
+"Dies erklärt, dass Ihre App auf die Kamera zugreifen muss, und liefert eine "
+"kurze Beschreibung, warum die Kamera erforderlich ist. Diese Beschreibung "
+"ist auf einigen Plattformen erforderlich (insbesondere macOS und iOS) und "
+"wird dem Benutzer als zusätzliche Information angezeigt, wenn der "
+"Berechtigungsdialog angezeigt wird."
 
 #: ../../tutorial/topics/camera-access.rst:154 9eeae9b2654a44c5a029b2c33a864cf9
 msgid "We can now generate and run the app:"
-msgstr ""
+msgstr "Wir können jetzt die App generieren und ausführen:"
 
 #: ../../tutorial/topics/camera-access.rst:158 a891662d2ba045f6819db83a454e5f30
 msgid "macOS"
-msgstr ""
+msgstr "macOS"
 
 #: ../../tutorial/topics/camera-access.rst:165 9f08f9dfa1e24b798533fa8747e3429f
 msgid "Android"
@@ -119,11 +182,24 @@ msgstr "Android"
 #: ../../tutorial/topics/camera-access.rst:172 7a60f78517794a34925f15d80e2f2d8e
 msgid "When the app runs, you'll be presented with a button. Press the button, and the platform's default camera dialog will be displayed. Take a photo; the camera dialog will disappear, and the photo will be displayed on in the app, just above the button. You could then take another photo; this will replace the first photo."
 msgstr ""
+"Wenn die App ausgeführt wird, wird Ihnen eine Schaltfläche angezeigt. "
+"Drücken Sie die Schaltfläche, und der Standardkameradialog der Plattform "
+"wird angezeigt. Machen Sie ein Foto. Der Kameradialog verschwindet und das "
+"Foto wird in der App direkt über der Schaltfläche angezeigt. Sie können dann "
+"ein weiteres Foto machen. Dadurch wird das erste Foto ersetzt."
 
 #: ../../tutorial/topics/camera-access.rst:179 8ee0159c48894c99b5cc176f6d896bb2
 msgid "Adding more permissions"
-msgstr ""
+msgstr "Weitere Berechtigungen hinzufügen"
 
 #: ../../tutorial/topics/camera-access.rst:181 23d8d73b071e43d88ec9a92eccfa3cbb
 msgid "Permissions are declared in the files that are generated during the original call to ``briefcase create``. Unfortunately, Briefcase can't update these files once they've been initially generated; so if you want to add a new permission to your app, or modify existing permissions, you'll need to re-create the app. You can do this by re-running ``briefcase create``; this will warn you that the existing app will be overwritten, and then regenerate the application with the new permissions."
 msgstr ""
+"Berechtigungen werden in den Dateien deklariert, die während des "
+"ursprünglichen Aufrufs von ``briefcase create`` generiert werden. Leider "
+"kann Briefcase diese Dateien nicht aktualisieren, nachdem sie einmal "
+"generiert wurden. Wenn Sie Ihrer App also eine neue Berechtigung hinzufügen "
+"oder vorhandene Berechtigungen ändern möchten, müssen Sie die App neu "
+"erstellen. Sie können dies tun, indem Sie ``briefcase create`` erneut "
+"ausführen. Dadurch werden Sie gewarnt, dass die vorhandene App überschrieben "
+"wird, und die Anwendung wird dann mit den neuen Berechtigungen neu generiert."
