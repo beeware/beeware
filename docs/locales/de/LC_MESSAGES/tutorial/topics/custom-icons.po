@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-18 09:27+0800\n"
-"PO-Revision-Date: 2024-08-14 00:09+0000\n"
+"PO-Revision-Date: 2024-08-19 17:09+0000\n"
 "Last-Translator: tct123 <tct1234@protonmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
 "topics/custom-icons/de/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Weblate 5.7\n"
 "Generated-By: Babel 2.15.0\n"
 
 #: ../../tutorial/topics/custom-icons.rst:3 f39acbe565834f4a938dbd3500c1ce64
@@ -20,22 +20,32 @@ msgid "Customizing icons"
 msgstr "Symbole anpassen"
 
 #: ../../tutorial/topics/custom-icons.rst:5 4da07edfaccd4dc8aa3e530eb026c3f3
-#, fuzzy
 msgid "The app we developed in the main tutorial uses a default \"gray bee\" icon when it is packaged. Let's personalize this application by configuring it to use our own icon."
-msgstr "Bisher hat unsere App das Standardsymbol \"graue Biene\" verwendet. Wie können wir die App aktualisieren, um unser eigenes Symbol zu verwenden?"
+msgstr ""
+"Die App, die wir im Haupttutorial entwickelt haben, verwendet beim Verpacken "
+"standardmäßig das Symbol „gray bee“. Personalisieren wir diese Anwendung, "
+"indem wir sie so konfigurieren, dass sie unser eigenes Symbol verwendet."
 
 #: ../../tutorial/topics/custom-icons.rst:10 3cc9844d6f254bc09838a4ed78ccf0ac
-#, fuzzy
 msgid "Adding an icon"
 msgstr "Hinzufügen eines Symbols"
 
 #: ../../tutorial/topics/custom-icons.rst:12 17c42a43cfc94dd69e63f521799f43f0
 msgid "Every platform uses a different format for application icons - and some platforms need *multiple* icons in different sizes and shapes. To account for this, Briefcase provides a shorthand way to configure an icon once, and then have that definition expand in to all the different icons needed for each individual platform."
 msgstr ""
+"Jede Plattform verwendet ein anderes Format für Anwendungssymbole – und "
+"einige Plattformen benötigen *mehrere* Symbole in unterschiedlichen Größen "
+"und Formen. Um dies zu berücksichtigen, bietet Briefcase eine Kurzform, mit "
+"der Sie ein Symbol einmal konfigurieren und diese Definition dann auf alle "
+"verschiedenen Symbole erweitern können, die für jede einzelne Plattform "
+"erforderlich sind."
 
 #: ../../tutorial/topics/custom-icons.rst:18 0c93fac5079a47f1a3a5609a186cdb28
 msgid "Edit your ``pyproject.toml``, adding a new ``icon`` configuration item in the ``[tool.briefcase.app.helloworld]`` configuration section, just above the ``sources`` definition::"
 msgstr ""
+"Bearbeiten Sie Ihr ``pyproject.toml`` und fügen Sie ein neues "
+"Konfigurationselement ``Symbol`` im Konfigurationsabschnitt ``[tool.briefcase"
+".app.helloworld]`` direkt über der Definition von ``Quellen`` hinzu::"
 
 #: ../../tutorial/topics/custom-icons.rst:24 549636aacd234b86bb6aab7faee6b1d6
 msgid "This icon definition doesn't specify any file extension. The value will be used as a prefix; each platform will add additional items to this prefix to build the files needed for each platform. Some platforms require *multiple* icon files; this prefix will be combined with file size and variant modifiers to generate the list of icon files that are used."
@@ -50,7 +60,7 @@ msgstr ""
 #: ../../tutorial/topics/custom-icons.rst:379 52988c4c35d4433aa8ea296fa676a630
 #: fa0c4257f4124c418dcf8340cb26e6e0 fe977609c4da40bb97fe7383a9960f7e
 msgid "macOS"
-msgstr ""
+msgstr "macOS"
 
 #: ../../tutorial/topics/custom-icons.rst:53
 #: ../../tutorial/topics/custom-icons.rst:227
