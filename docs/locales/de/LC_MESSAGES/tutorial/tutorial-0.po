@@ -1,17 +1,18 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-21 20:05+0000\n"
-"PO-Revision-Date: 2024-02-03 01:43+0000\n"
-"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
+"PO-Revision-Date: 2024-08-19 17:09+0000\n"
+"Last-Translator: tct123 <tct1234@protonmail.com>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
+"tutorial-0/de/>\n"
 "Language: de\n"
-"Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-0/de/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.7\n"
 "Generated-By: Babel 2.15.0\n"
 
 #: ../../tutorial/tutorial-0.rst:3 eb1bc7e8083c47c6b04e2c5e51e73f0b
@@ -45,9 +46,15 @@ msgid "If Python is installed, you'll see its version number. Otherwise, you'll 
 msgstr "Wenn Python installiert ist, wird die Versionsnummer angezeigt. Andernfalls werden Sie aufgefordert, die Entwicklerwerkzeuge für die Kommandozeile zu installieren."
 
 #: ../../tutorial/tutorial-0.rst:28 f6060124797346f5bb04b8fba4b866a1
-#, fuzzy
 msgid "You should ensure that you are using Python 3.8 or newer. If it isn't, you'll need to upgrade your Python install. You can get the official installer from `the Python website <https://www.python.org/downloads>`_. You can use any stable version of Python from 3.8 onward. We'd advise avoiding alphas, betas, and release candidates unless you *really* know what you're doing."
-msgstr "Wenn Sie unter Windows arbeiten, können Sie das offizielle Installationsprogramm von der `Python-Website <https://www.python.org/downloads>`_ herunterladen. Sie können jede stabile Version von Python ab 3.8 verwenden. Wir raten dazu, Alphas, Betas und Release Candidates zu meiden, es sei denn, Sie wissen *wirklich*, was Sie tun."
+msgstr ""
+"Sie sollten sicherstellen, dass Sie Python 3.8 oder neuer verwenden. Ist "
+"dies nicht der Fall, müssen Sie Ihre Python-Installation aktualisieren. Sie "
+"können das offizielle Installationsprogramm von `der Python-Website "
+"<https://www.python.org/downloads>`_ herunterladen. Sie können jede stabile "
+"Version von Python ab 3.8 verwenden. Wir empfehlen, Alphas, Betas und "
+"Release-Kandidaten zu vermeiden, es sei denn, Sie wissen *wirklich*, was Sie "
+"tun."
 
 #: ../../tutorial/tutorial-0.rst:35 ../../tutorial/tutorial-0.rst:94
 #: ../../tutorial/tutorial-0.rst:162 22eb2eb1cc5846f88ac215e31b5f5d4c
@@ -90,9 +97,12 @@ msgid "If you're on macOS or Windows, it doesn't matter *how* you've installed P
 msgstr "Unter macOS oder Windows ist es egal, *wie* Sie Python installiert haben - wichtig ist nur, dass Sie ``python3`` über die Eingabeaufforderung/Terminalanwendung Ihres Betriebssystems ausführen können und einen funktionierenden Python-Interpreter erhalten."
 
 #: ../../tutorial/tutorial-0.rst:70 c928721783e744b68bcb4d4181925112
-#, fuzzy
 msgid "If you're on Linux, you *must* use the system Python provided by your operating system. You will be able to complete *most* of this tutorial using a non-system Python, but you won't be able to package your application for distribution to others."
-msgstr "Wenn Sie mit Linux arbeiten, sollten Sie das von Ihrem Betriebssystem bereitgestellte Python verwenden. Sie können den *größten Teil* dieses Tutorials mit einem systemfremden Python durchführen, aber Sie werden nicht in der Lage sein, Ihre Anwendung für die Weitergabe an andere zu verpacken."
+msgstr ""
+"Wenn Sie mit Linux arbeiten, sollten Sie das von Ihrem Betriebssystem "
+"bereitgestellte Python verwenden. Sie können den *größten Teil* dieses "
+"Tutorials mit einem systemfremden Python durchführen, aber Sie werden nicht "
+"in der Lage sein, Ihre Anwendung für die Weitergabe an andere zu verpacken."
 
 #: ../../tutorial/tutorial-0.rst:78 f8f9b4cfef4e4578872ee20f1e08d2be
 msgid "Install dependencies"
@@ -109,28 +119,32 @@ msgstr "Die Erstellung von BeeWare-Anwendungen unter macOS erfordert:"
 #: ../../tutorial/tutorial-0.rst:88 91ac8491bf57410eb2dd7b6f8068c239
 msgid "**Git**, a version control system. This is included with Xcode or the command line developer tools, which you installed above. You may need to open Xcode for the first time in order for Git to work in your terminal session. If it still doesn't register that Git is installed, you may need to restart your terminal session."
 msgstr ""
+"**Git**, ein Versionskontrollsystem. Dies ist in Xcode oder den "
+"Befehlszeilen-Entwicklertools enthalten, die Sie oben installiert haben. "
+"Möglicherweise müssen Sie Xcode zum ersten Mal öffnen, damit Git in Ihrer "
+"Terminalsitzung funktioniert. Wenn immer noch nicht registriert wird, dass "
+"Git installiert ist, müssen Sie möglicherweise Ihre Terminalsitzung neu "
+"starten."
 
 #: ../../tutorial/tutorial-0.rst:96 ff60720c56d44448a400f6aa871dd217
 msgid "To support local development, you'll need to install some system packages. The list of packages required varies depending on your distribution:"
 msgstr "Um die lokale Entwicklung zu unterstützen, müssen Sie einige Systempakete installieren. Die Liste der erforderlichen Pakete hängt von Ihrer Distribution ab:"
 
 #: ../../tutorial/tutorial-0.rst:99 2ca78bf1b8734569a5eb5406dfe1d586
-#, fuzzy
 msgid "**Ubuntu / Debian**"
-msgstr "**Ubuntu 20.04+ / Debian 10+**"
+msgstr "**Ubuntu / Debian**"
 
 #: ../../tutorial/tutorial-0.rst:110 a3914b9577964a7cb0d4e589647233f3
 msgid "**Fedora**"
 msgstr "**Fedora**"
 
 #: ../../tutorial/tutorial-0.rst:116 4475390587a944a9b4209e4b25e811a9
-#, fuzzy
 msgid "**Arch / Manjaro**"
-msgstr "**Arch, Manjaro**"
+msgstr "**Arch / Manjaro**"
 
 #: ../../tutorial/tutorial-0.rst:122 e7f1125eab8645309e377c5b66670e00
 msgid "**OpenSUSE Tumbleweed**"
-msgstr ""
+msgstr "**OpenSUSE Tumbleweed**"
 
 #: ../../tutorial/tutorial-0.rst:131 3e996cd0776149bda406332fb2f68eb1
 msgid "Building BeeWare apps on Windows requires:"
@@ -167,6 +181,9 @@ msgstr "Ihr Windows-Konto hat keine Berechtigung zum Ausführen von Skripten. So
 #: ../../tutorial/tutorial-0.rst:188 1ac5b208afdb4498a5e2b7452c20b5a9
 msgid "Run `Windows PowerShell as Administrator <https://learn.microsoft.com/en-us/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7.4>`_."
 msgstr ""
+"Führen Sie `Windows Powershell als Administrator aus <https://learn.microsoft"
+".com/en-us/powershell/scripting/windows-powershell/starting-windows-"
+"powershell?view=powershell-7.4>`_."
 
 #: ../../tutorial/tutorial-0.rst:189 c015ba5e8e4a4ce29d61db4c1e1fc428
 msgid "Run ``set-executionpolicy RemoteSigned``"
@@ -205,4 +222,3 @@ msgstr "Wir haben jetzt unsere Umgebung eingerichtet. Wir sind bereit, :doc:`uns
 
 #~ msgid "**Git**, a version control system. This is included with Xcode or the command line developer tools, which you installed above."
 #~ msgstr "**Git**, ein Versionskontrollsystem. Es ist in Xcode oder den Kommandozeilen-Entwicklungswerkzeugen enthalten, die Sie oben installiert haben."
-
