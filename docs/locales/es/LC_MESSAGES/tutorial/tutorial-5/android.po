@@ -1,17 +1,18 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-15 18:36+0000\n"
-"PO-Revision-Date: 2024-01-18 12:00+0000\n"
-"Last-Translator: Kamborio <Kamborio15@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2024-08-28 16:09+0000\n"
+"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/"
+"tutorial-5/android/es/>\n"
 "Language: es\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-5/android/es/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.7.1-dev\n"
 "Generated-By: Babel 2.15.0\n"
 
 #: ../../tutorial/tutorial-5/android.rst:3 0c8022a37bc54e75934ef0d847922f92
@@ -152,9 +153,12 @@ msgid "If you fail to see your app launching, you may need to check your termina
 msgstr "Si no ves que tu aplicación se inicia, es posible que tengas que comprobar el terminal donde ejecutaste ``briefcase run`` y buscar cualquier mensaje de error."
 
 #: ../../tutorial/tutorial-5/android.rst:287 49bda36702c94d3eba41c5e173de7921
-#, fuzzy
 msgid "In future, if you want to run on this device without using the menu, you can provide the emulator's name to Briefcase, using ``briefcase run android -d \"@beePhone\"`` to run on the virtual device directly."
-msgstr "En el futuro, si desea ejecutar en este dispositivo sin utilizar el menú, puede proporcionar el nombre del emulador a Briefcase, utilizando ``briefcase run android -d @beePhone`` para ejecutar en el dispositivo virtual directamente."
+msgstr ""
+"En el futuro, si deseas ejecutar en este dispositivo sin usar el menú, "
+"puedes proporcionar el nombre del emulador a Briefcase, usando ``briefcase "
+"run android -d \"@beePhone\"`` para ejecutar en el dispositivo virtual "
+"directamente."
 
 #: ../../tutorial/tutorial-5/android.rst:292 7ddade2fafc34fcfa1c00c0fcb9d714d
 msgid "Run the app on a physical device"
@@ -207,4 +211,3 @@ msgstr "Siguientes pasos"
 #: ../../tutorial/tutorial-5/android.rst:374 1e91108b1cf54cdc8e3790ba25579a32
 msgid "We've now got an application on our phone! Is there anywhere else we can deploy a BeeWare app? Turn to :doc:`Tutorial 6 <../tutorial-6>` to find out..."
 msgstr "¡Ya tenemos una aplicación en nuestro teléfono! ¿Hay algún otro lugar donde podamos desplegar una aplicación BeeWare? Visita :doc:`Tutorial 6 <../tutorial-6>` para averiguarlo..."
-
