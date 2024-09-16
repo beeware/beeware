@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-18 09:27+0800\n"
-"PO-Revision-Date: 2024-08-28 16:09+0000\n"
+"PO-Revision-Date: 2024-09-17 15:09+0000\n"
 "Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/"
 "topics/custom-icons/es/>\n"
@@ -12,12 +12,12 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.7.1-dev\n"
+"X-Generator: Weblate 5.8-dev\n"
 "Generated-By: Babel 2.15.0\n"
 
 #: ../../tutorial/topics/custom-icons.rst:3 f39acbe565834f4a938dbd3500c1ce64
 msgid "Customizing icons"
-msgstr ""
+msgstr "Personalizar iconos"
 
 #: ../../tutorial/topics/custom-icons.rst:5 4da07edfaccd4dc8aa3e530eb026c3f3
 #, fuzzy
