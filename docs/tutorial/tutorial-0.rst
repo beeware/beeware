@@ -25,10 +25,10 @@ The first thing we'll need is a working Python interpreter.
     If Python is installed, you'll see its version number. Otherwise, you'll be
     prompted to install the command line developer tools.
 
-    You should ensure that you are using Python 3.8 or newer. If it isn't,
+    You should ensure that you are using Python 3.9 or newer. If it isn't,
     you'll need to upgrade your Python install. You can get the official
     installer from `the Python website <https://www.python.org/downloads>`_. You
-    can use any stable version of Python from 3.8 onward. We'd advise avoiding
+    can use any stable version of Python from 3.9 onward. We'd advise avoiding
     alphas, betas, and release candidates unless you *really* know what you're
     doing.
 
@@ -37,8 +37,8 @@ The first thing we'll need is a working Python interpreter.
     If you're on Linux, you'll install Python using the system package manager
     (``apt`` on Debian/Ubuntu/Mint, ``dnf`` on Fedora, or ``pacman`` on Arch).
 
-    You should ensure that the system Python is Python 3.8 or newer; if it isn't
-    (e.g., Ubuntu 18.04 ships with Python 3.6), you'll need to upgrade your
+    You should ensure that the system Python is Python 3.9 or newer; if it isn't
+    (e.g., Ubuntu 20.04 ships with Python 3.8), you'll need to upgrade your
     Linux distribution to something more recent.
 
     Support for Raspberry Pi is limited at this time.
@@ -47,7 +47,7 @@ The first thing we'll need is a working Python interpreter.
 
     If you're on Windows, you can get the official installer from `the Python
     website <https://www.python.org/downloads>`_. You can use any stable version
-    of Python from 3.8 onward. We'd advise avoiding alphas, betas, and release
+    of Python from 3.9 onward. We'd advise avoiding alphas, betas, and release
     candidates unless you *really* know what you're doing.
 
 .. admonition:: Alternative Python distributions
