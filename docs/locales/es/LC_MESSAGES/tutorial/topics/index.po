@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-18 09:27+0800\n"
-"PO-Revision-Date: 2024-09-17 15:09+0000\n"
+"PO-Revision-Date: 2024-09-28 16:15+0000\n"
 "Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/"
 "topics/index/es/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../tutorial/topics/index.rst:3 d1863e972e744266afd16fdb08f405ab
 msgid "Going further"
-msgstr ""
+msgstr "Ir más allá"
 
 #: ../../tutorial/topics/index.rst:5 a35d445b80764115941eb41beb1d1824
 msgid "Want to go deeper on specific topics? Here are some additional tutorials that explore common aspects of application development. Each tutorial is standalone, and can be completed in any order; but they all assume you've completed the core tutorial."
