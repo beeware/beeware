@@ -1,17 +1,18 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-29 10:14+0800\n"
-"PO-Revision-Date: 2024-01-18 12:00+0000\n"
-"Last-Translator: Kamborio <Kamborio15@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2024-09-28 16:15+0000\n"
+"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/"
+"tutorial-8/es/>\n"
 "Language: es\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-8/es/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.8-dev\n"
 "Generated-By: Babel 2.15.0\n"
 
 #: ../../tutorial/tutorial-8.rst:3 b97df07147f44bab84e8cff65e3e0a59
@@ -171,54 +172,69 @@ msgstr "Siguientes pasos"
 #: ../../tutorial/tutorial-8.rst:143 094e45e24f9d40e98daff251cc713fd5
 msgid "This has been a taste for what you can do with the tools provided by the BeeWare project. Over the course of this tutorial, you have:"
 msgstr ""
+"Esto ha sido una muestra de lo que puedes hacer con las herramientas "
+"proporcionadas por el proyecto BeeWare. En el transcurso de este tutorial, "
+"usted tiene:"
 
 #: ../../tutorial/tutorial-8.rst:146 4feec21c0f394e899dd54f58654c745c
 msgid "Created a new GUI app project;"
-msgstr ""
+msgstr "Creado un nuevo proyecto de aplicación GUI;"
 
 #: ../../tutorial/tutorial-8.rst:147 9c062cfe7c7c4e8cb3c83dc27067949a
 msgid "Run that app in development mode;"
-msgstr ""
+msgstr "Ejecuta esa aplicación en modo desarrollo;"
 
 #: ../../tutorial/tutorial-8.rst:148 fd3864f3cdb4478b826216f81f3556c2
 msgid "Built the app as a standalone binary for a desktop operating system;"
 msgstr ""
+"Creé la aplicación como un binario independiente para un sistema operativo "
+"de escritorio;"
 
 #: ../../tutorial/tutorial-8.rst:149 92419a5605d9428b8f8ae08de6713204
 msgid "Packaged that project for distribution to others;"
-msgstr ""
+msgstr "Empaquetado de ese proyecto para su distribución a otros;"
 
 #: ../../tutorial/tutorial-8.rst:150 8757a5bd6cca4c05b2931660f5f482c4
 msgid "Run the app on a mobile simulator and/or device;"
-msgstr ""
+msgstr "Ejecuta la aplicación en un simulador y/o dispositivo móvil;"
 
 #: ../../tutorial/tutorial-8.rst:151 aaa1bc7b67a64a47a10166a092b525ad
 msgid "Run the app as a web app;"
-msgstr ""
+msgstr "Ejecute la aplicación como una aplicación web;"
 
 #: ../../tutorial/tutorial-8.rst:152 bbacbcfde29e4df2b20660066b4121e2
 msgid "Added a third-party dependency to your app; and"
-msgstr ""
+msgstr "Has añadido una dependencia de terceros a tu aplicación; y"
 
 #: ../../tutorial/tutorial-8.rst:153 008215b8288843ae86a353b434e8a108
 msgid "Modified the app so that it remains responsive."
-msgstr ""
+msgstr "Modificado la aplicación para que siga respondiendo."
 
 #: ../../tutorial/tutorial-8.rst:155 f0409113c57642b1873db5cc141447ef
 msgid "So - where to from here?"
-msgstr ""
+msgstr "Entonces - ¿ahora qué?"
 
 #: ../../tutorial/tutorial-8.rst:157 aec31ee8c77d4c00952fcd1d331297f4
 msgid "If you'd like to go further, there are some additional :doc:`topic tutorials </tutorial/topics/index>` that go into detail on specific aspects of application development."
 msgstr ""
+"Si quieres ir más allá, hay algunos tutoriales :doc:`Tutoriales adicionales "
+"</tutorial/topics/index>` que entran en detalle sobre aspectos específicos "
+"del desarrollo de aplicaciones."
 
 #: ../../tutorial/tutorial-8.rst:160 9b5c35fe788e47d79e245e62396c1def
 msgid "If you'd like to know more about how to build complex user interfaces with Toga, you can dive into `Toga's documentation <https://toga.readthedocs.io>`__. Toga also has it's own tutorial `demonstrating how to use various features of the widget toolkit <https://toga.readthedocs.io/en/latest/tutorial/index.html>`__."
 msgstr ""
+"Si quieres saber más sobre cómo construir interfaces de usuario complejas "
+"con Toga, puedes sumergirte en `la documentación de Toga <https://toga."
+"readthedocs.io>`__. Toga también tiene su propio tutorial `demostrando cómo "
+"usar varias características del widget toolkit <https://toga.readthedocs.io/"
+"en/latest/tutorial/index.html>`__."
 
 #: ../../tutorial/tutorial-8.rst:165 1e0d15fd8f8c46e8b920aaf6b220fd8f
 msgid "If you'd like to know more about the capabilities of Briefcase, you can dive into `Briefcase's documentation <https://briefcase.readthedocs.io>`__."
 msgstr ""
+"Si desea saber más sobre las capacidades de Briefcase, puede sumergirse en `"
+"la documentación de Briefcase <https://briefcase.readthedocs.io>`__."
 
 #~ msgid "We've now got an application that is slick and responsive, even when it's waiting on a slow API. But how can we make sure that the app keeps working as we continue to develop it further? How do we test our app? Turn to :doc:`Tutorial 9 <tutorial-9>` to find out..."
 #~ msgstr "Ahora tenemos una aplicación que es ágil y sensible, incluso cuando está esperando en una API lenta. Pero, ¿cómo podemos asegurarnos de que la aplicación sigue funcionando a medida que continuamos desarrollándola? ¿Cómo probamos nuestra aplicación? Visita :doc:`Tutorial 9 <tutorial-9>` para descubrirlo..."
