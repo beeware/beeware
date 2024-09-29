@@ -143,8 +143,8 @@ msgid "Building BeeWare apps on Windows requires:"
 msgstr "Para criar aplicativos BeeWare no Windows, é necessário:"
 
 #: ../../tutorial/tutorial-0.rst:133 7cb09dce59c846118302df33448ebff0
-msgid "**Git**, a version control system. You can download Git from from `git-scm.org <https://git-scm.com/download/>`__."
-msgstr "**Git**, um sistema de controle de versão. Você pode baixar o Git em `git-scm.org <https://git-scm.com/download/>`__."
+msgid "**Git**, a version control system. You can download Git from from `git-scm.com <https://git-scm.com/downloads/>`__."
+msgstr "**Git**, um sistema de controle de versão. Você pode baixar o Git em `git-scm.com <https://git-scm.com/downloads/>`__."
 
 #: ../../tutorial/tutorial-0.rst:136 4784f64ffd354a0caf40af4a9004ca80
 msgid "After installing these tools, you should ensure you restart any terminal sessions. Windows will only expose newly installed tools terminals started *after* the install has completed."
@@ -211,4 +211,3 @@ msgstr "Agora que configuramos nosso ambiente, estamos prontos para :doc:`criar 
 
 #~ msgid "**Git**, a version control system. This is included with Xcode or the command line developer tools, which you installed above."
 #~ msgstr "**Git**, um sistema de controle de versão. Ele está incluso no Xcode ou nas ferramentas de linha de comando, que você instalou acima."
-

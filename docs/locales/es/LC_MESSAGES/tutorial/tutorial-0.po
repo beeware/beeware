@@ -157,8 +157,8 @@ msgid "Building BeeWare apps on Windows requires:"
 msgstr "Construir aplicaciones BeeWare en Windows requiere:"
 
 #: ../../tutorial/tutorial-0.rst:133 7cb09dce59c846118302df33448ebff0
-msgid "**Git**, a version control system. You can download Git from from `git-scm.org <https://git-scm.com/download/>`__."
-msgstr "**Git**, un sistema de control de versiones. Puede descargar Git desde `git-scm.org <https://git-scm.com/download/>`__."
+msgid "**Git**, a version control system. You can download Git from from `git-scm.com <https://git-scm.com/downloads/>`__."
+msgstr "**Git**, un sistema de control de versiones. Puede descargar Git desde `git-scm.com <https://git-scm.com/downloads/>`__."
 
 #: ../../tutorial/tutorial-0.rst:136 4784f64ffd354a0caf40af4a9004ca80
 msgid "After installing these tools, you should ensure you restart any terminal sessions. Windows will only expose newly installed tools terminals started *after* the install has completed."
