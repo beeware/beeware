@@ -157,8 +157,8 @@ msgstr "在 Windows 上构建 BeeWare 应用程序需要："
 
 #: ../../tutorial/tutorial-0.rst:133 7cb09dce59c846118302df33448ebff0
 #, fuzzy
-msgid "**Git**, a version control system. You can download Git from from `git-scm.org <https://git-scm.com/download/>`__."
-msgstr "**Git**，一个版本控制系统。你可以从 `git-scm.org <https://git-scm.com/download/>`__ 下载 Git。"
+msgid "**Git**, a version control system. You can download Git from from `git-scm.com <https://git-scm.com/downloads/>`__."
+msgstr "**Git**，一个版本控制系统。你可以从 `git-scm.com <https://git-scm.com/downloads/>`__ 下载 Git。"
 
 #: ../../tutorial/tutorial-0.rst:136 4784f64ffd354a0caf40af4a9004ca80
 #, fuzzy
@@ -238,4 +238,3 @@ msgstr "现在我们已经设置好了环境。我们准备 :doc:`创建第一�
 
 #~ msgid "**Git**, a version control system. This is included with Xcode or the command line developer tools, which you installed above."
 #~ msgstr "*版本控制系统 *Git**。它包含在您安装的 Xcode 或命令行开发工具中。"
-

@@ -133,7 +133,7 @@ Next, install the additional dependencies needed for your operating system:
     Building BeeWare apps on Windows requires:
 
     * **Git**, a version control system. You can download Git from from
-      `git-scm.org <https://git-scm.com/download/>`__.
+      `git-scm.com <https://git-scm.com/downloads/>`__.
 
     After installing these tools, you should ensure you restart any terminal
     sessions. Windows will only expose newly installed tools terminals started

@@ -45,11 +45,11 @@ Source = "https://github.com/beeware"
 dev = [
     # Pre-commit 3.6.0 deprecated support for Python 3.8
     "pre-commit == 3.5.0 ; python_version < '3.9'",
-    "pre-commit == 3.8.0 ; python_version >= '3.9'",
+    "pre-commit == 4.0.0 ; python_version >= '3.9'",
     "pytest == 8.3.3",
     "pytest-tldr == 0.2.5",
     "setuptools_scm == 8.1.0",
-    "tox == 4.20.0",
+    "tox == 4.21.2",
 ]
 # Docs are always built on a specific Python version; see RTD and tox config files.
 docs = [
@@ -58,7 +58,7 @@ docs = [
     "sphinx == 8.0.2",
     "sphinx_design == 0.6.1",
     "sphinx_tabs == 3.4.5",
-    "sphinx-autobuild == 2024.9.19",
+    "sphinx-autobuild == 2024.10.3",
     "sphinx-copybutton == 0.5.2",
     "sphinx-intl == 2.2.0",
     "sphinxcontrib-spelling == 8.0.0",
