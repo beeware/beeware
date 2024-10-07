@@ -47,8 +47,10 @@ The first thing we'll need is a working Python interpreter.
 
     If you're on Windows, you can get the official installer from `the Python
     website <https://www.python.org/downloads>`_. You can use any stable version
-    of Python from 3.9 onward. We'd advise avoiding alphas, betas, and release
-    candidates unless you *really* know what you're doing.
+    of Python from 3.9 to 3.12 - `Python 3.13 is not currently supported
+    <https://github.com/beeware/toga/issues/2889>`__. We'd also advise avoiding
+    alphas, betas, and release candidates unless you *really* know what you're
+    doing.
 
 .. admonition:: Alternative Python distributions
 
