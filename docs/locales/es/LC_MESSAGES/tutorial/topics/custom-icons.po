@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-18 09:27+0800\n"
-"PO-Revision-Date: 2024-09-17 15:09+0000\n"
-"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
+"PO-Revision-Date: 2024-10-18 16:15+0000\n"
+"Last-Translator: Kamborio <Kamborio15@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/"
 "topics/custom-icons/es/>\n"
 "Language: es\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.8-dev\n"
+"X-Generator: Weblate 5.8-rc\n"
 "Generated-By: Babel 2.15.0\n"
 
 #: ../../tutorial/topics/custom-icons.rst:3 f39acbe565834f4a938dbd3500c1ce64
@@ -56,14 +56,14 @@ msgstr "macOS"
 #: ../../tutorial/topics/custom-icons.rst:394 b2c7d2b8aa56488383159c8cfbedab3c
 #: cbf3ddb62a28422b8c8f646b9aac2eb9 f0377c78063945bfb5828f8b5f0d0a5c
 msgid "Linux"
-msgstr ""
+msgstr "Linux"
 
 #: ../../tutorial/topics/custom-icons.rst:75
 #: ../../tutorial/topics/custom-icons.rst:257
 #: ../../tutorial/topics/custom-icons.rst:409 69bb51c50ed84ed299175f2ec5b1cef6
 #: 6a24caaf5310424f92809ad8029b121f ec577956bc4b4229a10a1c8280f4678a
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: ../../tutorial/topics/custom-icons.rst:92
 #: ../../tutorial/topics/custom-icons.rst:282
