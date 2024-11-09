@@ -3,20 +3,21 @@
 # This file is distributed under the same license as the BeeWare package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-29 10:14+0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2024-11-09 14:00+0000\n"
+"Last-Translator: gmkeebiy <gmkeebiy@sharklasers.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/beeware/tutorial/topics/camera-access/zh_Hans/>\n"
 "Language: zh_CN\n"
-"Language-Team: zh_CN <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.8.2\n"
 "Generated-By: Babel 2.15.0\n"
 
 #: ../../tutorial/topics/camera-access.rst:3 dbceb55336a94cc3989281eefac9c042
@@ -109,11 +110,12 @@ msgstr ""
 
 #: ../../tutorial/topics/camera-access.rst:158 a891662d2ba045f6819db83a454e5f30
 msgid "macOS"
-msgstr ""
+msgstr "MacOS"
 
 #: ../../tutorial/topics/camera-access.rst:165 9f08f9dfa1e24b798533fa8747e3429f
+#, fuzzy
 msgid "Android"
-msgstr ""
+msgstr "Android"
 
 #: ../../tutorial/topics/camera-access.rst:172 7a60f78517794a34925f15d80e2f2d8e
 msgid "When the app runs, you'll be presented with a button. Press the button, and the platform's default camera dialog will be displayed. Take a photo; the camera dialog will disappear, and the photo will be displayed on in the app, just above the button. You could then take another photo; this will replace the first photo."
