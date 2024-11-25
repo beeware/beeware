@@ -28,8 +28,9 @@ Modify the ``say_hello`` callback so it looks like this::
             )
         )
 
-Ignore the `async` and `await` for now. We will talk about this in detail
-later on in :doc:`Tutorial 8 <tutorial-8>`.
+We need to make the method ``async`` so that when we display the dialog, the rest of
+the application continues to run. Don't worry about this detail too much right now - 
+we'll give a more detailed explanation in :doc:`Tutorial 8 <tutorial-8>`.
 
 This directs Toga to open a modal dialog box when the button is pressed.
 
