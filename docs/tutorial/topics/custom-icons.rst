@@ -170,15 +170,15 @@ directory. After unpacking, your project directory should look something like::
     │   └── ...
     └── helloworld/
         ├── ...
+        ├── icons/
+        │   ├── helloworld.icns
+        │   ├── helloworld.ico
+        │   ├── helloworld.png
+        │   ├── helloworld-16.png
+        │   └──...
+        ├── src/
+        │   └── ...
         └── pyproject.toml
-            ├── icons/
-            │   ├── helloworld.icns
-            │   ├── helloworld.ico
-            │   ├── helloworld.png
-            │   ├── helloworld-16.png
-            │   ├── ...
-            └── src/
-                └── ...
 
 There's a *lot* of icons in this folder, but most of them should look the same:
 a green snake on a light blue background:
