@@ -96,9 +96,11 @@ it looks like this::
 
         payload = response.json()
 
-        self.main_window.info_dialog(
-            greeting(self.name_input.value),
-            payload["body"],
+        await self.main_window.dialog(
+            toga.InfoDialog(
+                greeting(self.name_input.value),
+                payload["body"],
+            )
         )
 
 There are only 4 changes in this code from the previous version:

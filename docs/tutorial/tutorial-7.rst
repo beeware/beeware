@@ -48,9 +48,11 @@ Then modify the ``say_hello()`` callback so it looks like this::
 
         payload = response.json()
 
-        self.main_window.info_dialog(
-            greeting(self.name_input.value),
-            payload["body"],
+        await self.main_window.dialog(
+            toga.InfoDialog(
+                greeting(self.name_input.value),
+                payload["body"],
+            )
         )
 
 This will change the ``say_hello()`` callback so that when it is invoked, it
