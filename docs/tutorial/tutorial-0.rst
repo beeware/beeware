@@ -5,6 +5,8 @@ Tutorial 0 - Let's get set up!
 Before we build our first BeeWare app, we have to make sure we've got
 all the prerequisites for running BeeWare.
 
+.. _install-python:
+
 Install Python
 ==============
 

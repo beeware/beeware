@@ -230,8 +230,8 @@ This should open a GUI window:
         to the PyPI server.
 
 
-      Confirm that you are running a `version of python that this tutorial supports
-      <install-python>`_.
+      Confirm that you are running a :ref:`version of python that this tutorial supports
+      <install-python>`.
 
       If your version of python is *not* a supported version, you will have to restart
       the tutorial.
