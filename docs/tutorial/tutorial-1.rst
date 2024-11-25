@@ -219,6 +219,22 @@ This should open a GUI window:
        :align: center
        :alt: Hello World Tutorial 1 window, on Windows
 
+    .. admonition:: Invalid requirements or pip unable to connect
+
+      If you encounter the error:
+
+      .. code-block:: doscon
+
+        Unable to install requirements. This may be because one of your
+        requirements is invalid, or because pip was unable to connect
+        to the PyPI server.
+
+      Confirm that you are running a :ref:`version of python that this tutorial supports
+      <install-python>`.
+
+      If your version of python is *not* a supported version, you will have to restart
+      the tutorial.
+
 Press the close button (or select Quit from the application's menu), and you're
 done! Congratulations - you've just written a standalone, native application
 in Python!

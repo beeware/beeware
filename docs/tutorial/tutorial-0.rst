@@ -5,6 +5,8 @@ Tutorial 0 - Let's get set up!
 Before we build our first BeeWare app, we have to make sure we've got
 all the prerequisites for running BeeWare.
 
+.. _install-python:
+
 Install Python
 ==============
 
@@ -176,8 +178,11 @@ and without the need to re-install Python.
 
        C:\...>md beeware-tutorial
        C:\...>cd beeware-tutorial
-       C:\...>py -m venv beeware-venv
+       C:\...>py -3.12 -m venv beeware-venv
        C:\...>beeware-venv\Scripts\activate
+
+    If you're not using Python 3.12, replace the ``-3.12`` in these instructions with
+    the version number that you are using.
 
     .. admonition:: Errors running PowerShell Scripts
 
