@@ -221,9 +221,7 @@ This should open a GUI window:
 
     .. admonition:: Invalid requirements or pip unable to connect
 
-
       You may encounter an error that reads:
-
 
       .. code-block:: doscon
 
@@ -238,9 +236,9 @@ This should open a GUI window:
       To fix the version discrepancy, either:
 
       * Delete the incompatible python version (not advised)
-      
+
       * Specify the version of python to run the virtual environment in. Example:
-        
+
       .. code-block:: doscon
 
         py -3.12 -m venv beeware-venv #specifies to use python 3.12.
