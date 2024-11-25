@@ -42,7 +42,7 @@ Let's add a ``httpx`` API call to our app. Add an import to the top of the
 
 Then modify the ``say_hello()`` callback so it looks like this::
 
-    def say_hello(self, widget):
+    async def say_hello(self, widget):
         with httpx.Client() as client:
             response = client.get("https://jsonplaceholder.typicode.com/posts/42")
 

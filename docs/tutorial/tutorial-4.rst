@@ -20,11 +20,16 @@ need to use dialogs to communicate with users.
 Let's add a dialog box to say hello, instead of writing to the console.
 Modify the ``say_hello`` callback so it looks like this::
 
-    def say_hello(self, widget):
-        self.main_window.info_dialog(
-            f"Hello, {self.name_input.value}",
-            "Hi there!",
+    async def say_hello(self, widget):
+        await self.main_window.dialog(
+            toga.InfoDialog(
+                f"Hello, {self.name_input.value}",
+                "Hi there!",
+            )
         )
+
+Ignore the `async` and `await` for now. We will talk about this in detail
+later on in :doc:`Tutorial 8 <tutorial-8>`.
 
 This directs Toga to open a modal dialog box when the button is pressed.
 
