@@ -161,9 +161,15 @@ This reports the specific icon file (or files) that Briefcase is expecting.
 However, as we haven't provided the actual icon files, the install fails, and
 Briefcase falls back to a default value (the same "gray bee" icon).
 
+
+
+
 Let's provide some actual icons. Download :download:`this icons.zip bundle
-<../resources/icons.zip>`, and unpack it into the root of your project
-directory. After unpacking, your project directory should look something like::
+<../resources/icons.zip>`, and unzip the file. To place the files in the root of your
+helloworld directory, drag the icons.zip files manually to the directory in vsCode.
+Your project directory should look something like::
+
+
 
     beeware-tutorial/
     ├── beeware-venv/
