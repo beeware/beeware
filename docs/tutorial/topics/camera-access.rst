@@ -89,14 +89,18 @@ that it has the following content:
                 if image:
                     self.photo.image = image
             except NotImplementedError:
-                await self.main_window.info_dialog(
-                    "Oh no!",
-                    "The Camera API is not implemented on this platform",
+                await self.main_window.dialog(
+                    toga.InfoDialog(
+                        "Oh no!",
+                        "The Camera API is not implemented on this platform",
+                    )
                 )
             except PermissionError:
-                await self.main_window.info_dialog(
-                    "Oh no!",
-                    "You have not granted permission to take photos",
+                await self.main_window.dialog(
+                    toga.InfoDialog(
+                        "Oh no!",
+                        "You have not granted permission to take photos",
+                    )
                 )
 
 
