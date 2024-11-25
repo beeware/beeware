@@ -221,7 +221,7 @@ This should open a GUI window:
 
     .. admonition:: Invalid requirements or pip unable to connect
 
-      You may encounter an error that reads:
+      If you encounter the error:
 
       .. code-block:: doscon
 
@@ -230,21 +230,11 @@ This should open a GUI window:
         to the PyPI server.
 
 
-      This is likely due to the use of an incompatible version of python (i.e. 3.13). To rectify this:
+      Confirm that you are running a `version of python that this tutorial supports
+      <install-python>`_.
 
-      Go to file manager and delete the venv and ``helloworld`` folder as that likely won’t work with the environment’s python version.
-      To fix the version discrepancy, either:
-
-      * Delete the incompatible python version (not advised)
-
-      * Specify the version of python to run the virtual environment in. Example:
-
-      .. code-block:: doscon
-
-        py -3.12 -m venv beeware-venv #specifies to use python 3.12.
-
-      * Repeat the earlier steps.
-
+      If your version of python is *not* a supported version, you will have to restart
+      the tutorial.
 
 Press the close button (or select Quit from the application's menu), and you're
 done! Congratulations - you've just written a standalone, native application
