@@ -230,9 +230,9 @@ This should open a GUI window:
         to the PyPI server.
 
 
-      This is likely due to the use of an incompatible version of python (ie 3.13). To rectify this:
+      This is likely due to the use of an incompatible version of python (i.e. 3.13). To rectify this:
 
-      Go to file manager and delete the venv and helloworld folder as that likely won’t work with the environment’s python version.
+      Go to file manager and delete the venv and ``helloworld`` folder as that likely won’t work with the environment’s python version.
       To fix the version discrepancy, either:
 
       * Delete the incompatible python version (not advised)
