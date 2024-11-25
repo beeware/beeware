@@ -228,8 +228,6 @@ This should open a GUI window:
         Unable to install requirements. This may be because one of your
         requirements is invalid, or because pip was unable to connect
         to the PyPI server.
-
-
       Confirm that you are running a :ref:`version of python that this tutorial supports
       <install-python>`.
 
