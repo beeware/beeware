@@ -219,24 +219,33 @@ This should open a GUI window:
        :align: center
        :alt: Hello World Tutorial 1 window, on Windows
 
-  .. admonition:: Invalid requirements or pip unable to connect
+    .. admonition:: Invalid requirements or pip unable to connect
 
 
-    You may encounter an error that reads:
+      You may encounter an error that reads:
 
 
-    ``Unable to install requirements. This may be because one of your
-    requirements is invalid, or because pip was unable to connect
-    to the PyPI server.``
+      .. code-block:: doscon
+
+        Unable to install requirements. This may be because one of your
+        requirements is invalid, or because pip was unable to connect
+        to the PyPI server.
 
 
-    This is likely due to the use of an incompatible version of python (ie 3.13). To rectify this:
+      This is likely due to the use of an incompatible version of python (ie 3.13). To rectify this:
+
       Go to file manager and delete the venv and helloworld folder as that likely won’t work with the environment’s python version.
       To fix the version discrepancy, either:
-        Delete the incompatible python version (not advised)
-        Specify the version of python to run the virtual environment in. Example:
-          “py -3.12 -m venv beeware-venv” specifies to use python 3.12.
-      Repeat the earlier steps.
+
+      * Delete the incompatible python version (not advised)
+      
+      * Specify the version of python to run the virtual environment in. Example:
+        
+      .. code-block:: doscon
+
+        py -3.12 -m venv beeware-venv #specifies to use python 3.12.
+
+      * Repeat the earlier steps.
 
 
 Press the close button (or select Quit from the application's menu), and you're
