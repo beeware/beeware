@@ -94,7 +94,7 @@ where menu bars are part of the window).
 .. admonition:: Where is my window?
 
     If you have made an error in your code, the main window of the app may not display.
-    If this happens, you can type **Ctrl+C** in the terminal where you started the app. 
+    If this happens, you can type **Ctrl+C** in the terminal where you started the app.
     This will stop the app. You can then fix the error and restart the app.
 
 We then add our empty box as the content of the main window, and instruct the
