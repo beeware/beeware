@@ -162,7 +162,7 @@ However, as we haven't provided the actual icon files, the install fails, and
 Briefcase falls back to a default value (the same "gray bee" icon).
 
 Let's provide some actual icons. Download :download:`this icons.zip bundle
-<../resources/icons.zip>`, and unzip into the root of the ``helloworld``
+<../resources/icons.zip>`, and unzip it into the root of your project
 directory. After unzipping, your project directory should look something like::
 
     beeware-tutorial/
