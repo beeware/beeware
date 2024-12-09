@@ -3,26 +3,26 @@
 # This file is distributed under the same license as the BeeWare package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-29 10:14+0800\n"
-"PO-Revision-Date: 2024-02-13 12:13+0800\n"
-"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
+"PO-Revision-Date: 2024-12-10 11:00+0000\n"
+"Last-Translator: pp pp <serdarkhan12@proton.me>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/beeware/tutorial/"
+"topics/testing/it/>\n"
 "Language: it\n"
-"Language-Team: it <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.9-dev\n"
 "Generated-By: Babel 2.15.0\n"
 
 #: ../../tutorial/topics/testing.rst:3 93773728f8c54ddb87420111aeed2ad4
-#, fuzzy
 msgid "Testing times"
-msgstr "Esercitazione 9 - Tempi di verifica"
+msgstr "Tempi di verifica"
 
 #: ../../tutorial/topics/testing.rst:5 f78267d23da54a2ab3d6150efa58d899
 #, fuzzy
