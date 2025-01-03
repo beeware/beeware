@@ -8,83 +8,85 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-08 10:13+0800\n"
+"POT-Creation-Date: 2025-01-03 02:14+0000\n"
 "PO-Revision-Date: 2024-04-08 11:58+0800\n"
 "Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
-"Language-Team: zh_TW <LL@li.org>\n"
 "Language: zh_TW\n"
+"Language-Team: zh_TW <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"Generated-By: Babel 2.14.0\n"
-"X-Generator: Poedit 3.4.2\n"
+"Generated-By: Babel 2.16.0\n"
 
-#: ../../tutorial/tutorial-5/iOS.rst:3 550803ea9df941388c2093befa424d35
+#: ../../tutorial/tutorial-5/iOS.rst:3 1416ec7973ab4503918c4fcd75fbd32b
 #, fuzzy
 msgid "Tutorial 5 - Taking it mobile: iOS"
 msgstr "教學 5 - 行動裝置：iOS"
 
-#: ../../tutorial/tutorial-5/iOS.rst:5 1c2c76fbfa3d48c5aea3373e3e14ee90
-#, fuzzy
-msgid "To compile iOS applications we'll need Xcode, which is available for free from `the macOS App Store <https://apps.apple.com/au/app/xcode/id497799835?mt=12>`__."
-msgstr "要編譯 iOS 應用程序，我們需要 Xcode，它可以從``macOS App Store <https://apps.apple.com/au/app/xcode/id497799835?mt=12>``免費獲得。"
+#: ../../tutorial/tutorial-5/iOS.rst:5 e39e0575557847a0948c2f171d8c2e3a
+msgid "To compile iOS applications we'll need Xcode, which is available for free from `the macOS App Store <https://apps.apple.com/au/app/xcode/id497799835?mt=12>`__. Once Xcode is installed, launch it from Applications and accept the Xcode License Agreement. Next, Xcode will show which Simulator runtimes are built-in, and which Simulator runtimes you may download. Select the checkbox next to the iOS Simulator runtime, and then click Continue to download and install it."
+msgstr ""
 
-#: ../../tutorial/tutorial-5/iOS.rst:8 d65a33457ddc45c9b4f025d878c6c483
+#: ../../tutorial/tutorial-5/iOS.rst:12 20f9cefa3925422bb854c3989ad982da
 #, fuzzy
-msgid "Once we've got Xcode installed, we can take our application and deploy it as an iOS app."
+msgid "Once we've got Xcode and the iOS simulator installed, we can take our application and deploy it as an iOS app."
 msgstr "一旦我們安裝了 Xcode，我們就可以將我們的應用程式部署為 iOS 應用程式。"
 
-#: ../../tutorial/tutorial-5/iOS.rst:10 be40e1509ec74265893e8313254d6fa0
+#: ../../tutorial/tutorial-5/iOS.rst:15 df44b219498343da9f3ed1d320e6f047
 #, fuzzy
 msgid "The process of deploying an application to iOS is very similar to the process for deploying as a desktop application. First, you run the ``create`` command - but this time, we specify that we want to create an iOS application:"
 msgstr "將應用程式部署到 iOS 的過程與部署為桌面應用程式的過程非常相似。首先，執行``create``命令 - 但這一次，我們指定要建立一個 iOS 應用程式："
 
-#: ../../tutorial/tutorial-5/iOS.rst:39 6d9fbc2b135e43acb004668546658d54
+#: ../../tutorial/tutorial-5/iOS.rst:44 41377d5c65f24947ab488385697a3776
 #, fuzzy
 msgid "Once this completes, we'll have a ``build/helloworld/ios/xcode`` directory containing an Xcode project, as well as the support libraries and the application code needed for the application."
 msgstr "完成後，我們將擁有一個``build/helloworld/ios/xcode``目錄，其中包含 Xcode 專案以及應用程式所需的支援庫和應用程式程式碼。"
 
-#: ../../tutorial/tutorial-5/iOS.rst:43 8df6802e45124d4cac6541246c30dce9
+#: ../../tutorial/tutorial-5/iOS.rst:48 170fa7fcce5841e7880ec2c3f14644f4
 #, fuzzy
 msgid "You can then use Briefcase to compile your app using ``briefcase build iOS``:"
 msgstr "然後，您可以使用``briefcase build iOS``來使用 Briefcase 來編譯您的應用程式："
 
-#: ../../tutorial/tutorial-5/iOS.rst:58 6dbd957e28354718a7692d2eeb7289f9
+#: ../../tutorial/tutorial-5/iOS.rst:63 4f894405e0324fc3bdf55f1285c89f72
 #, fuzzy
 msgid "We're now ready to run our application, using ``briefcase run iOS``. You'll be prompted to select a device to compile for; if you've got simulators for multiple iOS SDK versions installed, you may also be asked which iOS version you want to target. The options you are shown may differ from the options show in this output - at the very least, the list of devices will likely be different. For our purposes, it doesn't matter which simulator you pick."
 msgstr "現在我們已經準備好使用``briefcase run iOS``來運行我們的應用程式。系統會提示您選擇要編譯的設備；如果您安裝了多個 iOS SDK 版本的模擬器，系統也可能會詢問您要定位哪個 iOS 版本。您顯示的選項可能與此輸出中顯示的選項不同 - 至少，設備清單可能會有所不同。就我們的目的而言，您選擇哪個模擬器並不重要。"
 
-#: ../../tutorial/tutorial-5/iOS.rst:107 bf9e2d4f6cb5451389ba2fe5e6d3a959
+#: ../../tutorial/tutorial-5/iOS.rst:112 c267a80964334562b9511a8360c6a85a
 #, fuzzy
 msgid "This will start the iOS simulator, install your app, and start it. You should see the simulator start, and eventually open your iOS application:"
 msgstr "這將啟動 iOS 模擬器、安裝您的應用程式並啟動它。您應該會看到模擬器啟動，並最終打開您的 iOS 應用程式："
 
-#: ../../tutorial/tutorial-5/iOS.rst:-1 49ec1fe78bb545c98ff9fa0032ca39c6
+#: ../../tutorial/tutorial-5/iOS.rst:115 8abb339f1e8d4b0682d47dc971b6f389
 #, fuzzy
 msgid "Hello World Tutorial 5 window, on iOS"
 msgstr "Hello World 教學 5 窗口，iOS 上"
 
-#: ../../tutorial/tutorial-5/iOS.rst:113 f9b704fe977644018bf696cc78dbf95f
+#: ../../tutorial/tutorial-5/iOS.rst:118 faa2e9bd36a44bddacab4a80ca3e5d1a
 #, fuzzy
 msgid "If you know ahead of time which iOS simulator you want to target, you can tell Briefcase to use that simulator by providing a ``-d`` (or ``--device``) option. Using the name of the device you selected when you built your application, run:"
 msgstr "如果您事先知道要定位哪個 iOS 模擬器，則可以透過提供``-d``（或``--device``）選項來告訴 Briefcase 使用該模擬器。使用您在建立應用程式時選擇的設備名稱，運行："
 
-#: ../../tutorial/tutorial-5/iOS.rst:121 d617a48cd041433a921b86dd04a03ac5
+#: ../../tutorial/tutorial-5/iOS.rst:126 2850efc82ee54ff8af4c0c633204d849
 #, fuzzy
 msgid "If you have multiple iOS versions available, Briefcase will pick the highest iOS version; if you want to pick a particular iOS version, you tell it to use that specific version:"
 msgstr "如果您有多個可用的 iOS 版本，公事包將選擇最高的 iOS 版本；如果你想選擇一個特定的 iOS 版本，你可以告訴它使用該特定版本："
 
-#: ../../tutorial/tutorial-5/iOS.rst:129 e1689e2e583940e9b728eb20db0a76e5
+#: ../../tutorial/tutorial-5/iOS.rst:134 28b9565b429840178ee9164dd2fcc1a1
 #, fuzzy
 msgid "Or, you can name a specific device UDID:"
 msgstr "或者，您可以命名特定設備 UDID："
 
-#: ../../tutorial/tutorial-5/iOS.rst:136 79f69a1b94254ab1857af65e44f8f619
+#: ../../tutorial/tutorial-5/iOS.rst:141 cd96c7f2b1464b4dbe68c04af7cd1f99
 msgid "Next steps"
 msgstr "下一步"
 
-#: ../../tutorial/tutorial-5/iOS.rst:138 69ce622f59c24bcaa6ce6e69f47b7538
+#: ../../tutorial/tutorial-5/iOS.rst:143 59b55587e81142c18a76edcaf16f21fe
 #, fuzzy
 msgid "We've now got an application on our phone! Is there anywhere else we can deploy a BeeWare app? Turn to :doc:`Tutorial 6 <../tutorial-6>` to find out..."
 msgstr "現在我們的手機上已經有一個應用程式了！我們還有其他地方可以部署 BeeWare 應用程式嗎？請參閱 :doc:`教學 6 <../tutorial-6>` 以了解..."
+
+#~ msgid "To compile iOS applications we'll need Xcode, which is available for free from `the macOS App Store <https://apps.apple.com/au/app/xcode/id497799835?mt=12>`__."
+#~ msgstr "要編譯 iOS 應用程序，我們需要 Xcode，它可以從``macOS App Store <https://apps.apple.com/au/app/xcode/id497799835?mt=12>``免費獲得。"
+
