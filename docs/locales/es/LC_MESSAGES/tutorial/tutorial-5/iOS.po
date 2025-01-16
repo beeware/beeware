@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-01-03 02:14+0000\n"
-"PO-Revision-Date: 2025-01-16 09:00+0000\n"
-"Last-Translator: FM <felixd38v@icloud.com>\n"
+"PO-Revision-Date: 2025-01-17 02:36+0000\n"
+"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/"
 "tutorial-5/ios/es/>\n"
 "Language: es\n"
@@ -38,7 +38,11 @@ msgstr "Una vez que tengamos Xcode instalado, podemos tomar nuestra aplicación 
 
 #: ../../tutorial/tutorial-5/iOS.rst:15 df44b219498343da9f3ed1d320e6f047
 msgid "The process of deploying an application to iOS is very similar to the process for deploying as a desktop application. First, you run the ``create`` command - but this time, we specify that we want to create an iOS application:"
-msgstr "El proceso de implementación de una aplicación en iOS es muy similar al proceso de implementación como aplicación de escritorio. Primero, ejecuta el comando ``crear``, pero esta vez especificamos que queremos crear una aplicación para iOS:"
+msgstr ""
+"El proceso de implementación de una aplicación en iOS es muy similar al "
+"proceso de implementación como aplicación de escritorio. Primero, ejecuta el "
+"comando ``create``, pero esta vez especificamos que queremos crear una "
+"aplicación para iOS:"
 
 #: ../../tutorial/tutorial-5/iOS.rst:44 41377d5c65f24947ab488385697a3776
 msgid "Once this completes, we'll have a ``build/helloworld/ios/xcode`` directory containing an Xcode project, as well as the support libraries and the application code needed for the application."
@@ -48,13 +52,13 @@ msgstr "Una vez que esto se complete, tendremos un directorio ``build/helloworld
 msgid "You can then use Briefcase to compile your app using ``briefcase build iOS``:"
 msgstr ""
 "Luego puedes usar Briefcase para compilar tu aplicación usando ``briefcase "
-"build iOS``(compilar para iOS con Briefcase):"
+"build iOS`` (compilar para iOS con Briefcase):"
 
 #: ../../tutorial/tutorial-5/iOS.rst:63 4f894405e0324fc3bdf55f1285c89f72
 msgid "We're now ready to run our application, using ``briefcase run iOS``. You'll be prompted to select a device to compile for; if you've got simulators for multiple iOS SDK versions installed, you may also be asked which iOS version you want to target. The options you are shown may differ from the options show in this output - at the very least, the list of devices will likely be different. For our purposes, it doesn't matter which simulator you pick."
 msgstr ""
 "Ya estamos listos para ejecutar nuestra aplicación, utilizando ``briefcase "
-"run iOS``(ejecutar iOS con Briefcase). Se te pedirá que selecciones un "
+"run iOS`` (ejecutar iOS con Briefcase). Se te pedirá que selecciones un "
 "dispositivo para el cual puedes compilar; si tienes instalados simuladores "
 "para varias versiones del SDK de iOS, puede que también se te pregunte a qué "
 "versión de iOS quieres apuntar. Las opciones que se le muestren pueden "
