@@ -1,17 +1,18 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-01-03 02:14+0000\n"
-"PO-Revision-Date: 2024-01-18 18:00+0000\n"
-"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
+"PO-Revision-Date: 2025-01-16 09:00+0000\n"
+"Last-Translator: FM <felixd38v@icloud.com>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/"
+"tutorial-5/ios/es/>\n"
 "Language: es\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-5/ios/es/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../tutorial/tutorial-5/iOS.rst:3 1416ec7973ab4503918c4fcd75fbd32b
@@ -21,6 +22,14 @@ msgstr "Tutorial 5 - Para móviles: iOS"
 #: ../../tutorial/tutorial-5/iOS.rst:5 e39e0575557847a0948c2f171d8c2e3a
 msgid "To compile iOS applications we'll need Xcode, which is available for free from `the macOS App Store <https://apps.apple.com/au/app/xcode/id497799835?mt=12>`__. Once Xcode is installed, launch it from Applications and accept the Xcode License Agreement. Next, Xcode will show which Simulator runtimes are built-in, and which Simulator runtimes you may download. Select the checkbox next to the iOS Simulator runtime, and then click Continue to download and install it."
 msgstr ""
+"Para compilar aplicaciones para iOS, necesitamos Xcode, que se encuentra "
+"disponible de forma gratuita en la `App Store de macOS <https://"
+"apps.apple.com/au/app/xcode/id497799835?mt=12>`__. Una vez que Xcode esté "
+"instalado, ábrelo desde la carpeta Aplicaciones y acepta el Acuerdo de "
+"Licencia de Xcode. A continuación, Xcode mostrará los entornos de simulador "
+"que ya vienen integrados y aquellos que puedes descargar. Marca la casilla "
+"junto al entorno del simulador de iOS y luego haz clic en \"Continuar\" para "
+"descargarlo e instalarlo."
 
 #: ../../tutorial/tutorial-5/iOS.rst:12 20f9cefa3925422bb854c3989ad982da
 #, fuzzy
@@ -37,15 +46,27 @@ msgstr "Una vez que esto se complete, tendremos un directorio ``build/helloworld
 
 #: ../../tutorial/tutorial-5/iOS.rst:48 170fa7fcce5841e7880ec2c3f14644f4
 msgid "You can then use Briefcase to compile your app using ``briefcase build iOS``:"
-msgstr "Luego puedes usar Briefcase para compilar tu aplicación usando ``briefcase build iOS``:"
+msgstr ""
+"Luego puedes usar Briefcase para compilar tu aplicación usando ``briefcase "
+"build iOS``(compilar para iOS con Briefcase):"
 
 #: ../../tutorial/tutorial-5/iOS.rst:63 4f894405e0324fc3bdf55f1285c89f72
 msgid "We're now ready to run our application, using ``briefcase run iOS``. You'll be prompted to select a device to compile for; if you've got simulators for multiple iOS SDK versions installed, you may also be asked which iOS version you want to target. The options you are shown may differ from the options show in this output - at the very least, the list of devices will likely be different. For our purposes, it doesn't matter which simulator you pick."
-msgstr "Ya estamos listos para ejecutar nuestra aplicación, utilizando ``briefcase run iOS``. Se te pedirá que selecciones un dispositivo para el que compilar; si tienes instalados simuladores para varias versiones del SDK de iOS, puede que también se te pregunte a qué versión de iOS quieres apuntar. Las opciones que se le muestren pueden diferir de las que se muestran en esta salida; como mínimo, es probable que la lista de dispositivos sea diferente. Para nuestros propósitos, no importa qué simulador elija."
+msgstr ""
+"Ya estamos listos para ejecutar nuestra aplicación, utilizando ``briefcase "
+"run iOS``(ejecutar iOS con Briefcase). Se te pedirá que selecciones un "
+"dispositivo para el cual puedes compilar; si tienes instalados simuladores "
+"para varias versiones del SDK de iOS, puede que también se te pregunte a qué "
+"versión de iOS quieres apuntar. Las opciones que se le muestren pueden "
+"diferir de las que se muestran en esta salida; como mínimo, es probable que "
+"la lista de dispositivos sea diferente. Para fines prácticos, no importa qué "
+"simulador se elija."
 
 #: ../../tutorial/tutorial-5/iOS.rst:112 c267a80964334562b9511a8360c6a85a
 msgid "This will start the iOS simulator, install your app, and start it. You should see the simulator start, and eventually open your iOS application:"
-msgstr "Esto iniciará el simulador de iOS, instalará tu aplicación y la iniciará. Deberías ver cómo se inicia el simulador y, finalmente, cómo se abre tu aplicación iOS:"
+msgstr ""
+"Esto iniciará el simulador de iOS, instalará tu aplicación y la iniciará. "
+"Vas a observar cómo se inicia el simulador y cómo se abre tu aplicación iOS:"
 
 #: ../../tutorial/tutorial-5/iOS.rst:115 8abb339f1e8d4b0682d47dc971b6f389
 msgid "Hello World Tutorial 5 window, on iOS"
@@ -73,4 +94,3 @@ msgstr "¡Ya tenemos una aplicación en nuestro teléfono! ¿Hay algún otro lug
 
 #~ msgid "To compile iOS applications we'll need Xcode, which is available for free from `the macOS App Store <https://apps.apple.com/au/app/xcode/id497799835?mt=12>`__."
 #~ msgstr "Para compilar aplicaciones de iOS necesitaremos Xcode, que está disponible de forma gratuita en `la App Store de macOS <https://apps.apple.com/es/app/xcode/id497799835?mt=12>`__."
-
