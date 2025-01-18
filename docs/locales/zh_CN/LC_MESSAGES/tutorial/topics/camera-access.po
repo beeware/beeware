@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-29 10:14+0800\n"
-"PO-Revision-Date: 2024-11-09 14:00+0000\n"
-"Last-Translator: gmkeebiy <gmkeebiy@sharklasers.com>\n"
+"PO-Revision-Date: 2025-01-19 08:00+0000\n"
+"Last-Translator: dskcvip <85137191@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/topics/camera-access/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -17,24 +17,27 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.8.2\n"
+"X-Generator: Weblate 5.10-dev\n"
 "Generated-By: Babel 2.15.0\n"
 
 #: ../../tutorial/topics/camera-access.rst:3 dbceb55336a94cc3989281eefac9c042
 msgid "Using the camera"
-msgstr ""
+msgstr "使用相机"
 
 #: ../../tutorial/topics/camera-access.rst:5 4bf5494a1c41402db939501e20900c3b
 msgid "Almost every modern computing device has a camera of some sort. In this tutorial, we'll write new application that is able to request access to this camera, take a photograph, and then display that photograph in the app. new application that uses your device's camera."
 msgstr ""
+"每一台计算机都可以配备某种类型的摄像头。在本教程中，我们将编写一个新程序，该"
+"程序能够请求访问摄像头、拍摄照片，然后在应用程序中显示所拍摄的照片。即创建一"
+"个使用你设备摄像头的新应用程序。"
 
 #: ../../tutorial/topics/camera-access.rst:10 07d496e573b4472fb7713ac057c6d41d
 msgid "This tutorial won't work on all platforms!"
-msgstr ""
+msgstr "本教程不适用于所有平台！"
 
 #: ../../tutorial/topics/camera-access.rst:12 cdbf59620c874669a34065e11ebade2a
 msgid "Unfortunately, at present, this tutorial will only work on macOS and Android."
-msgstr ""
+msgstr "遗憾的是，目前本教程仅适用于 macOS 系统和 Android。"
 
 #: ../../tutorial/topics/camera-access.rst:15 743b319ea6ed4d109fe121d5f305eded
 msgid "Although iPhones all have cameras, the iOS *Simulator* doesn't have a working camera. Windows and Linux devices also have cameras, but Toga doesn't currently have the ability to access the camera on these platforms."
