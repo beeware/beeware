@@ -163,10 +163,12 @@ on the value of the name that has been provided::
 
 Then, modify the ``say_hello`` callback to use this new utility method::
 
-        def say_hello(self, widget):
-            self.main_window.info_dialog(
-                greeting(self.name_input.value),
-                "Hi there!",
+        async def say_hello(self, widget):
+            await self.main_window.dialog(
+                toga.InfoDialog(
+                    greeting(self.name_input.value),
+                    "Hi there!",
+                )
             )
 
 Run your app in development mode (with ``briefcase dev``) to confirm that the
