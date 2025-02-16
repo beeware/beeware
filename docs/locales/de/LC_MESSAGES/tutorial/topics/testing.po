@@ -1,23 +1,24 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-29 10:14+0800\n"
-"PO-Revision-Date: 2024-02-02 22:01+0000\n"
-"Last-Translator: Marco Esters <mesters@anaconda.com>\n"
+"PO-Revision-Date: 2025-02-17 02:05+0000\n"
+"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
+"topics/testing/de/>\n"
 "Language: de\n"
-"Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-9/de/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10\n"
 "Generated-By: Babel 2.15.0\n"
 
 #: ../../tutorial/topics/testing.rst:3 93773728f8c54ddb87420111aeed2ad4
 #, fuzzy
 msgid "Testing times"
-msgstr "Tutorial 9 - Prüfzeiten"
+msgstr "Prüfzeiten"
 
 #: ../../tutorial/topics/testing.rst:5 f78267d23da54a2ab3d6150efa58d899
 #, fuzzy
