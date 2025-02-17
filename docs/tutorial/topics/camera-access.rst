@@ -142,7 +142,7 @@ permissions it is going to ask for.
 
 The permissions required by each platform are slightly different, but Briefcase
 has a cross-platform representation for many common hardware permissions. In the
-``[tool.briefcase.app.helloworld]`` configuration section of your app's
+``[tool.briefcase.app.hellocamera]`` configuration section of your app's
 ``pyproject.toml`` file, add the following (just above the ``sources``
 declaration):
 
