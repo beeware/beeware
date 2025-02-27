@@ -103,22 +103,29 @@ it looks like this::
             )
         )
 
-There are only 4 changes in this code from the previous version:
+There are only 3 changes in this code from the previous version:
 
-1. The method is defined as ``async def``, rather than just ``def``. This tells
-   Python that the method is an asynchronous coroutine.
-
-2. The client that is created is an asynchronous ``AsyncClient()``, rather than a
+1. The client that is created is an asynchronous ``AsyncClient()``, rather than a
    synchronous ``Client()``. This tells ``httpx`` that it should operate in
    asynchronous mode, rather than synchronous mode.
 
-3. The context manager used to create the client is marked as ``async``. This tells
+2. The context manager used to create the client is marked as ``async``. This tells
    Python that there is an opportunity to release control as the context manager
    is entered and exited.
 
-4. The ``get`` call is made with an ``await`` keyword. This instructs the app that
-   while we are waiting for the response from the network, the app can release control
-   to the event loop.
+3. The ``get`` call is made with an ``await`` keyword. This instructs the app
+   that while we are waiting for the response from the network, the app can
+   release control to the event loop. We've seen this keyword before - we also
+   use ``await`` when displaying the dialog box. The reason for that usage is
+   the same as it is for the HTTP request - we need to tell the app that while
+   the dialog is displayed, and we're waiting for the user to push a button,
+   it's OK to release control back to the event loop.
+
+It's also important to note that the handler itself is defined as ``async def``,
+rather than just ``def``. This tells Python that the method is an asynchronous
+coroutine. We made this change back in Tutorial 3 when we added the dialog box.
+You can only use ``await`` statements inside a method that is declared as
+``async def``.
 
 Toga allows you to use regular methods or asynchronous coroutines as handlers;
 Toga manages everything behind the scenes to make sure the handler is invoked
