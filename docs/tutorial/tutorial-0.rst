@@ -106,6 +106,13 @@ Next, install the additional dependencies needed for your operating system:
       The package list should be the same as in ci.yml and unix-prerequisites.rst in the
       Toga repository.
 
+    .. warning::
+
+      Using a Debian-based Linux distribution (including Ubuntu) will require
+      some addition modifications later in the tutorial. Keep an eye out for the
+      additional steps - if you don't follow them, you'll see errors referencing
+      PyGObject or ``girepository-2.0``.
+
     .. code-block:: console
 
       $ sudo apt update
