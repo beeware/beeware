@@ -173,6 +173,39 @@ the project in Developer (or ``dev``) mode:
 
   .. group-tab:: Linux
 
+    .. admonition:: Additional step for Debian-based distributions (including Ubuntu)
+
+      If you're using A Debian-based distribution (including Ubuntu) you'll need
+      to make some changes to the project that has been generated before you can
+      run it. Open the ``pyproject.toml`` file, and look for a reference to
+      ``toga-gtk``. It should be part of a ``requires`` definition, and look
+      something like:
+
+      .. code-block:: toml
+
+        requires = [
+            "toga-gtk~=0.4.7",
+        ]
+
+      Modify this section so it reads:
+
+      .. code-block:: toml
+
+        requires = [
+            "pygobject==3.50.0",
+            "toga-gtk~=0.4.7",
+        ]
+
+      Make sure you've saved the changes to your ``pyproject.toml`` file after
+      you've made this change!
+
+      This changes is required because of a recent change to PyGObject that
+      makes it incompatible with older Debian-based releases. An equivalent
+      fix will be included automatically in a future Briefcase release.
+
+
+    Run the following commands:
+
     .. code-block:: console
 
       (beeware-venv) $ cd helloworld
