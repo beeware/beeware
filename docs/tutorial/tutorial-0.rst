@@ -120,7 +120,7 @@ Next, install the additional dependencies needed for your operating system:
       Ubuntu or Debian release, the tutorial will be significantly easier.
 
       If you can't, keep an eye out for the additional steps - if you don't follow
-      them, you'll see errors referencing PyGObject or girepository-2.0.
+      them, you'll see errors referencing PyGObject or ``girepository-2.0``.
 
     .. code-block:: console
 
