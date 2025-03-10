@@ -100,11 +100,27 @@ Next, install the additional dependencies needed for your operating system:
     To support local development, you'll need to install some system packages.
     The list of packages required varies depending on your distribution:
 
-    **Ubuntu / Debian**
+    **Ubuntu 24.04 / Debian 13**
 
     ..
       The package list should be the same as in ci.yml and unix-prerequisites.rst in the
       Toga repository.
+
+    .. code-block:: console
+
+      $ sudo apt update
+      $ sudo apt install git build-essential pkg-config python3-dev python3-venv libgirepository-2.0-dev libcairo2-dev gir1.2-gtk-3.0 libcanberra-gtk3-module
+
+    **Ubuntu 22.04 / Debian 11 / Debian 12**
+
+    .. warning::
+
+      Using Ubuntu 22.04, Debian 11 or Debian 12 will require some addition
+      modifications later in the tutorial. If you're able to use a more recent
+      Ubuntu or Debian release, the tutorial will be significantly easier.
+
+      If you can't, keep an eye out for the additional steps - if you don't follow
+      them, you'll see errors referencing PyGObject or girepository-2.0.
 
     .. code-block:: console
 

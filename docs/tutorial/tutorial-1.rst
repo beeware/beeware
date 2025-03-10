@@ -173,6 +173,25 @@ the project in Developer (or ``dev``) mode:
 
   .. group-tab:: Linux
 
+    .. admonition:: Additional steps on Ubuntu 22.04, Debian 11, and Debian 12
+
+      If you're using Ubuntu 22.04, Debian 11, or Debian 12, you'll need to make some changes
+      to the project that has been generated before you can run it. Open the ``pyproject.toml``
+      file, and make the following changes:
+
+      1. Search for ``# "pygobject < 3.52.1"``. Remove the ``#`` from the start of that line.
+      2. Search for ``# "libgirepository1.0-dev"``. Remove the ``#`` from the start of that line,
+         and add a ``#`` to the line before it (it should say ``"libgirepository-2.0-dev"``)
+      3. Search for ``# "libgirepository-1.0-1"``. Remove the ``#`` from the start of that line,
+         and add a ``#`` to the line before it (it should say ``"libgirepository-2.0-0"``)
+
+      These changes are required because older Debian-based releases don't
+      include libraries that are required by more recent releases of PyGObject.
+      Make sure you've saved the changes to you ``pyproject.toml`` file before
+      you continue!
+
+    Run the following commands:
+
     .. code-block:: console
 
       (beeware-venv) $ cd helloworld
