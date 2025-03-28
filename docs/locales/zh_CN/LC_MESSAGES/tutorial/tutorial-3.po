@@ -1,23 +1,23 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-21 20:05+0000\n"
-"PO-Revision-Date: 2024-01-14 12:29+0000\n"
-"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
+"PO-Revision-Date: 2025-03-28 13:01+0000\n"
+"Last-Translator: TF <1903410612@qq.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/beeware/tutorial/tutorial-3/zh_Hans/>\n"
 "Language: zh_CN\n"
-"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-3/zh_Hans/>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.11-dev\n"
 "Generated-By: Babel 2.15.0\n"
 
 #: ../../tutorial/tutorial-3.rst:3 783cd122e9b5462ab3aad6e7560ec9be
-#, fuzzy
 msgid "Tutorial 3 - Packaging for distribution"
-msgstr "教程 3 - 包装以便分发"
+msgstr "教程 3 - 打包与分发"
 
 #: ../../tutorial/tutorial-3.rst:5 174ad237b26f489c937a7fd0e53cef4c
 #, fuzzy
@@ -30,9 +30,8 @@ msgid "However, we don't want to have to teach our users how to install Python, 
 msgstr "但是，我们不想教用户如何安装 Python、创建虚拟环境、克隆 git 仓库并在开发者模式下运行 Briefcase。我们宁可只给他们一个安装程序，让应用程序能够正常运行。"
 
 #: ../../tutorial/tutorial-3.rst:14 38972c40f114461085f600d9eab89465
-#, fuzzy
 msgid "Briefcase can be used to package your application for distribution in this way."
-msgstr "公文包可用于打包您的应用程序，以便以这种方式发布。"
+msgstr "Briefcase可用于打包应用程序，以便以这种方式发布。"
 
 #: ../../tutorial/tutorial-3.rst:17 282a291c1efa4084a1ee48f114d3e5c5
 #, fuzzy
@@ -59,7 +58,7 @@ msgstr "Linux"
 
 #: ../../tutorial/tutorial-3.rst:85 df9569858d4541029f4acbcae57ccb70
 msgid "Errors about Python versions"
-msgstr ""
+msgstr "有关Python版本的错误"
 
 #: ../../tutorial/tutorial-3.rst:87 16f10ac3180c4f909344dc2bbb09ecae
 msgid "If you receive an error that reads something like:"
@@ -299,4 +298,3 @@ msgstr "下一步"
 #, fuzzy
 msgid "We now have our application packaged for distribution on desktop platforms. But what happens when we need to update the code in our application? How do we get those updates into our packaged application? Turn to :doc:`Tutorial 4 <./tutorial-4>` to find out..."
 msgstr "现在，我们已将应用程序打包发布到桌面平台上。但是，当我们需要更新应用程序中的代码时该怎么办？如何将这些更新添加到打包的应用程序中？请访问 :doc:`Tutorial 4 <./tutorial-4>` 了解详情..."
-
