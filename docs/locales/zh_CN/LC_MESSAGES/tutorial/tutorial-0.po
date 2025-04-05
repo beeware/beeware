@@ -1,17 +1,18 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-25 04:42+0000\n"
-"PO-Revision-Date: 2024-01-14 12:29+0000\n"
-"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
+"PO-Revision-Date: 2025-04-05 09:03+0000\n"
+"Last-Translator: gmkeebiy <gmkeebiy@sharklasers.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/beeware/tutorial/tutorial-0/zh_Hans/>\n"
 "Language: zh_CN\n"
-"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-0/zh_Hans/>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.11-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../tutorial/tutorial-0.rst:3 a7080c0d128e459e841635ede8753759
@@ -51,9 +52,12 @@ msgid "If Python is installed, you'll see its version number. Otherwise, you'll 
 msgstr "如果已安装 Python，则会看到其版本号。否则，系统会提示您安装命令行开发工具。"
 
 #: ../../tutorial/tutorial-0.rst:30 41f19bfc516e4f29bdf89db879d2591e
-#, fuzzy
 msgid "You should ensure that you are using Python 3.9 or newer. If it isn't, you'll need to upgrade your Python install. You can get the official installer from `the Python website <https://www.python.org/downloads>`_. You can use any stable version of Python from 3.9 onward. We'd advise avoiding alphas, betas, and release candidates unless you *really* know what you're doing."
-msgstr "如果您使用的是 Windows 系统，可以从 Python 网站 <https://www.python.org/downloads>`_ 获取官方安装程序。您可以使用 Python 3.8 及以后的任何稳定版本。我们建议您不要使用 alphas、beta 和候选发布版，除非您**了解自己在做什么。"
+msgstr ""
+"您应该确保您使用的是 Python 3.9 或更高版本。如果不是，则需要升级 Python "
+"安装。您可以从 `Python官网 <https://www.python.org/downloads>`_ "
+"获取官方安装程序。从 3.9 开始，您可以使用任何稳定版本的 Python。"
+"我们建议避免使用 Alpha、Beta 和候选版本，除非你*真的*知道自己在做什么。"
 
 #: ../../tutorial/tutorial-0.rst:37 ../../tutorial/tutorial-0.rst:98
 #: ../../tutorial/tutorial-0.rst:166 3624709aede84845a17f69312657f558
@@ -83,9 +87,12 @@ msgid "Windows"
 msgstr "Windows"
 
 #: ../../tutorial/tutorial-0.rst:50 a946f68deb414439b36259705e0fa06e
-#, fuzzy
 msgid "If you're on Windows, you can get the official installer from `the Python website <https://www.python.org/downloads>`_. You can use any stable version of Python from 3.9 to 3.12 - `Python 3.13 is not currently supported <https://github.com/beeware/toga/issues/2889>`__. We'd also advise avoiding alphas, betas, and release candidates unless you *really* know what you're doing."
-msgstr "如果您使用的是 Windows 系统，可以从 Python 网站 <https://www.python.org/downloads>`_ 获取官方安装程序。您可以使用 Python 3.8 及以后的任何稳定版本。我们建议您不要使用 alphas、beta 和候选发布版，除非您**了解自己在做什么。"
+msgstr ""
+"如果您使用的是 Windows，您可以从 `Python 网站<https://www.python.org/"
+"downloads>`_ 获取官方安装程序。您可以使用 Python 3.9 到 3.12 的任何稳定版本 -"
+" `Python 3.13 目前不被支持 <https://github.com/beeware/toga/issues/2889>`_。"
+"我们还建议避免使用 Alpha、Beta 和候选版本，除非你*真的*知道自己在做什么。"
 
 #: ../../tutorial/tutorial-0.rst:57 3342972ab0ac4c0fb2bbe34583f8e59d
 #, fuzzy
@@ -242,4 +249,3 @@ msgstr "现在我们已经设置好了环境。我们准备 :doc:`创建第一�
 
 #~ msgid "**Git**, a version control system. This is included with Xcode or the command line developer tools, which you installed above."
 #~ msgstr "*版本控制系统 *Git**。它包含在您安装的 Xcode 或命令行开发工具中。"
-
