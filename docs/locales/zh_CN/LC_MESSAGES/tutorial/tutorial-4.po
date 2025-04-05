@@ -1,17 +1,18 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-25 23:41+0000\n"
-"PO-Revision-Date: 2024-01-13 02:06+0000\n"
-"Last-Translator: Sheep Cat <xymsyh@gmail.com>\n"
+"PO-Revision-Date: 2025-04-05 09:03+0000\n"
+"Last-Translator: gmkeebiy <gmkeebiy@sharklasers.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/beeware/tutorial/tutorial-4/zh_Hans/>\n"
 "Language: zh_CN\n"
-"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-4/zh_Hans/>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.11-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../tutorial/tutorial-4.rst:3 095a20d68b59496e9ff67f5b9c9497e5
@@ -117,9 +118,11 @@ msgid "Now that we've updated the installer code, we can then run ``briefcase bu
 msgstr "更新了安装程序代码后，我们就可以运行 ``briefcase build`` 来重新编译应用程序，运行 ``briefcase run`` 来运行更新后的应用程序，并运行 ``briefcase package`` 来重新打包应用程序以便分发。"
 
 #: ../../tutorial/tutorial-4.rst:132 bfb2287cd5f34d129b9e5a4ad27888b2
-#, fuzzy
 msgid "(macOS users, remember that as noted in :doc:`Tutorial 3 <tutorial-3>`, for the tutorial we recommend running ``briefcase package`` with the ``--adhoc-sign`` flag to avoid the complexity of setting up a code signing identity and keep the tutorial as simple as possible.)"
-msgstr "(macOS 用户请记住，正如 :doc:`Tutorial 3<tutorial-3>` 中所述，我们建议在运行 ``briefcase package`` 时使用 ``--adhoc-sign`` 标志，以避免设置代码签名身份的复杂性，并使教程尽可能简单）。"
+msgstr ""
+"(macOS 用户请记住，正如 :doc:`Tutorial 3<tutorial-3>` 中所述，我们建议在运行 "
+"``briefcase package`` 时使用 ``--adhoc-sign`` "
+"标志，以避免设置代码签名身份的复杂性，并使教程尽可能简单）"
 
 #: ../../tutorial/tutorial-4.rst:138 62252775407d4a75b6a3e9541e70cbe3
 #, fuzzy
@@ -169,4 +172,3 @@ msgstr "现在，我们的应用程序已经打包，可以在桌面平台上发
 #, fuzzy
 msgid "But what about mobile? In :doc:`Tutorial 5 <tutorial-5/index>`, we'll convert our application into a mobile application, and deploy it onto a device simulator, and onto a phone."
 msgstr "但是移动应用程序呢？在 :doc:`Tutorial 5 <tutorial-5/index>` 中，我们将把应用程序转换为移动应用程序，并将其部署到设备模拟器和手机上。"
-
