@@ -1,17 +1,18 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-25 04:42+0000\n"
-"PO-Revision-Date: 2024-11-09 14:00+0000\n"
+"PO-Revision-Date: 2025-04-05 09:03+0000\n"
 "Last-Translator: gmkeebiy <gmkeebiy@sharklasers.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/beeware/tutorial/tutorial-1/zh_Hans/>\n"
 "Language: zh_CN\n"
-"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-1/zh_Hans/>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.11-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../tutorial/tutorial-1.rst:3 77807d44e41947f19b2ec5ab79cfa4e4
@@ -111,9 +112,9 @@ msgid "**Project Name** - Accept the default value: ``Hello World``."
 msgstr "**项目名称** - 接受默认值：``你好世界``。"
 
 #: ../../tutorial/tutorial-1.rst:96 56c1db9259b9473590eaadfd747b36f8
-#, fuzzy
 msgid "**Description** - Accept the default value (or, if you want to be really creative, come up with your own description!)"
-msgstr "**Description** - 接受默认值（或者，如果您想发挥自己的创造力，也可以提出自己的描述！）。"
+msgstr "**描述** - "
+"接受默认值（或者，如果您想发挥自己的创造力，也可以提出自己的描述！）"
 
 #: ../../tutorial/tutorial-1.rst:99 3ac8f075e910425386c024d5581e3e5d
 #, fuzzy
@@ -213,4 +214,3 @@ msgstr "下一步"
 #, fuzzy
 msgid "We now have a working application, running in developer mode. Now we can add some logic of our own to make our application do something a little more interesting. In :doc:`Tutorial 2 <tutorial-2>`, we'll put a more useful user interface onto our application."
 msgstr "现在，我们有了一个在开发者模式下运行的应用程序。现在我们可以添加一些自己的逻辑，让应用程序做一些更有趣的事情。在 :doc:`Tutorial 2<tutorial-2>` 中，我们将为应用程序添加一个更有用的用户界面。"
-
