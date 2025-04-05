@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-26 02:31+0000\n"
-"PO-Revision-Date: 2025-03-28 13:01+0000\n"
-"Last-Translator: TF <1903410612@qq.com>\n"
+"PO-Revision-Date: 2025-04-05 09:03+0000\n"
+"Last-Translator: gmkeebiy <gmkeebiy@sharklasers.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/tutorial-2/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -37,7 +37,10 @@ msgstr "`__init__.py`` 将 ``helloworld`` 目录标记为可导入的 Python 模
 
 #: ../../tutorial/tutorial-2.rst:19 bbc9a21b3e36472190b22b16da212ade
 msgid "``__main__.py`` marks the ``helloworld`` module as a special kind of module - an executable module. If you try to run the ``helloworld`` module using ``python -m helloworld``, the ``__main__.py`` file is where Python will start executing. The contents of ``__main__.py`` is relatively simple::"
-msgstr "``__main__.py`` 将 ``helloworld`` 模块标记为一种特殊的模块 - 可执行模块。如果你尝试使用 ``python -m helloworld`` 试图运行 ``helloworld`` 模块，Python 将从``__main__.py`` 文件开始执行。``__main__.py`` 的内容相对简单::"
+msgstr ""
+"``__main__.py`` 将 ``helloworld`` 模块标记为一种特殊的模块 - 可执行模块。"
+"如果你尝试使用 ``python -m helloworld`` 试图运行 ``helloworld`` 模块，Python "
+"将从 ``__main__.py`` 文件开始执行。 ``__main__.py`` 的内容相对简单::"
 
 #: ../../tutorial/tutorial-2.rst:29 f4fcb9ec1030420a8623907fc13eb431
 msgid "That is - it imports the ``main`` method from the ``helloworld`` app; and if it's being executed as an entry point, calls the main() method, and starts the application's main loop. The main loop is the way a GUI application listens for user input (like mouse clicks and keyboard presses)."
@@ -45,7 +48,7 @@ msgstr "也就是说，它从 ``helloworld`` 应用程序中导入 ``main`` 方�
 
 #: ../../tutorial/tutorial-2.rst:34 2bbb9f825e8741939346e378281e9a20
 msgid "The more interesting file is ``app.py`` - this contains the logic that creates our application window::"
-msgstr "更有趣的文件是 app.py - 它包含创建我们应用程序窗口的逻辑::"
+msgstr "更有趣的文件是 ``app.py`` - 它包含创建我们应用程序窗口的逻辑::"
 
 #: ../../tutorial/tutorial-2.rst:52 4d0fbe13bbd548e388d91925fe37ebb9
 msgid "Let's go through this line by line::"
@@ -57,7 +60,7 @@ msgstr "首先，我们导入 ``toga`` 小部件工具包，以及一些与样�
 
 #: ../../tutorial/tutorial-2.rst:62 eba2e081011b47829305169b8dc4aad8
 msgid "Then, we define a class::"
-msgstr "然后，我们定义了一个类::"
+msgstr "然后，我们定义了一个类 ::"
 
 #: ../../tutorial/tutorial-2.rst:66 399352f187dd4a7787fa3635ea805ae0
 msgid "Each Toga application has a single ``toga.App`` instance, representing the running entity that is the application. The app may end up managing multiple windows; but for simple applications, there will be a single main window."
@@ -82,13 +85,11 @@ msgstr "接下来，我们定义一个窗口，并将这个空盒子放入其中
 #: ../../tutorial/tutorial-2.rst:87 c0c3db99dc824f9fb97c04a5ca7f970c
 msgid "This creates an instance of a ``toga.MainWindow``, which will have a title matching the application's name. A Main Window is a special kind of window in Toga - it's a window that is closely bound to the life cycle of the app. When the Main Window is closed, the application exits. The Main Window is also the window that has the application's menu (if you're on a platform like Windows where menu bars are part of the window)."
 msgstr ""
-"这将创建一个 toga.MainWindow 的实例，它的标题 (title) 将与应用程序的名称 "
+"这将创建一个 ``toga.MainWindow`` 的实例，它的标题 (title) 将与应用程序的名称 "
 "(self.formal_name) 匹配。主窗口是 Toga 中的一种特殊窗口——"
 "它与应用程序的生命周期 (life cycle) "
 "密切绑定。主窗口关闭，应用程序就退出了。主窗口也具有应用程序菜单（例如类似 "
-"Windows "
-"这样的平台上，菜单栏是窗口的一部分；如果你没有进行任何菜单栏的增删操作，"
-"你将看到默认的 file (文件) 和 help (帮助) 这两个菜单栏选项）"
+"Windows 这样的平台上，菜单栏是窗口的一部分）。"
 
 #: ../../tutorial/tutorial-2.rst:94 63afc2b22c1d4390b2e65626dd437411
 msgid "Where is my window?"
@@ -187,8 +188,8 @@ msgstr "然后，我们将名称盒子和按钮添加到主盒子中::"
 
 #: ../../tutorial/tutorial-2.rst:220 1ea8308592674cfd893f3ebe2b3f073c
 msgid "This completes our layout; the rest of the startup method is as it was previously - defining a ``MainWindow``, and assigning the main box as the window's content::"
-msgstr "这完成了我们的布局；其余的 startup 方法与以前一样 - 定义一个 "
-"MainWindow，并将主盒子指定为窗口的内容::"
+msgstr "这完成了我们的布局；其余的 startup 方法与以前一样 - 定义一个 ``MainWindow`` "
+"，并将主盒子指定为窗口的内容::"
 
 #: ../../tutorial/tutorial-2.rst:228 32d6a1eac6d1469aab2122c839ff346e
 msgid "The last thing we need to do is define the handler for the button. A handler can be any method, generator, or asynchronous coroutine; it accepts the widget that generated the event as an argument, and will be invoked whenever the button is pressed::"
