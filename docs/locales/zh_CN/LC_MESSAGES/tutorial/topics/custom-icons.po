@@ -1,17 +1,18 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-26 02:31+0000\n"
-"PO-Revision-Date: 2024-11-09 14:00+0000\n"
+"PO-Revision-Date: 2025-04-05 09:03+0000\n"
 "Last-Translator: gmkeebiy <gmkeebiy@sharklasers.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/beeware/tutorial/topics/custom-icons/zh_Hans/>\n"
 "Language: zh_CN\n"
-"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/projects/beeware/tutorial/topics/custom-icons/zh_Hans/>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.11-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../tutorial/topics/custom-icons.rst:3 0f00261c74614f5094810568936c5dbb
@@ -19,9 +20,9 @@ msgid "Customizing icons"
 msgstr ""
 
 #: ../../tutorial/topics/custom-icons.rst:5 37c96ca8e0c84ed6af2827c95e521a74
-#, fuzzy
 msgid "The app we developed in the main tutorial uses a default \"gray bee\" icon when it is packaged. Let's personalize this application by configuring it to use our own icon."
-msgstr "到目前为止，我们的应用程序一直使用默认的 \"灰色蜜蜂 \"图标。如何更新应用程序，使用我们自己的图标？"
+msgstr "我们在主教程中开发的应用在打包时使用了默认的 “灰色蜜蜂” "
+"图标。让我们通过配置使用我们自己的图标来个性化此应用程序。"
 
 #: ../../tutorial/topics/custom-icons.rst:10 761ef985e2c64623b07b9fa1b0510826
 #, fuzzy
@@ -56,14 +57,14 @@ msgstr "MacOS"
 #: ../../tutorial/topics/custom-icons.rst:394 35a2d8db37b24c3b88184c3c087a70fd
 #: 702c9914ef8b4ec7a5bf7e4d638d9e5f 954f03748cc24f068bd500f00baff8e3
 msgid "Linux"
-msgstr ""
+msgstr "Linux"
 
 #: ../../tutorial/topics/custom-icons.rst:75
 #: ../../tutorial/topics/custom-icons.rst:257
 #: ../../tutorial/topics/custom-icons.rst:409 254fdec9e36b4ab2b390f90ce97be632
 #: 4ab56043e5d54a769410e0ead56bcee5 c2c497189cbd4ae582eb35ec250d562f
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: ../../tutorial/topics/custom-icons.rst:92
 #: ../../tutorial/topics/custom-icons.rst:282
@@ -139,4 +140,3 @@ msgstr ""
 
 #~ msgid "Let's provide some actual icons. Download :download:`this icons.zip bundle <../resources/icons.zip>`, and unpack it into the root of your project directory. After unpacking, your project directory should look something like::"
 #~ msgstr ""
-
