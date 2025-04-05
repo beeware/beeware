@@ -1,17 +1,18 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-22 18:48+0000\n"
-"PO-Revision-Date: 2024-01-14 12:29+0000\n"
-"Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
+"PO-Revision-Date: 2025-04-05 09:02+0000\n"
+"Last-Translator: gmkeebiy <gmkeebiy@sharklasers.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/beeware/tutorial/tutorial-7/zh_Hans/>\n"
 "Language: zh_CN\n"
-"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-7/zh_Hans/>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.11-dev\n"
 "Generated-By: Babel 2.15.0\n"
 
 #: ../../tutorial/tutorial-7.rst:3 6b2615ec94ae43e5903abac442c3b41a
@@ -69,14 +70,12 @@ msgid "This will change the ``say_hello()`` callback so that when it is invoked,
 msgstr "这将更改 ``say_hello()`` 回调，使它在被调用时，会:"
 
 #: ../../tutorial/tutorial-7.rst:59 d6ff754f12794860a35eeb68e2dbaf68
-#, fuzzy
 msgid "make a GET request on the JSON placeholder API to obtain post 42;"
-msgstr "在 JSON 占位符 API 上发出 GET 请求，以获取职位 42；"
+msgstr "在 JSON 占位符 API 上发出 GET 请求，以获取post42;"
 
 #: ../../tutorial/tutorial-7.rst:61 af5c1a6b42a8444086938423724fc698
-#, fuzzy
 msgid "decode the response as JSON;"
-msgstr "将响应解码为 JSON 格式；"
+msgstr "将响应解码为 JSON 格式;"
 
 #: ../../tutorial/tutorial-7.rst:63 40fd1491d9934f2086b0208b4be8cb1c
 #, fuzzy
@@ -249,14 +248,12 @@ msgid "By adding this setting, we're telling Briefcase \"when you build my app, 
 msgstr "通过添加此设置，我们告诉 Briefcase \"当你构建我的应用程序时，运行 ``pip install httpx`` 到应用程序捆绑包中\"。任何可以合法输入到 ``pip install`` 的内容都可以在这里使用--因此，你可以指定："
 
 #: ../../tutorial/tutorial-7.rst:369 376b4955126a4c6791d0db69fbe7d4a6
-#, fuzzy
 msgid "A specific library version (e.g., ``\"httpx==0.19.0\"``);"
-msgstr "特定的库版本（例如，``\"httpx===0.19.0\"``）；"
+msgstr "特定的库版本（例如， ``\"httpx===0.19.0\"`` ）;"
 
 #: ../../tutorial/tutorial-7.rst:370 223ec130d6af4756a03b2e5765232033
-#, fuzzy
 msgid "A range of library versions (e.g., ``\"httpx>=0.19\"``);"
-msgstr "一系列库版本（例如，``\"httpx>=0.19\"``）；"
+msgstr "一系列库版本（例如， ``\"httpx>=0.19\"`` ）;"
 
 #: ../../tutorial/tutorial-7.rst:371 93586212104c43b6b4bb7d1813561513
 #, fuzzy
@@ -264,9 +261,9 @@ msgid "A path to a git repository (e.g., ``\"git+https://github.com/encode/httpx
 msgstr "指向 git 仓库的路径（例如，``\"git+https://github.com/encode/httpx\"``）；或"
 
 #: ../../tutorial/tutorial-7.rst:373 870a13884c6c42419cc3479955426bc5
-#, fuzzy
 msgid "A local file path (However - be warned: if you give your code to someone else, this path probably won't exist on their machine!)"
-msgstr "本地文件路径（不过需要注意的是：如果你把代码交给别人，这个路径很可能不存在于他们的机器上！）。"
+msgstr "本地文件路径（不过需要注意的是：如果你把代码交给别人，这个路径很可能不存在于"
+"他们的机器上！）"
 
 #: ../../tutorial/tutorial-7.rst:376 f66cd98d7a064027bc175a35ee5eed36
 #, fuzzy
@@ -321,4 +318,3 @@ msgstr "下一步"
 #, fuzzy
 msgid "We've now got an app that uses a third-party library! However, you may have noticed that when you press the button, the app becomes a little unresponsive. Can we do anything to fix this? Turn to :doc:`Tutorial 8 <tutorial-8>` to find out..."
 msgstr "我们现在有了一个使用第三方库的应用程序！不过，您可能已经注意到，当您按下按钮时，应用程序会变得有点反应迟钝。我们能解决这个问题吗？请访问 :doc:`Tutorial 8<tutorial-8>` 了解详情..."
-
