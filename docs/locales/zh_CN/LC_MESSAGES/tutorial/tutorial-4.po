@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-25 23:41+0000\n"
-"PO-Revision-Date: 2025-04-05 09:03+0000\n"
-"Last-Translator: gmkeebiy <gmkeebiy@sharklasers.com>\n"
+"PO-Revision-Date: 2025-04-19 07:03+0000\n"
+"Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/tutorial-4/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.11-dev\n"
+"X-Generator: Weblate 5.11.1-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../tutorial/tutorial-4.rst:3 095a20d68b59496e9ff67f5b9c9497e5
@@ -63,7 +63,7 @@ msgstr "如果运行 ``briefcase dev``，输入名称并按下按钮，就会看
 #: ../../tutorial/tutorial-4.rst:177 47110cedbc6f4f28b5f1fa3c0d58928e
 #: 60b7d3eeab8b4569b74402758963c345 7fe1e31014f9450896462581156a47ad
 msgid "macOS"
-msgstr "MacOS"
+msgstr "macOS"
 
 #: ../../tutorial/tutorial-4.rst:44 b99f156ff2444b00a3b632e1f20a1d55
 #, fuzzy
