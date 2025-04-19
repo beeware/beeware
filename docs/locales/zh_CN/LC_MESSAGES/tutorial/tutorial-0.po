@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-25 04:42+0000\n"
-"PO-Revision-Date: 2025-04-19 07:03+0000\n"
+"PO-Revision-Date: 2025-04-19 12:23+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/tutorial-0/zh_Hans/>\n"
@@ -53,7 +53,7 @@ msgstr ""
 "您应该确保您使用的是 Python 3.9 或更高版本。如果不是，则需要升级 Python "
 "安装。您可以从 `Python官网 <https://www.python.org/downloads>`_ "
 "获取官方安装程序。从 3.9 开始，您可以使用任何稳定版本的 Python。"
-"我们建议避免使用 Alpha、Beta 和候选版本，除非你*真的*知道自己在做什么。"
+"我们建议避免使用 Alpha、Beta 和候选版本，除非你真的知道自己在做什么。"
 
 #: ../../tutorial/tutorial-0.rst:37 ../../tutorial/tutorial-0.rst:98
 #: ../../tutorial/tutorial-0.rst:166 3624709aede84845a17f69312657f558
@@ -86,10 +86,10 @@ msgstr "Windows"
 #: ../../tutorial/tutorial-0.rst:50 a946f68deb414439b36259705e0fa06e
 msgid "If you're on Windows, you can get the official installer from `the Python website <https://www.python.org/downloads>`_. You can use any stable version of Python from 3.9 to 3.12 - `Python 3.13 is not currently supported <https://github.com/beeware/toga/issues/2889>`__. We'd also advise avoiding alphas, betas, and release candidates unless you *really* know what you're doing."
 msgstr ""
-"如果您使用的是 Windows，您可以从 `Python 网站<https://www.python.org/"
+"如果您使用的是 Windows，您可以从 `Python 网站 <https://www.python.org/"
 "downloads>`_ 获取官方安装程序。您可以使用 Python 3.9 到 3.12 的任何稳定版本 -"
-" `Python 3.13 目前不被支持 <https://github.com/beeware/toga/issues/2889>`_。"
-"我们还建议避免使用 Alpha、Beta 和候选版本，除非你*真的*知道自己在做什么。"
+" `Python 3.13 目前不被支持 <https://github.com/beeware/toga/issues/2889>`__。"
+"我们还建议避免使用 Alpha、Beta 和候选版本，除非你真的知道自己在做什么。"
 
 #: ../../tutorial/tutorial-0.rst:57 3342972ab0ac4c0fb2bbe34583f8e59d
 msgid "Alternative Python distributions"
@@ -116,8 +116,8 @@ msgstr ""
 #: ../../tutorial/tutorial-0.rst:74 3c128d13cbfa400192b3db8c7871d25b
 msgid "If you're on Linux, you *must* use the system Python provided by your operating system. You will be able to complete *most* of this tutorial using a non-system Python, but you won't be able to package your application for distribution to others."
 msgstr ""
-"如果您使用 Linux，则*必须*使用操作系统提供的系统 Python。您可以使用非系统 "
-"Python 完成本教程的*大部分*内容，但是您无法将应用程序打包发布给他人。"
+"如果您使用 Linux，则必须使用操作系统提供的系统 Python。您可以使用非系统 "
+"Python 完成本教程的大部分内容，但是您无法将应用程序打包发布给他人。"
 
 #: ../../tutorial/tutorial-0.rst:82 25ba6833ad3b4dd4b00482afe4442e10
 msgid "Install dependencies"
@@ -153,7 +153,7 @@ msgstr "**Fedora**"
 
 #: ../../tutorial/tutorial-0.rst:120 92194d7157d442668823ddfc9f2d8081
 msgid "**Arch / Manjaro**"
-msgstr "**Arch与Manjaro**"
+msgstr "**Arch 或 Manjaro**"
 
 #: ../../tutorial/tutorial-0.rst:126 bf5b8589ad994659a0a51177890f46e4
 msgid "**OpenSUSE Tumbleweed**"
