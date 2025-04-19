@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-15 18:36+0000\n"
-"PO-Revision-Date: 2025-04-05 09:03+0000\n"
-"Last-Translator: gmkeebiy <gmkeebiy@sharklasers.com>\n"
+"PO-Revision-Date: 2025-04-19 07:03+0000\n"
+"Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/tutorial-5/android/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.11-dev\n"
+"X-Generator: Weblate 5.11.1-dev\n"
 "Generated-By: Babel 2.15.0\n"
 
 #: ../../tutorial/tutorial-5/android.rst:3 0c8022a37bc54e75934ef0d847922f92
@@ -47,7 +47,7 @@ msgstr "首先，运行 ``create`` 命令。这会下载一个 Android 应用程
 #: 9844f44508514a93abe75c4320bb5c2a c0b6a27069b7458682ca75d8dea61696
 #: d7af72ee0a994766bcfdf716a55f764c
 msgid "macOS"
-msgstr "MacOS"
+msgstr "macOS"
 
 #: ../../tutorial/tutorial-5/android.rst:48
 #: ../../tutorial/tutorial-5/android.rst:136
