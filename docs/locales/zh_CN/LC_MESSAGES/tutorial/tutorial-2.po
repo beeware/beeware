@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-26 02:31+0000\n"
-"PO-Revision-Date: 2025-04-19 14:07+0000\n"
+"PO-Revision-Date: 2025-04-20 04:04+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/tutorial-2/zh_Hans/>\n"
@@ -21,7 +21,10 @@ msgstr "教程 2 - 使之更有趣"
 
 #: ../../tutorial/tutorial-2.rst:5 80ac1f82dfb4448dbdec95f31dbdb4dc
 msgid "In :doc:`Tutorial 1 <tutorial-1>`, we generated a stub project that was able to run, but we didn't write any code ourselves. Let's take a look at what was generated for us."
-msgstr "在 :doc:`Tutorial 1<tutorial-1>` 中，我们生成了一个可以运行的基础项目，但我们自己并没有编写任何代码。让我们看看为我们生成了什么。"
+msgstr ""
+"在 :doc:`教程 1<tutorial-1>` "
+"中，我们生成了一个可以运行的基础项目，但我们自己并没有编写任何代码。让我们看"
+"看为我们生成了什么。"
 
 #: ../../tutorial/tutorial-2.rst:10 347feaefbfb64f7f8d081395cdab983b
 msgid "What was generated"
@@ -29,11 +32,16 @@ msgstr "生成的内容"
 
 #: ../../tutorial/tutorial-2.rst:12 16c33a6974cd45cc82742e595617280e
 msgid "In the ``src/helloworld`` directory, you should see 3 files: ``__init__.py``, ``__main__.py`` and ``app.py``."
-msgstr "在 ``src/helloworld`` 目录中，你应该看到 3 个文件：__init__.py``、__main__.py`` 和 `app.py``。"
+msgstr ""
+"在 ``src/helloworld`` 目录中，你应该看到 3 "
+"个文件：``__init__.py``、``__main__.py`` 和 ``app.py``。"
 
 #: ../../tutorial/tutorial-2.rst:15 2cddcf5692234dc986c68120c61f4e45
 msgid "``__init__.py`` marks the ``helloworld`` directory as an importable Python module. It is an empty file; the very fact it exists tells the Python interpreter that the ``helloworld`` directory defines a module."
-msgstr "`__init__.py`` 将 ``helloworld`` 目录标记为可导入的 Python 模块。这是一个空文件；它的存在告诉 Python 解释器 helloworld 目录定义了一个模块。"
+msgstr ""
+"``__init__.py`` 将 ``helloworld`` 目录标记为可导入的 Python "
+"模块。这是一个空文件；它的存在告诉 Python 解释器 helloworld "
+"目录定义了一个模块。"
 
 #: ../../tutorial/tutorial-2.rst:19 bbc9a21b3e36472190b22b16da212ade
 msgid "``__main__.py`` marks the ``helloworld`` module as a special kind of module - an executable module. If you try to run the ``helloworld`` module using ``python -m helloworld``, the ``__main__.py`` file is where Python will start executing. The contents of ``__main__.py`` is relatively simple::"
@@ -44,7 +52,10 @@ msgstr ""
 
 #: ../../tutorial/tutorial-2.rst:29 f4fcb9ec1030420a8623907fc13eb431
 msgid "That is - it imports the ``main`` method from the ``helloworld`` app; and if it's being executed as an entry point, calls the main() method, and starts the application's main loop. The main loop is the way a GUI application listens for user input (like mouse clicks and keyboard presses)."
-msgstr "也就是说，它从 ``helloworld`` 应用程序中导入 ``main`` 方法；如果它作为入口点执行，则调用 main() 方法，并启动应用程序的主循环。主循环是 GUI 应用程序监听用户输入（如鼠标点击和键盘按下）的方式。"
+msgstr ""
+"也就是说，它从 ``helloworld`` 应用程序中导入 ``main`` "
+"方法；如果它作为入口点执行，则调用 main() 方法，并启动应用程序的主循环。"
+"主循环是 GUI 应用程序监听用户输入（如鼠标点击和键盘按下）的方式。"
 
 #: ../../tutorial/tutorial-2.rst:34 2bbb9f825e8741939346e378281e9a20
 msgid "The more interesting file is ``app.py`` - this contains the logic that creates our application window::"
@@ -80,7 +91,7 @@ msgstr "在这个应用程序中，我们定义了一个单独的空盒子 (我�
 
 #: ../../tutorial/tutorial-2.rst:83 1e7bd76a8a1f44b7bb512eaf7064f4e0
 msgid "Next, we define a window into which we can put this empty box::"
-msgstr "接下来，我们定义一个窗口，并将这个空盒子放入其中::"
+msgstr "接下来，我们定义一个可以将这个空盒子放入其中的窗口::"
 
 #: ../../tutorial/tutorial-2.rst:87 c0c3db99dc824f9fb97c04a5ca7f970c
 msgid "This creates an instance of a ``toga.MainWindow``, which will have a title matching the application's name. A Main Window is a special kind of window in Toga - it's a window that is closely bound to the life cycle of the app. When the Main Window is closed, the application exits. The Main Window is also the window that has the application's menu (if you're on a platform like Windows where menu bars are part of the window)."
@@ -93,7 +104,7 @@ msgstr ""
 
 #: ../../tutorial/tutorial-2.rst:94 63afc2b22c1d4390b2e65626dd437411
 msgid "Where is my window?"
-msgstr "应用程序窗口怎么没出现？"
+msgstr "我的窗口怎么没有出现？"
 
 #: ../../tutorial/tutorial-2.rst:96 ca11be974bbb4d95b15e2dceb4d8ffb9
 msgid "If you have made an error in your code, the main window of the app may not display. If this happens, you can type **Ctrl+C** in the terminal where you started the app. This will stop the app. You can then fix the error and restart the app."
@@ -124,7 +135,7 @@ msgstr "添加一些我们自己的内容"
 
 #: ../../tutorial/tutorial-2.rst:122 ff662ae79a0f494f91762af10382c936
 msgid "Lets do something more interesting with our ``HelloWorld`` app."
-msgstr "对我们的``HelloWorld``app，做些更有意思的事吧。"
+msgstr "对我们的 ``HelloWorld`` 应用程序，做些更有意思的事吧。"
 
 #: ../../tutorial/tutorial-2.rst:126 bda8ff0a9e2a4b0e98c001f9a09ad3f8
 msgid "When you make these changes, make sure you keep the imports at the top of the file, and the ``main()`` at the bottom of the file. You only need to update the ``HelloWorld`` class."
