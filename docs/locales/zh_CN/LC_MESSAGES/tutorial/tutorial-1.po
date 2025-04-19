@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-25 04:42+0000\n"
-"PO-Revision-Date: 2025-04-19 12:23+0000\n"
+"PO-Revision-Date: 2025-04-19 14:07+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/tutorial-1/zh_Hans/>\n"
@@ -98,7 +98,6 @@ msgid "**Formal Name** - Accept the default value: ``Hello World``."
 msgstr "**Formal Name** - 接受默认值：``Hello World``。"
 
 #: ../../tutorial/tutorial-1.rst:87 badaa3cdacdf4ce6a1116997596055d1
-#, fuzzy
 msgid "**App Name** - Accept the default value: ``helloworld``."
 msgstr "**App Name** - 接受默认值：``helloworld``。"
 
@@ -125,95 +124,101 @@ msgstr "**Author** - 在此处输入您自己的名字。"
 #: ../../tutorial/tutorial-1.rst:101 d9ec2c1872c441d88388efc8d78b133f
 msgid "**Author's email** - Enter your own email address. This will be used in the configuration file, in help text, and anywhere that an email is required when submitting the app to an app store."
 msgstr ""
-"**Author Email** - "
+"**Author's Email** - "
 "输入您自己的电子邮件地址。这将用于配置文件、帮助文本以及向应用程序商店提交应"
 "用程序时需要电子邮件的任何地方。"
 
 #: ../../tutorial/tutorial-1.rst:105 c75a24c7bf47443f83970ca2c93f8e7e
-#, fuzzy
 msgid "**URL** - The URL of the landing page for your application. Again, if you own your own domain, enter a URL at that domain (including the ``https://``). Otherwise, just accept the default URL (``https://example.com/helloworld``). This URL doesn't need to actually exist (for now); it will only be used if you publish your application to an app store."
-msgstr "**URL** - 应用程序登陆页面的 URL。同样，如果您拥有自己的域名，请输入该域名的 URL（包括 ``https://``）。否则，只需接受默认 URL (``https://example.com/helloworld``)。此 URL 不需要实际存在（暂时）；只有在您将应用程序发布到应用程序商店时才会使用。"
+msgstr ""
+"**URL** - 应用程序登陆页面的 URL。同样，如果您拥有自己的域名，请输入该域名的 "
+"URL（包括 ``https://``）。否则，只需接受默认 URL (``https://example.com/"
+"helloworld``)。此 "
+"URL（暂时）不需要实际存在；只有在您将应用程序发布到应用程序商店时才会使用。"
 
 #: ../../tutorial/tutorial-1.rst:111 39ec112bff444ce6a1c72758dc0fe85c
-#, fuzzy
 msgid "**License** - Accept the default license (BSD). This won't affect anything about the operation of the tutorial, though - so if you have particularly strong feelings about license choice, feel free to choose another license."
-msgstr "**许可证** - 接受默认许可证（BSD）。但这不会影响本教程的任何操作，因此，如果您对许可证选择有特别强烈的意见，请随意选择其他许可证。"
+msgstr ""
+"**License** - "
+"接受默认许可证（BSD）。这不会影响本教程的任何操作，因此，如果您对许可证选择有"
+"特别强烈的意见，请随意选择其他许可证。"
 
 #: ../../tutorial/tutorial-1.rst:116 526447c34a0943399d11fe26d3c57e08
-#, fuzzy
 msgid "**GUI framework** - Accept the default option, Toga (BeeWare's own GUI toolkit)."
-msgstr "**图形用户界面框架** - 接受默认选项 Toga（BeeWare 自己的图形用户界面工具包）。"
+msgstr "**GUI Framework** - 接受默认选项 Toga（BeeWare 自己的图形用户界面工具包）。"
 
 #: ../../tutorial/tutorial-1.rst:119 c6d4e87c57de453099a9689a5b4ad181
-#, fuzzy
 msgid "Briefcase will then generate a project skeleton for you to use. If you've followed this tutorial so far, and accepted the defaults as described, your file system should look something like::"
-msgstr "然后，Briefcase 会生成一个项目骨架供你使用。如果你已经按照本教程学习到目前为止，并接受了所述的默认设置，那么你的文件系统应该是这样的：："
+msgstr ""
+"然后，Briefcase "
+"会生成一个项目骨架供你使用。如果你已经按照本教程学习到目前为止，并接受了所述"
+"的默认设置，那么你的文件系统应该是这样的：："
 
 #: ../../tutorial/tutorial-1.rst:143 2d003ad576a7443385baad03468c5877
-#, fuzzy
 msgid "This skeleton is actually a fully functioning application without adding anything else. The ``src`` folder contains all the code for the application, the ``tests`` folder contains an initial test suite, and the ``pyproject.toml`` file describes how to package the application for distribution. If you open ``pyproject.toml`` in an editor, you'll see the configuration details you just provided to Briefcase."
-msgstr "该骨架实际上是一个功能完备的应用程序，无需添加任何其他内容。rc \"文件夹包含应用程序的所有代码，\"tests \"文件夹包含初始测试套件，\"pyproject.toml \"文件描述了如何打包发布应用程序。如果用编辑器打开 ``pyproject.toml``，就会看到刚才提供给 Briefcase 的配置详细信息。"
+msgstr ""
+"该骨架实际上是一个功能完备的应用程序，无需添加任何其他内容。``src`` "
+"文件夹包含应用程序的所有代码，``tests``文件夹包含初始测试套件，``pyproject.to"
+"ml``文件描述了如何打包发布应用程序。如果您用编辑器打开 ``pyproject.toml``，"
+"就会看到刚才提供给 Briefcase 的配置详细信息。"
 
 #: ../../tutorial/tutorial-1.rst:150 7583f7c8aceb47db9692bf4e14a78ce5
-#, fuzzy
 msgid "Now that we have a stub application, we can use Briefcase to run the application."
-msgstr "现在我们有了一个存根应用程序，可以使用 Briefcase 来运行该应用程序。"
+msgstr "现在我们有了一个包含占位代码的应用程序，可以使用 Briefcase 来运行它。"
 
 #: ../../tutorial/tutorial-1.rst:154 85bd0282db12425c94fb343121bc29c5
-#, fuzzy
 msgid "Run the app in developer mode"
 msgstr "在开发者模式下运行应用程序"
 
 #: ../../tutorial/tutorial-1.rst:156 7a5a8612a9fe4685bff3e16559c7f7a6
-#, fuzzy
 msgid "Move into the ``helloworld`` project directory and tell briefcase to start the project in Developer (or ``dev``) mode:"
-msgstr "移动到 ``helloworld`` 项目目录，告诉公文包以开发者（或 ``dev``）模式启动项目："
+msgstr "移动到 ``helloworld`` 项目目录，告诉Briefcase以开发者（或 "
+"``dev``）模式启动项目："
 
 #: ../../tutorial/tutorial-1.rst:200 5557d5f15de84f9fbc22ff394aa4a33d
 msgid "This should open a GUI window:"
 msgstr "这将打开一个图形用户界面 (GUI) 窗口："
 
 #: ../../tutorial/tutorial-1.rst:206 cc9bd6aef2d642e9ae8ea7d097658a0c
-#, fuzzy
 msgid "Hello World Tutorial 1 window, on macOS"
-msgstr "MacOS 上的 Hello World 教程 1 窗口"
+msgstr "macOS 上的 Hello World 教程 1 窗口"
 
 #: ../../tutorial/tutorial-1.rst:212 a7b646f60b00440e9767ad694b32cae8
-#, fuzzy
 msgid "Hello World Tutorial 1 window, on Linux"
-msgstr "Hello World 教程 1 窗口，在 Linux 上"
+msgstr "在 Linux 上的 Hello World 教程 1 窗口"
 
 #: ../../tutorial/tutorial-1.rst:218 6174572a1c35408882513f813b6a48ca
-#, fuzzy
 msgid "Hello World Tutorial 1 window, on Windows"
-msgstr "Hello World 教程 1 窗口，在 Windows 上"
+msgstr "在 Windows 上的 Hello World 教程 1 窗口"
 
 #: ../../tutorial/tutorial-1.rst:222 63d3a285c14945b78c9ad05a23014159
 msgid "Invalid requirements or pip unable to connect"
-msgstr ""
+msgstr "无效的要求或 pip 无法连接"
 
 #: ../../tutorial/tutorial-1.rst:224 9baa2c0074de48b5adb38abe04786e6d
 msgid "If you encounter the error:"
-msgstr ""
+msgstr "如果遇到错误："
 
 #: ../../tutorial/tutorial-1.rst:232 a88d1c95afcf4ac99e8ac616eaa1c763
 msgid "Confirm that you are running a :ref:`version of python that this tutorial supports <install-python>`."
-msgstr ""
+msgstr "确认您在运行 :ref:`此教程支持的 Python 版本 <install-python>`。"
 
 #: ../../tutorial/tutorial-1.rst:235 7b74242c04014123a7e2b291fedd8acc
 msgid "If your version of python is *not* a supported version, you will have to restart the tutorial."
-msgstr ""
+msgstr "如果您的 Python 版本不被支持，则需重新开始本教程。"
 
 #: ../../tutorial/tutorial-1.rst:238 bcb6948ed53e4648af4395bff9e3065c
-#, fuzzy
 msgid "Press the close button (or select Quit from the application's menu), and you're done! Congratulations - you've just written a standalone, native application in Python!"
-msgstr "按下关闭按钮（或从应用程序菜单中选择 \"退出\"），就大功告成了！恭喜 - 你刚刚用 Python 编写了一个独立的本地应用程序！"
+msgstr "按下关闭按钮（或从应用程序菜单中选择 \"退出\"），就大功告成了！恭喜 - "
+"你刚刚用 Python 编写了一个独立的原生应用程序！"
 
 #: ../../tutorial/tutorial-1.rst:243 8821a8c57e6e45949c39c865b2d310d1
 msgid "Next steps"
 msgstr "下一步"
 
 #: ../../tutorial/tutorial-1.rst:245 7e4f097c4a07434190758409201fd499
-#, fuzzy
 msgid "We now have a working application, running in developer mode. Now we can add some logic of our own to make our application do something a little more interesting. In :doc:`Tutorial 2 <tutorial-2>`, we'll put a more useful user interface onto our application."
-msgstr "现在，我们有了一个在开发者模式下运行的应用程序。现在我们可以添加一些自己的逻辑，让应用程序做一些更有趣的事情。在 :doc:`Tutorial 2<tutorial-2>` 中，我们将为应用程序添加一个更有用的用户界面。"
+msgstr ""
+"现在，我们有了一个在开发者模式下运行的应用程序。现在我们可以添加一些自己的逻"
+"辑，让应用程序做更有趣一些的事情。在 :doc:`Tutorial 2<tutorial-2>` "
+"中，我们将为应用程序添加一个更有用的用户界面。"
