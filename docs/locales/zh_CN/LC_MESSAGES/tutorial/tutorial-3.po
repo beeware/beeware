@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-21 20:05+0000\n"
-"PO-Revision-Date: 2025-04-05 09:03+0000\n"
-"Last-Translator: gmkeebiy <gmkeebiy@sharklasers.com>\n"
+"PO-Revision-Date: 2025-04-19 07:03+0000\n"
+"Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/tutorial-3/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.11-dev\n"
+"X-Generator: Weblate 5.11.1-dev\n"
 "Generated-By: Babel 2.15.0\n"
 
 #: ../../tutorial/tutorial-3.rst:3 783cd122e9b5462ab3aad6e7560ec9be
@@ -47,7 +47,7 @@ msgstr "由于这是第一次打包应用程序，我们需要创建一些配置
 #: 45c1f1cb688247dca8911bc5620af87c 6157a848e6f0463d809d09d4dff9dfcb
 #: 76dfcb48f286471ea44f4cdbe35bf7df cef00bb6b55d45cd8f3fa1c9638b0863
 msgid "macOS"
-msgstr "MacOS"
+msgstr "macOS"
 
 #: ../../tutorial/tutorial-3.rst:52 ../../tutorial/tutorial-3.rst:207
 #: ../../tutorial/tutorial-3.rst:291 ../../tutorial/tutorial-3.rst:411
