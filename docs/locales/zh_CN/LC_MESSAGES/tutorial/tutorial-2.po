@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-26 02:31+0000\n"
-"PO-Revision-Date: 2025-04-05 09:03+0000\n"
-"Last-Translator: gmkeebiy <gmkeebiy@sharklasers.com>\n"
+"PO-Revision-Date: 2025-04-19 07:03+0000\n"
+"Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/tutorial-2/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.11-dev\n"
+"X-Generator: Weblate 5.11.1-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../tutorial/tutorial-2.rst:3 ca4261e59af84584a2231a79a22d7220
@@ -209,7 +209,7 @@ msgstr "现在我们已经做了这些更改，我们可以通过再次启动应
 #: ../../tutorial/tutorial-2.rst:245 ../../tutorial/tutorial-2.rst:282
 #: 04f5136594814270aea78d6387d8a8e8 11b87e4214654260a0b9708dc9f85f1d
 msgid "macOS"
-msgstr "MacOS"
+msgstr "macOS"
 
 #: ../../tutorial/tutorial-2.rst:254 ../../tutorial/tutorial-2.rst:288
 #: 2beda043645d400cbab33ab4685d9268 a2c756d9aa7b41508acac99a839b5070
