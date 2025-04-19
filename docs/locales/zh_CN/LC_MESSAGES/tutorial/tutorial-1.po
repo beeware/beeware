@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-25 04:42+0000\n"
-"PO-Revision-Date: 2025-04-05 09:03+0000\n"
-"Last-Translator: gmkeebiy <gmkeebiy@sharklasers.com>\n"
+"PO-Revision-Date: 2025-04-19 07:03+0000\n"
+"Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/tutorial-1/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.11-dev\n"
+"X-Generator: Weblate 5.11.1-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../tutorial/tutorial-1.rst:3 77807d44e41947f19b2ec5ab79cfa4e4
@@ -40,7 +40,7 @@ msgstr "首先，我们需要安装**Briefcase**。Briefcase是一款BeeWare工�
 #: 142f221bbe514cf0bc2bbfb8195aae99 20c7002a359c46ce98778d52a14d9760
 #: 9ae2848912a54024b5ffc9584f7f27ac a2efd31bf7eb46a193abcddf23ccf39c
 msgid "macOS"
-msgstr "MacOS"
+msgstr "macOS"
 
 #: ../../tutorial/tutorial-1.rst:24 ../../tutorial/tutorial-1.rst:70
 #: ../../tutorial/tutorial-1.rst:174 ../../tutorial/tutorial-1.rst:210
