@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-26 02:31+0000\n"
-"PO-Revision-Date: 2025-04-19 07:03+0000\n"
+"PO-Revision-Date: 2025-04-19 14:07+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/tutorial-2/zh_Hans/>\n"
@@ -127,9 +127,10 @@ msgid "Lets do something more interesting with our ``HelloWorld`` app."
 msgstr "对我们的``HelloWorld``app，做些更有意思的事吧。"
 
 #: ../../tutorial/tutorial-2.rst:126 bda8ff0a9e2a4b0e98c001f9a09ad3f8
-#, fuzzy
 msgid "When you make these changes, make sure you keep the imports at the top of the file, and the ``main()`` at the bottom of the file. You only need to update the ``HelloWorld`` class."
-msgstr "不要删除 app.py 文件顶部的导入 (import)，也不要删除底部的 ``main()``。您只需更新 ``HelloWorld`` 类。"
+msgstr ""
+"在做这些更改时，确保不要删除文件顶部的导入 (imports)，也不要删除底部的 "
+"``main()``。您只需更新 ``HelloWorld`` 类。"
 
 #: ../../tutorial/tutorial-2.rst:130 efab8d0d4e3044b0a80ab86f9f7ff12d
 msgid "Modify your ``HelloWorld`` class inside ``src/helloworld/app.py`` so that it looks like this::"
