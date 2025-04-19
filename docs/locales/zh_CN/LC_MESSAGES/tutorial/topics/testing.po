@@ -1,17 +1,18 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-29 10:14+0800\n"
-"PO-Revision-Date: 2024-01-13 02:06+0000\n"
-"Last-Translator: Sheep Cat <xymsyh@gmail.com>\n"
+"PO-Revision-Date: 2025-04-19 07:03+0000\n"
+"Last-Translator: John <johnzhou721@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/beeware/tutorial/topics/testing/zh_Hans/>\n"
 "Language: zh_CN\n"
-"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-9/zh_Hans/>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.11.1-dev\n"
 "Generated-By: Babel 2.15.0\n"
 
 #: ../../tutorial/topics/testing.rst:3 93773728f8c54ddb87420111aeed2ad4
@@ -50,7 +51,7 @@ msgstr "我们可以使用 ``briefcase dev`` 的 ``--test`` 选项来运行这�
 #: 44922990ed9145e9851f611612bb4958 6b8ed72bdb45403c8514d0b0fb1c707c
 #: 75cda337703e4d9e82200b55a7dc93e6 f285a2fb7b4243cab92c587103782fea
 msgid "macOS"
-msgstr "MacOS"
+msgstr "macOS"
 
 #: ../../tutorial/topics/testing.rst:57 ../../tutorial/topics/testing.rst:156
 #: ../../tutorial/topics/testing.rst:241 ../../tutorial/topics/testing.rst:344
@@ -157,4 +158,3 @@ msgstr "你也可以在移动后端使用 ``--test`` 选项：因此 ``briefcase
 
 #~ msgid "Next steps"
 #~ msgstr "下一步"
-
