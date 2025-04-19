@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-26 02:31+0000\n"
-"PO-Revision-Date: 2025-04-05 09:03+0000\n"
-"Last-Translator: gmkeebiy <gmkeebiy@sharklasers.com>\n"
+"PO-Revision-Date: 2025-04-19 07:03+0000\n"
+"Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/topics/custom-icons/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.11-dev\n"
+"X-Generator: Weblate 5.11.1-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../tutorial/topics/custom-icons.rst:3 0f00261c74614f5094810568936c5dbb
@@ -50,7 +50,7 @@ msgstr ""
 #: ../../tutorial/topics/custom-icons.rst:379 061acec9d6184d65a6704159e4257f94
 #: 2eacfb894c044a0c8dae83ecd8f317b9 c357cea899ae4f7b8deb704799a59b48
 msgid "macOS"
-msgstr "MacOS"
+msgstr "macOS"
 
 #: ../../tutorial/topics/custom-icons.rst:53
 #: ../../tutorial/topics/custom-icons.rst:227
