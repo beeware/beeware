@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-20 10:21+0000\n"
-"PO-Revision-Date: 2025-04-20 22:01+0000\n"
+"PO-Revision-Date: 2025-04-21 03:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/tutorial-2/zh_Hans/>\n"
@@ -21,7 +21,10 @@ msgstr "教程 2 - 使之更有趣"
 
 #: ../../tutorial/tutorial-2.rst:5 ea360f6e605d4ac291cc322f62dba623
 msgid "In :doc:`Tutorial 1 <tutorial-1>`, we generated a stub project that was able to run, but we didn't write any code ourselves. Let's take a look at what was generated for us."
-msgstr "在 :doc:`教程 1<tutorial-1>` 中，我们生成了一个可以运行的基础项目，但我们自己并没有编写任何代码。让我们看看为我们生成了什么。"
+msgstr ""
+"在 :doc:`教程 1<tutorial-1>` "
+"中，我们生成了一个可以运行的基础项目，但我们自己并没有编写任何代码。"
+"让我们看看 Briefcase 为我们生成了什么。"
 
 #: ../../tutorial/tutorial-2.rst:10 1ea3bcb10fdc4ace818b5538db1a61ab
 msgid "What was generated"
@@ -92,7 +95,10 @@ msgstr "我的窗口怎么没有出现？"
 
 #: ../../tutorial/tutorial-2.rst:96 21b1415d4de54c2b993aba58564bba75
 msgid "If you have made an error in your code, the main window of the app may not display. If this happens, you can type **Ctrl+C** in the terminal where you started the app. This will stop the app. You can then fix the error and restart the app."
-msgstr "如果你写的代码中有错误，app的主窗口可能不会显示。要是真这样了，你可以找到先前启动app的终端窗口，并在其中按下**Ctrl + C**，以终止app运行。之后，你就可以修改代码里的错误，再重启app。"
+msgstr ""
+"如果你写的代码中有错误，app的主窗口可能不会显示。要是真这样了，你可以找到先前"
+"启动app的终端窗口，并在其中按下\\ **Ctrl + "
+"C**，以终止app运行。之后，你就可以修改代码里的错误，再重启app。"
 
 #: ../../tutorial/tutorial-2.rst:100 d1fe8c4e13764602beb2bc5b8f402ecb
 msgid "We then add our empty box as the content of the main window, and instruct the application to show our window::"
@@ -108,7 +114,9 @@ msgstr "这个 ``main()`` 方法由 ``__main__.py`` 导入并调用。它创建�
 
 #: ../../tutorial/tutorial-2.rst:116 0d4438f6eeb6478e9c211279f2ba5d5d
 msgid "That's the simplest possible Toga application. Let's put some of our own content into the application, and make the app do something interesting."
-msgstr "这是最简单的可能的 Toga 应用程序。接下来让我们在应用程序中加入一些自己的内容，使应用程序做一些有趣的事情。"
+msgstr "这是最简单可能的 Toga "
+"应用程序。接下来，让我们在应用程序中加入一些我们自己的内容，使应用程序做一些"
+"有趣的事情。"
 
 #: ../../tutorial/tutorial-2.rst:120 fe5cd3bc3e884153a3b6cdf02dee9c09
 msgid "Adding some content of our own"
@@ -136,7 +144,14 @@ msgstr "我们仍然在创建一个主盒子；然而，现在我们正在应用
 
 #: ../../tutorial/tutorial-2.rst:170 349c39a670e14df7951de7696d34c543
 msgid "Toga's built-in layout system is called \"Pack\". It behaves a lot like CSS. You define objects in a hierarchy - in HTML, the objects are ``<div>``, ``<span>``, and other DOM elements; in Toga, they're widgets and boxes. You can then assign styles to the individual elements. In this case, we're indicating that this is a ``COLUMN`` box - that is, it is a box that will consume all the available width, and will expand its height as content is added, but it will try to be as short as possible."
-msgstr "Toga 的内置布局系统称为 \"Pack\" (包)。它的行为很像 CSS (Cascading Style Sheets 层叠样式表)。你可以在一个层次结构中定义对象--在 HTML 中，对象是 ``<div>`` (division 块级容器)、``<span>`` (inline span 内联容器) 和其他 DOM 元素 (Document Object Model 文档对象模型)；在 Toga 中，对象是部件 (widgets ) 和盒子 (boxes)。然后，您可以为各个元素指定样式。在本例中，我们表示这是一个 ``COLUMN`` (垂直) 框，也就是说，它是一个将占用所有可用宽度 (width) 的框，并会随着内容的添加而扩大高度 (height)，但会尽量使高度更短。"
+msgstr ""
+"Toga 的内置布局系统称为 \"Pack\" (包)。它的行为很像 CSS (Cascading Style "
+"Sheets 层叠样式表)。你可以在一个层次结构中定义对象--在 HTML 中，对象是 "
+"``<div>`` (division 块级容器)、``<span>`` (inline span 内联容器) 和其他 DOM ("
+"Document Object Model 文档对象模型) 元素；在 Toga 中，对象是部件 (widgets ) "
+"和盒子 (boxes)。然后，您可以为各个元素指定样式。在本例中，我们表示这是一个 "
+"``COLUMN`` (垂直) 框，也就是说，它是一个将占用所有可用宽度 (width) 的框，"
+"并会随着内容的添加而扩大高度 (height)，但会尽量使高度更短。"
 
 #: ../../tutorial/tutorial-2.rst:177 99ed12a14f154fe08b41a8d1a2c99937
 msgid "Next, we define a couple of widgets::"
@@ -144,11 +159,16 @@ msgstr "接下来，我们定义了一些小部件::"
 
 #: ../../tutorial/tutorial-2.rst:185 e612789e08c94383ad88333cfb8ab546
 msgid "Here, we define a Label and a TextInput. Both widgets have styles associated with them; the label will have 5px of padding on its left and right, and no padding on the top and bottom. The TextInput is marked as being flexible - that is, it will absorb all available space in its layout axis."
-msgstr "在这里，我们定义了一个标签 (toga.Label) 和一个文本输入框 (toga.TextInput)。这两个小部件都有相关的样式；标签左右各有 5px 的填充，上下没有填充 (padding=(0, 5)。文本输入框被标记为灵活的 (flex=1)——也就是说，它将吸收其布局横向方向上所有可用的空间。"
+msgstr ""
+"在这里，我们定义了一个标签 (Label) 和一个文本输入框 "
+"(TextInput)。这两个小部件都有与其相关的样式；标签左右会各有 5px "
+"的填充，上下没有填充。文本输入框是被标记为灵活的——也就是说，它将吸收其布局方"
+"向上所有可用的空间。"
 
 #: ../../tutorial/tutorial-2.rst:190 2a3f1fadac9949daa27fa7569949bb33
 msgid "The TextInput is assigned as an instance variable of the class. This gives us easy access to the widget instance - something that we'll use in a moment."
-msgstr "文本输入框被分配为类的实例变量 (self.name_input)。这使我们能够轻松访问小部件 (widget) 实例 - 这是我们马上就会使用的东西。"
+msgstr "文本输入框 (TextInput) 被分配为类的实例变量。这使我们能够轻松访问小部件 "
+"(widget) 实例 - 这是我们马上就会使用的东西。"
 
 #: ../../tutorial/tutorial-2.rst:193 5d9b688f119c41eba0532daa020f5d9a
 msgid "Next, we define a box to hold these two widgets::"
@@ -156,19 +176,23 @@ msgstr "接下来，我们定义了一个盒子来容纳这两个小部件::"
 
 #: ../../tutorial/tutorial-2.rst:199 2cc569e358f849e4b819627ffb0540fb
 msgid "The ``name_box`` is a box just like the main box; however, this time, it's a ``ROW`` box. That means content will be added horizontally, and it will try to make its width as narrow as possible. The box also has some padding - 5px on all sides."
-msgstr "``name_box`` 就像主盒子一样；然而，这次它是一个 ``ROW`` (水平) 盒子。这意味着内容将水平添加，并且它会尽量使其宽度尽可能窄 (以确保屏幕横向方向能容纳下整个水平盒子)。盒子也有一些空白填充 (以提高可读性)——四周各为 5px。"
+msgstr ""
+"``name_box`` 就像主盒子一样；然而，这次它是一个 ``ROW`` (水平) "
+"盒子。这意味着内容将会被水平添加，并且它会尽量使其宽度尽可能窄。盒子也有一些"
+"空白填充——四周各为 5px。"
 
 #: ../../tutorial/tutorial-2.rst:204 ef2145b7abfb4b3ebfea461ee52ccd5d
 msgid "Now we define a button::"
-msgstr "现在我们定义了一个按钮::"
+msgstr "现在，我们定义一个按钮::"
 
 #: ../../tutorial/tutorial-2.rst:212 9768899641a643f7977f4d5e87e6ade3
 msgid "The button also has 5px of padding on all sides. We also define a *handler* - a method to invoke when the button is pressed."
-msgstr "按钮的四周也有 5px 的填充。我们还定义了一个*处理程序* (handler)——当按钮被按下时要调用的方法 (on_press=self.say_hello)。"
+msgstr "按钮的四周也有 5px 的填充。我们还定义了一个\\ **处理程序** "
+"(handler)——当按钮被按下时要调用的方法。"
 
 #: ../../tutorial/tutorial-2.rst:215 f773fa78bdd44142afe3d2ccc3c8a713
 msgid "Then, we add the name box and the button to the main box::"
-msgstr "然后，我们将名称盒子和按钮添加到主盒子中::"
+msgstr "然后，我们将 name box 和按钮添加到主盒子中::"
 
 #: ../../tutorial/tutorial-2.rst:220 ff18f90da2934e7dbe95556703e4446a
 msgid "This completes our layout; the rest of the startup method is as it was previously - defining a ``MainWindow``, and assigning the main box as the window's content::"
@@ -176,11 +200,15 @@ msgstr "这完成了我们的布局；其余的 startup 方法与以前一样 - 
 
 #: ../../tutorial/tutorial-2.rst:228 7b8a0afceb8745b3a42863d5a30f20d7
 msgid "The last thing we need to do is define the handler for the button. A handler can be any method, generator, or asynchronous coroutine; it accepts the widget that generated the event as an argument, and will be invoked whenever the button is pressed::"
-msgstr "我们需要做的最后一件事，就是定义按钮的处理器，它可以是任何方法、生成器或异步协程，且接受生成事件的小部件 (widget ) 作为参数。只要按下按钮，就会调用这些处理器::"
+msgstr ""
+"我们需要做的最后一件事，就是定义按钮的处理器——它可以是任何方法、生成器或异步"
+"协程，且接受生成事件的小部件 (widget) "
+"作为参数。只要按下按钮，就会调用这些处理器::"
 
 #: ../../tutorial/tutorial-2.rst:236 022a3ae765a04155ac71de2ecd2a3d79
 msgid "The body of the method is a simple print statement - however, it will interrogate the current value of the name input, and use that content as the text that is printed."
-msgstr "方法的主体是一个简单的打印语句——然而，它会使用名称输入的当前值 (self.name_input.value)，并使用该内容作为打印的文本。"
+msgstr "方法的主体是一个简单的打印语句——然而，它会使用名称输入的当前值，并使用该内容"
+"作为打印的文本。"
 
 #: ../../tutorial/tutorial-2.rst:240 547edabadc824870944aedaa2d693ca4
 msgid "Now that we've made these changes we can see what they look like by starting the application again. As before, we'll use developer mode:"
@@ -203,7 +231,11 @@ msgstr "Windows"
 
 #: ../../tutorial/tutorial-2.rst:272 b2eba356f51a406b8b31266cacec588a
 msgid "You'll notice that this time, it *doesn't* install dependencies. Briefcase can detect that the application has been run before, and to save time, will only run the application. If you add new dependencies to your app, you can make sure that they're installed by passing in a ``-r`` option when you run ``briefcase dev``."
-msgstr "你会注意到，这次它*没有*安装依赖项。Briefcase可以检测到应用程序已经运行过，为了节省时间，它只会运行应用程序。如果你在应用程序中添加了新的依赖项，你可以在运行 ``briefcase dev`` 时通过 ``-r`` 选项来确保它们被安装。"
+msgstr ""
+"你会注意到，这次它\\ *没有*\\ 安装依赖项。Briefcase "
+"可以检测到应用程序已经运行过，为了节省时间，它只会运行应用程序。如果你在应用"
+"程序中添加了新的依赖项，你可以在运行 ``briefcase dev`` 时通过 ``-r`` "
+"选项来确保它们被安装。"
 
 #: ../../tutorial/tutorial-2.rst:278 6dc96170a4f940db8e43d6c6281068e1
 msgid "This should open a GUI window:"
@@ -211,19 +243,20 @@ msgstr "这将打开一个图形用户界面 (GUI) 窗口："
 
 #: ../../tutorial/tutorial-2.rst:284 f79ff490fd034da1837621dc52547233
 msgid "Hello World Tutorial 2 window, on macOS"
-msgstr "Hello World 教程 2 窗，在 MacOS 上"
+msgstr "在 MacOS 上的 Hello World 教程 2 窗口"
 
 #: ../../tutorial/tutorial-2.rst:290 c33d1159ff2743ab8acbf2076f40a990
 msgid "Hello World Tutorial 2 window, on Linux"
-msgstr "Hello World 教程 2 窗口，在 Linux 上"
+msgstr "在 Linux 上的 Hello World 教程 2 窗口"
 
 #: ../../tutorial/tutorial-2.rst:296 a810ce956e1341de85c35f78bc930f6f
 msgid "Hello World Tutorial 2 window, on Windows"
-msgstr "Hello World 教程 2 窗口，在 Windows 上"
+msgstr "在 Windows 上的 Hello World 教程 2 窗口"
 
 #: ../../tutorial/tutorial-2.rst:300 7ddb379caedf438485a9150d323eb825
 msgid "If you enter a name in the text box, and press the GUI button, you should see output appear in the console where you started the application."
-msgstr "如果在文本框中输入名称并按下 GUI 按钮，就会在启动程序的控制台中看到输出结果。"
+msgstr "如果在文本框中输入名称，并按下图形用户界面中的按钮，就会在启动程序的控制台中"
+"看到输出结果。"
 
 #: ../../tutorial/tutorial-2.rst:304 216bfcbc43844c7da05c1951ab660e35
 msgid "Next steps"
@@ -232,7 +265,7 @@ msgstr "下一步"
 #: ../../tutorial/tutorial-2.rst:306 899eead23fe645f5ba9e08d42fb32788
 msgid "We've now got an application that does something a little more interesting. But it only runs on our own computer. Let's package this application for distribution. In :doc:`Tutorial 3 <tutorial-3>`, we'll wrap our application up as a standalone installer that we could send to a friend, a customer, or upload to an App Store."
 msgstr ""
-"我们现在有了一个做一些更有趣的事情的应用程序。但它只能在我们自己的电脑上运行"
-"。让我们将这个应用程序打包以供分发。在 :doc:`教程3<tutorial-3>` "
-"中，我们将把应用程序打包成一个独立的安装程序，我们可以发送给朋友、客户，或上"
-"传到应用商店。"
+"我们现在有了一个做一些更有趣的事情的应用程序，但它只能在我们自己的电脑上运行"
+"。让我们将这个应用程序打包，以供分发。在 :doc:`教程3<tutorial-3>` "
+"中，我们将把应用程序打包成一个独立的安装程序，以供发送给朋友、客户，或上传到"
+"应用商店。"
