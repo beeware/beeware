@@ -8,14 +8,16 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-20 10:21+0000\n"
-"PO-Revision-Date: 2024-04-11 17:01+0000\n"
-"Last-Translator: sus <jeffpeng2012@gmail.com>\n"
+"PO-Revision-Date: 2025-04-20 22:01+0000\n"
+"Last-Translator: John <johnzhou721@gmail.com>\n"
+"Language-Team: Chinese (Traditional Han script) <https://hosted.weblate.org/"
+"projects/beeware/tutorial/tutorial-2/zh_Hant/>\n"
 "Language: zh_TW\n"
-"Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-2/zh_Hant/>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.11.1-dev\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../tutorial/tutorial-2.rst:3 0e0bf46fc8934c8289687ee0acc89ee0
@@ -117,9 +119,8 @@ msgid "We then add our empty box as the content of the main window, and instruct
 msgstr "然後，我們添加空框作為主視窗的內容，並指示應用程式顯示我們的視窗::"
 
 #: ../../tutorial/tutorial-2.rst:106 59ffbe34dfb5421db3a913da05198094
-#, fuzzy
 msgid "Last of all, we define a ``main()`` function. This is what creates the instance of our application::"
-msgstr "最後，我們定義一個``main()``方法。這就是創建我們的應用程式實例的原因："
+msgstr "最後，我們定義一個``main()``方法。這就是創建我們的應用程式實例的原因::"
 
 #: ../../tutorial/tutorial-2.rst:112 09f565f6763b41bc90d066e889378a1f
 #, fuzzy
@@ -166,9 +167,8 @@ msgid "Toga's built-in layout system is called \"Pack\". It behaves a lot like C
 msgstr "Toga 的內建佈局系統稱為``Pack``。它的行為很像 CSS。您可以在層次結構中定義物件 - 在 HTML 中，物件是``<div>``、`` <span>`` 和其他 DOM 元素；在 Toga 中，它們是小部件和盒子。然後，您可以為各個元素指定樣式。在這種情況下，我們表明這是一個``COLUMN``框 - 也就是說，它是一個將消耗所有可用寬度的框，並且會在添加內容時擴展其高度，但它會嘗試盡可能短。</span>"
 
 #: ../../tutorial/tutorial-2.rst:177 99ed12a14f154fe08b41a8d1a2c99937
-#, fuzzy
 msgid "Next, we define a couple of widgets::"
-msgstr "接下來，我們定義幾個小工具：："
+msgstr "接下來，我們定義幾個小工具::"
 
 #: ../../tutorial/tutorial-2.rst:185 e612789e08c94383ad88333cfb8ab546
 #, fuzzy
@@ -280,4 +280,3 @@ msgstr "我們現在有了一個可以做一些更有趣的事情的應用程式
 
 #~ msgid "Lets do something more interesting with our ``HelloWorld`` app."
 #~ msgstr ""
-
