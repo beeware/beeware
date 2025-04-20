@@ -119,7 +119,7 @@ content into the application, and make the app do something interesting.
 Adding some content of our own
 ==============================
 
-Lets do something more interesting with our ``HelloWorld`` app.
+Let's do something more interesting with our ``HelloWorld`` app.
 
 .. note::
 
