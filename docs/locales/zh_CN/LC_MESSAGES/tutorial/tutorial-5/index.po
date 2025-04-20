@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-29 08:28+0800\n"
-"PO-Revision-Date: 2024-11-09 14:00+0000\n"
-"Last-Translator: gmkeebiy <gmkeebiy@sharklasers.com>\n"
+"PO-Revision-Date: 2025-04-20 22:01+0000\n"
+"Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/tutorial-5/index/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -12,36 +12,31 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.8.2\n"
+"X-Generator: Weblate 5.11.1-dev\n"
 "Generated-By: Babel 2.15.0\n"
 
 #: ../../tutorial/tutorial-5/index.rst:3 8c68ab9c8ff7429ca96e0399e5cad55e
-#, fuzzy
 msgid "Tutorial 5 - Taking it Mobile"
-msgstr "教程 5 - 移动操作"
+msgstr "教程 5 - 在移动设备上"
 
 #: ../../tutorial/tutorial-5/index.rst:5 2d040dc841a146aab85bdc91f1e0609d
-#, fuzzy
 msgid "So far, we've been running and testing our application on the desktop. However, BeeWare also supports mobile platforms - and the application we've written can be deployed to your mobile device, too!"
-msgstr "到目前为止，我们一直在台式机上运行和测试应用程序。不过，BeeWare同样支持移动平台，我们编写的应用程序也可以部署到您的移动设备上！"
+msgstr "到目前为止，我们一直在电脑上运行和测试应用程序。不过，BeeWare "
+"同样支持移动平台，我们编写的应用程序也可以部署到您的移动设备上！"
 
 #: ../../tutorial/tutorial-5/index.rst:11 1bf983269a09430e82521832260c1640
-#, fuzzy
 msgid "iOS"
 msgstr "iOS"
 
 #: ../../tutorial/tutorial-5/index.rst:13 b2fed2f49162428da667f45bdc9b0a99
-#, fuzzy
 msgid "iOS applications can only be compiled on macOS."
 msgstr "iOS 应用程序只能在 macOS 上编译。"
 
 #: ../../tutorial/tutorial-5/index.rst:15 2bd2dc6e71d44841a061014bd467413d
-#, fuzzy
 msgid "Android"
 msgstr "Android"
 
 #: ../../tutorial/tutorial-5/index.rst:17 559a4990f039485ea1c5785fd48e8a27
-#, fuzzy
 msgid "Android applications can be compiled on macOS, Windows or Linux."
 msgstr "安卓应用程序可在 macOS、Windows 或 Linux 上编译。"
 
