@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-21 20:05+0000\n"
-"PO-Revision-Date: 2025-04-19 07:03+0000\n"
+"PO-Revision-Date: 2025-04-20 22:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/tutorial-3/zh_Hans/>\n"
@@ -20,27 +20,29 @@ msgid "Tutorial 3 - Packaging for distribution"
 msgstr "教程 3 - 打包与分发"
 
 #: ../../tutorial/tutorial-3.rst:5 174ad237b26f489c937a7fd0e53cef4c
-#, fuzzy
 msgid "So far, we've been running our application in \"Developer mode\". This makes it easy for us to run our application locally - but what we really want is to be able to give our application to others."
-msgstr "到目前为止，我们一直在 \"开发者模式 \"下运行应用程序。这让我们可以轻松地在本地运行应用程序，但我们真正想要的是能将我们的应用程序提供给其他人。"
+msgstr "到目前为止，我们一直在“开发者模式”下运行应用程序。这可以让我们轻松地在本地运"
+"行应用程序，但我们真正想要的是能将我们的应用程序提供给其他人。"
 
 #: ../../tutorial/tutorial-3.rst:9 2f82bd665eb04ff79fbad00e59848009
-#, fuzzy
 msgid "However, we don't want to have to teach our users how to install Python, create a virtual environment, clone a git repository, and run Briefcase in developer mode. We'd rather just give them an installer, and have the application Just Work."
-msgstr "但是，我们不想教用户如何安装 Python、创建虚拟环境、克隆 git 仓库并在开发者模式下运行 Briefcase。我们宁可只给他们一个安装程序，让应用程序能够正常运行。"
+msgstr ""
+"但是，我们不想教用户如何安装 Python、创建虚拟环境、克隆 git "
+"仓库并在开发者模式下运行 "
+"Briefcase。我们宁可只给他们一个安装程序，让应用程序能够正常运行。"
 
 #: ../../tutorial/tutorial-3.rst:14 38972c40f114461085f600d9eab89465
 msgid "Briefcase can be used to package your application for distribution in this way."
-msgstr "Briefcase可用于打包应用程序，以便以这种方式发布。"
+msgstr "Briefcase 可用于打包应用程序，以便以这种方式发布。"
 
 #: ../../tutorial/tutorial-3.rst:17 282a291c1efa4084a1ee48f114d3e5c5
-#, fuzzy
 msgid "Creating your application scaffold"
 msgstr "创建应用程序脚手架"
 
 #: ../../tutorial/tutorial-3.rst:19 f370483d43ee4f1d9953edbe765aa277
 msgid "Since this is the first time we're packaging our application, we need to create some configuration files and other scaffolding to support the packaging process. From the ``helloworld`` directory, run:"
-msgstr "由于这是第一次打包应用程序，我们需要创建一些配置文件和其他脚手架来支持打包过程。在 ``helloworld`` 目录中，运行:"
+msgstr "由于这是我们第一次打包应用程序，我们需要创建一些配置文件和其他脚手架来支持打"
+"包过程。在 ``helloworld`` 目录中，运行:"
 
 #: ../../tutorial/tutorial-3.rst:25 ../../tutorial/tutorial-3.rst:188
 #: ../../tutorial/tutorial-3.rst:268 ../../tutorial/tutorial-3.rst:361
@@ -62,15 +64,16 @@ msgstr "有关Python版本的错误"
 
 #: ../../tutorial/tutorial-3.rst:87 16f10ac3180c4f909344dc2bbb09ecae
 msgid "If you receive an error that reads something like:"
-msgstr ""
+msgstr "如果您收到类似如下的错误信息："
 
 #: ../../tutorial/tutorial-3.rst:89 6442e2b47e6d4868830dcf881db44d50
 msgid "The version of Python being used to run Briefcase (3.12) is not the system python3 (3.10)."
-msgstr ""
+msgstr "用于运行 Briefcase 的 Python 版本 (3.12) 不是系统 python3 (3.10)。"
 
 #: ../../tutorial/tutorial-3.rst:91 6f2956dd0c5446df952acbc3b1041e31
 msgid "You will need to recreate your virtual environment using the system ``python3``. Using the system Python is a requirement for packaging your application."
-msgstr ""
+msgstr "您将需要使用系统的 ``python3`` 重新创建您的虚拟环境。"
+"打包您的应用程序要求使用系统 Python。"
 
 #: ../../tutorial/tutorial-3.rst:95 ../../tutorial/tutorial-3.rst:239
 #: ../../tutorial/tutorial-3.rst:317 ../../tutorial/tutorial-3.rst:520
@@ -80,24 +83,35 @@ msgid "Windows"
 msgstr "Windows"
 
 #: ../../tutorial/tutorial-3.rst:119 6b06ba4445c34aac84cd43908ff754aa
-#, fuzzy
 msgid "You've probably just seen pages of content go past in your terminal... so what just happened? Briefcase has done the following:"
-msgstr "您可能刚刚在终端上看到了几页内容......那么刚刚发生了什么？公文包做了以下工作："
+msgstr "您可能刚刚在终端上看到了几页内容滑过......刚刚发生了什么？Briefcase "
+"做了以下工作："
 
 #: ../../tutorial/tutorial-3.rst:122 cac63722e4c740c0bace3890a30195ae
-#, fuzzy
 msgid "It **generated an application template**. There's a lot of files and configurations required to build a native installer, above and beyond the code of your actual application. This extra scaffolding is almost the same for every application on the same platform, except for the name of the actual application being constructed - so Briefcase provides an application template for each platform it supports. This step rolls out the template, substituting the name of your application, bundle ID, and other properties of your configuration file as required to support the platform you're building on."
-msgstr "它**生成一个应用程序模板**。除了实际应用程序的代码之外，构建本机安装程序还需要许多文件和配置。这些额外的脚手架对于同一平台上的每个应用程序几乎都是一样的，除了正在构建的实际应用程序的名称--因此，Briefcase 为其支持的每个平台提供了一个应用程序模板。这一步将推出模板，替换应用程序名称、捆绑 ID 和配置文件中的其他属性，以支持正在构建的平台。"
+msgstr ""
+"它生成了一个应用程序模板。除了实际应用程序的代码之外，构建本机安装程序还需要"
+"许多文件和配置。这些额外的脚手架对于同一平台上的每个应用程序几乎都是一样的，"
+"除了正在构建的实际应用程序的名称--因此，Briefcase "
+"为其支持的每个平台提供了一个应用程序模板。这一步将推出模板，替换应用程序名称"
+"、捆绑 ID 和配置文件中的其他属性，以支持正在构建的平台。"
 
 #: ../../tutorial/tutorial-3.rst:132 7081152944f44b95b760d7b787343c41
-#, fuzzy
 msgid "If you're not happy with the template provided by Briefcase, you can provide your own. However, you probably don't want to do this until you've got a bit more experience using Briefcase's default template."
-msgstr "如果您对 Briefcase 提供的模板不满意，可以提供自己的模板。不过，在使用 Briefcase 的默认模板获得更多经验之前，您可能不想这样做。"
+msgstr ""
+"如果您对 Briefcase 提供的模板不满意，可以提供自己的模板。不过，在使用 "
+"Briefcase 的默认模板获得更多经验之前，您可能不想这样做。"
 
 #: ../../tutorial/tutorial-3.rst:136 2ee399d8f98346a4b92234c6aafcfba6
-#, fuzzy
 msgid "It **downloaded and installed a support package**. The packaging approach taken by Briefcase is best described as \"the simplest thing that could possibly work\" - it ships a complete, isolated Python interpreter as part of every application it builds (except for Linux native system package builds). This is slightly space inefficient - if you have 5 applications packaged with Briefcase, you'll have 5 copies of the Python interpreter. However, this approach guarantees that every application is completely independent, using a specific version of Python that is known to work with the application."
-msgstr "它**下载并安装了一个支持包**。公文包所采用的打包方法被描述为 \"最简单可行的方法\"--它将一个完整、独立的 Python 解释器作为其构建的每个应用程序的一部分。这种打包方式在空间利用上略显不足--如果有 5 个应用程序打包到 Briefcase 中，那么就会有 5 份 Python 解释器副本。但是，这种方法保证了每个应用程序都是完全独立的，使用的 Python 都是已知的能与应用程序一起工作的特定版本。"
+msgstr ""
+"它下载并安装了一个支持包。Briefcase "
+"所采用的打包方法被描述为“最简单可行的方法”--它将一个完整、独立的 Python "
+"解释器作为其构建的每个应用程序的一部分（除了了、 Linux "
+"上的原生系统包构建）。这种打包方式在空间利用上略显不足--如果有 5 "
+"个应用程序使用 Briefcase 打包，那么就会有 5 份 Python "
+"解释器副本。但是，这种方法保证了每个应用程序都是完全独立的，"
+"使已知的能与应用程序一起工作的特定 Python版本。"
 
 #: ../../tutorial/tutorial-3.rst:145 62b4f9e7432b4d46b96eb5768743c948
 #, fuzzy
