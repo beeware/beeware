@@ -1,17 +1,18 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-20 10:21+0000\n"
-"PO-Revision-Date: 2025-04-20 04:04+0000\n"
+"PO-Revision-Date: 2025-04-20 22:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/beeware/tutorial/tutorial-2/zh_Hans/>\n"
 "Language: zh_CN\n"
-"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-2/zh_Hans/>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.11.1-dev\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../tutorial/tutorial-2.rst:3 0e0bf46fc8934c8289687ee0acc89ee0
@@ -36,7 +37,10 @@ msgstr "``__init__.py`` 将 ``helloworld`` 目录标记为可导入的 Python �
 
 #: ../../tutorial/tutorial-2.rst:19 119d9d5522fb4ac288668ceececf62e6
 msgid "``__main__.py`` marks the ``helloworld`` module as a special kind of module - an executable module. If you try to run the ``helloworld`` module using ``python -m helloworld``, the ``__main__.py`` file is where Python will start executing. The contents of ``__main__.py`` is relatively simple::"
-msgstr "``__main__.py`` 将 ``helloworld`` 模块标记为一种特殊的模块 - 可执行模块。如果你尝试使用 ``python -m helloworld`` 试图运行 ``helloworld`` 模块，Python 将从 ``__main__.py`` 文件开始执行。 ``__main__.py`` 的内容相对简单::"
+msgstr ""
+"``__main__.py`` 将 ``helloworld`` 模块标记为一种特殊的模块 - 可执行模块。"
+"如果你尝试使用 ``python -m helloworld`` 试图运行 ``helloworld`` 模块，Python "
+"将从 ``__main__.py`` 文件开始执行。 ``__main__.py`` 的内容相对简单::"
 
 #: ../../tutorial/tutorial-2.rst:29 c402124f80bd4044bd493def13f21ef6
 msgid "That is - it imports the ``main`` method from the ``helloworld`` app; and if it's being executed as an entry point, calls the main() method, and starts the application's main loop. The main loop is the way a GUI application listens for user input (like mouse clicks and keyboard presses)."
@@ -48,7 +52,7 @@ msgstr "更有趣的文件是 ``app.py`` - 它包含创建我们应用程序窗�
 
 #: ../../tutorial/tutorial-2.rst:52 cabb8fe626cb4c44b81bf0a2d08f082a
 msgid "Let's go through this line by line::"
-msgstr "让我们逐行查看："
+msgstr "让我们逐行查看::"
 
 #: ../../tutorial/tutorial-2.rst:58 e0edf1a867fb4926b47f35639442bcbe
 msgid "First, we import the ``toga`` widget toolkit, as well as some style-related utility classes and constants. Our code doesn't use these yet - but we'll make use of them shortly."
@@ -96,7 +100,7 @@ msgstr "然后，我们将空盒子作为主窗口的内容，并指示应用程
 
 #: ../../tutorial/tutorial-2.rst:106 59ffbe34dfb5421db3a913da05198094
 msgid "Last of all, we define a ``main()`` function. This is what creates the instance of our application::"
-msgstr "最后，我们定义一个 ``main()`` 方法。它将创建应用程序的实例：："
+msgstr "最后，我们定义一个 ``main()`` 方法。它将创建应用程序的实例::"
 
 #: ../../tutorial/tutorial-2.rst:112 09f565f6763b41bc90d066e889378a1f
 msgid "This ``main()`` method is the one that is imported and invoked by ``__main__.py``. It creates and returns an instance of our ``HelloWorld`` application."
@@ -111,7 +115,6 @@ msgid "Adding some content of our own"
 msgstr "添加一些我们自己的内容"
 
 #: ../../tutorial/tutorial-2.rst:122 53ee6da2c4d54c189716f2a14abde1a0
-#, fuzzy
 msgid "Let's do something more interesting with our ``HelloWorld`` app."
 msgstr "对我们的 ``HelloWorld`` 应用程序，做些更有意思的事吧。"
 
@@ -121,7 +124,7 @@ msgstr "在做这些更改时，确保不要删除文件顶部的导入 (imports
 
 #: ../../tutorial/tutorial-2.rst:130 d1ea3a99ddc54b00965f630f3299e4fe
 msgid "Modify your ``HelloWorld`` class inside ``src/helloworld/app.py`` so that it looks like this::"
-msgstr "修改 ``src/helloworld/app.py`` 中的 ``HelloWorld`` 类，使其看起来像这样：："
+msgstr "修改 ``src/helloworld/app.py`` 中的 ``HelloWorld`` 类，使其看起来像这样::"
 
 #: ../../tutorial/tutorial-2.rst:164 e4e8aabcc42a4f588a6fcc4f189f823c
 msgid "Let's look in detail at what has changed."
@@ -228,5 +231,8 @@ msgstr "下一步"
 
 #: ../../tutorial/tutorial-2.rst:306 899eead23fe645f5ba9e08d42fb32788
 msgid "We've now got an application that does something a little more interesting. But it only runs on our own computer. Let's package this application for distribution. In :doc:`Tutorial 3 <tutorial-3>`, we'll wrap our application up as a standalone installer that we could send to a friend, a customer, or upload to an App Store."
-msgstr "我们现在有了一个做一些更有趣的事情的应用程序。但它只能在我们自己的电脑上运行。让我们将这个应用程序打包以供分发。在 :doc:`Tutorial 3<tutorial-3>` 中，我们将把应用程序打包成一个独立的安装程序，我们可以发送给朋友、客户，或上传到应用商店。"
-
+msgstr ""
+"我们现在有了一个做一些更有趣的事情的应用程序。但它只能在我们自己的电脑上运行"
+"。让我们将这个应用程序打包以供分发。在 :doc:`教程3<tutorial-3>` "
+"中，我们将把应用程序打包成一个独立的安装程序，我们可以发送给朋友、客户，或上"
+"传到应用商店。"
