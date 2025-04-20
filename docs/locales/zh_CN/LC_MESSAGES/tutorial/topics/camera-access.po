@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-02-17 12:51+0000\n"
-"PO-Revision-Date: 2025-04-19 07:03+0000\n"
+"PO-Revision-Date: 2025-04-20 22:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/topics/camera-access/zh_Hans/>\n"
@@ -113,7 +113,6 @@ msgid "macOS"
 msgstr "macOS"
 
 #: ../../tutorial/topics/camera-access.rst:169 d02ba7c1ad4d4a258729b1eb60452daa
-#, fuzzy
 msgid "Android"
 msgstr "Android"
 
