@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-25 04:42+0000\n"
-"PO-Revision-Date: 2025-04-19 14:07+0000\n"
+"PO-Revision-Date: 2025-04-20 22:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/tutorial-1/zh_Hans/>\n"
@@ -30,9 +30,9 @@ msgstr "安装 BeeWare 工具"
 #: ../../tutorial/tutorial-1.rst:10 675880912cc149ae9ed545197cc85eee
 msgid "First, we need to install **Briefcase**. Briefcase is a BeeWare tool that can be used to package your application for distribution to end users - but it can also be used to bootstrap a new project. Make sure you're in the ``beeware-tutorial`` directory you created in :doc:`Tutorial 0 <tutorial-0>`, with the ``beeware-venv`` virtual environment activated, and run:"
 msgstr ""
-"首先，我们需要安装**Briefcase**。Briefcase是一款BeeWare工具，可用于打包应用程"
-"序，以便分发给最终用户，但也可用于引导新项目。确保您在 :doc:`教程0 "
-"<tutorial-0>` 中创建的 ``beeware-tutorial`` 目录中，并激活 ``beeware-venv`` "
+"首先，我们需要安装Briefcase。Briefcase是一款BeeWare工具，可用于打包应用程序，"
+"以便分发给最终用户，但也可用于引导新项目。确保您在 :doc:`教程0 <tutorial-0>` "
+"中创建的 ``beeware-tutorial`` 目录中，并激活 ``beeware-venv`` "
 "虚拟环境，然后运行："
 
 #: ../../tutorial/tutorial-1.rst:18 ../../tutorial/tutorial-1.rst:64
@@ -78,8 +78,8 @@ msgstr ""
 
 #: ../../tutorial/tutorial-1.rst:51 b5ae40f8f6594565989c51cd6d700726
 msgid "One of the BeeWare tools is **Briefcase**. Briefcase can be used to package your application for distribution to end users - but it can also be used to bootstrap a new project."
-msgstr "BeeWare工具之一是**Briefcase**。Briefcase可用于打包应用程序，以便分发给最终用"
-"户，但也可用于引导新项目。"
+msgstr "BeeWare 工具之一是 Briefcase。Briefcase "
+"可用于打包应用程序，以便分发给最终用户，但也可用于引导新项目。"
 
 #: ../../tutorial/tutorial-1.rst:56 bda0abe934d0474b9b26542eeb551c95
 msgid "Bootstrap a new project"
@@ -152,7 +152,7 @@ msgid "Briefcase will then generate a project skeleton for you to use. If you've
 msgstr ""
 "然后，Briefcase "
 "会生成一个项目骨架供你使用。如果你已经按照本教程学习到目前为止，并接受了所述"
-"的默认设置，那么你的文件系统应该是这样的：："
+"的默认设置，那么你的文件系统应该是这样的::"
 
 #: ../../tutorial/tutorial-1.rst:143 2d003ad576a7443385baad03468c5877
 msgid "This skeleton is actually a fully functioning application without adding anything else. The ``src`` folder contains all the code for the application, the ``tests`` folder contains an initial test suite, and the ``pyproject.toml`` file describes how to package the application for distribution. If you open ``pyproject.toml`` in an editor, you'll see the configuration details you just provided to Briefcase."
@@ -220,5 +220,5 @@ msgstr "下一步"
 msgid "We now have a working application, running in developer mode. Now we can add some logic of our own to make our application do something a little more interesting. In :doc:`Tutorial 2 <tutorial-2>`, we'll put a more useful user interface onto our application."
 msgstr ""
 "现在，我们有了一个在开发者模式下运行的应用程序。现在我们可以添加一些自己的逻"
-"辑，让应用程序做更有趣一些的事情。在 :doc:`Tutorial 2<tutorial-2>` "
+"辑，让应用程序做更有趣一些的事情。在 :doc:`教程2<tutorial-2>` "
 "中，我们将为应用程序添加一个更有用的用户界面。"
