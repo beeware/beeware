@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-25 04:42+0000\n"
-"PO-Revision-Date: 2025-04-19 12:23+0000\n"
+"PO-Revision-Date: 2025-04-20 22:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/tutorial-0/zh_Hans/>\n"
@@ -89,7 +89,8 @@ msgstr ""
 "如果您使用的是 Windows，您可以从 `Python 网站 <https://www.python.org/"
 "downloads>`_ 获取官方安装程序。您可以使用 Python 3.9 到 3.12 的任何稳定版本 -"
 " `Python 3.13 目前不被支持 <https://github.com/beeware/toga/issues/2889>`__。"
-"我们还建议避免使用 Alpha、Beta 和候选版本，除非你真的知道自己在做什么。"
+"我们还建议避免使用 Alpha、Beta "
+"和候选版本，除非你<b>真的知</b>道自己在做什么。"
 
 #: ../../tutorial/tutorial-0.rst:57 3342972ab0ac4c0fb2bbe34583f8e59d
 msgid "Alternative Python distributions"
@@ -109,15 +110,16 @@ msgstr ""
 #: ../../tutorial/tutorial-0.rst:69 52590b55f10c41a5920b21271553dddd
 msgid "If you're on macOS or Windows, it doesn't matter *how* you've installed Python - it only matters that you can run ``python3`` from your operating system's command prompt/terminal application, and get a working Python interpreter."
 msgstr ""
-"如果您使用的是 macOS 或 Windows 操作系统，如何安装 Python "
+"如果您使用的是 macOS 或 Windows 操作系统，<i>如何</i>安装 Python "
 "并不重要，重要的是您能从操作系统的命令提示符/终端应用程序中运行 ``python3``，"
 "并获得一个正常工作的 Python 解释器。"
 
 #: ../../tutorial/tutorial-0.rst:74 3c128d13cbfa400192b3db8c7871d25b
 msgid "If you're on Linux, you *must* use the system Python provided by your operating system. You will be able to complete *most* of this tutorial using a non-system Python, but you won't be able to package your application for distribution to others."
 msgstr ""
-"如果您使用 Linux，则必须使用操作系统提供的系统 Python。您可以使用非系统 "
-"Python 完成本教程的大部分内容，但是您无法将应用程序打包发布给他人。"
+"如果您使用 Linux，则<b>必须</b>使用操作系统提供的系统 Python。"
+"您可以使用非系统 Python "
+"完成本教程的<i>大部分</i>内容，但是您无法将应用程序打包发布给他人。"
 
 #: ../../tutorial/tutorial-0.rst:82 25ba6833ad3b4dd4b00482afe4442e10
 msgid "Install dependencies"
