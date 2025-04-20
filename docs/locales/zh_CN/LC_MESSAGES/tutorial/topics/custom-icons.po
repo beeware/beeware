@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-26 02:31+0000\n"
-"PO-Revision-Date: 2025-04-19 07:03+0000\n"
+"PO-Revision-Date: 2025-04-20 22:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/topics/custom-icons/zh_Hans/>\n"
@@ -70,7 +70,6 @@ msgstr "Windows"
 #: ../../tutorial/topics/custom-icons.rst:282
 #: ../../tutorial/topics/custom-icons.rst:424 a19896dad5f246d9923d25a68cd63b08
 #: e953f6a4af3540d98b3590ee9086a902 ebb407959563482995ec9c668922be40
-#, fuzzy
 msgid "Android"
 msgstr "Android"
 
@@ -78,7 +77,6 @@ msgstr "Android"
 #: ../../tutorial/topics/custom-icons.rst:327
 #: ../../tutorial/topics/custom-icons.rst:438 4e1594e8851c45ddad7dbce046cbfded
 #: 82ae9881cb0a46aab260de63139a9d40 a8fd9a4a141e44559855446d38010c54
-#, fuzzy
 msgid "iOS"
 msgstr "iOS"
 
