@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-25 04:42+0000\n"
-"PO-Revision-Date: 2025-04-20 22:01+0000\n"
+"PO-Revision-Date: 2025-04-21 03:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/tutorial-0/zh_Hans/>\n"
@@ -51,7 +51,7 @@ msgstr "如果已安装 Python，则会看到其版本号。否则，系统会�
 msgid "You should ensure that you are using Python 3.9 or newer. If it isn't, you'll need to upgrade your Python install. You can get the official installer from `the Python website <https://www.python.org/downloads>`_. You can use any stable version of Python from 3.9 onward. We'd advise avoiding alphas, betas, and release candidates unless you *really* know what you're doing."
 msgstr ""
 "您应该确保您使用的是 Python 3.9 或更高版本。如果不是，则需要升级 Python "
-"安装。您可以从 `Python官网 <https://www.python.org/downloads>`_ "
+"安装。您可以从 `Python 官网 <https://www.python.org/downloads>`_ "
 "获取官方安装程序。从 3.9 开始，您可以使用任何稳定版本的 Python。"
 "我们建议避免使用 Alpha、Beta 和候选版本，除非你真的知道自己在做什么。"
 
@@ -117,9 +117,9 @@ msgstr ""
 #: ../../tutorial/tutorial-0.rst:74 3c128d13cbfa400192b3db8c7871d25b
 msgid "If you're on Linux, you *must* use the system Python provided by your operating system. You will be able to complete *most* of this tutorial using a non-system Python, but you won't be able to package your application for distribution to others."
 msgstr ""
-"如果您使用 Linux，则<b>必须</b>使用操作系统提供的系统 Python。"
-"您可以使用非系统 Python "
-"完成本教程的<i>大部分</i>内容，但是您无法将应用程序打包发布给他人。"
+"如果您使用 Linux，则\\ **必须**\\ 使用操作系统提供的系统 Python。"
+"您可以使用非系统 Python 完成本教程的\\ *大部分*\\ "
+"内容，但是您无法将应用程序打包发布给他人。"
 
 #: ../../tutorial/tutorial-0.rst:82 25ba6833ad3b4dd4b00482afe4442e10
 msgid "Install dependencies"
@@ -199,16 +199,16 @@ msgstr "运行 PowerShell 脚本时出现的错误"
 
 #: ../../tutorial/tutorial-0.rst:189 a4331382fa5f45ab808c6bf332f3255e
 msgid "If you're using PowerShell, and you receive the error::"
-msgstr "如果使用 PowerShell 时收到以下错误信息：："
+msgstr "如果使用 PowerShell 时收到以下错误信息::"
 
 #: ../../tutorial/tutorial-0.rst:193 4a8048a177564a66974bc93db9067eac
 msgid "Your Windows account doesn't have permissions to run scripts. To fix this:"
-msgstr "您的 Windows 账户没有运行脚本的权限。要解决这个问题:"
+msgstr "您的 Windows 账户没有运行脚本的权限。要解决这个问题："
 
 #: ../../tutorial/tutorial-0.rst:195 9e24a555fa07465386329627c1503abd
 msgid "Run `Windows PowerShell as Administrator <https://learn.microsoft.com/en-us/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7.4>`_."
 msgstr ""
-"`以管理员身份执行 PowerShell <https://learn.microsoft.com/en-us/powershell/"
+"`以管理员身份运行 PowerShell <https://learn.microsoft.com/en-us/powershell/"
 "scripting/windows-powershell/starting-windows-"
 "powershell?view=powershell-7.4>`_."
 
@@ -253,8 +253,8 @@ msgstr "下一步"
 
 #: ../../tutorial/tutorial-0.rst:221 4355582616d24de5a9ecb78e46df75e5
 msgid "We've now set up our environment. We're ready to :doc:`create our first BeeWare application <tutorial-1>`."
-msgstr "现在我们已经设置好了环境。我们准备创建 "
-":doc:`您的第一个应用程序<tutorial-1>`。"
+msgstr "现在我们已经设置好了环境。我们已经准备创建 "
+":doc:`您的第一个应用程序<tutorial-1>`了。"
 
 #~ msgid "Run Windows PowerShell as Administrator."
 #~ msgstr "以管理员身份运行 Windows PowerShell。"
