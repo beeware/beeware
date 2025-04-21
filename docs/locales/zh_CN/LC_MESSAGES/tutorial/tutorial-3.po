@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-21 20:05+0000\n"
-"PO-Revision-Date: 2025-04-20 22:01+0000\n"
+"PO-Revision-Date: 2025-04-21 22:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/tutorial-3/zh_Hans/>\n"
@@ -27,8 +27,8 @@ msgstr "到目前为止，我们一直在“开发者模式”下运行应用程
 #: ../../tutorial/tutorial-3.rst:9 2f82bd665eb04ff79fbad00e59848009
 msgid "However, we don't want to have to teach our users how to install Python, create a virtual environment, clone a git repository, and run Briefcase in developer mode. We'd rather just give them an installer, and have the application Just Work."
 msgstr ""
-"但是，我们不想教用户如何安装 Python、创建虚拟环境、克隆 git "
-"仓库并在开发者模式下运行 "
+"但是，我们不想教用户怎样安装 Python、创建虚拟环境、克隆 git "
+"仓库和在开发者模式下运行 "
 "Briefcase。我们宁可只给他们一个安装程序，让应用程序能够正常运行。"
 
 #: ../../tutorial/tutorial-3.rst:14 38972c40f114461085f600d9eab89465
@@ -114,33 +114,45 @@ msgstr ""
 "使已知的能与应用程序一起工作的特定 Python版本。"
 
 #: ../../tutorial/tutorial-3.rst:145 62b4f9e7432b4d46b96eb5768743c948
-#, fuzzy
 msgid "Again, Briefcase provides a default support package for each platform; if you want, you can provide your own support package, and have that package included as part of the build process. You may want to do this if you have particular options in the Python interpreter that you need to have enabled, or if you want to strip modules out of the standard library that you don't need at runtime."
-msgstr "同样，Briefcase 为每个平台提供了默认的支持包；如果需要，您可以提供自己的支持包，并将其作为构建过程的一部分。如果您需要启用 Python 解释器中的特定选项，或者如果您想从标准库中剥离运行时不需要的模块，您可能需要这样做。"
+msgstr ""
+"同样，Briefcase "
+"为每个平台提供了默认的支持包；如果需要，您可以提供自己的支持包，并将其作为构"
+"建过程的一部分。如果您需要启用 Python "
+"解释器中的特定选项，或者如果您想从标准库中剥离运行时不需要的模块，您可能需要"
+"这样做。"
 
 #: ../../tutorial/tutorial-3.rst:152 3b4bf5aa53f6491db4093edbd5bf466a
-#, fuzzy
 msgid "Briefcase maintains a local cache of support packages, so once you've downloaded a specific support package, that cached copy will be used on future builds."
-msgstr "公文包维护支持包的本地缓存，因此一旦您下载了特定的支持包，该缓存副本将用于未来的构建。"
+msgstr "Briefcase "
+"维护支持包的本地缓存，因此一旦您下载了特定的支持包，该缓存副本将用于未来的构"
+"建。"
 
 #: ../../tutorial/tutorial-3.rst:156 b2bca2be97ca48af9ae714099ddabc93
 msgid "As noted above, when Briefcase packages an app as a native Linux system package (the default package format for Linux), a support package is not included with the app. Instead, the app will use the Python that is provided by the distribution of Linux being targeted."
 msgstr ""
+"如上所述，当 Briefcase 将一个应用程序打包成 Linux 上的原生系统包（Linux "
+"上的默认包格式），应用程序中将不会包含任何的支持包；"
+"应用程序将会使用将要被分发到的 Linux 发行版提供的 Python。"
 
 #: ../../tutorial/tutorial-3.rst:161 82f2ded1f6f0458d84be19c1db28af0c
-#, fuzzy
 msgid "It **installed application requirements**. Your application can specify any third-party modules that are required at runtime. These will be installed using ``pip`` into your application's installer."
-msgstr "它**安装应用程序要求**。您的应用程序可以指定运行时所需的任何第三方模块。这些模块将使用 ``pip`` 安装到应用程序的安装程序中。"
+msgstr ""
+"它\\ "
+"**安装应用程序的依赖项**。您的应用程序可以指定运行时所需的任何第三方模块。"
+"这些模块将会被用 ``pip`` 安装到应用程序的安装程序中。"
 
 #: ../../tutorial/tutorial-3.rst:165 f380d568066c4e819010a1e42bddaf64
-#, fuzzy
 msgid "It **Installed your application code**. Your application will have its own code and resources (e.g., images that are needed at runtime); these files are copied into the installer."
-msgstr "它**安装你的应用程序代码**。您的应用程序将有自己的代码和资源（如运行时需要的图像）；这些文件会被复制到安装程序中。"
+msgstr "它\\ "
+"**安装您的应用程序代码**。您的应用程序将有自己的代码和资源（如运行时需要的图"
+"像）；这些文件会被复制到安装程序中。"
 
 #: ../../tutorial/tutorial-3.rst:169 fd8c6bcd3e7c46769f5b40315d1d436e
-#, fuzzy
 msgid "It **installed your resources needed by your application.** Lastly, it adds any additional resources that are needed by the installer itself. This includes things like icons that need to be attached to the final application and splash screen images."
-msgstr "最后，它还会添加安装程序本身所需的其他资源。这包括需要附加到最终应用程序的图标和闪屏图像等。"
+msgstr "最后，它还会\\ "
+"**添加安装程序本身所需的其他资源**。这包括需要附加到最终应用程序的图标和启动"
+"画面等。"
 
 #: ../../tutorial/tutorial-3.rst:174 a886f291f63845fcb7d3bfebff56549b
 #, fuzzy
@@ -297,20 +309,24 @@ msgstr "在本例中，我们使用了\"--adhoc-sign \"选项--也就是说，�
 #: ../../tutorial/tutorial-3.rst:560 f629b35851824a0c8cf49593f5c928bd
 msgid "When you're ready to publish a real application, check out the Briefcase How-To guide on `Setting up a Windows code signing identity <https://briefcase.readthedocs.io/en/latest/how-to/code-signing/windows.html>`__"
 msgstr ""
-"当您准备发布真正的应用程序时，请查看Briefcase操作指南关于 `"
+"当您准备发布真正的应用程序时，请查看 Briefcase 操作指南中关于\\ `"
 "设置Windows代码签名身份 <https://briefcase.readthedocs.io/en/latest/how-to/"
-"code-signing/windows.html>`__"
+"code-signing/windows.html>`__\\ 的内容。"
 
 #: ../../tutorial/tutorial-3.rst:564 a6a69770494f413a9982fa82d53144f3
-#, fuzzy
 msgid "Once this step completes, the ``dist`` folder will contain a file named ``Hello_World-0.0.1.msi``. If you double click on this installer to run it, you should go through a familiar Windows installation process. Once this installation completes, there will be a \"Hello World\" entry in your start menu."
-msgstr "此步骤完成后，\"dist \"文件夹中将包含一个名为 \"Hello_World-0.0.1.msi \"的文件。如果双击运行该安装程序，就会进入熟悉的 Windows 安装过程。安装完成后，开始菜单中将出现 \"Hello World \"条目。"
+msgstr ""
+"此步骤完成后，``dist`` 文件夹中将包含一个名为 ``Hello_World-0.0.1.msi`` "
+"的文件。如果双击运行该安装程序，就会进入熟悉的 Windows 安装过程。安装完成后，"
+"开始菜单中将出现 \"Hello World \"条目。"
 
 #: ../../tutorial/tutorial-3.rst:571 20bb9a4144764f7b8bc3790e84daa8af
 msgid "Next steps"
 msgstr "下一步"
 
 #: ../../tutorial/tutorial-3.rst:573 4b580f2e01834597a7af1aace42bbe29
-#, fuzzy
 msgid "We now have our application packaged for distribution on desktop platforms. But what happens when we need to update the code in our application? How do we get those updates into our packaged application? Turn to :doc:`Tutorial 4 <./tutorial-4>` to find out..."
-msgstr "现在，我们已将应用程序打包发布到桌面平台上。但是，当我们需要更新应用程序中的代码时该怎么办？如何将这些更新添加到打包的应用程序中？请访问 :doc:`Tutorial 4 <./tutorial-4>` 了解详情..."
+msgstr ""
+"现在，我们已将应用程序打包发布到桌面平台上。但是，当我们需要更新应用程序中的"
+"代码时该怎么办？如何将这些更新添加到打包好的应用程序中？请访问 :doc:`教程4 <"
+"./tutorial-4>` 了解详情..."
