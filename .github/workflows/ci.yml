@@ -51,7 +51,7 @@ jobs:
         os: [ "ubuntu-latest", "windows-latest", "macos-latest" ]
     steps:
       - name: Get Package
-        uses: actions/download-artifact@v4.2.1
+        uses: actions/download-artifact@v4.3.0
         with:
           name: ${{ needs.package.outputs.artifact-name }}
           path: dist
