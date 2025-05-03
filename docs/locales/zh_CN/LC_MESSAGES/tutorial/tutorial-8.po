@@ -1,17 +1,18 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-02-28 13:35+0000\n"
-"PO-Revision-Date: 2024-01-13 02:06+0000\n"
-"Last-Translator: Sheep Cat <xymsyh@gmail.com>\n"
+"PO-Revision-Date: 2025-05-03 17:01+0000\n"
+"Last-Translator: RyaninChina11 <18149721348@163.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/beeware/tutorial/tutorial-8/zh_Hans/>\n"
 "Language: zh_CN\n"
-"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-8/zh_Hans/>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.12-dev\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../tutorial/tutorial-8.rst:3 e8499360a87646f694c4a3b7ac883992
@@ -40,9 +41,9 @@ msgid "A GUI app is, fundamentally, a single loop that looks something like::"
 msgstr "从根本上说，图形用户界面应用程序就是一个单一的循环，看起来就像：："
 
 #: ../../tutorial/tutorial-8.rst:26 405fb9fcf8ac4320bbc6f1bc229586ed
-#, fuzzy
 msgid "This loop is called the *Event Loop*. (These aren't actual method names - it's an illustration of what is going on in \"pseudo-code\")."
-msgstr "这个循环被称为 *Event Loop*。(这些并不是实际的方法名称，而是 \"伪代码 \"的说明）。"
+msgstr "这个循环被称为 *事件循环*。(这些并不是实际的方法名称，而是 \"伪代码 \""
+"的说明）。"
 
 #: ../../tutorial/tutorial-8.rst:29 f3360fa6030843bfade044dbc4f6f298
 #, fuzzy
@@ -50,9 +51,12 @@ msgid "When you click on a button, or drag a scroll bar, or type a key, you are 
 msgstr "当你点击一个按钮、拖动一个滚动条或输入一个键时，你就产生了一个 \"事件\"。该 \"事件 \"被放入一个队列，应用程序将在下一次有机会时处理队列中的事件。为响应事件而触发的用户代码称为*事件处理程序*。这些事件处理程序作为``process_events()``调用的一部分被调用。"
 
 #: ../../tutorial/tutorial-8.rst:35 8bea9e79058044b5921caf838c72d8a6
-#, fuzzy
 msgid "Once an app has processed all the available events, it will ``redraw()`` the GUI. This takes into account any changes that the events have caused to the display of the app, as well as anything else that is going on in the operating system - for example, the windows of another app may obscure or reveal part of our app's window, and our app's redraw will need to reflect the portion of the window that is currently visible."
-msgstr "应用程序处理完所有可用事件后，就会 \"重绘() \"图形用户界面。这将考虑到事件对应用程序显示所造成的任何变化，以及操作系统中发生的任何其他情况，例如，其他应用程序的窗口可能会遮挡或显示我们应用程序的部分窗口，而我们应用程序的重绘将需要反映当前可见的窗口部分。"
+msgstr ""
+"应用程序处理完所有可用事件后，就会 重绘 "
+"（``redraw()``）图形用户界面。这将考虑到事件对应用程序显示所造成的任何变化，"
+"以及操作系统中发生的任何其他情况，例如，其他应用程序的窗口可能会遮挡或显示我"
+"们应用程序的部分窗口，而我们应用程序的重绘将需要反映当前可见的窗口部分。"
 
 #: ../../tutorial/tutorial-8.rst:42 b6da2eae45bd4eb9a6ccc4443b217fb9
 #, fuzzy
@@ -226,4 +230,3 @@ msgstr ""
 
 #~ msgid "The ``get`` call is made with an ``await`` keyword. This instructs the app that while we are waiting for the response from the network, the app can release control to the event loop."
 #~ msgstr "get \"调用带有 \"await \"关键字。这指示应用程序在等待网络响应时，可以将控制权释放给事件循环。"
-
