@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-25 23:41+0000\n"
-"PO-Revision-Date: 2025-04-19 07:03+0000\n"
-"Last-Translator: John <johnzhou721@gmail.com>\n"
+"PO-Revision-Date: 2025-05-03 17:01+0000\n"
+"Last-Translator: RyaninChina11 <18149721348@163.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/tutorial-4/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -12,45 +12,47 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.11.1-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../tutorial/tutorial-4.rst:3 095a20d68b59496e9ff67f5b9c9497e5
-#, fuzzy
 msgid "Tutorial 4 - Updating your application"
 msgstr "教程 4 - 更新应用程序"
 
 #: ../../tutorial/tutorial-4.rst:5 48603895c251446b96cabbb9b632a61e
-#, fuzzy
 msgid "In the last tutorial, we packaged our application as a native application. If you're dealing with a real-world app, that isn't going to be the end of the story - you'll likely do some testing, discover problems, and need to make some changes. Even if your application is perfect, you'll eventually want to publish version 2 of your application with improvements."
-msgstr "在上一教程中，我们将应用程序打包为本地应用程序。如果您面对的是一个真实世界的应用程序，这并不是故事的结束--您可能会进行一些测试，发现一些问题，并需要进行一些修改。即使您的应用程序是完美的，您最终还是希望发布改进后的第二版应用程序。"
+msgstr ""
+"在上一教程中，我们将应用程序打包为本地应用程序。如果您面对的是一个真实世界的"
+"应用程序，这并不是故事的结束--"
+"您可能会进行一些测试，发现一些问题，并需要进行一些修改。即使您的应用程序是完"
+"美的，您最终还是希望发布改进后的第二版应用程序。"
 
 #: ../../tutorial/tutorial-4.rst:11 f23a96b01cd24622bfacbdc9604c51a1
-#, fuzzy
 msgid "So - how do you update your installed app when you make code changes?"
 msgstr "那么，在更改代码时如何更新已安装的应用程序？"
 
 #: ../../tutorial/tutorial-4.rst:14 38c2d3a4568b409c855516e9c1b3fe5d
-#, fuzzy
 msgid "Updating application code"
 msgstr "更新应用程序代码"
 
 #: ../../tutorial/tutorial-4.rst:16 9683153b6b4347fca656609ec21ee119
-#, fuzzy
 msgid "Our application currently prints to the console when you press the button. However, GUI applications shouldn't really use the console for output. They need to use dialogs to communicate with users."
-msgstr "目前，我们的应用程序会在您按下按钮时打印到控制台。但是，图形用户界面应用程序实际上不应该使用控制台进行输出。它们需要使用对话框与用户交流。"
+msgstr "目前，我们的应用程序会在您按下按钮时打印到控制台。但是，图形用户界面应用程序"
+"实际上不应该使用控制台进行输出。它们需要使用对话框与用户交流。"
 
 #: ../../tutorial/tutorial-4.rst:20 97094341a84147c1bdc1fffc57a42567
-#, fuzzy
 msgid "Let's add a dialog box to say hello, instead of writing to the console. Modify the ``say_hello`` callback so it looks like this::"
-msgstr "让我们添加一个对话框来说 \"你好\"，而不是写入控制台。修改 ``say_hello`` 回调，使它看起来像这样：："
+msgstr "让我们添加一个对话框来说 \"你好\"，而不是写入控制台。修改 ``say_hello`` "
+"回调，使它看起来像这样：："
 
 #: ../../tutorial/tutorial-4.rst:31 4dbdb0dca00243d6a6c5e778a372d124
 msgid "We need to make the method ``async`` so that when we display the dialog, the rest of the application continues to run. Don't worry about this detail too much right now - we'll give a more detailed explanation in :doc:`Tutorial 8 <tutorial-8>`."
 msgstr ""
+"我们需要将方法设置为``async``，以便在显示对话框时，应用程序的其余部分继续运行"
+"。现在不要太担心这个细节——我们将在 :doc:`Tutorial 8 <tutorial-8>` "
+"中给出更详细的解释。"
 
 #: ../../tutorial/tutorial-4.rst:35 b682bcef3af8479c9f551ede9217eea0
-#, fuzzy
 msgid "This directs Toga to open a modal dialog box when the button is pressed."
 msgstr "这将指示 Toga 在按下按钮时打开一个模态对话框。"
 
