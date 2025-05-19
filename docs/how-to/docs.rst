@@ -1,5 +1,5 @@
 ====================================
-Contribute to BeeWare Tutorial
+Contribute to the BeeWare Tutorial
 ====================================
 
 You might have the best software in the world - but if nobody knows how to use
