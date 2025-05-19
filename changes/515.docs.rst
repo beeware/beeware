@@ -1,0 +1,2 @@
+Adds "how to contribute to BeeWare tutorials". Based on Toga's contribution pages.
+Also adds the change folder for tracking changes
