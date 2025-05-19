@@ -73,9 +73,11 @@ platforms such as Android and iOS; and for the Web.
 
 How to contribute to tutorials
 ------------------------------
-If you have a suggestion for a tutorial, or if you want to help us improve the
-documentation, please let us know! You can do this by creating an issue in the
-BeeWare and then following the contribution instructions below.
+If you’re looking for specific areas to improve, there are tickets tagged “documentation” in BeeWare’s issue tracker.
+
+However, you don’t need to be constrained by these tickets. If you can identify a gap in BeeWare’s
+documentation, or an improvement that can be made, start writing!
+Anything that improves the experience of the end user is a welcome change.
 
 * :doc:`Contribute to BeeWare tutorial <how-to/docs>`
 * :doc:`Setup Beeware docs environment <how-to/code>`
