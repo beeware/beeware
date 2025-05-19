@@ -332,7 +332,8 @@ Submit from a feature branch, not your ``main`` branch
 
 Before you start working on your change, make sure you've created a branch.
 By default, when you clone your repository fork, you'll be checked out on
-your ``main`` branch. This is a direct copy of Toga's ``main`` branch.
+your ``main`` branch. This is a direct copy of BeeWare's ``main`` branch.
+To contribute to BeeWare itself, not the docs, please review the repo README.
 
 While you *can* submit a pull request from your ``main`` branch, it's preferable
 if you *don't* do this. If you submit a pull request that is *almost* right, the
@@ -342,11 +343,7 @@ submit your pull request from your ``main`` branch, reviewers are prevented from
 making modifications.
 
 Instead, you should make your changes on a *feature branch*. A feature branch
-has a simple name to identify the change that you've made. For example, if
-you've found a bug in Toga's layout algorithm, you might create a feature branch
-``fix-layout-bug``. If your bug relates to a specific issue that has been
-reported, it's also common to reference that issue number in the branch name
-(e.g., ``fix-1234``).
+has a simple name to identify the change that you've made.
 
 To create a feature branch, run:
 
@@ -376,7 +373,7 @@ Add change information for release notes
 ----------------------------------------
 
 Before you submit this change as a pull request, you need to add a *change
-note*. Toga uses `towncrier <https://pypi.org/project/towncrier/>`__ to automate
+note*. BeeWare uses `towncrier <https://pypi.org/project/towncrier/>`__ to automate
 building the release notes for each release. Every pull request must include at
 least one file in the ``changes/`` directory that provides a short description
 of the change implemented by the pull request.
@@ -409,7 +406,7 @@ There are five allowed fragment types:
   existing widget);
 - ``bugfix``: The PR fixes a bug in the existing implementation;
 - ``doc``: The PR is an significant improvement to documentation;
-- ``removal``; The PR represents a backwards incompatible change in the Toga
+- ``removal``; The PR represents a backwards incompatible change in the BeeWare
   API; or
 - ``misc``; A minor or administrative change (e.g., fixing a typo, a minor
   language clarification, or updating a dependency version) that doesn't need to
