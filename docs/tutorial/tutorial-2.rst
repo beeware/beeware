@@ -209,7 +209,7 @@ Now we define a button::
                 style=Pack(margin=5),
             )
 
-The button also has 5px of padding on all sides. We also define a *handler* -
+The button also has 5px of margin on all sides. We also define a *handler* -
 a method to invoke when the button is pressed.
 
 Then, we add the name box and the button to the main box::
