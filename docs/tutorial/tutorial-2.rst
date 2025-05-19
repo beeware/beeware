@@ -136,18 +136,18 @@ looks like this::
 
             name_label = toga.Label(
                 "Your name: ",
-                style=Pack(padding=(0, 5)),
+                style=Pack(margin=(0, 5)),
             )
             self.name_input = toga.TextInput(style=Pack(flex=1))
 
-            name_box = toga.Box(style=Pack(direction=ROW, padding=5))
+            name_box = toga.Box(style=Pack(direction=ROW, margin=5))
             name_box.add(name_label)
             name_box.add(self.name_input)
 
             button = toga.Button(
                 "Say Hello!",
                 on_press=self.say_hello,
-                style=Pack(padding=5),
+                style=Pack(margin=5),
             )
 
             main_box.add(name_box)
@@ -178,13 +178,13 @@ Next, we define a couple of widgets::
 
             name_label = toga.Label(
                 "Your name: ",
-                style=Pack(padding=(0, 5)),
+                style=Pack(margin=(0, 5)),
             )
             self.name_input = toga.TextInput(style=Pack(flex=1))
 
 Here, we define a Label and a TextInput. Both widgets have styles associated
-with them; the label will have 5px of padding on its left and right, and no
-padding on the top and bottom. The TextInput is marked as being flexible - that
+with them; the label will have 5px of margin on its left and right, and no
+margin on the top and bottom. The TextInput is marked as being flexible - that
 is, it will absorb all available space in its layout axis.
 
 The TextInput is assigned as an instance variable of the class. This gives us
@@ -192,13 +192,13 @@ easy access to the widget instance - something that we'll use in a moment.
 
 Next, we define a box to hold these two widgets::
 
-            name_box = toga.Box(style=Pack(direction=ROW, padding=5))
+            name_box = toga.Box(style=Pack(direction=ROW, margin=5))
             name_box.add(name_label)
             name_box.add(self.name_input)
 
 The ``name_box`` is a box just like the main box; however, this time, it's a
 ``ROW`` box. That means content will be added horizontally, and it will try
-to make its width as narrow as possible. The box also has some padding - 5px
+to make its width as narrow as possible. The box also has some margin - 5px
 on all sides.
 
 Now we define a button::
@@ -206,10 +206,10 @@ Now we define a button::
             button = toga.Button(
                 "Say Hello!",
                 on_press=self.say_hello,
-                style=Pack(padding=5),
+                style=Pack(margin=5),
             )
 
-The button also has 5px of padding on all sides. We also define a *handler* -
+The button also has 5px of margin on all sides. We also define a *handler* -
 a method to invoke when the button is pressed.
 
 Then, we add the name box and the button to the main box::
