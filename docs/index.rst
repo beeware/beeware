@@ -91,3 +91,4 @@ Python! <tutorial/tutorial-0>`
     tutorial/tutorial-7
     tutorial/tutorial-8
     tutorial/topics/index
+    how-to/index
