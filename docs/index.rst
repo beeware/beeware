@@ -71,17 +71,6 @@ Toga as a GUI toolkit.
 The BeeWare suite is available on macOS, Windows, Linux (using GTK); on mobile
 platforms such as Android and iOS; and for the Web.
 
-:ref:`How to contribute to tutorials<how-to>`
----------------------------------------------
-If you’re looking for specific areas to improve, there are tickets tagged “documentation” in BeeWare’s issue tracker.
-
-However, you don’t need to be constrained by these tickets. If you can identify a gap in BeeWare’s
-documentation, or an improvement that can be made, start writing!
-Anything that improves the experience of the end user is a welcome change.
-
-* :doc:`Contribute to BeeWare tutorial <how-to/docs>`
-* :doc:`Setup Beeware docs environment <how-to/code>`
-
 Lets go!
 ========
 
