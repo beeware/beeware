@@ -35,7 +35,6 @@ The more interesting file is ``app.py`` - this contains the logic that creates
 our application window::
 
     import toga
-    from toga.style import Pack
     from toga.style.pack import COLUMN, ROW
 
     class HelloWorld(toga.App):
@@ -52,11 +51,10 @@ our application window::
 Let's go through this line by line::
 
     import toga
-    from toga.style import Pack
     from toga.style.pack import COLUMN, ROW
 
 First, we import the ``toga`` widget toolkit, as well as some style-related
-utility classes and constants. Our code doesn't use these yet - but we'll make
+utility constants. Our code doesn't use these yet - but we'll make
 use of them shortly.
 
 Then, we define a class::
@@ -132,22 +130,22 @@ looks like this::
 
     class HelloWorld(toga.App):
         def startup(self):
-            main_box = toga.Box(style=Pack(direction=COLUMN))
+            main_box = toga.Box(direction=COLUMN)
 
             name_label = toga.Label(
                 "Your name: ",
-                style=Pack(margin=(0, 5)),
+                margin=(0, 5),
             )
-            self.name_input = toga.TextInput(style=Pack(flex=1))
+            self.name_input = toga.TextInput(flex=1)
 
-            name_box = toga.Box(style=Pack(direction=ROW, margin=5))
+            name_box = toga.Box(direction=ROW, margin=5)
             name_box.add(name_label)
             name_box.add(self.name_input)
 
             button = toga.Button(
                 "Say Hello!",
                 on_press=self.say_hello,
-                style=Pack(margin=5),
+                margin=5,
             )
 
             main_box.add(name_box)
@@ -165,7 +163,7 @@ Let's look in detail at what has changed.
 
 We're still creating a main box; however, we are now applying a style::
 
-            main_box = toga.Box(style=Pack(direction=COLUMN))
+            main_box = toga.Box(direction=COLUMN)
 
 Toga's built-in layout system is called "Pack". It behaves a lot like CSS. You define
 objects in a hierarchy - in HTML, the objects are ``<div>``, ``<span>``, and other DOM
@@ -174,13 +172,21 @@ individual elements. In this case, we're indicating that this is a ``COLUMN`` bo
 is, it is a box that will consume all the available width, and will expand its height as
 content is added, but it will try to be as short as possible.
 
+.. note::
+
+    For more advanced uses, Toga also supports a separate style object, which is used
+    like this::
+
+        from toga.style import Pack
+        main_box = toga.Box(style=Pack(direction=COLUMN))
+
 Next, we define a couple of widgets::
 
             name_label = toga.Label(
                 "Your name: ",
-                style=Pack(margin=(0, 5)),
+                margin=(0, 5),
             )
-            self.name_input = toga.TextInput(style=Pack(flex=1))
+            self.name_input = toga.TextInput(flex=1)
 
 Here, we define a Label and a TextInput. Both widgets have styles associated
 with them; the label will have 5px of margin on its left and right, and no
@@ -192,7 +198,7 @@ easy access to the widget instance - something that we'll use in a moment.
 
 Next, we define a box to hold these two widgets::
 
-            name_box = toga.Box(style=Pack(direction=ROW, margin=5))
+            name_box = toga.Box(direction=ROW, margin=5)
             name_box.add(name_label)
             name_box.add(self.name_input)
 
@@ -206,7 +212,7 @@ Now we define a button::
             button = toga.Button(
                 "Say Hello!",
                 on_press=self.say_hello,
-                style=Pack(margin=5),
+                margin=5,
             )
 
 The button also has 5px of margin on all sides. We also define a *handler* -
