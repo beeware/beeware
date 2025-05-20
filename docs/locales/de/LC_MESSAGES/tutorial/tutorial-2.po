@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-19 14:38+0000\n"
+"POT-Creation-Date: 2025-05-20 20:29+0000\n"
 "PO-Revision-Date: 2024-02-03 01:43+0000\n"
 "Last-Translator: Marco Esters <mesters@anaconda.com>\n"
 "Language: de\n"
@@ -14,254 +14,258 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: ../../tutorial/tutorial-2.rst:3 c47ec98fa1a347ee9fce0a6d60eaf432
+#: ../../tutorial/tutorial-2.rst:3 0f4d3454cc3f4dbdab9f6d8ff5a7235b
 msgid "Tutorial 2 - Making it interesting"
 msgstr "Tutorial 2 - Es wird interessant"
 
-#: ../../tutorial/tutorial-2.rst:5 02c2ad42f2b04caab7bb9e3d43d14f66
+#: ../../tutorial/tutorial-2.rst:5 63a359cf9a854bbe872b291b8a4347f6
 msgid "In :doc:`Tutorial 1 <tutorial-1>`, we generated a stub project that was able to run, but we didn't write any code ourselves. Let's take a look at what was generated for us."
 msgstr "In :doc:`Tutorial 1 <tutorial-1>` haben wir ein lauffähiges Rumpfprojekt erstellt, aber eigenen Code haben wir nicht geschrieben. Schauen wir uns an, was für uns generiert wurde."
 
-#: ../../tutorial/tutorial-2.rst:10 1dc15c741d754e919500d47f84e71440
+#: ../../tutorial/tutorial-2.rst:10 e38bfd678d2c4ca3ba64963c642e56a6
 msgid "What was generated"
 msgstr "Was generiert wurde"
 
-#: ../../tutorial/tutorial-2.rst:12 696cf47642cc4595b80a31755e225f3b
+#: ../../tutorial/tutorial-2.rst:12 9d0c42e087cd405083ec8cd5ac14f01f
 msgid "In the ``src/helloworld`` directory, you should see 3 files: ``__init__.py``, ``__main__.py`` and ``app.py``."
 msgstr "In dem Verzeichnis ``src/helloworld`` sollten 3 Dateien zu sehen sein: ``__init__.py``, ``__main__.py`` und ``app.py``."
 
-#: ../../tutorial/tutorial-2.rst:15 9a0734e3a2b34cfcbe11ca6334e36750
+#: ../../tutorial/tutorial-2.rst:15 274a4f1cc9ff4d0f900d709f3899bcda
 msgid "``__init__.py`` marks the ``helloworld`` directory as an importable Python module. It is an empty file; the very fact it exists tells the Python interpreter that the ``helloworld`` directory defines a module."
 msgstr "``__init__.py`` markiert das ``helloworld``-Verzeichnis als importierbares Python-Modul. Es ist eine leere Datei; allein die Tatsache, dass sie existiert, sagt dem Python-Interpreter, dass das ``helloworld``-Verzeichnis ein Modul definiert."
 
-#: ../../tutorial/tutorial-2.rst:19 8ca5e676b32c4a77929e9c44c0460dd6
+#: ../../tutorial/tutorial-2.rst:19 70eac09c18b548bca269efa633435046
 msgid "``__main__.py`` marks the ``helloworld`` module as a special kind of module - an executable module. If you try to run the ``helloworld`` module using ``python -m helloworld``, the ``__main__.py`` file is where Python will start executing. The contents of ``__main__.py`` is relatively simple::"
 msgstr "``__main__.py`` markiert das ``helloworld`` Modul als eine besondere Art von Modul - ein ausführbares Modul. Wenn Sie versuchen, das Modul ``helloworld`` mit ``python -m helloworld`` zu starten, ist die Datei ``__main__.py`` der Ort, an dem Python mit der Ausführung beginnt. Der Inhalt von ``__main__.py`` ist relativ einfach::"
 
-#: ../../tutorial/tutorial-2.rst:29 0857b49bfdef49d2bab7bc80fd881e88
+#: ../../tutorial/tutorial-2.rst:29 b762e8b427724e3ba65c1fdb68262e60
 msgid "That is - it imports the ``main`` method from the ``helloworld`` app; and if it's being executed as an entry point, calls the main() method, and starts the application's main loop. The main loop is the way a GUI application listens for user input (like mouse clicks and keyboard presses)."
 msgstr "Das heißt, es importiert die Methode ``main`` aus der Anwendung ``helloworld``; und wenn es als Einstiegspunkt ausgeführt wird, ruft es die Methode main() auf und startet die Hauptschleife der Anwendung. Die Hauptschleife ist die Art und Weise, wie eine GUI-Anwendung auf Benutzereingaben (wie Mausklicks und Tastatureingaben) wartet."
 
-#: ../../tutorial/tutorial-2.rst:34 96a414f05c0b4f0d9fc268c1ee00a6f5
+#: ../../tutorial/tutorial-2.rst:34 e450e791769846ed9cc9a7de87a44ecc
 #, fuzzy
 msgid "The more interesting file is ``app.py`` - this contains the logic that creates our application window::"
 msgstr "Die interessantere Datei ist ``app.py`` - diese enthält die Logik, die unser Anwendungsfenster erstellt::"
 
-#: ../../tutorial/tutorial-2.rst:52 4774cd94316c4f3db8b35a2a23c7adce
+#: ../../tutorial/tutorial-2.rst:51 4dc8ab14d498467f842b1a0de68cf87b
 #, fuzzy
 msgid "Let's go through this line by line::"
 msgstr "Gehen wir diese Zeile für Zeile durch::"
 
-#: ../../tutorial/tutorial-2.rst:58 a8601096df7946ea88ad8b47935d1e76
+#: ../../tutorial/tutorial-2.rst:56 d1a41fba603940dda9d746ad79f60cdd
 #, fuzzy
-msgid "First, we import the ``toga`` widget toolkit, as well as some style-related utility classes and constants. Our code doesn't use these yet - but we'll make use of them shortly."
+msgid "First, we import the ``toga`` widget toolkit, as well as some style-related utility constants. Our code doesn't use these yet - but we'll make use of them shortly."
 msgstr "Als erstes importieren wir das ``toga``-Widget-Toolkit, sowie einige stilbezogene Utility-Klassen und Konstanten. Unser Code verwendet diese noch nicht - aber wir werden sie in Kürze nutzen."
 
-#: ../../tutorial/tutorial-2.rst:62 c9df2c45316741ff9b1b72e5a8782fae
+#: ../../tutorial/tutorial-2.rst:60 05858ed074f8493688cc48c7cab0cdef
 msgid "Then, we define a class::"
 msgstr "Definieren wir eine Klasse::"
 
-#: ../../tutorial/tutorial-2.rst:66 320ee28836a14701954b48ad4158a651
+#: ../../tutorial/tutorial-2.rst:64 108796a3c5e2448c8f0fc04e9921022e
 #, fuzzy
 msgid "Each Toga application has a single ``toga.App`` instance, representing the running entity that is the application. The app may end up managing multiple windows; but for simple applications, there will be a single main window."
 msgstr "Jede Toga-Anwendung hat eine einzige ``toga.App``-Instanz, die laufende Entität, die Anwendung, darstellt. Die Anwendung kann mehrere Fenster verwalten, aber für einfache Anwendungen gibt es ein einziges Hauptfenster."
 
-#: ../../tutorial/tutorial-2.rst:70 9243c3919dfc4a3e90746f8753465c9e
+#: ../../tutorial/tutorial-2.rst:68 2faaef510e4145ef8a41bb123997c9f5
 #, fuzzy
 msgid "Next, we define a ``startup()`` method::"
 msgstr "Als nächstes definieren wir eine ``Startup()`` Methode::"
 
-#: ../../tutorial/tutorial-2.rst:75 5f629a5c7cc04679bb32688d4e55878d
+#: ../../tutorial/tutorial-2.rst:73 57a997fdca2e4f74ad5a48c454d337c4
 #, fuzzy
 msgid "The first thing the startup method does is to define a main box. Toga's layout scheme behaves similar to HTML. You build an application by constructing a collection of boxes, each of which contains other boxes, or actual widgets. You then apply styles to these boxes to define how they will consume the available window space."
 msgstr "Das erste, was die Startup-Methode macht, ist die Definition eines Hauptfeldes. Das Layout-Schema von Toga verhält sich ähnlich wie HTML. Sie bauen eine Anwendung auf, indem Sie eine Sammlung von Boxen konstruieren, von denen jede andere Boxen oder Widgets enthält. Sie wenden dann Stile auf diese Boxen an, um zu definieren, wie sie den verfügbaren Platz im Fenster nutzen werden."
 
-#: ../../tutorial/tutorial-2.rst:81 f7df9e3532b3499fab61e64e451e1d3b
+#: ../../tutorial/tutorial-2.rst:79 2f8df071f7e94505bc6a0b0c658ef51c
 #, fuzzy
 msgid "In this application, we define a single box, but we don't put anything into it."
 msgstr "In dieser Anwendung definieren wir ein einzelnes Feld, in das wir jedoch nichts einfügen."
 
-#: ../../tutorial/tutorial-2.rst:83 a4263b0eb3474aeb926acd7f6e62a81b
+#: ../../tutorial/tutorial-2.rst:81 6fc20f36111f47fcb0bc05ecc2060062
 #, fuzzy
 msgid "Next, we define a window into which we can put this empty box::"
 msgstr "Als Nächstes definieren wir ein Fenster, in das wir dieses leere Feld einfügen können::"
 
-#: ../../tutorial/tutorial-2.rst:87 bc178399dbd84f2aad3ed25d4583b96f
+#: ../../tutorial/tutorial-2.rst:85 debba5506d9c4bb2bfbfa770e053cae5
 #, fuzzy
 msgid "This creates an instance of a ``toga.MainWindow``, which will have a title matching the application's name. A Main Window is a special kind of window in Toga - it's a window that is closely bound to the life cycle of the app. When the Main Window is closed, the application exits. The Main Window is also the window that has the application's menu (if you're on a platform like Windows where menu bars are part of the window)."
 msgstr "Dies erzeugt eine Instanz eines ``toga.MainWindow``, das einen Titel hat, der dem Namen der Anwendung entspricht. Ein Hauptfenster ist eine besondere Art von Fenster in Toga - es ist ein Fenster, das eng an den Lebenszyklus der Anwendung gebunden ist. Wenn das Hauptfenster geschlossen wird, wird die Anwendung beendet. Das Hauptfenster ist auch das Fenster, in dem sich das Menü der Anwendung befindet (wenn Sie auf einer Plattform wie Windows arbeiten, wo die Menüleisten Teil des Fensters sind)"
 
-#: ../../tutorial/tutorial-2.rst:94 fba93adf4927413cb04723aea1bc7173
+#: ../../tutorial/tutorial-2.rst:92 d332dc18bef142e6894601a583436438
 msgid "Where is my window?"
 msgstr ""
 
-#: ../../tutorial/tutorial-2.rst:96 91286c4984f844a298bbd5dc5cdf5e4c
+#: ../../tutorial/tutorial-2.rst:94 93d83967d7a64d3ab0e6e0d713311ef6
 msgid "If you have made an error in your code, the main window of the app may not display. If this happens, you can type **Ctrl+C** in the terminal where you started the app. This will stop the app. You can then fix the error and restart the app."
 msgstr ""
 
-#: ../../tutorial/tutorial-2.rst:100 11db1c5631ca4ea393a8eaa0f63445f1
+#: ../../tutorial/tutorial-2.rst:98 16da1a93f6854ec6a75d166c7712ac1a
 #, fuzzy
 msgid "We then add our empty box as the content of the main window, and instruct the application to show our window::"
 msgstr "Dann fügen wir unsere leere Box als Inhalt des Hauptfensters hinzu und weisen die Anwendung an, unser Fenster anzuzeigen::"
 
-#: ../../tutorial/tutorial-2.rst:106 76ce9ec83d9241b8a0384629b9dceccd
+#: ../../tutorial/tutorial-2.rst:104 0f8440f233184d77984d0a50eef30ff6
 #, fuzzy
 msgid "Last of all, we define a ``main()`` function. This is what creates the instance of our application::"
 msgstr "Als letztes definieren wir eine ``main()`` Methode. Diese erzeugt die Instanz unserer Anwendung::"
 
-#: ../../tutorial/tutorial-2.rst:112 cad665477502445ab5a96435b45a1735
+#: ../../tutorial/tutorial-2.rst:110 941000b2930a45ed9ceda184f8658184
 #, fuzzy
 msgid "This ``main()`` method is the one that is imported and invoked by ``__main__.py``. It creates and returns an instance of our ``HelloWorld`` application."
 msgstr "Diese ``main()`` Methode ist diejenige, die von ``__main__.py`` importiert und aufgerufen wird. Sie erzeugt eine Instanz unserer ``HelloWorld``-Anwendung und gibt diese zurück."
 
-#: ../../tutorial/tutorial-2.rst:116 a955b9e3571b474ea6fbecaf4c240ef3
+#: ../../tutorial/tutorial-2.rst:114 189de6e522c94cd5a9028969b6b1ade8
 #, fuzzy
 msgid "That's the simplest possible Toga application. Let's put some of our own content into the application, and make the app do something interesting."
 msgstr "Das ist die einfachste mögliche Toga-Anwendung. Lassen Sie uns einige unserer eigenen Inhalte in die Anwendung einfügen und die Anwendung etwas Interessantes tun lassen."
 
-#: ../../tutorial/tutorial-2.rst:120 41dd18a33f4f4803b1eeae4d2b0c4f15
+#: ../../tutorial/tutorial-2.rst:118 9275b36d507244fcb64400236f0ab8fb
 #, fuzzy
 msgid "Adding some content of our own"
 msgstr "Hinzufügen von eigenen Inhalten"
 
-#: ../../tutorial/tutorial-2.rst:122 bd0fbaa150d744a08b487bdb5359263c
+#: ../../tutorial/tutorial-2.rst:120 9fc92b047b974c73b37ea6c768e748e9
 msgid "Let's do something more interesting with our ``HelloWorld`` app."
 msgstr ""
 
-#: ../../tutorial/tutorial-2.rst:126 589e6417e81c46a695c060200fc35547
+#: ../../tutorial/tutorial-2.rst:124 529a3aeef412497eb4c7cba7e98803c9
 #, fuzzy
 msgid "When you make these changes, make sure you keep the imports at the top of the file, and the ``main()`` at the bottom of the file. You only need to update the ``HelloWorld`` class."
 msgstr "Entfernen Sie nicht die Importe am Anfang der Datei oder ``main()`` am Ende. Sie müssen nur die Klasse ``HelloWorld`` aktualisieren."
 
-#: ../../tutorial/tutorial-2.rst:130 ee86936620314a598d46e69310c789a8
+#: ../../tutorial/tutorial-2.rst:128 21eeab302c5147fe8f727d2fd08401f2
 #, fuzzy
 msgid "Modify your ``HelloWorld`` class inside ``src/helloworld/app.py`` so that it looks like this::"
 msgstr "Ändern Sie Ihre ``HelloWorld`` Klasse in ``src/helloworld/app.py`` so, dass sie wie folgt aussieht::"
 
-#: ../../tutorial/tutorial-2.rst:164 3cfb9473cc9d44729123fe33b50ea1cc
+#: ../../tutorial/tutorial-2.rst:162 4ef36cb6ac384e9c9dcea55935166e65
 #, fuzzy
 msgid "Let's look in detail at what has changed."
 msgstr "Schauen wir uns im Detail an, was sich geändert hat."
 
-#: ../../tutorial/tutorial-2.rst:166 40177a8d7eeb4c79b1659d504ce02e19
+#: ../../tutorial/tutorial-2.rst:164 84e506a2eea2416f95fe536aa2e269cb
 #, fuzzy
 msgid "We're still creating a main box; however, we are now applying a style::"
 msgstr "Wir erstellen immer noch ein Hauptfeld, aber wir wenden jetzt einen Stil an::"
 
-#: ../../tutorial/tutorial-2.rst:170 2ef8560d8e794378accb64af0f055c97
+#: ../../tutorial/tutorial-2.rst:168 7434258933db4300b11ca8dd2a5e4aae
 #, fuzzy
 msgid "Toga's built-in layout system is called \"Pack\". It behaves a lot like CSS. You define objects in a hierarchy - in HTML, the objects are ``<div>``, ``<span>``, and other DOM elements; in Toga, they're widgets and boxes. You can then assign styles to the individual elements. In this case, we're indicating that this is a ``COLUMN`` box - that is, it is a box that will consume all the available width, and will expand its height as content is added, but it will try to be as short as possible."
 msgstr "Das in Toga eingebaute Layoutsystem heißt \"Pack\". Es verhält sich sehr ähnlich wie CSS. Sie definieren Objekte in einer Hierarchie - in HTML sind die Objekte ``<div>``, ``<span>`` und andere DOM-Elemente; in Toga sind es Widgets und Boxen. Sie können dann den einzelnen Elementen Stile zuweisen. In diesem Fall geben wir an, dass es sich um einen ``COLUMN``-Kasten handelt - das heißt, es handelt sich um einen Kasten, der die gesamte verfügbare Breite beansprucht und sich in der Höhe vergrößert, wenn Inhalt hinzugefügt wird, aber er versucht, so kurz wie möglich zu sein."
 
-#: ../../tutorial/tutorial-2.rst:177 b876f71c1fb140a8ba1657723c6d3426
+#: ../../tutorial/tutorial-2.rst:177 2790d90080a34a6c88d334ddfa81043a
+msgid "For more advanced uses, Toga also supports a separate style object, which is used like this::"
+msgstr ""
+
+#: ../../tutorial/tutorial-2.rst:183 9d67191a14314f3fb6bfa800b14d626c
 #, fuzzy
 msgid "Next, we define a couple of widgets::"
 msgstr "Als nächstes definieren wir ein paar Widgets::"
 
-#: ../../tutorial/tutorial-2.rst:185 536ccced8ca24ccaacd386afee16f305
+#: ../../tutorial/tutorial-2.rst:191 bb60da92db6a4602be1fcf9c72f14b1b
 #, fuzzy
 msgid "Here, we define a Label and a TextInput. Both widgets have styles associated with them; the label will have 5px of margin on its left and right, and no margin on the top and bottom. The TextInput is marked as being flexible - that is, it will absorb all available space in its layout axis."
 msgstr "Hier definieren wir ein Label und einen TextInput. Beiden Widgets sind Stile zugeordnet; das Label hat links und rechts ein Padding von 5px und oben und unten kein Padding. Der TextInput ist als flexibel gekennzeichnet, d. h. er nimmt den gesamten verfügbaren Platz in seiner Layoutachse ein."
 
-#: ../../tutorial/tutorial-2.rst:190 72744672a2b749348ab7349b7ec17a5c
+#: ../../tutorial/tutorial-2.rst:196 b04acd8c9d9245bd87de3cbc5bd523ae
 #, fuzzy
 msgid "The TextInput is assigned as an instance variable of the class. This gives us easy access to the widget instance - something that we'll use in a moment."
 msgstr "Der TextInput wird als Instanzvariable der Klasse zugewiesen. Dies ermöglicht uns einen einfachen Zugriff auf die Instanz des Widgets - etwas, das wir gleich verwenden werden."
 
-#: ../../tutorial/tutorial-2.rst:193 24917c31b64344e48a2b0fe45bd9d6e2
+#: ../../tutorial/tutorial-2.rst:199 2d9ea30267754effadae1875773e160f
 #, fuzzy
 msgid "Next, we define a box to hold these two widgets::"
 msgstr "Als nächstes definieren wir eine Box, die diese beiden Widgets enthält::"
 
-#: ../../tutorial/tutorial-2.rst:199 ae15772a02f847ef8d2a9101805d7dc9
+#: ../../tutorial/tutorial-2.rst:205 756d736764944e788ff703f73e7d278a
 #, fuzzy
 msgid "The ``name_box`` is a box just like the main box; however, this time, it's a ``ROW`` box. That means content will be added horizontally, and it will try to make its width as narrow as possible. The box also has some margin - 5px on all sides."
 msgstr "Die ``name_box`` ist eine Box genau wie die Hauptbox, aber dieses Mal ist es eine ``ROW``-Box. Das bedeutet, daß der Inhalt horizontal eingefügt wird, und daß versucht wird, die Breite so schmal wie möglich zu machen. Die Box hat auch etwas Padding - 5px auf allen Seiten."
 
-#: ../../tutorial/tutorial-2.rst:204 bdf13f6fe3494251b3c9f351a195c55d
+#: ../../tutorial/tutorial-2.rst:210 33686cb02e1c4fa79272c3c933615979
 #, fuzzy
 msgid "Now we define a button::"
 msgstr "Jetzt definieren wir eine Schaltfläche::"
 
-#: ../../tutorial/tutorial-2.rst:212 9c530b68b9f342a79a687736d29a563f
+#: ../../tutorial/tutorial-2.rst:218 edb046907fbd49f285fa8e7b68814979
 #, fuzzy
 msgid "The button also has 5px of margin on all sides. We also define a *handler* - a method to invoke when the button is pressed."
 msgstr "Die Schaltfläche hat auch 5px Polsterung auf allen Seiten. Wir definieren auch einen *Handler* - eine Methode, die aufgerufen wird, wenn die Schaltfläche gedrückt wird."
 
-#: ../../tutorial/tutorial-2.rst:215 122c07e8961f49dc9d784217b05c3b87
+#: ../../tutorial/tutorial-2.rst:221 40454777f0bf46d097aa59e89ca25397
 #, fuzzy
 msgid "Then, we add the name box and the button to the main box::"
 msgstr "Dann fügen wir das Namensfeld und die Schaltfläche zum Hauptfeld hinzu::"
 
-#: ../../tutorial/tutorial-2.rst:220 d36a1c5d33ba4a6abd532b77d40c63d1
+#: ../../tutorial/tutorial-2.rst:226 0847e69e24954379a52937478f340de9
 #, fuzzy
 msgid "This completes our layout; the rest of the startup method is as it was previously - defining a ``MainWindow``, and assigning the main box as the window's content::"
 msgstr "Damit ist unser Layout fertiggestellt; der Rest der Startup-Methode ist wie zuvor - Definition eines MainWindow und Zuweisung des Hauptfeldes als Inhalt des Fensters::"
 
-#: ../../tutorial/tutorial-2.rst:228 fed09ff80e464a608982a7c30ac07db6
+#: ../../tutorial/tutorial-2.rst:234 7a035c06f4af44fcbb68b9a08bf8889b
 #, fuzzy
 msgid "The last thing we need to do is define the handler for the button. A handler can be any method, generator, or asynchronous coroutine; it accepts the widget that generated the event as an argument, and will be invoked whenever the button is pressed::"
 msgstr "Als Letztes müssen wir den Handler für die Schaltfläche definieren. Ein Handler kann eine beliebige Methode, ein Generator oder eine asynchrone Co-Routine sein; er akzeptiert das Widget, das Ereignis erzeugt hat, als Argument und wird immer dann aufgerufen, wenn die Schaltfläche gedrückt wird::"
 
-#: ../../tutorial/tutorial-2.rst:236 12ef2549d2d1447ba040fe65936e0a63
+#: ../../tutorial/tutorial-2.rst:242 21ef3ba053dc46349c6e8de90442ec77
 #, fuzzy
 msgid "The body of the method is a simple print statement - however, it will interrogate the current value of the name input, and use that content as the text that is printed."
 msgstr "Der Hauptteil der Methode ist eine einfache Druckanweisung - sie fragt jedoch den aktuellen Wert der Namenseingabe ab und verwendet diesen Inhalt als den Text, der gedruckt wird."
 
-#: ../../tutorial/tutorial-2.rst:240 b8739f044f6843138736b2ada8b111b3
+#: ../../tutorial/tutorial-2.rst:246 42e9a3ee26044e50bea1a5d58ab98e1f
 #, fuzzy
 msgid "Now that we've made these changes we can see what they look like by starting the application again. As before, we'll use developer mode:"
 msgstr "Nachdem wir nun diese Änderungen vorgenommen haben, können wir sehen, wie sie aussehen, indem wir die Anwendung erneut starten. Wie zuvor werden wir den Entwicklermodus verwenden:"
 
-#: ../../tutorial/tutorial-2.rst:245 ../../tutorial/tutorial-2.rst:282
-#: b94aa8a974b244aabc1029e14a3ee59a dc5571ac4831405988cd4453e9ff079b
+#: ../../tutorial/tutorial-2.rst:251 ../../tutorial/tutorial-2.rst:288
+#: 5fac505a6d464f5b95b7ab252c1b12ef f96d3b9e18ec44ecabb7c112e9fabd6d
 msgid "macOS"
 msgstr "macOS"
 
-#: ../../tutorial/tutorial-2.rst:254 ../../tutorial/tutorial-2.rst:288
-#: 10f0c85f493c495689cbe4a9dd01610a db98d5115bc64166bfac839551f06141
+#: ../../tutorial/tutorial-2.rst:260 ../../tutorial/tutorial-2.rst:294
+#: d9fa70f5f3ee453f951f56c8a3f8625b f8d8dacedefb4b7e9c6df0b20f8cceee
 msgid "Linux"
 msgstr "Linux"
 
-#: ../../tutorial/tutorial-2.rst:263 ../../tutorial/tutorial-2.rst:294
-#: 32cde16b64bd4609a65d972458a06b7b f0e7a2989ad847ebb9cdfae13d823233
+#: ../../tutorial/tutorial-2.rst:269 ../../tutorial/tutorial-2.rst:300
+#: 041eee0b7d5b435097e64e10475dee7f 92ece6a46bc1466ab01eb499e692b763
 msgid "Windows"
 msgstr "Windows"
 
-#: ../../tutorial/tutorial-2.rst:272 c58e4c24ebcc45e8a44516922ade77d4
+#: ../../tutorial/tutorial-2.rst:278 209b61eadf834e27b6ef971bd990e492
 #, fuzzy
 msgid "You'll notice that this time, it *doesn't* install dependencies. Briefcase can detect that the application has been run before, and to save time, will only run the application. If you add new dependencies to your app, you can make sure that they're installed by passing in a ``-r`` option when you run ``briefcase dev``."
 msgstr "Sie werden feststellen, dass dieses Mal *keine* Abhängigkeiten installiert werden. Briefcase kann erkennen, dass die Anwendung schon einmal ausgeführt wurde, und um Zeit zu sparen, wird nur die Anwendung ausgeführt. Wenn Sie neue Abhängigkeiten zu Ihrer Anwendung hinzufügen, können Sie sicherstellen, dass diese installiert werden, indem Sie die Option ``-r`` beim Aufruf von ``briefcase dev`` mitgeben."
 
-#: ../../tutorial/tutorial-2.rst:278 e64ed10613ae4772b033af5c483cce7f
+#: ../../tutorial/tutorial-2.rst:284 2714ea94f7224c9d87bc62f14840be3a
 msgid "This should open a GUI window:"
 msgstr "Dies sollte ein GUI-Fenster öffnen:"
 
-#: ../../tutorial/tutorial-2.rst:284 87ffe033ef704362ae3e98bcdfbd708a
+#: ../../tutorial/tutorial-2.rst:290 0ce0bad89fe74b729e8514699d4e613f
 #, fuzzy
 msgid "Hello World Tutorial 2 window, on macOS"
 msgstr "Hello World Tutorial 2 Fenster, auf macOS"
 
-#: ../../tutorial/tutorial-2.rst:290 db2377e3dd514ef4879bcbb756efdb01
+#: ../../tutorial/tutorial-2.rst:296 1caf15833cee48c687e00063d0812912
 #, fuzzy
 msgid "Hello World Tutorial 2 window, on Linux"
 msgstr "Hello World Tutorial 2 Fenster, unter Linux"
 
-#: ../../tutorial/tutorial-2.rst:296 c91bb732a6894a9e9dc90228bcf9a6d0
+#: ../../tutorial/tutorial-2.rst:302 33e23d1c30d34241ac079bf04c134dfd
 #, fuzzy
 msgid "Hello World Tutorial 2 window, on Windows"
 msgstr "Hello World Tutorial 2 Fenster, unter Windows"
 
-#: ../../tutorial/tutorial-2.rst:300 eb33e89c5ca54802bd5fc1ffb59a48cf
+#: ../../tutorial/tutorial-2.rst:306 cc8b5edd8f1246ebbcd195fa35b5b88f
 #, fuzzy
 msgid "If you enter a name in the text box, and press the GUI button, you should see output appear in the console where you started the application."
 msgstr "Wenn Sie einen Namen in das Textfeld eingeben und die Schaltfläche GUI drücken, sollte die Ausgabe in der Konsole erscheinen, in der Sie die Anwendung gestartet haben."
 
-#: ../../tutorial/tutorial-2.rst:304 7a180e741aff4dcdadaad34bb71953ce
+#: ../../tutorial/tutorial-2.rst:310 da972f16146541b1bd104dafa8aab48e
 msgid "Next steps"
 msgstr "Nächste Schritte"
 
-#: ../../tutorial/tutorial-2.rst:306 f2d4c20600304d10b29a36d58d8cc4d8
+#: ../../tutorial/tutorial-2.rst:312 ebe9dfd6c7984478891b7e61442cd1ca
 #, fuzzy
 msgid "We've now got an application that does something a little more interesting. But it only runs on our own computer. Let's package this application for distribution. In :doc:`Tutorial 3 <tutorial-3>`, we'll wrap our application up as a standalone installer that we could send to a friend, a customer, or upload to an App Store."
 msgstr "Wir haben jetzt eine Anwendung, die etwas Interessanteres macht. Aber sie läuft nur auf unserem eigenen Computer. Lassen Sie uns diese Anwendung für die Verteilung verpacken. In :doc:`Tutorial 3 <tutorial-3>` werden wir unsere Anwendung als eigenständiges Installationsprogramm verpacken, das wir an einen Freund oder Kunden schicken oder in einen App Store hochladen können."
