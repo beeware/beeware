@@ -66,11 +66,11 @@ that it has the following content:
         def startup(self):
             main_box = toga.Box()
 
-            self.photo = toga.ImageView(style=Pack(height=300, padding=5))
+            self.photo = toga.ImageView(height=300, padding=5)
             camera_button = toga.Button(
                 "Take photo",
                 on_press=self.take_photo,
-                style=Pack(padding=5)
+                padding=5
             )
 
             main_box.add(self.photo)
