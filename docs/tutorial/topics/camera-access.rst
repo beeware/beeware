@@ -58,7 +58,6 @@ that it has the following content:
     :emphasize-lines: 10-18, 24-41
 
     import toga
-    from toga.style import Pack
     from toga.style.pack import COLUMN, ROW
 
 
@@ -70,7 +69,7 @@ that it has the following content:
             camera_button = toga.Button(
                 "Take photo",
                 on_press=self.take_photo,
-                padding=5
+                padding=5,
             )
 
             main_box.add(self.photo)

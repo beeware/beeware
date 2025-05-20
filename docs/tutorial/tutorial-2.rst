@@ -35,7 +35,6 @@ The more interesting file is ``app.py`` - this contains the logic that creates
 our application window::
 
     import toga
-    from toga.style import Pack
     from toga.style.pack import COLUMN, ROW
 
     class HelloWorld(toga.App):
@@ -52,11 +51,10 @@ our application window::
 Let's go through this line by line::
 
     import toga
-    from toga.style import Pack
     from toga.style.pack import COLUMN, ROW
 
 First, we import the ``toga`` widget toolkit, as well as some style-related
-utility classes and constants. Our code doesn't use these yet - but we'll make
+utility constants. Our code doesn't use these yet - but we'll make
 use of them shortly.
 
 Then, we define a class::
@@ -174,11 +172,13 @@ individual elements. In this case, we're indicating that this is a ``COLUMN`` bo
 is, it is a box that will consume all the available width, and will expand its height as
 content is added, but it will try to be as short as possible.
 
-Previously, style and Pack were imported and called explicitly, as shown below. This method is still
-valid but the above method is simpler.::
+.. note::
 
-            from toga.style import Pack
-            main_box = toga.Box(style=Pack(direction=COLUMN))
+    For more advanced uses, Toga also supports a separate style object, which is used
+    like this::
+
+        from toga.style import Pack
+        main_box = toga.Box(style=Pack(direction=COLUMN))
 
 Next, we define a couple of widgets::
 
