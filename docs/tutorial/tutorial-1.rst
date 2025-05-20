@@ -48,10 +48,6 @@ with the ``beeware-venv`` virtual environment activated, and run:
         want to know more, `Brett Cannon has a detailed blog post about the issue
         <https://snarky.ca/why-you-should-use-python-m-pip/>`__.
 
-One of the BeeWare tools is **Briefcase**. Briefcase can be used to package
-your application for distribution to end users - but it can also be used to
-bootstrap a new project.
-
 Bootstrap a new project
 =======================
 
