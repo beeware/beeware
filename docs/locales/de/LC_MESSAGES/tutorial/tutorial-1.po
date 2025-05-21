@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-25 04:42+0000\n"
+"POT-Creation-Date: 2025-05-21 13:03+0000\n"
 "PO-Revision-Date: 2024-02-02 22:01+0000\n"
 "Last-Translator: Marco Esters <mesters@anaconda.com>\n"
 "Language: de\n"
@@ -12,179 +12,178 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.16.0\n"
+"Generated-By: Babel 2.17.0\n"
 
-#: ../../tutorial/tutorial-1.rst:3 77807d44e41947f19b2ec5ab79cfa4e4
+#: ../../tutorial/tutorial-1.rst:3 dd3c6f3e88bd44b9932ced73593892bb
 msgid "Tutorial 1 - Your first app"
 msgstr "Tutorial 1 - Ihre erste App"
 
-#: ../../tutorial/tutorial-1.rst:5 b71cf7325bc74041b80030a55bb3b7f6
+#: ../../tutorial/tutorial-1.rst:5 4110e3f3227a4c5cb8bd9322961e46bb
 #, fuzzy
 msgid "We're ready to create our first application."
 msgstr "Wir sind bereit, unsere erste Anwendung zu erstellen."
 
-#: ../../tutorial/tutorial-1.rst:8 4b3d0d57b8ae4479a212432829189218
+#: ../../tutorial/tutorial-1.rst:8 814973627db74ffa80fecb29c143f889
 msgid "Install the BeeWare tools"
 msgstr "Installieren Sie die BeeWare-Tools"
 
-#: ../../tutorial/tutorial-1.rst:10 675880912cc149ae9ed545197cc85eee
+#: ../../tutorial/tutorial-1.rst:10 e0d96ab5dc3a4d9bbc980ad1af1d304e
 msgid "First, we need to install **Briefcase**. Briefcase is a BeeWare tool that can be used to package your application for distribution to end users - but it can also be used to bootstrap a new project. Make sure you're in the ``beeware-tutorial`` directory you created in :doc:`Tutorial 0 <tutorial-0>`, with the ``beeware-venv`` virtual environment activated, and run:"
 msgstr "Zunächst müssen wir **Briefcase** installieren. Briefcase ist ein BeeWare-Werkzeug, das verwendet werden kann, um Ihre Anwendung für die Verteilung an Endbenutzer zu verpacken - aber es kann auch verwendet werden, um ein neues Projekt zu starten. Vergewissern Sie sich, dass Sie sich in dem Verzeichnis ``beeware-tutorial`` befinden, das Sie in :doc:`Tutorial 0 <tutorial-0>` erstellt haben, und dass die virtuelle Umgebung ``beeware-venv`` aktiviert ist, und starten Sie:"
 
-#: ../../tutorial/tutorial-1.rst:18 ../../tutorial/tutorial-1.rst:64
-#: ../../tutorial/tutorial-1.rst:161 ../../tutorial/tutorial-1.rst:204
-#: 142f221bbe514cf0bc2bbfb8195aae99 20c7002a359c46ce98778d52a14d9760
-#: 9ae2848912a54024b5ffc9584f7f27ac a2efd31bf7eb46a193abcddf23ccf39c
+#: ../../tutorial/tutorial-1.rst:18 ../../tutorial/tutorial-1.rst:60
+#: ../../tutorial/tutorial-1.rst:157 ../../tutorial/tutorial-1.rst:200
+#: 4c96fcca329144269c6fb97579772d96 898c412717c049dc85f987bbb88c00e0
+#: c87d6ddf7a8e46a5b41645dba74fa1a1 f09b6dcafe85424eb0a6951f73998cf4
 msgid "macOS"
 msgstr "macOS"
 
-#: ../../tutorial/tutorial-1.rst:24 ../../tutorial/tutorial-1.rst:70
-#: ../../tutorial/tutorial-1.rst:174 ../../tutorial/tutorial-1.rst:210
-#: 666b19a81dac4266b2098fe897cf2788 7945a33298c04876b404a1d2322245e9
-#: 8e2b7b2160604806973c330d33cf1eaa c1e8310c0d5a4b9ca71b3cc6c742e320
+#: ../../tutorial/tutorial-1.rst:24 ../../tutorial/tutorial-1.rst:66
+#: ../../tutorial/tutorial-1.rst:170 ../../tutorial/tutorial-1.rst:206
+#: 4456eea30a2e420e8ba8e125fbf717a9 5566725762944433bc71740432851fef
+#: 82d7049090374b7486272b14a3e22802 cd58eda4dcd4451598abbe387dea6fc7
 msgid "Linux"
 msgstr "Linux"
 
 #: ../../tutorial/tutorial-1.rst:30 ../../tutorial/tutorial-1.rst:43
-#: 35b05a5f584f4d5fa1adddf30c99204e 5d32696e4d60491db067c9f23535a7a8
+#: b13896f8ce8f49788d28cb60dcbd6964 fd363e156461481ab2c3d18df97dacb0
 msgid "Possible errors during installation"
 msgstr "Mögliche Fehler bei der Installation"
 
-#: ../../tutorial/tutorial-1.rst:32 2a81666a9bf34ad4b5af67f51ebc0eb1
+#: ../../tutorial/tutorial-1.rst:32 6387c19308e84b8c93c724c4dfaf6f31
 msgid "If you see errors during installation, it's almost certainly because some of the system requirements haven't been installed. Make sure you have :ref:`installed all the platform pre-requisites <install-dependencies>`."
 msgstr "Wenn Sie während der Installation Fehler sehen, liegt das höchstwahrscheinlich daran, dass einige der Systemvoraussetzungen nicht installiert wurden. Stellen Sie sicher, dass Sie :ref:`alle Plattformvoraussetzungen <install-dependencies>` installiert haben."
 
-#: ../../tutorial/tutorial-1.rst:37 ../../tutorial/tutorial-1.rst:76
-#: ../../tutorial/tutorial-1.rst:187 ../../tutorial/tutorial-1.rst:216
-#: 4e026f9072964984bb93b35757820887 701a5de0c22c4032900086964471f1b0
-#: 708b467a04fb4410848cfb14263dcc3b 8efcd59a387a4fff9d3a2197b4bf25d7
+#: ../../tutorial/tutorial-1.rst:37 ../../tutorial/tutorial-1.rst:72
+#: ../../tutorial/tutorial-1.rst:183 ../../tutorial/tutorial-1.rst:212
+#: 14b9e69fc9534f4e8858fb4e7324332e 17ed002ddb9e4414b123017ce3a696a9
+#: 55930c64b7e94d8a82dd9089f8ba3b03 9196c2fda1314457bc47dd4c3f1d4870
 msgid "Windows"
 msgstr "Windows"
 
-#: ../../tutorial/tutorial-1.rst:45 364c057fbf584093988cb974762a6a80
+#: ../../tutorial/tutorial-1.rst:45 d716427cd22c46569f32707bbd3e93c4
 msgid "It is important that you use ``python -m pip``, rather than a bare ``pip``. Briefcase needs to ensure that it has an up-to-date version of ``pip`` and ``setuptools``, and a bare invocation of ``pip`` can't self-update. If you want to know more, `Brett Cannon has a detailed blog post about the issue <https://snarky.ca/why-you-should-use-python-m-pip/>`__."
 msgstr "Es ist wichtig, dass Sie ``python -m pip`` und nicht ``pip`` verwenden. Briefcase muss sicherstellen, dass es eine aktuelle Version von ``pip`` und ``setuptools`` hat, und ein bloßer Aufruf von ``pip`` kann sich nicht selbst aktualisieren. Wenn Sie mehr darüber wissen wollen, hat `Brett Cannon einen detaillierten Blogbeitrag zu diesem Problem <https://snarky.ca/why-you-should-use-python-m-pip/>`__."
 
-#: ../../tutorial/tutorial-1.rst:51 b5ae40f8f6594565989c51cd6d700726
-msgid "One of the BeeWare tools is **Briefcase**. Briefcase can be used to package your application for distribution to end users - but it can also be used to bootstrap a new project."
-msgstr "Eines der BeeWare-Tools ist **Briefcase**. Briefcase kann verwendet werden, um Ihre Anwendung für die Verteilung an Endbenutzer zu verpacken - es kann aber auch zur Erstellung eines neuen Projekts verwendet werden."
-
-#: ../../tutorial/tutorial-1.rst:56 bda0abe934d0474b9b26542eeb551c95
+#: ../../tutorial/tutorial-1.rst:52 bfecf3e003054f88ad2bff26b790d59c
 msgid "Bootstrap a new project"
 msgstr "Erstellen Sie ein neues Projekt"
 
-#: ../../tutorial/tutorial-1.rst:58 8152828fb6dc4f7ab3067c9702c17904
+#: ../../tutorial/tutorial-1.rst:54 5b058a43688e443d81428bc7d3408ada
 msgid "Let's start our first BeeWare project!  We're going to use the Briefcase ``new`` command to create an application called **Hello World**. Run the following from your command prompt:"
 msgstr "Beginnen wir mit unserem ersten BeeWare-Projekt!  Wir werden den Briefcase-Befehl ``new`` verwenden, um eine Anwendung namens **Hello World** zu erstellen. Führen Sie den folgenden Befehl in Ihrer Eingabeaufforderung aus:"
 
-#: ../../tutorial/tutorial-1.rst:82 bafe8757612b4ea6b73574c9291bf8b8
+#: ../../tutorial/tutorial-1.rst:78 88652d652c5648a5b488e6a0d1d239fb
 msgid "Briefcase will ask us for some details of our new application. For the purposes of this tutorial, use the following:"
 msgstr "Briefcase wird uns nach einigen Details zu unserer neuen Anwendung fragen. Verwenden Sie für dieses Tutorial die folgenden Angaben:"
 
-#: ../../tutorial/tutorial-1.rst:85 28d9b8b478e34a8b9f3917805409787f
+#: ../../tutorial/tutorial-1.rst:81 6300bfe3dbb24c51bf50318e783193ce
 msgid "**Formal Name** - Accept the default value: ``Hello World``."
 msgstr "**Formaler Name** - Akzeptieren Sie den Standardwert: ``Hello World``."
 
-#: ../../tutorial/tutorial-1.rst:87 badaa3cdacdf4ce6a1116997596055d1
+#: ../../tutorial/tutorial-1.rst:83 0fa39200f914477f9c64e20e3a802079
 msgid "**App Name** - Accept the default value: ``helloworld``."
 msgstr "**App Name** - Akzeptieren Sie den Standardwert: ``helloworld``."
 
-#: ../../tutorial/tutorial-1.rst:89 0afef03c2f594c02a016a1d46e79e1a7
+#: ../../tutorial/tutorial-1.rst:85 48e1568e9f854c39b8cbc7bcbefd83d1
 msgid "**Bundle** - If you own your own domain, enter that domain in reversed order. (For example, if you own the domain \"cupcakes.com\", enter ``com.cupcakes`` as the bundle). If you don't own your own domain, accept the default bundle (``com.example``)."
 msgstr "**Bundle** - Wenn Sie eine eigene Domain besitzen, geben Sie diese in umgekehrter Reihenfolge an. (Wenn Sie zum Beispiel die Domain \"cupcakes.com\" besitzen, geben Sie ``com.cupcakes`` als Bundle ein). Wenn Sie keine eigene Domain besitzen, akzeptieren Sie das Standard-Bundle (``com.example``)."
 
-#: ../../tutorial/tutorial-1.rst:94 e75d36a9fdaa43c1b1de4149dee46de1
+#: ../../tutorial/tutorial-1.rst:90 2ff4be8b8fc142fcbc1eb2527c67f99a
 msgid "**Project Name** - Accept the default value: ``Hello World``."
 msgstr "**Projektname** - Übernehmen Sie den Standardwert: ``Hello World``."
 
-#: ../../tutorial/tutorial-1.rst:96 56c1db9259b9473590eaadfd747b36f8
+#: ../../tutorial/tutorial-1.rst:92 9532d651196b4a6d83afdbcc88fdc747
 msgid "**Description** - Accept the default value (or, if you want to be really creative, come up with your own description!)"
 msgstr "**Description** - Übernehmen Sie den Standardwert (wenn Sie wirklich kreativ sein wollen, denken Sie sich Ihre eigene Beschreibung aus!)"
 
-#: ../../tutorial/tutorial-1.rst:99 3ac8f075e910425386c024d5581e3e5d
+#: ../../tutorial/tutorial-1.rst:95 3419c6932ee14641bae6a96aa2fab8cf
 msgid "**Author** - Enter your own name here."
 msgstr "**Author** - Geben Sie hier Ihren eigenen Namen ein."
 
-#: ../../tutorial/tutorial-1.rst:101 d9ec2c1872c441d88388efc8d78b133f
+#: ../../tutorial/tutorial-1.rst:97 c4e7b2143b0b46b19e98185dba97b1db
 #, fuzzy
 msgid "**Author's email** - Enter your own email address. This will be used in the configuration file, in help text, and anywhere that an email is required when submitting the app to an app store."
 msgstr "**Author's email** - Geben Sie Ihre eigene E-Mail-Adresse ein. Diese wird in der Konfigurationsdatei, im Hilfetext und überall dort verwendet, wo bei der Einreichung der App bei einem App-Store eine E-Mail erforderlich ist."
 
-#: ../../tutorial/tutorial-1.rst:105 c75a24c7bf47443f83970ca2c93f8e7e
+#: ../../tutorial/tutorial-1.rst:101 1d1252f32eb44edfae2cec6c2f893a40
 msgid "**URL** - The URL of the landing page for your application. Again, if you own your own domain, enter a URL at that domain (including the ``https://``). Otherwise, just accept the default URL (``https://example.com/helloworld``). This URL doesn't need to actually exist (for now); it will only be used if you publish your application to an app store."
 msgstr "**URL** - Die URL der Landing Page für Ihre Anwendung. Auch hier gilt: Wenn Sie Ihre eigene Domain besitzen, geben Sie eine URL auf dieser Domain ein (einschließlich ``https://``). Ansonsten akzeptieren Sie einfach die Standard-URL (``https://example.com/helloworld``). Diese URL muss (vorerst) nicht tatsächlich existieren; sie wird nur verwendet, wenn Sie Ihre Anwendung in einem App Store veröffentlichen."
 
-#: ../../tutorial/tutorial-1.rst:111 39ec112bff444ce6a1c72758dc0fe85c
+#: ../../tutorial/tutorial-1.rst:107 55984504fe754de58afb2cfac3af1f7e
 msgid "**License** - Accept the default license (BSD). This won't affect anything about the operation of the tutorial, though - so if you have particularly strong feelings about license choice, feel free to choose another license."
 msgstr "**Lizenz** - Akzeptieren Sie die Standardlizenz (BSD). Dies hat jedoch keinen Einfluss auf die Funktionsweise des Tutorials - wenn Sie also besonders starke Gefühle bezüglich der Lizenzwahl haben, können Sie gerne eine andere Lizenz wählen."
 
-#: ../../tutorial/tutorial-1.rst:116 526447c34a0943399d11fe26d3c57e08
+#: ../../tutorial/tutorial-1.rst:112 f57f3a9ce75f4282958728e49d919fde
 msgid "**GUI framework** - Accept the default option, Toga (BeeWare's own GUI toolkit)."
 msgstr "**GUI-Framework** - Akzeptieren Sie die Standardoption Toga (BeeWare's eigenes GUI-Toolkit)."
 
-#: ../../tutorial/tutorial-1.rst:119 c6d4e87c57de453099a9689a5b4ad181
+#: ../../tutorial/tutorial-1.rst:115 40cfdd05be2847509d5b37df8f981869
 msgid "Briefcase will then generate a project skeleton for you to use. If you've followed this tutorial so far, and accepted the defaults as described, your file system should look something like::"
 msgstr "Briefcase generiert dann ein Projektgerüst, das Sie verwenden können. Wenn Sie diesem Tutorial bis hierher gefolgt sind und die Vorgaben wie beschrieben akzeptiert haben, sollte Ihr Dateisystem etwa so aussehen::"
 
-#: ../../tutorial/tutorial-1.rst:143 2d003ad576a7443385baad03468c5877
+#: ../../tutorial/tutorial-1.rst:139 6c6af49cf3aa4f48b634900ea3bfdb22
 msgid "This skeleton is actually a fully functioning application without adding anything else. The ``src`` folder contains all the code for the application, the ``tests`` folder contains an initial test suite, and the ``pyproject.toml`` file describes how to package the application for distribution. If you open ``pyproject.toml`` in an editor, you'll see the configuration details you just provided to Briefcase."
 msgstr "Dieses Gerüst ist bereits eine voll funktionsfähige Anwendung, ohne etwas anderes hinzufügen zu müssen. Der Ordner ``rc`` enthält den gesamten Code für die Anwendung, der Ordner ``tests`` enthält eine erste Testreihe und die Datei ``pyproject.toml`` beschreibt, wie die Anwendung für die Verteilung verpackt werden soll. Wenn Sie die Datei ``pyproject.toml`` in einem Editor öffnen, sehen Sie die Konfigurationsdetails, die Sie Briefcase gerade mitgeteilt haben."
 
-#: ../../tutorial/tutorial-1.rst:150 7583f7c8aceb47db9692bf4e14a78ce5
+#: ../../tutorial/tutorial-1.rst:146 4d9635a7c0b348fa8009481afa65faab
 msgid "Now that we have a stub application, we can use Briefcase to run the application."
 msgstr "Nun, da wir eine Rumpfanwendung haben, können wir Briefcase verwenden, um die Anwendung auszuführen."
 
-#: ../../tutorial/tutorial-1.rst:154 85bd0282db12425c94fb343121bc29c5
+#: ../../tutorial/tutorial-1.rst:150 7b6cb2b742694916b313d3c8f558c256
 msgid "Run the app in developer mode"
 msgstr "Führen Sie die Anwendung im Entwicklermodus aus"
 
-#: ../../tutorial/tutorial-1.rst:156 7a5a8612a9fe4685bff3e16559c7f7a6
+#: ../../tutorial/tutorial-1.rst:152 9e7f0726787746e988cacbd3a25198b8
 #, fuzzy
 msgid "Move into the ``helloworld`` project directory and tell briefcase to start the project in Developer (or ``dev``) mode:"
 msgstr "Wechseln Sie in das ``helloworld`` Projektverzeichnis und sagen Sie briefcase, daß es das Projekt im Developer (oder ``dev``) Modus starten soll:"
 
-#: ../../tutorial/tutorial-1.rst:200 5557d5f15de84f9fbc22ff394aa4a33d
+#: ../../tutorial/tutorial-1.rst:196 fb12f997069f4d2db59927b43c902969
 msgid "This should open a GUI window:"
 msgstr "Dies sollte ein GUI-Fenster öffnen:"
 
-#: ../../tutorial/tutorial-1.rst:206 cc9bd6aef2d642e9ae8ea7d097658a0c
+#: ../../tutorial/tutorial-1.rst:202 92656c4ae1a24b6dacbd137ec5dea9b8
 msgid "Hello World Tutorial 1 window, on macOS"
 msgstr "Hello World Tutorial 1 Fenster unter macOS"
 
-#: ../../tutorial/tutorial-1.rst:212 a7b646f60b00440e9767ad694b32cae8
+#: ../../tutorial/tutorial-1.rst:208 4437bb4bb82248109845ba2cc955ac65
 msgid "Hello World Tutorial 1 window, on Linux"
 msgstr "Hello World Tutorial 1 Fenster unter Linux"
 
-#: ../../tutorial/tutorial-1.rst:218 6174572a1c35408882513f813b6a48ca
+#: ../../tutorial/tutorial-1.rst:214 df74da502db04effa99f5751a477e945
 msgid "Hello World Tutorial 1 window, on Windows"
 msgstr "Hello World Tutorial 1 Fenster unter Windows"
 
-#: ../../tutorial/tutorial-1.rst:222 63d3a285c14945b78c9ad05a23014159
+#: ../../tutorial/tutorial-1.rst:218 8b46367a83204403984051d59177a33a
 msgid "Invalid requirements or pip unable to connect"
 msgstr ""
 
-#: ../../tutorial/tutorial-1.rst:224 9baa2c0074de48b5adb38abe04786e6d
+#: ../../tutorial/tutorial-1.rst:220 af297456da2349c890c7e3ad0a489f4b
 msgid "If you encounter the error:"
 msgstr ""
 
-#: ../../tutorial/tutorial-1.rst:232 a88d1c95afcf4ac99e8ac616eaa1c763
+#: ../../tutorial/tutorial-1.rst:228 759392fbb5494514a46184edb080d961
 msgid "Confirm that you are running a :ref:`version of python that this tutorial supports <install-python>`."
 msgstr ""
 
-#: ../../tutorial/tutorial-1.rst:235 7b74242c04014123a7e2b291fedd8acc
+#: ../../tutorial/tutorial-1.rst:231 a7d1ed326f9545deaa2fcf82bc81e198
 msgid "If your version of python is *not* a supported version, you will have to restart the tutorial."
 msgstr ""
 
-#: ../../tutorial/tutorial-1.rst:238 bcb6948ed53e4648af4395bff9e3065c
+#: ../../tutorial/tutorial-1.rst:234 1cc037a20eea48f79e1a4290517ec8f8
 #, fuzzy
 msgid "Press the close button (or select Quit from the application's menu), and you're done! Congratulations - you've just written a standalone, native application in Python!"
 msgstr "Drücken Sie die Schaltfläche \"Schließen\" (oder wählen Sie \"Beenden\" aus dem Menü der Anwendung), und Sie sind fertig! Herzlichen Glückwunsch - Sie haben gerade eine eigenständige, native Anwendung in Python geschrieben!"
 
-#: ../../tutorial/tutorial-1.rst:243 8821a8c57e6e45949c39c865b2d310d1
+#: ../../tutorial/tutorial-1.rst:239 abf13feabaa04f489ffa709deb0e14f3
 msgid "Next steps"
 msgstr "Nächste Schritte"
 
-#: ../../tutorial/tutorial-1.rst:245 7e4f097c4a07434190758409201fd499
+#: ../../tutorial/tutorial-1.rst:241 e5b44c7bd9a64c8eb34f0d598ae86356
 msgid "We now have a working application, running in developer mode. Now we can add some logic of our own to make our application do something a little more interesting. In :doc:`Tutorial 2 <tutorial-2>`, we'll put a more useful user interface onto our application."
 msgstr "Wir haben jetzt eine funktionierende Anwendung, die im Entwicklermodus läuft. Jetzt können wir unsere eigene Logik hinzufügen, damit unsere Anwendung etwas Interessanteres tut. In :doc:`Tutorial 2 <tutorial-2>` werden wir unserer Anwendung eine nützlichere Benutzeroberfläche geben."
+
+#~ msgid "One of the BeeWare tools is **Briefcase**. Briefcase can be used to package your application for distribution to end users - but it can also be used to bootstrap a new project."
+#~ msgstr "Eines der BeeWare-Tools ist **Briefcase**. Briefcase kann verwendet werden, um Ihre Anwendung für die Verteilung an Endbenutzer zu verpacken - es kann aber auch zur Erstellung eines neuen Projekts verwendet werden."
 

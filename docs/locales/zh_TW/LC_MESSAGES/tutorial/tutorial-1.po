@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-25 04:42+0000\n"
+"POT-Creation-Date: 2025-05-21 13:03+0000\n"
 "PO-Revision-Date: 2024-04-11 22:01+0000\n"
 "Last-Translator: sus <jeffpeng2012@gmail.com>\n"
 "Language: zh_TW\n"
@@ -16,175 +16,174 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.16.0\n"
+"Generated-By: Babel 2.17.0\n"
 
-#: ../../tutorial/tutorial-1.rst:3 77807d44e41947f19b2ec5ab79cfa4e4
+#: ../../tutorial/tutorial-1.rst:3 dd3c6f3e88bd44b9932ced73593892bb
 msgid "Tutorial 1 - Your first app"
 msgstr "教學 1 - 您的第一個應用程式"
 
-#: ../../tutorial/tutorial-1.rst:5 b71cf7325bc74041b80030a55bb3b7f6
+#: ../../tutorial/tutorial-1.rst:5 4110e3f3227a4c5cb8bd9322961e46bb
 msgid "We're ready to create our first application."
 msgstr "我們已準備好創建我們的第一個應用程式。"
 
-#: ../../tutorial/tutorial-1.rst:8 4b3d0d57b8ae4479a212432829189218
+#: ../../tutorial/tutorial-1.rst:8 814973627db74ffa80fecb29c143f889
 msgid "Install the BeeWare tools"
 msgstr "安裝 BeeWare 工具"
 
-#: ../../tutorial/tutorial-1.rst:10 675880912cc149ae9ed545197cc85eee
+#: ../../tutorial/tutorial-1.rst:10 e0d96ab5dc3a4d9bbc980ad1af1d304e
 msgid "First, we need to install **Briefcase**. Briefcase is a BeeWare tool that can be used to package your application for distribution to end users - but it can also be used to bootstrap a new project. Make sure you're in the ``beeware-tutorial`` directory you created in :doc:`Tutorial 0 <tutorial-0>`, with the ``beeware-venv`` virtual environment activated, and run:"
 msgstr "首先，我們需要安裝 **Briefcase**。 它是一個 BeeWare 工具，可用於打包應用程式以分發給最終用戶 - 但它也可用於引導新專案。確保您位於 :doc:`教學 0 <tutorial-0>` 中建立的 ``beeware-tutorial`` 目錄中，啟動 ``beeware-venv`` 虛擬環境，然後執行："
 
-#: ../../tutorial/tutorial-1.rst:18 ../../tutorial/tutorial-1.rst:64
-#: ../../tutorial/tutorial-1.rst:161 ../../tutorial/tutorial-1.rst:204
-#: 142f221bbe514cf0bc2bbfb8195aae99 20c7002a359c46ce98778d52a14d9760
-#: 9ae2848912a54024b5ffc9584f7f27ac a2efd31bf7eb46a193abcddf23ccf39c
+#: ../../tutorial/tutorial-1.rst:18 ../../tutorial/tutorial-1.rst:60
+#: ../../tutorial/tutorial-1.rst:157 ../../tutorial/tutorial-1.rst:200
+#: 4c96fcca329144269c6fb97579772d96 898c412717c049dc85f987bbb88c00e0
+#: c87d6ddf7a8e46a5b41645dba74fa1a1 f09b6dcafe85424eb0a6951f73998cf4
 msgid "macOS"
 msgstr "macOS"
 
-#: ../../tutorial/tutorial-1.rst:24 ../../tutorial/tutorial-1.rst:70
-#: ../../tutorial/tutorial-1.rst:174 ../../tutorial/tutorial-1.rst:210
-#: 666b19a81dac4266b2098fe897cf2788 7945a33298c04876b404a1d2322245e9
-#: 8e2b7b2160604806973c330d33cf1eaa c1e8310c0d5a4b9ca71b3cc6c742e320
+#: ../../tutorial/tutorial-1.rst:24 ../../tutorial/tutorial-1.rst:66
+#: ../../tutorial/tutorial-1.rst:170 ../../tutorial/tutorial-1.rst:206
+#: 4456eea30a2e420e8ba8e125fbf717a9 5566725762944433bc71740432851fef
+#: 82d7049090374b7486272b14a3e22802 cd58eda4dcd4451598abbe387dea6fc7
 msgid "Linux"
 msgstr "Linux"
 
 #: ../../tutorial/tutorial-1.rst:30 ../../tutorial/tutorial-1.rst:43
-#: 35b05a5f584f4d5fa1adddf30c99204e 5d32696e4d60491db067c9f23535a7a8
+#: b13896f8ce8f49788d28cb60dcbd6964 fd363e156461481ab2c3d18df97dacb0
 msgid "Possible errors during installation"
 msgstr "安裝過程中可能出現的錯誤"
 
-#: ../../tutorial/tutorial-1.rst:32 2a81666a9bf34ad4b5af67f51ebc0eb1
+#: ../../tutorial/tutorial-1.rst:32 6387c19308e84b8c93c724c4dfaf6f31
 msgid "If you see errors during installation, it's almost certainly because some of the system requirements haven't been installed. Make sure you have :ref:`installed all the platform pre-requisites <install-dependencies>`."
 msgstr "如果您在安裝過程中看到錯誤，幾乎可以肯定是因為某些系統需求尚未安裝。確保您 :ref:`已安裝所有平台先決條件 <install-dependencies>`。"
 
-#: ../../tutorial/tutorial-1.rst:37 ../../tutorial/tutorial-1.rst:76
-#: ../../tutorial/tutorial-1.rst:187 ../../tutorial/tutorial-1.rst:216
-#: 4e026f9072964984bb93b35757820887 701a5de0c22c4032900086964471f1b0
-#: 708b467a04fb4410848cfb14263dcc3b 8efcd59a387a4fff9d3a2197b4bf25d7
+#: ../../tutorial/tutorial-1.rst:37 ../../tutorial/tutorial-1.rst:72
+#: ../../tutorial/tutorial-1.rst:183 ../../tutorial/tutorial-1.rst:212
+#: 14b9e69fc9534f4e8858fb4e7324332e 17ed002ddb9e4414b123017ce3a696a9
+#: 55930c64b7e94d8a82dd9089f8ba3b03 9196c2fda1314457bc47dd4c3f1d4870
 msgid "Windows"
 msgstr "Windows"
 
-#: ../../tutorial/tutorial-1.rst:45 364c057fbf584093988cb974762a6a80
+#: ../../tutorial/tutorial-1.rst:45 d716427cd22c46569f32707bbd3e93c4
 msgid "It is important that you use ``python -m pip``, rather than a bare ``pip``. Briefcase needs to ensure that it has an up-to-date version of ``pip`` and ``setuptools``, and a bare invocation of ``pip`` can't self-update. If you want to know more, `Brett Cannon has a detailed blog post about the issue <https://snarky.ca/why-you-should-use-python-m-pip/>`__."
 msgstr "使用 ``python -m pip`` ，而不是只有 ``pip`` ，這一點很重要。 Briefcase需要確保它有最新版本的 ``pip`` 和 ``setuptools`` ，並且單純調用 ``pip`` 無法自我更新。如果您想了解更多信息，`Brett Cannon 有一篇關於該問題的詳細博客文章 <https://snarky.ca/why-you-should-use-python-m-pip/>`__ 。"
 
-#: ../../tutorial/tutorial-1.rst:51 b5ae40f8f6594565989c51cd6d700726
-msgid "One of the BeeWare tools is **Briefcase**. Briefcase can be used to package your application for distribution to end users - but it can also be used to bootstrap a new project."
-msgstr "BeeWare 工具之一是 **Briefcase** 。它可用於打包您的應用程式以分發給最終用戶 - 但它也可用於初始化新專案。"
-
-#: ../../tutorial/tutorial-1.rst:56 bda0abe934d0474b9b26542eeb551c95
+#: ../../tutorial/tutorial-1.rst:52 bfecf3e003054f88ad2bff26b790d59c
 msgid "Bootstrap a new project"
 msgstr "開始一個新項目"
 
-#: ../../tutorial/tutorial-1.rst:58 8152828fb6dc4f7ab3067c9702c17904
+#: ../../tutorial/tutorial-1.rst:54 5b058a43688e443d81428bc7d3408ada
 msgid "Let's start our first BeeWare project!  We're going to use the Briefcase ``new`` command to create an application called **Hello World**. Run the following from your command prompt:"
 msgstr "讓我們開始我們的第一個 BeeWare 專案吧！我們將使用 Briefcase 的 ``new`` 命令建立一個名為 **Hello World** 的應用程式。從命令提示字元執行以下命令："
 
-#: ../../tutorial/tutorial-1.rst:82 bafe8757612b4ea6b73574c9291bf8b8
+#: ../../tutorial/tutorial-1.rst:78 88652d652c5648a5b488e6a0d1d239fb
 msgid "Briefcase will ask us for some details of our new application. For the purposes of this tutorial, use the following:"
 msgstr "Briefcase 將詢問我們新應用程式的一些詳細資訊。出於本教學的目的，請使用以下內容："
 
-#: ../../tutorial/tutorial-1.rst:85 28d9b8b478e34a8b9f3917805409787f
+#: ../../tutorial/tutorial-1.rst:81 6300bfe3dbb24c51bf50318e783193ce
 msgid "**Formal Name** - Accept the default value: ``Hello World``."
 msgstr "**正式名稱** - 接受預設值： ``Hello World`` 。"
 
-#: ../../tutorial/tutorial-1.rst:87 badaa3cdacdf4ce6a1116997596055d1
+#: ../../tutorial/tutorial-1.rst:83 0fa39200f914477f9c64e20e3a802079
 msgid "**App Name** - Accept the default value: ``helloworld``."
 msgstr "**應用程式名稱** - 接受預設值： ``helloworld`` 。"
 
-#: ../../tutorial/tutorial-1.rst:89 0afef03c2f594c02a016a1d46e79e1a7
+#: ../../tutorial/tutorial-1.rst:85 48e1568e9f854c39b8cbc7bcbefd83d1
 msgid "**Bundle** - If you own your own domain, enter that domain in reversed order. (For example, if you own the domain \"cupcakes.com\", enter ``com.cupcakes`` as the bundle). If you don't own your own domain, accept the default bundle (``com.example``)."
 msgstr "**封裝名稱** - 如果您擁有自己的網域，請以相反的順序輸入該網域。 （例如，如果您擁有網域名稱 ``cupcakes.com`` ，請輸入 ``com.cupcakes`` 作為捆綁包）。如果您不擁有自己的網域，請接受預設捆綁包（ ``com.example`` ）。"
 
-#: ../../tutorial/tutorial-1.rst:94 e75d36a9fdaa43c1b1de4149dee46de1
+#: ../../tutorial/tutorial-1.rst:90 2ff4be8b8fc142fcbc1eb2527c67f99a
 msgid "**Project Name** - Accept the default value: ``Hello World``."
 msgstr "**項目名稱** - 接受預設值： ``Hello World`` 。"
 
-#: ../../tutorial/tutorial-1.rst:96 56c1db9259b9473590eaadfd747b36f8
+#: ../../tutorial/tutorial-1.rst:92 9532d651196b4a6d83afdbcc88fdc747
 msgid "**Description** - Accept the default value (or, if you want to be really creative, come up with your own description!)"
 msgstr "**描述** - 接受預設值（或者，如果您想真正發揮創意，請提出您自己的描述！）"
 
-#: ../../tutorial/tutorial-1.rst:99 3ac8f075e910425386c024d5581e3e5d
+#: ../../tutorial/tutorial-1.rst:95 3419c6932ee14641bae6a96aa2fab8cf
 msgid "**Author** - Enter your own name here."
 msgstr "**作者** - 在此輸入您自己的姓名。"
 
-#: ../../tutorial/tutorial-1.rst:101 d9ec2c1872c441d88388efc8d78b133f
+#: ../../tutorial/tutorial-1.rst:97 c4e7b2143b0b46b19e98185dba97b1db
 msgid "**Author's email** - Enter your own email address. This will be used in the configuration file, in help text, and anywhere that an email is required when submitting the app to an app store."
 msgstr "**作者的電子郵件** - 輸入您自己的電子郵件地址。這將用在設定檔、說明文字以及將應用程式提交到應用程式商店時需要電子郵件的任何地方。"
 
-#: ../../tutorial/tutorial-1.rst:105 c75a24c7bf47443f83970ca2c93f8e7e
+#: ../../tutorial/tutorial-1.rst:101 1d1252f32eb44edfae2cec6c2f893a40
 msgid "**URL** - The URL of the landing page for your application. Again, if you own your own domain, enter a URL at that domain (including the ``https://``). Otherwise, just accept the default URL (``https://example.com/helloworld``). This URL doesn't need to actually exist (for now); it will only be used if you publish your application to an app store."
 msgstr "**URL** - 您的應用程式的登入頁面的 URL。同樣，如果您擁有自己的網域，請輸入該網域的 URL（包括 ``https://`` ）。否則，只需接受預設 URL (``https://example.com/helloworld``)。該 URL 不需要實際存在（目前）；只有當您將應用程式發佈到應用程式商店時才會使用它。"
 
-#: ../../tutorial/tutorial-1.rst:111 39ec112bff444ce6a1c72758dc0fe85c
+#: ../../tutorial/tutorial-1.rst:107 55984504fe754de58afb2cfac3af1f7e
 msgid "**License** - Accept the default license (BSD). This won't affect anything about the operation of the tutorial, though - so if you have particularly strong feelings about license choice, feel free to choose another license."
 msgstr "**許可證** - 接受預設許可證 (BSD)。不過，這不會影響本教學的操作 - 因此，如果您對許可證選擇有特別強烈的感覺，請隨意選擇其他許可證。"
 
-#: ../../tutorial/tutorial-1.rst:116 526447c34a0943399d11fe26d3c57e08
+#: ../../tutorial/tutorial-1.rst:112 f57f3a9ce75f4282958728e49d919fde
 msgid "**GUI framework** - Accept the default option, Toga (BeeWare's own GUI toolkit)."
 msgstr "**GUI 框架** - 接受預設選項 Toga（BeeWare 自己的 GUI 工具）。"
 
-#: ../../tutorial/tutorial-1.rst:119 c6d4e87c57de453099a9689a5b4ad181
+#: ../../tutorial/tutorial-1.rst:115 40cfdd05be2847509d5b37df8f981869
 msgid "Briefcase will then generate a project skeleton for you to use. If you've followed this tutorial so far, and accepted the defaults as described, your file system should look something like::"
 msgstr "然後，Briefcase 將產生一個專案框架供您使用。如果您到目前為止已經遵循了本教學，並接受了所描述的預設設置，您的資料夾應該類似於："
 
-#: ../../tutorial/tutorial-1.rst:143 2d003ad576a7443385baad03468c5877
+#: ../../tutorial/tutorial-1.rst:139 6c6af49cf3aa4f48b634900ea3bfdb22
 msgid "This skeleton is actually a fully functioning application without adding anything else. The ``src`` folder contains all the code for the application, the ``tests`` folder contains an initial test suite, and the ``pyproject.toml`` file describes how to package the application for distribution. If you open ``pyproject.toml`` in an editor, you'll see the configuration details you just provided to Briefcase."
 msgstr "這個框架實際上是一個功能齊全的應用程式，無需添加任何其他內容。 ``src`` 資料夾包含應用程式的所有程式碼， ``tests`` 資料夾包含初始測試套件， ``pyproject.toml`` 檔案描述如何打包應用程式以進行分發。如果您在編輯器中開啟 ``pyproject.toml`` ，您將看到剛剛提供給 ``Briefcase`` 的設定詳細資訊。"
 
-#: ../../tutorial/tutorial-1.rst:150 7583f7c8aceb47db9692bf4e14a78ce5
+#: ../../tutorial/tutorial-1.rst:146 4d9635a7c0b348fa8009481afa65faab
 msgid "Now that we have a stub application, we can use Briefcase to run the application."
 msgstr "現在我們有了一個未打包的應用程式，我們可以使用 Briefcase 來運行該應用程式。"
 
-#: ../../tutorial/tutorial-1.rst:154 85bd0282db12425c94fb343121bc29c5
+#: ../../tutorial/tutorial-1.rst:150 7b6cb2b742694916b313d3c8f558c256
 msgid "Run the app in developer mode"
 msgstr "在開發者模式下運行應用程式"
 
-#: ../../tutorial/tutorial-1.rst:156 7a5a8612a9fe4685bff3e16559c7f7a6
+#: ../../tutorial/tutorial-1.rst:152 9e7f0726787746e988cacbd3a25198b8
 msgid "Move into the ``helloworld`` project directory and tell briefcase to start the project in Developer (or ``dev``) mode:"
 msgstr "進入 ``helloworld`` 專案目錄並告訴公事包以開發人員（或 ``dev`` ）模式啟動專案："
 
-#: ../../tutorial/tutorial-1.rst:200 5557d5f15de84f9fbc22ff394aa4a33d
+#: ../../tutorial/tutorial-1.rst:196 fb12f997069f4d2db59927b43c902969
 msgid "This should open a GUI window:"
 msgstr "這應該打開一個 GUI 視窗："
 
-#: ../../tutorial/tutorial-1.rst:206 cc9bd6aef2d642e9ae8ea7d097658a0c
+#: ../../tutorial/tutorial-1.rst:202 92656c4ae1a24b6dacbd137ec5dea9b8
 msgid "Hello World Tutorial 1 window, on macOS"
 msgstr "在 macOS 上的教學 1 視窗"
 
-#: ../../tutorial/tutorial-1.rst:212 a7b646f60b00440e9767ad694b32cae8
+#: ../../tutorial/tutorial-1.rst:208 4437bb4bb82248109845ba2cc955ac65
 msgid "Hello World Tutorial 1 window, on Linux"
 msgstr "在 Linux 上的教學 1 視窗"
 
-#: ../../tutorial/tutorial-1.rst:218 6174572a1c35408882513f813b6a48ca
+#: ../../tutorial/tutorial-1.rst:214 df74da502db04effa99f5751a477e945
 msgid "Hello World Tutorial 1 window, on Windows"
 msgstr "在 Windows 上的教學 1 視窗"
 
-#: ../../tutorial/tutorial-1.rst:222 63d3a285c14945b78c9ad05a23014159
+#: ../../tutorial/tutorial-1.rst:218 8b46367a83204403984051d59177a33a
 msgid "Invalid requirements or pip unable to connect"
 msgstr ""
 
-#: ../../tutorial/tutorial-1.rst:224 9baa2c0074de48b5adb38abe04786e6d
+#: ../../tutorial/tutorial-1.rst:220 af297456da2349c890c7e3ad0a489f4b
 msgid "If you encounter the error:"
 msgstr ""
 
-#: ../../tutorial/tutorial-1.rst:232 a88d1c95afcf4ac99e8ac616eaa1c763
+#: ../../tutorial/tutorial-1.rst:228 759392fbb5494514a46184edb080d961
 msgid "Confirm that you are running a :ref:`version of python that this tutorial supports <install-python>`."
 msgstr ""
 
-#: ../../tutorial/tutorial-1.rst:235 7b74242c04014123a7e2b291fedd8acc
+#: ../../tutorial/tutorial-1.rst:231 a7d1ed326f9545deaa2fcf82bc81e198
 msgid "If your version of python is *not* a supported version, you will have to restart the tutorial."
 msgstr ""
 
-#: ../../tutorial/tutorial-1.rst:238 bcb6948ed53e4648af4395bff9e3065c
+#: ../../tutorial/tutorial-1.rst:234 1cc037a20eea48f79e1a4290517ec8f8
 msgid "Press the close button (or select Quit from the application's menu), and you're done! Congratulations - you've just written a standalone, native application in Python!"
 msgstr "按下關閉按鈕（或從應用程式的選單中選擇退出），就完成了！恭喜 - 您剛剛用 Python 編寫了一個獨立的本機應用程式！"
 
-#: ../../tutorial/tutorial-1.rst:243 8821a8c57e6e45949c39c865b2d310d1
+#: ../../tutorial/tutorial-1.rst:239 abf13feabaa04f489ffa709deb0e14f3
 msgid "Next steps"
 msgstr "下一步"
 
-#: ../../tutorial/tutorial-1.rst:245 7e4f097c4a07434190758409201fd499
+#: ../../tutorial/tutorial-1.rst:241 e5b44c7bd9a64c8eb34f0d598ae86356
 msgid "We now have a working application, running in developer mode. Now we can add some logic of our own to make our application do something a little more interesting. In :doc:`Tutorial 2 <tutorial-2>`, we'll put a more useful user interface onto our application."
 msgstr "我們現在有了一個可以運行的應用程序，在開發人員模式下運行。現在我們可以添加一些我們自己的邏輯，使我們的應用程式做一些更有趣的事情。在 :doc:`教程 2 中<tutorial-2>`，我們將在我們的應用程式中放置一個更有用的使用者介面。"
+
+#~ msgid "One of the BeeWare tools is **Briefcase**. Briefcase can be used to package your application for distribution to end users - but it can also be used to bootstrap a new project."
+#~ msgstr "BeeWare 工具之一是 **Briefcase** 。它可用於打包您的應用程式以分發給最終用戶 - 但它也可用於初始化新專案。"
 
