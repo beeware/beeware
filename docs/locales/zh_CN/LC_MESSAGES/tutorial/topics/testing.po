@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-29 10:14+0800\n"
-"PO-Revision-Date: 2025-04-19 07:03+0000\n"
+"PO-Revision-Date: 2025-05-25 07:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/topics/testing/zh_Hans/>\n"
@@ -12,38 +12,45 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.11.1-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 "Generated-By: Babel 2.15.0\n"
 
 #: ../../tutorial/topics/testing.rst:3 93773728f8c54ddb87420111aeed2ad4
-#, fuzzy
 msgid "Testing times"
-msgstr "教程 9 - 测试时间"
+msgstr "测试的时候"
 
 #: ../../tutorial/topics/testing.rst:5 f78267d23da54a2ab3d6150efa58d899
-#, fuzzy
 msgid "Most software development doesn't involve writing new code - it's modifying existing code. Ensuring that existing code continues to work in the way we expect is a key part of the software development process. One way to do ensure the behavior of our app is with a *test suite*."
-msgstr "大多数软件开发并不涉及编写新代码，而是修改现有代码。确保现有代码以我们期望的方式继续工作是软件开发过程的关键部分。确保应用程序行为的方法之一就是*测试套件*。"
+msgstr ""
+"大多数软件开发并不涉及编写新代码，而是修改现有代码。确保现有代码以我们期望的"
+"方式继续正常工作是软件开发过程的关键部分。"
+"确保应用程序行为的方法之一是使用一个\\ *测试套件*。"
 
 #: ../../tutorial/topics/testing.rst:11 8170b274930d4849aa64dc40421d0549
-#, fuzzy
 msgid "Running the test suite"
 msgstr "运行测试套件"
 
 #: ../../tutorial/topics/testing.rst:13 e55d23b4fa494b09a62a3c55ee0d0ebb
-#, fuzzy
 msgid "It turns out the project from the core tutorial already has a test suite! When we originally generated our project, two top-level directories were generated: ``src`` and ``tests``. The ``src`` folder contains the code for our app; the ``tests`` folder contains our test suite. Inside the ``tests`` folder is a file named ``test_app.py`` with the following content::"
-msgstr "原来我们的项目已经有了一个测试套件！我们最初生成项目时，会生成两个顶级目录：src \"和 \"tests\"。src \"文件夹包含应用程序的代码；\"tests \"文件夹包含测试套件。在 ``tests`` 文件夹中，有一个名为 ``test_app.py`` 的文件，内容如下：："
+msgstr ""
+"原来我们的项目已经有了一个测试套件！我们最初生成项目时，会生成两个顶级目录：`"
+"`src``\\ 和\\ ``tests``。``src``\\ 文件夹包含应用程序的代码；``tests``\\ "
+"文件夹包含测试套件。在\\ ``tests``\\ 文件夹中，有一个名为\\ ``test_app.py``\\"
+" 的文件，内容如下::"
 
 #: ../../tutorial/topics/testing.rst:23 12578aff26fb4372963fa5ccd8005e18
-#, fuzzy
 msgid "This is a `Pytest <https://pytest.org>`__ *test case* - a block of code that can be executed to verify some behavior of your app. In this case, the test is a placeholder, and doesn't test anything about our app - but it is a test that we can perform."
-msgstr "这是一个 `Pytest <https://pytest.org>`__ *测试用例* - 可以执行的代码块，用于验证应用程序的某些行为。在本例中，该测试是一个占位符，并不测试我们应用程序的任何内容，但我们可以执行该测试。"
+msgstr ""
+"这是一个 `Pytest <https://pytest.org>`__ *测试用例* - "
+"用于验证应用程序的某些行为的可以执行的代码块。在本例中，该测试是一个占位符，"
+"并不测试我们应用程序的任何内容，但我们可以执行该测试。"
 
 #: ../../tutorial/topics/testing.rst:28 a8e6e625f47e4c0f8f476892ce705854
-#, fuzzy
 msgid "We can run this test suite using the ``--test`` option to ``briefcase dev``. As this is the first time we are running tests, we also need to pass in the ``-r`` option to ensure that the test requirements are also installed:"
-msgstr "我们可以使用 ``briefcase dev`` 的 ``--test`` 选项来运行这个测试套件。由于这是第一次运行测试，我们还需要传递 ``-r`` 选项，以确保测试需求也已安装："
+msgstr ""
+"我们可以使用 ``briefcase dev`` 的 ``--test`` "
+"选项来运行这个测试套件。由于这是第一次运行测试，我们还需要传递 ``-r`` "
+"选项，以确保测试以来想也已安装："
 
 #: ../../tutorial/topics/testing.rst:34 ../../tutorial/topics/testing.rst:139
 #: ../../tutorial/topics/testing.rst:209 ../../tutorial/topics/testing.rst:326
