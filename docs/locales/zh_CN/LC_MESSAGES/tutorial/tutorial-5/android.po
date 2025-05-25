@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-15 18:36+0000\n"
-"PO-Revision-Date: 2025-04-19 07:03+0000\n"
+"PO-Revision-Date: 2025-05-25 07:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/tutorial-5/android/zh_Hans/>\n"
@@ -12,33 +12,32 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.11.1-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 "Generated-By: Babel 2.15.0\n"
 
 #: ../../tutorial/tutorial-5/android.rst:3 0c8022a37bc54e75934ef0d847922f92
-#, fuzzy
 msgid "Tutorial 5 - Taking it mobile: Android"
 msgstr "教程 5 - 移动化：安卓"
 
 #: ../../tutorial/tutorial-5/android.rst:5 ac68c31e09f94a5382f9f085497e2a6d
-#, fuzzy
 msgid "Now, we're going to take our application, and deploy it as an Android application."
 msgstr "现在，我们要将应用程序部署为 Android 应用程序。"
 
 #: ../../tutorial/tutorial-5/android.rst:8 1dbda75b86724c088727ab6ed158ad99
-#, fuzzy
 msgid "The process of deploying an application to Android is very similar to the process for deploying as a desktop application. Briefcase handles installing dependencies for Android, including the Android SDK, the Android emulator, and a Java compiler."
-msgstr "将应用程序部署到 Android 的过程与部署为桌面应用程序的过程非常相似。公文包会处理 Android 依赖项的安装，包括 Android SDK、Android 模拟器和 Java 编译器。"
+msgstr ""
+"将应用程序部署到 Android 的过程与部署为桌面应用程序的过程非常相似。Briefcase "
+"会处理 Android 上的依赖项的安装，包括 Android SDK、Android 模拟器，和一个 "
+"Java 编译器。"
 
 #: ../../tutorial/tutorial-5/android.rst:14 c31261b1133e4fac9ed5be9a9ca57c51
-#, fuzzy
 msgid "Create an Android app and compile it"
 msgstr "创建并编译 Android 应用程序"
 
 #: ../../tutorial/tutorial-5/android.rst:16 56ec664100584899a6245f978d06317d
-#, fuzzy
 msgid "First, run the ``create`` command. This downloads an Android app template and adds your Python code to it."
-msgstr "首先，运行 ``create`` 命令。这会下载一个 Android 应用程序模板，并在其中添加您的 Python 代码。"
+msgstr "首先，运行 ``create`` 命令。这会下载一个 Android 应用程序模板，"
+"并在其中添加您的 Python 代码。"
 
 #: ../../tutorial/tutorial-5/android.rst:21
 #: ../../tutorial/tutorial-5/android.rst:118
@@ -68,32 +67,39 @@ msgid "Windows"
 msgstr "Windows"
 
 #: ../../tutorial/tutorial-5/android.rst:102 c0258e34c45f419a814a59200bade349
-#, fuzzy
 msgid "When you run ``briefcase create android`` for the first time, Briefcase downloads a Java JDK, and the Android SDK. File sizes and download times can be considerable; this may take a while (10 minutes or longer, depending on the speed of your Internet connection). When the download has completed, you will be prompted to accept Google's Android SDK license."
-msgstr "首次运行 ``briefcase create android`` 时，Briefcase 会下载 Java JDK 和 Android SDK。文件大小和下载时间可能相当长；这可能需要一段时间（10 分钟或更长，取决于您的互联网连接速度）。下载完成后，系统将提示您接受 Google 的 Android SDK 许可证。"
+msgstr ""
+"首次运行 ``briefcase create android`` 时，Briefcase 会下载 Java JDK 和 "
+"Android SDK。文件大小回较大，且下载时间可能会较长（10 "
+"分钟或更长，取决于您的互联网连接速度）。下载完成后，您将会被提示接受 Google "
+"的 Android SDK 许可证。"
 
 #: ../../tutorial/tutorial-5/android.rst:108 96dc0b218001463c9f73de2ba26a5015
-#, fuzzy
 msgid "Once this completes, we'll have a ``build\\helloworld\\android\\gradle`` directory in our project, which will contain an Android project with a Gradle build configuration. This project will contain your application code, and a support package containing the Python interpreter."
-msgstr "完成后，我们的项目中就会有一个``build/helloworld/android/gradle``目录，其中包含一个带有 Gradle 构建配置的 Android 项目。这个项目将包含你的应用代码，以及一个包含 Python 解释器的支持包。"
+msgstr ""
+"完成后，我们的项目中就会有一个\\ ``build/helloworld/android/gradle``\\ 目录，"
+"其中包含一个带有 Gradle 构建配置的 Android 项目。这个项目将包含您的应用代码，"
+"以及一个包含 Python 解释器的支持包。"
 
 #: ../../tutorial/tutorial-5/android.rst:113 eeb8d6d97e1b4b038667d4a6ea46a869
-#, fuzzy
 msgid "We can then use Briefcase's ``build`` command to compile this into an Android APK app file."
-msgstr "然后，我们可以使用 Briefcase 的 ``build`` 命令将其编译为 Android APK 应用程序文件。"
+msgstr "然后我们可以使用 Briefcase 的 ``build`` 命令将其编译为 Android APK "
+"应用程序文件。"
 
 #: ../../tutorial/tutorial-5/android.rst:172 9cdcf399ea424882b34f98d9be5dd7ed
-#, fuzzy
 msgid "Gradle may look stuck"
-msgstr "Gradle 可能看起来卡住了"
+msgstr "Gradle 看起来卡住了"
 
 #: ../../tutorial/tutorial-5/android.rst:174 a88826c292c14b81a5135f7f94037922
-#, fuzzy
 msgid "During the ``briefcase build android`` step, Gradle (the Android platform build tool) will print ``CONFIGURING: 100%``, and appear to be doing nothing. Don't worry, it's not stuck - it's downloading more Android SDK components. Depending on your Internet connection speed, this may take another 10 minutes (or longer). This lag should only happen the very first time you run ``build``; the tools are cached, and on your next build, the cached versions will be used."
-msgstr "在 ``briefcase build android`` 步骤中，Gradle（Android 平台构建工具）会打印 ``CONFIGURING: 100%``，似乎什么也没做。别担心，这不是卡住了，而是在下载更多的 Android SDK 组件。根据您的网络连接速度，这可能还需要 10 分钟（或更长时间）。只有在第一次运行 ``build`` 时才会出现这种滞后现象；这些工具已被缓存，下次构建时将使用缓存版本。"
+msgstr ""
+"在 ``briefcase build android`` 步骤中，Gradle（Android 平台构建工具）会打印 "
+"\\ ``CONFIGURING: 100%``，似乎什么也没做。别担心，这不是卡住了，"
+"而是在下载更多的 Android SDK 组件。根据您的网络连接速度，这可能还需要 10 "
+"分钟（或更长时间）。只有在第一次运行 ``build`` "
+"时才会出现这种滞后现象；这些工具将会被缓存，下次构建时将使用缓存版本。"
 
 #: ../../tutorial/tutorial-5/android.rst:183 c2c4a4f02d1a4cae87c177191c889803
-#, fuzzy
 msgid "Run the app on a virtual device"
 msgstr "在虚拟设备上运行应用程序"
 
