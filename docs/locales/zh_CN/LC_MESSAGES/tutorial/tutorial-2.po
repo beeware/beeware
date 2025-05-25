@@ -1,17 +1,18 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-20 20:29+0000\n"
-"PO-Revision-Date: 2025-04-21 03:01+0000\n"
+"PO-Revision-Date: 2025-05-26 00:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/beeware/tutorial/tutorial-2/zh_Hans/>\n"
 "Language: zh_CN\n"
-"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-2/zh_Hans/>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.12-dev\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../tutorial/tutorial-2.rst:3 0f4d3454cc3f4dbdab9f6d8ff5a7235b
@@ -51,9 +52,10 @@ msgid "Let's go through this line by line::"
 msgstr "让我们逐行查看::"
 
 #: ../../tutorial/tutorial-2.rst:56 d1a41fba603940dda9d746ad79f60cdd
-#, fuzzy
 msgid "First, we import the ``toga`` widget toolkit, as well as some style-related utility constants. Our code doesn't use these yet - but we'll make use of them shortly."
-msgstr "首先，我们导入 ``toga`` 小部件工具包，以及一些与样式相关的实用类和常量。目前我们的代码还没有使用这些——但我们很快就会使用它们。"
+msgstr "首先，我们导入 ``toga`` "
+"小部件工具包，以及一些与样式相关的实用常量。目前我们的代码还没有使用这些——但"
+"我们很快就会用到它们。"
 
 #: ../../tutorial/tutorial-2.rst:60 05858ed074f8493688cc48c7cab0cdef
 msgid "Then, we define a class::"
@@ -137,16 +139,19 @@ msgstr "Toga 的内置布局系统称为 \"Pack\" (包)。它的行为很像 CSS
 
 #: ../../tutorial/tutorial-2.rst:177 2790d90080a34a6c88d334ddfa81043a
 msgid "For more advanced uses, Toga also supports a separate style object, which is used like this::"
-msgstr ""
+msgstr "对于更高级的使用，Toga 也支持可以被这样使用的单独的样式对象::"
 
 #: ../../tutorial/tutorial-2.rst:183 9d67191a14314f3fb6bfa800b14d626c
 msgid "Next, we define a couple of widgets::"
 msgstr "接下来，我们定义了一些小部件::"
 
 #: ../../tutorial/tutorial-2.rst:191 bb60da92db6a4602be1fcf9c72f14b1b
-#, fuzzy
 msgid "Here, we define a Label and a TextInput. Both widgets have styles associated with them; the label will have 5px of margin on its left and right, and no margin on the top and bottom. The TextInput is marked as being flexible - that is, it will absorb all available space in its layout axis."
-msgstr "在这里，我们定义了一个标签 (Label) 和一个文本输入框 (TextInput)。这两个小部件都有与其相关的样式；标签左右会各有 5px 的填充，上下没有填充。文本输入框是被标记为灵活的——也就是说，它将吸收其布局方向上所有可用的空间。"
+msgstr ""
+"在这里，我们定义了一个标签 (Label) 和一个文本输入框 "
+"(TextInput)。这两个小部件都有与其相关的样式；标签左右会各有 5px "
+"的填充，上下没有填充。文本输入框是被标记为灵活的——也就是说，它将吸收其布局方"
+"向上所有可用的空间。"
 
 #: ../../tutorial/tutorial-2.rst:196 b04acd8c9d9245bd87de3cbc5bd523ae
 msgid "The TextInput is assigned as an instance variable of the class. This gives us easy access to the widget instance - something that we'll use in a moment."
@@ -157,18 +162,20 @@ msgid "Next, we define a box to hold these two widgets::"
 msgstr "接下来，我们定义了一个盒子来容纳这两个小部件::"
 
 #: ../../tutorial/tutorial-2.rst:205 756d736764944e788ff703f73e7d278a
-#, fuzzy
 msgid "The ``name_box`` is a box just like the main box; however, this time, it's a ``ROW`` box. That means content will be added horizontally, and it will try to make its width as narrow as possible. The box also has some margin - 5px on all sides."
-msgstr "``name_box`` 就像主盒子一样；然而，这次它是一个 ``ROW`` (水平) 盒子。这意味着内容将会被水平添加，并且它会尽量使其宽度尽可能窄。盒子也有一些空白填充——四周各为 5px。"
+msgstr ""
+"``name_box`` 就像主盒子一样；然而，这次它是一个 ``ROW`` (水平) "
+"盒子。这意味着内容将会被水平添加，并且它会尽量使其宽度尽可能窄。盒子也有一些"
+"空白填充——四周各为 5px。"
 
 #: ../../tutorial/tutorial-2.rst:210 33686cb02e1c4fa79272c3c933615979
 msgid "Now we define a button::"
 msgstr "现在，我们定义一个按钮::"
 
 #: ../../tutorial/tutorial-2.rst:218 edb046907fbd49f285fa8e7b68814979
-#, fuzzy
 msgid "The button also has 5px of margin on all sides. We also define a *handler* - a method to invoke when the button is pressed."
-msgstr "按钮的四周也有 5px 的填充。我们还定义了一个\\ **处理程序** (handler)——当按钮被按下时要调用的方法。"
+msgstr "按钮的四周也有 5px 的填充。我们还定义了一个\\ **处理程序** "
+"(handler)——当按钮被按下时要调用的方法。"
 
 #: ../../tutorial/tutorial-2.rst:221 40454777f0bf46d097aa59e89ca25397
 msgid "Then, we add the name box and the button to the main box::"
@@ -236,4 +243,3 @@ msgstr "下一步"
 #: ../../tutorial/tutorial-2.rst:312 ebe9dfd6c7984478891b7e61442cd1ca
 msgid "We've now got an application that does something a little more interesting. But it only runs on our own computer. Let's package this application for distribution. In :doc:`Tutorial 3 <tutorial-3>`, we'll wrap our application up as a standalone installer that we could send to a friend, a customer, or upload to an App Store."
 msgstr "我们现在有了一个做一些更有趣的事情的应用程序，但它只能在我们自己的电脑上运行。让我们将这个应用程序打包，以供分发。在 :doc:`教程3<tutorial-3>` 中，我们将把应用程序打包成一个独立的安装程序，以供发送给朋友、客户，或上传到应用商店。"
-
