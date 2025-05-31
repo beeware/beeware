@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-20 20:29+0000\n"
-"PO-Revision-Date: 2025-05-26 00:01+0000\n"
+"PO-Revision-Date: 2025-05-31 06:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/tutorial-2/zh_Hans/>\n"
@@ -187,7 +187,10 @@ msgstr "这完成了我们的布局；其余的 startup 方法与以前一样 - 
 
 #: ../../tutorial/tutorial-2.rst:234 7a035c06f4af44fcbb68b9a08bf8889b
 msgid "The last thing we need to do is define the handler for the button. A handler can be any method, generator, or asynchronous coroutine; it accepts the widget that generated the event as an argument, and will be invoked whenever the button is pressed::"
-msgstr "我们需要做的最后一件事，就是定义按钮的处理器——它可以是任何方法、生成器或异步协程，且接受生成事件的小部件 (widget) 作为参数。只要按下按钮，就会调用这些处理器::"
+msgstr ""
+"我们需要做的最后一件事，就是定义按钮的处理器(handler)——它可以是任何方法、生成"
+"器或异步协程，且接受生成事件的小部件 (widget) "
+"作为参数。只要按下按钮，就会调用这些处理器::"
 
 #: ../../tutorial/tutorial-2.rst:242 21ef3ba053dc46349c6e8de90442ec77
 msgid "The body of the method is a simple print statement - however, it will interrogate the current value of the name input, and use that content as the text that is printed."
