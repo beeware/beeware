@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-21 23:13+0000\n"
-"PO-Revision-Date: 2025-05-26 00:01+0000\n"
+"PO-Revision-Date: 2025-06-05 01:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/tutorial-3/zh_Hans/>\n"
@@ -150,136 +150,158 @@ msgstr ""
 "以及支持二进制文件所需的\\ ``lib``\\ 和\\ ``share``\\ 文件夹。"
 
 #: ../../tutorial/tutorial-3.rst:248 825e7ee28b4a492095ab24a02d27dd89
-#, fuzzy
 msgid "On Windows, the ``build`` command doesn't need to *compile* anything, but it does need to write some metadata so that the application knows its name, version, and so on."
-msgstr "在 Windows 上，``build`` 命令不需要编译*任何东西，但它确实需要写入一些元数据，以便应用程序知道它的名称、版本等。"
+msgstr ""
+"在 Windows 上，``build`` 命令不需要\\ *编译*\\ "
+"任何东西，但它确实需要写入一些元数据，以便应用程序知道它的名称、版本等。"
 
 #: ../../tutorial/tutorial-3.rst:252 06283979a91d4a9785ddaca570f97ed7
-#, fuzzy
 msgid "Triggering antivirus"
 msgstr "触发杀毒软件"
 
 #: ../../tutorial/tutorial-3.rst:254 b3633ee54206493ab188eef8408f7b4f
-#, fuzzy
 msgid "Since this metadata is being written directly in to the pre-compiled binary rolled out from the template during the ``create`` command, this may trigger antivirus software running on your machine and prevent the metadata from being written. In that case, instruct the antivirus to allow the tool (named ``rcedit-x64.exe``) to run and re-run the command above."
-msgstr "由于这些元数据是在 ``create`` 命令中直接写入从模板推出的预编译二进制文件的，因此可能会触发机器上运行的杀毒软件，从而阻止元数据的写入。在这种情况下，请指示杀毒软件允许工具（名为 ``rcedit-x64.exe``）运行，并重新运行上述命令。"
+msgstr ""
+"由于这些元数据是在 ``create`` "
+"命令中直接写入从模板推出的预编译二进制文件的，因此可能会触发机器上运行的杀毒"
+"软件，从而阻止元数据的写入。在这种情况下，请指示杀毒软件允许工具（名为 "
+"``rcedit-x64.exe``）运行，并重新运行上述命令。"
 
 #: ../../tutorial/tutorial-3.rst:262 f2c39e03a59a4acaba895bcb657cee65
-#, fuzzy
 msgid "Running your app"
 msgstr "运行应用程序"
 
 #: ../../tutorial/tutorial-3.rst:264 8ba9fb890db34822ae29aa51e12ddd77
-#, fuzzy
 msgid "You can now use Briefcase to run your application:"
-msgstr "现在您可以使用公文包运行应用程序了："
+msgstr "现在您可以使用 Briefcase 运行应用程序了："
 
 #: ../../tutorial/tutorial-3.rst:339 9aad4ef3ae06435c877c50e837077782
-#, fuzzy
 msgid "This will start to run your native application, using the app bundle created by the ``build`` command."
-msgstr "这将使用 ``build`` 命令的输出开始运行本地应用程序。"
+msgstr "这将使用 ``build`` 命令的输出开始运行原生应用程序。"
 
 #: ../../tutorial/tutorial-3.rst:342 4cc12b10296d45b59f15fe5ad64521fe
-#, fuzzy
 msgid "You might notice some small differences in the way your application looks when it's running. For example, icons and the name displayed by the operating system may be slightly different to those you saw when running under developer mode. This is also because you're using the packaged application, not just running Python code. From the operating system's perspective, you're now running \"an app\", not \"a Python program\", and this is reflected in how the application appears."
-msgstr "你可能会注意到应用程序运行时的外观有一些细微差别。例如，操作系统显示的图标和名称可能与在开发者模式下运行时略有不同。这也是因为您使用的是打包的应用程序，而不仅仅是运行 Python 代码。从操作系统的角度来看，您现在运行的是 \"一个应用程序\"，而不是 \"一个 Python 程序\"，这也反映在应用程序的显示方式上。"
+msgstr ""
+"你可能会注意到应用程序运行时的外观有一些细微差别。例如，操作系统显示的图标和"
+"名称可能与在开发者模式下运行时略有不同。这也是因为您使用的是打包的应用程序，"
+"而不仅仅是运行 Python "
+"代码。从操作系统的角度来看，您现在运行的是“一个应用程序”，而不是“一个 Python "
+"程序\"”，这也反映在应用程序的显示方式上。"
 
 #: ../../tutorial/tutorial-3.rst:351 078d307df79e4a7aba4732054828f6f1
-#, fuzzy
 msgid "Building your installer"
 msgstr "创建安装程序"
 
 #: ../../tutorial/tutorial-3.rst:353 0645f8fe590a45448378a69f904b5cad
-#, fuzzy
 msgid "You can now package your application for distribution, using the ``package`` command. The package command does any compilation that is required to convert the scaffolded project into a final, distributable product. Depending on the platform, this may involve compiling an installer, performing code signing, or doing other pre-distribution tasks."
-msgstr "现在，您可以使用 ``package`` 命令打包应用程序，以便发布。打包命令会执行将脚手架项目转换为最终可发布产品所需的编译工作。根据平台的不同，这可能涉及编译安装程序、执行代码签名或执行其他发布前任务。"
+msgstr ""
+"现在，您可以使用 ``package`` "
+"命令打包应用程序，以便发布。打包命令会执行将脚手架项目转换为最终可发布产品所"
+"需的编译工作。根据平台的不同，这可能涉及编译安装程序、执行代码签名或执行其他"
+"发布前任务。"
 
 #: ../../tutorial/tutorial-3.rst:392 6ea287006a4e41c9a0e3933bbf9b3520
-#, fuzzy
 msgid "The ``dist`` folder will contain a file named ``Hello World-0.0.1.dmg``. If you locate this file in the Finder, and double click on its icon, you'll mount the DMG, giving you a copy of the Hello World app, and a link to your Applications folder for easy installation. Drag the app file into Applications, and you've installed your application. Send the DMG file to a friend, and they should be able to do the same."
-msgstr "dist \"文件夹将包含一个名为 \"Hello World-0.0.1.dmg \"的文件。如果在 Finder 中找到该文件，并双击其图标，就会加载 DMG，从而获得 Hello World 应用程序的副本，并链接到 \"应用程序 \"文件夹以方便安装。将应用程序文件拖入 \"应用程序\"，就安装好了应用程序。将 DMG 文件发送给朋友，他们应该也能完成同样的操作。"
+msgstr ""
+"``dist`` 文件夹将包含一个名为 ``Hello World-0.0.1.dmg`` 的文件。如果在 "
+"Finder 中找到该文件，并双击其图标，就会加载 DMG，从而获得 Hello World "
+"应用程序的副本，并链接到 ``Applications`` 文件夹以方便安装。"
+"将应用程序文件拖入 Applications，就安装好了应用程序。将 DMG "
+"文件发送给朋友，他们应该也能完成同样的操作。"
 
 #: ../../tutorial/tutorial-3.rst:399 da5730265854428eb08096897074e9c9
-#, fuzzy
 msgid "In this example, we've used the ``--adhoc-sign`` option - that is, we're signing our application with *ad hoc* credentials - temporary credentials that will only work on your machine. We've done this to keep the tutorial simple. Setting up code signing identities is a little fiddly, and they're only *required* if you're intending to distribute your application to others. If we were publishing a real application for others to use, we would need to specify real credentials."
-msgstr "在本例中，我们使用了\"--adhoc-sign \"选项--也就是说，我们使用*ad hoc* 凭据（仅在你的机器上有效的临时凭据）来签署我们的应用程序。我们这样做是为了让教程简单明了。设置代码签名身份有点麻烦，而且只有当你打算将应用程序发布给他人时才*需要。如果我们要发布一个真正的应用程序供他人使用，我们就需要指定真实的凭据。"
+msgstr ""
+"在本例中，我们使用了 ``--adhoc-sign`` 选项--也就是说，我们使用 *ad hoc* "
+"凭据（仅在你的机器上有效的临时凭据）来签署我们的应用程序。我们这样做是为了让"
+"教程简单明了。设置代码签名身份有点麻烦，"
+"而且只有当你打算将应用程序发布给他人时\\ *才*\\ "
+"需要。如果我们要发布一个真正的应用程序供他人使用，我们就需要指定真实的凭据。"
 
 #: ../../tutorial/tutorial-3.rst:407 f01c725c78b8465ba1e7742d98f4c4f7
-#, fuzzy
 msgid "When you're ready to publish a real application, check out the Briefcase How-To guide on `Setting up a macOS code signing identity <https://briefcase.readthedocs.io/en/latest/how-to/code-signing/macOS.html>`__."
-msgstr "当您准备发布真正的应用程序时，请查看关于 \"设置 macOS 代码签名身份 <https://briefcase.readthedocs.io/en/latest/how-to/code-signing/macOS.html>`__\" 的公文包操作指南。"
+msgstr ""
+"当您准备发布真正的应用程序时，请查看关于 `设置 macOS 代码签名身份 <https://"
+"briefcase.readthedocs.io/en/latest/how-to/code-signing/macOS.html>`__ 的 "
+"Briefcase 操作指南。"
 
 #: ../../tutorial/tutorial-3.rst:413 f5164a209fdb490986ea567298be9450
 msgid "The output of the package step will be slightly different depending on your Linux distribution. If you're on a Debian-derived distribution, you'll see:"
 msgstr "软件包步骤的输出会因 Linux 发行版的不同而略有不同。如果你使用的是 Debian 衍生发行版，你会看到:"
 
 #: ../../tutorial/tutorial-3.rst:434 d658d31a87894373adfe348e2a0bf1c0
-#, fuzzy
 msgid "The ``dist`` folder will contain the ``.deb`` file that was generated."
-msgstr "dist \"文件夹将包含生成的\".deb \"文件。"
+msgstr "``dist`` 文件夹将包含生成的 ``.deb`` 文件。"
 
 #: ../../tutorial/tutorial-3.rst:436 7bb567078cbc42c18c15385742610f65
-#, fuzzy
 msgid "If you're on a RHEL-based distribution, you'll see:"
 msgstr "如果你使用的是基于 RHEL 的发行版，你就会看到："
 
 #: ../../tutorial/tutorial-3.rst:463 c39a20e7770d4f6d98ef6a3d71b2aeba
-#, fuzzy
 msgid "The ``dist`` folder will contain the ``.rpm`` file that was generated."
-msgstr "dist \"文件夹将包含生成的\".rpm \"文件。"
+msgstr "``dist`` 文件夹将包含生成的 ``.rpm`` 文件。"
 
 #: ../../tutorial/tutorial-3.rst:465 e5c5ac7f82244130a374474246d58a3e
-#, fuzzy
 msgid "If you're on an Arch-based distribution, you'll see:"
 msgstr "如果你使用的是基于 Arch 的发行版，你就会看到："
 
 #: ../../tutorial/tutorial-3.rst:483 8fef6c51b7444c318720a346fad8f23c
-#, fuzzy
 msgid "The ``dist`` folder will contain the ``.pkg.tar.zst`` file that was generated."
-msgstr "dist \"文件夹将包含生成的\".pkg.tar.zst \"文件。"
+msgstr "``dist`` 文件夹将包含生成的 ``.pkg.tar.zst`` 文件。"
 
 #: ../../tutorial/tutorial-3.rst:485 a8018be4a00b4263a8bfacdcf987c182
-#, fuzzy
 msgid "Other Linux distributions aren't currently supported for packaging."
 msgstr "目前不支持其他 Linux 发行版的打包。"
 
 #: ../../tutorial/tutorial-3.rst:487 47779b66d75249a9ba1e44dc6d0090e8
-#, fuzzy
 msgid "If you want to build a package for a Linux distribution other than the one you're using, Briefcase can also help - but you'll need to install Docker."
-msgstr "如果你想为你正在使用的 Linux 发行版之外的其他发行版构建软件包，Briefcase 也能提供帮助，但你需要安装 Docker。"
+msgstr "如果你想为你正在使用的 Linux 发行版之外的其他发行版构建软件包，Briefcase "
+"也能提供帮助，但你需要安装 Docker。"
 
 #: ../../tutorial/tutorial-3.rst:490 2051172da5994ebb9a099dd2092945dd
-#, fuzzy
 msgid "Official installers for `Docker Engine <https://docs.docker.com/engine/install>`__ are available for a range of Unix distributions. Follow the instructions for your platform; however, ensure you don't install Docker in \"rootless\" mode."
-msgstr "Docker Engine <https://docs.docker.com/engine/install>`__ 的官方安装程序适用于一系列 Unix 发行版。请按照您所在平台的说明进行操作；不过，请确保不要在 \"无根 \"模式下安装 Docker。"
+msgstr ""
+"`Docker Engine <https://docs.docker.com/engine/install>`__ "
+"的官方安装程序适用于一系列 Unix "
+"发行版。请按照您所在平台的说明进行操作；不过，请确保不要在 rootless "
+"模式下安装 Docker。"
 
 #: ../../tutorial/tutorial-3.rst:495 0796c197ee8c43d79ae70b8aceb5c0af
 msgid "Once you've installed Docker, you should be able to start an Linux container - for example:"
 msgstr "安装好 Docker 后，你就可以启动 Linux 容器了，例如:"
 
 #: ../../tutorial/tutorial-3.rst:502 bfcdecd8ceaf46078ceff8813d967c3a
-#, fuzzy
 msgid "will show you a Unix prompt (something like ``root@84444e31cff9:/#``) inside an Ubuntu 22.04 Docker container. Type Ctrl-D to exit Docker and return to your local shell."
-msgstr "将显示 Ubuntu 22.04 Docker 容器中的 Unix 提示（类似于 ``root@84444e31cff9:/#``）。键入 Ctrl-D 退出 Docker 并返回本地 shell。"
+msgstr ""
+"将显示 Ubuntu 22.04 Docker 容器中的 Unix 提示符（类似于 "
+"``root@84444e31cff9:/#``）。键入 Ctrl-D 退出 Docker 并返回本地 shell。"
 
 #: ../../tutorial/tutorial-3.rst:506 4e6a3c56cdd24170940376c9995172d6
 msgid "Once you've got Docker installed, you can use Briefcase to build a package for any Linux distribution that Briefcase supports by passing in a Docker image as an argument. For example, to build a DEB package for Ubuntu 22.04 (Jammy), regardless of the operating system you're on, you can run:"
 msgstr "一旦安装了 Docker，只要将 Docker 镜像作为参数传递，就可以使用 Briefcase 为 Briefcase 支持的任何 Linux 发行版构建软件包。例如，要为 Ubuntu 22.04 (Jammy) 构建一个 DEB 包，无论你使用的是哪种操作系统，你都可以运行:"
 
 #: ../../tutorial/tutorial-3.rst:515 6a45dbf31d454e45b35eb6872d5a4f46
-#, fuzzy
 msgid "This will download the Docker image for your selected operating system, create a container that is able to run Briefcase builds, and build the app package inside the image. Once it's completed, the ``dist`` folder will contain the package for the target Linux distribution."
-msgstr "这将下载所选操作系统的 Docker 镜像，创建一个能够运行 Briefcase 构建的容器，并在镜像中构建应用程序软件包。完成后，`dist`` 文件夹将包含目标 Linux 发行版的软件包。"
+msgstr ""
+"这将下载所选操作系统的 Docker 镜像，创建一个能够运行 Briefcase "
+"构建的容器，并在镜像中构建应用程序软件包。完成后，`dist`` 文件夹将包含目标 "
+"Linux 发行版的软件包。"
 
 #: ../../tutorial/tutorial-3.rst:550 7062189e80b242c593532276f0f27fe9
-#, fuzzy
 msgid "In this example, we're not signing our app. As a result, when you use the installer, you'll get a system warning that the application comes from an unknown developer. We've done this to keep the tutorial simple. Setting up code signing identities is a little fiddly, and they're only *required* if you're intending to distribute your application to others. If we were publishing a real application for others to use, we would need to specify a real signing identity; when that signed app is installed, the system will notify the user that the application is from the known identity associated with the certificate."
-msgstr "在本例中，我们使用了\"--adhoc-sign \"选项--也就是说，我们使用*ad hoc* 凭据（仅在你的机器上有效的临时凭据）来签署我们的应用程序。我们这样做是为了让教程简单明了。设置代码签名身份有点麻烦，而且只有当你打算将应用程序发布给他人时才*需要。如果我们要发布一个真正的应用程序供他人使用，我们就需要指定真实的凭据。"
+msgstr ""
+"在本例中，我们没有签署我们的应用程序。因此，当您使用安装程序时，您将收到系统"
+"警告，该应用程序来自未知开发人员。我们这样做是为了保持教程的简单性。设置代码"
+"签名身份比较复杂，只有当您打算将您的应用程序分发给其他人时，它们才*需要*。如"
+"果我们发布一个真实的应用程序供其他人使用，我们需要指定一个真实的签名身份；当"
+"该签名的应用程序安装时，系统将通知用户该应用程序来自与证书关联的已知身份。"
 
 #: ../../tutorial/tutorial-3.rst:560 8245ba3fbb3048488f9089389c6e8ad9
-#, fuzzy
 msgid "When you're ready to publish a real application, check out the Briefcase How-To guide on `Setting up a Windows code signing identity <https://briefcase.readthedocs.io/en/latest/how-to/code-signing/windows.html>`__."
-msgstr "当您准备发布真正的应用程序时，请查看 Briefcase 操作指南中关于\\ `设置Windows代码签名身份 <https://briefcase.readthedocs.io/en/latest/how-to/code-signing/windows.html>`__\\ 的内容。"
+msgstr ""
+"当您准备发布真正的应用程序时，请查看 Briefcase 操作指南中关于\\ `"
+"设置Windows代码签名身份 <https://briefcase.readthedocs.io/en/latest/how-to/"
+"code-signing/windows.html>`__\\ 的内容。"
 
 #: ../../tutorial/tutorial-3.rst:564 d1a5458013874f9b9e076424f7425433
 msgid "Once this step completes, the ``dist`` folder will contain a file named ``Hello_World-0.0.1.msi``. If you double click on this installer to run it, you should go through a familiar Windows installation process. Once this installation completes, there will be a \"Hello World\" entry in your start menu."
