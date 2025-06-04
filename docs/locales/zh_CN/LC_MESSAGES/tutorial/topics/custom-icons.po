@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-26 02:31+0000\n"
-"PO-Revision-Date: 2025-04-20 22:01+0000\n"
+"PO-Revision-Date: 2025-06-05 01:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/topics/custom-icons/zh_Hans/>\n"
@@ -12,12 +12,12 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.11.1-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../tutorial/topics/custom-icons.rst:3 0f00261c74614f5094810568936c5dbb
 msgid "Customizing icons"
-msgstr ""
+msgstr "自定义图标"
 
 #: ../../tutorial/topics/custom-icons.rst:5 37c96ca8e0c84ed6af2827c95e521a74
 msgid "The app we developed in the main tutorial uses a default \"gray bee\" icon when it is packaged. Let's personalize this application by configuring it to use our own icon."
