@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-02-28 13:35+0000\n"
-"PO-Revision-Date: 2025-05-03 17:01+0000\n"
-"Last-Translator: RyaninChina11 <18149721348@163.com>\n"
+"PO-Revision-Date: 2025-06-05 06:01+0000\n"
+"Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/tutorial-8/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -16,14 +16,17 @@ msgstr ""
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../tutorial/tutorial-8.rst:3 e8499360a87646f694c4a3b7ac883992
-#, fuzzy
 msgid "Tutorial 8 - Making it Smooooth"
 msgstr "教程 8 - 使其光滑"
 
 #: ../../tutorial/tutorial-8.rst:5 933e15824234468dbc400b744a2c5764
-#, fuzzy
 msgid "Unless you've got a *really* fast internet connection, you may notice that when you press the button, the GUI for your app locks up for a little bit. This is because the web request we have made is *synchronous*. When our application makes the web request, it waits for the API to return a response before continuing. While it's waiting, it *isn't* allowing the application to redraw - and as a result, the application locks up."
-msgstr "除非您的网络连接速度*快，否则您可能会注意到，当您按下按钮时，应用程序的图形用户界面会锁定一会儿。这是因为我们发出的网络请求是*同步*的。当我们的应用程序发出网络请求时，它会等待应用程序接口返回响应，然后再继续。在等待的过程中，应用程序*不允许重新绘制，结果导致应用程序锁定。"
+msgstr ""
+"除非您的网络连接速度\\ *非常*\\ "
+"快，否则您可能会注意到，当您按下按钮时，应用程序的图形用户界面会锁定一会儿。"
+"这是因为我们发出的网络请求是\\ *同步*\\ "
+"的。当我们的应用程序发出网络请求时，它会等待应用程序接口返回响应，然后再继续"
+"。在等待的过程中，应用程序\\ *不*\\ 允许重新绘制，结果导致应用程序锁定。"
 
 #: ../../tutorial/tutorial-8.rst:13 8aab6993fec1463f901bc7ea25904a32
 #, fuzzy
