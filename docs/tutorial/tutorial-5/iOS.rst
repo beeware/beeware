@@ -18,7 +18,7 @@ but this time, we specify that we want to create an iOS application:
 
 .. code-block:: console
 
-  (beeware-venv) $ briefcase create ios
+  (beeware-venv) $ briefcase create iOS
 
   [helloworld] Generating application template...
   Using app template: https://github.com/beeware/briefcase-iOS-Xcode-template.git, branch v0.3.18
@@ -45,11 +45,11 @@ Once this completes, we'll have a ``build/helloworld/ios/xcode`` directory conta
 an Xcode project, as well as the support libraries and the application code
 needed for the application.
 
-You can then use Briefcase to compile your app using ``briefcase build ios``:
+You can then use Briefcase to compile your app using ``briefcase build iOS``:
 
 .. code-block:: console
 
-  (beeware-venv) $ briefcase build ios
+  (beeware-venv) $ briefcase build iOS
 
   [helloworld] Updating app metadata...
   Setting main module... done
@@ -60,7 +60,7 @@ You can then use Briefcase to compile your app using ``briefcase build ios``:
 
   [helloworld] Built build/helloworld/ios/xcode/build/Debug-iphonesimulator/Hello World.app
 
-We're now ready to run our application, using ``briefcase run ios``. You'll be
+We're now ready to run our application, using ``briefcase run iOS``. You'll be
 prompted to select a device to compile for; if you've got simulators for
 multiple iOS SDK versions installed, you may also be asked which iOS version you
 want to target. The options you are shown may differ from the options show in
@@ -69,7 +69,7 @@ For our purposes, it doesn't matter which simulator you pick.
 
 .. code-block:: console
 
-  (beeware-venv) $ briefcase run ios
+  (beeware-venv) $ briefcase run iOS
 
   Select simulator device:
 
@@ -88,11 +88,11 @@ For our purposes, it doesn't matter which simulator you pick.
 
   In the future, you could specify this device by running:
 
-      $ briefcase run ios -d "iPhone SE (3rd generation)::iOS 16.2"
+      $ briefcase run iOS -d "iPhone SE (3rd generation)::iOS 16.2"
 
   or:
 
-      $ briefcase run ios -d 2614A2DD-574F-4C1F-9F1E-478F32DE282E
+      $ briefcase run iOS -d 2614A2DD-574F-4C1F-9F1E-478F32DE282E
 
   [helloworld] Starting app on an iPhone SE (3rd generation) running iOS 16.2 (device UDID 2614A2DD-574F-4C1F-9F1E-478F32DE282E)
   Booting simulator... done
@@ -126,7 +126,7 @@ Using the name of the device you selected when you built your application, run:
 
 .. code-block:: console
 
-    $ briefcase run ios -d "iPhone SE (3rd generation)"
+    $ briefcase run iOS -d "iPhone SE (3rd generation)"
 
 If you have multiple iOS versions available, Briefcase will pick the highest
 iOS version; if you want to pick a particular iOS version, you tell it to use
@@ -134,13 +134,13 @@ that specific version:
 
 .. code-block:: console
 
-    $ briefcase run ios -d "iPhone SE (3rd generation)::iOS 15.5"
+    $ briefcase run iOS -d "iPhone SE (3rd generation)::iOS 15.5"
 
 Or, you can name a specific device UDID:
 
 .. code-block:: console
 
-    $ briefcase run ios -d 2614A2DD-574F-4C1F-9F1E-478F32DE282E
+    $ briefcase run iOS -d 2614A2DD-574F-4C1F-9F1E-478F32DE282E
 
 Next steps
 ==========
