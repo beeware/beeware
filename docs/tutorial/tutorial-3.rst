@@ -347,6 +347,9 @@ running Python code. From the operating system's perspective, you're now
 running "an app", not "a Python program", and this is reflected in how the
 application appears.
 
+Before continuing, close the app typing **Ctrl+C** in the console, or through
+the application menu.
+
 Building your installer
 =======================
 
