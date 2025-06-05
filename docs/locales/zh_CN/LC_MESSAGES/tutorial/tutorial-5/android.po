@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-15 18:36+0000\n"
-"PO-Revision-Date: 2025-05-25 07:01+0000\n"
+"PO-Revision-Date: 2025-06-05 06:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/tutorial-5/android/zh_Hans/>\n"
@@ -249,6 +249,7 @@ msgid "Next steps"
 msgstr "下一步"
 
 #: ../../tutorial/tutorial-5/android.rst:374 1e91108b1cf54cdc8e3790ba25579a32
-#, fuzzy
 msgid "We've now got an application on our phone! Is there anywhere else we can deploy a BeeWare app? Turn to :doc:`Tutorial 6 <../tutorial-6>` to find out..."
-msgstr "我们现在已经在手机上安装了应用程序！还有其他地方可以部署 BeeWare 应用程序吗？请参考 :doc:`Tutorial 6 <../tutorial-6>` 了解更多..."
+msgstr ""
+"我们现在已经在手机上安装了应用程序！还有其他地方可以部署 BeeWare 应用程序吗？"
+"请参考\\ :doc:`教程 6 <../tutorial-6>`\\ 了解更多..."
