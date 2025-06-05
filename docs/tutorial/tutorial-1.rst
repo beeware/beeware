@@ -98,13 +98,13 @@ purposes of this tutorial, use the following:
   configuration file, in help text, and anywhere that an email is required
   when submitting the app to an app store.
 
-* **URL** - The URL of the landing page for your application. Again, if you own
+* **Application URL** - The URL of the landing page for your application. Again, if you own
   your own domain, enter a URL at that domain (including the ``https://``).
   Otherwise, just accept the default URL (``https://example.com/helloworld``).
   This URL doesn't need to actually exist (for now); it will only be used if
   you publish your application to an app store.
 
-* **License** - Accept the default license (BSD). This won't affect
+* **Project License** - Accept the default license (BSD). This won't affect
   anything about the operation of the tutorial, though - so if you have
   particularly strong feelings about license choice, feel free to choose
   another license.
