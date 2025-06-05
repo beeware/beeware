@@ -103,7 +103,8 @@ When you run ``briefcase create android`` for the first time, Briefcase
 downloads a Java JDK, and the Android SDK. File sizes and download times can be
 considerable; this may take a while (10 minutes or longer, depending on the
 speed of your Internet connection). When the download has completed, you will
-be prompted to accept Google's Android SDK license.
+be prompted to accept Google's Android SDK license. Be sure to enter `y` at the
+prompt to review and accept the necessary the license agreements.
 
 Once this completes, we'll have a
 ``build\helloworld\android\gradle`` directory in our project, which will contain
