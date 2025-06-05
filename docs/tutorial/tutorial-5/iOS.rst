@@ -115,6 +115,11 @@ see the simulator start, and eventually open your iOS application:
 .. image:: ../images/iOS/tutorial-5.png
    :alt: Hello World Tutorial 5 window, on iOS
 
+While the app is running, you'll see a series of Simulator log output messages
+in the console. Typing Ctrl+C into the terminal will halt the messages in the
+console, but it will not close the simulator. This is so you can test new
+changes without restarting the simulator.
+
 If you know ahead of time which iOS simulator you want to target, you can tell
 Briefcase to use that simulator by providing a ``-d`` (or ``--device``) option.
 Using the name of the device you selected when you built your application, run:
