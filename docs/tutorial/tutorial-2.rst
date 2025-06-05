@@ -26,10 +26,10 @@ executing. The contents of ``__main__.py`` is relatively simple::
     if __name__ == "__main__":
         main().main_loop()
 
-That is - it imports the ``main`` method from the ``helloworld`` app; and if
-it's being executed as an entry point, calls the main() method, and starts the
-application's main loop. The main loop is the way a GUI application listens for
-user input (like mouse clicks and keyboard presses).
+This file does two things:
+
+* It imports the ``main`` method from from the ``helloworld`` app.
+* Then, it starts the application’s main loop. The main loop is the way a GUI application listens for user input (like mouse clicks and keyboard presses).
 
 The more interesting file is ``app.py`` - this contains the logic that creates
 our application window::
