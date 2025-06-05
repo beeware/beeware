@@ -307,7 +307,7 @@ This should open a GUI window:
 If you enter a name in the text box, and press the GUI button, you should see
 output appear in the console where you started the application.
 
-Before continuing, close the app typing **Ctrl+C** in the console, or through
+Before continuing, close the app by typing **Ctrl+C** in the console, or through
 the application menu.
 
 Next steps
