@@ -285,6 +285,12 @@ our desktop app:
 If you fail to see your app launching, you may need to check your terminal
 where you ran ``briefcase run`` and look for any error messages.
 
+While the app is running, you'll see a lot of messages being streamed in
+the console. This is a stream of the application's logs from the emulator.
+Typing Ctrl+C into the terminal will halt the streamed information in
+the console, but it will not close the emulator. This is so you can test
+new changes without restarting the emulator.
+
 In future, if you want to run on this device without using the menu, you can
 provide the emulator's name to Briefcase, using ``briefcase run android -d
 "@beePhone"`` to run on the virtual device directly.
