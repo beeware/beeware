@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-26 02:31+0000\n"
-"PO-Revision-Date: 2025-06-05 01:01+0000\n"
+"PO-Revision-Date: 2025-06-05 06:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/topics/custom-icons/zh_Hans/>\n"
@@ -94,7 +94,7 @@ msgstr ""
 
 #: ../../tutorial/topics/custom-icons.rst:186 e3c3d91e68db4e7f945f7dc64ebcb776
 msgid "Icon of green snake with a light blue background"
-msgstr ""
+msgstr "在浅蓝背景上的绿蛇图标"
 
 #: ../../tutorial/topics/custom-icons.rst:190 1cec43b29d464b9991ad3bfbb5c27d47
 msgid "The only exception will be the icons with ``-adaptive-`` in their name; these will have a transparent background. This represents all the different icon sizes and shapes you need to support an app on every platform that Briefcase supports."
