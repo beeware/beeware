@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-02-17 12:51+0000\n"
-"PO-Revision-Date: 2025-04-20 22:01+0000\n"
+"PO-Revision-Date: 2025-06-05 06:02+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/topics/camera-access/zh_Hans/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.11.1-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../tutorial/topics/camera-access.rst:3 4cd5505c36f94796b512eb6be62dd034
@@ -86,7 +86,7 @@ msgstr ""
 
 #: ../../tutorial/topics/camera-access.rst:133 e150e3c9e8d24403863a311c667c9de9
 msgid "Adding device permissions"
-msgstr ""
+msgstr "添加设备权限"
 
 #: ../../tutorial/topics/camera-access.rst:135 3d5e19220b2c41329c97caa79c99c63b
 msgid "Part of this code we've just added asks for permission to use the camera. This is a common feature of modern app platforms - you can't access hardware features without explicitly asking the user's permission first."
@@ -106,7 +106,7 @@ msgstr ""
 
 #: ../../tutorial/topics/camera-access.rst:158 6353e377299b4d4f8bda6db189202a1f
 msgid "We can now generate and run the app:"
-msgstr ""
+msgstr "我们现在可以生成并运行应用程序："
 
 #: ../../tutorial/topics/camera-access.rst:162 5a3f4e7b0d674ab7b97f41e709e06c75
 msgid "macOS"
