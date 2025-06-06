@@ -103,7 +103,7 @@ intersphinx_mapping = {"python": ("https://docs.python.org/3", None)}
 linkcheck_ignore = [
     r"https://github.com/.*#",
     r"http://127.0.0.1.*",
-    r"https://pypi.org/.*#"
+    r"https://pypi.org/.*#",
 ]
 
 # -- Options for copy button ---------------------------------------------------
