@@ -100,7 +100,11 @@ intersphinx_mapping = {"python": ("https://docs.python.org/3", None)}
 # -- Options for link checking -------------------------------------------------
 
 # GitHub generates anchors in javascript
-linkcheck_ignore = [r"https://github.com/.*#", r"http://127.0.0.1.*"]
+linkcheck_ignore = [
+    r"https://github.com/.*#",
+    r"http://127.0.0.1.*",
+    r"https://pypi.org/.*#"
+]
 
 # -- Options for copy button ---------------------------------------------------
 
