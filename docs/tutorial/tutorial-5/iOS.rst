@@ -5,9 +5,9 @@ Tutorial 5 - Taking it mobile: iOS
 To compile iOS applications we'll need Xcode, which is available for free from `the macOS
 App Store <https://apps.apple.com/au/app/xcode/id497799835?mt=12>`__. Once Xcode is
 installed, launch it from Applications and accept the Xcode License Agreement. Next,
-XCode will show which components are built-in, and which components you may download.
+Xcode will show which components are built-in, and which components you may download.
 Select the checkbox next to iOS (followed by the current version number), and then
-click Download and Install to install it. XCode will install the system components,
+click Download and Install to install it. Xcode will install the system components,
 followed by the iOS Simulator.
 
 Once we've got Xcode and the iOS simulator installed, we can take our application and
