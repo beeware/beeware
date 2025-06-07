@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-02-28 13:35+0000\n"
-"PO-Revision-Date: 2025-06-05 06:01+0000\n"
+"PO-Revision-Date: 2025-06-07 05:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/tutorial-8/zh_Hans/>\n"
@@ -29,19 +29,19 @@ msgstr ""
 "。在等待的过程中，应用程序\\ *不*\\ 允许重新绘制，结果导致应用程序锁定。"
 
 #: ../../tutorial/tutorial-8.rst:13 8aab6993fec1463f901bc7ea25904a32
-#, fuzzy
 msgid "GUI Event Loops"
 msgstr "图形用户界面事件循环"
 
 #: ../../tutorial/tutorial-8.rst:15 377721d02ab54b8d9fc5323cb05fb6d6
-#, fuzzy
 msgid "To understand why this happens, we need to dig into the details of how a GUI application works. The specifics vary depending on the platform; but the high level concepts are the same, no matter the platform or GUI environment you're using."
-msgstr "要理解为什么会出现这种情况，我们需要深入了解图形用户界面应用程序的工作原理。具体细节因平台而异，但无论使用何种平台或图形用户界面环境，高层概念都是相同的。"
+msgstr ""
+"要理解为什么会出现这种情况，我们需要深入了解图形用户界面应用程序的工作原理。"
+"具体细节因平台而异，但无论使用何种平台或图形用户界面环境，高层概念都是相同的"
+"。"
 
 #: ../../tutorial/tutorial-8.rst:20 6d62d349cd27495eaa5d4bf71aacc5b0
-#, fuzzy
 msgid "A GUI app is, fundamentally, a single loop that looks something like::"
-msgstr "从根本上说，图形用户界面应用程序就是一个单一的循环，看起来就像：："
+msgstr "从根本上说，图形用户界面应用程序就是一个单一的循环，看起来就像::"
 
 #: ../../tutorial/tutorial-8.rst:26 405fb9fcf8ac4320bbc6f1bc229586ed
 msgid "This loop is called the *Event Loop*. (These aren't actual method names - it's an illustration of what is going on in \"pseudo-code\")."
