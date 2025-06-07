@@ -4,8 +4,8 @@ Using the camera
 
 Almost every modern computing device has a camera of some sort. In this tutorial,
 we'll write new application that is able to request access to this camera, take
-a photograph, and then display that photograph in the app.
-new application that uses your device's camera.
+a photograph, and then display that photograph in the new application that uses
+your device's camera.
 
 .. admonition:: This tutorial won't work on all platforms!
 
