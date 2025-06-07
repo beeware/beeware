@@ -11,13 +11,16 @@ Let's modify our app to include a third-party library.
 Adding a package
 ================
 
-We're going to add a message to the the dialog box.
-`Faker <https://faker.readthedocs.io/en/stable/>`__ is a Python package that
-generates fake data for you, including fake names and fake text blocks.
-The names, and words in the text block, are generated from an arbitrary list
-of words provided by Faker.
+Let's modify our application to say a little bit more than just "Hi, there!".
 
-Let's add ``faker`` to our app. Add an import to the top of the
+To generate some more interesting text for the dialog, we're going to use a
+library called `Faker <https://faker.readthedocs.io/en/stable/>`__ . Faker is a
+Python package that generates fake content, including names and text blocks. The
+names and words in the text block are generated from an arbitrary list of words
+provided by Faker. We're going to use Faker to construct a fake message, as if
+someone is responding to the user.
+
+We start by adding ``faker`` to our app. Add an import to the top of the
 ``app.py`` to import ``faker``::
 
     import faker
@@ -446,42 +449,52 @@ you should see your packaged app, with the new dialog behavior.
 Third-Party Python Packages for Mobile and Web
 ==============================================
 
-On desktop platforms (macOS, Windows, Linux), any ``pip``-installable package
-can be added to your requirements. On mobile and web platforms, `your options
-are slightly limited
+Faker is just one example of a third-party Python package - a collection of code
+that isn't part what Python provides out of the box. These third-party packages
+are most commonly distributed using the `Python Package Index (PyPI)
+<https://pypi.org>`__, and installed into your local virtual environment. We've
+been using ``pip`` in this tutorial, but there are other options.
+
+On desktop platforms (macOS, Windows, Linux), essentially any package on PyPI
+package can be installed into your virtual environment, or added to your app's
+requirements. However, when building an app for mobile or web platforms, `your
+options are slightly limited
 <https://briefcase.readthedocs.io/en/latest/background/faq.html#can-i-use-third-party-python-packages-in-my-app>`__.
 
 In short; any *pure Python* package (i.e. any package created from a project
-written only in Python) can be used without difficulty. Some packages,
-though, are created from projects that contain both Python and other
-languages (e.g. C, C++, etc); when those other languages are compiled
-to platform-specific binary modules for packaging, those packages are
-only available to specific platforms. Mobile and web platforms have
-very different requirements than "standard" desktop platforms. At this
-time, most Python packages don't provide pre-compiled binaries for mobile
+written *only* in Python) can be used without difficulty. Some packages, though,
+are created from projects that contain both Python and other languages (e.g. C,
+C++, Rust, etc). Code written in those languages needs to be compiled to
+platform-specific binary modules before it can be used, and those pre-compiled
+binary modules are only available on specific platforms. Mobile and web
+platforms have very different requirements than "standard" desktop platforms. At
+this time, most Python packages don't provide pre-compiled binaries for mobile
 and web platforms.
 
-On PyPI, packages are often provided in a pre-built distribution format
-called *wheels*. To check whether a package is pure Python, look at the
-PyPI downloads page for the project. If the wheels provided are have a
-``-py3-none-any.whl`` suffix, for example with
-`Faker 37.3.0 <https://pypi.org/project/Faker/37.3.0/#files>`__,
-then they are pure Python wheels. If the wheels have version
-and platform-specific extensions (e.g.,
-``-cp313-cp313-macosx_11_0_arm64.whl``), for example with
-`Pillow 11.2.1 <https://pypi.org/project/pillow/11.2.1/#files>`__, then
-the wheel *contains a binary component*, and is therefore unlikely to
-be compatible with mobile or web platforms.
+On PyPI, packages are often provided in a pre-built distribution format called
+*wheels*. To check whether a package is pure Python, look at the PyPI downloads
+page for the project. If the wheels provided have a ``-py3-none-any.whl`` suffix
+(e.g., `Faker <https://pypi.org/project/Faker/37.3.0/#files>`__), then they are
+pure Python wheels. However, if the wheels have version and platform-specific
+extensions (e.g., `Pillow <https://pypi.org/project/pillow/11.2.1/#files>`__,
+which has wheels with suffixes like ``-cp313-cp313-macosx_11_0_arm64.whl`` and
+``-cp39-cp39-win_amd64.whl``), then the wheel *contains a binary component*.
+That package cannot be installed on mobile or web platforms unless a wheel
+compatible with those platforms has been provided.
 
-BeeWare can provide binaries for some popular binary modules (including
-``numpy``, ``pandas``, and ``cryptography``). It's *usually* possible to
-compile packages for mobile platforms, but it's not easy to set up -- well
-outside the scope of an introductory tutorial like this one.
+At this time, *most* binary packages on PyPI don't provide mobile- or
+web-compatible wheels. To fill this gap, BeeWare provides binaries for some
+popular binary modules (including ``numpy``, ``pandas``, and ``cryptography``).
+These wheels are *not* distributed on PyPI, but Briefcase will install those
+wheels if they're available.
+
+It's *usually* possible to compile binary packages for mobile platforms, but
+it's not easy to set up -- well outside the scope of an introductory tutorial
+like this one.
 
 Next steps
 ==========
 
-We've now got an app that uses a third-party library! However, you may have
-noticed that when you press the button, the app becomes a little unresponsive.
-Can we do anything to fix this? Turn to :doc:`Tutorial 8 <tutorial-8>` to find
-out...
+We've now got an app that uses a third-party library! In :doc:`Tutorial 8
+<tutorial-8>` we'll learn how to ensure our app remains responsive as we add
+more complex application logic.
