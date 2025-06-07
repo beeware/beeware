@@ -55,7 +55,7 @@ take and display a photograph. Edit the ``app.py`` for the new application so
 that it has the following content:
 
 .. code-block:: python
-    :emphasize-lines: 10-18, 24-41
+    :emphasize-lines: 9-18, 23-44
 
     import toga
     from toga.style.pack import COLUMN, ROW
@@ -65,11 +65,11 @@ that it has the following content:
         def startup(self):
             main_box = toga.Box()
 
-            self.photo = toga.ImageView(height=300, padding=5)
+            self.photo = toga.ImageView(height=300, margin=5)
             camera_button = toga.Button(
                 "Take photo",
                 on_press=self.take_photo,
-                padding=5,
+                margin=5,
             )
 
             main_box.add(self.photo)
