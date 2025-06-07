@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-01-03 02:14+0000\n"
-"PO-Revision-Date: 2025-06-05 06:01+0000\n"
+"PO-Revision-Date: 2025-06-07 05:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/tutorial-5/ios/zh_Hans/>\n"
@@ -22,6 +22,11 @@ msgstr "教程 5 - 在移动设备上：iOS"
 #: ../../tutorial/tutorial-5/iOS.rst:5 e39e0575557847a0948c2f171d8c2e3a
 msgid "To compile iOS applications we'll need Xcode, which is available for free from `the macOS App Store <https://apps.apple.com/au/app/xcode/id497799835?mt=12>`__. Once Xcode is installed, launch it from Applications and accept the Xcode License Agreement. Next, Xcode will show which Simulator runtimes are built-in, and which Simulator runtimes you may download. Select the checkbox next to the iOS Simulator runtime, and then click Continue to download and install it."
 msgstr ""
+"编译 iOS 应用程序需要 Xcode，可从 `macOS App Store <https://apps.apple.com/"
+"au/app/xcode/id497799835?mt=12>`__ 免费下载。当 Xcode "
+"完成安装时，从“应用程序”打开它并接受 Xcode 许可协议。接下来，Xcode "
+"会展示哪些模拟器运行时已内置，哪些可以下载。选择 iOS "
+"模拟器运行时旁边的复选框，并点击“继续”来下载和安装它。"
 
 #: ../../tutorial/tutorial-5/iOS.rst:12 20f9cefa3925422bb854c3989ad982da
 msgid "Once we've got Xcode and the iOS simulator installed, we can take our application and deploy it as an iOS app."
@@ -44,9 +49,13 @@ msgid "You can then use Briefcase to compile your app using ``briefcase build iO
 msgstr "然后，您可以使用 ``briefcase build iOS`` 来编译应用程序："
 
 #: ../../tutorial/tutorial-5/iOS.rst:63 4f894405e0324fc3bdf55f1285c89f72
-#, fuzzy
 msgid "We're now ready to run our application, using ``briefcase run iOS``. You'll be prompted to select a device to compile for; if you've got simulators for multiple iOS SDK versions installed, you may also be asked which iOS version you want to target. The options you are shown may differ from the options show in this output - at the very least, the list of devices will likely be different. For our purposes, it doesn't matter which simulator you pick."
-msgstr "现在我们可以使用 ``briefcase run iOS`` 运行应用程序了。系统会提示你选择要编译的设备；如果你安装了多个 iOS SDK 版本的模拟器，系统可能还会询问你要针对哪个 iOS 版本。所显示的选项可能与此输出中显示的选项不同，至少设备列表可能不同。就我们而言，选择哪个模拟器并不重要。"
+msgstr ""
+"现在我们可以使用 ``briefcase run iOS`` 运行应用程序了。Briefcase "
+"会提示你选择要编译的设备；如果你安装了多个 iOS SDK 版本的模拟器，"
+"可能还会询问你要针对哪个 iOS "
+"版本。所显示的选项可能与此输出中显示的选项不同，至少设备列表可能不同。就我们"
+"而言，选择哪个模拟器并不重要。"
 
 #: ../../tutorial/tutorial-5/iOS.rst:112 c267a80964334562b9511a8360c6a85a
 msgid "This will start the iOS simulator, install your app, and start it. You should see the simulator start, and eventually open your iOS application:"
