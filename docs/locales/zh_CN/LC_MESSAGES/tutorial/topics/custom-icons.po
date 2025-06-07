@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-26 02:31+0000\n"
-"PO-Revision-Date: 2025-06-05 06:01+0000\n"
+"PO-Revision-Date: 2025-06-07 05:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/topics/custom-icons/zh_Hans/>\n"
@@ -25,7 +25,6 @@ msgstr "我们在主教程中开发的应用在打包时使用了默认的 “�
 "图标。让我们通过配置使用我们自己的图标来个性化此应用程序。"
 
 #: ../../tutorial/topics/custom-icons.rst:10 761ef985e2c64623b07b9fa1b0510826
-#, fuzzy
 msgid "Adding an icon"
 msgstr "添加图标"
 
