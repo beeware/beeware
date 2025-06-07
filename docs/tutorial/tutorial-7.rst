@@ -8,63 +8,33 @@ third-party library, downloaded from the Python Package Index (PyPI).
 
 Let's modify our app to include a third-party library.
 
-Accessing an API
+Adding a package
 ================
 
-A common task an app will need to perform is to make a request on a web API to
-retrieve data, and display that data to the user. This is a toy app, so we don't
-have a *real* API to work with, so we'll use the `{JSON} Placeholder API
-<https://jsonplaceholder.typicode.com>`__ as a source of data.
+Let's modify our application to say a little bit more than just "Hi, there!".
 
-The {JSON} Placeholder API has a number of "fake" API endpoints you can use as
-test data. One of those APIs is the ``/posts/`` endpoint, which returns fake
-blog posts. If you open ``https://jsonplaceholder.typicode.com/posts/42`` in
-your browser, you'll get a JSON payload describing a single post - some `Lorum
-ipsum <https://en.wikipedia.org/wiki/Lorem_ipsum>`__ content for a blog post
-with ID 42.
+To generate some more interesting text for the dialog, we're going to use a
+library called `Faker <https://faker.readthedocs.io/en/stable/>`__ . Faker is a
+Python package that generates fake content, including names and text blocks. The
+names and words in the text block are generated from an arbitrary list of words
+provided by Faker. We're going to use Faker to construct a fake message, as if
+someone is responding to the user.
 
-The Python standard library contains all the tools you'd need to access an API.
-However, the built-in APIs are very low level. They are good implementations of
-the HTTP protocol - but they require the user to manage lots of low-level details,
-like URL redirection, sessions, authentication, and payload encoding. As a "normal
-browser user" you're probably used to taking these details for granted, as a
-browser manages these details for you.
+We start by adding ``faker`` to our app. Add an import to the top of the
+``app.py`` to import ``faker``::
 
-As a result, people have developed third-party libraries that wrap the built-in
-APIs and provide a simpler API that is a closer match for the everyday browser
-experience. We're going to use one of those libraries to access the {JSON}
-Placeholder API - a library called `httpx <https://www.python-httpx.org>`__.
-
-Let's add a ``httpx`` API call to our app. Add an import to the top of the
-``app.py`` to import ``httpx``::
-
-    import httpx
+    import faker
 
 Then modify the ``say_hello()`` callback so it looks like this::
 
     async def say_hello(self, widget):
-        with httpx.Client() as client:
-            response = client.get("https://jsonplaceholder.typicode.com/posts/42")
-
-        payload = response.json()
-
+        fake = faker.Faker()
         await self.main_window.dialog(
             toga.InfoDialog(
                 greeting(self.name_input.value),
-                payload["body"],
+                f"A message from {fake.name()}: {fake.text()}",
             )
         )
-
-This will change the ``say_hello()`` callback so that when it is invoked, it
-will:
-
-* make a GET request on the JSON placeholder API to obtain post 42;
-
-* decode the response as JSON;
-
-* extract the body of the post; and
-
-* include the body of that post as the text of the dialog.
 
 Lets run our updated app in Briefcase developer mode to check that our change
 has worked.
@@ -79,17 +49,17 @@ has worked.
       Traceback (most recent call last):
       File ".../venv/bin/briefcase", line 5, in <module>
           from briefcase.__main__ import main
-      File ".../venv/lib/python3.9/site-packages/briefcase/__main__.py", line 3, in <module>
+      File ".../venv/lib/python3.13/site-packages/briefcase/__main__.py", line 3, in <module>
           from .cmdline import parse_cmdline
-      File ".../venv/lib/python3.9/site-packages/briefcase/cmdline.py", line 6, in <module>
+      File ".../venv/lib/python3.13/site-packages/briefcase/cmdline.py", line 6, in <module>
           from briefcase.commands import DevCommand, NewCommand, UpgradeCommand
-      File ".../venv/lib/python3.9/site-packages/briefcase/commands/__init__.py", line 1, in <module>
+      File ".../venv/lib/python3.13/site-packages/briefcase/commands/__init__.py", line 1, in <module>
           from .build import BuildCommand  # noqa
-      File ".../venv/lib/python3.9/site-packages/briefcase/commands/build.py", line 5, in <module>
+      File ".../venv/lib/python3.13/site-packages/briefcase/commands/build.py", line 5, in <module>
           from .base import BaseCommand, full_options
-      File ".../venv/lib/python3.9/site-packages/briefcase/commands/base.py", line 14, in <module>
-          import httpx
-      ModuleNotFoundError: No module named 'httpx'
+      File ".../venv/lib/python3.13/site-packages/briefcase/commands/base.py", line 14, in <module>
+          import faker
+      ModuleNotFoundError: No module named 'faker'
 
   .. group-tab:: Linux
 
@@ -99,17 +69,17 @@ has worked.
       Traceback (most recent call last):
       File ".../venv/bin/briefcase", line 5, in <module>
           from briefcase.__main__ import main
-      File ".../venv/lib/python3.9/site-packages/briefcase/__main__.py", line 3, in <module>
+      File ".../venv/lib/python3.13/site-packages/briefcase/__main__.py", line 3, in <module>
           from .cmdline import parse_cmdline
-      File ".../venv/lib/python3.9/site-packages/briefcase/cmdline.py", line 6, in <module>
+      File ".../venv/lib/python3.13/site-packages/briefcase/cmdline.py", line 6, in <module>
           from briefcase.commands import DevCommand, NewCommand, UpgradeCommand
-      File ".../venv/lib/python3.9/site-packages/briefcase/commands/__init__.py", line 1, in <module>
+      File ".../venv/lib/python3.13/site-packages/briefcase/commands/__init__.py", line 1, in <module>
           from .build import BuildCommand  # noqa
-      File ".../venv/lib/python3.9/site-packages/briefcase/commands/build.py", line 5, in <module>
+      File ".../venv/lib/python3.13/site-packages/briefcase/commands/build.py", line 5, in <module>
           from .base import BaseCommand, full_options
-      File ".../venv/lib/python3.9/site-packages/briefcase/commands/base.py", line 14, in <module>
-          import httpx
-      ModuleNotFoundError: No module named 'httpx'
+      File ".../venv/lib/python3.13/site-packages/briefcase/commands/base.py", line 14, in <module>
+          import faker
+      ModuleNotFoundError: No module named 'faker'
 
   .. group-tab:: Windows
 
@@ -119,20 +89,20 @@ has worked.
       Traceback (most recent call last):
       File "...\venv\bin\briefcase", line 5, in <module>
           from briefcase.__main__ import main
-      File "...\venv\lib\python3.9\site-packages\briefcase\__main__.py", line 3, in <module>
+      File "...\venv\lib\python3.13\site-packages\briefcase\__main__.py", line 3, in <module>
           from .cmdline import parse_cmdline
-      File "...\venv\lib\python3.9\site-packages\briefcase\cmdline.py", line 6, in <module>
+      File "...\venv\lib\python3.13\site-packages\briefcase\cmdline.py", line 6, in <module>
           from briefcase.commands import DevCommand, NewCommand, UpgradeCommand
-      File "...\venv\lib\python3.9\site-packages\briefcase\commands\__init__.py", line 1, in <module>
+      File "...\venv\lib\python3.13\site-packages\briefcase\commands\__init__.py", line 1, in <module>
           from .build import BuildCommand  # noqa
-      File "...\venv\lib\python3.9\site-packages\briefcase\commands\build.py", line 5, in <module>
+      File "...\venv\lib\python3.13\site-packages\briefcase\commands\build.py", line 5, in <module>
           from .base import BaseCommand, full_options
-      File "...\venv\lib\python3.9\site-packages\briefcase\commands\base.py", line 14, in <module>
-          import httpx
-      ModuleNotFoundError: No module named 'httpx'
+      File "...\venv\lib\python3.13\site-packages\briefcase\commands\base.py", line 14, in <module>
+          import faker
+      ModuleNotFoundError: No module named 'faker'
 
-What happened? We've added ``httpx`` to our *code*, but we haven't added it to
-our development virtual environment. We can fix this by installing ``httpx``
+What happened? We've added ``faker`` to our *code*, but we haven't added it to
+our development virtual environment. We can fix this by installing ``faker``
 with ``pip``, and then re-running ``briefcase dev``:
 
 .. tabs::
@@ -141,7 +111,7 @@ with ``pip``, and then re-running ``briefcase dev``:
 
     .. code-block:: console
 
-      (beeware-venv) $ python -m pip install httpx
+      (beeware-venv) $ python -m pip install faker
       (beeware-venv) $ briefcase dev
 
     When you enter a name and press the button, you should see a dialog that
@@ -155,7 +125,7 @@ with ``pip``, and then re-running ``briefcase dev``:
 
     .. code-block:: console
 
-      (beeware-venv) $ python -m pip install httpx
+      (beeware-venv) $ python -m pip install faker
       (beeware-venv) $ briefcase dev
 
     When you enter a name and press the button, you should see a dialog that
@@ -169,7 +139,7 @@ with ``pip``, and then re-running ``briefcase dev``:
 
     .. code-block:: doscon
 
-      (beeware-venv) C:\...>python -m pip install httpx
+      (beeware-venv) C:\...>python -m pip install faker
       (beeware-venv) C:\...>briefcase dev
 
     When you enter a name and press the button, you should see a dialog that
@@ -268,15 +238,15 @@ we've made code changes, we need to follow the same steps as in :doc:`Tutorial 4
     .. code-block:: console
 
       Traceback (most recent call last):
-        File "/usr/lib/python3.10/runpy.py", line 194, in _run_module_as_main
+        File "/usr/lib/python3.13/runpy.py", line 194, in _run_module_as_main
           return _run_code(code, main_globals, None,
-        File "/usr/lib/python3.10/runpy.py", line 87, in _run_code
+        File "/usr/lib/python3.13/runpy.py", line 87, in _run_code
           exec(code, run_globals)
         File "/home/brutus/beeware-tutorial/helloworld/build/linux/ubuntu/jammy/helloworld-0.0.1/usr/app/hello_world/__main__.py", line 1, in <module>
           from helloworld.app import main
         File "/home/brutus/beeware-tutorial/helloworld/build/linux/ubuntu/jammy/helloworld-0.0.1/usr/app/hello_world/app.py", line 8, in <module>
-          import httpx
-      ModuleNotFoundError: No module named 'httpx'
+          import faker
+      ModuleNotFoundError: No module named 'faker'
 
       Unable to start app helloworld.
 
@@ -318,8 +288,8 @@ we've made code changes, we need to follow the same steps as in :doc:`Tutorial 4
        :align: center
        :alt: Hello World Tutorial 7 app crash, on Windows
 
-Once again, the app has failed to start because ``httpx`` has not been installed -
-but why? Haven't we already installed ``httpx``?
+Once again, the app has failed to start because ``faker`` has not been installed -
+but why? Haven't we already installed ``faker``?
 
 We have - but only in the development environment. Your development environment
 is entirely local to your machine - and is only enabled when you explicitly
@@ -331,7 +301,7 @@ contains everything it needs is to build a completely isolated Python
 environment. This means there's a completely isolated Python install, and a
 completely isolated set of dependencies. This is what Briefcase is building when
 you run ``briefcase build`` - an isolated Python environment. This also explains
-why ``httpx`` isn't installed - it has been installed in your *development*
+why ``faker`` isn't installed - it has been installed in your *development*
 environment, but not in the packaged app.
 
 So - we need to tell Briefcase that our app has an external dependency.
@@ -361,16 +331,16 @@ that you want to be included with your app.
 Modify the ``requires`` setting so that it reads::
 
     requires = [
-        "httpx",
+        "faker",
     ]
 
 By adding this setting, we're telling Briefcase "when you build my app, run
-``pip install httpx`` into the application bundle". Anything that would be legal
+``pip install faker`` into the application bundle". Anything that would be legal
 input to ``pip install`` can be used here - so, you could specify:
 
-* A specific library version (e.g., ``"httpx==0.19.0"``);
-* A range of library versions (e.g., ``"httpx>=0.19"``);
-* A path to a git repository (e.g., ``"git+https://github.com/encode/httpx"``);
+* A specific library version (e.g., ``"faker==37.3.0"``);
+* A range of library versions (e.g., ``"faker>=37"``);
+* A path to a git repository (e.g., ``"git+https://github.com/joke2k/faker/"``);
   or
 * A local file path (However - be warned: if you give your code to someone
   else, this path probably won't exist on their machine!)
@@ -386,26 +356,10 @@ will only be used for that platform. You will notice that the ``toga`` libraries
 are all specified in the platform-specific ``requires`` section - this is
 because the libraries needed to display a user interface are platform specific.
 
-In our case, we want ``httpx`` to be installed on all platforms, so we use the
+In our case, we want ``faker`` to be installed on all platforms, so we use the
 app-level ``requires`` setting. The app-level dependencies will always be
 installed; the platform-specific dependencies are installed *in addition* to the
 app-level ones.
-
-.. admonition:: Some binary packages may not be available
-
-    On desktop platforms (macOS, Windows, Linux), any ``pip``-installable can be
-    added to your requirements. On mobile and web platforms, `your options are
-    slightly limited <https://briefcase.readthedocs.io/en/latest/background/faq.html#can-i-use-third-party-python-packages-in-my-app>`__.
-
-    In short; any *pure Python* package (i.e., packages that do *not* contain a
-    binary module) can be used without difficulty. However, if your dependency
-    contains a binary component, it must be compiled; at this time, most Python
-    packages don't provide compilation support for non-desktop platforms.
-
-    BeeWare can provide binaries for some popular binary modules (including
-    ``numpy``, ``pandas``, and ``cryptography``). It's *usually* possible to
-    compile packages for mobile platforms, but it's not easy to set up -- well
-    outside the scope of an introductory tutorial like this one.
 
 Now that we've told Briefcase about our additional requirements, we can try
 packaging our app again. Ensure that you've saved your changes to
@@ -424,11 +378,11 @@ packaging our app again. Ensure that you've saved your changes to
       Installing src/hello_world...
 
       [helloworld] Updating requirements...
-      Collecting httpx
-        Using cached httpx-0.27.0-py3-none-any.whl.metadata (7.2 kB)
+      Collecting faker
+        Using cached faker-37.3.0-py3-none-any.whl.metadata (15 kB)
       ...
-      Installing collected packages: zipp, typing-extensions, travertino, sniffio, pycairo, idna, h11, exceptiongroup, certifi, pygobject, importlib-metadata, httpcore, anyio, toga-core, httpx, gbulb, toga-gtk
-      Successfully installed anyio-4.3.0 certifi-2024.2.2 exceptiongroup-1.2.1 gbulb-0.6.5 h11-0.14.0 httpcore-1.0.5 httpx-0.27.0 idna-3.7 importlib-metadata-7.1.0 pycairo-1.26.0 pygobject-3.48.2 sniffio-1.3.1 toga-core-0.4.4 toga-gtk-0.4.4 travertino-0.3.0 typing-extensions-4.11.0 zipp-3.18.1
+      Installing collected packages: tzdata, travertino, std-nslog, rubicon-objc, fonttools, toga-core, faker, toga-cocoa
+      Successfully installed faker-37.3.0 fonttools-4.58.1 rubicon-objc-0.5.1 std-nslog-1.0.3 toga-cocoa-0.5.1 toga-core-0.5.1 travertino-0.5.1 tzdata-2025.2
 
       [helloworld] Removing unneeded app content...
       ...
@@ -445,17 +399,17 @@ packaging our app again. Ensure that you've saved your changes to
       Targeting ubuntu:jammy (Vendor base debian)
       Determining glibc version... done
       Targeting glibc 2.35
-      Targeting Python3.10
+      Targeting Python3.13
 
       [helloworld] Updating application code...
       Installing src/hello_world...
 
       [helloworld] Updating requirements...
-      Collecting httpx
-        Using cached httpx-0.27.0-py3-none-any.whl.metadata (7.2 kB)
-              ...
-      Installing collected packages: zipp, typing-extensions, travertino, sniffio, pycairo, idna, h11, exceptiongroup, certifi, pygobject, importlib-metadata, httpcore, anyio, toga-core, httpx, gbulb, toga-gtk
-      Successfully installed anyio-4.3.0 certifi-2024.2.2 exceptiongroup-1.2.1 gbulb-0.6.5 h11-0.14.0 httpcore-1.0.5 httpx-0.27.0 idna-3.7 importlib-metadata-7.1.0 pycairo-1.26.0 pygobject-3.48.2 sniffio-1.3.1 toga-core-0.4.4 toga-gtk-0.4.4 travertino-0.3.0 typing-extensions-4.11.0 zipp-3.18.1
+      Collecting faker
+        Using cached faker-37.3.0-py3-none-any.whl.metadata (15 kB)
+      ...
+      Installing collected packages: tzdata, travertino, std-nslog, rubicon-objc, fonttools, toga-core, faker, toga-cocoa
+      Successfully installed faker-37.3.0 fonttools-4.58.1 rubicon-objc-0.5.1 std-nslog-1.0.3 toga-cocoa-0.5.1 toga-core-0.5.1 travertino-0.5.1 tzdata-2025.2
 
       [helloworld] Removing unneeded app content...
       ...
@@ -472,11 +426,11 @@ packaging our app again. Ensure that you've saved your changes to
       Installing src/helloworld...
 
       [helloworld] Updating requirements...
-      Collecting httpx
-        Using cached httpx-0.27.0-py3-none-any.whl.metadata (7.2 kB)
-              ...
-      Installing collected packages: zipp, typing-extensions, travertino, sniffio, pycairo, idna, h11, exceptiongroup, certifi, pygobject, importlib-metadata, httpcore, anyio, toga-core, httpx, gbulb, toga-gtk
-      Successfully installed anyio-4.3.0 certifi-2024.2.2 exceptiongroup-1.2.1 gbulb-0.6.5 h11-0.14.0 httpcore-1.0.5 httpx-0.27.0 idna-3.7 importlib-metadata-7.1.0 pycairo-1.26.0 pygobject-3.48.2 sniffio-1.3.1 toga-core-0.4.4 toga-gtk-0.4.4 travertino-0.3.0 typing-extensions-4.11.0 zipp-3.18.1
+      Collecting faker
+        Using cached faker-37.3.0-py3-none-any.whl.metadata (15 kB)
+      ...
+      Installing collected packages: tzdata, travertino, std-nslog, rubicon-objc, fonttools, toga-core, faker, toga-cocoa
+      Successfully installed faker-37.3.0 fonttools-4.58.1 rubicon-objc-0.5.1 std-nslog-1.0.3 toga-cocoa-0.5.1 toga-core-0.5.1 travertino-0.5.1 tzdata-2025.2
 
       [helloworld] Removing unneeded app content...
       ...
@@ -492,11 +446,55 @@ you should see your packaged app, with the new dialog behavior.
     ``run`` command, so if you want to update, build, and run in one step, you could
     use ``briefcase run -u -r``.
 
+Third-Party Python Packages for Mobile and Web
+==============================================
+
+Faker is just one example of a third-party Python package - a collection of code
+that isn't part what Python provides out of the box. These third-party packages
+are most commonly distributed using the `Python Package Index (PyPI)
+<https://pypi.org>`__, and installed into your local virtual environment. We've
+been using ``pip`` in this tutorial, but there are other options.
+
+On desktop platforms (macOS, Windows, Linux), essentially any package on PyPI
+package can be installed into your virtual environment, or added to your app's
+requirements. However, when building an app for mobile or web platforms, `your
+options are slightly limited
+<https://briefcase.readthedocs.io/en/latest/background/faq.html#can-i-use-third-party-python-packages-in-my-app>`__.
+
+In short; any *pure Python* package (i.e. any package created from a project
+written *only* in Python) can be used without difficulty. Some packages, though,
+are created from projects that contain both Python and other languages (e.g. C,
+C++, Rust, etc). Code written in those languages needs to be compiled to
+platform-specific binary modules before it can be used, and those pre-compiled
+binary modules are only available on specific platforms. Mobile and web
+platforms have very different requirements than "standard" desktop platforms. At
+this time, most Python packages don't provide pre-compiled binaries for mobile
+and web platforms.
+
+On PyPI, packages are often provided in a pre-built distribution format called
+*wheels*. To check whether a package is pure Python, look at the PyPI downloads
+page for the project. If the wheels provided have a ``-py3-none-any.whl`` suffix
+(e.g., `Faker <https://pypi.org/project/Faker/37.3.0/#files>`__), then they are
+pure Python wheels. However, if the wheels have version and platform-specific
+extensions (e.g., `Pillow <https://pypi.org/project/pillow/11.2.1/#files>`__,
+which has wheels with suffixes like ``-cp313-cp313-macosx_11_0_arm64.whl`` and
+``-cp39-cp39-win_amd64.whl``), then the wheel *contains a binary component*.
+That package cannot be installed on mobile or web platforms unless a wheel
+compatible with those platforms has been provided.
+
+At this time, *most* binary packages on PyPI don't provide mobile- or
+web-compatible wheels. To fill this gap, BeeWare provides binaries for some
+popular binary modules (including ``numpy``, ``pandas``, and ``cryptography``).
+These wheels are *not* distributed on PyPI, but Briefcase will install those
+wheels if they're available.
+
+It's *usually* possible to compile binary packages for mobile platforms, but
+it's not easy to set up -- well outside the scope of an introductory tutorial
+like this one.
 
 Next steps
 ==========
 
-We've now got an app that uses a third-party library! However, you may have
-noticed that when you press the button, the app becomes a little unresponsive.
-Can we do anything to fix this? Turn to :doc:`Tutorial 8 <tutorial-8>` to find
-out...
+We've now got an app that uses a third-party library! In :doc:`Tutorial 8
+<tutorial-8>` we'll learn how to ensure our app remains responsive as we add
+more complex application logic.

@@ -102,13 +102,15 @@ adds your Python code to it.
 When you run ``briefcase create android`` for the first time, Briefcase
 downloads a Java JDK, and the Android SDK. File sizes and download times can be
 considerable; this may take a while (10 minutes or longer, depending on the
-speed of your Internet connection). When the download has completed, you will
-be prompted to accept Google's Android SDK license.
+speed of your Internet connection). When the download has completed, you will be
+prompted to accept Google's Android SDK license. There's a number of licenses
+you'll need to agree too - keep entering ``y`` at the prompt to review and
+accept each of the necessary the license agreements.
 
-Once this completes, we'll have a
-``build\helloworld\android\gradle`` directory in our project, which will contain
-an Android project with a Gradle build configuration. This project will contain
-your application code, and a support package containing the Python interpreter.
+Once this completes, we'll have a ``build\helloworld\android\gradle`` directory
+in our project, which will contain an Android project with a Gradle build
+configuration. This project will contain your application code, and a support
+package containing the Python interpreter.
 
 We can then use Briefcase's ``build`` command to compile this into an Android
 APK app file.
@@ -283,6 +285,12 @@ our desktop app:
 
 If you fail to see your app launching, you may need to check your terminal
 where you ran ``briefcase run`` and look for any error messages.
+
+While the app is running, you'll see a lot of messages being streamed in
+the console. This is a stream of the application's logs from the emulator.
+Typing Ctrl+C into the terminal will halt the streamed information in
+the console, but it will not close the emulator. This is so you can test
+new changes without restarting the emulator.
 
 In future, if you want to run on this device without using the menu, you can
 provide the emulator's name to Briefcase, using ``briefcase run android -d
