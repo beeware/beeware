@@ -82,10 +82,10 @@ purposes of this tutorial, use the following:
 
 * **App Name** - Accept the default value: ``helloworld``.
 
-* **Bundle** - If you own your own domain, enter that domain in reversed order.
-  (For example, if you own the domain "cupcakes.com", enter ``com.cupcakes``
-  as the bundle). If you don't own your own domain, accept the default bundle
-  (``com.example``).
+* **Bundle Identifier** - If you own your own domain, enter that domain in
+  reversed order. (For example, if you own the domain "cupcakes.com", enter
+  ``com.cupcakes`` as the bundle). If you don't own your own domain, accept the
+  default bundle (``com.example``).
 
 * **Project Name** - Accept the default value: ``Hello World``.
 
@@ -94,7 +94,7 @@ purposes of this tutorial, use the following:
 
 * **Author** - Enter your own name here.
 
-* **Author's email** - Enter your own email address. This will be used in the
+* **Author's Email** - Enter your own email address. This will be used in the
   configuration file, in help text, and anywhere that an email is required
   when submitting the app to an app store.
 
@@ -231,9 +231,11 @@ This should open a GUI window:
       If your version of python is *not* a supported version, you will have to restart
       the tutorial.
 
-Press the close button (or select Quit from the application's menu), and you're
-done! Congratulations - you've just written a standalone, native application
-in Python!
+Close the application - either by pressing the close button on the application
+window, by selecting Quit/Exit from the application's menu, or by typing
+*Ctrl+C* in the terminal where you ran ``briefcase dev`` - and you're done!
+Congratulations - you've just written a standalone, native application in
+Python!
 
 Next steps
 ==========
