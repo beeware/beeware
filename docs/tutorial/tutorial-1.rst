@@ -233,7 +233,7 @@ This should open a GUI window:
 
 Close the application - either by pressing the close button on the application
 window, by selecting Quit/Exit from the application's menu, or by typing
-*Ctrl+C* in the terminal where you ran ``briefcase dev`` - and you're done!
+**Ctrl+C** in the terminal where you ran ``briefcase dev`` - and you're done!
 Congratulations - you've just written a standalone, native application in
 Python!
 
