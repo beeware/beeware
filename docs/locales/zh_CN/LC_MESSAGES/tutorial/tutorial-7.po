@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-22 18:48+0000\n"
-"PO-Revision-Date: 2025-06-05 06:01+0000\n"
+"PO-Revision-Date: 2025-06-07 05:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/tutorial-7/zh_Hans/>\n"
@@ -20,24 +20,27 @@ msgid "Tutorial 7 - Get this (third)-party started"
 msgstr "教程 7 - 使用第三方库"
 
 #: ../../tutorial/tutorial-7.rst:5 80041d02f6a345c09a2e699420bb553b
-#, fuzzy
 msgid "So far, the app we've built has only used our own code, plus the code provided by BeeWare. However, in a real-world app, you'll likely want to use a third-party library, downloaded from the Python Package Index (PyPI)."
-msgstr "到目前为止，我们构建的应用程序只使用了我们自己的代码和 BeeWare 提供的代码。不过，在实际应用中，您很可能需要使用从 Python 软件包索引（PyPI）下载的第三方库。"
+msgstr ""
+"到目前为止，我们构建的应用程序只使用了我们自己的代码和 BeeWare "
+"提供的代码。不过，在实际应用中，您很可能需要使用从 Python "
+"软件包索引（PyPI）下载的第三方库。"
 
 #: ../../tutorial/tutorial-7.rst:9 52a52a7c1bb44e08a6bdbe3397150a34
-#, fuzzy
 msgid "Let's modify our app to include a third-party library."
 msgstr "让我们修改应用程序，加入第三方库。"
 
 #: ../../tutorial/tutorial-7.rst:12 d247c262837d497db2b5c94ac83a06d8
-#, fuzzy
 msgid "Accessing an API"
 msgstr "访问应用程序接口"
 
 #: ../../tutorial/tutorial-7.rst:14 a9c040274a504711ae46fb2f6c6026b2
-#, fuzzy
 msgid "A common task an app will need to perform is to make a request on a web API to retrieve data, and display that data to the user. This is a toy app, so we don't have a *real* API to work with, so we'll use the `{JSON} Placeholder API <https://jsonplaceholder.typicode.com>`__ as a source of data."
-msgstr "应用程序需要执行的一项常见任务是向网络应用程序接口发出请求以获取数据，并将数据显示给用户。这是一个玩具应用程序，因此我们没有*真正*的 API 可供使用，所以我们将使用 `{JSON} 占位符 API <https://jsonplaceholder.typicode.com>`__ 作为数据源。"
+msgstr ""
+"应用程序需要执行的一项常见任务是向网络应用程序接口发出请求以获取数据，并将数"
+"据显示给用户。这是一个玩具应用程序，因此我们没有\\ *真正*\\ 的 API 可供使用，"
+"所以我们将使用 `{JSON} 占位符 API <https://jsonplaceholder.typicode.com>`__ "
+"作为数据源。"
 
 #: ../../tutorial/tutorial-7.rst:19 205d631a08064522a4e40125ad81b899
 #, fuzzy
