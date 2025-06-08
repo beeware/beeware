@@ -307,8 +307,10 @@ This should open a GUI window:
 If you enter a name in the text box, and press the GUI button, you should see
 output appear in the console where you started the application.
 
-Before continuing, close the app by typing **Ctrl+C** in the console, or through
-the application menu.
+Before continuing, close the app. As with Tutorial 1, you can do this by
+pressing the close button on the application window, by selecting Quit/Exit from
+the application's menu, or by typing **Ctrl+C** in the terminal where you ran
+``briefcase dev``.
 
 Next steps
 ==========
