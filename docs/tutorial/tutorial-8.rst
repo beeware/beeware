@@ -2,22 +2,33 @@
 Tutorial 8 - Making it Smooooth
 ===============================
 
-TODO: Intro
+So far, our application has been relatively simple - displaying GUI widgets,
+calling a simple third-party library, and displaying output in a dialog. All
+these operations happen very quickly, and our application remains responsive.
+
+However, in a real world application, we'll need to perform a complex tasks or
+computation that take a while to complete - and as those tasks are performed, we
+want our application to remain responsive. Let's make a change to our
+application that might take a little time to complete, and see the changes that
+need to be made to accomodate that behavior.
 
 Accessing an API
 ================
 
-A common task an app will need to perform is to make a request on a web API to
-retrieve data, and display that data to the user. This is a toy app, so we don't
-have a *real* API to work with, so we'll use the `{JSON} Placeholder API
-<https://jsonplaceholder.typicode.com>`__ as a source of data.
+A common "complex" task an app will need to perform is to make a request on a
+web API to retrieve data, and display that data to the user. Web APIs sometimes
+take a second or two to respond, so if we're calling an API like that, we need
+to ensure our application doesn't become unresponsive while we wait for the web
+API to return an answer.
 
-The {JSON} Placeholder API has a number of "fake" API endpoints you can use as
-test data. One of those APIs is the ``/posts/`` endpoint, which returns fake
-blog posts. If you open ``https://jsonplaceholder.typicode.com/posts/42`` in
-your browser, you'll get a JSON payload describing a single post - some `Lorum
-ipsum <https://en.wikipedia.org/wiki/Lorem_ipsum>`__ content for a blog post
-with ID 42.
+This is a toy app, so we don't have a *real* API to work with, so we'll use the
+`{JSON} Placeholder API <https://jsonplaceholder.typicode.com>`__ as a source of
+data. The {JSON} Placeholder API has a number of "fake" API endpoints you can
+use as test data. One of those APIs is the ``/posts/`` endpoint, which returns
+fake blog posts. If you open ``https://jsonplaceholder.typicode.com/posts/42``
+in your browser, you'll get a JSON payload describing a single post - some
+`Lorum ipsum <https://en.wikipedia.org/wiki/Lorem_ipsum>`__ content for a blog
+post with ID 42.
 
 The Python standard library contains all the tools you'd need to access an API.
 However, the built-in APIs are very low level. They are good implementations of
@@ -111,11 +122,14 @@ has worked.
        :alt: Hello World Tutorial 8 dialog, on Windows
 
 Unless you've got a *really* fast internet connection, you may notice that when
-you press the button, the GUI for your app locks up for a little bit. This is
-because the web request we have made is *synchronous*. When our application makes
-the web request, it waits for the API to return a response before continuing.
-While it's waiting, it *isn't* allowing the application to redraw - and as a
-result, the application locks up.
+you press the button, the GUI for your app locks up for a little bit. The operating
+system may even manifest this with a "beachball" or "spinner" cursor to indicate
+that the app is being unresponsive.
+
+This is because the web request we have made is *synchronous*. When our
+application makes the web request, it waits for the API to return a response
+before continuing. While it's waiting, it *isn't* allowing the application to
+redraw - and as a result, the application locks up.
 
 GUI Event Loops
 ===============
