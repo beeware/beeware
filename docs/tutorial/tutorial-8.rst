@@ -10,7 +10,7 @@ However, in a real world application, we'll need to perform a complex tasks or
 computation that take a while to complete - and as those tasks are performed, we
 want our application to remain responsive. Let's make a change to our
 application that might take a little time to complete, and see the changes that
-need to be made to accomodate that behavior.
+need to be made to accommodate that behavior.
 
 Accessing an API
 ================
