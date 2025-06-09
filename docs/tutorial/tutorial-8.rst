@@ -6,20 +6,20 @@ So far, our application has been relatively simple - displaying GUI widgets,
 calling a simple third-party library, and displaying output in a dialog. All
 these operations happen very quickly, and our application remains responsive.
 
-However, in a real world application, we'll need to perform a complex tasks or
-computation that take a while to complete - and as those tasks are performed, we
-want our application to remain responsive. Let's make a change to our
-application that might take a little time to complete, and see the changes that
-need to be made to accommodate that behavior.
+However, in a real world application, we'll need to perform complex tasks or
+calculations that may take a while to complete - and as those tasks are
+performed, we want our application to remain responsive. Let's make a change to
+our application that might take a little time to complete, and see the changes
+that need to be made to accommodate that behavior.
 
 Accessing an API
 ================
 
-A common "complex" task an app will need to perform is to make a request on a
-web API to retrieve data, and display that data to the user. Web APIs sometimes
-take a second or two to respond, so if we're calling an API like that, we need
-to ensure our application doesn't become unresponsive while we wait for the web
-API to return an answer.
+A common time-consuming task an app will need to perform is to make a request on
+a web API to retrieve data, and display that data to the user. Web APIs
+sometimes take a second or two to respond, so if we're calling an API like that,
+we need to ensure our application doesn't become unresponsive while we wait for
+the web API to return an answer.
 
 This is a toy app, so we don't have a *real* API to work with, so we'll use the
 `{JSON} Placeholder API <https://jsonplaceholder.typicode.com>`__ as a source of
