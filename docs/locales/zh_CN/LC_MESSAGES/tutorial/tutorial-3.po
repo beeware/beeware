@@ -1,316 +1,261 @@
+
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-21 23:13+0000\n"
+"POT-Creation-Date: 2025-06-09 04:13+0000\n"
 "PO-Revision-Date: 2025-06-05 01:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
-"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
-"projects/beeware/tutorial/tutorial-3/zh_Hans/>\n"
 "Language: zh_CN\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-3/zh_Hans/>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.12-dev\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: ../../tutorial/tutorial-3.rst:3 bdfb152f93a44ba3a62d746f0ae94b69
+#: ../../tutorial/tutorial-3.rst:3 3ee7dcb591cc4ce291294ee55fd79720
 msgid "Tutorial 3 - Packaging for distribution"
 msgstr "教程 3 - 打包与分发"
 
-#: ../../tutorial/tutorial-3.rst:5 3f79476f192447c4b698024c902f7f7b
+#: ../../tutorial/tutorial-3.rst:5 76ff6de8d3394648ac3a930102eb0aed
 msgid "So far, we've been running our application in \"Developer mode\". This makes it easy for us to run our application locally - but what we really want is to be able to give our application to others."
 msgstr "到目前为止，我们一直在“开发者模式”下运行应用程序。这可以让我们轻松地在本地运行应用程序，但我们真正想要的是能将我们的应用程序提供给其他人。"
 
-#: ../../tutorial/tutorial-3.rst:9 944fc37831204c6bb9e982dad4675f99
+#: ../../tutorial/tutorial-3.rst:9 ebb6aa51c977482d89e6b5d056bc8378
 msgid "However, we don't want to have to teach our users how to install Python, create a virtual environment, clone a git repository, and run Briefcase in developer mode. We'd rather just give them an installer, and have the application Just Work."
 msgstr "但是，我们不想教用户怎样安装 Python、创建虚拟环境、克隆 git 仓库和在开发者模式下运行 Briefcase。我们宁可只给他们一个安装程序，让应用程序能够正常运行。"
 
-#: ../../tutorial/tutorial-3.rst:14 35b722a95a1349a695b7a1ee63d7c193
+#: ../../tutorial/tutorial-3.rst:14 a795bb228a804c2e8d6240f3ba211bdc
 msgid "Briefcase can be used to package your application for distribution in this way."
 msgstr "Briefcase 可用于打包应用程序，以便以这种方式发布。"
 
-#: ../../tutorial/tutorial-3.rst:17 107f36a462914d63921382eda4c59dca
+#: ../../tutorial/tutorial-3.rst:17 28aa4c331be64cef8f9b5e7afc6f04c5
 msgid "Creating your application scaffold"
 msgstr "创建应用程序脚手架"
 
-#: ../../tutorial/tutorial-3.rst:19 8895b3a09e314446857705fe593aa35c
+#: ../../tutorial/tutorial-3.rst:19 97e494eea0634dd7bfd1f72384fd4ae6
 msgid "Since this is the first time we're packaging our application, we need to create some configuration files and other scaffolding to support the packaging process. From the ``helloworld`` directory, run:"
 msgstr "由于这是我们第一次打包应用程序，我们需要创建一些配置文件和其他脚手架来支持打包过程。在 ``helloworld`` 目录中，运行:"
 
 #: ../../tutorial/tutorial-3.rst:25 ../../tutorial/tutorial-3.rst:188
-#: ../../tutorial/tutorial-3.rst:268 ../../tutorial/tutorial-3.rst:361
-#: 1f44445c4e06435d9553d5f95dce5cc6 2ce23c06a8954d4f895d0de1514556a9
-#: 744b5b97ebf142bbbb732a4c5042d184 9064a04c67d7411a9d6881acc60d98ea
+#: ../../tutorial/tutorial-3.rst:268 ../../tutorial/tutorial-3.rst:366
+#: 0074cbc07a644703bea01ed679311ee6 505eaeed7af04080b1d2a4887f170db5
+#: b69248238d5f464eb00df965d8126a44 fa34bbeda4394b1383b960021a7abb50
 msgid "macOS"
 msgstr "macOS"
 
 #: ../../tutorial/tutorial-3.rst:52 ../../tutorial/tutorial-3.rst:207
-#: ../../tutorial/tutorial-3.rst:291 ../../tutorial/tutorial-3.rst:411
-#: 0be1c920db464a1ab82ab5281984d974 4fab3690f83d42c4937deb3e54b14a4b
-#: d15279f812494d6b85fba1c92fa34e0b f9355c5067bc4e7c979d09300fc88cc1
+#: ../../tutorial/tutorial-3.rst:291 ../../tutorial/tutorial-3.rst:416
+#: 05e316f8373d40ce991ad1950bce3fd1 3f63105ca54d460e962c8ba9cb40fa29
+#: 4fb94797ad3045e096b1a6b72658440d 7850f76b6e9f4734a436b3444de6b721
 msgid "Linux"
 msgstr "Linux"
 
-#: ../../tutorial/tutorial-3.rst:85 5b7829b53d324b8498b1110105fb1b33
+#: ../../tutorial/tutorial-3.rst:85 4557e9ce267b477a8dc29c8b33e1adb4
 msgid "Errors about Python versions"
 msgstr "有关Python版本的错误"
 
-#: ../../tutorial/tutorial-3.rst:87 66a56c8675454b52a69d6c395beb18f4
+#: ../../tutorial/tutorial-3.rst:87 57f8ae5a94ab484f9f0110a3e6515093
 msgid "If you receive an error that reads something like:"
 msgstr "如果您收到类似如下的错误信息："
 
-#: ../../tutorial/tutorial-3.rst:89 7f65969cb7954116a5f3c172823ad276
+#: ../../tutorial/tutorial-3.rst:89 cb2382df77cd43e1be8634dadbe243b6
 msgid "The version of Python being used to run Briefcase (3.12) is not the system python3 (3.10)."
 msgstr "用于运行 Briefcase 的 Python 版本 (3.12) 不是系统 python3 (3.10)。"
 
-#: ../../tutorial/tutorial-3.rst:91 0dc5b3f1cc9149a4afb89ea67c23cef2
+#: ../../tutorial/tutorial-3.rst:91 24242150b30e4bfa96732715b78e1733
 msgid "You will need to recreate your virtual environment using the system ``python3``. Using the system Python is a requirement for packaging your application."
 msgstr "您将需要使用系统的 ``python3`` 重新创建您的虚拟环境。打包您的应用程序要求使用系统 Python。"
 
 #: ../../tutorial/tutorial-3.rst:95 ../../tutorial/tutorial-3.rst:239
-#: ../../tutorial/tutorial-3.rst:317 ../../tutorial/tutorial-3.rst:520
-#: b7ae8f2e6f5846ac95c2c591aff26852 c694065460994dbb9dbe10e2ab210413
-#: cb40149decfd44edaf66c4c9197d70a5 f4e05419eede4e51b84846d109095b00
+#: ../../tutorial/tutorial-3.rst:317 ../../tutorial/tutorial-3.rst:525
+#: 51180ff46506425f84ae8bd3f88bf129 63f9b4e288474980a90fab78ad20943b
+#: 9136df9012de4a96ba2d3e574040ab32 f621f0b7f95b4646898228d4e4479994
 msgid "Windows"
 msgstr "Windows"
 
-#: ../../tutorial/tutorial-3.rst:119 70290207540f4de8b072eeb7b7e5e0b5
+#: ../../tutorial/tutorial-3.rst:119 dd324b8281924b15b43efc524aba1ac5
 msgid "You've probably just seen pages of content go past in your terminal... so what just happened? Briefcase has done the following:"
 msgstr "您可能刚刚在终端上看到了几页内容滑过......刚刚发生了什么？Briefcase 做了以下工作："
 
-#: ../../tutorial/tutorial-3.rst:122 10c0651f661b469e89a70f8f0d1cea12
+#: ../../tutorial/tutorial-3.rst:122 4d9852c0b9944214becc97bb2ab6e31d
 msgid "It **generated an application template**. There's a lot of files and configurations required to build a native installer, above and beyond the code of your actual application. This extra scaffolding is almost the same for every application on the same platform, except for the name of the actual application being constructed - so Briefcase provides an application template for each platform it supports. This step rolls out the template, substituting the name of your application, bundle ID, and other properties of your configuration file as required to support the platform you're building on."
 msgstr "它生成了一个应用程序模板。除了实际应用程序的代码之外，构建本机安装程序还需要许多文件和配置。这些额外的脚手架对于同一平台上的每个应用程序几乎都是一样的，除了正在构建的实际应用程序的名称--因此，Briefcase 为其支持的每个平台提供了一个应用程序模板。这一步将推出模板，替换应用程序名称、捆绑 ID 和配置文件中的其他属性，以支持正在构建的平台。"
 
-#: ../../tutorial/tutorial-3.rst:132 f2ec47e30b6c4ac797fab98bd5684842
+#: ../../tutorial/tutorial-3.rst:132 4cefdb2194a746119101e88572d1edd4
 msgid "If you're not happy with the template provided by Briefcase, you can provide your own. However, you probably don't want to do this until you've got a bit more experience using Briefcase's default template."
 msgstr "如果您对 Briefcase 提供的模板不满意，可以提供自己的模板。不过，在使用 Briefcase 的默认模板获得更多经验之前，您可能不想这样做。"
 
-#: ../../tutorial/tutorial-3.rst:136 26890b22e969442690d459ec3627169d
+#: ../../tutorial/tutorial-3.rst:136 99bc8ef1a24245b28cd442d7ba0ecc58
 msgid "It **downloaded and installed a support package**. The packaging approach taken by Briefcase is best described as \"the simplest thing that could possibly work\" - it ships a complete, isolated Python interpreter as part of every application it builds (except for Linux native system package builds). This is slightly space inefficient - if you have 5 applications packaged with Briefcase, you'll have 5 copies of the Python interpreter. However, this approach guarantees that every application is completely independent, using a specific version of Python that is known to work with the application."
 msgstr "它下载并安装了一个支持包。Briefcase 所采用的打包方法被描述为“最简单可行的方法”--它将一个完整、独立的 Python 解释器作为其构建的每个应用程序的一部分（除了了、 Linux 上的原生系统包构建）。这种打包方式在空间利用上略显不足--如果有 5 个应用程序使用 Briefcase 打包，那么就会有 5 份 Python 解释器副本。但是，这种方法保证了每个应用程序都是完全独立的，使已知的能与应用程序一起工作的特定 Python版本。"
 
-#: ../../tutorial/tutorial-3.rst:145 db609965815c48abb1cc7281ecc4937c
+#: ../../tutorial/tutorial-3.rst:145 034a74be5ad34bcb980b673ba20a30e8
 msgid "Again, Briefcase provides a default support package for each platform; if you want, you can provide your own support package, and have that package included as part of the build process. You may want to do this if you have particular options in the Python interpreter that you need to have enabled, or if you want to strip modules out of the standard library that you don't need at runtime."
 msgstr "同样，Briefcase 为每个平台提供了默认的支持包；如果需要，您可以提供自己的支持包，并将其作为构建过程的一部分。如果您需要启用 Python 解释器中的特定选项，或者如果您想从标准库中剥离运行时不需要的模块，您可能需要这样做。"
 
-#: ../../tutorial/tutorial-3.rst:152 74f726bd5ae449d295ed29fe96319158
+#: ../../tutorial/tutorial-3.rst:152 2b3e8312f8254c95abc3cb319eb92e26
 msgid "Briefcase maintains a local cache of support packages, so once you've downloaded a specific support package, that cached copy will be used on future builds."
 msgstr "Briefcase 维护支持包的本地缓存，因此一旦您下载了特定的支持包，该缓存副本将用于未来的构建。"
 
-#: ../../tutorial/tutorial-3.rst:156 9a9bf66d3e7b41558cc35b01eb169e1c
+#: ../../tutorial/tutorial-3.rst:156 f229ad55d0ec4833b2584ef361163bac
 msgid "As noted above, when Briefcase packages an app as a native Linux system package (the default package format for Linux), a support package is not included with the app. Instead, the app will use the Python that is provided by the distribution of Linux being targeted."
 msgstr "如上所述，当 Briefcase 将一个应用程序打包成 Linux 上的原生系统包（Linux 上的默认包格式），应用程序中将不会包含任何的支持包；应用程序将会使用将要被分发到的 Linux 发行版提供的 Python。"
 
-#: ../../tutorial/tutorial-3.rst:161 e9dc40ad4dcf4f00aba9b2ba1b2485c2
+#: ../../tutorial/tutorial-3.rst:161 d403f46347254e6999cd2dbe8d23aced
 msgid "It **installed application requirements**. Your application can specify any third-party modules that are required at runtime. These will be installed using ``pip`` into your application's installer."
 msgstr "它\\ **安装应用程序的依赖项**。您的应用程序可以指定运行时所需的任何第三方模块。这些模块将会被用 ``pip`` 安装到应用程序的安装程序中。"
 
-#: ../../tutorial/tutorial-3.rst:165 d9426f0259e443bda45f017530e40376
+#: ../../tutorial/tutorial-3.rst:165 c05e0e43329b4b9b9ceee7b495205561
 msgid "It **Installed your application code**. Your application will have its own code and resources (e.g., images that are needed at runtime); these files are copied into the installer."
 msgstr "它\\ **安装您的应用程序代码**。您的应用程序将有自己的代码和资源（如运行时需要的图像）；这些文件会被复制到安装程序中。"
 
-#: ../../tutorial/tutorial-3.rst:169 06275d03fdc1486cb4bc25f42afc5d6d
+#: ../../tutorial/tutorial-3.rst:169 03049ca443ab4b519aa82e5d9af78b63
 msgid "It **installed your resources needed by your application.** Lastly, it adds any additional resources that are needed by the installer itself. This includes things like icons that need to be attached to the final application and splash screen images."
 msgstr "最后，它还会\\ **添加安装程序本身所需的其他资源**。这包括需要附加到最终应用程序的图标和启动画面等。"
 
-#: ../../tutorial/tutorial-3.rst:174 f08568e94ef74832adece14d869e5e7a
+#: ../../tutorial/tutorial-3.rst:174 9349f7c0940a4936a81677959d43ff2a
 msgid "Once this completes, if you look in the project directory, you should now see a directory corresponding to your platform (``macOS``, ``linux``, or ``windows``) that contains additional files. This is the platform-specific packaging configuration for your application."
-msgstr ""
-"完成上述操作后，如果查看项目目录，就会发现一个与平台（``macOS``, ``linux``，"
-"或\\ "
-"``windows``）相对应的目录，其中包含附加文件。这就是应用程序的平台具体的打包配"
-"置。"
+msgstr "完成上述操作后，如果查看项目目录，就会发现一个与平台（``macOS``, ``linux``，或\\ ``windows``）相对应的目录，其中包含附加文件。这就是应用程序的平台具体的打包配置。"
 
-#: ../../tutorial/tutorial-3.rst:180 e9868646707a43479eb42f96a7cdaec2
+#: ../../tutorial/tutorial-3.rst:180 012b110f16cd4136a5433fcad09b2b48
 msgid "Building your application"
 msgstr "构建您的应用程序"
 
-#: ../../tutorial/tutorial-3.rst:182 ba6d5373ea9c47089f1e1c3220a56c22
+#: ../../tutorial/tutorial-3.rst:182 aaa956d1725f4ee69d9bcf17266cd1d3
 msgid "You can now compile your application. This step performs any binary compilation that is necessary for your application to be executable on your target platform."
-msgstr "现在可以编译应用程序了。此步骤将执行任何使应用程序在目标平台上可执行所必须的"
-"二进制编译。"
+msgstr "现在可以编译应用程序了。此步骤将执行任何使应用程序在目标平台上可执行所必须的二进制编译。"
 
-#: ../../tutorial/tutorial-3.rst:201 af8ad1e3e8b04950a08319b85fa98b45
+#: ../../tutorial/tutorial-3.rst:201 d5d0af4c14204460b5cf47605c21b513
 msgid "On macOS, the ``build`` command doesn't need to *compile* anything, but it does need to sign the contents of binary so that it can be executed. This signature is an *ad hoc* signature - it will only work on *your* machine; if you want to distribute the application to others, you'll need to provide a full signature."
-msgstr ""
-"在 macOS 上，`` build``\\ 命令不需要\\ *编译*\\ "
-"任何内容，但需要对二进制文件的内容进行（数字）签名，以便执行。"
-"这种签名是一种\\ *临时 (ad hoc)*\\ 签名--它只能在\\ *你的*\\ "
-"机器上工作；如果你想将应用程序发布给其他人，就需要提供完整的签名。"
+msgstr "在 macOS 上，`` build``\\ 命令不需要\\ *编译*\\ 任何内容，但需要对二进制文件的内容进行（数字）签名，以便执行。这种签名是一种\\ *临时 (ad hoc)*\\ 签名--它只能在\\ *你的*\\ 机器上工作；如果你想将应用程序发布给其他人，就需要提供完整的签名。"
 
-#: ../../tutorial/tutorial-3.rst:233 d0e6e9c3ae4943ed91afd8559a0d9ca3
+#: ../../tutorial/tutorial-3.rst:233 8d03d695547540eb89ec9782e387a6d6
 msgid "Once this step completes, the ``build`` folder will contain a ``helloworld-0.0.1`` folder that contains a mirror of a Linux ``/usr`` file system. This file system mirror will contain a ``bin`` folder with a ``helloworld`` binary, plus ``lib`` and ``share`` folders needed to support the binary."
-msgstr ""
-"此步骤完成后，`build`\\ 文件夹将包含一个\\ `helloworld-0.0.1`\\ 文件夹，"
-"其中包含一个 Linux ``/usr`` 文件系统的镜像。这个文件系统镜像将包含一个\\ "
-"``bin``\\ 文件夹，里面有一个\\ ``helloworld``\\ 二进制文件，"
-"以及支持二进制文件所需的\\ ``lib``\\ 和\\ ``share``\\ 文件夹。"
+msgstr "此步骤完成后，`build`\\ 文件夹将包含一个\\ `helloworld-0.0.1`\\ 文件夹，其中包含一个 Linux ``/usr`` 文件系统的镜像。这个文件系统镜像将包含一个\\ ``bin``\\ 文件夹，里面有一个\\ ``helloworld``\\ 二进制文件，以及支持二进制文件所需的\\ ``lib``\\ 和\\ ``share``\\ 文件夹。"
 
-#: ../../tutorial/tutorial-3.rst:248 825e7ee28b4a492095ab24a02d27dd89
+#: ../../tutorial/tutorial-3.rst:248 ffd65b13deef423db502f5206eb0c689
 msgid "On Windows, the ``build`` command doesn't need to *compile* anything, but it does need to write some metadata so that the application knows its name, version, and so on."
-msgstr ""
-"在 Windows 上，``build`` 命令不需要\\ *编译*\\ "
-"任何东西，但它确实需要写入一些元数据，以便应用程序知道它的名称、版本等。"
+msgstr "在 Windows 上，``build`` 命令不需要\\ *编译*\\ 任何东西，但它确实需要写入一些元数据，以便应用程序知道它的名称、版本等。"
 
-#: ../../tutorial/tutorial-3.rst:252 06283979a91d4a9785ddaca570f97ed7
+#: ../../tutorial/tutorial-3.rst:252 b3f259bd2a864552957276f67a548777
 msgid "Triggering antivirus"
 msgstr "触发杀毒软件"
 
-#: ../../tutorial/tutorial-3.rst:254 b3633ee54206493ab188eef8408f7b4f
+#: ../../tutorial/tutorial-3.rst:254 255fc948895549ce99b8cd502565aee0
 msgid "Since this metadata is being written directly in to the pre-compiled binary rolled out from the template during the ``create`` command, this may trigger antivirus software running on your machine and prevent the metadata from being written. In that case, instruct the antivirus to allow the tool (named ``rcedit-x64.exe``) to run and re-run the command above."
-msgstr ""
-"由于这些元数据是在 ``create`` "
-"命令中直接写入从模板推出的预编译二进制文件的，因此可能会触发机器上运行的杀毒"
-"软件，从而阻止元数据的写入。在这种情况下，请指示杀毒软件允许工具（名为 "
-"``rcedit-x64.exe``）运行，并重新运行上述命令。"
+msgstr "由于这些元数据是在 ``create`` 命令中直接写入从模板推出的预编译二进制文件的，因此可能会触发机器上运行的杀毒软件，从而阻止元数据的写入。在这种情况下，请指示杀毒软件允许工具（名为 ``rcedit-x64.exe``）运行，并重新运行上述命令。"
 
-#: ../../tutorial/tutorial-3.rst:262 f2c39e03a59a4acaba895bcb657cee65
+#: ../../tutorial/tutorial-3.rst:262 e61e1141a29e4e23bc52dd28743ad758
 msgid "Running your app"
 msgstr "运行应用程序"
 
-#: ../../tutorial/tutorial-3.rst:264 8ba9fb890db34822ae29aa51e12ddd77
+#: ../../tutorial/tutorial-3.rst:264 316f484cb7744fe3b5732d58080e2ef2
 msgid "You can now use Briefcase to run your application:"
 msgstr "现在您可以使用 Briefcase 运行应用程序了："
 
-#: ../../tutorial/tutorial-3.rst:339 9aad4ef3ae06435c877c50e837077782
+#: ../../tutorial/tutorial-3.rst:339 73cf8fc66df34f5aad0b70b1df7acb52
 msgid "This will start to run your native application, using the app bundle created by the ``build`` command."
 msgstr "这将使用 ``build`` 命令的输出开始运行原生应用程序。"
 
-#: ../../tutorial/tutorial-3.rst:342 4cc12b10296d45b59f15fe5ad64521fe
+#: ../../tutorial/tutorial-3.rst:342 53505dd4c9064e1d908de2f9f7869211
 msgid "You might notice some small differences in the way your application looks when it's running. For example, icons and the name displayed by the operating system may be slightly different to those you saw when running under developer mode. This is also because you're using the packaged application, not just running Python code. From the operating system's perspective, you're now running \"an app\", not \"a Python program\", and this is reflected in how the application appears."
-msgstr ""
-"你可能会注意到应用程序运行时的外观有一些细微差别。例如，操作系统显示的图标和"
-"名称可能与在开发者模式下运行时略有不同。这也是因为您使用的是打包的应用程序，"
-"而不仅仅是运行 Python "
-"代码。从操作系统的角度来看，您现在运行的是“一个应用程序”，而不是“一个 Python "
-"程序\"”，这也反映在应用程序的显示方式上。"
+msgstr "你可能会注意到应用程序运行时的外观有一些细微差别。例如，操作系统显示的图标和名称可能与在开发者模式下运行时略有不同。这也是因为您使用的是打包的应用程序，而不仅仅是运行 Python 代码。从操作系统的角度来看，您现在运行的是“一个应用程序”，而不是“一个 Python 程序\"”，这也反映在应用程序的显示方式上。"
 
-#: ../../tutorial/tutorial-3.rst:351 078d307df79e4a7aba4732054828f6f1
+#: ../../tutorial/tutorial-3.rst:350 86f90eeacc664b30a87adc5634fa9894
+msgid "Before continuing, close the app. As with previous tutorial steps, you can do this by pressing the close button on the application window, by selecting Quit/Exit from the application's menu, or by typing **Ctrl+C** in the terminal where you ran ``briefcase dev``."
+msgstr ""
+
+#: ../../tutorial/tutorial-3.rst:356 621f1d630e1248aba786ce12da394566
 msgid "Building your installer"
 msgstr "创建安装程序"
 
-#: ../../tutorial/tutorial-3.rst:353 0645f8fe590a45448378a69f904b5cad
+#: ../../tutorial/tutorial-3.rst:358 f008b20ffbaa487a81395f7bcad5d44e
 msgid "You can now package your application for distribution, using the ``package`` command. The package command does any compilation that is required to convert the scaffolded project into a final, distributable product. Depending on the platform, this may involve compiling an installer, performing code signing, or doing other pre-distribution tasks."
-msgstr ""
-"现在，您可以使用 ``package`` "
-"命令打包应用程序，以便发布。打包命令会执行将脚手架项目转换为最终可发布产品所"
-"需的编译工作。根据平台的不同，这可能涉及编译安装程序、执行代码签名或执行其他"
-"发布前任务。"
+msgstr "现在，您可以使用 ``package`` 命令打包应用程序，以便发布。打包命令会执行将脚手架项目转换为最终可发布产品所需的编译工作。根据平台的不同，这可能涉及编译安装程序、执行代码签名或执行其他发布前任务。"
 
-#: ../../tutorial/tutorial-3.rst:392 6ea287006a4e41c9a0e3933bbf9b3520
+#: ../../tutorial/tutorial-3.rst:397 d2ab06981a9f4076a95e3c70581d1092
 msgid "The ``dist`` folder will contain a file named ``Hello World-0.0.1.dmg``. If you locate this file in the Finder, and double click on its icon, you'll mount the DMG, giving you a copy of the Hello World app, and a link to your Applications folder for easy installation. Drag the app file into Applications, and you've installed your application. Send the DMG file to a friend, and they should be able to do the same."
-msgstr ""
-"``dist`` 文件夹将包含一个名为 ``Hello World-0.0.1.dmg`` 的文件。如果在 "
-"Finder 中找到该文件，并双击其图标，就会加载 DMG，从而获得 Hello World "
-"应用程序的副本，并链接到 ``Applications`` 文件夹以方便安装。"
-"将应用程序文件拖入 Applications，就安装好了应用程序。将 DMG "
-"文件发送给朋友，他们应该也能完成同样的操作。"
+msgstr "``dist`` 文件夹将包含一个名为 ``Hello World-0.0.1.dmg`` 的文件。如果在 Finder 中找到该文件，并双击其图标，就会加载 DMG，从而获得 Hello World 应用程序的副本，并链接到 ``Applications`` 文件夹以方便安装。将应用程序文件拖入 Applications，就安装好了应用程序。将 DMG 文件发送给朋友，他们应该也能完成同样的操作。"
 
-#: ../../tutorial/tutorial-3.rst:399 da5730265854428eb08096897074e9c9
+#: ../../tutorial/tutorial-3.rst:404 ff571aa92b7a40f08ecf4c0fdd1bc8e7
 msgid "In this example, we've used the ``--adhoc-sign`` option - that is, we're signing our application with *ad hoc* credentials - temporary credentials that will only work on your machine. We've done this to keep the tutorial simple. Setting up code signing identities is a little fiddly, and they're only *required* if you're intending to distribute your application to others. If we were publishing a real application for others to use, we would need to specify real credentials."
-msgstr ""
-"在本例中，我们使用了 ``--adhoc-sign`` 选项--也就是说，我们使用 *ad hoc* "
-"凭据（仅在你的机器上有效的临时凭据）来签署我们的应用程序。我们这样做是为了让"
-"教程简单明了。设置代码签名身份有点麻烦，"
-"而且只有当你打算将应用程序发布给他人时\\ *才*\\ "
-"需要。如果我们要发布一个真正的应用程序供他人使用，我们就需要指定真实的凭据。"
+msgstr "在本例中，我们使用了 ``--adhoc-sign`` 选项--也就是说，我们使用 *ad hoc* 凭据（仅在你的机器上有效的临时凭据）来签署我们的应用程序。我们这样做是为了让教程简单明了。设置代码签名身份有点麻烦，而且只有当你打算将应用程序发布给他人时\\ *才*\\ 需要。如果我们要发布一个真正的应用程序供他人使用，我们就需要指定真实的凭据。"
 
-#: ../../tutorial/tutorial-3.rst:407 f01c725c78b8465ba1e7742d98f4c4f7
+#: ../../tutorial/tutorial-3.rst:412 c0b1f6ee21b2449cbc0adc5042c3ae73
 msgid "When you're ready to publish a real application, check out the Briefcase How-To guide on `Setting up a macOS code signing identity <https://briefcase.readthedocs.io/en/latest/how-to/code-signing/macOS.html>`__."
-msgstr ""
-"当您准备发布真正的应用程序时，请查看关于 `设置 macOS 代码签名身份 <https://"
-"briefcase.readthedocs.io/en/latest/how-to/code-signing/macOS.html>`__ 的 "
-"Briefcase 操作指南。"
+msgstr "当您准备发布真正的应用程序时，请查看关于 `设置 macOS 代码签名身份 <https://briefcase.readthedocs.io/en/latest/how-to/code-signing/macOS.html>`__ 的 Briefcase 操作指南。"
 
-#: ../../tutorial/tutorial-3.rst:413 f5164a209fdb490986ea567298be9450
+#: ../../tutorial/tutorial-3.rst:418 4cd3cdb30341458ba1206720e0f1a1a6
 msgid "The output of the package step will be slightly different depending on your Linux distribution. If you're on a Debian-derived distribution, you'll see:"
 msgstr "软件包步骤的输出会因 Linux 发行版的不同而略有不同。如果你使用的是 Debian 衍生发行版，你会看到:"
 
-#: ../../tutorial/tutorial-3.rst:434 d658d31a87894373adfe348e2a0bf1c0
+#: ../../tutorial/tutorial-3.rst:439 41a10ab4828e4d3687cd06d98f70da56
 msgid "The ``dist`` folder will contain the ``.deb`` file that was generated."
 msgstr "``dist`` 文件夹将包含生成的 ``.deb`` 文件。"
 
-#: ../../tutorial/tutorial-3.rst:436 7bb567078cbc42c18c15385742610f65
+#: ../../tutorial/tutorial-3.rst:441 803d7e6559654bb398ef7e7e11fa94e7
 msgid "If you're on a RHEL-based distribution, you'll see:"
 msgstr "如果你使用的是基于 RHEL 的发行版，你就会看到："
 
-#: ../../tutorial/tutorial-3.rst:463 c39a20e7770d4f6d98ef6a3d71b2aeba
+#: ../../tutorial/tutorial-3.rst:468 5f4dc0fe1fc544a0b26d745e8480fadb
 msgid "The ``dist`` folder will contain the ``.rpm`` file that was generated."
 msgstr "``dist`` 文件夹将包含生成的 ``.rpm`` 文件。"
 
-#: ../../tutorial/tutorial-3.rst:465 e5c5ac7f82244130a374474246d58a3e
+#: ../../tutorial/tutorial-3.rst:470 3f7561621f5c48b4b4d16e45910ab65e
 msgid "If you're on an Arch-based distribution, you'll see:"
 msgstr "如果你使用的是基于 Arch 的发行版，你就会看到："
 
-#: ../../tutorial/tutorial-3.rst:483 8fef6c51b7444c318720a346fad8f23c
+#: ../../tutorial/tutorial-3.rst:488 864f45709c9b41f2ac0dc57b1b52a09f
 msgid "The ``dist`` folder will contain the ``.pkg.tar.zst`` file that was generated."
 msgstr "``dist`` 文件夹将包含生成的 ``.pkg.tar.zst`` 文件。"
 
-#: ../../tutorial/tutorial-3.rst:485 a8018be4a00b4263a8bfacdcf987c182
+#: ../../tutorial/tutorial-3.rst:490 5ea31f814c4b4d49b8189fcdf10277f8
 msgid "Other Linux distributions aren't currently supported for packaging."
 msgstr "目前不支持其他 Linux 发行版的打包。"
 
-#: ../../tutorial/tutorial-3.rst:487 47779b66d75249a9ba1e44dc6d0090e8
+#: ../../tutorial/tutorial-3.rst:492 0a2e3d13b19d4085a85c19de79f05315
 msgid "If you want to build a package for a Linux distribution other than the one you're using, Briefcase can also help - but you'll need to install Docker."
-msgstr "如果你想为你正在使用的 Linux 发行版之外的其他发行版构建软件包，Briefcase "
-"也能提供帮助，但你需要安装 Docker。"
+msgstr "如果你想为你正在使用的 Linux 发行版之外的其他发行版构建软件包，Briefcase 也能提供帮助，但你需要安装 Docker。"
 
-#: ../../tutorial/tutorial-3.rst:490 2051172da5994ebb9a099dd2092945dd
+#: ../../tutorial/tutorial-3.rst:495 5da2c1124c684b0f817d7f4a8eed878b
 msgid "Official installers for `Docker Engine <https://docs.docker.com/engine/install>`__ are available for a range of Unix distributions. Follow the instructions for your platform; however, ensure you don't install Docker in \"rootless\" mode."
-msgstr ""
-"`Docker Engine <https://docs.docker.com/engine/install>`__ "
-"的官方安装程序适用于一系列 Unix "
-"发行版。请按照您所在平台的说明进行操作；不过，请确保不要在 rootless "
-"模式下安装 Docker。"
+msgstr "`Docker Engine <https://docs.docker.com/engine/install>`__ 的官方安装程序适用于一系列 Unix 发行版。请按照您所在平台的说明进行操作；不过，请确保不要在 rootless 模式下安装 Docker。"
 
-#: ../../tutorial/tutorial-3.rst:495 0796c197ee8c43d79ae70b8aceb5c0af
+#: ../../tutorial/tutorial-3.rst:500 4450699a8f67495783e06d34a994114c
 msgid "Once you've installed Docker, you should be able to start an Linux container - for example:"
 msgstr "安装好 Docker 后，你就可以启动 Linux 容器了，例如:"
 
-#: ../../tutorial/tutorial-3.rst:502 bfcdecd8ceaf46078ceff8813d967c3a
+#: ../../tutorial/tutorial-3.rst:507 bcca4dbecc8a4bf089947bd4842a590e
 msgid "will show you a Unix prompt (something like ``root@84444e31cff9:/#``) inside an Ubuntu 22.04 Docker container. Type Ctrl-D to exit Docker and return to your local shell."
-msgstr ""
-"将显示 Ubuntu 22.04 Docker 容器中的 Unix 提示符（类似于 "
-"``root@84444e31cff9:/#``）。键入 Ctrl-D 退出 Docker 并返回本地 shell。"
+msgstr "将显示 Ubuntu 22.04 Docker 容器中的 Unix 提示符（类似于 ``root@84444e31cff9:/#``）。键入 Ctrl-D 退出 Docker 并返回本地 shell。"
 
-#: ../../tutorial/tutorial-3.rst:506 4e6a3c56cdd24170940376c9995172d6
+#: ../../tutorial/tutorial-3.rst:511 be6cca75a657420e8bf2ac8fe96dfc95
 msgid "Once you've got Docker installed, you can use Briefcase to build a package for any Linux distribution that Briefcase supports by passing in a Docker image as an argument. For example, to build a DEB package for Ubuntu 22.04 (Jammy), regardless of the operating system you're on, you can run:"
 msgstr "一旦安装了 Docker，只要将 Docker 镜像作为参数传递，就可以使用 Briefcase 为 Briefcase 支持的任何 Linux 发行版构建软件包。例如，要为 Ubuntu 22.04 (Jammy) 构建一个 DEB 包，无论你使用的是哪种操作系统，你都可以运行:"
 
-#: ../../tutorial/tutorial-3.rst:515 6a45dbf31d454e45b35eb6872d5a4f46
+#: ../../tutorial/tutorial-3.rst:520 02390ca08e1e458d8876751dc82a99d5
 msgid "This will download the Docker image for your selected operating system, create a container that is able to run Briefcase builds, and build the app package inside the image. Once it's completed, the ``dist`` folder will contain the package for the target Linux distribution."
-msgstr ""
-"这将下载所选操作系统的 Docker 镜像，创建一个能够运行 Briefcase "
-"构建的容器，并在镜像中构建应用程序软件包。完成后，`dist`` 文件夹将包含目标 "
-"Linux 发行版的软件包。"
+msgstr "这将下载所选操作系统的 Docker 镜像，创建一个能够运行 Briefcase 构建的容器，并在镜像中构建应用程序软件包。完成后，`dist`` 文件夹将包含目标 Linux 发行版的软件包。"
 
-#: ../../tutorial/tutorial-3.rst:550 7062189e80b242c593532276f0f27fe9
+#: ../../tutorial/tutorial-3.rst:555 3bf718b801a2489a84b8654f98f533d2
 msgid "In this example, we're not signing our app. As a result, when you use the installer, you'll get a system warning that the application comes from an unknown developer. We've done this to keep the tutorial simple. Setting up code signing identities is a little fiddly, and they're only *required* if you're intending to distribute your application to others. If we were publishing a real application for others to use, we would need to specify a real signing identity; when that signed app is installed, the system will notify the user that the application is from the known identity associated with the certificate."
-msgstr ""
-"在本例中，我们没有签署我们的应用程序。因此，当您使用安装程序时，您将收到系统"
-"警告，该应用程序来自未知开发人员。我们这样做是为了保持教程的简单性。设置代码"
-"签名身份比较复杂，只有当您打算将您的应用程序分发给其他人时，它们才*需要*。如"
-"果我们发布一个真实的应用程序供其他人使用，我们需要指定一个真实的签名身份；当"
-"该签名的应用程序安装时，系统将通知用户该应用程序来自与证书关联的已知身份。"
+msgstr "在本例中，我们没有签署我们的应用程序。因此，当您使用安装程序时，您将收到系统警告，该应用程序来自未知开发人员。我们这样做是为了保持教程的简单性。设置代码签名身份比较复杂，只有当您打算将您的应用程序分发给其他人时，它们才*需要*。如果我们发布一个真实的应用程序供其他人使用，我们需要指定一个真实的签名身份；当该签名的应用程序安装时，系统将通知用户该应用程序来自与证书关联的已知身份。"
 
-#: ../../tutorial/tutorial-3.rst:560 8245ba3fbb3048488f9089389c6e8ad9
+#: ../../tutorial/tutorial-3.rst:565 c982dbc6d2b44de8a1bc1e87f4402319
 msgid "When you're ready to publish a real application, check out the Briefcase How-To guide on `Setting up a Windows code signing identity <https://briefcase.readthedocs.io/en/latest/how-to/code-signing/windows.html>`__."
-msgstr ""
-"当您准备发布真正的应用程序时，请查看 Briefcase 操作指南中关于\\ `"
-"设置Windows代码签名身份 <https://briefcase.readthedocs.io/en/latest/how-to/"
-"code-signing/windows.html>`__\\ 的内容。"
+msgstr "当您准备发布真正的应用程序时，请查看 Briefcase 操作指南中关于\\ `设置Windows代码签名身份 <https://briefcase.readthedocs.io/en/latest/how-to/code-signing/windows.html>`__\\ 的内容。"
 
-#: ../../tutorial/tutorial-3.rst:564 d1a5458013874f9b9e076424f7425433
+#: ../../tutorial/tutorial-3.rst:569 8742b6d9649c4d1ebdf5f98cfa7279bb
 msgid "Once this step completes, the ``dist`` folder will contain a file named ``Hello_World-0.0.1.msi``. If you double click on this installer to run it, you should go through a familiar Windows installation process. Once this installation completes, there will be a \"Hello World\" entry in your start menu."
 msgstr "此步骤完成后，``dist`` 文件夹中将包含一个名为 ``Hello_World-0.0.1.msi`` 的文件。如果双击运行该安装程序，就会进入熟悉的 Windows 安装过程。安装完成后，开始菜单中将出现 \"Hello World \"条目。"
 
-#: ../../tutorial/tutorial-3.rst:571 44ecc0881ba048988c13ee0a9e56d046
+#: ../../tutorial/tutorial-3.rst:576 986614e6f0834dbd9296681190e6e1cb
 msgid "Next steps"
 msgstr "下一步"
 
-#: ../../tutorial/tutorial-3.rst:573 7a367901d8034d1490d853e3f53684d4
+#: ../../tutorial/tutorial-3.rst:578 326fc0f8d4fc44fb927cc883c36b72cb
 msgid "We now have our application packaged for distribution on desktop platforms. But what happens when we need to update the code in our application? How do we get those updates into our packaged application? Turn to :doc:`Tutorial 4 <./tutorial-4>` to find out..."
 msgstr "现在，我们已将应用程序打包发布到桌面平台上。但是，当我们需要更新应用程序中的代码时该怎么办？如何将这些更新添加到打包好的应用程序中？请访问 :doc:`教程4 <./tutorial-4>` 了解详情..."
+

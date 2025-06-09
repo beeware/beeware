@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-22 18:48+0000\n"
+"POT-Creation-Date: 2025-06-09 04:13+0000\n"
 "PO-Revision-Date: 2024-01-18 12:00+0000\n"
 "Last-Translator: Kamborio <Kamborio15@users.noreply.hosted.weblate.org>\n"
 "Language: es\n"
@@ -12,314 +12,324 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.15.0\n"
+"Generated-By: Babel 2.17.0\n"
 
-#: ../../tutorial/tutorial-7.rst:3 6b2615ec94ae43e5903abac442c3b41a
+#: ../../tutorial/tutorial-7.rst:3 bde39acc997c4564b359918b13eeed6e
 #, fuzzy
 msgid "Tutorial 7 - Get this (third)-party started"
 msgstr "Tutorial 7 - Poner en marcha esta (tercera)fiesta"
 
-#: ../../tutorial/tutorial-7.rst:5 80041d02f6a345c09a2e699420bb553b
+#: ../../tutorial/tutorial-7.rst:5 d9f88c2b92cf4e3f95f6d6186f5a4286
 #, fuzzy
 msgid "So far, the app we've built has only used our own code, plus the code provided by BeeWare. However, in a real-world app, you'll likely want to use a third-party library, downloaded from the Python Package Index (PyPI)."
 msgstr "Hasta ahora, la aplicación que hemos construido sólo ha utilizado nuestro propio código, además del código proporcionado por BeeWare. Sin embargo, en una aplicación del mundo real, es probable que desees utilizar una biblioteca de terceros, descargada del Python Package Index (PyPI)."
 
-#: ../../tutorial/tutorial-7.rst:9 52a52a7c1bb44e08a6bdbe3397150a34
+#: ../../tutorial/tutorial-7.rst:9 dceb551666ef4bd9945400f766ec075a
 #, fuzzy
 msgid "Let's modify our app to include a third-party library."
 msgstr "Vamos a modificar nuestra aplicación para incluir una biblioteca de terceros."
 
-#: ../../tutorial/tutorial-7.rst:12 d247c262837d497db2b5c94ac83a06d8
-#, fuzzy
-msgid "Accessing an API"
-msgstr "Acceso a una API"
+#: ../../tutorial/tutorial-7.rst:12 c258b48b52874238a2c8d3d6c47812a0
+msgid "Adding a package"
+msgstr ""
 
-#: ../../tutorial/tutorial-7.rst:14 a9c040274a504711ae46fb2f6c6026b2
-#, fuzzy
-msgid "A common task an app will need to perform is to make a request on a web API to retrieve data, and display that data to the user. This is a toy app, so we don't have a *real* API to work with, so we'll use the `{JSON} Placeholder API <https://jsonplaceholder.typicode.com>`__ as a source of data."
-msgstr "Una tarea común que una aplicación necesitará realizar es hacer una petición a una API web para recuperar datos, y mostrar esos datos al usuario. Esta es una aplicación de juguete, así que no tenemos una API *real* con la que trabajar, así que usaremos la `{JSON} Placeholder API <https://jsonplaceholder.typicode.com>`__ como fuente de datos."
+#: ../../tutorial/tutorial-7.rst:14 5004d23a35aa4679a6b3487624036c84
+msgid "Let's modify our application to say a little bit more than just \"Hi, there!\"."
+msgstr ""
 
-#: ../../tutorial/tutorial-7.rst:19 205d631a08064522a4e40125ad81b899
-#, fuzzy
-msgid "The {JSON} Placeholder API has a number of \"fake\" API endpoints you can use as test data. One of those APIs is the ``/posts/`` endpoint, which returns fake blog posts. If you open ``https://jsonplaceholder.typicode.com/posts/42`` in your browser, you'll get a JSON payload describing a single post - some `Lorum ipsum <https://en.wikipedia.org/wiki/Lorem_ipsum>`__ content for a blog post with ID 42."
-msgstr "El {JSON} Placeholder API tiene una serie de \"falsos\" puntos finales de la API que puede utilizar como datos de prueba. Una de esas API es el punto final ``/posts/``, que devuelve entradas de blog falsas. Si abre ``https://jsonplaceholder.typicode.com/posts/42`` en su navegador, obtendrá una carga útil JSON que describe una única entrada: algo de contenido `Lorum ipsum <https://en.wikipedia.org/wiki/Lorem_ipsum>`__ para una entrada de blog con ID 42."
+#: ../../tutorial/tutorial-7.rst:16 74676d5a00d2444c8301285a463c9ac0
+msgid "To generate some more interesting text for the dialog, we're going to use a library called `Faker <https://faker.readthedocs.io/en/stable/>`__ . Faker is a Python package that generates fake content, including names and text blocks. The names and words in the text block are generated from an arbitrary list of words provided by Faker. We're going to use Faker to construct a fake message, as if someone is responding to the user."
+msgstr ""
 
-#: ../../tutorial/tutorial-7.rst:26 1a0c6d30a2ec4c8491bde7ec9de0e1f8
+#: ../../tutorial/tutorial-7.rst:23 4904c45e10694f8390786369fea56d0f
 #, fuzzy
-msgid "The Python standard library contains all the tools you'd need to access an API. However, the built-in APIs are very low level. They are good implementations of the HTTP protocol - but they require the user to manage lots of low-level details, like URL redirection, sessions, authentication, and payload encoding. As a \"normal browser user\" you're probably used to taking these details for granted, as a browser manages these details for you."
-msgstr "La biblioteca estándar de Python contiene todas las herramientas necesarias para acceder a una API. Sin embargo, las API incorporadas son de muy bajo nivel. Son buenas implementaciones del protocolo HTTP, pero requieren que el usuario gestione muchos detalles de bajo nivel, como la redirección de URL, las sesiones, la autenticación y la codificación de la carga útil. Como \"usuario normal de navegador\" probablemente estés acostumbrado a dar por sentado estos detalles, ya que un navegador gestiona estos detalles por ti."
-
-#: ../../tutorial/tutorial-7.rst:33 b71de501e0cb42ebb1a287687b58fffe
-#, fuzzy
-msgid "As a result, people have developed third-party libraries that wrap the built-in APIs and provide a simpler API that is a closer match for the everyday browser experience. We're going to use one of those libraries to access the {JSON} Placeholder API - a library called `httpx <https://www.python-httpx.org>`__."
-msgstr "Como resultado, la gente ha desarrollado bibliotecas de terceros que envuelven las APIs integradas y proporcionan una API más simple que se acerca más a la experiencia cotidiana del navegador. Vamos a utilizar una de esas bibliotecas para acceder a la API {JSON} Placeholder - una biblioteca llamada `httpx <https://www.python-httpx.org>`__."
-
-#: ../../tutorial/tutorial-7.rst:38 9b19a31caae445e7862bff5d14539c32
-#, fuzzy
-msgid "Let's add a ``httpx`` API call to our app. Add an import to the top of the ``app.py`` to import ``httpx``::"
+msgid "We start by adding ``faker`` to our app. Add an import to the top of the ``app.py`` to import ``faker``::"
 msgstr "Vamos a añadir una llamada a la API ``httpx`` a nuestra aplicación. Añade un import al principio de ``app.py`` para importar ``httpx``::"
 
-#: ../../tutorial/tutorial-7.rst:43 491a4cb9f2c348df94ffe85b2628dded
+#: ../../tutorial/tutorial-7.rst:28 f7f9597e8cef43a18ddecc122c191159
 #, fuzzy
 msgid "Then modify the ``say_hello()`` callback so it looks like this::"
 msgstr "Luego modifica el callback ``say_hello()`` para que se vea así::"
 
-#: ../../tutorial/tutorial-7.rst:56 14ac9987b58e443f8beadaf9a0e81ef2
-#, fuzzy
-msgid "This will change the ``say_hello()`` callback so that when it is invoked, it will:"
-msgstr "Esto cambiará la llamada de retorno ``say_hello()`` para que cuando sea invocada, lo haga:"
-
-#: ../../tutorial/tutorial-7.rst:59 d6ff754f12794860a35eeb68e2dbaf68
-#, fuzzy
-msgid "make a GET request on the JSON placeholder API to obtain post 42;"
-msgstr "realice una solicitud GET en la API de marcador de posición JSON para obtener el puesto 42;"
-
-#: ../../tutorial/tutorial-7.rst:61 af5c1a6b42a8444086938423724fc698
-#, fuzzy
-msgid "decode the response as JSON;"
-msgstr "decodificar la respuesta como JSON;"
-
-#: ../../tutorial/tutorial-7.rst:63 40fd1491d9934f2086b0208b4be8cb1c
-#, fuzzy
-msgid "extract the body of the post; and"
-msgstr "extraer el cuerpo del mensaje; y"
-
-#: ../../tutorial/tutorial-7.rst:65 d3678e0de20447e68fedebd87c279cad
-#, fuzzy
-msgid "include the body of that post as the text of the dialog."
-msgstr "incluir el cuerpo de ese mensaje como texto del diálogo."
-
-#: ../../tutorial/tutorial-7.rst:67 fc7a8fe98ad34f13ae20d573a6ebe0e2
+#: ../../tutorial/tutorial-7.rst:39 ac99419af0884f4eae86a5a5ffdd3762
 #, fuzzy
 msgid "Lets run our updated app in Briefcase developer mode to check that our change has worked."
 msgstr "Vamos a ejecutar nuestra aplicación actualizada en el modo de desarrollador de Briefcase para comprobar que nuestro cambio ha funcionado."
 
-#: ../../tutorial/tutorial-7.rst:72 ../../tutorial/tutorial-7.rst:138
-#: ../../tutorial/tutorial-7.rst:190 ../../tutorial/tutorial-7.rst:415
-#: 005c87468e614b289490bb0ae8ed6c50 5a726f5b33554f3381dfcdbad9c059b7
-#: c86313bb53b44c2a901260d849299455 dd3b1812eb1f4efdaef4c0104f23a920
+#: ../../tutorial/tutorial-7.rst:44 ../../tutorial/tutorial-7.rst:110
+#: ../../tutorial/tutorial-7.rst:162 ../../tutorial/tutorial-7.rst:371
+#: 4b4609bd17904dd19d765d55be4d82b0 9320810a51cd4459831b990f135be6b2
+#: ba0f51e4715047319751be2b54a05093 f94be5b2712a4e6a899b1df811f68df4
 msgid "macOS"
 msgstr "macOS"
 
-#: ../../tutorial/tutorial-7.rst:92 ../../tutorial/tutorial-7.rst:152
-#: ../../tutorial/tutorial-7.rst:228 ../../tutorial/tutorial-7.rst:436
-#: 2d204be785cc4b5bb66b02ceb68dcd70 44eb6135adb34195bee8bff6b3b80d15
-#: 6c34301bae3f4d4d8776b408249130b6 abc9269eaca64324a07c22cf1938ec9d
+#: ../../tutorial/tutorial-7.rst:64 ../../tutorial/tutorial-7.rst:124
+#: ../../tutorial/tutorial-7.rst:200 ../../tutorial/tutorial-7.rst:392
+#: 02ff9521accd402ba9a3dc054b1c3906 3db7960fb3f4417cbc68db6c5cf41797
+#: 5eb552234eb443b7b0eeca10b87a1276 b9a6ff432d584aaca2101cf35b7c2149
 msgid "Linux"
 msgstr "Linux"
 
-#: ../../tutorial/tutorial-7.rst:112 ../../tutorial/tutorial-7.rst:166
-#: ../../tutorial/tutorial-7.rst:281 ../../tutorial/tutorial-7.rst:463
-#: 63b5f67e4270458abe3f8db2965aa560 8327e73b93834958a6342cdb74c1ba51
-#: ae724ee6ee4a4d5784d9feca04d6a5ac bd2c829408fd4a0cb63bae016761e8d5
+#: ../../tutorial/tutorial-7.rst:84 ../../tutorial/tutorial-7.rst:138
+#: ../../tutorial/tutorial-7.rst:253 ../../tutorial/tutorial-7.rst:419
+#: 0e4d879d5b814060a2cdfb4fe79323ee 24d52c5664ea448788b825d6b730d9be
+#: d9a8cf2bc8224c6aa0dfb92a8d94a8a9 f433489c41dd4c7e8c3883a543a1349c
 msgid "Windows"
 msgstr "Windows"
 
-#: ../../tutorial/tutorial-7.rst:132 b7726b9114294f7ea4f73df574fe4cb3
+#: ../../tutorial/tutorial-7.rst:104 81e7b4debf5b492b93f205d26675a493
 #, fuzzy
-msgid "What happened? We've added ``httpx`` to our *code*, but we haven't added it to our development virtual environment. We can fix this by installing ``httpx`` with ``pip``, and then re-running ``briefcase dev``:"
+msgid "What happened? We've added ``faker`` to our *code*, but we haven't added it to our development virtual environment. We can fix this by installing ``faker`` with ``pip``, and then re-running ``briefcase dev``:"
 msgstr "¿Qué ha pasado? Hemos añadido ``httpx`` a nuestro *código*, pero no lo hemos añadido a nuestro entorno virtual de desarrollo. Podemos solucionarlo instalando ``httpx`` con ``pip``, y volviendo a ejecutar ``briefcase dev``:"
 
-#: ../../tutorial/tutorial-7.rst:145 ../../tutorial/tutorial-7.rst:159
-#: ../../tutorial/tutorial-7.rst:173 0792d266d0344daeaab81c859ae1a1c5
-#: 0d472a11fac44f50bd7eb5f3dc94bb12 2e682b874b204ecab0ce740944342a93
+#: ../../tutorial/tutorial-7.rst:117 ../../tutorial/tutorial-7.rst:131
+#: ../../tutorial/tutorial-7.rst:145 554fc59aa2bf481a97c330ff88b4afd2
+#: 610df50e9f394cf6b8206ab9f7d2de7b 834eabf7b97b4d90b0f71a97352ab8de
 #, fuzzy
 msgid "When you enter a name and press the button, you should see a dialog that looks something like:"
 msgstr "Cuando introduzcas un nombre y pulses el botón, deberías ver un cuadro de diálogo parecido a:"
 
-#: ../../tutorial/tutorial-7.rst:148 bc46ec09af714ce6902ec59091027160
+#: ../../tutorial/tutorial-7.rst:120 dbbc9c9871c7426a9a3f4fcf7ad9e23d
 #, fuzzy
 msgid "Hello World Tutorial 7 dialog, on macOS"
 msgstr "Hello World Tutorial 7 diálogo, en macOS"
 
-#: ../../tutorial/tutorial-7.rst:162 dcebe9d73e6145f392886878a48e13c0
+#: ../../tutorial/tutorial-7.rst:134 c0de0b70dcc44a35aa962f446ebf2e26
 #, fuzzy
 msgid "Hello World Tutorial 7 dialog, on Linux"
 msgstr "Diálogo Hello World Tutorial 7, en Linux"
 
-#: ../../tutorial/tutorial-7.rst:176 cd2c446246514eb0b4bb5a97e3d98049
+#: ../../tutorial/tutorial-7.rst:148 b73f08ec5b9a4910a38de5939429dd64
 #, fuzzy
 msgid "Hello World Tutorial 7 dialog, on Windows"
 msgstr "Diálogo Hello World Tutorial 7, en Windows"
 
-#: ../../tutorial/tutorial-7.rst:180 49da8dcc057743b5a92bf8991c669d88
+#: ../../tutorial/tutorial-7.rst:152 a342dd710f96467c94fdea84f27cfe3a
 #, fuzzy
 msgid "We've now got a working app, using a third party library, running in development mode!"
 msgstr "Ya tenemos una aplicación que funciona, que utiliza una biblioteca de terceros y que se ejecuta en modo de desarrollo"
 
-#: ../../tutorial/tutorial-7.rst:183 3650561f23644430a8eace5387c044ac
+#: ../../tutorial/tutorial-7.rst:155 6042a1e59c3f497da2c82d7dcb86a03f
 #, fuzzy
 msgid "Running the updated app"
 msgstr "Ejecutar la aplicación actualizada"
 
-#: ../../tutorial/tutorial-7.rst:185 6acba9855f7841949c7df5d5e03d58f5
+#: ../../tutorial/tutorial-7.rst:157 2e1994370d764731bfbc67ffb4516d66
 #, fuzzy
 msgid "Let's get this updated application code packaged as a standalone app. Since we've made code changes, we need to follow the same steps as in :doc:`Tutorial 4 <tutorial-4>`:"
 msgstr "Vamos a empaquetar este código de aplicación actualizado como una aplicación independiente. Como hemos hecho cambios en el código, tenemos que seguir los mismos pasos que en :doc:`Tutorial 4 <tutorial-4>`:"
 
-#: ../../tutorial/tutorial-7.rst:192 ../../tutorial/tutorial-7.rst:230
-#: ../../tutorial/tutorial-7.rst:283 52b54a2820c9434182c3a320a646cb84
-#: 581c1bd09efa4811847d7e6e1722fd9c f1cdd70af5bd4f1db4dd01fec0aa527a
+#: ../../tutorial/tutorial-7.rst:164 ../../tutorial/tutorial-7.rst:202
+#: ../../tutorial/tutorial-7.rst:255 5689508b74624a43833ea0594d167b3c
+#: a753e097f5fe441b861cf36f1bc1a137 a8a99607b8274f68a4e259b390c6d22e
 #, fuzzy
 msgid "Update the code in the packaged app:"
 msgstr "Actualice el código en la aplicación empaquetada:"
 
-#: ../../tutorial/tutorial-7.rst:203 ../../tutorial/tutorial-7.rst:241
-#: ../../tutorial/tutorial-7.rst:294 927cb0a7819e48e3869927dcfc84ded3
-#: a908a9f8c9b046d1899a46a3886581a0 fc97caf71a254be098ac118f44f88871
+#: ../../tutorial/tutorial-7.rst:175 ../../tutorial/tutorial-7.rst:213
+#: ../../tutorial/tutorial-7.rst:266 246e6ea9639d4053bf451b3d238da51e
+#: b672a08a3f874c62a8d88ee082d479a6 b80d050525264050b73ad9d84ce1971d
 #, fuzzy
 msgid "Rebuild the app:"
 msgstr "Reconstruye la aplicación:"
 
-#: ../../tutorial/tutorial-7.rst:212 ../../tutorial/tutorial-7.rst:255
-#: ../../tutorial/tutorial-7.rst:303 3eae5d516d1f49ee9cde2c5ea3a37951
-#: 44290f640fb840f1af700b1e58c4a864 e9959105c9924cfca235b1ae2aa7a903
+#: ../../tutorial/tutorial-7.rst:184 ../../tutorial/tutorial-7.rst:227
+#: ../../tutorial/tutorial-7.rst:275 16771a1717e44ff8b16d89bbf85f8be5
+#: 6599f4e2717a4b76837bee4a5f0ccddc d448877d033046f09c76244aedd5a6dc
 #, fuzzy
 msgid "And finally, run the app:"
 msgstr "Y, por último, ejecuta la aplicación:"
 
-#: ../../tutorial/tutorial-7.rst:221 ../../tutorial/tutorial-7.rst:312
-#: 0b48c996416a4e3e9b5891a6100f137b 0edd1ba5d53e413fa6ef42630814bffa
+#: ../../tutorial/tutorial-7.rst:193 ../../tutorial/tutorial-7.rst:284
+#: 7ad134300606450f8a16db11c4baa152 f1f08ef5c18a4a088061182ce44d905d
 #, fuzzy
 msgid "However, when the app runs, you'll see an error in the console, plus a crash dialog:"
 msgstr "Sin embargo, cuando la aplicación se ejecute, verás un error en la consola y un cuadro de diálogo de bloqueo:"
 
-#: ../../tutorial/tutorial-7.rst:224 8fc48d7a6a2d41a4a782b0de38e9b595
+#: ../../tutorial/tutorial-7.rst:196 e9d370780762489da5630da749b1dce4
 #, fuzzy
 msgid "Hello World Tutorial 7 app crash, on macOS"
 msgstr "Fallo de la aplicación Hello World Tutorial 7, en macOS"
 
-#: ../../tutorial/tutorial-7.rst:264 9d69e9a4804d4fcbbf7cc8ae3ea9626a
+#: ../../tutorial/tutorial-7.rst:236 f82c73b04cd94aa087816861046f6a7e
 #, fuzzy
 msgid "However, when the app runs, you'll see an error in the console:"
 msgstr "Sin embargo, cuando la aplicación se ejecute, verás un error en la consola:"
 
-#: ../../tutorial/tutorial-7.rst:315 b668aa40c3444555bc975af37c9ffc0c
+#: ../../tutorial/tutorial-7.rst:287 56edc888dec940678fbc9709e5e45885
 #, fuzzy
 msgid "Hello World Tutorial 7 app crash, on Windows"
 msgstr "Fallo de la aplicación Hello World Tutorial 7, en Windows"
 
-#: ../../tutorial/tutorial-7.rst:319 c08292ac303f4471a64dc3f5a243e023
+#: ../../tutorial/tutorial-7.rst:291 3af844578e8b4a03b530a86afff6ad6d
 #, fuzzy
-msgid "Once again, the app has failed to start because ``httpx`` has not been installed - but why? Haven't we already installed ``httpx``?"
+msgid "Once again, the app has failed to start because ``faker`` has not been installed - but why? Haven't we already installed ``faker``?"
 msgstr "Una vez más, la aplicación no ha podido iniciarse porque ``httpx`` ha sido instalado - pero ¿por qué? ¿No hemos instalado ya ``httpx``?"
 
-#: ../../tutorial/tutorial-7.rst:322 5a221f18dbcf4efcb588589f81f7bd8c
+#: ../../tutorial/tutorial-7.rst:294 822839d4a6c54b76942e5a70fd4ef059
 #, fuzzy
 msgid "We have - but only in the development environment. Your development environment is entirely local to your machine - and is only enabled when you explicitly activate it. Although Briefcase has a development mode, the main reason you'd use Briefcase is to package up your code so you can give it to someone else."
 msgstr "Sí, pero sólo en el entorno de desarrollo. Tu entorno de desarrollo es totalmente local a tu máquina - y sólo se activa cuando lo activas explícitamente. Aunque Briefcase tiene un modo de desarrollo, la principal razón por la que utilizarías Briefcase es para empaquetar tu código y poder dárselo a otra persona."
 
-#: ../../tutorial/tutorial-7.rst:327 06dfc884bfb1494992a5a89417dea1d9
+#: ../../tutorial/tutorial-7.rst:299 5a3bc019193d4f378ba36b70ec786b8e
 #, fuzzy
-msgid "The only way to guarantee that someone else will have a Python environment that contains everything it needs is to build a completely isolated Python environment. This means there's a completely isolated Python install, and a completely isolated set of dependencies. This is what Briefcase is building when you run ``briefcase build`` - an isolated Python environment. This also explains why ``httpx`` isn't installed - it has been installed in your *development* environment, but not in the packaged app."
+msgid "The only way to guarantee that someone else will have a Python environment that contains everything it needs is to build a completely isolated Python environment. This means there's a completely isolated Python install, and a completely isolated set of dependencies. This is what Briefcase is building when you run ``briefcase build`` - an isolated Python environment. This also explains why ``faker`` isn't installed - it has been installed in your *development* environment, but not in the packaged app."
 msgstr "La única forma de garantizar que alguien más tenga un entorno Python que contenga todo lo que necesita es construir un entorno Python completamente aislado. Esto significa que hay una instalación de Python completamente aislada, y un conjunto de dependencias completamente aislado. Esto es lo que Briefcase construye cuando ejecutas ``briefcase build`` - un entorno Python aislado. Esto también explica por qué ``httpx`` no está instalado - ha sido instalado en tu entorno de *desarrollo*, pero no en la aplicación empaquetada."
 
-#: ../../tutorial/tutorial-7.rst:335 6d79f1eae58945178440c0c5f1d1db15
+#: ../../tutorial/tutorial-7.rst:307 83c27282a57d4b2dadc31ab86f40e55c
 #, fuzzy
 msgid "So - we need to tell Briefcase that our app has an external dependency."
 msgstr "Por lo tanto, tenemos que decirle a Briefcase que nuestra aplicación tiene una dependencia externa."
 
-#: ../../tutorial/tutorial-7.rst:338 628218220a2048b9b6bf2df96e52ed10
+#: ../../tutorial/tutorial-7.rst:310 3505be1ebd9645ccb138c42534e572a3
 #, fuzzy
 msgid "Updating dependencies"
 msgstr "Actualización de las dependencias"
 
-#: ../../tutorial/tutorial-7.rst:340 7c1679c7b05c44f687c814043bca099c
+#: ../../tutorial/tutorial-7.rst:312 e9c7d49c37844d22b3384c777a7769b5
 #, fuzzy
 msgid "In the root directory of your app, there is a file named ``pyproject.toml``. This file contains all the app configuration details that you provided when you originally ran ``briefcase new``."
 msgstr "En el directorio raíz de tu aplicación, hay un archivo llamado ``pyproject.toml``. Este archivo contiene todos los detalles de configuración de la aplicación que proporcionaste cuando ejecutaste ``briefcase new``."
 
-#: ../../tutorial/tutorial-7.rst:344 82bd2f27411d47d082dacd7291cbe243
+#: ../../tutorial/tutorial-7.rst:316 a86d3da1700747feaea8384bfa228cb2
 #, fuzzy
 msgid "``pyproject.toml`` is broken up into sections; one of the sections describes the settings for your app::"
 msgstr "``pyproject.toml`` está dividido en secciones; una de las secciones describe la configuración de tu aplicación::"
 
-#: ../../tutorial/tutorial-7.rst:355 520b01c82e214d299ed45f2111bb021a
+#: ../../tutorial/tutorial-7.rst:327 83e520dac5fe410fb6da7f844eb541ee
 #, fuzzy
 msgid "The ``requires`` option describes the dependencies of our application. It is a list of strings, specifying libraries (and, optionally, versions) of libraries that you want to be included with your app."
 msgstr "La opción ``requires`` describe las dependencias de nuestra aplicación. Es una lista de cadenas, especificando librerías (y, opcionalmente, versiones) de librerías que quieres que se incluyan con tu app."
 
-#: ../../tutorial/tutorial-7.rst:359 9760cbe1817748748feaa290ad9fc728
+#: ../../tutorial/tutorial-7.rst:331 999347d183844f2580d20a77b54dfec0
 #, fuzzy
 msgid "Modify the ``requires`` setting so that it reads::"
 msgstr "Modifique la configuración ``requires`` para que diga::"
 
-#: ../../tutorial/tutorial-7.rst:365 61820fdbbb0e46ec9115f572b61f6f8a
+#: ../../tutorial/tutorial-7.rst:337 4a7c7f430b9f42a7bd60343ce6668a02
 #, fuzzy
-msgid "By adding this setting, we're telling Briefcase \"when you build my app, run ``pip install httpx`` into the application bundle\". Anything that would be legal input to ``pip install`` can be used here - so, you could specify:"
+msgid "By adding this setting, we're telling Briefcase \"when you build my app, run ``pip install faker`` into the application bundle\". Anything that would be legal input to ``pip install`` can be used here - so, you could specify:"
 msgstr "Al añadir esta opción, le estamos diciendo a Briefcase \"cuando compiles mi aplicación, ejecuta ``pip install httpx`` en el paquete de la aplicación\". Cualquier cosa que sea una entrada legal para ``pip install`` se puede utilizar aquí - por lo que podría especificar:"
 
-#: ../../tutorial/tutorial-7.rst:369 376b4955126a4c6791d0db69fbe7d4a6
+#: ../../tutorial/tutorial-7.rst:341 ae6b1e10b7c042ae8f4674861ec7fa8e
 #, fuzzy
-msgid "A specific library version (e.g., ``\"httpx==0.19.0\"``);"
+msgid "A specific library version (e.g., ``\"faker==37.3.0\"``);"
 msgstr "Una versión específica de la biblioteca (por ejemplo, ``\"httpx==0.19.0\"``);"
 
-#: ../../tutorial/tutorial-7.rst:370 223ec130d6af4756a03b2e5765232033
+#: ../../tutorial/tutorial-7.rst:342 cce98c66a9eb499abe2fac6030718dd5
 #, fuzzy
-msgid "A range of library versions (e.g., ``\"httpx>=0.19\"``);"
+msgid "A range of library versions (e.g., ``\"faker>=37\"``);"
 msgstr "Un rango de versiones de la biblioteca (por ejemplo, ``\"httpx>=0.19\"``);"
 
-#: ../../tutorial/tutorial-7.rst:371 93586212104c43b6b4bb7d1813561513
+#: ../../tutorial/tutorial-7.rst:343 422b691b30464b0b9c0590969988d73c
 #, fuzzy
-msgid "A path to a git repository (e.g., ``\"git+https://github.com/encode/httpx\"``); or"
+msgid "A path to a git repository (e.g., ``\"git+https://github.com/joke2k/faker/\"``); or"
 msgstr "Una ruta a un repositorio git (por ejemplo, ``\"git+https://github.com/encode/httpx\"``); o bien"
 
-#: ../../tutorial/tutorial-7.rst:373 870a13884c6c42419cc3479955426bc5
+#: ../../tutorial/tutorial-7.rst:345 33e7e26de39e4bf593f21ae57ec74f91
 #, fuzzy
 msgid "A local file path (However - be warned: if you give your code to someone else, this path probably won't exist on their machine!)"
 msgstr "Una ruta de archivo local (No obstante, ten cuidado: si entregas tu código a otra persona, es probable que esta ruta no exista en su máquina)"
 
-#: ../../tutorial/tutorial-7.rst:376 f66cd98d7a064027bc175a35ee5eed36
+#: ../../tutorial/tutorial-7.rst:348 4f01d1604de148f499a2a986762913c0
 #, fuzzy
 msgid "Further down in ``pyproject.toml``, you'll notice other sections that are operating system dependent, like ``[tool.briefcase.app.helloworld.macOS]`` and ``[tool.briefcase.app.helloworld.windows]``. These sections *also* have a ``requires`` setting. These settings allow you to define additional platform-specific dependencies - so, for example, if you need a platform-specific library to handle some aspect of your app, you can specify that library in the platform-specific ``requires`` section, and that setting will only be used for that platform. You will notice that the ``toga`` libraries are all specified in the platform-specific ``requires`` section - this is because the libraries needed to display a user interface are platform specific."
 msgstr "Más abajo en ``pyproject.toml``, verás otras secciones que dependen del sistema operativo, como ``[tool.briefcase.app.helloworld.macOS]`` y ``[tool.briefcase.app.helloworld.windows]``. Estas secciones también tienen una configuración ``requires``. Estas opciones te permiten definir dependencias adicionales específicas de la plataforma; así, por ejemplo, si necesitas una biblioteca específica de la plataforma para manejar algún aspecto de tu aplicación, puedes especificar esa biblioteca en la sección ``requires`` específica de la plataforma, y esa opción sólo se utilizará para esa plataforma. Notarás que las librerías ``toga`` están todas especificadas en la sección ``requires`` específica de la plataforma - esto es porque las librerías necesarias para mostrar una interfaz de usuario son específicas de la plataforma."
 
-#: ../../tutorial/tutorial-7.rst:387 ff3211a08e4444058f40842405f5b338
+#: ../../tutorial/tutorial-7.rst:359 fd818c293da740eb967072be9c9040f7
 #, fuzzy
-msgid "In our case, we want ``httpx`` to be installed on all platforms, so we use the app-level ``requires`` setting. The app-level dependencies will always be installed; the platform-specific dependencies are installed *in addition* to the app-level ones."
+msgid "In our case, we want ``faker`` to be installed on all platforms, so we use the app-level ``requires`` setting. The app-level dependencies will always be installed; the platform-specific dependencies are installed *in addition* to the app-level ones."
 msgstr "En nuestro caso, queremos que ``httpx`` se instale en todas las plataformas, por lo que utilizamos el parámetro ``requires`` a nivel de aplicación. Las dependencias a nivel de aplicación siempre se instalarán; las dependencias específicas de la plataforma se instalan *además* de las dependencias a nivel de aplicación."
 
-#: ../../tutorial/tutorial-7.rst:392 f62620cc05644c429e0d0c3e83a0d701
-#, fuzzy
-msgid "Some binary packages may not be available"
-msgstr "Algunos paquetes binarios pueden no estar disponibles"
-
-#: ../../tutorial/tutorial-7.rst:394 dcb74cf2800f4006b402c0dc6f4f9d6a
-#, fuzzy
-msgid "On desktop platforms (macOS, Windows, Linux), any ``pip``-installable can be added to your requirements. On mobile and web platforms, `your options are slightly limited <https://briefcase.readthedocs.io/en/latest/background/faq.html#can-i-use-third-party-python-packages-in-my-app>`__."
-msgstr "En plataformas de escritorio (macOS, Windows, Linux), se puede añadir cualquier ``pip``-instalable a sus requisitos. En plataformas móviles y web, las opciones son ligeramente limitadas <https://briefcase.readthedocs.io/en/latest/background/faq.html#can-i-use-third-party-python-packages-in-my-app>`__."
-
-#: ../../tutorial/tutorial-7.rst:398 f1958699f45c42c495cd5bcd4690076d
-#, fuzzy
-msgid "In short; any *pure Python* package (i.e., packages that do *not* contain a binary module) can be used without difficulty. However, if your dependency contains a binary component, it must be compiled; at this time, most Python packages don't provide compilation support for non-desktop platforms."
-msgstr "En resumen; cualquier paquete *puro* de Python (es decir, paquetes que *no* contienen un módulo binario) puede ser utilizado sin dificultad. Sin embargo, si su dependencia contiene un componente binario, debe ser compilado; en este momento, la mayoría de los paquetes de Python no proporcionan soporte de compilación para plataformas que no sean de escritorio."
-
-#: ../../tutorial/tutorial-7.rst:403 be0cdfd36daa4c958b7533c25ac54fea
-#, fuzzy
-msgid "BeeWare can provide binaries for some popular binary modules (including ``numpy``, ``pandas``, and ``cryptography``). It's *usually* possible to compile packages for mobile platforms, but it's not easy to set up -- well outside the scope of an introductory tutorial like this one."
-msgstr "BeeWare puede proporcionar binarios para algunos módulos binarios populares (incluyendo ``numpy``, ``pandas``, y ``cryptography``). Es *normalmente* posible compilar paquetes para plataformas móviles, pero no es fácil de configurar - fuera del alcance de un tutorial introductorio como éste."
-
-#: ../../tutorial/tutorial-7.rst:408 e552ddaa2b0e40d682339de86944977f
+#: ../../tutorial/tutorial-7.rst:364 b78260e80d2743999434290a65eee459
 #, fuzzy
 msgid "Now that we've told Briefcase about our additional requirements, we can try packaging our app again. Ensure that you've saved your changes to ``pyproject.toml``, and then update your app again - this time, passing in the ``-r`` flag. This tells Briefcase to update requirements in the packaged app:"
 msgstr "Ahora que hemos informado a Briefcase sobre nuestros requisitos adicionales, podemos intentar empaquetar nuestra aplicación de nuevo. Asegúrate de que has guardado los cambios en ``pyproject.toml``, y luego actualiza tu aplicación de nuevo - esta vez, introduciendo la bandera ``-r``. Esto le dice a Briefcase que actualice los requisitos en la aplicación empaquetada:"
 
-#: ../../tutorial/tutorial-7.rst:484 d9075479e19f4140995dca5686ce0592
+#: ../../tutorial/tutorial-7.rst:440 7b42c09094ed48d4a000f8f6947fa640
 #, fuzzy
 msgid "Once you've updated, you can run ``briefcase build`` and ``briefcase run`` - and you should see your packaged app, with the new dialog behavior."
 msgstr "Una vez que haya actualizado, puede ejecutar ``briefcase build`` y ``briefcase run`` - y usted debe ver su aplicación empaquetada, con el nuevo comportamiento de diálogo."
 
-#: ../../tutorial/tutorial-7.rst:489 cc31748b60e04679a6b5b504175f6f72
+#: ../../tutorial/tutorial-7.rst:445 a059c7ce3fff4b75b478c91280682bda
 #, fuzzy
 msgid "The ``-r`` option for updating requirements is also honored by the ``build`` and ``run`` command, so if you want to update, build, and run in one step, you could use ``briefcase run -u -r``."
 msgstr "La opción ``-r`` para actualizar los requisitos también es respetada por los comandos ``build`` y ``run``, así que si quieres actualizar, construir y ejecutar en un solo paso, puedes usar ``briefcase run -u -r``."
 
-#: ../../tutorial/tutorial-7.rst:495 18bc1c45506e437392ea95e7eac5cab3
+#: ../../tutorial/tutorial-7.rst:450 6ff2dba0d6b84fdd89d00cdbc81f39d6
+msgid "Third-Party Python Packages for Mobile and Web"
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:452 6cd0fcd3bdcd49b6b16c1ae74a0b972b
+msgid "Faker is just one example of a third-party Python package - a collection of code that isn't part what Python provides out of the box. These third-party packages are most commonly distributed using the `Python Package Index (PyPI) <https://pypi.org>`__, and installed into your local virtual environment. We've been using ``pip`` in this tutorial, but there are other options."
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:458 10624da91b4a4a91a4d14b0cb7f2e440
+#, fuzzy
+msgid "On desktop platforms (macOS, Windows, Linux), essentially any package on PyPI package can be installed into your virtual environment, or added to your app's requirements. However, when building an app for mobile or web platforms, `your options are slightly limited <https://briefcase.readthedocs.io/en/latest/background/faq.html#can-i-use-third-party-python-packages-in-my-app>`__."
+msgstr "En plataformas de escritorio (macOS, Windows, Linux), se puede añadir cualquier ``pip``-instalable a sus requisitos. En plataformas móviles y web, las opciones son ligeramente limitadas <https://briefcase.readthedocs.io/en/latest/background/faq.html#can-i-use-third-party-python-packages-in-my-app>`__."
+
+#: ../../tutorial/tutorial-7.rst:464 d526ade692d5412d88c2cc4197818b2e
+msgid "In short; any *pure Python* package (i.e. any package created from a project written *only* in Python) can be used without difficulty. Some packages, though, are created from projects that contain both Python and other languages (e.g. C, C++, Rust, etc). Code written in those languages needs to be compiled to platform-specific binary modules before it can be used, and those pre-compiled binary modules are only available on specific platforms. Mobile and web platforms have very different requirements than \"standard\" desktop platforms. At this time, most Python packages don't provide pre-compiled binaries for mobile and web platforms."
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:474 dac4291f24c64884abf3f63a0eed6213
+msgid "On PyPI, packages are often provided in a pre-built distribution format called *wheels*. To check whether a package is pure Python, look at the PyPI downloads page for the project. If the wheels provided have a ``-py3-none-any.whl`` suffix (e.g., `Faker <https://pypi.org/project/Faker/37.3.0/#files>`__), then they are pure Python wheels. However, if the wheels have version and platform-specific extensions (e.g., `Pillow <https://pypi.org/project/pillow/11.2.1/#files>`__, which has wheels with suffixes like ``-cp313-cp313-macosx_11_0_arm64.whl`` and ``-cp39-cp39-win_amd64.whl``), then the wheel *contains a binary component*. That package cannot be installed on mobile or web platforms unless a wheel compatible with those platforms has been provided."
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:485 2341160c3e42466e8fd71bad8886eef6
+msgid "At this time, *most* binary packages on PyPI don't provide mobile- or web-compatible wheels. To fill this gap, BeeWare provides binaries for some popular binary modules (including ``numpy``, ``pandas``, and ``cryptography``). These wheels are *not* distributed on PyPI, but Briefcase will install those wheels if they're available."
+msgstr ""
+
+#: ../../tutorial/tutorial-7.rst:491 0ad25f7ceabf470d8ba7b4bef12723e9
+#, fuzzy
+msgid "It's *usually* possible to compile binary packages for mobile platforms, but it's not easy to set up -- well outside the scope of an introductory tutorial like this one."
+msgstr "BeeWare puede proporcionar binarios para algunos módulos binarios populares (incluyendo ``numpy``, ``pandas``, y ``cryptography``). Es *normalmente* posible compilar paquetes para plataformas móviles, pero no es fácil de configurar - fuera del alcance de un tutorial introductorio como éste."
+
+#: ../../tutorial/tutorial-7.rst:496 8c95234e10f544fb89999ea6f584bb93
 msgid "Next steps"
 msgstr "Siguientes pasos"
 
-#: ../../tutorial/tutorial-7.rst:497 d28d07daaa9c4572843b8297ff44a7a4
-#, fuzzy
-msgid "We've now got an app that uses a third-party library! However, you may have noticed that when you press the button, the app becomes a little unresponsive. Can we do anything to fix this? Turn to :doc:`Tutorial 8 <tutorial-8>` to find out..."
-msgstr "Ya tenemos una aplicación que utiliza una biblioteca de terceros Sin embargo, te habrás dado cuenta de que cuando pulsas el botón, la aplicación deja de responder. ¿Podemos hacer algo para solucionarlo? Visita :doc:`Tutorial 8 <tutorial-8>` para averiguarlo..."
+#: ../../tutorial/tutorial-7.rst:498 ceb92a851dff44d288301d572b06d5b0
+msgid "We've now got an app that uses a third-party library! In :doc:`Tutorial 8 <tutorial-8>` we'll learn how to ensure our app remains responsive as we add more complex application logic."
+msgstr ""
+
+#~ msgid "Accessing an API"
+#~ msgstr "Acceso a una API"
+
+#~ msgid "A common task an app will need to perform is to make a request on a web API to retrieve data, and display that data to the user. This is a toy app, so we don't have a *real* API to work with, so we'll use the `{JSON} Placeholder API <https://jsonplaceholder.typicode.com>`__ as a source of data."
+#~ msgstr "Una tarea común que una aplicación necesitará realizar es hacer una petición a una API web para recuperar datos, y mostrar esos datos al usuario. Esta es una aplicación de juguete, así que no tenemos una API *real* con la que trabajar, así que usaremos la `{JSON} Placeholder API <https://jsonplaceholder.typicode.com>`__ como fuente de datos."
+
+#~ msgid "The {JSON} Placeholder API has a number of \"fake\" API endpoints you can use as test data. One of those APIs is the ``/posts/`` endpoint, which returns fake blog posts. If you open ``https://jsonplaceholder.typicode.com/posts/42`` in your browser, you'll get a JSON payload describing a single post - some `Lorum ipsum <https://en.wikipedia.org/wiki/Lorem_ipsum>`__ content for a blog post with ID 42."
+#~ msgstr "El {JSON} Placeholder API tiene una serie de \"falsos\" puntos finales de la API que puede utilizar como datos de prueba. Una de esas API es el punto final ``/posts/``, que devuelve entradas de blog falsas. Si abre ``https://jsonplaceholder.typicode.com/posts/42`` en su navegador, obtendrá una carga útil JSON que describe una única entrada: algo de contenido `Lorum ipsum <https://en.wikipedia.org/wiki/Lorem_ipsum>`__ para una entrada de blog con ID 42."
+
+#~ msgid "The Python standard library contains all the tools you'd need to access an API. However, the built-in APIs are very low level. They are good implementations of the HTTP protocol - but they require the user to manage lots of low-level details, like URL redirection, sessions, authentication, and payload encoding. As a \"normal browser user\" you're probably used to taking these details for granted, as a browser manages these details for you."
+#~ msgstr "La biblioteca estándar de Python contiene todas las herramientas necesarias para acceder a una API. Sin embargo, las API incorporadas son de muy bajo nivel. Son buenas implementaciones del protocolo HTTP, pero requieren que el usuario gestione muchos detalles de bajo nivel, como la redirección de URL, las sesiones, la autenticación y la codificación de la carga útil. Como \"usuario normal de navegador\" probablemente estés acostumbrado a dar por sentado estos detalles, ya que un navegador gestiona estos detalles por ti."
+
+#~ msgid "As a result, people have developed third-party libraries that wrap the built-in APIs and provide a simpler API that is a closer match for the everyday browser experience. We're going to use one of those libraries to access the {JSON} Placeholder API - a library called `httpx <https://www.python-httpx.org>`__."
+#~ msgstr "Como resultado, la gente ha desarrollado bibliotecas de terceros que envuelven las APIs integradas y proporcionan una API más simple que se acerca más a la experiencia cotidiana del navegador. Vamos a utilizar una de esas bibliotecas para acceder a la API {JSON} Placeholder - una biblioteca llamada `httpx <https://www.python-httpx.org>`__."
+
+#~ msgid "This will change the ``say_hello()`` callback so that when it is invoked, it will:"
+#~ msgstr "Esto cambiará la llamada de retorno ``say_hello()`` para que cuando sea invocada, lo haga:"
+
+#~ msgid "make a GET request on the JSON placeholder API to obtain post 42;"
+#~ msgstr "realice una solicitud GET en la API de marcador de posición JSON para obtener el puesto 42;"
+
+#~ msgid "decode the response as JSON;"
+#~ msgstr "decodificar la respuesta como JSON;"
+
+#~ msgid "extract the body of the post; and"
+#~ msgstr "extraer el cuerpo del mensaje; y"
+
+#~ msgid "include the body of that post as the text of the dialog."
+#~ msgstr "incluir el cuerpo de ese mensaje como texto del diálogo."
+
+#~ msgid "Some binary packages may not be available"
+#~ msgstr "Algunos paquetes binarios pueden no estar disponibles"
+
+#~ msgid "In short; any *pure Python* package (i.e., packages that do *not* contain a binary module) can be used without difficulty. However, if your dependency contains a binary component, it must be compiled; at this time, most Python packages don't provide compilation support for non-desktop platforms."
+#~ msgstr "En resumen; cualquier paquete *puro* de Python (es decir, paquetes que *no* contienen un módulo binario) puede ser utilizado sin dificultad. Sin embargo, si su dependencia contiene un componente binario, debe ser compilado; en este momento, la mayoría de los paquetes de Python no proporcionan soporte de compilación para plataformas que no sean de escritorio."
+
+#~ msgid "We've now got an app that uses a third-party library! However, you may have noticed that when you press the button, the app becomes a little unresponsive. Can we do anything to fix this? Turn to :doc:`Tutorial 8 <tutorial-8>` to find out..."
+#~ msgstr "Ya tenemos una aplicación que utiliza una biblioteca de terceros Sin embargo, te habrás dado cuenta de que cuando pulsas el botón, la aplicación deja de responder. ¿Podemos hacer algo para solucionarlo? Visita :doc:`Tutorial 8 <tutorial-8>` para averiguarlo..."
 
