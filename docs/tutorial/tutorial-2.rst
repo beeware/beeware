@@ -26,10 +26,11 @@ executing. The contents of ``__main__.py`` is relatively simple::
     if __name__ == "__main__":
         main().main_loop()
 
-That is - it imports the ``main`` method from the ``helloworld`` app; and if
-it's being executed as an entry point, calls the main() method, and starts the
-application's main loop. The main loop is the way a GUI application listens for
-user input (like mouse clicks and keyboard presses).
+This file does two things:
+
+* It imports the ``main`` method from from the ``helloworld`` app.
+* Then, it starts the application’s main loop. The main loop is the way a GUI
+  application listens for user input (like mouse clicks and keyboard presses).
 
 The more interesting file is ``app.py`` - this contains the logic that creates
 our application window::
@@ -277,7 +278,7 @@ the application again. As before, we'll use developer mode:
 
 You'll notice that this time, it *doesn't* install dependencies. Briefcase can
 detect that the application has been run before, and to save time, will only
-run the application. If you add new dependencies to your app, you can make
+run the application. If you add new dependencies to your app, you need to make
 sure that they're installed by passing in a ``-r`` option when you run
 ``briefcase dev``.
 
@@ -305,6 +306,11 @@ This should open a GUI window:
 
 If you enter a name in the text box, and press the GUI button, you should see
 output appear in the console where you started the application.
+
+Before continuing, close the app. As with Tutorial 1, you can do this by
+pressing the close button on the application window, by selecting Quit/Exit from
+the application's menu, or by typing **Ctrl+C** in the terminal where you ran
+``briefcase dev``.
 
 Next steps
 ==========

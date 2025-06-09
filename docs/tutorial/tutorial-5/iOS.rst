@@ -2,12 +2,13 @@
 Tutorial 5 - Taking it mobile: iOS
 ==================================
 
-To compile iOS applications we'll need Xcode, which is available for free from `the macOS
-App Store <https://apps.apple.com/au/app/xcode/id497799835?mt=12>`__. Once Xcode is
-installed, launch it from Applications and accept the Xcode License Agreement. Next,
-Xcode will show which Simulator runtimes are built-in, and which Simulator runtimes
-you may download. Select the checkbox next to the iOS Simulator runtime, and then
-click Continue to download and install it.
+To compile iOS applications we'll need Xcode, which is available for free from
+`the macOS App Store <https://apps.apple.com/au/app/xcode/id497799835?mt=12>`__.
+Once Xcode is installed, launch it from Applications and accept the Xcode
+License Agreement. Next, Xcode will show which components are built-in, and
+which components you may download. Select the checkbox next to iOS (followed by
+the current version number), and then click "Download and Install" to install
+it. Xcode will install the system components, followed by the iOS Simulator.
 
 Once we've got Xcode and the iOS simulator installed, we can take our application and
 deploy it as an iOS app.
@@ -114,6 +115,11 @@ see the simulator start, and eventually open your iOS application:
 
 .. image:: ../images/iOS/tutorial-5.png
    :alt: Hello World Tutorial 5 window, on iOS
+
+While the app is running, you'll see a series of Simulator log output messages
+in the console. Typing Ctrl+C into the terminal will halt the messages in the
+console, but it will not close the simulator. This is so you can test new
+changes without restarting the simulator.
 
 If you know ahead of time which iOS simulator you want to target, you can tell
 Briefcase to use that simulator by providing a ``-d`` (or ``--device``) option.

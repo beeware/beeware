@@ -347,6 +347,11 @@ running Python code. From the operating system's perspective, you're now
 running "an app", not "a Python program", and this is reflected in how the
 application appears.
 
+Before continuing, close the app. As with previous tutorial steps, you can do
+this by pressing the close button on the application window, by selecting
+Quit/Exit from the application's menu, or by typing **Ctrl+C** in the terminal
+where you ran ``briefcase dev``.
+
 Building your installer
 =======================
 

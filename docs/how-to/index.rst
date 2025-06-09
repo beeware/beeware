@@ -186,21 +186,21 @@ so we have to manually install each package:
     .. code-block:: console
 
       (venv) $ cd beeware
-      (venv) $ pip install -e ".[dev]"
+      (venv) $ python -m pip install -e ".[dev]"
 
   .. group-tab:: Linux
 
     .. code-block:: console
 
       (venv) $ cd beeware
-      (venv) $ pip install -e .[dev]
+      (venv) $ python -m pip install -e .[dev]
 
   .. group-tab:: Windows
 
     .. code-block:: doscon
 
       (venv) C:\...>cd beeware
-      (venv) C:\...>pip install -e .[dev]
+      (venv) C:\...>python -m pip install -e .[dev]
 
 Install pre-commit
 ------------------
