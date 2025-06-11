@@ -1,17 +1,18 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-09 04:13+0000\n"
-"PO-Revision-Date: 2025-06-07 05:01+0000\n"
+"PO-Revision-Date: 2025-06-12 02:04+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/beeware/tutorial/tutorial-8/zh_Hans/>\n"
 "Language: zh_CN\n"
-"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-8/zh_Hans/>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.12-dev\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../tutorial/tutorial-8.rst:3 79b12b796456454086f682383c354929
@@ -53,9 +54,8 @@ msgid "Let's add a ``httpx`` API call to our app. Add an import to the top of th
 msgstr ""
 
 #: ../../tutorial/tutorial-8.rst:52 5e09a257326a4ffb961561fdfcbb013b
-#, fuzzy
 msgid "Then modify the ``say_hello()`` callback so it looks like this::"
-msgstr "为了使我们的教程成为异步教程，请修改事件处理程序 \"say_hello()\"，使其看起来像这样：："
+msgstr "然后修改 ``say_hello()`` 回调，使其看起来像这样::"
 
 #: ../../tutorial/tutorial-8.rst:68 c70055fbbaab4977a8c53e4adfa886e8
 msgid "This will change the ``say_hello()`` callback so that when it is invoked, it will:"
@@ -318,4 +318,3 @@ msgstr ""
 
 #~ msgid "The ``get`` call is made with an ``await`` keyword. This instructs the app that while we are waiting for the response from the network, the app can release control to the event loop."
 #~ msgstr "get \"调用带有 \"await \"关键字。这指示应用程序在等待网络响应时，可以将控制权释放给事件循环。"
-
