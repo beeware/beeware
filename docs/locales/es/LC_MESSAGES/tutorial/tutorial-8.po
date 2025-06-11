@@ -1,17 +1,18 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-09 04:13+0000\n"
-"PO-Revision-Date: 2024-09-28 16:15+0000\n"
-"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
+"PO-Revision-Date: 2025-06-12 02:04+0000\n"
+"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/"
+"tutorial-8/es/>\n"
 "Language: es\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-8/es/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.12-dev\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../tutorial/tutorial-8.rst:3 79b12b796456454086f682383c354929
@@ -84,7 +85,7 @@ msgstr ""
 
 #: ../../tutorial/tutorial-8.rst:85 98bc2713156040e9ac348b647f629f40
 msgid "macOS"
-msgstr ""
+msgstr "macOS"
 
 #: ../../tutorial/tutorial-8.rst:91 ../../tutorial/tutorial-8.rst:104
 #: ../../tutorial/tutorial-8.rst:117 8bbe6090688b459c8e6d9be625a98932
@@ -98,7 +99,7 @@ msgstr ""
 
 #: ../../tutorial/tutorial-8.rst:98 ee6a468376694420993c51a4acbe3488
 msgid "Linux"
-msgstr ""
+msgstr "Linux"
 
 #: ../../tutorial/tutorial-8.rst:107 be5afd5855d64123857d4ba2b8c39e74
 msgid "Hello World Tutorial 8 dialog, on Linux"
@@ -106,7 +107,7 @@ msgstr ""
 
 #: ../../tutorial/tutorial-8.rst:111 d9fe0ceeceb8424697cf34d5dc81f4e7
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: ../../tutorial/tutorial-8.rst:120 a41885f8279f4df0b10254db1778a700
 msgid "Hello World Tutorial 8 dialog, on Windows"
@@ -323,4 +324,3 @@ msgstr "Si desea saber más sobre las capacidades de Briefcase, puede sumergirse
 
 #~ msgid "The ``get`` call is made with an ``await`` keyword. This instructs the app that while we are waiting for the response from the network, the app can release control to the event loop."
 #~ msgstr "La llamada ``get`` se hace con una palabra clave ``await``. Esto indica a la aplicación que, mientras esperamos la respuesta de la red, puede ceder el control al bucle de eventos."
-
