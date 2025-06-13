@@ -36,7 +36,7 @@ Then modify the ``say_hello()`` callback so it looks like this::
             )
         )
 
-Lets run our updated app in Briefcase developer mode to check that our change
+Let's run our updated app in Briefcase developer mode to check that our change
 has worked.
 
 .. tabs::
