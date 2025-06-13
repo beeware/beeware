@@ -101,6 +101,16 @@ has worked.
           import faker
       ModuleNotFoundError: No module named 'faker'
 
+  .. group-tab:: Android
+
+    You can't run an Android app in developer mode - use the instructions for
+    your chosen desktop platform.
+
+  .. group-tab:: iOS
+
+    You can't run an iOS app in developer mode - use the instructions for
+    your chosen desktop platform.
+
 What happened? We've added ``faker`` to our *code*, but we haven't added it to
 our development virtual environment. We can fix this by installing ``faker``
 with ``pip``, and then re-running ``briefcase dev``:
@@ -148,6 +158,16 @@ with ``pip``, and then re-running ``briefcase dev``:
     .. image:: images/windows/tutorial-7.png
        :align: center
        :alt: Hello World Tutorial 7 dialog, on Windows
+
+  .. group-tab:: Android
+
+    You can't run an Android app in developer mode - use the instructions for
+    your chosen desktop platform.
+
+  .. group-tab:: iOS
+
+    You can't run an iOS app in developer mode - use the instructions for
+    your chosen desktop platform.
 
 We've now got a working app, using a third party library, running in development mode!
 
@@ -287,6 +307,125 @@ we've made code changes, we need to follow the same steps as in :doc:`Tutorial 4
     .. image:: images/windows/tutorial-7-crash.png
        :align: center
        :alt: Hello World Tutorial 7 app crash, on Windows
+
+  .. group-tab:: Android
+
+    Update the code in the packaged app:
+
+    .. code-block:: console
+
+      (beeware-venv) $ briefcase update android
+
+      [helloworld] Updating application code...
+      ...
+
+      [helloworld] Application updated.
+
+    Rebuild the app:
+
+    .. code-block:: console
+
+      (beeware-venv) $ briefcase build android
+
+      [helloworld] Updating app metadata...
+      ...
+      [helloworld] Built build/helloworld/android/gradle/app/build/outputs/apk/debug/app-debug.apk
+
+    And finally, run the app (selecting a simulator when prompted):
+
+    .. code-block:: console
+
+      (beeware-venv) $ briefcase run android
+
+      [helloworld] Following device log output (type CTRL-C to stop log)...
+      ===========================================================================
+
+    However, when the app runs, you'll see an error in the console:
+
+    .. code-block:: console
+
+        --------- beginning of crash
+        E/AndroidRuntime: FATAL EXCEPTION: main
+        E/AndroidRuntime: Process: com.example.helloworld, PID: 8289
+        E/AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.example.helloworld/org.beeware.android.MainActivity}: com.chaquo.python.PyException: ModuleNotFoundError: No module named 'faker'
+        E/AndroidRuntime:   at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3635)
+        E/AndroidRuntime:   at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3792)
+        E/AndroidRuntime:   at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:103)
+        E/AndroidRuntime:   at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:135)
+        E/AndroidRuntime:   at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:95)
+        E/AndroidRuntime:   at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2210)
+        E/AndroidRuntime:   at android.os.Handler.dispatchMessage(Handler.java:106)
+        E/AndroidRuntime:   at android.os.Looper.loopOnce(Looper.java:201)
+        E/AndroidRuntime:   at android.os.Looper.loop(Looper.java:288)
+        E/AndroidRuntime:   at android.app.ActivityThread.main(ActivityThread.java:7839)
+        E/AndroidRuntime:   at java.lang.reflect.Method.invoke(Native Method)
+        E/AndroidRuntime:   at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+        E/AndroidRuntime:   at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1003)
+        E/AndroidRuntime: Caused by: com.chaquo.python.PyException: ModuleNotFoundError: No module named 'faker'
+        E/AndroidRuntime:   at <python>.helloworld.app.<module>(app.py:8)
+        E/AndroidRuntime:   at <python>.java.chaquopy.import_override(import.pxi:60)
+        E/AndroidRuntime:   at <python>.__main__.<module>(__main__.py:1)
+        E/AndroidRuntime:   at <python>.runpy._run_code(<frozen runpy>:88)
+        E/AndroidRuntime:   at <python>.runpy._run_module_code(<frozen runpy>:98)
+        E/AndroidRuntime:   at <python>.runpy.run_module(<frozen runpy>:226)
+        E/AndroidRuntime:   at <python>.chaquopy_java.call(chaquopy_java.pyx:352)
+        E/AndroidRuntime:   at <python>.chaquopy_java.Java_com_chaquo_python_PyObject_callAttrThrowsNative(chaquopy_java.pyx:324)
+        E/AndroidRuntime:   at com.chaquo.python.PyObject.callAttrThrowsNative(Native Method)
+        E/AndroidRuntime:   at com.chaquo.python.PyObject.callAttrThrows(PyObject.java:232)
+        E/AndroidRuntime:   at com.chaquo.python.PyObject.callAttr(PyObject.java:221)
+        E/AndroidRuntime:   at org.beeware.android.MainActivity.onCreate(MainActivity.java:85)
+        E/AndroidRuntime:   at android.app.Activity.performCreate(Activity.java:8051)
+        E/AndroidRuntime:   at android.app.Activity.performCreate(Activity.java:8031)
+        E/AndroidRuntime:   at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1329)
+        E/AndroidRuntime:   at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3608)
+        E/AndroidRuntime:   ... 12 more
+        I/Process : Sending signal. PID: 8289 SIG: 9
+
+  .. group-tab:: iOS
+
+    Update the code in the packaged app:
+
+    .. code-block:: console
+
+      (beeware-venv) $ briefcase update iOS
+
+      [helloworld] Updating application code...
+      ...
+
+      [helloworld] Application updated.
+
+    Rebuild the app:
+
+    .. code-block:: console
+
+      (beeware-venv) $ briefcase build iOS
+
+      [helloworld] Updating app metadata...
+      ...
+      [helloworld] Built build/helloworld/ios/xcode/build/Debug-iphonesimulator/Hello World.app
+
+    And finally, run the app (selecting a simulator when prompted):
+
+    .. code-block:: console
+
+      (beeware-venv) $ briefcase run iOS
+
+      ...
+      [helloworld] Following simulator log output (type CTRL-C to stop log)...
+      ===========================================================================
+
+    However, when the app runs, you'll see an error in the console
+
+    .. code-block:: console
+
+      Application has crashed!
+      ========================
+      Traceback (most recent call last):
+        File "/Users/rkm/Library/Developer/CoreSimulator/Devices/FD7EA28A-6D72-4064-9D8A-53CC8308BB6F/data/Containers/Bundle/Application/D9DD590B-DA32-4EE1-8F78-78658379CAB7/Hello World.app/app/helloworld/__main__.py", line 1, in <module>
+          from helloworld.app import main
+        File "/Users/rkm/Library/Developer/CoreSimulator/Devices/FD7EA28A-6D72-4064-9D8A-53CC8308BB6F/data/Containers/Bundle/Application/D9DD590B-DA32-4EE1-8F78-78658379CAB7/Hello World.app/app/helloworld/app.py", line 8, in <module>
+          import faker
+      ModuleNotFoundError: No module named 'faker'
 
 Once again, the app has failed to start because ``faker`` has not been installed -
 but why? Haven't we already installed ``faker``?
@@ -434,6 +573,45 @@ packaging our app again. Ensure that you've saved your changes to
 
       [helloworld] Removing unneeded app content...
       ...
+
+      [helloworld] Application updated.
+
+  .. group-tab:: Android
+
+    .. code-block:: console
+
+      (beeware-venv) $ briefcase update android -r
+
+      [helloworld] Updating application code...
+      Installing src/helloworld... done
+
+      [helloworld] Updating requirements...
+      Writing requirements file... done
+
+      [helloworld] Removing unneeded app content...
+      Removing unneeded app bundle content... done
+
+      [helloworld] Application updated.
+
+  .. group-tab:: iOS
+
+    .. code-block:: console
+
+      (beeware-venv) $ briefcase update iOS -r
+
+      [helloworld] Updating application code...
+      Installing src/helloworld... done
+
+      [helloworld] Updating requirements...
+      Looking in indexes: https://pypi.org/simple, https://pypi.anaconda.org/beeware/simple
+      Collecting faker
+        Using cached faker-37.4.0-py3-none-any.whl.metadata (15 kB)
+      ...
+
+      Installing app requirements for iPhone simulator... done
+
+      [helloworld] Removing unneeded app content...
+      Removing unneeded app bundle content... done
 
       [helloworld] Application updated.
 
