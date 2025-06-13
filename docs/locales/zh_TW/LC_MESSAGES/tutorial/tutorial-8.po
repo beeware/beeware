@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-09 04:13+0000\n"
+"POT-Creation-Date: 2025-06-13 17:07+0000\n"
 "PO-Revision-Date: 2024-04-11 22:01+0000\n"
 "Last-Translator: sus <jeffpeng2012@gmail.com>\n"
 "Language: zh_TW\n"
@@ -18,283 +18,317 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: ../../tutorial/tutorial-8.rst:3 79b12b796456454086f682383c354929
+#: ../../tutorial/tutorial-8.rst:3 097575d9b357410599edbc39ac5b014e
 msgid "Tutorial 8 - Making it Smooooth"
 msgstr "教學 8 - 使其順～暢"
 
-#: ../../tutorial/tutorial-8.rst:5 631099956fd340f4b0f65e9223420445
+#: ../../tutorial/tutorial-8.rst:5 2034b347808f4037b184126f60ec0f96
 msgid "So far, our application has been relatively simple - displaying GUI widgets, calling a simple third-party library, and displaying output in a dialog. All these operations happen very quickly, and our application remains responsive."
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:9 ff8e973843ac431088820563f7a7cfee
+#: ../../tutorial/tutorial-8.rst:9 cf23963503ad4ed1a3609db4de386640
 msgid "However, in a real world application, we'll need to perform complex tasks or calculations that may take a while to complete - and as those tasks are performed, we want our application to remain responsive. Let's make a change to our application that might take a little time to complete, and see the changes that need to be made to accommodate that behavior."
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:16 c47b36785eaa40828aacaf5b19bd81c7
+#: ../../tutorial/tutorial-8.rst:16 1a44eb0788a34c9984cfab166d269e48
 msgid "Accessing an API"
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:18 03883eb4ebcc4e15987b54d0241ebff9
+#: ../../tutorial/tutorial-8.rst:18 74c68cc7d0f84e98ad9c70b7850074b9
 msgid "A common time-consuming task an app will need to perform is to make a request on a web API to retrieve data, and display that data to the user. Web APIs sometimes take a second or two to respond, so if we're calling an API like that, we need to ensure our application doesn't become unresponsive while we wait for the web API to return an answer."
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:24 1e514e2055234423bdae73b3c31a210a
+#: ../../tutorial/tutorial-8.rst:24 031070ecaa37422ca45ac6ae0ab7e493
 #, python-brace-format
 msgid "This is a toy app, so we don't have a *real* API to work with, so we'll use the `{JSON} Placeholder API <https://jsonplaceholder.typicode.com>`__ as a source of data. The {JSON} Placeholder API has a number of \"fake\" API endpoints you can use as test data. One of those APIs is the ``/posts/`` endpoint, which returns fake blog posts. If you open ``https://jsonplaceholder.typicode.com/posts/42`` in your browser, you'll get a JSON payload describing a single post - some `Lorum ipsum <https://en.wikipedia.org/wiki/Lorem_ipsum>`__ content for a blog post with ID 42."
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:33 5ef290570fbc438c80c2c84aae68c25b
+#: ../../tutorial/tutorial-8.rst:33 8bcf97e53ea247b68c3d5c9fbcd102a9
 msgid "The Python standard library contains all the tools you'd need to access an API. However, the built-in APIs are very low level. They are good implementations of the HTTP protocol - but they require the user to manage lots of low-level details, like URL redirection, sessions, authentication, and payload encoding. As a \"normal browser user\" you're probably used to taking these details for granted, as a browser manages them for you."
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:40 17f3f885924d4237922548a33c58392d
+#: ../../tutorial/tutorial-8.rst:40 be52fb0013f54df28baa8a4d0957f47a
 #, python-brace-format
 msgid "As a result, people have developed third-party libraries that wrap the built-in APIs and provide a simpler API that is a closer match for the everyday browser experience. We're going to use one of those libraries to access the {JSON} Placeholder API - a library called `httpx <https://www.python-httpx.org>`__. Briefcase uses ``httpx`` internally, so it's already in your local environment - you don't need to install it separately to use it here."
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:47 e968dd4fbbb7472f82d90b92b49f1f4b
-msgid "Let's add a ``httpx`` API call to our app. Add an import to the top of the ``app.py`` to import ``httpx``::"
+#: ../../tutorial/tutorial-8.rst:47 db39ca883088416fa62b737a9efe9885
+msgid "Let's add a ``httpx`` API call to our app. Modify the ``requires`` setting in our ``pyproject.toml`` to include the new requirement::"
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:52 5e09a257326a4ffb961561fdfcbb013b
+#: ../../tutorial/tutorial-8.rst:55 6d4dbf43128f4e0ca293808acfc02a46
+msgid "Add an import to the top of the ``app.py`` to import ``httpx``::"
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:59 8db80a09f529461aaab05bb7410ddd57
 #, fuzzy
 msgid "Then modify the ``say_hello()`` callback so it looks like this::"
 msgstr "要使我們的教程異步，請修改 ``say_hello()`` 事件處理程序，使其如下所示："
 
-#: ../../tutorial/tutorial-8.rst:68 c70055fbbaab4977a8c53e4adfa886e8
+#: ../../tutorial/tutorial-8.rst:75 037ba660f4d643d3bb612df82cccd235
 msgid "This will change the ``say_hello()`` callback so that when it is invoked, it will:"
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:71 0d7f8ecca2de4f638b192100300e70b2
+#: ../../tutorial/tutorial-8.rst:78 4f260489f40a4f3ab479fb7443ed933c
 msgid "make a GET request on the JSON placeholder API to obtain post 42;"
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:73 0167e677dc5d4c0faeeb0daac1b0b245
+#: ../../tutorial/tutorial-8.rst:80 7bce1c880e574a129dcf70fecd539872
 msgid "decode the response as JSON;"
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:75 bc7abd7c5e8e42b695d4734fa4744e96
+#: ../../tutorial/tutorial-8.rst:82 06bafe1542104dd5a5542fac9b28627b
 msgid "extract the body of the post; and"
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:77 93516388141a40a5b5dd0a62cc9c4de9
+#: ../../tutorial/tutorial-8.rst:84 8e581dab59e84eb5917fc24eca85eff6
 msgid "include the body of that post as the text of the \"message\" dialog, in place of the text generated by Faker."
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:80 964a9033126344f188ddfd9d943dd879
-msgid "Lets run our updated app in Briefcase developer mode to check that our change has worked."
+#: ../../tutorial/tutorial-8.rst:87 d3c62a9aeeb84f59a7cd1fc83f901c1e
+msgid "Lets run our updated app in Briefcase developer mode to check that our change has worked. As we've added a new requirement, we need to tell developer mode to reinstall requirements, by using the ``-r`` argument:"
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:85 98bc2713156040e9ac348b647f629f40
+#: ../../tutorial/tutorial-8.rst:93 ../../tutorial/tutorial-8.rst:310
+#: 15e34a6f6ec14a03955b458b04f2b182 42e928d7fc74466f8e6c677b936a1a85
 msgid "macOS"
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:91 ../../tutorial/tutorial-8.rst:104
-#: ../../tutorial/tutorial-8.rst:117 8bbe6090688b459c8e6d9be625a98932
-#: 918ed310dce0451dbbdb7d8365d28e33 e7e40f53a533475face93679d73e54cd
+#: ../../tutorial/tutorial-8.rst:104 ../../tutorial/tutorial-8.rst:122
+#: ../../tutorial/tutorial-8.rst:140 0bb4f3054d004654bc643bd7b7e4cad1
+#: 37fe5c08fab145f88bc728791f8aa354 ce3374959a8b487cb1a78fe8db12e44d
 msgid "When you enter a name and press the button, you should see a dialog that looks something like:"
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:94 218147df86f740e984cbea394616b5c1
+#: ../../tutorial/tutorial-8.rst:107 0b045ee48f284e3193f1b25905ede079
 msgid "Hello World Tutorial 8 dialog, on macOS"
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:98 ee6a468376694420993c51a4acbe3488
+#: ../../tutorial/tutorial-8.rst:111 ../../tutorial/tutorial-8.rst:316
+#: 4d5207711cbd46d18b5a85dc4058ca58 79e1c9eb27524e168bc091655a943c92
 msgid "Linux"
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:107 be5afd5855d64123857d4ba2b8c39e74
+#: ../../tutorial/tutorial-8.rst:125 7ccbffd4ebf74fdfb5271060c389a868
 msgid "Hello World Tutorial 8 dialog, on Linux"
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:111 d9fe0ceeceb8424697cf34d5dc81f4e7
+#: ../../tutorial/tutorial-8.rst:129 ../../tutorial/tutorial-8.rst:322
+#: 2175d927d8534ee9b15ac97410af026c 6a152eaaa32d45c2a27dfaf5b32bdf04
 msgid "Windows"
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:120 a41885f8279f4df0b10254db1778a700
+#: ../../tutorial/tutorial-8.rst:143 45b4f7e6d0034a6e885da4366807cb4f
 msgid "Hello World Tutorial 8 dialog, on Windows"
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:124 5b8f238e60164548a4d24d0ced91e0f1
+#: ../../tutorial/tutorial-8.rst:147 ../../tutorial/tutorial-8.rst:328
+#: 23767d903480410992a50e675499f42d 2998b1158bc6438cbc651211a0e15e38
+msgid "Android"
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:149 a6c26f3612fc43589c1e266fe3e9fcb7
+msgid "You can't run an Android app in developer mode - use the instructions for your chosen desktop platform."
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:152 ../../tutorial/tutorial-8.rst:334
+#: 031e41a8a24a48769f293c866d7f8e8c 6013ef8d07de4dfdb5f4bce57c874008
+msgid "iOS"
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:154 8598fc7645ff445ca755726e959e640c
+msgid "You can't run an iOS app in developer mode - use the instructions for your chosen desktop platform."
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:157 5719433b5bbb4a27950e76b2adad791c
 msgid "Unless you've got a *really* fast internet connection, you may notice that when you press the button, the GUI for your app locks up for a little bit. The operating system may even manifest this with a \"beachball\" or \"spinner\" cursor to indicate that the app is being unresponsive."
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:129 28d238f33d6a4283ad198f47eab54e05
+#: ../../tutorial/tutorial-8.rst:162 ccb4d77b01fc4313881db7e9ae865789
 #, fuzzy
 msgid "This is because the web request we have made is *synchronous*. When our application makes the web request, it waits for the API to return a response before continuing. While it's waiting, it *isn't* allowing the application to redraw - and as a result, the application locks up."
 msgstr "除非您擁有 **真正** 快速的網路連接，否則您可能會注意到，當您按下按鈕時，應用程式的 GUI 會鎖定一點。這是因為我們發出的 Web 請求是 **同步** 的。當我們的應用程式發出 Web 請求時，它會等待 API 回傳回應，然後再繼續。在等待時，它 **不允許** 應用程式重繪 - 結果，應用程式停止回應。"
 
-#: ../../tutorial/tutorial-8.rst:135 ba2f7e5e7e9c45f8b063f88aea60d2a4
+#: ../../tutorial/tutorial-8.rst:168 e275bb181d0245a2a2162c661a694474
 msgid "GUI Event Loops"
 msgstr "GUI 事件循環(Event loop)"
 
-#: ../../tutorial/tutorial-8.rst:137 d1a9ce65713645c5beb3da3be9cfaf12
+#: ../../tutorial/tutorial-8.rst:170 022ac3af460a49cbb3fea7349e4ff42b
 msgid "To understand why this happens, we need to dig into the details of how a GUI application works. The specifics vary depending on the platform; but the high level concepts are the same, no matter the platform or GUI environment you're using."
 msgstr "為了理解為什麼會發生這種情況，我們需要深入研究 GUI 應用程式如何運作的細節。具體情況因平台而異；但無論您使用什麼平台或 GUI 環境，概念都是相同的。"
 
-#: ../../tutorial/tutorial-8.rst:142 cf3e14bcd30144a4950e859876dbc882
+#: ../../tutorial/tutorial-8.rst:175 0c4cf69570f24e53bf68a4dfb8e5560c
 msgid "A GUI app is, fundamentally, a single loop that looks something like::"
 msgstr "從根本上來說，GUI 應用程式是一個看起來像這樣的循環::"
 
-#: ../../tutorial/tutorial-8.rst:148 e4d06a8fd98848ddb42bc63bc3bc8e7d
+#: ../../tutorial/tutorial-8.rst:181 d005674bf44546c393aff25cc8f37d27
 #, fuzzy
 msgid "This loop is called the *Event Loop*. (These aren't actual method names - it's an illustration of what is going on using \"pseudo-code\")."
 msgstr "此循環稱為 *事件循環* 。 （這些不是實際的方法名稱 - 它是 ``偽代碼`` 中發生的情況的說明）。"
 
-#: ../../tutorial/tutorial-8.rst:151 1d582391bb1d4403836fcfe2bd19f6d4
+#: ../../tutorial/tutorial-8.rst:184 3758a90eb77d42248d814fc7e5288add
 msgid "When you click on a button, or drag a scroll bar, or type a key, you are generating an \"event\". That \"event\" is put onto a queue, and the app will process the queue of events when it next has the opportunity to do so. The user code that is triggered in response to the event is called an *event handler*. These event handlers are invoked as part of the ``process_events()`` call."
 msgstr "當您按一下按鈕、拖曳捲軸或按下按鍵時，代表你產生一個 ``事件`` 。該 ``事件`` 被放入佇列中，應用程式將在下次有機會處理事件佇列時處理該事件。響應事件而觸發的程式碼稱為 ``event handler`` 。這些事件處理程序作為 ``process_events()`` 呼叫的一部分被呼叫。"
 
-#: ../../tutorial/tutorial-8.rst:157 c92cc6dea61f4641a000070e2f5ffccd
+#: ../../tutorial/tutorial-8.rst:190 44b492799e4c42e488186efe8110fdd2
 msgid "Once an app has processed all the available events, it will ``redraw()`` the GUI. This takes into account any changes that the events have caused to the display of the app, as well as anything else that is going on in the operating system - for example, the windows of another app may obscure or reveal part of our app's window, and our app's redraw will need to reflect the portion of the window that is currently visible."
 msgstr "一旦應用程式處理完所有可用事件，它將 ``redraw()`` GUI。這考慮了事件對應用程式顯示造成的任何變化，以及作業系統中發生的任何其他變化 - 例如，另一個應用程式的視窗可能會遮蓋或顯示我們應用程式視窗的一部分，我們的應用程式的重繪需要反映目前可見的視窗部分。"
 
-#: ../../tutorial/tutorial-8.rst:164 aaa4adc6b96d46f9930328f56ba2966a
+#: ../../tutorial/tutorial-8.rst:197 cfa0f338eecf4bcf8a3f4704578a5f9b
 msgid "The important detail to notice: while an application is processing an event, *it can't redraw*, and *it can't process other events*."
 msgstr "需要注意的重要細節：當應用程式正在處理事件時， *它無法重繪* ，並且 *它無法處理其他事件* 。"
 
-#: ../../tutorial/tutorial-8.rst:167 ffd664c03119447d984359437fb59f05
+#: ../../tutorial/tutorial-8.rst:200 9bf59a2ac0024ca9a7174fcfb7c11959
 msgid "This means any user logic contained in an event handler needs to complete quickly. Any delay in completing the event handler will be observed by the user as a slowdown (or stop) in GUI updates. If this delay is long enough, your operating system may report this as a problem - the macOS \"beachball\" and Windows \"spinner\" icons are the operating system telling you that your app is taking too long in an event handler."
 msgstr "這意味著事件處理程序中包含的任何使用者邏輯都需要快速完成。使用者將觀察到完成事件處理程序的任何延遲，因為 GUI 更新速度會減慢（或停止）。如果延遲足夠長，您的作業系統可能會將此報告為問題 - macOS ``beachball`` 和 Windows ``spinner`` 圖示是作業系統告訴您您的應用程式在事件處理程序中花費的時間太長。"
 
-#: ../../tutorial/tutorial-8.rst:174 1a49d0617b914da39fce939bf13a6e92
+#: ../../tutorial/tutorial-8.rst:207 79c4178d2dd14807bbd1896605f1e4e1
 msgid "Simple operations like \"update a label\", or \"recompute the total of the inputs\" are easy to complete quickly. However, there are a lot of operations that can't be completed quickly. If you're performing a complex mathematical calculation, or indexing all the files on a file system, or performing a large network request, you can't \"just do it quickly\" - the operations are inherently slow."
 msgstr "``更新標籤`` 或 ``重新計算輸入總數`` 等簡單操作很容易快速完成。然而，有許多操作無法快速完成。如果您正在執行複雜的數學計算，或對檔案系統上的所有檔案進行索引，或執行網路請求，則您無法 ``快速完成`` - 那些操作本質上很慢。"
 
-#: ../../tutorial/tutorial-8.rst:180 be0d6d90454045eb8e782814d5b02503
+#: ../../tutorial/tutorial-8.rst:213 e7d856eabcdb4b67aff246f9a58b5b40
 msgid "So - how do we perform long-lived operations in a GUI application?"
 msgstr "那麼，我們如何在 GUI 應用程式中執行耗時的操作呢？"
 
-#: ../../tutorial/tutorial-8.rst:183 ca262d9d1a6c4f98be62d5293c422ec2
+#: ../../tutorial/tutorial-8.rst:216 078bba670d4c48f5851ee57c18ffd54f
 msgid "Asynchronous programming"
 msgstr "非同步程式設計"
 
-#: ../../tutorial/tutorial-8.rst:185 9da8659380cf48088ec5a5ace52c78d9
+#: ../../tutorial/tutorial-8.rst:218 e08a26b9ed4347899c800ea3ead1724a
 msgid "What we need is a way to tell an app in the middle of a long-lived event handler that it is OK to temporarily release control back to the event loop, as long as we can resume where we left off. It's up to the app to determine when this release can occur; but if the app releases control to the event loop regularly, we can have a long-running event handler *and* maintain a responsive UI."
 msgstr "我們需要的是一種方法讓耗時的event handler執行時告訴應用程序，只要可以從中斷的地方恢復，就可以暫時將控制權釋放回事件循環。由應用程式決定何時釋放它；但如果應用程式定期釋放對事件循環的控制，我們就可以擁有一個長時間運行的事件處理程序 *並* 維護一個響應式 UI。"
 
-#: ../../tutorial/tutorial-8.rst:191 064b454a2df24a1ca4ba73ddb6915417
+#: ../../tutorial/tutorial-8.rst:224 abc84ce79d964e7f9a0011a6e513ed0b
 msgid "We can do this by using *asynchronous programming*. Asynchronous programming is a way to describe a program that allows the interpreter to run multiple functions at the same time, sharing resources between all the concurrently running functions."
 msgstr "我們可以透過使用 ``非同步程式設計`` 來做到這一點。非同步程式設計是一種描述程式的方式，允許解釋器同時運行多個函數，在所有並發運行的函數之間共用資源。"
 
-#: ../../tutorial/tutorial-8.rst:196 1181622c02e5430e969e1d5f96ad8729
+#: ../../tutorial/tutorial-8.rst:229 807ad9ecea8a4c66a6c83973f5594571
 #, fuzzy
 msgid "Asynchronous functions (known as *coroutines*) need to be explicitly declared as being asynchronous. They also need to internally declare when an opportunity exists to change context to another coroutine."
 msgstr "非同步函數（稱為 *協程* ）需要明確宣告為非同步。他們還需要在內部聲明何時存在將上下文更改為另一個協程的機會。"
 
-#: ../../tutorial/tutorial-8.rst:200 9791b8b8eff04bd2a794f16f8097a447
+#: ../../tutorial/tutorial-8.rst:233 31b14513e7004ea09d64ab7a8c0aa645
 #, fuzzy
 msgid "In Python, asynchronous programming is implemented using the ``async`` and ``await`` keywords, and the `asyncio <https://docs.python.org/3/library/asyncio.html>`__ module in the standard library. The ``async`` keyword allows us to declare that a function is an asynchronous coroutine. The ``await`` keyword provides a way to declare when an opportunity exists to change context to another coroutine. The `asyncio <https://docs.python.org/3/library/asyncio.html>`__ module provides some other useful tools and primitives for asynchronous coding."
 msgstr "在Python中，非同步程式設計是使用 ``async`` 和 ``await`` 關鍵字以及 `asyncio <https://docs.python.org/3/library/asyncio.html>`_ 中的模組來實現的。標準庫。 ``async`` 關鍵字允許我們宣告函數是非同步協同例程。 ``await`` 關鍵字提供了一種聲明何時存在將上下文更改為另一個協同例程的機會的方法。 `asyncio <https://docs.python.org/3/library/asyncio.html>`__ 模組為非同步程式設計提供了一些其他有用的工具和語法。"
 
-#: ../../tutorial/tutorial-8.rst:210 3c6a34677e1d49b3a5ab3bbc513ea8b8
+#: ../../tutorial/tutorial-8.rst:243 933e1ab323664151ad72aa6be5e1bb6e
 #, fuzzy
 msgid "Making the tutorial asynchronous"
 msgstr "使教學異步"
 
-#: ../../tutorial/tutorial-8.rst:212 25e6555575424b4a9fb4e37fac4e4984
+#: ../../tutorial/tutorial-8.rst:245 516b6ecdf6c14413b805ec66b96a716b
 msgid "To make our tutorial asynchronous, modify the ``say_hello()`` event handler so it looks like this::"
 msgstr "要使我們的教程異步，請修改 ``say_hello()`` 事件處理程序，使其如下所示："
 
-#: ../../tutorial/tutorial-8.rst:228 7cfa268bb7cf414eadf7215eba0a44b2
+#: ../../tutorial/tutorial-8.rst:261 d2134db9452f48bd96dc88a481851ee3
 #, fuzzy
 msgid "There are only three changes to this callback from the previous version:"
 msgstr "與先前的版本相比，此程式碼僅發生了 4 處變更："
 
-#: ../../tutorial/tutorial-8.rst:230 bc2c2412f6174cff926da04cbbe29746
+#: ../../tutorial/tutorial-8.rst:263 16f89dda63b64fb2ae2c3b0810d787e4
 msgid "The client that is created is an asynchronous ``AsyncClient()``, rather than a synchronous ``Client()``. This tells ``httpx`` that it should operate in asynchronous mode, rather than synchronous mode."
 msgstr "建立的客戶端是異步 ``AsyncClient()`` ，而不是同步 ``Client()`` 。這告訴 ``httpx`` 它應該以非同步模式運行，而不是同步模式。"
 
-#: ../../tutorial/tutorial-8.rst:234 6118b1bc778c46b0bce08af431d3a498
+#: ../../tutorial/tutorial-8.rst:267 51fa12d5dd144674a116d9bda705529b
 msgid "The context manager used to create the client is marked as ``async``. This tells Python that there is an opportunity to release control as the context manager is entered and exited."
 msgstr "用於建立客戶端的上下文管理器被標記為 ``async`` 。這告訴Python，當進入和退出上下文管理器時，有機會釋放控制權。"
 
-#: ../../tutorial/tutorial-8.rst:238 45e717399cde4e4887a1102eedc47d59
+#: ../../tutorial/tutorial-8.rst:271 c48acbbbb1614718a60e4e8d0e68d889
 msgid "The ``get`` call is made with an ``await`` keyword. This instructs the app that while we are waiting for the response from the network, the app can release control to the event loop. We've seen this keyword before - we also use ``await`` when displaying the dialog box. The reason for that usage is the same as it is for the HTTP request - we need to tell the app that while the dialog is displayed, and we're waiting for the user to push a button, it's OK to release control back to the event loop."
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:246 7f0519010e6642c9be79b80ef010cdb3
+#: ../../tutorial/tutorial-8.rst:279 f16e45fb19b1438b8732f08dbca544a0
 msgid "It's also important to note that the handler itself is defined as ``async def``, rather than just ``def``. This tells Python that the method is an asynchronous coroutine. We made this change back in Tutorial 3 when we added the dialog box. You can only use ``await`` statements inside a method that is declared as ``async def``."
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:252 cc36afbfda8142fdabe9b2f50b3b6b54
+#: ../../tutorial/tutorial-8.rst:285 55abb354ca1b48498dad3b069f43e02c
 #, fuzzy
 msgid "Toga allows you to use regular methods or asynchronous coroutines as handlers; Toga manages everything behind the scenes to make sure the handler is invoked or awaited as required."
 msgstr "Toga 允許您使用常規方法或非同步協同例程作為處理程序； Toga 管理幕後的一切，以確保根據需要呼叫或等待處理程序。"
 
-#: ../../tutorial/tutorial-8.rst:256 6923dcca5ffe44919d014abd917e418d
-msgid "If you save these changes and re-run the app (either with ``briefcase dev`` in development mode, or by updating and re-running the packaged app), there won't be any obvious changes to the app. However, when you click on the button to trigger the dialog, you may notice a number of subtle improvements:"
+#: ../../tutorial/tutorial-8.rst:289 19415abc7f9b4a16a66b7411d9b0de88
+#, fuzzy
+msgid "If you save these changes and re-run the app in development mode, there won't be any obvious changes to the app. However, when you click on the button to trigger the dialog, you may notice a number of subtle improvements:"
 msgstr "如果您儲存這些變更並重新執行應用程式（在開發模式下使用 ``briefcase dev`` ，或透過更新並重新執行打包的應用程式），應用程式不會有任何明顯的變更。但是，當您單擊按鈕觸發對話框時，您可能會注意到一些細微的改進："
 
-#: ../../tutorial/tutorial-8.rst:261 51ced55dba5c49d5a274b33b5abb09ad
+#: ../../tutorial/tutorial-8.rst:293 e3227ecb34bf485195196883a7b13d09
 msgid "The button returns to an \"unclicked\" state, rather than being stuck in a \"clicked\" state."
 msgstr "該按鈕返回到 ``未單擊`` 狀態，而不是停留在 ``單擊`` 狀態。"
 
-#: ../../tutorial/tutorial-8.rst:264 f7061cb781a848858f3a77749308ca55
+#: ../../tutorial/tutorial-8.rst:296 9d0516062639470bb990794762868445
 msgid "The \"beachball\"/\"spinner\" icon won't appear"
 msgstr "\"沙灘球\"/\"漏斗\" 圖示不會再出現"
 
-#: ../../tutorial/tutorial-8.rst:266 23fd432e23f04576a6888e3b13bcc9d6
+#: ../../tutorial/tutorial-8.rst:298 6dbc9f17639847be9246f5792c0e09a3
 msgid "If you move/resize the app window while waiting for the dialog to appear, the window will redraw."
 msgstr "如果您在等待對話方塊出現時移動/調整應用程式視窗的大小，則該視窗將會重新繪製。"
 
-#: ../../tutorial/tutorial-8.rst:269 50a453d8344a45ba814ae4e49e5d546c
+#: ../../tutorial/tutorial-8.rst:301 a5786a9f31694f03beae13470144edc7
 msgid "If you try to open an app menu, the menu will appear immediately."
 msgstr "如果您嘗試開啟應用程式選單，該選單將立即出現。"
 
-#: ../../tutorial/tutorial-8.rst:272 16a8b9f1eace46f68cd9b1c18979c418
+#: ../../tutorial/tutorial-8.rst:303 4bf6ae8c7aeb4fb4a4d25007a7c483bf
+msgid "We can now run the full app. However, as we've added an extra requirement (``httpx``) we also need to update our app's requirements; we can do this by passing ``-r`` to ``briefcase run``. This will update our app's requirements, then re-build the app, then launch the app:"
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:340 d68aa5280fe54260be024d6c099f1569
+msgid "You should see you app running, and remaining responsive when you press the button and network content is retrieved."
+msgstr ""
+
+#: ../../tutorial/tutorial-8.rst:344 e727f9c495fc4bd58c2982f7b3467e73
 msgid "Next steps"
 msgstr "下一步"
 
-#: ../../tutorial/tutorial-8.rst:274 c14a77947e84485ea5aff618402d7e2b
+#: ../../tutorial/tutorial-8.rst:346 ca6636b701ca4ec7a222f71c8d5ad51f
 msgid "This has been a taste for what you can do with the tools provided by the BeeWare project. Over the course of this tutorial, you have:"
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:277 209367b3999d4236b49586d693bbf805
+#: ../../tutorial/tutorial-8.rst:349 8ecb4dd89ffa4bf19c56627e5e043007
 msgid "Created a new GUI app project;"
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:278 b32c551e7b8a4667a37ead710a649c0a
+#: ../../tutorial/tutorial-8.rst:350 09d25907e8fb4046a1f6c7f5b45fe970
 msgid "Run that app in development mode;"
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:279 4ad0c111d0604d4f8bec875c5666a443
+#: ../../tutorial/tutorial-8.rst:351 725712893dcf42d7a28405c6ff67f2f5
 msgid "Built the app as a standalone binary for a desktop operating system;"
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:280 71ccc4fbd50045c49956277256de7179
+#: ../../tutorial/tutorial-8.rst:352 fc3d290ff026426cbbbf767eee349b34
 msgid "Packaged that project for distribution to others;"
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:281 0fd3b86bf1fc46b883af81880c61ce72
+#: ../../tutorial/tutorial-8.rst:353 c35819a9e8144cf0a7a04a450c3584ee
 msgid "Run the app on a mobile simulator and/or device;"
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:282 42e372790ba741f1aef0b185a50a2cb9
+#: ../../tutorial/tutorial-8.rst:354 b3bfb3b8d1cb4897a6c93a756144084d
 msgid "Run the app as a web app;"
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:283 3dbd97eb6b7a41dbb4042588531a2dc6
+#: ../../tutorial/tutorial-8.rst:355 bf5f0866957944728a4b3112f0e2d22a
 msgid "Added a third-party dependency to your app; and"
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:284 e731f38eec584776aed73c92138ff72b
+#: ../../tutorial/tutorial-8.rst:356 d82450e6c9f04056956bd1a91dfa68ca
 msgid "Modified the app so that it remains responsive."
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:286 0690333d4bcc4c71a6e041fb069401b3
+#: ../../tutorial/tutorial-8.rst:358 aff7eab141344faab3d22ee3bfbf38f0
 msgid "So - where to from here?"
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:288 73c89bf1af964f55a811b0aa7995ccc7
+#: ../../tutorial/tutorial-8.rst:360 70a464c5e0134d7c9bc6c5e58300fa0c
 msgid "If you'd like to go further, there are some additional :doc:`topic tutorials </tutorial/topics/index>` that go into detail on specific aspects of application development."
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:291 00b3a709e2254c928f61602659e76140
+#: ../../tutorial/tutorial-8.rst:363 af538ee11398408ca51448e67d167111
 msgid "If you'd like to know more about how to build complex user interfaces with Toga, you can dive into `Toga's documentation <https://toga.readthedocs.io>`__. Toga also has it's own tutorial `demonstrating how to use various features of the widget toolkit <https://toga.readthedocs.io/en/latest/tutorial/index.html>`__."
 msgstr ""
 
-#: ../../tutorial/tutorial-8.rst:296 0cd66a46b35b4aefbaaf80e57d65aea1
+#: ../../tutorial/tutorial-8.rst:368 7cce58a85f7944eda243f0f0ac686c0a
 msgid "If you'd like to know more about the capabilities of Briefcase, you can dive into `Briefcase's documentation <https://briefcase.readthedocs.io>`__."
 msgstr ""
 
@@ -306,4 +340,10 @@ msgstr ""
 
 #~ msgid "The ``get`` call is made with an ``await`` keyword. This instructs the app that while we are waiting for the response from the network, the app can release control to the event loop."
 #~ msgstr "``get`` 呼叫是使用 ``await`` 關鍵字進行的。這指示應用程式在等待網路回應時，應用程式可以釋放對事件循環的控制。"
+
+#~ msgid "Let's add a ``httpx`` API call to our app. Add an import to the top of the ``app.py`` to import ``httpx``::"
+#~ msgstr ""
+
+#~ msgid "Lets run our updated app in Briefcase developer mode to check that our change has worked."
+#~ msgstr ""
 
