@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-13 17:07+0000\n"
+"POT-Creation-Date: 2025-06-13 22:49+0000\n"
 "PO-Revision-Date: 2024-02-13 12:13+0800\n"
 "Last-Translator: Russell Keith-Magee <russell@keith-magee.com>\n"
 "Language: it\n"
@@ -19,323 +19,323 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: ../../tutorial/tutorial-7.rst:3 4590ac5a42f3489caa0e700203ecd4b7
+#: ../../tutorial/tutorial-7.rst:3 580d8b5ae97e4569a0478f8164dd311b
 #, fuzzy
 msgid "Tutorial 7 - Get this (third)-party started"
 msgstr "Esercitazione 7 - Iniziare questa (terza) festa"
 
-#: ../../tutorial/tutorial-7.rst:5 a700331025fd42be9d0d7d8222261bbe
+#: ../../tutorial/tutorial-7.rst:5 6ff0e343d21748729a9aad8aa45906d9
 #, fuzzy
 msgid "So far, the app we've built has only used our own code, plus the code provided by BeeWare. However, in a real-world app, you'll likely want to use a third-party library, downloaded from the Python Package Index (PyPI)."
 msgstr "Finora, l'applicazione che abbiamo costruito ha utilizzato solo il nostro codice e quello fornito da BeeWare. Tuttavia, in un'applicazione reale, è probabile che si voglia utilizzare una libreria di terze parti, scaricata dal Python Package Index (PyPI)."
 
-#: ../../tutorial/tutorial-7.rst:9 462a653c42ee4f7cb627b83af0c564d3
+#: ../../tutorial/tutorial-7.rst:9 eaa725ae7687465284cc03b0741ba64c
 #, fuzzy
 msgid "Let's modify our app to include a third-party library."
 msgstr "Modifichiamo la nostra applicazione per includere una libreria di terze parti."
 
-#: ../../tutorial/tutorial-7.rst:12 2d2437448efb48109e28be2a9c336698
+#: ../../tutorial/tutorial-7.rst:12 9ba96ae85be14940995d02cdf2899c5c
 msgid "Adding a package"
 msgstr ""
 
-#: ../../tutorial/tutorial-7.rst:14 e442501783c248f1806f0637ca250707
+#: ../../tutorial/tutorial-7.rst:14 37fd35da930349a3b7fb7d5e29f2dba6
 msgid "Let's modify our application to say a little bit more than just \"Hi, there!\"."
 msgstr ""
 
-#: ../../tutorial/tutorial-7.rst:16 dba87f1f61ae4975977901eb95b66a04
+#: ../../tutorial/tutorial-7.rst:16 ba49d1662ac34e22b8db2f1becbf2a08
 msgid "To generate some more interesting text for the dialog, we're going to use a library called `Faker <https://faker.readthedocs.io/en/stable/>`__ . Faker is a Python package that generates fake content, including names and text blocks. The names and words in the text block are generated from an arbitrary list of words provided by Faker. We're going to use Faker to construct a fake message, as if someone is responding to the user."
 msgstr ""
 
-#: ../../tutorial/tutorial-7.rst:23 af26f0f47a424cb1a16ad82e0d57fa1d
+#: ../../tutorial/tutorial-7.rst:23 06894091b5e24e8aaeed5bb173ee2cdb
 #, fuzzy
 msgid "We start by adding ``faker`` to our app. Add an import to the top of the ``app.py`` to import ``faker``::"
 msgstr "Aggiungiamo una chiamata API ``httpx`` alla nostra applicazione. Aggiungiamo un'importazione all'inizio di ``app.py`` per importare ``httpx``::"
 
-#: ../../tutorial/tutorial-7.rst:28 8db0aef5903f418eb07fb0961e0aaa67
+#: ../../tutorial/tutorial-7.rst:28 e6de18fa54084ccb8dc6010d1bd34585
 #, fuzzy
 msgid "Then modify the ``say_hello()`` callback so it looks like this::"
 msgstr "Modificare quindi il callback ``say_hello()`` in modo che assomigli a questo::"
 
-#: ../../tutorial/tutorial-7.rst:39 2cd8f96a33fa4fda9165147da3cd7b5a
+#: ../../tutorial/tutorial-7.rst:39 b21d74eedabf4f7e98770b79357172df
 #, fuzzy
-msgid "Lets run our updated app in Briefcase developer mode to check that our change has worked."
+msgid "Let's run our updated app in Briefcase developer mode to check that our change has worked."
 msgstr "Eseguiamo la nostra applicazione aggiornata in modalità sviluppatore di Briefcase per verificare che la nostra modifica abbia funzionato."
 
 #: ../../tutorial/tutorial-7.rst:44 ../../tutorial/tutorial-7.rst:120
 #: ../../tutorial/tutorial-7.rst:182 ../../tutorial/tutorial-7.rst:510
-#: 18fd1e67166545f6a6691a9430001ad9 353ce75d4c2442b6bdc1f8050e81b574
-#: 66a09979836e47149900aa0adbc10f8c 683b3f40cdc44c048b79edb76f0f5890
+#: 61548a09b2164c178e3bb58c42e471b1 7a2e7e1c2eae4bcebe52acccdde62e01
+#: a467ffd7681a455c9c636c25b4b29995 fb7bedb418cf4b22adab19ecf56c8b8d
 msgid "macOS"
 msgstr "macOS"
 
 #: ../../tutorial/tutorial-7.rst:64 ../../tutorial/tutorial-7.rst:134
 #: ../../tutorial/tutorial-7.rst:220 ../../tutorial/tutorial-7.rst:531
-#: 934a3353a1c24d7e9de4a495a90eca65 936f43ab42044555bf44ae7cbac9c800
-#: a370257ddac64a9fa5930049fdbe04de c8e3e4c8bc034550a3a4938a5f618010
+#: 1317dcb17cdd4b95bd6a0ee248a9c093 617b61a060884471938e7fe9a4bc806b
+#: 7d17517742aa4531923def56aedce2fa 8b1d25855f2b43f68be9f3224967f55a
 msgid "Linux"
 msgstr "Linux"
 
 #: ../../tutorial/tutorial-7.rst:84 ../../tutorial/tutorial-7.rst:148
 #: ../../tutorial/tutorial-7.rst:273 ../../tutorial/tutorial-7.rst:558
-#: 81b487e8c5814680b93630681b20277c 8ccc16e3117f4bbe9846723a01ce246c
-#: bb529f88cd47488791b81516fd3c32cc e58e12fbf89745ddad0ead4048e9538d
+#: 2209b6fd26a94161b8a3abb893d20518 3c8c2d06c2db49fc94621d89ca564b01
+#: d44871c3a16a41e6af459d99736109ee f231d4cb520a428c8c58eecbdbd433af
 msgid "Windows"
 msgstr "Windows"
 
 #: ../../tutorial/tutorial-7.rst:104 ../../tutorial/tutorial-7.rst:162
 #: ../../tutorial/tutorial-7.rst:311 ../../tutorial/tutorial-7.rst:579
-#: 0a45e05c16634ba79b267fe51977c705 6bf8d71c903341cc9f9e138650552d34
-#: 9e360c8a413d421895f6d7c8daf53df6 fc4f320c520d4d47a3c558d0ae962eba
+#: 0dc152c92c7049938e54a8d56d46b01a 0e50e55255064cf48311bffcc6ed4567
+#: 2c7d4337d51342b9944fad6e40494400 d514be2319fe4f58bae277b1605d1e52
 msgid "Android"
 msgstr ""
 
 #: ../../tutorial/tutorial-7.rst:106 ../../tutorial/tutorial-7.rst:164
-#: f41ada425fc448e6b89fc6e344ca8f8d f43b2b7d8554472ca452427ad2cb8f4e
+#: 06fa474df9c44fe194083d3864d319c9 6e607a591b3a46a2aad6b0c4fa959dc1
 msgid "You can't run an Android app in developer mode - use the instructions for your chosen desktop platform."
 msgstr ""
 
 #: ../../tutorial/tutorial-7.rst:109 ../../tutorial/tutorial-7.rst:167
 #: ../../tutorial/tutorial-7.rst:384 ../../tutorial/tutorial-7.rst:596
-#: 38dfc709b6af44d6bf12fba8ad51e2dd 9dc24e920b6d46bf8fe9d98903b4827d
-#: a4e7e26237aa47318e4245d6e0bc9fa2 b21bb54f5c754b418f38e04dcb930895
+#: 1dee22327bb94a9da51c395ea609cb4d d7503790f16646f1ac00b9d2ea391c87
+#: e5ae9658a3e64a379026f1a9afd659aa f58b9912df1e4f1ca3fdd94df4bb5192
 #, fuzzy
 msgid "iOS"
 msgstr "Windows"
 
 #: ../../tutorial/tutorial-7.rst:111 ../../tutorial/tutorial-7.rst:169
-#: 439614ad95d148678ec1eaabab33e671 45635f3a7be34ec581ca539763538745
+#: 4a25bd30ca024d31867049b76fb697a2 9607737e3e7644e697b08034d013a1c1
 msgid "You can't run an iOS app in developer mode - use the instructions for your chosen desktop platform."
 msgstr ""
 
-#: ../../tutorial/tutorial-7.rst:114 d030aea1d06d440da1e2c931670f1e2a
+#: ../../tutorial/tutorial-7.rst:114 83ca143bca7d450388010c41a0abd2b8
 #, fuzzy
 msgid "What happened? We've added ``faker`` to our *code*, but we haven't added it to our development virtual environment. We can fix this by installing ``faker`` with ``pip``, and then re-running ``briefcase dev``:"
 msgstr "Cosa è successo? Abbiamo aggiunto ``httpx`` al nostro *codice*, ma non l'abbiamo aggiunto al nostro ambiente virtuale di sviluppo. Possiamo risolvere il problema installando ``httpx`` con ``pip`` e poi eseguendo nuovamente ``briefcase dev```:"
 
 #: ../../tutorial/tutorial-7.rst:127 ../../tutorial/tutorial-7.rst:141
-#: ../../tutorial/tutorial-7.rst:155 5cd4f5c905e64aa1a628aa2aac4d5dba
-#: a1ad5b6d4b5a463a8ddea0bc06e25340 f0766cae89944b5fa7bd9cc87b28433e
+#: ../../tutorial/tutorial-7.rst:155 50f31dc110654e7a9aeecde2326c22e4
+#: 73067b6f5be24503b6e15643af6a508f 8484921f80d84b6992bb2175d7ee4ea9
 #, fuzzy
 msgid "When you enter a name and press the button, you should see a dialog that looks something like:"
 msgstr "Quando si inserisce un nome e si preme il pulsante, dovrebbe apparire una finestra di dialogo simile a questa:"
 
-#: ../../tutorial/tutorial-7.rst:130 294ad803b8de4f90b998f727c2ecb1d3
+#: ../../tutorial/tutorial-7.rst:130 00c9ac7a7f4149c1a7849e23540cd629
 #, fuzzy
 msgid "Hello World Tutorial 7 dialog, on macOS"
 msgstr "Esercitazione Hello World 7, su macOS"
 
-#: ../../tutorial/tutorial-7.rst:144 4a7c865f0f444b20999b18b4dc9c71fc
+#: ../../tutorial/tutorial-7.rst:144 7356c16844994903a444727af786c7dc
 #, fuzzy
 msgid "Hello World Tutorial 7 dialog, on Linux"
 msgstr "Esercitazione Hello World 7, su Linux"
 
-#: ../../tutorial/tutorial-7.rst:158 143ab754d8c84686adabe48217ddb3e7
+#: ../../tutorial/tutorial-7.rst:158 ff6e38475b214e3c88b6edabaff26255
 #, fuzzy
 msgid "Hello World Tutorial 7 dialog, on Windows"
 msgstr "Finestra di dialogo Hello World Tutorial 7, su Windows"
 
-#: ../../tutorial/tutorial-7.rst:172 6a617eb493d449498c61e8207b788bed
+#: ../../tutorial/tutorial-7.rst:172 6044a104b4e948bba51e2ee932ac3172
 #, fuzzy
 msgid "We've now got a working app, using a third party library, running in development mode!"
 msgstr "Ora abbiamo un'applicazione funzionante, che utilizza una libreria di terze parti, in modalità di sviluppo!"
 
-#: ../../tutorial/tutorial-7.rst:175 45abd4fa5eb2476ab627c5cd1e3fc53f
+#: ../../tutorial/tutorial-7.rst:175 f04b9890e17149aa9e1266b55db369d1
 #, fuzzy
 msgid "Running the updated app"
 msgstr "Esecuzione dell'applicazione aggiornata"
 
-#: ../../tutorial/tutorial-7.rst:177 4314f084a3be478f8395c21bb4607389
+#: ../../tutorial/tutorial-7.rst:177 3dd30546e9734388bcdad5c17cc06da7
 #, fuzzy
 msgid "Let's get this updated application code packaged as a standalone app. Since we've made code changes, we need to follow the same steps as in :doc:`Tutorial 4 <tutorial-4>`:"
 msgstr "Facciamo in modo che il codice aggiornato dell'applicazione venga confezionato come applicazione autonoma. Poiché abbiamo apportato modifiche al codice, dobbiamo seguire gli stessi passi di :doc:`Tutorial 4 <tutorial-4>`:"
 
 #: ../../tutorial/tutorial-7.rst:184 ../../tutorial/tutorial-7.rst:222
 #: ../../tutorial/tutorial-7.rst:275 ../../tutorial/tutorial-7.rst:313
-#: ../../tutorial/tutorial-7.rst:386 4b93c9663a0f4aefb6dc929a4d9fe382
-#: 7f53804531d9443aa2e99cf2881c5777 ae40d690a1d84630a4a123df7d995615
-#: d4de3d01aaca4d7e85e03dd1c52062b2 e159a30ae22c4c559f070411a7f1ad45
+#: ../../tutorial/tutorial-7.rst:386 068eacdb99314085bafb22f0b2f5af46
+#: 0d4bf7484d704c1a8679ec7ab9183782 5c119af55f834110a785c5dd1e5fad79
+#: 7db8b2b6bbf148c297e4e7acaa6e44a0 aba05c2e245a41f1b5124f085ce00121
 #, fuzzy
 msgid "Update the code in the packaged app:"
 msgstr "Aggiornare il codice dell'applicazione confezionata:"
 
 #: ../../tutorial/tutorial-7.rst:195 ../../tutorial/tutorial-7.rst:233
 #: ../../tutorial/tutorial-7.rst:286 ../../tutorial/tutorial-7.rst:324
-#: ../../tutorial/tutorial-7.rst:397 19e8ff1d61ca4b0ea1a5dbc419cb1634
-#: 34615439d84f4881b812953c9e755e87 86f9be0c3bf34027ac0074b71be3b772
-#: eb9060ee3e594762b42f1780e84e8544 fbab795fe7a84c47bbea0b8aaef2b279
+#: ../../tutorial/tutorial-7.rst:397 115baaa4d31b48da9b118ea65eea75bf
+#: 177df58077d84265bfaa170c215c9a12 500e96a751b5496c9f2525665a52b0ea
+#: 7ba588aec4874d598dedfadaae0b7625 e951cabd1ce64b37a9c5704f9a05f190
 #, fuzzy
 msgid "Rebuild the app:"
 msgstr "Ricostruire l'applicazione:"
 
 #: ../../tutorial/tutorial-7.rst:204 ../../tutorial/tutorial-7.rst:247
-#: ../../tutorial/tutorial-7.rst:295 792c16457d4d40df82a079548325a2b5
-#: ecbc7a5b081a4f76a6396bf55fbe0291 edce7363527449df828375693e8e43cc
+#: ../../tutorial/tutorial-7.rst:295 684faa37c7ea4e3e9373b68ebf36a790
+#: d30fe7351ab848c39e0f6e9f9439a141 d5355cea8a584218bcee1ec69df23f75
 #, fuzzy
 msgid "And finally, run the app:"
 msgstr "Infine, eseguire l'applicazione:"
 
 #: ../../tutorial/tutorial-7.rst:213 ../../tutorial/tutorial-7.rst:304
-#: 4464eb67d5f74a2483b1f6e1fca90169 e400ed97238843a99bfe3dc59d8b6041
+#: 3f167e15c8a541319e911c90d586b403 d67348bc14e34dbea8dffafbc7640155
 #, fuzzy
 msgid "However, when the app runs, you'll see an error in the console, plus a crash dialog:"
 msgstr "Tuttavia, quando l'applicazione viene eseguita, viene visualizzato un errore nella console e una finestra di dialogo di arresto anomalo:"
 
-#: ../../tutorial/tutorial-7.rst:216 8c84b05786fd43de945b34fd41033c67
+#: ../../tutorial/tutorial-7.rst:216 edf2a1c2a614454c8815a5283a153fa9
 #, fuzzy
 msgid "Hello World Tutorial 7 app crash, on macOS"
 msgstr "Arresto anomalo dell'applicazione Hello World Tutorial 7, su macOS"
 
 #: ../../tutorial/tutorial-7.rst:256 ../../tutorial/tutorial-7.rst:343
-#: 8af9dd6bfa174ce0ba5d22b06802cc5a ad1eeef902ee4e96a6dff63ecfb3aca3
+#: 98c800f0f93b46ccac4ec6ee7f9940c8 f0a898ac892f4e22abc0498fe480d281
 #, fuzzy
 msgid "However, when the app runs, you'll see an error in the console:"
 msgstr "Tuttavia, quando l'applicazione viene eseguita, viene visualizzato un errore nella console:"
 
-#: ../../tutorial/tutorial-7.rst:307 7323dd139bd241639db0f3acd8548777
+#: ../../tutorial/tutorial-7.rst:307 9fa5649fa35540d5ae6aeab5a59fb634
 #, fuzzy
 msgid "Hello World Tutorial 7 app crash, on Windows"
 msgstr "Arresto anomalo dell'applicazione Hello World Tutorial 7, su Windows"
 
 #: ../../tutorial/tutorial-7.rst:334 ../../tutorial/tutorial-7.rst:407
-#: 3b44fa97bfdf4715bfa7c34fe3b188d4 63861b9e933e435ebb1f4a6dbf8e1c8e
+#: 2e05be3da4be4a519aae116274347985 5875895b50bd40268c488fb7884aae93
 msgid "And finally, run the app (selecting a simulator when prompted):"
 msgstr ""
 
-#: ../../tutorial/tutorial-7.rst:417 27cac7706e77470db7db61942c7960d3
+#: ../../tutorial/tutorial-7.rst:417 e3575e5622f340479e9117e7563dec33
 #, fuzzy
 msgid "However, when the app runs, you'll see an error in the console"
 msgstr "Tuttavia, quando l'applicazione viene eseguita, viene visualizzato un errore nella console:"
 
-#: ../../tutorial/tutorial-7.rst:430 6e056ef724da4995a880450ccda0aae8
+#: ../../tutorial/tutorial-7.rst:430 3f607052ff474463813eb262448ecacf
 #, fuzzy
 msgid "Once again, the app has failed to start because ``faker`` has not been installed - but why? Haven't we already installed ``faker``?"
 msgstr "Ancora una volta, l'applicazione non è riuscita ad avviarsi perché ``httpx`` è stato installato - ma perché? Non abbiamo già installato ``httpx``?"
 
-#: ../../tutorial/tutorial-7.rst:433 bc51cfd16c56453d959d800971ac2faa
+#: ../../tutorial/tutorial-7.rst:433 722edc3b688d4be984e6664aa71af7a3
 #, fuzzy
 msgid "We have - but only in the development environment. Your development environment is entirely local to your machine - and is only enabled when you explicitly activate it. Although Briefcase has a development mode, the main reason you'd use Briefcase is to package up your code so you can give it to someone else."
 msgstr "È così, ma solo nell'ambiente di sviluppo. L'ambiente di sviluppo è interamente locale alla vostra macchina e viene attivato solo quando lo attivate esplicitamente. Anche se Briefcase ha una modalità di sviluppo, il motivo principale per cui si usa Briefcase è per impacchettare il codice in modo da poterlo dare a qualcun altro."
 
-#: ../../tutorial/tutorial-7.rst:438 13cba4fb998d4df699505d2223f53691
+#: ../../tutorial/tutorial-7.rst:438 ff973870d4bc4511a2501c3c26d365f4
 #, fuzzy
 msgid "The only way to guarantee that someone else will have a Python environment that contains everything it needs is to build a completely isolated Python environment. This means there's a completely isolated Python install, and a completely isolated set of dependencies. This is what Briefcase is building when you run ``briefcase build`` - an isolated Python environment. This also explains why ``faker`` isn't installed - it has been installed in your *development* environment, but not in the packaged app."
 msgstr "L'unico modo per garantire che qualcun altro abbia un ambiente Python che contiene tutto ciò di cui ha bisogno è costruire un ambiente Python completamente isolato. Questo significa che c'è un'installazione di Python completamente isolata e un insieme di dipendenze completamente isolato. Questo è ciò che Briefcase costruisce quando si lancia ``briefcase build`` - un ambiente Python isolato. Questo spiega anche perché ``httpx`` non è installato: è stato installato nell'ambiente di *sviluppo*, ma non nell'applicazione confezionata."
 
-#: ../../tutorial/tutorial-7.rst:446 ad29af5896264267b805bbf3729b5613
+#: ../../tutorial/tutorial-7.rst:446 a603a8a91fb345b7b59afb6de0b85958
 #, fuzzy
 msgid "So - we need to tell Briefcase that our app has an external dependency."
 msgstr "Quindi, dobbiamo dire a Briefcase che la nostra applicazione ha una dipendenza esterna."
 
-#: ../../tutorial/tutorial-7.rst:449 739fd8376bfd4e0582626d8e3e071274
+#: ../../tutorial/tutorial-7.rst:449 8b5eb67f4d6643b7891100a8c9e64c56
 #, fuzzy
 msgid "Updating dependencies"
 msgstr "Aggiornamento delle dipendenze"
 
-#: ../../tutorial/tutorial-7.rst:451 90874182ba5c4000a0611165db8e2b86
+#: ../../tutorial/tutorial-7.rst:451 a208dcbc5d0949d88e4d4f824bae1433
 #, fuzzy
 msgid "In the root directory of your app, there is a file named ``pyproject.toml``. This file contains all the app configuration details that you provided when you originally ran ``briefcase new``."
 msgstr "Nella directory principale dell'applicazione, c'è un file chiamato ``pyproject.toml``. Questo file contiene tutti i dettagli di configurazione dell'applicazione forniti al momento dell'esecuzione di ``briefcase new``."
 
-#: ../../tutorial/tutorial-7.rst:455 11d0494a51ba4cb898dae4b33e768efb
+#: ../../tutorial/tutorial-7.rst:455 27ba516553e549b6958b6e34c35e4311
 #, fuzzy
 msgid "``pyproject.toml`` is broken up into sections; one of the sections describes the settings for your app::"
 msgstr "il file ``pyproject.toml`` è suddiviso in sezioni; una delle sezioni descrive le impostazioni per l'applicazione::"
 
-#: ../../tutorial/tutorial-7.rst:466 70658f757e3040d685933dfd865ca681
+#: ../../tutorial/tutorial-7.rst:466 9f5182c059d243e09ba49f1fa7ef1b63
 #, fuzzy
 msgid "The ``requires`` option describes the dependencies of our application. It is a list of strings, specifying libraries (and, optionally, versions) of libraries that you want to be included with your app."
 msgstr "L'opzione ``requires`` descrive le dipendenze della nostra applicazione. Si tratta di un elenco di stringhe, che specificano le librerie (e, opzionalmente, le versioni) delle librerie che si vogliono includere nella propria applicazione."
 
-#: ../../tutorial/tutorial-7.rst:470 5f1be2372ea1443cb8e3d10a862ec14c
+#: ../../tutorial/tutorial-7.rst:470 6f934d7070504fd587b6ed0dff1b36c9
 #, fuzzy
 msgid "Modify the ``requires`` setting so that it reads::"
 msgstr "Modificare l'impostazione ``requires`` in modo che si legga::"
 
-#: ../../tutorial/tutorial-7.rst:476 2ad99b7050234ae3bcac9cda7493c5fe
+#: ../../tutorial/tutorial-7.rst:476 e87b139d6a80437cbfdd186b2467abf7
 #, fuzzy
 msgid "By adding this setting, we're telling Briefcase \"when you build my app, run ``pip install faker`` into the application bundle\". Anything that would be legal input to ``pip install`` can be used here - so, you could specify:"
 msgstr "Aggiungendo questa impostazione, si dice a Briefcase \"quando costruisci la mia applicazione, esegui ``pip install httpx`` nel bundle dell'applicazione\". Qualsiasi cosa che sia un input legale per ``pip install`` può essere usato qui, quindi si può specificare:"
 
-#: ../../tutorial/tutorial-7.rst:480 6f4f4dba1f0442478a8e77ba33f25920
+#: ../../tutorial/tutorial-7.rst:480 18302e1a9fae49ca8d6e0aaf45c651f5
 #, fuzzy
 msgid "A specific library version (e.g., ``\"faker==37.3.0\"``);"
 msgstr "Una versione specifica della libreria (ad esempio, ``\"httpx==0.19.0\"``);"
 
-#: ../../tutorial/tutorial-7.rst:481 c047eb4fbf2f4ebcac108e92518f4d84
+#: ../../tutorial/tutorial-7.rst:481 fb6c9e64af414633b7f9b81d0be8f512
 #, fuzzy
 msgid "A range of library versions (e.g., ``\"faker>=37\"``);"
 msgstr "Un intervallo di versioni della libreria (ad esempio, ``\"httpx>=0.19\"``);"
 
-#: ../../tutorial/tutorial-7.rst:482 336e0bf6d68d4a129d701df7d3212075
+#: ../../tutorial/tutorial-7.rst:482 5473eb2b579e48f5951da00f48df1aa3
 #, fuzzy
 msgid "A path to a git repository (e.g., ``\"git+https://github.com/joke2k/faker/\"``); or"
 msgstr "Un percorso a un repository git (ad esempio, ``git+https://github.com/encode/httpx\"``); oppure"
 
-#: ../../tutorial/tutorial-7.rst:484 c887b54ab19c475794efceafecf41489
+#: ../../tutorial/tutorial-7.rst:484 83c4c457f6844c5f876ea4e870851575
 #, fuzzy
 msgid "A local file path (However - be warned: if you give your code to someone else, this path probably won't exist on their machine!)"
 msgstr "Un percorso di file locale (tuttavia, attenzione: se si dà il codice a qualcun altro, questo percorso probabilmente non esisterà sulla sua macchina)"
 
-#: ../../tutorial/tutorial-7.rst:487 8676b4144b9b4b38a9fcece2db60fe57
+#: ../../tutorial/tutorial-7.rst:487 ee774b49479d446f96609e60ee795e74
 #, fuzzy
 msgid "Further down in ``pyproject.toml``, you'll notice other sections that are operating system dependent, like ``[tool.briefcase.app.helloworld.macOS]`` and ``[tool.briefcase.app.helloworld.windows]``. These sections *also* have a ``requires`` setting. These settings allow you to define additional platform-specific dependencies - so, for example, if you need a platform-specific library to handle some aspect of your app, you can specify that library in the platform-specific ``requires`` section, and that setting will only be used for that platform. You will notice that the ``toga`` libraries are all specified in the platform-specific ``requires`` section - this is because the libraries needed to display a user interface are platform specific."
 msgstr "Più avanti in ``pyproject.toml``, si noteranno altre sezioni che dipendono dal sistema operativo, come ``[tool.briefcase.app.helloworld.macOS]`` e ``[tool.briefcase.app.helloworld.windows]``. Queste sezioni hanno anche un'impostazione ``requires``. Queste impostazioni consentono di definire dipendenze aggiuntive specifiche per la piattaforma; quindi, ad esempio, se si ha bisogno di una libreria specifica per la piattaforma per gestire alcuni aspetti dell'applicazione, si può specificare tale libreria nella sezione ``requires`` specifica per la piattaforma, e tale impostazione sarà utilizzata solo per quella piattaforma. Si noterà che le librerie ``toga`` sono tutte specificate nella sezione ``requires`` specifica della piattaforma, perché le librerie necessarie per visualizzare l'interfaccia utente sono specifiche della piattaforma."
 
-#: ../../tutorial/tutorial-7.rst:498 ac5a44fc7d5a4341823050d2d9c741f1
+#: ../../tutorial/tutorial-7.rst:498 7b1980a6465446399c89796a721874f7
 #, fuzzy
 msgid "In our case, we want ``faker`` to be installed on all platforms, so we use the app-level ``requires`` setting. The app-level dependencies will always be installed; the platform-specific dependencies are installed *in addition* to the app-level ones."
 msgstr "Nel nostro caso, vogliamo che ``httpx`` sia installato su tutte le piattaforme, quindi usiamo l'impostazione ``requires`` a livello di applicazione. Le dipendenze a livello di applicazione saranno sempre installate; le dipendenze specifiche della piattaforma sono installate *in aggiunta* a quelle a livello di applicazione."
 
-#: ../../tutorial/tutorial-7.rst:503 41ce02430ad84a168f95e751b62283f4
+#: ../../tutorial/tutorial-7.rst:503 0ac9b0d0b53146739d5d232ab6a87ddd
 #, fuzzy
 msgid "Now that we've told Briefcase about our additional requirements, we can try packaging our app again. Ensure that you've saved your changes to ``pyproject.toml``, and then update your app again - this time, passing in the ``-r`` flag. This tells Briefcase to update requirements in the packaged app:"
 msgstr "Ora che abbiamo comunicato a Briefcase i nostri requisiti aggiuntivi, possiamo riprovare a pacchettizzare la nostra applicazione. Assicurarsi di aver salvato le modifiche a ``pyproject.toml`` e poi aggiornare di nuovo l'applicazione, questa volta inserendo il flag ``-r``. Questo indica a Briefcase di aggiornare i requisiti nell'applicazione pacchettizzata:"
 
-#: ../../tutorial/tutorial-7.rst:618 70b9b358711042029ba2dd586873f44c
+#: ../../tutorial/tutorial-7.rst:618 a7fd07232d874f2ebb4ba104540812a3
 #, fuzzy
 msgid "Once you've updated, you can run ``briefcase build`` and ``briefcase run`` - and you should see your packaged app, with the new dialog behavior."
 msgstr "Una volta effettuato l'aggiornamento, si può eseguire ``briefcase build`` e ``briefcase run`` e si dovrebbe vedere l'applicazione confezionata, con il nuovo comportamento della finestra di dialogo."
 
-#: ../../tutorial/tutorial-7.rst:623 072c5ec3d5904145a2f859c10b8fbeb9
+#: ../../tutorial/tutorial-7.rst:623 24d71279e77a43688ab764e148f1a8b7
 #, fuzzy
 msgid "The ``-r`` option for updating requirements is also honored by the ``build`` and ``run`` command, so if you want to update, build, and run in one step, you could use ``briefcase run -u -r``."
 msgstr "L'opzione ``-r`` per l'aggiornamento dei requisiti viene rispettata anche dai comandi ``build`` e ``run``, quindi se si vuole aggiornare, compilare ed eseguire in un unico passaggio, si può usare ``briefcase run -u -r``."
 
-#: ../../tutorial/tutorial-7.rst:628 78f3eec6e35f4e62b0a3478b0dd1a2fc
+#: ../../tutorial/tutorial-7.rst:628 1fdc0fd066e8459db8597dfa778611d7
 msgid "Third-Party Python Packages for Mobile and Web"
 msgstr ""
 
-#: ../../tutorial/tutorial-7.rst:630 110c68e2c2d04013af3c1f7c2043027b
+#: ../../tutorial/tutorial-7.rst:630 bc12f310ac76451d898b2278507730b6
 msgid "Faker is just one example of a third-party Python package - a collection of code that isn't part what Python provides out of the box. These third-party packages are most commonly distributed using the `Python Package Index (PyPI) <https://pypi.org>`__, and installed into your local virtual environment. We've been using ``pip`` in this tutorial, but there are other options."
 msgstr ""
 
-#: ../../tutorial/tutorial-7.rst:636 f25ee018580141dbbd2204d9e07af194
+#: ../../tutorial/tutorial-7.rst:636 73f95f63739d4b70ab2846477b8eaadc
 #, fuzzy
 msgid "On desktop platforms (macOS, Windows, Linux), essentially any package on PyPI package can be installed into your virtual environment, or added to your app's requirements. However, when building an app for mobile or web platforms, `your options are slightly limited <https://briefcase.readthedocs.io/en/latest/background/faq.html#can-i-use-third-party-python-packages-in-my-app>`__."
 msgstr "Sulle piattaforme desktop (macOS, Windows, Linux), qualsiasi ``pip`` installabile può essere aggiunto ai requisiti. Sulle piattaforme mobili e web, le opzioni sono leggermente limitate <https://briefcase.readthedocs.io/en/latest/background/faq.html#can-i-use-third-party-python-packages-in-my-app>`__."
 
-#: ../../tutorial/tutorial-7.rst:642 c14529c0a0854d0c975d767b6c13b04d
+#: ../../tutorial/tutorial-7.rst:642 c8f57b1eccd64c1998e7c2b2b6802eb4
 msgid "In short; any *pure Python* package (i.e. any package created from a project written *only* in Python) can be used without difficulty. Some packages, though, are created from projects that contain both Python and other languages (e.g. C, C++, Rust, etc). Code written in those languages needs to be compiled to platform-specific binary modules before it can be used, and those pre-compiled binary modules are only available on specific platforms. Mobile and web platforms have very different requirements than \"standard\" desktop platforms. At this time, most Python packages don't provide pre-compiled binaries for mobile and web platforms."
 msgstr ""
 
-#: ../../tutorial/tutorial-7.rst:652 2c38d402f7ec4ffa8b7ed03aed9eddf0
+#: ../../tutorial/tutorial-7.rst:652 67fec59c2cf646a78948337ef0f83557
 msgid "On PyPI, packages are often provided in a pre-built distribution format called *wheels*. To check whether a package is pure Python, look at the PyPI downloads page for the project. If the wheels provided have a ``-py3-none-any.whl`` suffix (e.g., `Faker <https://pypi.org/project/Faker/37.3.0/#files>`__), then they are pure Python wheels. However, if the wheels have version and platform-specific extensions (e.g., `Pillow <https://pypi.org/project/pillow/11.2.1/#files>`__, which has wheels with suffixes like ``-cp313-cp313-macosx_11_0_arm64.whl`` and ``-cp39-cp39-win_amd64.whl``), then the wheel *contains a binary component*. That package cannot be installed on mobile or web platforms unless a wheel compatible with those platforms has been provided."
 msgstr ""
 
-#: ../../tutorial/tutorial-7.rst:663 a3d4734204564e1880b5f9d6494bbddf
+#: ../../tutorial/tutorial-7.rst:663 1de3dbc8a4184b65afcb0e1421b8d27a
 msgid "At this time, *most* binary packages on PyPI don't provide mobile- or web-compatible wheels. To fill this gap, BeeWare provides binaries for some popular binary modules (including ``numpy``, ``pandas``, and ``cryptography``). These wheels are *not* distributed on PyPI, but Briefcase will install those wheels if they're available."
 msgstr ""
 
-#: ../../tutorial/tutorial-7.rst:669 e390551fe2af4c809cedee9b4bfc6e07
+#: ../../tutorial/tutorial-7.rst:669 ef9e259d327e43088bfcb923d311695b
 #, fuzzy
 msgid "It's *usually* possible to compile binary packages for mobile platforms, but it's not easy to set up -- well outside the scope of an introductory tutorial like this one."
 msgstr "BeeWare può fornire binari per alcuni moduli binari popolari (tra cui ``numpy``, ``pandas`` e ``cryptography``). È *di solito* possibile compilare pacchetti per le piattaforme mobili, ma non è facile da configurare, il che esula dallo scopo di un tutorial introduttivo come questo."
 
-#: ../../tutorial/tutorial-7.rst:674 c1c67a88095e4a2ab82db59a7b22d634
+#: ../../tutorial/tutorial-7.rst:674 1e4ea824bbed486783f2fc905349f5de
 msgid "Next steps"
 msgstr "Prossimi passi"
 
-#: ../../tutorial/tutorial-7.rst:676 ffa250cd4a3c4db6bdc295ddb90d23d1
+#: ../../tutorial/tutorial-7.rst:676 10a37b3ce02744d3803a29b789d0058c
 msgid "We've now got an app that uses a third-party library! In :doc:`Tutorial 8 <tutorial-8>` we'll learn how to ensure our app remains responsive as we add more complex application logic."
 msgstr ""
 
