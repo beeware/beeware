@@ -358,6 +358,13 @@ the app's resources, and then start the app:
 
       [helloworld] Starting app...
 
+.. note::
+
+    If you get a stack trace referencing ``faker`` or ``httpx`` when you run the
+    app, it's possible you missed running your app during step 7 or 8 of the
+    tutorial. Re-run the app, adding the ``-r`` argument to update the app
+    requirements.
+
 When you run the app on iOS or Android, in addition to the icon change, you
 should also notice that the splash screen incorporates the new icon. However,
 the light blue background of the icon looks a little out of place against the
