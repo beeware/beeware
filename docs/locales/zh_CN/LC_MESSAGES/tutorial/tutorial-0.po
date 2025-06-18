@@ -1,17 +1,18 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-09 04:13+0000\n"
-"PO-Revision-Date: 2025-04-21 22:01+0000\n"
+"PO-Revision-Date: 2025-06-18 21:55+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/beeware/tutorial/tutorial-0/zh_Hans/>\n"
 "Language: zh_CN\n"
-"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-0/zh_Hans/>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.12.1\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../tutorial/tutorial-0.rst:3 9587bfc7c6074b9ca2134b5aac25ae99
@@ -73,9 +74,12 @@ msgid "Windows"
 msgstr "Windows"
 
 #: ../../tutorial/tutorial-0.rst:50 65b95e3064f74fed82804b5d198adb1b
-#, fuzzy
 msgid "If you're on Windows, you can get the official installer from `the Python website <https://www.python.org/downloads>`_. You can use any stable version of Python from 3.9 to 3.13. We'd also advise avoiding alphas, betas, and release candidates unless you *really* know what you're doing."
-msgstr "如果您使用的是 Windows，您可以从 `Python 网站 <https://www.python.org/downloads>`_ 获取官方安装程序。您可以使用 Python 3.9 到 3.12 的任何稳定版本 - `Python 3.13 目前不被支持 <https://github.com/beeware/toga/issues/2889>`__。我们还建议避免使用 Alpha、Beta 和候选版本，除非你<b>真的知</b>道自己在做什么。"
+msgstr ""
+"如果您使用的是 Windows，您可以从 `Python 网站 <https://www.python.org/"
+"downloads>`_\\ 获取官方安装程序。您可以使用 Python 3.9 到 3.13 "
+"的任何稳定版本。我们还建议避免使用 Alpha、Beta 和候选版本，除非你\\ *真的*\\ "
+"知道自己在做什么。"
 
 #: ../../tutorial/tutorial-0.rst:55 61f67ef435394e51a122ee3ca6ea1036
 msgid "Alternative Python distributions"
@@ -206,4 +210,3 @@ msgstr "现在我们已经设置好了环境。我们已经准备创建\\ :doc:`
 
 #~ msgid "**Git**, a version control system. This is included with Xcode or the command line developer tools, which you installed above."
 #~ msgstr "*版本控制系统 *Git**。它包含在您安装的 Xcode 或命令行开发工具中。"
-
