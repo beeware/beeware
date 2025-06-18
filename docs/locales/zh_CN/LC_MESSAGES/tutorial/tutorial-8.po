@@ -1,17 +1,18 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-13 17:07+0000\n"
-"PO-Revision-Date: 2025-06-12 02:04+0000\n"
+"PO-Revision-Date: 2025-06-18 21:55+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/beeware/tutorial/tutorial-8/zh_Hans/>\n"
 "Language: zh_CN\n"
-"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-8/zh_Hans/>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.12.1\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../tutorial/tutorial-8.rst:3 097575d9b357410599edbc39ac5b014e
@@ -87,7 +88,7 @@ msgstr ""
 #: ../../tutorial/tutorial-8.rst:93 ../../tutorial/tutorial-8.rst:310
 #: 15e34a6f6ec14a03955b458b04f2b182 42e928d7fc74466f8e6c677b936a1a85
 msgid "macOS"
-msgstr ""
+msgstr "macOS"
 
 #: ../../tutorial/tutorial-8.rst:104 ../../tutorial/tutorial-8.rst:122
 #: ../../tutorial/tutorial-8.rst:140 0bb4f3054d004654bc643bd7b7e4cad1
@@ -102,7 +103,7 @@ msgstr ""
 #: ../../tutorial/tutorial-8.rst:111 ../../tutorial/tutorial-8.rst:316
 #: 4d5207711cbd46d18b5a85dc4058ca58 79e1c9eb27524e168bc091655a943c92
 msgid "Linux"
-msgstr ""
+msgstr "Linux"
 
 #: ../../tutorial/tutorial-8.rst:125 7ccbffd4ebf74fdfb5271060c389a868
 msgid "Hello World Tutorial 8 dialog, on Linux"
@@ -111,7 +112,7 @@ msgstr ""
 #: ../../tutorial/tutorial-8.rst:129 ../../tutorial/tutorial-8.rst:322
 #: 2175d927d8534ee9b15ac97410af026c 6a152eaaa32d45c2a27dfaf5b32bdf04
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: ../../tutorial/tutorial-8.rst:143 45b4f7e6d0034a6e885da4366807cb4f
 msgid "Hello World Tutorial 8 dialog, on Windows"
@@ -356,4 +357,3 @@ msgstr ""
 
 #~ msgid "Lets run our updated app in Briefcase developer mode to check that our change has worked."
 #~ msgstr ""
-
