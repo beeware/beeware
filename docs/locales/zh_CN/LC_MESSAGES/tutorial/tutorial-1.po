@@ -1,17 +1,18 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-09 04:13+0000\n"
-"PO-Revision-Date: 2025-04-21 03:01+0000\n"
+"PO-Revision-Date: 2025-06-18 21:55+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/beeware/tutorial/tutorial-1/zh_Hans/>\n"
 "Language: zh_CN\n"
-"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-1/zh_Hans/>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.12.1\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../tutorial/tutorial-1.rst:3 c44a58bf9af545b9beabcb395dd6bac3
@@ -126,7 +127,12 @@ msgstr "接下来，Briefcase 会生成一个项目骨架供你使用。如果�
 
 #: ../../tutorial/tutorial-1.rst:139 1213e49352894bdc93e285628b1cdeab
 msgid "This skeleton is actually a fully functioning application without adding anything else. The ``src`` folder contains all the code for the application, the ``tests`` folder contains an initial test suite, and the ``pyproject.toml`` file describes how to package the application for distribution. If you open ``pyproject.toml`` in an editor, you'll see the configuration details you just provided to Briefcase."
-msgstr "该骨架实际上是一个功能完备的应用程序，无需添加任何其他内容。``src`` 文件夹包含应用程序的所有代码，``tests`` 文件夹包含初始测试套件，``pyproject.toml``文件描述了如何打包发布应用程序。如果您用编辑器打开 ``pyproject.toml``，就会看到刚才提供给 Briefcase 的配置详细信息。"
+msgstr ""
+"该骨架实际上是一个功能完备的应用程序，无需添加任何其他内容。``src`` "
+"文件夹包含应用程序的所有代码，``tests`` "
+"文件夹包含初始测试套件，``pyproject.toml`` 文件描述了如何打包发布应用程序。"
+"如果您用编辑器打开 ``pyproject.toml``，就会看到刚才提供给 Briefcase "
+"的配置详细信息。"
 
 #: ../../tutorial/tutorial-1.rst:146 bb35eb69b9ad4de29ab9af4c25863e1a
 msgid "Now that we have a stub application, we can use Briefcase to run the application."
@@ -187,4 +193,3 @@ msgstr "现在，我们有了一个在开发者模式下运行的应用程序。
 
 #~ msgid "One of the BeeWare tools is **Briefcase**. Briefcase can be used to package your application for distribution to end users - but it can also be used to bootstrap a new project."
 #~ msgstr "BeeWare 工具之一是 **Briefcase**。Briefcase 可用于打包应用程序，以便分发给最终用户；但它也可用于引导新项目。"
-
