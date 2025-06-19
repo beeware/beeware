@@ -1,17 +1,18 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-13 22:49+0000\n"
-"PO-Revision-Date: 2025-06-12 02:04+0000\n"
+"PO-Revision-Date: 2025-06-20 02:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/beeware/tutorial/tutorial-7/zh_Hans/>\n"
 "Language: zh_CN\n"
-"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-7/zh_Hans/>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.12.1\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../tutorial/tutorial-7.rst:3 580d8b5ae97e4569a0478f8164dd311b
@@ -77,7 +78,7 @@ msgstr "Windows"
 #: 0dc152c92c7049938e54a8d56d46b01a 0e50e55255064cf48311bffcc6ed4567
 #: 2c7d4337d51342b9944fad6e40494400 d514be2319fe4f58bae277b1605d1e52
 msgid "Android"
-msgstr ""
+msgstr "Android"
 
 #: ../../tutorial/tutorial-7.rst:106 ../../tutorial/tutorial-7.rst:164
 #: 06fa474df9c44fe194083d3864d319c9 6e607a591b3a46a2aad6b0c4fa959dc1
@@ -88,9 +89,8 @@ msgstr ""
 #: ../../tutorial/tutorial-7.rst:384 ../../tutorial/tutorial-7.rst:596
 #: 1dee22327bb94a9da51c395ea609cb4d d7503790f16646f1ac00b9d2ea391c87
 #: e5ae9658a3e64a379026f1a9afd659aa f58b9912df1e4f1ca3fdd94df4bb5192
-#, fuzzy
 msgid "iOS"
-msgstr "Windows"
+msgstr "iOS"
 
 #: ../../tutorial/tutorial-7.rst:111 ../../tutorial/tutorial-7.rst:169
 #: 4a25bd30ca024d31867049b76fb697a2 9607737e3e7644e697b08034d013a1c1
@@ -105,9 +105,8 @@ msgstr "发生了什么？我们已经将 ``httpx`` 添加到我们的代码*中
 #: ../../tutorial/tutorial-7.rst:127 ../../tutorial/tutorial-7.rst:141
 #: ../../tutorial/tutorial-7.rst:155 50f31dc110654e7a9aeecde2326c22e4
 #: 73067b6f5be24503b6e15643af6a508f 8484921f80d84b6992bb2175d7ee4ea9
-#, fuzzy
 msgid "When you enter a name and press the button, you should see a dialog that looks something like:"
-msgstr "输入名称并按下按钮后，您会看到一个类似的对话框："
+msgstr "输入名称并按下按钮后，您会看到一个类似如下的对话框："
 
 #: ../../tutorial/tutorial-7.rst:130 00c9ac7a7f4149c1a7849e23540cd629
 #, fuzzy
@@ -366,4 +365,3 @@ msgstr ""
 
 #~ msgid "We've now got an app that uses a third-party library! However, you may have noticed that when you press the button, the app becomes a little unresponsive. Can we do anything to fix this? Turn to :doc:`Tutorial 8 <tutorial-8>` to find out..."
 #~ msgstr "我们现在有了一个使用第三方库的应用程序！不过，您可能已经注意到，当您按下按钮时，应用程序会变得有点反应迟钝。我们能解决这个问题吗？请访问 :doc:`Tutorial 8<tutorial-8>` 了解详情..."
-
