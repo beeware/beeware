@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-13 17:07+0000\n"
-"PO-Revision-Date: 2025-06-18 21:55+0000\n"
+"PO-Revision-Date: 2025-06-20 02:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/tutorial-8/zh_Hans/>\n"
@@ -94,7 +94,7 @@ msgstr "macOS"
 #: ../../tutorial/tutorial-8.rst:140 0bb4f3054d004654bc643bd7b7e4cad1
 #: 37fe5c08fab145f88bc728791f8aa354 ce3374959a8b487cb1a78fe8db12e44d
 msgid "When you enter a name and press the button, you should see a dialog that looks something like:"
-msgstr ""
+msgstr "输入名称并按下按钮后，您会看到一个类似如下的对话框："
 
 #: ../../tutorial/tutorial-8.rst:107 0b045ee48f284e3193f1b25905ede079
 msgid "Hello World Tutorial 8 dialog, on macOS"
@@ -121,7 +121,7 @@ msgstr ""
 #: ../../tutorial/tutorial-8.rst:147 ../../tutorial/tutorial-8.rst:328
 #: 23767d903480410992a50e675499f42d 2998b1158bc6438cbc651211a0e15e38
 msgid "Android"
-msgstr ""
+msgstr "Android"
 
 #: ../../tutorial/tutorial-8.rst:149 a6c26f3612fc43589c1e266fe3e9fcb7
 msgid "You can't run an Android app in developer mode - use the instructions for your chosen desktop platform."
@@ -130,7 +130,7 @@ msgstr ""
 #: ../../tutorial/tutorial-8.rst:152 ../../tutorial/tutorial-8.rst:334
 #: 031e41a8a24a48769f293c866d7f8e8c 6013ef8d07de4dfdb5f4bce57c874008
 msgid "iOS"
-msgstr ""
+msgstr "iOS"
 
 #: ../../tutorial/tutorial-8.rst:154 8598fc7645ff445ca755726e959e640c
 msgid "You can't run an iOS app in developer mode - use the instructions for your chosen desktop platform."
