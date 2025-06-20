@@ -637,7 +637,7 @@ On desktop platforms (macOS, Windows, Linux), essentially any package on PyPI
 package can be installed into your virtual environment, or added to your app's
 requirements. However, when building an app for mobile or web platforms, `your
 options are slightly limited
-<https://briefcase.readthedocs.io/en/latest/background/faq.html#can-i-use-third-party-python-packages-in-my-app>`__.
+<https://briefcase.beeware.org/en/latest/about/faq.html#can-i-use-third-party-python-packages-in-my-app>`__.
 
 In short; any *pure Python* package (i.e. any package created from a project
 written *only* in Python) can be used without difficulty. Some packages, though,
