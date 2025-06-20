@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-09 04:13+0000\n"
-"PO-Revision-Date: 2025-06-12 02:04+0000\n"
+"PO-Revision-Date: 2025-06-21 02:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/tutorial-5/ios/zh_Hans/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.12-dev\n"
+"X-Generator: Weblate 5.13-dev\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../tutorial/tutorial-5/iOS.rst:3 90b66ea2a56043d7b0c05a4370299b65
@@ -59,6 +59,10 @@ msgstr "Hello World 教程 5 窗口，在 iOS 上"
 #: ../../tutorial/tutorial-5/iOS.rst:119 179820b69fa74aa9ac56a4e1d240c4b7
 msgid "While the app is running, you'll see a series of Simulator log output messages in the console. Typing Ctrl+C into the terminal will halt the messages in the console, but it will not close the simulator. This is so you can test new changes without restarting the simulator."
 msgstr ""
+"当应用程序运行时，您会在控制台中看到一系列模拟器输出信息。向命令行中按 Ctrl +"
+" C "
+"会停止控制台中的信息，但不会关闭模拟器。这样，您无需重启模拟器，也能可以继续"
+"测试新更改。"
 
 #: ../../tutorial/tutorial-5/iOS.rst:124 f22a31f829604d01b2cd556cdb1f5905
 msgid "If you know ahead of time which iOS simulator you want to target, you can tell Briefcase to use that simulator by providing a ``-d`` (or ``--device``) option. Using the name of the device you selected when you built your application, run:"
