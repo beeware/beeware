@@ -1,17 +1,18 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-13 17:07+0000\n"
-"PO-Revision-Date: 2024-01-14 01:02+0000\n"
-"Last-Translator: Lancelot Fouillet <lancelot.fouillet@orange.fr>\n"
+"PO-Revision-Date: 2025-06-21 02:01+0000\n"
+"Last-Translator: John <johnzhou721@gmail.com>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/beeware/tutorial/"
+"topics/custom-icons/fr/>\n"
 "Language: fr\n"
-"Language-Team: French <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-10/fr/>\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.13-dev\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../tutorial/topics/custom-icons.rst:3 c1706f393a104fc5b7064c77c2a786c7
@@ -77,7 +78,7 @@ msgstr ""
 #: ../../tutorial/topics/custom-icons.rst:445 4105c780e7b94304a43e025c878f764e
 #: 7c6871b91314434b80756630cdba10b8 9215f58a36dc476492c034dbfa6d7193
 msgid "iOS"
-msgstr ""
+msgstr "iOS"
 
 #: ../../tutorial/topics/custom-icons.rst:160 289e151c4b864343820c468fede21cb7
 msgid "This reports the specific icon file (or files) that Briefcase is expecting. However, as we haven't provided the actual icon files, the install fails, and Briefcase falls back to a default value (the same \"gray bee\" icon)."
@@ -141,4 +142,3 @@ msgstr ""
 
 #~ msgid "Let's provide some actual icons. Download :download:`this icons.zip bundle <../resources/icons.zip>`, and unpack it into the root of your project directory. After unpacking, your project directory should look something like::"
 #~ msgstr ""
-
