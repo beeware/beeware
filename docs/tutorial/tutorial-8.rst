@@ -362,8 +362,8 @@ So - where to from here?
   application development.
 * If you'd like to know more about how to build complex user interfaces with
   Toga, you can dive into `Toga's documentation
-  <https://toga.readthedocs.io>`__. Toga also has it's own tutorial
+  <https://toga.beeware.org>`__. Toga also has it's own tutorial
   `demonstrating how to use various features of the widget toolkit
-  <https://toga.readthedocs.io/en/latest/tutorial/index.html>`__.
+  <https://toga.beeware.org/en/latest/tutorial/index.html>`__.
 * If you'd like to know more about the capabilities of Briefcase, you can dive
-  into `Briefcase's documentation <https://briefcase.readthedocs.io>`__.
+  into `Briefcase's documentation <https://briefcase.beeware.org>`__.

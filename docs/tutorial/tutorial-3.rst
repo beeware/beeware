@@ -411,7 +411,7 @@ or doing other pre-distribution tasks.
 
     When you're ready to publish a real application, check out the Briefcase
     How-To guide on `Setting up a macOS code signing identity
-    <https://briefcase.readthedocs.io/en/latest/how-to/code-signing/macOS.html>`__.
+    <https://briefcase.beeware.org/en/latest/how-to/code-signing/macOS.html>`__.
 
   .. group-tab:: Linux
 
@@ -564,7 +564,7 @@ or doing other pre-distribution tasks.
 
     When you're ready to publish a real application, check out the Briefcase
     How-To guide on `Setting up a Windows code signing identity
-    <https://briefcase.readthedocs.io/en/latest/how-to/code-signing/windows.html>`__.
+    <https://briefcase.beeware.org/en/latest/how-to/code-signing/windows.html>`__.
 
     Once this step completes, the ``dist`` folder will contain a file named
     ``Hello_World-0.0.1.msi``. If you double click on this installer to run it,
