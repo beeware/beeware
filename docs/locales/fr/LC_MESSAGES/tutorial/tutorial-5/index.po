@@ -1,17 +1,18 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-29 08:28+0800\n"
-"PO-Revision-Date: 2024-02-02 22:01+0000\n"
-"Last-Translator: Charles Bousseau <charles.bousseau@gmail.com>\n"
+"PO-Revision-Date: 2025-06-21 02:01+0000\n"
+"Last-Translator: John <johnzhou721@gmail.com>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/beeware/tutorial/"
+"tutorial-5/index/fr/>\n"
 "Language: fr\n"
-"Language-Team: French <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-5/index/fr/>\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.13-dev\n"
 "Generated-By: Babel 2.15.0\n"
 
 #: ../../tutorial/tutorial-5/index.rst:3 8c68ab9c8ff7429ca96e0399e5cad55e
@@ -43,4 +44,3 @@ msgstr "Les applications Android peuvent être compilées sur macOS, Windows ou 
 
 #~ msgid ":doc:`Let's build our app for Android! <android>`"
 #~ msgstr ":doc:`Créons notre application pour Android ! <android>`"
-
