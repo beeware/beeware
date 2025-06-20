@@ -1,17 +1,18 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-20 03:05+0000\n"
-"PO-Revision-Date: 2024-01-14 01:02+0000\n"
-"Last-Translator: Lancelot Fouillet <lancelot.fouillet@orange.fr>\n"
+"PO-Revision-Date: 2025-06-21 02:01+0000\n"
+"Last-Translator: John <johnzhou721@gmail.com>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/beeware/tutorial/"
+"tutorial-7/fr/>\n"
 "Language: fr\n"
-"Language-Team: French <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-7/fr/>\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.13-dev\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../tutorial/tutorial-7.rst:3 c0efd6e2223c47118ab7f50bc1ebe1f9
@@ -93,9 +94,8 @@ msgstr ""
 #: ../../tutorial/tutorial-7.rst:384 ../../tutorial/tutorial-7.rst:596
 #: 86dca11fa3404268b0161ab399752350 88b11beb12b544ba9f678a53f352f6fe
 #: 9daf6fab255f48808586cb9964214894 ea09748bb9b74e91a5f69cd0875688e7
-#, fuzzy
 msgid "iOS"
-msgstr "Windows"
+msgstr "iOS"
 
 #: ../../tutorial/tutorial-7.rst:111 ../../tutorial/tutorial-7.rst:169
 #: 07e386caeee240fbbae03ea6d78213a4 1427661dd642454dacea01d69a9b1766
@@ -372,4 +372,3 @@ msgstr ""
 
 #~ msgid "We've now got an app that uses a third-party library! However, you may have noticed that when you press the button, the app becomes a little unresponsive. Can we do anything to fix this? Turn to :doc:`Tutorial 8 <tutorial-8>` to find out..."
 #~ msgstr "Nous avons maintenant une application qui utilise une bibliothèque tierce ! Cependant, vous avez peut-être remarqué que lorsque vous appuyez sur le bouton, l'application ne répond plus vraiment. Pouvons-nous faire quelque chose pour résoudre ce problème ? Consultez :doc:`Tutoriel 8 <tutorial-8>` pour le savoir..."
-
