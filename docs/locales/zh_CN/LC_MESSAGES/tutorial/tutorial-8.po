@@ -1,17 +1,18 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-20 03:05+0000\n"
-"PO-Revision-Date: 2025-06-20 02:01+0000\n"
+"PO-Revision-Date: 2025-06-21 08:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/beeware/tutorial/tutorial-8/zh_Hans/>\n"
 "Language: zh_CN\n"
-"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-8/zh_Hans/>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.13-dev\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../tutorial/tutorial-8.rst:3 b1689e63416f4e61aba215b32db4991e
@@ -21,6 +22,9 @@ msgstr "教程 8 - 使其光滑"
 #: ../../tutorial/tutorial-8.rst:5 60ce8689055e4505b9dfff38a93aedb0
 msgid "So far, our application has been relatively simple - displaying GUI widgets, calling a simple third-party library, and displaying output in a dialog. All these operations happen very quickly, and our application remains responsive."
 msgstr ""
+"到目前为止，我们的应用程序相对简单——显示图形用户界面小组件、调用一个简单的第"
+"三方库，以及在对话框中显示输出。所有这些操作都非常迅速，我们的应用程序始终保"
+"持响应。"
 
 #: ../../tutorial/tutorial-8.rst:9 def48992065e45a9a6c9c713af3bdeb9
 msgid "However, in a real world application, we'll need to perform complex tasks or calculations that may take a while to complete - and as those tasks are performed, we want our application to remain responsive. Let's make a change to our application that might take a little time to complete, and see the changes that need to be made to accommodate that behavior."
@@ -362,4 +366,3 @@ msgstr ""
 
 #~ msgid "If you'd like to know more about the capabilities of Briefcase, you can dive into `Briefcase's documentation <https://briefcase.readthedocs.io>`__."
 #~ msgstr ""
-
