@@ -103,7 +103,7 @@ Next, install the additional dependencies needed for your operating system:
     ..
       The package list should be the same as in ci.yml and unix-prerequisites.rst in the
       Toga repository. You may need to install libgirepository-2.0-dev (note the extra 
-      hyphen!) if you're on a more recent version of these distros.
+      hyphen!) if you're on a more recent version of these Linux distributions.
 
     .. code-block:: console
 
