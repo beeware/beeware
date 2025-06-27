@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-20 03:05+0000\n"
-"PO-Revision-Date: 2025-06-21 08:01+0000\n"
+"PO-Revision-Date: 2025-06-28 04:03+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/tutorial-8/zh_Hans/>\n"
@@ -29,6 +29,9 @@ msgstr ""
 #: ../../tutorial/tutorial-8.rst:9 def48992065e45a9a6c9c713af3bdeb9
 msgid "However, in a real world application, we'll need to perform complex tasks or calculations that may take a while to complete - and as those tasks are performed, we want our application to remain responsive. Let's make a change to our application that might take a little time to complete, and see the changes that need to be made to accommodate that behavior."
 msgstr ""
+"但是，在实际的应用中，我们将需要进行会需要一会儿才能完成的复杂任务。当这些任"
+"务进行时，我们想让我们的应用保持响应。让我们更改我们的应用程序，添加一个需要"
+"一些时间才能完成的任务，并看看需要怎样更改应用程序，适应这个新的行为。"
 
 #: ../../tutorial/tutorial-8.rst:16 59ff29e32c51447cb20994c95cfa3358
 msgid "Accessing an API"
