@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-20 03:05+0000\n"
-"PO-Revision-Date: 2025-06-28 04:03+0000\n"
+"PO-Revision-Date: 2025-07-04 18:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/tutorial-8/zh_Hans/>\n"
@@ -35,7 +35,7 @@ msgstr ""
 
 #: ../../tutorial/tutorial-8.rst:16 59ff29e32c51447cb20994c95cfa3358
 msgid "Accessing an API"
-msgstr ""
+msgstr "访问 API"
 
 #: ../../tutorial/tutorial-8.rst:18 6be29a72db2a479eb50033faedb95d58
 msgid "A common time-consuming task an app will need to perform is to make a request on a web API to retrieve data, and display that data to the user. Web APIs sometimes take a second or two to respond, so if we're calling an API like that, we need to ensure our application doesn't become unresponsive while we wait for the web API to return an answer."
