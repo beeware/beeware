@@ -1,17 +1,18 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-13 17:07+0000\n"
-"PO-Revision-Date: 2025-06-07 05:01+0000\n"
+"PO-Revision-Date: 2025-07-04 18:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/beeware/tutorial/topics/custom-icons/zh_Hans/>\n"
 "Language: zh_CN\n"
-"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/projects/beeware/tutorial/topics/custom-icons/zh_Hans/>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.13-dev\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../tutorial/topics/custom-icons.rst:3 c1706f393a104fc5b7064c77c2a786c7
@@ -29,6 +30,10 @@ msgstr "添加图标"
 #: ../../tutorial/topics/custom-icons.rst:12 679ee0722c9342c58135f80218712cb8
 msgid "Every platform uses a different format for application icons - and some platforms need *multiple* icons in different sizes and shapes. To account for this, Briefcase provides a shorthand way to configure an icon once, and then have that definition expand in to all the different icons needed for each individual platform."
 msgstr ""
+"每个平台都是用不同的应用程序图标格式 -- 有些还需要\\ *多个*\\ "
+"不同大小和形状的。为此考虑，Briefcase "
+"提供了一种简短的方法，可以配置一次图标，并让这种定义扩充到每个单个平台的所有"
+"所需要的图标。"
 
 #: ../../tutorial/topics/custom-icons.rst:18 2e22724576fa40658356df542c042208
 msgid "Edit your ``pyproject.toml``, adding a new ``icon`` configuration item in the ``[tool.briefcase.app.helloworld]`` configuration section, just above the ``sources`` definition::"
@@ -139,4 +144,3 @@ msgstr ""
 
 #~ msgid "Let's provide some actual icons. Download :download:`this icons.zip bundle <../resources/icons.zip>`, and unpack it into the root of your project directory. After unpacking, your project directory should look something like::"
 #~ msgstr ""
-
