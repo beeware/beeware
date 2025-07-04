@@ -30,7 +30,7 @@ msgstr "添加图标"
 #: ../../tutorial/topics/custom-icons.rst:12 679ee0722c9342c58135f80218712cb8
 msgid "Every platform uses a different format for application icons - and some platforms need *multiple* icons in different sizes and shapes. To account for this, Briefcase provides a shorthand way to configure an icon once, and then have that definition expand in to all the different icons needed for each individual platform."
 msgstr ""
-"每个平台都是用不同的应用程序图标格式 -- 有些还需要\\ *多个*\\ "
+"每个平台都使用不同的应用程序图标格式 -- 有些还需要\\ *多个*\\ "
 "不同大小和形状的。为此考虑，Briefcase "
 "提供了一种简短的方法，可以配置一次图标，并让这种定义扩充到每个单个平台的所有"
 "所需要的图标。"
