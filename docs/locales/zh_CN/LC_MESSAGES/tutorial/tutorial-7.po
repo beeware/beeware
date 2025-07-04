@@ -29,7 +29,7 @@ msgstr "让我们修改应用程序，加入第三方库。"
 
 #: ../../tutorial/tutorial-7.rst:12 09205e98844947a2a37eeb00a34a6610
 msgid "Adding a package"
-msgstr "ti a jia"
+msgstr "添加软件包"
 
 #: ../../tutorial/tutorial-7.rst:14 dc4188b519dd4e0e90c1e23f690410bd
 msgid "Let's modify our application to say a little bit more than just \"Hi, there!\"."
