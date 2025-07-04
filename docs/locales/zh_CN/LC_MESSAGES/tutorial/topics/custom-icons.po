@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-13 17:07+0000\n"
-"PO-Revision-Date: 2025-07-04 18:01+0000\n"
+"PO-Revision-Date: 2025-07-05 02:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/topics/custom-icons/zh_Hans/>\n"
@@ -38,6 +38,8 @@ msgstr ""
 #: ../../tutorial/topics/custom-icons.rst:18 2e22724576fa40658356df542c042208
 msgid "Edit your ``pyproject.toml``, adding a new ``icon`` configuration item in the ``[tool.briefcase.app.helloworld]`` configuration section, just above the ``sources`` definition::"
 msgstr ""
+"编辑您的 ``project.toml``，在 ``[tool.briefcase.app.helloworld]`` "
+"配置部分中，在 ``sources`` 的正上方添加一个 ``icon`` 配置项::"
 
 #: ../../tutorial/topics/custom-icons.rst:24 aa6015f5a4c642808f44a94873ba7f84
 msgid "This icon definition doesn't specify any file extension. The value will be used as a prefix; each platform will add additional items to this prefix to build the files needed for each platform. Some platforms require *multiple* icon files; this prefix will be combined with file size and variant modifiers to generate the list of icon files that are used."
