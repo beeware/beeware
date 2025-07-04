@@ -1,17 +1,18 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-20 03:05+0000\n"
-"PO-Revision-Date: 2025-06-20 02:01+0000\n"
+"PO-Revision-Date: 2025-07-04 18:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/beeware/tutorial/tutorial-7/zh_Hans/>\n"
 "Language: zh_CN\n"
-"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-7/zh_Hans/>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.13-dev\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../tutorial/tutorial-7.rst:3 c0efd6e2223c47118ab7f50bc1ebe1f9
@@ -28,7 +29,7 @@ msgstr "让我们修改应用程序，加入第三方库。"
 
 #: ../../tutorial/tutorial-7.rst:12 09205e98844947a2a37eeb00a34a6610
 msgid "Adding a package"
-msgstr ""
+msgstr "ti a jia"
 
 #: ../../tutorial/tutorial-7.rst:14 dc4188b519dd4e0e90c1e23f690410bd
 msgid "Let's modify our application to say a little bit more than just \"Hi, there!\"."
@@ -364,4 +365,3 @@ msgstr ""
 
 #~ msgid "We've now got an app that uses a third-party library! However, you may have noticed that when you press the button, the app becomes a little unresponsive. Can we do anything to fix this? Turn to :doc:`Tutorial 8 <tutorial-8>` to find out..."
 #~ msgstr "我们现在有了一个使用第三方库的应用程序！不过，您可能已经注意到，当您按下按钮时，应用程序会变得有点反应迟钝。我们能解决这个问题吗？请访问 :doc:`Tutorial 8<tutorial-8>` 了解详情..."
-
