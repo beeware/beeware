@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-09 04:13+0000\n"
-"PO-Revision-Date: 2025-06-21 08:01+0000\n"
+"PO-Revision-Date: 2025-07-05 02:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/topics/camera-access/zh_Hans/>\n"
@@ -42,6 +42,8 @@ msgstr "遗憾的是，目前本教程仅适用于 macOS 系统和 Android。"
 #: ../../tutorial/topics/camera-access.rst:15 f3eafc54dcc845c3ad3a9ea740b88a96
 msgid "Although iPhones all have cameras, the iOS *Simulator* doesn't have a working camera. Windows and Linux devices also have cameras, but Toga doesn't currently have the ability to access the camera on these platforms."
 msgstr ""
+"虽然所有 iPhone 都有摄像头，iOS *虚拟机*\\ 没有正常工作的摄像头。Windows 与 "
+"Linux 设备也有摄像头，但 Toga 目前不提供在这些平台上访问摄像头的能力。"
 
 #: ../../tutorial/topics/camera-access.rst:19 c6ee5410f2bb40d69e4cd68cf6121c93
 msgid "The code presented here will *run* on Windows or Linux; but it will raise an error when you try to take a photograph."
