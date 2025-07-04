@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-20 03:05+0000\n"
-"PO-Revision-Date: 2025-07-04 18:01+0000\n"
+"PO-Revision-Date: 2025-07-05 02:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/tutorial-8/zh_Hans/>\n"
@@ -40,6 +40,10 @@ msgstr "访问 API"
 #: ../../tutorial/tutorial-8.rst:18 6be29a72db2a479eb50033faedb95d58
 msgid "A common time-consuming task an app will need to perform is to make a request on a web API to retrieve data, and display that data to the user. Web APIs sometimes take a second or two to respond, so if we're calling an API like that, we need to ensure our application doesn't become unresponsive while we wait for the web API to return an answer."
 msgstr ""
+"应用程序需要进行的一个常见的耗时任务时在一个网络 API "
+"上请求取回数据，并将数据显示给用户。网络 API 有时需要一两秒才能回应，"
+"所以如果我们将要访问这种 API，我们需要确保我们的应用在等待网络 API "
+"返回答案时保持响应。"
 
 #: ../../tutorial/tutorial-8.rst:24 acb20408415546809557dfd20d2d8170
 #, python-brace-format
