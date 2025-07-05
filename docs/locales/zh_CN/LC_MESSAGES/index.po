@@ -66,7 +66,7 @@ msgstr "BeeWare 并不是一个单独的产品、工具或库 (library)，它是
 
 #: ../../index.rst:58 c03bd53b4ba9463e854480e877a746aa
 msgid "`Toga <https://toga.beeware.org>`__, a cross platform widget toolkit;"
-msgstr "`Toga <https://toga.beeware.org>`__，一个跨平台小组件工具包;"
+msgstr "`Toga <https://toga.beeware.org>`__，一个跨平台控件工具包;"
 
 #: ../../index.rst:59 44e83bc950414e5ca928ae7565100599
 #, fuzzy
