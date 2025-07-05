@@ -1,17 +1,18 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-09 04:13+0000\n"
-"PO-Revision-Date: 2025-05-31 06:01+0000\n"
+"PO-Revision-Date: 2025-07-05 15:27+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/beeware/tutorial/tutorial-2/zh_Hans/>\n"
 "Language: zh_CN\n"
-"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-2/zh_Hans/>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.13-dev\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../tutorial/tutorial-2.rst:3 2e1be6a8aa08484fb6e79eb40a1af561
@@ -61,7 +62,9 @@ msgstr "让我们逐行查看::"
 
 #: ../../tutorial/tutorial-2.rst:57 f5ddb2b7e7b844a69c517fd33d19a19d
 msgid "First, we import the ``toga`` widget toolkit, as well as some style-related utility constants. Our code doesn't use these yet - but we'll make use of them shortly."
-msgstr "首先，我们导入 ``toga`` 小部件工具包，以及一些与样式相关的实用常量。目前我们的代码还没有使用这些——但我们很快就会用到它们。"
+msgstr "首先，我们导入 ``toga`` "
+"控件工具包，以及一些与样式相关的实用常量。目前我们的代码还没有使用这些——但我"
+"们很快就会用到它们。"
 
 #: ../../tutorial/tutorial-2.rst:61 a3f7bf04b0ac4a81951a5ed777d42987
 msgid "Then, we define a class::"
@@ -77,7 +80,11 @@ msgstr "接下来，我们定义一个 ``startup()`` 方法 (startup意为启动
 
 #: ../../tutorial/tutorial-2.rst:74 43ade04c31ae40fda6b416406baab307
 msgid "The first thing the startup method does is to define a main box. Toga's layout scheme behaves similar to HTML. You build an application by constructing a collection of boxes, each of which contains other boxes, or actual widgets. You then apply styles to these boxes to define how they will consume the available window space."
-msgstr "startup 方法的第一件事是定义一个主盒子 (main box)。Toga 的布局方案类似于 HTML。你通过构造一系列盒子 (box) 来构建应用程序，每个盒子包含其他盒子或实际的小部件 (widgets)。然后，你对这些盒子应用样式 (styles)，以定义它们将如何消耗可用的窗口空间 (window space)。"
+msgstr ""
+"startup 方法的第一件事是定义一个主盒子 (main box)。Toga 的布局方案类似于 "
+"HTML。你通过构造一系列盒子 (box) 来构建应用程序，"
+"每个盒子包含其他盒子或实际的控件 (widgets)。然后，你对这些盒子应用样式 "
+"(styles)，以定义它们将如何消耗可用的窗口空间 (window space)。"
 
 #: ../../tutorial/tutorial-2.rst:80 a0e8f55b28d04de98074f7fb4227a269
 msgid "In this application, we define a single box, but we don't put anything into it."
@@ -141,7 +148,14 @@ msgstr "我们仍然在创建一个主盒子；然而，现在我们正在应用
 
 #: ../../tutorial/tutorial-2.rst:169 69a49e9c77ee4dc29cbbab0929842838
 msgid "Toga's built-in layout system is called \"Pack\". It behaves a lot like CSS. You define objects in a hierarchy - in HTML, the objects are ``<div>``, ``<span>``, and other DOM elements; in Toga, they're widgets and boxes. You can then assign styles to the individual elements. In this case, we're indicating that this is a ``COLUMN`` box - that is, it is a box that will consume all the available width, and will expand its height as content is added, but it will try to be as short as possible."
-msgstr "Toga 的内置布局系统称为 \"Pack\" (包)。它的行为很像 CSS (Cascading Style Sheets 层叠样式表)。你可以在一个层次结构中定义对象--在 HTML 中，对象是 ``<div>`` (division 块级容器)、``<span>`` (inline span 内联容器) 和其他 DOM (Document Object Model 文档对象模型) 元素；在 Toga 中，对象是部件 (widgets ) 和盒子 (boxes)。然后，您可以为各个元素指定样式。在本例中，我们表示这是一个 ``COLUMN`` (垂直) 框，也就是说，它是一个将占用所有可用宽度 (width) 的框，并会随着内容的添加而扩大高度 (height)，但会尽量使高度更短。"
+msgstr ""
+"Toga 的内置布局系统称为 \"Pack\" (包)。它的行为很像 CSS (Cascading Style "
+"Sheets 层叠样式表)。你可以在一个层次结构中定义对象--在 HTML 中，对象是 "
+"``<div>`` (division 块级容器)、``<span>`` (inline span 内联容器) 和其他 DOM ("
+"Document Object Model 文档对象模型) 元素；在 Toga 中，对象是控件 (widgets ) "
+"和盒子 (boxes)。然后，您可以为各个元素指定样式。在本例中，我们表示这是一个 "
+"``COLUMN`` (垂直) 框，也就是说，它是一个将占用所有可用宽度 (width) 的框，"
+"并会随着内容的添加而扩大高度 (height)，但会尽量使高度更短。"
 
 #: ../../tutorial/tutorial-2.rst:178 e4c4909f5fc74238b79131c26ff237e1
 msgid "For more advanced uses, Toga also supports a separate style object, which is used like this::"
@@ -149,19 +163,24 @@ msgstr "对于更高级的使用，Toga 也支持可以被这样使用的单独�
 
 #: ../../tutorial/tutorial-2.rst:184 e23e0c1845b74ae7a43b340944dd39d7
 msgid "Next, we define a couple of widgets::"
-msgstr "接下来，我们定义了一些小部件::"
+msgstr "接下来，我们定义了一些控件::"
 
 #: ../../tutorial/tutorial-2.rst:192 c3ba79ba67d5456b874ec417701b6d56
 msgid "Here, we define a Label and a TextInput. Both widgets have styles associated with them; the label will have 5px of margin on its left and right, and no margin on the top and bottom. The TextInput is marked as being flexible - that is, it will absorb all available space in its layout axis."
-msgstr "在这里，我们定义了一个标签 (Label) 和一个文本输入框 (TextInput)。这两个小部件都有与其相关的样式；标签左右会各有 5px 的填充，上下没有填充。文本输入框是被标记为灵活的——也就是说，它将吸收其布局方向上所有可用的空间。"
+msgstr ""
+"在这里，我们定义了一个标签 (Label) 和一个文本输入框 "
+"(TextInput)。这两个控件都有与其相关的样式；标签左右会各有 5px "
+"的填充，上下没有填充。文本输入框是被标记为灵活的——也就是说，它将吸收其布局方"
+"向上所有可用的空间。"
 
 #: ../../tutorial/tutorial-2.rst:197 c76e44e91a204cad98cc517be7a1bbca
 msgid "The TextInput is assigned as an instance variable of the class. This gives us easy access to the widget instance - something that we'll use in a moment."
-msgstr "文本输入框 (TextInput) 被分配为类的实例变量。这使我们能够轻松访问小部件 (widget) 实例 - 这是我们马上就会使用的东西。"
+msgstr "文本输入框 (TextInput) 被分配为类的实例变量。这使我们能够轻松访问控件 "
+"(widget) 实例 - 这是我们马上就会使用的东西。"
 
 #: ../../tutorial/tutorial-2.rst:200 6e70c51a7f9f497eb6a5a81880b6fc3c
 msgid "Next, we define a box to hold these two widgets::"
-msgstr "接下来，我们定义了一个盒子来容纳这两个小部件::"
+msgstr "接下来，我们定义了一个盒子来容纳这两个控件::"
 
 #: ../../tutorial/tutorial-2.rst:206 1e0ddb95c1864299a5d8162142d91775
 msgid "The ``name_box`` is a box just like the main box; however, this time, it's a ``ROW`` box. That means content will be added horizontally, and it will try to make its width as narrow as possible. The box also has some margin - 5px on all sides."
@@ -185,7 +204,10 @@ msgstr "这完成了我们的布局；其余的 startup 方法与以前一样 - 
 
 #: ../../tutorial/tutorial-2.rst:235 8c1a144159f04ec19a19723dbb6bd3b1
 msgid "The last thing we need to do is define the handler for the button. A handler can be any method, generator, or asynchronous coroutine; it accepts the widget that generated the event as an argument, and will be invoked whenever the button is pressed::"
-msgstr "我们需要做的最后一件事，就是定义按钮的处理器(handler)——它可以是任何方法、生成器或异步协程，且接受生成事件的小部件 (widget) 作为参数。只要按下按钮，就会调用这些处理器::"
+msgstr ""
+"我们需要做的最后一件事，就是定义按钮的处理器(handler)——它可以是任何方法、生成"
+"器或异步协程，且接受生成事件的控件 (widget) "
+"作为参数。只要按下按钮，就会调用这些处理器::"
 
 #: ../../tutorial/tutorial-2.rst:243 a1fd82f2333b49d59252dd01f4a74dba
 msgid "The body of the method is a simple print statement - however, it will interrogate the current value of the name input, and use that content as the text that is printed."
@@ -246,4 +268,3 @@ msgstr "下一步"
 #: ../../tutorial/tutorial-2.rst:318 ba0ec44e64454c669fcc71b8c65c9cf0
 msgid "We've now got an application that does something a little more interesting. But it only runs on our own computer. Let's package this application for distribution. In :doc:`Tutorial 3 <tutorial-3>`, we'll wrap our application up as a standalone installer that we could send to a friend, a customer, or upload to an App Store."
 msgstr "我们现在有了一个做一些更有趣的事情的应用程序，但它只能在我们自己的电脑上运行。让我们将这个应用程序打包，以供分发。在 :doc:`教程3<tutorial-3>` 中，我们将把应用程序打包成一个独立的安装程序，以供发送给朋友、客户，或上传到应用商店。"
-
