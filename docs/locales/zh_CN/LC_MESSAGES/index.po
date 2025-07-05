@@ -1,17 +1,18 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-20 03:05+0000\n"
-"PO-Revision-Date: 2025-06-18 21:55+0000\n"
+"PO-Revision-Date: 2025-07-05 15:27+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/beeware/tutorial/index/zh_Hans/>\n"
 "Language: zh_CN\n"
-"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/projects/beeware/tutorial/index/zh_Hans/>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.13-dev\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../index.rst:3 91ca5ec3f82c43b2b525a7c87eb29661
@@ -64,9 +65,8 @@ msgid "BeeWare is not a single product, or tool, or library - it's a collection 
 msgstr "BeeWare 并不是一个单独的产品、工具或库 (library)，它是一系列工具和库的集合：每个工具和库都能协同工作，帮助您编写跨平台、具有本地图形用户界面的 Python 应用程序。它包括:"
 
 #: ../../index.rst:58 c03bd53b4ba9463e854480e877a746aa
-#, fuzzy
 msgid "`Toga <https://toga.beeware.org>`__, a cross platform widget toolkit;"
-msgstr "`Toga <https://toga.readthedocs.io>`__，一个跨平台的 widget (小部件、控件) 工具包;"
+msgstr "`Toga <https://toga.beeware.org>`__，一个跨平台小组件工具包;"
 
 #: ../../index.rst:59 44e83bc950414e5ca928ae7565100599
 #, fuzzy
@@ -97,4 +97,3 @@ msgstr "让我们开始吧！"
 #: ../../index.rst:77 b0756187de7d422f947926efc39265ad
 msgid "Ready to try BeeWare for yourself? :doc:`Let's build a cross platform application in Python! <tutorial/tutorial-0>`"
 msgstr "准备好亲身体验 BeeWare 了吗？:doc:`让我们用 Python 构建一个跨平台应用程序！ <tutorial/tutorial-0>`"
-
