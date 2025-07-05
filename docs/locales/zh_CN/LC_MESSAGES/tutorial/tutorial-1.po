@@ -88,10 +88,10 @@ msgstr "**App Name** - 接受默认值：``helloworld``。"
 #: ../../tutorial/tutorial-1.rst:85 695f3b927c3842be8ce9829ba5a5850b
 msgid "**Bundle Identifier** - If you own your own domain, enter that domain in reversed order. (For example, if you own the domain \"cupcakes.com\", enter ``com.cupcakes`` as the bundle). If you don't own your own domain, accept the default bundle (``com.example``)."
 msgstr ""
-"**Bundle Identifier（）** - "
+"**Bundle Identifier（捆绑标识符）** - "
 "如果您拥有自己的域名，请按相反顺序输入该域名。(例如，如果您拥有域名 "
-"\"cupcakes.com\"，则输入 ``com.cupcakes`` 作为 "
-"Bundle）。如果您没有自己的域名，请接受默认的 Bundle（``com.example``）。"
+"\"cupcakes.com\"，则输入 ``com.cupcakes`` "
+"作为捆绑标识符）。如果您没有自己的域名，请接受默认值（``com.example``）。"
 
 #: ../../tutorial/tutorial-1.rst:90 aa02b1482cef4302b697076eb4c64d18
 msgid "**Project Name** - Accept the default value: ``Hello World``."
