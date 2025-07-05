@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-06 18:04+0800\n"
-"PO-Revision-Date: 2025-06-05 06:01+0000\n"
+"PO-Revision-Date: 2025-07-05 15:27+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/tutorial-6/zh_Hans/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.12-dev\n"
+"X-Generator: Weblate 5.13-dev\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../tutorial/tutorial-6.rst:3 2a532cc3806d417fa3be690ab757a4b2
@@ -22,8 +22,8 @@ msgstr "教程 6 - 把它放上网！"
 #: ../../tutorial/tutorial-6.rst:5 63bdab949d54413bbda05a5c366ce19b
 msgid "In addition to supporting mobile platforms, the Toga widget toolkit also supports the web! Using the same API that you used to deploy your desktop and mobile applications, you can deploy your application as a single-page web app."
 msgstr "除了支持移动平台，Toga "
-"小组件工具包还支持网络！使用与部署桌面和移动应用程序相同的应用程序接口，您可"
-"以将应用程序部署为单页网页应用程序。"
+"控件工具包还支持网络！使用与部署桌面和移动应用程序相同的应用程序接口，您可以"
+"将应用程序部署为单页网页应用程序。"
 
 #: ../../tutorial/tutorial-6.rst:9 1af5ed570dab4ac9bd5e0f7c920e62a5
 msgid "Proof of Concept"
@@ -34,7 +34,7 @@ msgid "The Toga Web backend is the least mature of all the Toga backends. It's m
 msgstr ""
 "Toga Web 后端是所有 Toga "
 "后端中最不成熟的一个。它已经足够成熟，可以展示一些功能，但很可能会有问题，而"
-"且会缺少许多其他平台上可用的小工具。目前，Web "
+"且会缺少许多其他平台上可用的控件。目前，Web "
 "部署应被视为“概念验证”--足以展示可以做什么，但还不足以作为严肃开发的依据。"
 
 #: ../../tutorial/tutorial-6.rst:18 865c937ff1a4479d96d1345c782d971e
