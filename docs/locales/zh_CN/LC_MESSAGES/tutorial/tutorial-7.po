@@ -33,7 +33,7 @@ msgstr "添加软件包"
 
 #: ../../tutorial/tutorial-7.rst:14 dc4188b519dd4e0e90c1e23f690410bd
 msgid "Let's modify our application to say a little bit more than just \"Hi, there!\"."
-msgstr "让我们修改我们的应用程序，让它"
+msgstr "让我们修改我们的应用程序，使其能够显示比“你好！”更丰富的内容。"
 
 #: ../../tutorial/tutorial-7.rst:16 6c43b52826de46dc8283b99f1ffd7cb8
 msgid "To generate some more interesting text for the dialog, we're going to use a library called `Faker <https://faker.readthedocs.io/en/stable/>`__ . Faker is a Python package that generates fake content, including names and text blocks. The names and words in the text block are generated from an arbitrary list of words provided by Faker. We're going to use Faker to construct a fake message, as if someone is responding to the user."
@@ -313,9 +313,8 @@ msgid "At this time, *most* binary packages on PyPI don't provide mobile- or web
 msgstr ""
 
 #: ../../tutorial/tutorial-7.rst:669 e7bb35e7d20f4070b8ab1240b0eb5bb7
-#, fuzzy
 msgid "It's *usually* possible to compile binary packages for mobile platforms, but it's not easy to set up -- well outside the scope of an introductory tutorial like this one."
-msgstr "BeeWare可以为一些流行的二进制模块（包括 \"numpy\"、\"pandas \"和 \"加密\"）提供二进制文件。为移动平台编译软件包通常是可行的，但设置起来并不容易--这已经超出了本入门教程的范围。"
+msgstr "*通常*\\ 可以为移动平台编译二进制软件包，但是不好"
 
 #: ../../tutorial/tutorial-7.rst:674 8a7f7a9286f24bd885b5bd817922e866
 msgid "Next steps"
