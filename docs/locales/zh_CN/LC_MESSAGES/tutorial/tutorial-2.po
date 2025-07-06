@@ -45,7 +45,7 @@ msgstr "此文件做以下两件事："
 
 #: ../../tutorial/tutorial-2.rst:31 6d23aa2404fc48ba96da528ccc1f2940
 msgid "It imports the ``main`` method from from the ``helloworld`` app."
-msgstr "它从 ``helloworld`` 应用程序倒入了 ``main`` 方法。"
+msgstr "它从 ``helloworld`` 应用程序导入了 ``main`` 方法。"
 
 #: ../../tutorial/tutorial-2.rst:32 0b48d24bc644417e829bacd14d0f3cdc
 msgid "Then, it starts the application’s main loop. The main loop is the way a GUI application listens for user input (like mouse clicks and keyboard presses)."
@@ -232,9 +232,13 @@ msgid "Windows"
 msgstr "Windows"
 
 #: ../../tutorial/tutorial-2.rst:279 3413d1d3f70f4a768bdf3f7f8784a2ec
-#, fuzzy
 msgid "You'll notice that this time, it *doesn't* install dependencies. Briefcase can detect that the application has been run before, and to save time, will only run the application. If you add new dependencies to your app, you need to make sure that they're installed by passing in a ``-r`` option when you run ``briefcase dev``."
-msgstr "你会注意到，这次它\\ *没有*\\ 安装依赖项。Briefcase 可以检测到应用程序已经运行过，为了节省时间，它只会运行应用程序。如果你在应用程序中添加了新的依赖项，你可以在运行 ``briefcase dev`` 时通过 ``-r`` 选项来确保它们被安装。"
+msgstr ""
+"你会注意到，这次\\ *没有*\\ 安装依赖项。Briefcase "
+"可以检测到已经被运行过的应用程序 -- "
+"为了节省时间，它只会运行应用程序，而不会安装依赖项。如果你在应用程序中添加了"
+"新的依赖项，你可以在运行 ``briefcase dev`` 时通过 ``-r`` "
+"选项来确保它们被安装。"
 
 #: ../../tutorial/tutorial-2.rst:285 231cf3fd1a9c4660b2044d792a50d8de
 msgid "This should open a GUI window:"
@@ -259,6 +263,9 @@ msgstr "如果在文本框中输入名称，并按下图形用户界面中的按
 #: ../../tutorial/tutorial-2.rst:310 aee9f2a8601c49b79f8c4b63b9eb57ee
 msgid "Before continuing, close the app. As with Tutorial 1, you can do this by pressing the close button on the application window, by selecting Quit/Exit from the application's menu, or by typing **Ctrl+C** in the terminal where you ran ``briefcase dev``."
 msgstr ""
+"在继续之前，关闭应用程序。和教程 1 "
+"一样，您可以使用应用程序窗口上的关闭按钮、从应用程序的菜单栏选择关闭/退出、"
+"或在您运行 ``briefcase dev`` 的命令行窗口中按 **Ctrl+C** 以关闭应用程序。"
 
 #: ../../tutorial/tutorial-2.rst:316 d9d95d995cad48a782fc1461330d67cc
 msgid "Next steps"
