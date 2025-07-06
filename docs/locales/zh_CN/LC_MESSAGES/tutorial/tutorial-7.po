@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-20 03:05+0000\n"
-"PO-Revision-Date: 2025-07-04 18:01+0000\n"
+"PO-Revision-Date: 2025-07-07 01:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/tutorial-7/zh_Hans/>\n"
@@ -33,7 +33,7 @@ msgstr "添加软件包"
 
 #: ../../tutorial/tutorial-7.rst:14 dc4188b519dd4e0e90c1e23f690410bd
 msgid "Let's modify our application to say a little bit more than just \"Hi, there!\"."
-msgstr ""
+msgstr "让我们修改我们的应用程序，让它"
 
 #: ../../tutorial/tutorial-7.rst:16 6c43b52826de46dc8283b99f1ffd7cb8
 msgid "To generate some more interesting text for the dialog, we're going to use a library called `Faker <https://faker.readthedocs.io/en/stable/>`__ . Faker is a Python package that generates fake content, including names and text blocks. The names and words in the text block are generated from an arbitrary list of words provided by Faker. We're going to use Faker to construct a fake message, as if someone is responding to the user."
@@ -114,14 +114,12 @@ msgid "Hello World Tutorial 7 dialog, on macOS"
 msgstr "Hello World 教程 7 对话框，在 macOS 上运行"
 
 #: ../../tutorial/tutorial-7.rst:144 d9a43e3b64df404f9102cc689571065c
-#, fuzzy
 msgid "Hello World Tutorial 7 dialog, on Linux"
-msgstr "Hello World 教程 7 对话框，在 Linux 上"
+msgstr "在 Linux 上的 Hello World 教程 7 对话框"
 
 #: ../../tutorial/tutorial-7.rst:158 8d4a4c27bc444b3a8d155d66e1631003
-#, fuzzy
 msgid "Hello World Tutorial 7 dialog, on Windows"
-msgstr "Hello World 教程 7 对话框，在 Windows 上"
+msgstr "在 Windows 上的 Hello World 教程 7 对话框"
 
 #: ../../tutorial/tutorial-7.rst:172 ea5dd0fcae9b49959f23bd28fba5b720
 #, fuzzy
