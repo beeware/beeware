@@ -68,7 +68,8 @@ msgstr ""
 "首次运行 ``briefcase create android`` 时，Briefcase 会下载 Java JDK 和 "
 "Android SDK。文件大小较大，且下载时间可能会较长（10 "
 "分钟或更长，取决于您的互联网连接速度）。下载完成后，您将会被提示接受 Google "
-"的 Android SDK 许可证。"
+"的 Android SDK 许可证。还有一些需要同意的许可证 -- 在提示符不停的按 ``y`` "
+"以查看与接受所有所需的许可证协议。"
 
 #: ../../tutorial/tutorial-5/android.rst:110 08d75338c70c4293b3fc7e4756341837
 msgid "Once this completes, we'll have a ``build\\helloworld\\android\\gradle`` directory in our project, which will contain an Android project with a Gradle build configuration. This project will contain your application code, and a support package containing the Python interpreter."
@@ -91,29 +92,31 @@ msgid "Run the app on a virtual device"
 msgstr "在虚拟设备上运行应用程序"
 
 #: ../../tutorial/tutorial-5/android.rst:187 2a682a7b3d354745b8f65a9b1dc614e8
-#, fuzzy
 msgid "We're now ready to run our application. You can use Briefcase's ``run`` command to run the app on an Android device. Let's start by running on an Android emulator."
-msgstr "现在我们可以运行应用程序了。您可以使用 Briefcase 的 ``run`` 命令在 Android 设备上运行应用程序。让我们从在 Android 模拟器上运行开始。"
+msgstr ""
+"现在我们可以运行应用程序了。您可以使用 Briefcase 的 ``run`` 命令在 Android "
+"设备上运行应用程序。让我们从在 Android 模拟器上运行开始。"
 
 #: ../../tutorial/tutorial-5/android.rst:191 4e3a8649a4014bf7a54a9616d94d242d
-#, fuzzy
 msgid "To run your application, run ``briefcase run android``. When you do this, you'll be prompted with a list of devices that you could run the app on. The last item will always be an option to create a new Android emulator."
-msgstr "要运行应用程序，请运行 ``briefcase run android``。运行时，系统会提示你可以在哪些设备上运行应用程序。最后一项总是创建新安卓模拟器的选项。"
+msgstr ""
+"要运行应用程序，请运行 ``briefcase run "
+"android``。运行时，系统会提示你可以在哪些设备上运行应用程序。最后一项总会是创"
+"建新安卓模拟器的选项。"
 
 #: ../../tutorial/tutorial-5/android.rst:233 02a98c7bbb8944a18b88b85db3201d45
-#, fuzzy
 msgid "We can now choose our desired device. Select the \"Create a new Android emulator\" option, and accept the default choice for the device name (``beePhone``)."
-msgstr "现在我们可以选择想要的设备。选择 \"创建新的安卓模拟器 \"选项，并接受默认的设备名称（\"beePhone\"）。"
+msgstr ""
+"现在我们可以选择想要的设备。选择 \"Create a new Android emulator\" "
+"选项，并接受默认的设备名称（``beePhone``）。"
 
 #: ../../tutorial/tutorial-5/android.rst:237 570897b7d0bc4f79a56cf3934f9610dc
-#, fuzzy
 msgid "Briefcase ``run`` will automatically boot the virtual device. When the device is booting, you will see the Android logo:"
-msgstr "公文包 ``run`` 将自动启动虚拟设备。设备启动时，您将看到 Android 徽标："
+msgstr "Briefcase ``run`` 将自动启动虚拟设备。设备启动时，您将看到 Android 徽标："
 
 #: ../../tutorial/tutorial-5/android.rst:240
 #: ../../tutorial/tutorial-5/android.rst:245 54e365a9e9324329986e9634378da2d7
 #: 712dccc58faf40129adf98455cce5b70
-#, fuzzy
 msgid "Android virtual device booting"
 msgstr "启动安卓虚拟设备"
 
@@ -129,16 +132,14 @@ msgid "Android virtual device fully started, on the launcher screen"
 msgstr "安卓虚拟设备已完全启动，显示在启动界面上"
 
 #: ../../tutorial/tutorial-5/android.rst:257 087d0493f2b54c1fac6a5d25166ac2d2
-#, fuzzy
 msgid "The app will then start. You'll see a splash screen while the app starts up:"
-msgstr "然后应用程序就会启动。程序启动时，你会看到一个闪屏："
+msgstr "然后，应用程序就会启动。程序启动时，你会看到一个闪屏："
 
 #: ../../tutorial/tutorial-5/android.rst:259
 #: ../../tutorial/tutorial-5/android.rst:264 27e41f7bbf6749e79d7019219a1800f8
 #: 80eb61fdbed046c2a9633570dd1e6113
-#, fuzzy
 msgid "App splash screen"
-msgstr "应用程序闪屏"
+msgstr "应用程序启动页"
 
 #: ../../tutorial/tutorial-5/android.rst:266 2338741512aa42a0bc9484b47eed9bbe
 #, fuzzy
