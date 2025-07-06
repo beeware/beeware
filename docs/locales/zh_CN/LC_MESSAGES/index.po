@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-20 03:05+0000\n"
-"PO-Revision-Date: 2025-07-06 19:56+0000\n"
+"PO-Revision-Date: 2025-07-07 01:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/index/zh_Hans/>\n"
@@ -70,14 +70,15 @@ msgid "`Toga <https://toga.beeware.org>`__, a cross platform widget toolkit;"
 msgstr "`Toga <https://toga.beeware.org>`__，一个跨平台控件工具包;"
 
 #: ../../index.rst:59 44e83bc950414e5ca928ae7565100599
-#, fuzzy
 msgid "`Briefcase <https://briefcase.beeware.org>`__, a tool for packaging Python projects as distributable artefacts that can be shipped to end users;"
-msgstr "`Briefcase <https://briefcase.readthedocs.io>`__，一个用于将 Python 项目打包为可分发给最终用户的的成品的工具;"
+msgstr ""
+"`Briefcase <https://briefcase.beeware.org>`__，一个用于将 Python "
+"项目打包为可分发给最终用户的的成品的工具;"
 
 #: ../../index.rst:61 21115c0f8e3047e5912a7eb98d80a80d
-#, fuzzy
 msgid "Libraries (such as `Rubicon ObjC <https://rubicon-objc.beeware.org>`__) for accessing platform-native libraries;"
-msgstr "用于访问平台原生库的库（如 `Rubicon ObjC <https://rubicon-objc.readthedocs.io>`__）;"
+msgstr "用于访问平台原生库的库（如 `Rubicon ObjC <https://rubicon-"
+"objc.beeware.org>`__）;"
 
 #: ../../index.rst:63 62eeab2c15e546ad8e0601f4f61bd6f2
 msgid "Pre-compiled builds of Python that can be used on platforms where official Python installers aren't available."
