@@ -43,8 +43,11 @@ msgstr ""
 
 #: ../../tutorial/topics/custom-icons.rst:24 aa6015f5a4c642808f44a94873ba7f84
 msgid "This icon definition doesn't specify any file extension. The value will be used as a prefix; each platform will add additional items to this prefix to build the files needed for each platform. Some platforms require *multiple* icon files; this prefix will be combined with file size and variant modifiers to generate the list of icon files that are used."
-msgstr "图标配置无需指定任何扩展文件名。此值会被用作前缀；每个平台将会在此前缀基础上"
-"添加更多"
+msgstr ""
+"图标配置无需指定任何扩展文件名。此值会被用作前缀；每个平台将会在此前缀基础上"
+"添加更多项目，以构建在那个平台上所需的文件。有些平台需要\\ *多个*\\ "
+"图标文件；在这种情况下，前缀将与文件大小和变种结合在一起，生成使用的图标列表"
+"。"
 
 #: ../../tutorial/topics/custom-icons.rst:30 db2586affb344ffdb33e21f2e645e828
 msgid "We can now run ``briefcase update`` again - but this time, we pass in the ``--update-resources`` flag, telling Briefcase that we want to install new application resources (i.e., the icons):"
