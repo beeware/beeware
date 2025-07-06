@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-20 03:05+0000\n"
-"PO-Revision-Date: 2025-07-05 15:27+0000\n"
+"PO-Revision-Date: 2025-07-07 01:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/tutorial-8/zh_Hans/>\n"
@@ -280,9 +280,8 @@ msgid "The \"beachball\"/\"spinner\" icon won't appear"
 msgstr "沙滩球\"/\"旋转器 \"图标不会出现"
 
 #: ../../tutorial/tutorial-8.rst:298 67b2e8d563954bb7b7f616a2a7493abe
-#, fuzzy
 msgid "If you move/resize the app window while waiting for the dialog to appear, the window will redraw."
-msgstr "如果在等待对话框出现时移动/调整应用程序窗口的大小，窗口将重新绘制。"
+msgstr "如果在等待对话框出现时移动或调整应用程序窗口的大小，窗口将重新绘制。"
 
 #: ../../tutorial/tutorial-8.rst:301 aa0d3bd64f7a43929fdbe22b49089e78
 #, fuzzy
