@@ -167,6 +167,9 @@ msgstr "你可能会注意到应用程序运行时的外观有一些细微差别
 #: ../../tutorial/tutorial-3.rst:350 e79d9a900b2a49b7a9f71ab7ca8110af
 msgid "Before continuing, close the app. As with previous tutorial steps, you can do this by pressing the close button on the application window, by selecting Quit/Exit from the application's menu, or by typing **Ctrl+C** in the terminal where you ran ``briefcase dev``."
 msgstr ""
+"在继续之前，关闭应用程序。和之前的教程步骤一样，您可以使用应用程序窗口上的关"
+"闭按钮、从应用程序的菜单栏选择关闭/退出、或在您运行 ``briefcase dev`` "
+"的命令行窗口中按 **Ctrl+C** 以关闭应用程序。"
 
 #: ../../tutorial/tutorial-3.rst:356 a8a0b28bbe89462f9da13b80076f8ea2
 msgid "Building your installer"
@@ -251,7 +254,7 @@ msgstr "在本例中，我们没有签署我们的应用程序。因此，当您
 msgid "When you're ready to publish a real application, check out the Briefcase How-To guide on `Setting up a Windows code signing identity <https://briefcase.beeware.org/en/latest/how-to/code-signing/windows.html>`__."
 msgstr ""
 "当您准备好发布真正的应用程序时，请查看 Briefcase 操作指南中关于\\ `设置 "
-"Windows 代码签名身份 <https://briefcase.readthedocs.io/en/latest/how-to/"
+"Windows 代码签名身份 <https://briefcase.beeware.org/en/latest/how-to/"
 "code-signing/windows.html>`__\\ 的内容。"
 
 #: ../../tutorial/tutorial-3.rst:569 13b9bfc492a2443d84833fdaea412e1b
