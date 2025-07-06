@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-13 17:07+0000\n"
-"PO-Revision-Date: 2025-07-05 02:01+0000\n"
+"PO-Revision-Date: 2025-07-07 01:02+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/topics/custom-icons/zh_Hans/>\n"
@@ -43,7 +43,8 @@ msgstr ""
 
 #: ../../tutorial/topics/custom-icons.rst:24 aa6015f5a4c642808f44a94873ba7f84
 msgid "This icon definition doesn't specify any file extension. The value will be used as a prefix; each platform will add additional items to this prefix to build the files needed for each platform. Some platforms require *multiple* icon files; this prefix will be combined with file size and variant modifiers to generate the list of icon files that are used."
-msgstr ""
+msgstr "图标配置无需指定任何扩展文件名。此值会被用作前缀；每个平台将会在此前缀基础上"
+"添加更多"
 
 #: ../../tutorial/topics/custom-icons.rst:30 db2586affb344ffdb33e21f2e645e828
 msgid "We can now run ``briefcase update`` again - but this time, we pass in the ``--update-resources`` flag, telling Briefcase that we want to install new application resources (i.e., the icons):"
