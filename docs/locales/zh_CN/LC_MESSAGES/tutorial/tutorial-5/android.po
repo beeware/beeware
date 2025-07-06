@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-09 04:13+0000\n"
-"PO-Revision-Date: 2025-06-21 02:01+0000\n"
+"PO-Revision-Date: 2025-07-07 01:02+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/tutorial-5/android/zh_Hans/>\n"
@@ -63,9 +63,12 @@ msgid "Windows"
 msgstr "Windows"
 
 #: ../../tutorial/tutorial-5/android.rst:102 72d65e3da98248cd8b14009fd6db873f
-#, fuzzy
 msgid "When you run ``briefcase create android`` for the first time, Briefcase downloads a Java JDK, and the Android SDK. File sizes and download times can be considerable; this may take a while (10 minutes or longer, depending on the speed of your Internet connection). When the download has completed, you will be prompted to accept Google's Android SDK license. There's a number of licenses you'll need to agree too - keep entering ``y`` at the prompt to review and accept each of the necessary the license agreements."
-msgstr "首次运行 ``briefcase create android`` 时，Briefcase 会下载 Java JDK 和 Android SDK。文件大小回较大，且下载时间可能会较长（10 分钟或更长，取决于您的互联网连接速度）。下载完成后，您将会被提示接受 Google 的 Android SDK 许可证。"
+msgstr ""
+"首次运行 ``briefcase create android`` 时，Briefcase 会下载 Java JDK 和 "
+"Android SDK。文件大小较大，且下载时间可能会较长（10 "
+"分钟或更长，取决于您的互联网连接速度）。下载完成后，您将会被提示接受 Google "
+"的 Android SDK 许可证。"
 
 #: ../../tutorial/tutorial-5/android.rst:110 08d75338c70c4293b3fc7e4756341837
 msgid "Once this completes, we'll have a ``build\\helloworld\\android\\gradle`` directory in our project, which will contain an Android project with a Gradle build configuration. This project will contain your application code, and a support package containing the Python interpreter."
@@ -115,16 +118,15 @@ msgid "Android virtual device booting"
 msgstr "启动安卓虚拟设备"
 
 #: ../../tutorial/tutorial-5/android.rst:247 ed90d798949040d8ad9d2a782de41929
-#, fuzzy
 msgid "Once the device has finished booting, Briefcase will install your app on the device. You will briefly see a launcher screen:"
-msgstr "设备启动完成后，公文包将在设备上安装您的应用程序。您将短暂看到一个启动器屏幕："
+msgstr "设备启动完成后，Briefcase "
+"将在设备上安装您的应用程序。您将短暂看到一个启动页面："
 
 #: ../../tutorial/tutorial-5/android.rst:250
 #: ../../tutorial/tutorial-5/android.rst:255 9aee2289fce3429bbca848fb30262eca
 #: ef6f84c7e91545c5a0374576d08e6318
-#, fuzzy
 msgid "Android virtual device fully started, on the launcher screen"
-msgstr "安卓虚拟设备已完全启动，显示在启动器屏幕上"
+msgstr "安卓虚拟设备已完全启动，显示在启动界面上"
 
 #: ../../tutorial/tutorial-5/android.rst:257 087d0493f2b54c1fac6a5d25166ac2d2
 #, fuzzy
