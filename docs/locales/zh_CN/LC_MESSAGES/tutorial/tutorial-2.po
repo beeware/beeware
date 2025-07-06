@@ -41,15 +41,15 @@ msgstr "``__main__.py`` 将 ``helloworld`` 模块标记为一种特殊的模块 
 
 #: ../../tutorial/tutorial-2.rst:29 0d4ebd6dfe7c48fbb51894c045ff24fc
 msgid "This file does two things:"
-msgstr ""
+msgstr "此文件做以下两件事："
 
 #: ../../tutorial/tutorial-2.rst:31 6d23aa2404fc48ba96da528ccc1f2940
 msgid "It imports the ``main`` method from from the ``helloworld`` app."
-msgstr ""
+msgstr "它从 ``helloworld`` 应用程序倒入了 ``main`` 方法。"
 
 #: ../../tutorial/tutorial-2.rst:32 0b48d24bc644417e829bacd14d0f3cdc
 msgid "Then, it starts the application’s main loop. The main loop is the way a GUI application listens for user input (like mouse clicks and keyboard presses)."
-msgstr "然后，"
+msgstr "然后，它会开始应用程序的主循环，以便侦听用户输入（例如鼠标点击或键盘按键）。"
 
 #: ../../tutorial/tutorial-2.rst:35 09fd77cade1b42b4a8b88e37bb0da6e3
 msgid "The more interesting file is ``app.py`` - this contains the logic that creates our application window::"
