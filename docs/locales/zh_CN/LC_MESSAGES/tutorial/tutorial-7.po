@@ -48,9 +48,8 @@ msgid "Then modify the ``say_hello()`` callback so it looks like this::"
 msgstr "然后修改 ``say_hello()`` 回调，使其看起来像这样::"
 
 #: ../../tutorial/tutorial-7.rst:39 2034a7fd1eeb48a8bea715e0983b5523
-#, fuzzy
 msgid "Let's run our updated app in Briefcase developer mode to check that our change has worked."
-msgstr "让我们在公文包开发者模式下运行更新后的应用程序，检查我们的更改是否有效。"
+msgstr "让我们在 Briefcase 开发者模式下运行更新后的应用程序，检查我们的更改是否有效。"
 
 #: ../../tutorial/tutorial-7.rst:44 ../../tutorial/tutorial-7.rst:120
 #: ../../tutorial/tutorial-7.rst:182 ../../tutorial/tutorial-7.rst:510
@@ -98,9 +97,11 @@ msgid "You can't run an iOS app in developer mode - use the instructions for you
 msgstr ""
 
 #: ../../tutorial/tutorial-7.rst:114 f6db1525c17d42f2a7543c60bbfd757f
-#, fuzzy
 msgid "What happened? We've added ``faker`` to our *code*, but we haven't added it to our development virtual environment. We can fix this by installing ``faker`` with ``pip``, and then re-running ``briefcase dev``:"
-msgstr "发生了什么？我们已经将 ``httpx`` 添加到我们的代码*中，但我们还没有将它添加到我们的开发虚拟环境中。我们可以用 ``pip`` 安装 ``httpx``，然后重新运行 ``briefcase dev``："
+msgstr ""
+"发生了什么？我们已经将 ``faker`` 添加到我们的\\ *代码*\\ "
+"中，但我们还没有将它添加到我们的开发虚拟环境中。要解决这个问题，我们可以用 "
+"``pip`` 安装 ``faker``，然后重新运行 ``briefcase dev``："
 
 #: ../../tutorial/tutorial-7.rst:127 ../../tutorial/tutorial-7.rst:141
 #: ../../tutorial/tutorial-7.rst:155 3ff689a4fa554cbe8132f4985f26d3eb
@@ -109,9 +110,8 @@ msgid "When you enter a name and press the button, you should see a dialog that 
 msgstr "输入名称并按下按钮后，您会看到一个类似如下的对话框："
 
 #: ../../tutorial/tutorial-7.rst:130 99d741deb4664ce1b9d16bb094132529
-#, fuzzy
 msgid "Hello World Tutorial 7 dialog, on macOS"
-msgstr "Hello World 教程 7 对话框，在 macOS 上运行"
+msgstr "Hello World 教程 7 对话框，在 macOS 上"
 
 #: ../../tutorial/tutorial-7.rst:144 d9a43e3b64df404f9102cc689571065c
 msgid "Hello World Tutorial 7 dialog, on Linux"
@@ -122,12 +122,11 @@ msgid "Hello World Tutorial 7 dialog, on Windows"
 msgstr "在 Windows 上的 Hello World 教程 7 对话框"
 
 #: ../../tutorial/tutorial-7.rst:172 ea5dd0fcae9b49959f23bd28fba5b720
-#, fuzzy
 msgid "We've now got a working app, using a third party library, running in development mode!"
-msgstr "现在，我们已经有了一个可正常运行的应用程序，它使用第三方库，以开发模式运行！"
+msgstr "现在，我们已经有了一个可正常运行的应用程序，它使用第三方库，并以开发模式运行"
+"！"
 
 #: ../../tutorial/tutorial-7.rst:175 5460877abe6044f4834d6a1110264ffe
-#, fuzzy
 msgid "Running the updated app"
 msgstr "运行更新后的应用程序"
 
@@ -315,7 +314,8 @@ msgstr ""
 #: ../../tutorial/tutorial-7.rst:669 e7bb35e7d20f4070b8ab1240b0eb5bb7
 msgid "It's *usually* possible to compile binary packages for mobile platforms, but it's not easy to set up -- well outside the scope of an introductory tutorial like this one."
 msgstr "*通常*\\ "
-"可以为移动平台编译二进制软件包，但是不容易设置，且远超出了本教程这样的"
+"可以为移动平台编译二进制软件包，但是不容易设置，且远超出了本教程这样的入门教"
+"程涵盖的范围。"
 
 #: ../../tutorial/tutorial-7.rst:674 8a7f7a9286f24bd885b5bd817922e866
 msgid "Next steps"
