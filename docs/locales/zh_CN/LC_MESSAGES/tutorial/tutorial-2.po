@@ -49,7 +49,7 @@ msgstr ""
 
 #: ../../tutorial/tutorial-2.rst:32 0b48d24bc644417e829bacd14d0f3cdc
 msgid "Then, it starts the application’s main loop. The main loop is the way a GUI application listens for user input (like mouse clicks and keyboard presses)."
-msgstr ""
+msgstr "然后，"
 
 #: ../../tutorial/tutorial-2.rst:35 09fd77cade1b42b4a8b88e37bb0da6e3
 msgid "The more interesting file is ``app.py`` - this contains the logic that creates our application window::"
