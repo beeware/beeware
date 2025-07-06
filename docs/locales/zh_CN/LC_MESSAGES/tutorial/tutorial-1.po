@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-09 04:13+0000\n"
-"PO-Revision-Date: 2025-07-05 15:27+0000\n"
+"PO-Revision-Date: 2025-07-07 01:02+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/tutorial-1/zh_Hans/>\n"
@@ -106,19 +106,26 @@ msgid "**Author** - Enter your own name here."
 msgstr "**Author** - 在此处输入您自己的名字。"
 
 #: ../../tutorial/tutorial-1.rst:97 802e543e749a41a7805cd4cc3208ce82
-#, fuzzy
 msgid "**Author's Email** - Enter your own email address. This will be used in the configuration file, in help text, and anywhere that an email is required when submitting the app to an app store."
-msgstr "**Author's Email** - 输入您自己的电子邮件地址。这将用于配置文件、帮助文本以及向应用程序商店提交应用程序时需要电子邮件的任何地方。"
+msgstr ""
+"**Author's Email** - "
+"输入您自己的电子邮件地址。这将用于配置文件、帮助文本以及向应用程序商店提交应"
+"用程序时需要电子邮件的任何地方。"
 
 #: ../../tutorial/tutorial-1.rst:101 bb75d1978ab84c9783bcfa2ef56ff643
-#, fuzzy
 msgid "**Application URL** - The URL of the landing page for your application. Again, if you own your own domain, enter a URL at that domain (including the ``https://``). Otherwise, just accept the default URL (``https://example.com/helloworld``). This URL doesn't need to actually exist (for now); it will only be used if you publish your application to an app store."
-msgstr "**URL** - 应用程序登陆页面的 URL。同样，如果您拥有自己的域名，请输入该域名的 URL（包括 ``https://``）。否则，只需接受默认 URL (``https://example.com/helloworld``)。此 URL（暂时）不需要实际存在；只有在您将应用程序发布到应用程序商店时才会使用。"
+msgstr ""
+"**URL** - 应用程序登陆页面的 URL。同样，如果您拥有自己的域名，请输入该域名的 "
+"URL（包括 ``https://``）。否则，接受默认 URL (``https://example.com/"
+"helloworld``) 即可。此 "
+"URL（暂时）不需要实际存在；只有在您将应用程序发布到应用程序商店时才会使用。"
 
 #: ../../tutorial/tutorial-1.rst:107 77a5ecfdf7a94009a179a7f3d1869301
-#, fuzzy
 msgid "**Project License** - Accept the default license (BSD). This won't affect anything about the operation of the tutorial, though - so if you have particularly strong feelings about license choice, feel free to choose another license."
-msgstr "**License** - 接受默认许可证（BSD）。这不会影响本教程的任何操作，因此，如果您对许可证选择有特别强烈的意见，请随意选择其他许可证。"
+msgstr ""
+"**Project License** (项目许可证) - "
+"接受默认许可证（BSD）。这不会影响本教程的任何操作，因此，如果您对许可证选择有"
+"特别强烈的意见，请随意选择其他许可证。"
 
 #: ../../tutorial/tutorial-1.rst:112 ca33e82beff54a8698ed7f7150de88b0
 msgid "**GUI framework** - Accept the default option, Toga (BeeWare's own GUI toolkit)."
@@ -182,9 +189,12 @@ msgid "If your version of python is *not* a supported version, you will have to 
 msgstr "如果您的 Python 版本\\ *不*\\ 被支持，则需重新开始本教程。"
 
 #: ../../tutorial/tutorial-1.rst:234 b0d1adb969ab4e53b7e44bba85ccd12b
-#, fuzzy
 msgid "Close the application - either by pressing the close button on the application window, by selecting Quit/Exit from the application's menu, or by typing **Ctrl+C** in the terminal where you ran ``briefcase dev`` - and you're done! Congratulations - you've just written a standalone, native application in Python!"
-msgstr "按下关闭按钮（或从应用程序菜单中选择 \"退出\"），就大功告成了！恭喜 - 你刚刚用 Python 编写了一个独立、原生的应用程序！"
+msgstr ""
+"关闭应用程序 -- "
+"可以使用应用程序窗口上的关闭按钮、从应用程序的菜单栏选择关闭/退出、"
+"或在您运行 ``briefcase dev`` 的命令行窗口中按 **Ctrl+C** -- "
+"就完成了！恭喜您，您刚刚使用 Python 编写了一个独立、原生的应用程序！"
 
 #: ../../tutorial/tutorial-1.rst:241 36aa6a195f7f4f5f8000c86a40b29e5b
 msgid "Next steps"
