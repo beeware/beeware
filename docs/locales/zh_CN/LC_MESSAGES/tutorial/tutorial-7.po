@@ -314,7 +314,7 @@ msgstr ""
 
 #: ../../tutorial/tutorial-7.rst:669 e7bb35e7d20f4070b8ab1240b0eb5bb7
 msgid "It's *usually* possible to compile binary packages for mobile platforms, but it's not easy to set up -- well outside the scope of an introductory tutorial like this one."
-msgstr "*通常*\\ 可以为移动平台编译二进制软件包，但是不好"
+msgstr "*通常*\\ 可以为移动平台编译二进制软件包，但是不容易设置，且远超出了"
 
 #: ../../tutorial/tutorial-7.rst:674 8a7f7a9286f24bd885b5bd817922e866
 msgid "Next steps"
