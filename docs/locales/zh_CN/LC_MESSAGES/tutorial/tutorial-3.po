@@ -1,17 +1,18 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-20 03:05+0000\n"
-"PO-Revision-Date: 2025-06-05 01:01+0000\n"
+"PO-Revision-Date: 2025-07-07 01:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/beeware/tutorial/tutorial-3/zh_Hans/>\n"
 "Language: zh_CN\n"
-"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-3/zh_Hans/>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.13-dev\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../tutorial/tutorial-3.rst:3 323eb4a4a9184075bf13f32969caa6f6
@@ -184,9 +185,11 @@ msgid "In this example, we've used the ``--adhoc-sign`` option - that is, we're 
 msgstr "在本例中，我们使用了 ``--adhoc-sign`` 选项--也就是说，我们使用 *ad hoc* 凭据（仅在你的机器上有效的临时凭据）来签署我们的应用程序。我们这样做是为了让教程简单明了。设置代码签名身份有点麻烦，而且只有当你打算将应用程序发布给他人时\\ *才*\\ 需要。如果我们要发布一个真正的应用程序供他人使用，我们就需要指定真实的凭据。"
 
 #: ../../tutorial/tutorial-3.rst:412 387b9ab0ef804fb6b94fde8d6690568b
-#, fuzzy
 msgid "When you're ready to publish a real application, check out the Briefcase How-To guide on `Setting up a macOS code signing identity <https://briefcase.beeware.org/en/latest/how-to/code-signing/macOS.html>`__."
-msgstr "当您准备发布真正的应用程序时，请查看关于 `设置 macOS 代码签名身份 <https://briefcase.readthedocs.io/en/latest/how-to/code-signing/macOS.html>`__ 的 Briefcase 操作指南。"
+msgstr ""
+"当您准备发布真正的应用程序时，请查看关于 `设置 macOS 代码签名身份 <https://"
+"briefcase.beeware.org/en/latest/how-to/code-signing/macOS.html>`__ 的 "
+"Briefcase 操作指南。"
 
 #: ../../tutorial/tutorial-3.rst:418 dd8b005cff9c451ba2b13f86b7496751
 msgid "The output of the package step will be slightly different depending on your Linux distribution. If you're on a Debian-derived distribution, you'll see:"
@@ -245,9 +248,11 @@ msgid "In this example, we're not signing our app. As a result, when you use the
 msgstr "在本例中，我们没有签署我们的应用程序。因此，当您使用安装程序时，您将收到系统警告，该应用程序来自未知开发人员。我们这样做是为了保持教程的简单性。设置代码签名身份比较复杂，只有当您打算将您的应用程序分发给其他人时，它们才*需要*。如果我们发布一个真实的应用程序供其他人使用，我们需要指定一个真实的签名身份；当该签名的应用程序安装时，系统将通知用户该应用程序来自与证书关联的已知身份。"
 
 #: ../../tutorial/tutorial-3.rst:565 e7b843bd5a63492581620f51c2f9fa1b
-#, fuzzy
 msgid "When you're ready to publish a real application, check out the Briefcase How-To guide on `Setting up a Windows code signing identity <https://briefcase.beeware.org/en/latest/how-to/code-signing/windows.html>`__."
-msgstr "当您准备发布真正的应用程序时，请查看 Briefcase 操作指南中关于\\ `设置Windows代码签名身份 <https://briefcase.readthedocs.io/en/latest/how-to/code-signing/windows.html>`__\\ 的内容。"
+msgstr ""
+"当您准备好发布真正的应用程序时，请查看 Briefcase 操作指南中关于\\ `设置 "
+"Windows 代码签名身份 <https://briefcase.readthedocs.io/en/latest/how-to/"
+"code-signing/windows.html>`__\\ 的内容。"
 
 #: ../../tutorial/tutorial-3.rst:569 13b9bfc492a2443d84833fdaea412e1b
 msgid "Once this step completes, the ``dist`` folder will contain a file named ``Hello_World-0.0.1.msi``. If you double click on this installer to run it, you should go through a familiar Windows installation process. Once this installation completes, there will be a \"Hello World\" entry in your start menu."
@@ -260,4 +265,3 @@ msgstr "下一步"
 #: ../../tutorial/tutorial-3.rst:578 b99866af0ab24781a5ba72109db4679c
 msgid "We now have our application packaged for distribution on desktop platforms. But what happens when we need to update the code in our application? How do we get those updates into our packaged application? Turn to :doc:`Tutorial 4 <./tutorial-4>` to find out..."
 msgstr "现在，我们已将应用程序打包发布到桌面平台上。但是，当我们需要更新应用程序中的代码时该怎么办？如何将这些更新添加到打包好的应用程序中？请访问 :doc:`教程4 <./tutorial-4>` 了解详情..."
-
