@@ -160,12 +160,11 @@ msgstr "首次启动应用程序时，它需要将自己解压缩到设备上。
 
 #: ../../tutorial/tutorial-5/android.rst:279 231e03ac5a3b4c689fb6e76dacc6c310
 msgid "App from Tutorial 2, fully launched"
-msgstr "完全启动后的教程 2 中的应用程序"
+msgstr "完全启动后的教程 2 应用程序"
 
 #: ../../tutorial/tutorial-5/android.rst:284 655a4ef0e42843f38a9846ae4df5844b
-#, fuzzy
 msgid "Demo app fully launched"
-msgstr "演示应用程序全面启动"
+msgstr "完全启动后的演示应用程序"
 
 #: ../../tutorial/tutorial-5/android.rst:286 f28e74d8ffa941958b055a9ef880c161
 #, fuzzy
