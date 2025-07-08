@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-09 04:13+0000\n"
-"PO-Revision-Date: 2025-07-07 01:02+0000\n"
+"PO-Revision-Date: 2025-07-08 19:04+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/tutorial-5/android/zh_Hans/>\n"
@@ -142,24 +142,25 @@ msgid "App splash screen"
 msgstr "应用程序启动页"
 
 #: ../../tutorial/tutorial-5/android.rst:266 2338741512aa42a0bc9484b47eed9bbe
-#, fuzzy
 msgid "The emulator didn't start!"
 msgstr "模拟器没有启动！"
 
 #: ../../tutorial/tutorial-5/android.rst:268 152e105a148541e2b3cf630b83ef839f
-#, fuzzy
 msgid "The Android emulator is a complex piece of software that relies on a number of hardware and operating system features - features that may not be available or enabled on older machines. If you experience any difficulties starting the Android emulator, consult the `Requirements and recommendations <https://developer.android.com/studio/run/emulator#requirements>`__ section of the Android developer documentation."
-msgstr "安卓模拟器是一个复杂的软件，依赖于许多硬件和操作系统功能，这些功能在旧机器上可能无法使用或启用。如果在启动 Android 模拟器时遇到任何困难，请查阅 Android 开发人员文档中的 \"要求和建议 <https://developer.android.com/studio/run/emulator#requirements>`__\" 部分。"
+msgstr ""
+"安卓模拟器是一个复杂的软件，依赖于许多硬件和操作系统功能，这些功能在旧机器上"
+"可能无法使用或启用。如果在启动 Android 模拟器时遇到任何困难，请查阅 Android "
+"开发人员文档中的\\ `要求和建议 <https://developer.android.com/studio/run/"
+"emulator#requirements>`__\\ 部分。"
 
 #: ../../tutorial/tutorial-5/android.rst:275 5d36e4d7acf843e0a1ede03335fc349a
-#, fuzzy
 msgid "The first time the app starts, it needs to unpack itself onto the device. This may take a few seconds. Once it's unpacked, you'll see the Android version of our desktop app:"
-msgstr "首次启动应用程序时，它需要将自己解压缩到设备上。这可能需要几秒钟。解压完成后，您将看到桌面应用程序的 Android 版本："
+msgstr "首次启动应用程序时，它需要将自己解压缩到设备上。这可能需要几秒钟。解压完成后"
+"，您将看到桌面应用程序的 Android 版本："
 
 #: ../../tutorial/tutorial-5/android.rst:279 231e03ac5a3b4c689fb6e76dacc6c310
-#, fuzzy
 msgid "App from Tutorial 2, fully launched"
-msgstr "完全启动教程 2 中的应用程序"
+msgstr "完全启动后的教程 2 中的应用程序"
 
 #: ../../tutorial/tutorial-5/android.rst:284 655a4ef0e42843f38a9846ae4df5844b
 #, fuzzy
