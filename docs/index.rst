@@ -71,8 +71,8 @@ Toga as a GUI toolkit.
 The BeeWare suite is available on macOS, Windows, Linux (using GTK); on mobile
 platforms such as Android and iOS; and for the Web.
 
-Lets go!
-========
+Let's go!
+=========
 
 Ready to try BeeWare for yourself? :doc:`Let's build a cross platform application in
 Python! <tutorial/tutorial-0>`
