@@ -350,7 +350,7 @@ application appears.
 Before continuing, close the app. As with previous tutorial steps, you can do
 this by pressing the close button on the application window, by selecting
 Quit/Exit from the application's menu, or by typing **Ctrl+C** in the terminal
-where you ran ``briefcase dev``.
+where you ran ``briefcase run``.
 
 Building your installer
 =======================
