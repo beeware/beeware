@@ -107,15 +107,3 @@ known-third-party = [
     "textual",  # We don't ever import textual, so Ruff doesn't know about it.
     "travertino", # In this repo, but still a separate package
 ]
-known-first-party = [
-    "testbed",
-    "toga",
-    "toga_android",
-    "toga_cocoa",
-    "toga_dummy",
-    "toga_gtk",
-    "toga_iOS",
-    "toga_textual",
-    "toga_web",
-    "toga_winforms",
-]
