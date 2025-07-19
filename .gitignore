@@ -99,6 +99,9 @@ db.sqlite3
 # local data
 local/
 
+# ruff
+.ruff_cache
+
 # runtime data
 runtime/
 

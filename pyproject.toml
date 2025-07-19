@@ -95,7 +95,10 @@ extend-select = [
     # use improvement.
     # "SIM",    # flake8-simplify
 ]
-ignore = ["F821", "E501"]
+ignore = [
+ "F821",  # Undefined name `tags`
+ "E501"  # Line too long
+ ]
 
 [tool.ruff.lint.isort]
 combine-as-imports = true
