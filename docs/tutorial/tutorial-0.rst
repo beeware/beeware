@@ -34,6 +34,15 @@ The first thing we'll need is a working Python interpreter.
     alphas, betas, and release candidates unless you *really* know what you're
     doing.
 
+    You can also install Python through `homebrew
+    <https://docs.brew.sh/Homebrew-and-Python>`__, use `pyenv
+    <https://github.com/pyenv/pyenv#simple-python-version-management-pyenv>`__
+    to manage multiple Python installs, or use `Anaconda
+    <https://docs.anaconda.com/anaconda/install/>`__ or `Miniconda
+    <https://docs.conda.io/en/latest/miniconda.html>`__. It doesn't matter
+    *how* you've installed Python - it only matters that you can run ``python3``
+    from your terminal and get a working Python interpreter.
+
   .. group-tab:: Linux
 
     If you're on Linux, you'll install Python using the system package manager
@@ -45,6 +54,11 @@ The first thing we'll need is a working Python interpreter.
 
     Support for Raspberry Pi is limited at this time.
 
+    **Important:** You *must* use the system Python provided by your operating
+    system. Alternative Python installations (pyenv, Anaconda, manually compiled
+    Python, etc.) will prevent you from successfully packaging your application
+    for distribution in later steps of this tutorial.
+
   .. group-tab:: Windows
 
     If you're on Windows, you can get the official installer from `the Python
@@ -52,27 +66,12 @@ The first thing we'll need is a working Python interpreter.
     of Python from 3.9 to 3.13. We'd also advise avoiding alphas, betas, and
     release candidates unless you *really* know what you're doing.
 
-.. admonition:: Alternative Python distributions
-
-    There are lots of different ways of installing Python. You can install
-    Python through `homebrew
-    <https://docs.brew.sh/Homebrew-and-Python>`__. You can use `pyenv
-    <https://github.com/pyenv/pyenv#simple-python-version-management-pyenv>`__
-    to manage multiple Python installs on the same machine. Windows users
-    can install Python from the Windows App Store. Users from a data science
-    background might want to use `Anaconda
+    You can also install Python from the Windows App Store, or use `Anaconda
     <https://docs.anaconda.com/anaconda/install/>`__ or `Miniconda
-    <https://docs.conda.io/en/latest/miniconda.html>`__.
+    <https://docs.conda.io/en/latest/miniconda.html>`__. It doesn't matter
+    *how* you've installed Python - it only matters that you can run ``python3``
+    from your command prompt and get a working Python interpreter.
 
-    If you're on macOS or Windows, it doesn't matter *how* you've installed
-    Python - it only matters that you can run ``python3`` from your operating
-    system's command prompt/terminal application, and get a working Python
-    interpreter.
-
-    If you're on Linux, you *must* use the system Python provided by your
-    operating system. You will be able to complete *most* of this tutorial using
-    a non-system Python, but you won't be able to package your application for
-    distribution to others.
 
 .. _install-dependencies:
 
