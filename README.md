@@ -1,5 +1,6 @@
-[![BeeWare Logo](https://beeware.org/static/images/brutus-270.png)](https://beeware.org)
-
+<a href="https://beeware.org">
+  <img src="https://beeware.org/static/images/brutus-270.png" alt="BeeWare Logo" height="72">
+</a>
 
 # BeeWare
 
@@ -37,7 +38,9 @@ request](https://github.com/beeware/beeware/pulls).
 
 ### Translations
 
-[![Translation Status](https://hosted.weblate.org/widget/beeware/open-graph.png)](https://hosted.weblate.org/engage/beeware/)
+<a href="https://hosted.weblate.org/engage/beeware/">
+  <img src="https://hosted.weblate.org/widget/beeware/open-graph.png" alt="Translation Status" width="300">
+</a>
 
 We manage translations using [Weblate](https://weblate.org/).
 
