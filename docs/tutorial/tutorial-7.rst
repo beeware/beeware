@@ -121,7 +121,7 @@ with ``pip``, and then re-running ``briefcase dev``:
 
     .. code-block:: console
 
-      (beeware-venv) $ python -m pip install faker
+      (beeware-venv) $ python3 -m pip install faker
       (beeware-venv) $ briefcase dev
 
     When you enter a name and press the button, you should see a dialog that

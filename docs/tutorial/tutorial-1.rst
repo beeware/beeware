@@ -19,7 +19,7 @@ with the ``beeware-venv`` virtual environment activated, and run:
 
     .. code-block:: console
 
-      (beeware-venv) $ python -m pip install briefcase
+      (beeware-venv) $ python3 -m pip install briefcase
 
   .. group-tab:: Linux
 

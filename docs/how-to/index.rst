@@ -186,7 +186,7 @@ so we have to manually install each package:
     .. code-block:: console
 
       (venv) $ cd beeware
-      (venv) $ python -m pip install -e ".[dev]"
+      (venv) $ python3 -m pip install -e ".[dev]"
 
   .. group-tab:: Linux
 
