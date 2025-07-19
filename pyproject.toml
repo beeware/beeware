@@ -70,11 +70,6 @@ skip = ".git,*.pdf,*.svg"
 ignore-regex = "\bNd\b"
 ignore-words-list = "re-use"
 
-[tool.isort]
-profile = "black"
-split_on_trailing_comma = true
-combine_as_imports = true
-
 [tool.setuptools_scm]
 # To enable SCM versioning, we need an empty tool configuration for setuptools_scm
 
@@ -82,3 +77,42 @@ combine_as_imports = true
 # WOO7: wheel library is empty
 # W008: wheel is empty
 ignore = "W007,W008"
+
+[tool.ruff.lint]
+# In addition to the default rules, these additional rules will be used:
+extend-select = [
+    "E",      # pycodestyle
+    "W",      # pycodestyle
+    "F",      # pyflakes
+    "UP",     # pyupgrade
+    "B",      # flake8-bugbear
+    "YTT",    # flake8-2020
+    "ASYNC",  # flake8-async
+    "C4",     # flake8-comprehensions
+    "I",      # isort
+    # The SIM rules are *very* opinionated, and don't necessarily make for better code.
+    # They may be worth occasionally turning on just to see if something could actually
+    # use improvement.
+    # "SIM",    # flake8-simplify
+]
+ignore = ["F821", "E501"]
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+known-third-party = [
+    "android",  # isort defaults to making this first-party because it can't be imported.
+    "textual",  # We don't ever import textual, so Ruff doesn't know about it.
+    "travertino", # In this repo, but still a separate package
+]
+known-first-party = [
+    "testbed",
+    "toga",
+    "toga_android",
+    "toga_cocoa",
+    "toga_dummy",
+    "toga_gtk",
+    "toga_iOS",
+    "toga_textual",
+    "toga_web",
+    "toga_winforms",
+]
