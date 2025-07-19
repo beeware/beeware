@@ -9,7 +9,7 @@ build-backend = "setuptools.build_meta"
 dynamic = ["version"]
 name = "beeware"
 description = "A metapackage to install the full BeeWare suite of tools."
-readme = "README.rst"
+readme = "README.md"
 requires-python = ">= 3.8"
 license.text = "New BSD"
 authors = [
