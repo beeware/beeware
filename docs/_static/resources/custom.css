@@ -2,3 +2,8 @@
 .sd-card-title {
     color: var(--color-link);
 }
+
+/* Fix for Pygments not having a dark mode override for "generic content" */
+body[data-theme="dark"] .highlight .go {
+    color: #ccc;
+}
