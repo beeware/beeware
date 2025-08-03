@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-09 04:13+0000\n"
-"PO-Revision-Date: 2025-07-07 01:02+0000\n"
+"PO-Revision-Date: 2025-08-03 20:51+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/tutorial-1/zh_Hans/>\n"
@@ -29,7 +29,11 @@ msgstr "安装 BeeWare 工具"
 
 #: ../../tutorial/tutorial-1.rst:10 7088cab03d8a41b3ba2da113e95ec243
 msgid "First, we need to install **Briefcase**. Briefcase is a BeeWare tool that can be used to package your application for distribution to end users - but it can also be used to bootstrap a new project. Make sure you're in the ``beeware-tutorial`` directory you created in :doc:`Tutorial 0 <tutorial-0>`, with the ``beeware-venv`` virtual environment activated, and run:"
-msgstr "首先，我们需要安装 **Briefcase**。Briefcase是一款 BeeWare 工具，可用于打包应用程序，以便分发给最终用户；但它也可用于引导新项目。确保您在 :doc:`教程0 <tutorial-0>` 中创建的 ``beeware-tutorial`` 目录中，并已激活 ``beeware-venv`` 虚拟环境，然后运行："
+msgstr ""
+"首先，我们需要安装 **Briefcase**。Briefcase 是一款 BeeWare "
+"工具，可用于打包应用程序，以便分发给最终用户；但它也可用于引导新项目。"
+"确保您在 :doc:`教程0 <tutorial-0>` 中创建的 ``beeware-tutorial`` 目录中，"
+"并已激活 ``beeware-venv`` 虚拟环境，然后运行："
 
 #: ../../tutorial/tutorial-1.rst:18 ../../tutorial/tutorial-1.rst:60
 #: ../../tutorial/tutorial-1.rst:157 ../../tutorial/tutorial-1.rst:200
@@ -52,7 +56,9 @@ msgstr "安装过程中可能出现的错误"
 
 #: ../../tutorial/tutorial-1.rst:32 9df9fcc42feb4032a001a66ef261dbb7
 msgid "If you see errors during installation, it's almost certainly because some of the system requirements haven't been installed. Make sure you have :ref:`installed all the platform pre-requisites <install-dependencies>`."
-msgstr "如果在安装过程中出现错误，几乎可以肯定是因为某些系统要求尚未安装。请确保您已 :ref:`安装了所有您的平台的先决条件 <install-dependencies>`。"
+msgstr ""
+"如果在安装过程中出现错误，几乎可以肯定是因为某些系统要求尚未安装。"
+"请确保您已\\ :ref:`安装了所有您的平台的先决条件 <install-dependencies>`。"
 
 #: ../../tutorial/tutorial-1.rst:37 ../../tutorial/tutorial-1.rst:72
 #: ../../tutorial/tutorial-1.rst:183 ../../tutorial/tutorial-1.rst:212
@@ -182,7 +188,7 @@ msgstr "如果您遇到错误："
 
 #: ../../tutorial/tutorial-1.rst:228 f62b400262f44c45a4e2b84061b7387d
 msgid "Confirm that you are running a :ref:`version of python that this tutorial supports <install-python>`."
-msgstr "确认您在运行 :ref:`此教程支持的 Python 版本 <install-python>`。"
+msgstr "确认您在运行\\ :ref:`此教程支持的 Python 版本 <install-python>`。"
 
 #: ../../tutorial/tutorial-1.rst:231 5787f011a2134cd6906cfd39163dfa2f
 msgid "If your version of python is *not* a supported version, you will have to restart the tutorial."
@@ -202,7 +208,10 @@ msgstr "下一步"
 
 #: ../../tutorial/tutorial-1.rst:243 3d6f4ac3619c49b8abb82d6f374d0231
 msgid "We now have a working application, running in developer mode. Now we can add some logic of our own to make our application do something a little more interesting. In :doc:`Tutorial 2 <tutorial-2>`, we'll put a more useful user interface onto our application."
-msgstr "现在，我们有了一个在开发者模式下运行的应用程序。现在我们可以添加一些自己的逻辑，让应用程序做更有趣一些的事情。在 :doc:`教程2<tutorial-2>` 中，我们将为应用程序添加一个更有用的用户界面。"
+msgstr ""
+"现在，我们有了一个在开发者模式下运行的应用程序。现在我们可以添加一些自己的逻"
+"辑，让应用程序做更有趣一些的事情。在\\ :doc:`教程 2<tutorial-2>` "
+"中，我们将为应用程序添加一个更有用的用户界面。"
 
 #~ msgid "One of the BeeWare tools is **Briefcase**. Briefcase can be used to package your application for distribution to end users - but it can also be used to bootstrap a new project."
 #~ msgstr "BeeWare 工具之一是 **Briefcase**。Briefcase 可用于打包应用程序，以便分发给最终用户；但它也可用于引导新项目。"
