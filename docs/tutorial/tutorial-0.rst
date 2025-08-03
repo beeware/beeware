@@ -16,39 +16,40 @@ The first thing we'll need is a working Python interpreter.
 
   .. group-tab:: macOS
 
-    If you're on macOS, a recent version of Python is included with Xcode or
-    the command line developer tools. To check if you already have it, run the
-    following command:
-
-    .. code-block:: console
-
-      $ python3 --version
-
-    If Python is installed, you'll see its version number. Otherwise, you'll be
-    prompted to install the command line developer tools.
-
-    You should ensure that you are using Python 3.9 or newer. If it isn't,
-    you'll need to upgrade your Python install. You can get the official
-    installer from `the Python website <https://www.python.org/downloads>`_. You
-    can use any stable version of Python from 3.9 onward. We'd advise avoiding
-    alphas, betas, and release candidates unless you *really* know what you're
-    doing.
+    If you're on macOS, you can get an official Python installer from `the
+    Python website <https://www.python.org/downloads>`_. You can use any version
+    of Python from 3.10 or newer (although you should avoid alphas, betas and
+    release candidates). We strongly recommend using Python 3.13 or newer.
 
     You can also install Python through `homebrew
     <https://docs.brew.sh/Homebrew-and-Python>`__, use `pyenv
     <https://github.com/pyenv/pyenv#simple-python-version-management-pyenv>`__
     to manage multiple Python installs, or use `Anaconda
     <https://docs.anaconda.com/anaconda/install/>`__ or `Miniconda
-    <https://docs.conda.io/en/latest/miniconda.html>`__. It doesn't matter
-    *how* you've installed Python - it only matters that you can run ``python3``
-    from your terminal and get a working Python interpreter.
+    <https://docs.conda.io/en/latest/miniconda.html>`__. It doesn't matter *how*
+    you've installed Python - it only matters that you can run ``python3`` from
+    your terminal and get a working, supported Python interpreter.
+
+    Xcode and the Command-line Developer Tools provide a version of Python;
+    however that Python is version 3.9. Python 3.9 has reached end-of-life, and
+    is no longer supported by Python or BeeWare. You will *not* be able to the
+    Xcode-provided version of Python to run this tutorial.
+
+    To check the version of Python that you have installed, run the following
+    command:
+
+    .. code-block:: console
+
+      $ python3 --version
+
+    If Python is installed, you'll see its version number.
 
   .. group-tab:: Linux
 
     If you're on Linux, you'll install Python using the system package manager
     (``apt`` on Debian/Ubuntu/Mint, ``dnf`` on Fedora, or ``pacman`` on Arch).
 
-    You should ensure that the system Python is Python 3.9 or newer; if it isn't
+    You should ensure that the system Python is Python 3.10 or newer; if it isn't
     (e.g., Ubuntu 20.04 ships with Python 3.8), you'll need to upgrade your
     Linux distribution to something more recent.
 
@@ -62,15 +63,17 @@ The first thing we'll need is a working Python interpreter.
   .. group-tab:: Windows
 
     If you're on Windows, you can get the official installer from `the Python
-    website <https://www.python.org/downloads>`_. You can use any stable version
-    of Python from 3.9 to 3.13. We'd also advise avoiding alphas, betas, and
-    release candidates unless you *really* know what you're doing.
+    website <https://www.python.org/downloads>`_. You can use any version of
+    Python from 3.10 to 3.13 (although you should avoid alphas, betas and
+    release candidates). We strongly recommend using Python 3.13.
+
+    Support for Windows on ARM64 is limited at this time.
 
     You can also install Python from the Windows App Store, or use `Anaconda
     <https://docs.anaconda.com/anaconda/install/>`__ or `Miniconda
-    <https://docs.conda.io/en/latest/miniconda.html>`__. It doesn't matter
-    *how* you've installed Python - it only matters that you can run ``python3``
-    from your command prompt and get a working Python interpreter.
+    <https://docs.conda.io/en/latest/miniconda.html>`__. It doesn't matter *how*
+    you've installed Python - it only matters that you can run ``python3`` from
+    your command prompt and get a working, supported Python interpreter.
 
 
 .. _install-dependencies:
