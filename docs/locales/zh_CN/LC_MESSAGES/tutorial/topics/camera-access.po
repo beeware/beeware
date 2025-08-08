@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-09 04:13+0000\n"
-"PO-Revision-Date: 2025-07-07 01:02+0000\n"
+"PO-Revision-Date: 2025-08-09 01:02+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/topics/camera-access/zh_Hans/>\n"
@@ -51,7 +51,7 @@ msgstr "这里展示的代码可以在 Windows 或 Linux 上运行，但是当�
 
 #: ../../tutorial/topics/camera-access.rst:22 3cc260fa7686433aa726a7d7a8355649
 msgid "The code will work if it is run on an actual iOS device, but will fail to take a photograph if deployed to the iOS simulator."
-msgstr ""
+msgstr "这段代码在 iOS 设备上会正常工作，但部署到 iOS 虚拟器时，它将无法正常拍照。"
 
 #: ../../tutorial/topics/camera-access.rst:26 d0dc918c887d48498ca700bb89fac378
 msgid "Start a new project"
