@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-20 03:05+0000\n"
-"PO-Revision-Date: 2025-07-07 01:01+0000\n"
+"PO-Revision-Date: 2025-08-09 01:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/beeware/tutorial/tutorial-7/zh_Hans/>\n"
@@ -38,6 +38,11 @@ msgstr "让我们修改我们的应用程序，使其能够显示比“你好！
 #: ../../tutorial/tutorial-7.rst:16 6c43b52826de46dc8283b99f1ffd7cb8
 msgid "To generate some more interesting text for the dialog, we're going to use a library called `Faker <https://faker.readthedocs.io/en/stable/>`__ . Faker is a Python package that generates fake content, including names and text blocks. The names and words in the text block are generated from an arbitrary list of words provided by Faker. We're going to use Faker to construct a fake message, as if someone is responding to the user."
 msgstr ""
+"为了为我们的对话框生成一些更有趣的内容，我们将使用一款名为 `Faker <https://"
+"faker.readthedocs.io/en/stable/>`__ 的库。Faker 是一个用于生成假内容的 "
+"Python 软件包，包括生成名字与文本块。Faker "
+"通过它提供的词语列表以生成这些内容。我们将用 Faker "
+"构建一条假信息，就像有人在向用户回应一样。"
 
 #: ../../tutorial/tutorial-7.rst:23 fe30468785e14c48ba8d0fdd9bb9fe8e
 msgid "We start by adding ``faker`` to our app. Add an import to the top of the ``app.py`` to import ``faker``::"
