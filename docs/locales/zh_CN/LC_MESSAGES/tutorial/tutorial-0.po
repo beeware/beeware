@@ -1,17 +1,18 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-03 20:51+0000\n"
-"PO-Revision-Date: 2025-06-18 21:55+0000\n"
+"PO-Revision-Date: 2025-08-09 01:01+0000\n"
 "Last-Translator: John <johnzhou721@gmail.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/beeware/tutorial/tutorial-0/zh_Hans/>\n"
 "Language: zh_CN\n"
-"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-0/zh_Hans/>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.13-dev\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../tutorial/tutorial-0.rst:3 49a4bd35d6b04bf1a007bd285bb25b94
@@ -37,14 +38,22 @@ msgid "macOS"
 msgstr "macOS"
 
 #: ../../tutorial/tutorial-0.rst:19 7bd92b548afb4416912b3f87bcfa0794
-#, fuzzy
 msgid "If you're on macOS, you can get an official Python installer from `the Python website <https://www.python.org/downloads>`_. You can use any version of Python from 3.10 or newer (although you should avoid alphas, betas and release candidates). We strongly recommend using Python 3.13 or newer."
-msgstr "如果您使用的是 Windows，您可以从 `Python 网站 <https://www.python.org/downloads>`_\\ 获取官方安装程序。您可以使用 Python 3.9 到 3.13 的任何稳定版本。我们还建议避免使用 Alpha、Beta 和候选版本，除非你\\ *真的*\\ 知道自己在做什么。"
+msgstr ""
+"如果您使用 macOS，您可以从 `Python 网站 <https://www.python.org/downloads>`"
+"_\\ 获取官方安装程序。您可以使用 Python 3.10 以上时任何版本，但避免使用 "
+"Alpha、Beta 和候选版本。我们强烈建议使用 Python 3.13 或更新版本。"
 
 #: ../../tutorial/tutorial-0.rst:24 992f50d300ae4c58902a0994a07f8284
-#, fuzzy
 msgid "You can also install Python through `homebrew <https://docs.brew.sh/Homebrew-and-Python>`__, use `pyenv <https://github.com/pyenv/pyenv#simple-python-version-management-pyenv>`__ to manage multiple Python installs, or use `Anaconda <https://docs.anaconda.com/anaconda/install/>`__ or `Miniconda <https://docs.conda.io/en/latest/miniconda.html>`__. It doesn't matter *how* you've installed Python - it only matters that you can run ``python3`` from your terminal and get a working, supported Python interpreter."
-msgstr "安装 Python 有很多不同的方法。您可以通过 `homebrew <https://docs.brew.sh/Homebrew-and-Python>`__ 安装 Python。您可以使用 `pyenv <https://github.com/pyenv/pyenv#simple-python-version-management-pyenv>`__ 来管理同一台机器上的多个 Python 安装。Windows 用户可以从 Windows 应用商店安装 Python。数据科学背景的用户可以考虑使用 `Anaconda <https://docs.anaconda.com/anaconda/install/>`__ 或 `Miniconda <https://docs.conda.io/en/latest/miniconda.html>`__。"
+msgstr ""
+"安装 Python 也有很多其他不同的方法。您可以通过 `homebrew <https://"
+"docs.brew.sh/Homebrew-and-Python>`__ 安装 Python，或使用 `pyenv <https://"
+"github.com/pyenv/pyenv#simple-python-version-management-pyenv>`__ "
+"来管理同一台机器上的多个 Python 安装，或使用 `Anaconda <https://"
+"docs.anaconda.com/anaconda/install/>`__ 或 `Miniconda <https://docs.conda.io/"
+"en/latest/miniconda.html>`__。*怎么*\\ 安装 Python 并不重要，"
+"只要可以从终端运行 ``python3`` 并获取到支持的、正常工作的 Python 解释器即可。"
 
 #: ../../tutorial/tutorial-0.rst:33 f5c420dc77a84ec084fbf1f0eed02a4f
 msgid "Xcode and the Command-line Developer Tools provide a version of Python; however that Python is version 3.9. Python 3.9 has reached end-of-life, and is no longer supported by Python or BeeWare. You will *not* be able to the Xcode-provided version of Python to run this tutorial."
@@ -230,4 +239,3 @@ msgstr "现在我们已经设置好了环境。我们已经准备创建\\ :doc:`
 
 #~ msgid "You should ensure that you are using Python 3.9 or newer. If it isn't, you'll need to upgrade your Python install. You can get the official installer from `the Python website <https://www.python.org/downloads>`_. You can use any stable version of Python from 3.9 onward. We'd advise avoiding alphas, betas, and release candidates unless you *really* know what you're doing."
 #~ msgstr "您应该确保您使用的是 Python 3.9 或更高版本。如果不是，则需要升级 Python 安装。您可以从 `Python 官网 <https://www.python.org/downloads>`_ 获取官方安装程序。从 3.9 开始，您可以使用任何稳定版本的 Python。我们建议避免使用 Alpha、Beta 和候选版本，除非你真的知道自己在做什么。"
-
