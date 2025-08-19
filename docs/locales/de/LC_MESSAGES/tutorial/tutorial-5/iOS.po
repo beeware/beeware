@@ -1,17 +1,18 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-09 04:13+0000\n"
-"PO-Revision-Date: 2024-08-14 00:09+0000\n"
-"Last-Translator: tct123 <tct1234@protonmail.com>\n"
+"PO-Revision-Date: 2025-08-19 20:01+0000\n"
+"Last-Translator: \"Mirko P.\" <michoo@outlook.de>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
+"tutorial-5/ios/de/>\n"
 "Language: de\n"
-"Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-5/ios/de/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.13\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../tutorial/tutorial-5/iOS.rst:3 90b66ea2a56043d7b0c05a4370299b65
@@ -21,11 +22,21 @@ msgstr "Tutorial 5 – Mobil nutzen: iOS"
 #: ../../tutorial/tutorial-5/iOS.rst:5 9cea31a42a4d44ee9826cc8c3ef1fc1e
 msgid "To compile iOS applications we'll need Xcode, which is available for free from `the macOS App Store <https://apps.apple.com/au/app/xcode/id497799835?mt=12>`__. Once Xcode is installed, launch it from Applications and accept the Xcode License Agreement. Next, Xcode will show which components are built-in, and which components you may download. Select the checkbox next to iOS (followed by the current version number), and then click \"Download and Install\" to install it. Xcode will install the system components, followed by the iOS Simulator."
 msgstr ""
+"Um iOS-Anwendungen zu kompilieren, benötigen wir Xcode, das kostenlos im "
+"macOS App Store <https://apps.apple.com/au/app/xcode/id497799835?mt=12>__ "
+"erhältlich ist. Sobald Xcode installiert ist, starten Sie es über "
+"„Anwendungen” und akzeptieren Sie die Xcode-Lizenzvereinbarung. Als Nächstes "
+"zeigt Xcode an, welche Komponenten integriert sind und welche Komponenten "
+"Sie herunterladen können. Aktivieren Sie das Kontrollkästchen neben iOS ("
+"gefolgt von der aktuellen Versionsnummer) und klicken Sie dann auf „"
+"Herunterladen und installieren“, um es zu installieren. Xcode installiert "
+"die Systemkomponenten und anschließend den iOS-Simulator."
 
 #: ../../tutorial/tutorial-5/iOS.rst:13 a828743e1b084662a9964c652643c7ae
-#, fuzzy
 msgid "Once we've got Xcode and the iOS simulator installed, we can take our application and deploy it as an iOS app."
-msgstr "Sobald wir Xcode installiert haben, können wir unsere Anwendung als iOS-App bereitstellen."
+msgstr ""
+"Sobald wir Xcode und den iOS-Simulator installiert haben, können wir unsere "
+"Anwendung als iOS-App bereitstellen."
 
 #: ../../tutorial/tutorial-5/iOS.rst:16 c162ced007d54070bcfe9bfb20815841
 msgid "The process of deploying an application to iOS is very similar to the process for deploying as a desktop application. First, you run the ``create`` command - but this time, we specify that we want to create an iOS application:"
@@ -54,6 +65,11 @@ msgstr "Hello World Tutorial 5 Fenster, auf iOS"
 #: ../../tutorial/tutorial-5/iOS.rst:119 179820b69fa74aa9ac56a4e1d240c4b7
 msgid "While the app is running, you'll see a series of Simulator log output messages in the console. Typing Ctrl+C into the terminal will halt the messages in the console, but it will not close the simulator. This is so you can test new changes without restarting the simulator."
 msgstr ""
+"Während die App ausgeführt wird, werden in der Konsole eine Reihe von "
+"Simulator-Protokollausgabemeldungen angezeigt. Durch Eingabe von Strg+C im "
+"Terminal werden die Meldungen in der Konsole angehalten, der Simulator wird "
+"jedoch nicht geschlossen. Auf diese Weise können Sie neue Änderungen testen, "
+"ohne den Simulator neu starten zu müssen."
 
 #: ../../tutorial/tutorial-5/iOS.rst:124 f22a31f829604d01b2cd556cdb1f5905
 msgid "If you know ahead of time which iOS simulator you want to target, you can tell Briefcase to use that simulator by providing a ``-d`` (or ``--device``) option. Using the name of the device you selected when you built your application, run:"
@@ -80,4 +96,3 @@ msgstr "Wir haben jetzt eine Anwendung auf unserem Telefon! Gibt es noch einen a
 
 #~ msgid "To compile iOS applications we'll need Xcode, which is available for free from `the macOS App Store <https://apps.apple.com/au/app/xcode/id497799835?mt=12>`__. Once Xcode is installed, launch it from Applications and accept the Xcode License Agreement. Next, Xcode will show which Simulator runtimes are built-in, and which Simulator runtimes you may download. Select the checkbox next to the iOS Simulator runtime, and then click Continue to download and install it."
 #~ msgstr ""
-
