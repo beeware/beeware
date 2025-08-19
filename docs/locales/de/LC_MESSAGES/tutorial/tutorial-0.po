@@ -1,17 +1,18 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-03 20:51+0000\n"
-"PO-Revision-Date: 2024-08-19 17:09+0000\n"
-"Last-Translator: tct123 <tct1234@protonmail.com>\n"
+"PO-Revision-Date: 2025-08-19 20:02+0000\n"
+"Last-Translator: \"Mirko P.\" <michoo@outlook.de>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
+"tutorial-0/de/>\n"
 "Language: de\n"
-"Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-0/de/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.13\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../tutorial/tutorial-0.rst:3 49a4bd35d6b04bf1a007bd285bb25b94
@@ -37,30 +38,50 @@ msgid "macOS"
 msgstr "macOS"
 
 #: ../../tutorial/tutorial-0.rst:19 7bd92b548afb4416912b3f87bcfa0794
-#, fuzzy
 msgid "If you're on macOS, you can get an official Python installer from `the Python website <https://www.python.org/downloads>`_. You can use any version of Python from 3.10 or newer (although you should avoid alphas, betas and release candidates). We strongly recommend using Python 3.13 or newer."
-msgstr "Wenn Sie unter Windows arbeiten, können Sie das offizielle Installationsprogramm von der `Python-Website <https://www.python.org/downloads>`_ herunterladen. Sie können jede stabile Version von Python ab 3.8 verwenden. Wir raten dazu, Alphas, Betas und Release Candidates zu meiden, es sei denn, Sie wissen *wirklich*, was Sie tun."
+msgstr ""
+"Wenn Sie macOS verwenden, können Sie einen offiziellen Python-Installer von "
+"der Python-Website <https://www.python.org/downloads>_ herunterladen. Sie "
+"können jede Version von Python ab 3.10 verwenden (allerdings sollten Sie "
+"Alpha-, Beta- und Release-Candidate-Versionen vermeiden). Wir empfehlen "
+"dringend die Verwendung von Python 3.13 oder neuer."
 
 #: ../../tutorial/tutorial-0.rst:24 992f50d300ae4c58902a0994a07f8284
-#, fuzzy
 msgid "You can also install Python through `homebrew <https://docs.brew.sh/Homebrew-and-Python>`__, use `pyenv <https://github.com/pyenv/pyenv#simple-python-version-management-pyenv>`__ to manage multiple Python installs, or use `Anaconda <https://docs.anaconda.com/anaconda/install/>`__ or `Miniconda <https://docs.conda.io/en/latest/miniconda.html>`__. It doesn't matter *how* you've installed Python - it only matters that you can run ``python3`` from your terminal and get a working, supported Python interpreter."
-msgstr "Es gibt viele verschiedene Möglichkeiten, Python zu installieren. Sie können Python über `homebrew <https://docs.brew.sh/Homebrew-and-Python>`__ installieren. Sie können `pyenv <https://github.com/pyenv/pyenv#simple-python-version-management-pyenv>`__ verwenden, um mehrere Python-Installationen auf demselben Rechner zu verwalten. Windows-Benutzer können Python aus dem Windows App Store installieren. Für Benutzer mit einem datenwissenschaftlichen Hintergrund könnten auch `Anaconda <https://docs.anaconda.com/anaconda/install/>`__ oder `Miniconda <https://docs.conda.io/en/latest/miniconda.html>`__ interessant sein."
+msgstr ""
+"Sie können Python auch über `homebrew <https://docs.brew.sh/Homebrew-and-"
+"Python>`__ installieren, `pyenv <https://github.com/pyenv/pyenv#simple-"
+"python-version-management-pyenv>`__ zur Verwaltung mehrerer Python-"
+"Installationen verwenden oder `Anaconda <https://docs. anaconda.com/anaconda/"
+"install/>`__ oder `Miniconda <https://docs.conda.io/en/latest/"
+"miniconda.html>`__ verwenden. Es spielt keine Rolle, *wie* Sie Python "
+"installiert haben – wichtig ist nur, dass Sie ``python3`` von Ihrem Terminal "
+"aus ausführen können und einen funktionierenden, unterstützten Python-"
+"Interpreter erhalten."
 
 #: ../../tutorial/tutorial-0.rst:33 f5c420dc77a84ec084fbf1f0eed02a4f
 msgid "Xcode and the Command-line Developer Tools provide a version of Python; however that Python is version 3.9. Python 3.9 has reached end-of-life, and is no longer supported by Python or BeeWare. You will *not* be able to the Xcode-provided version of Python to run this tutorial."
 msgstr ""
+"Xcode und die Befehlszeilen-Entwicklertools bieten eine Version von Python "
+"an; allerdings handelt es sich dabei um Python 3.9. Python 3.9 hat das Ende "
+"seiner Lebensdauer erreicht und wird von Python oder BeeWare nicht mehr "
+"unterstützt. Sie können die von Xcode bereitgestellte Version von Python "
+"*nicht* verwenden, um dieses Tutorial auszuführen."
 
 #: ../../tutorial/tutorial-0.rst:38 a98d6505c7a9439bb6729ea2219186a6
 msgid "To check the version of Python that you have installed, run the following command:"
 msgstr ""
+"Um die Version von Python zu überprüfen, die Sie installiert haben, führen "
+"Sie den folgenden Befehl aus:"
 
 #: ../../tutorial/tutorial-0.rst:45 dff884f32be74494a9fe5520e2e29d62
 msgid "If Python is installed, you'll see its version number."
-msgstr ""
+msgstr "Wenn Python installiert ist, wird die Versionsnummer angezeigt."
 
 #: ../../tutorial/tutorial-0.rst:47 ../../tutorial/tutorial-0.rst:98
 #: ../../tutorial/tutorial-0.rst:166 0062749cdb0d4df4ac1ceba08fad13cb
 #: 48a12a4cb0b743d6ab4cff9f3cb1ae70 57c7c9c4bf8341b594fc2b5af27c366d
+#, fuzzy
 msgid "Linux"
 msgstr "Linux"
 
@@ -80,6 +101,11 @@ msgstr "Raspberry Pi wird derzeit nur begrenzt unterstützt."
 #: ../../tutorial/tutorial-0.rst:58 b96002f63f494f97a5808553da76ff22
 msgid "**Important:** You *must* use the system Python provided by your operating system. Alternative Python installations (pyenv, Anaconda, manually compiled Python, etc.) will prevent you from successfully packaging your application for distribution in later steps of this tutorial."
 msgstr ""
+"**Wichtig:** Sie *müssen* das von Ihrem Betriebssystem bereitgestellte "
+"Python-System verwenden. Alternative Python-Installationen (pyenv, Anaconda, "
+"manuell kompiliertes Python usw.) verhindern, dass Sie Ihre Anwendung in "
+"späteren Schritten dieses Tutorials erfolgreich für die Verteilung verpacken "
+"können."
 
 #: ../../tutorial/tutorial-0.rst:63 ../../tutorial/tutorial-0.rst:133
 #: ../../tutorial/tutorial-0.rst:175 9abb000e1e8043ae956733b0270b1175
@@ -161,6 +187,8 @@ msgstr "Wir werden nun eine virtuelle Umgebung erstellen - eine \"Sandbox\", die
 #: ../../tutorial/tutorial-0.rst:184 f6e96fcb3b88461fae65e7bcde4aef73
 msgid "If you're not using Python 3.12, replace the ``-3.12`` in these instructions with the version number that you are using."
 msgstr ""
+"Wenn Sie nicht Python 3.12 verwenden, ersetzen Sie das ``-3.12`` in dieser "
+"Anleitung durch die Versionsnummer, die Sie verwenden."
 
 #: ../../tutorial/tutorial-0.rst:187 39c4ca1f082141e7ba1cffef1b3a3967
 msgid "Errors running PowerShell Scripts"
@@ -230,4 +258,3 @@ msgstr "Wir haben jetzt unsere Umgebung eingerichtet. Wir sind bereit, :doc:`uns
 
 #~ msgid "You should ensure that you are using Python 3.9 or newer. If it isn't, you'll need to upgrade your Python install. You can get the official installer from `the Python website <https://www.python.org/downloads>`_. You can use any stable version of Python from 3.9 onward. We'd advise avoiding alphas, betas, and release candidates unless you *really* know what you're doing."
 #~ msgstr "Sie sollten sicherstellen, dass Sie Python 3.8 oder neuer verwenden. Ist dies nicht der Fall, müssen Sie Ihre Python-Installation aktualisieren. Sie können das offizielle Installationsprogramm von `der Python-Website <https://www.python.org/downloads>`_ herunterladen. Sie können jede stabile Version von Python ab 3.8 verwenden. Wir empfehlen, Alphas, Betas und Release-Kandidaten zu vermeiden, es sei denn, Sie wissen *wirklich*, was Sie tun."
-
