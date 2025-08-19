@@ -1,48 +1,57 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-07-19 12:41+0000\n"
-"PO-Revision-Date: 2024-02-02 22:01+0000\n"
-"Last-Translator: Marco Esters <mesters@anaconda.com>\n"
+"PO-Revision-Date: 2025-08-19 20:01+0000\n"
+"Last-Translator: \"Mirko P.\" <michoo@outlook.de>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
+"tutorial-3/de/>\n"
 "Language: de\n"
-"Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-3/de/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.13\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../tutorial/tutorial-3.rst:3 0a665e52c6c04cb4a254ee02e03a0d1a
-#, fuzzy
 msgid "Tutorial 3 - Packaging for distribution"
 msgstr "Tutorial 3 - Verpackung für den Vertrieb"
 
 #: ../../tutorial/tutorial-3.rst:5 443f89636d834ed4a159198af7cc9e1b
-#, fuzzy
 msgid "So far, we've been running our application in \"Developer mode\". This makes it easy for us to run our application locally - but what we really want is to be able to give our application to others."
-msgstr "Bislang haben wir unsere Anwendung im \"Entwicklermodus\" ausgeführt. Das macht es uns leicht, unsere Anwendung lokal auszuführen - aber was wir wirklich wollen, ist, dass wir unsere Anwendung an andere weitergeben können."
+msgstr ""
+"Bisher haben wir unsere Anwendung im „Entwicklermodus“ ausgeführt. Das macht "
+"es uns leicht, unsere Anwendung lokal auszuführen – aber was wir wirklich "
+"wollen, ist, unsere Anwendung anderen zur Verfügung stellen zu können."
 
 #: ../../tutorial/tutorial-3.rst:9 535b74d4a11c463cae5d99523175671d
-#, fuzzy
 msgid "However, we don't want to have to teach our users how to install Python, create a virtual environment, clone a git repository, and run Briefcase in developer mode. We'd rather just give them an installer, and have the application Just Work."
-msgstr "Wir möchten unseren Benutzern jedoch nicht beibringen müssen, wie man Python installiert, eine virtuelle Umgebung erstellt, ein Git-Repository klont und Briefcase im Entwicklermodus startet. Wir würden ihnen lieber einfach ein Installationsprogramm geben und die Anwendung einfach funktionieren lassen."
+msgstr ""
+"Wir möchten unseren Benutzern jedoch nicht beibringen müssen, wie sie Python "
+"installieren, eine virtuelle Umgebung erstellen, ein Git-Repository klonen "
+"und Briefcase im Entwicklermodus ausführen. Wir möchten ihnen lieber einfach "
+"ein Installationsprogramm zur Verfügung stellen, damit die Anwendung einfach "
+"funktioniert."
 
 #: ../../tutorial/tutorial-3.rst:14 2cf9d9ae39f046f487009eae6c128d28
-#, fuzzy
 msgid "Briefcase can be used to package your application for distribution in this way."
-msgstr "Briefcase kann verwendet werden, um Ihre Anwendung für die Verteilung auf diese Weise zu verpacken."
+msgstr ""
+"Briefcase kann verwendet werden, um Ihre Anwendung für die Verteilung auf "
+"diese Weise zu verpacken."
 
 #: ../../tutorial/tutorial-3.rst:17 e18a7d5ae74044d28b27fd3b7a2da0f0
-#, fuzzy
 msgid "Creating your application scaffold"
 msgstr "Erstellen Ihres Anwendungsgerüsts"
 
 #: ../../tutorial/tutorial-3.rst:19 f241a737e63a4b779967bb8559bbfbbd
-#, fuzzy
 msgid "Since this is the first time we're packaging our application, we need to create some configuration files and other scaffolding to support the packaging process. From the ``helloworld`` directory, run:"
-msgstr "Da dies das erste Mal ist, dass wir unsere Anwendung paketieren, müssen wir einige Konfigurationsdateien und andere Gerüste erstellen, um den Paketierungsprozess zu unterstützen. Starten Sie im Verzeichnis ``helloworld``:"
+msgstr ""
+"Da dies das erste Mal ist, dass wir unsere Anwendung paketieren, müssen wir "
+"einige Konfigurationsdateien und andere Gerüste erstellen, um den "
+"Paketierungsprozess zu unterstützen. Starten Sie im Verzeichnis "
+"``helloworld``:"
 
 #: ../../tutorial/tutorial-3.rst:25 ../../tutorial/tutorial-3.rst:188
 #: ../../tutorial/tutorial-3.rst:268 ../../tutorial/tutorial-3.rst:366
@@ -55,24 +64,30 @@ msgstr "macOS"
 #: ../../tutorial/tutorial-3.rst:291 ../../tutorial/tutorial-3.rst:416
 #: 454f2c58cb604436be25c6f916d4fe1b 76002e87eb3d4a0caae2a181ff264d1b
 #: da854af42c394f7c910bcc1bc022104c de205036025c4ee391abe2c4ca43a88d
+#, fuzzy
 msgid "Linux"
 msgstr "Linux"
 
 #: ../../tutorial/tutorial-3.rst:85 3f6164f463584e4f93672f7e562104ef
 msgid "Errors about Python versions"
-msgstr ""
+msgstr "Fehler bezüglich Python-Versionen"
 
 #: ../../tutorial/tutorial-3.rst:87 9743f0bdbfb64068acd605de8cc44b41
 msgid "If you receive an error that reads something like:"
-msgstr ""
+msgstr "Wenn Sie eine Fehlermeldung erhalten, die in etwa wie folgt lautet:"
 
 #: ../../tutorial/tutorial-3.rst:89 aa3ed48e7d9946a58539fef8240dfa9a
 msgid "The version of Python being used to run Briefcase (3.12) is not the system python3 (3.10)."
 msgstr ""
+"Die zur Ausführung von Briefcase verwendete Python-Version (3.12) ist nicht "
+"die System-Python-Version (3.10)."
 
 #: ../../tutorial/tutorial-3.rst:91 da9227d054104f3b9d99cb243ce89058
 msgid "You will need to recreate your virtual environment using the system ``python3``. Using the system Python is a requirement for packaging your application."
 msgstr ""
+"Sie müssen Ihre virtuelle Umgebung mit dem System ``python3`` neu erstellen. "
+"Die Verwendung des Systems Python ist eine Voraussetzung für die Paketierung "
+"Ihrer Anwendung."
 
 #: ../../tutorial/tutorial-3.rst:95 ../../tutorial/tutorial-3.rst:239
 #: ../../tutorial/tutorial-3.rst:317 ../../tutorial/tutorial-3.rst:525
@@ -114,6 +129,11 @@ msgstr "Briefcase verwaltet einen lokalen Zwischenspeicher für Support-Pakete. 
 #: ../../tutorial/tutorial-3.rst:156 0cd780276008483eaf400c500903e63e
 msgid "As noted above, when Briefcase packages an app as a native Linux system package (the default package format for Linux), a support package is not included with the app. Instead, the app will use the Python that is provided by the distribution of Linux being targeted."
 msgstr ""
+"Wie oben erwähnt, wird bei der Paketierung einer Anwendung durch Briefcase "
+"als natives Linux-Systempaket (das Standardpaketformat für Linux) kein "
+"Support-Paket mit der Anwendung mitgeliefert. Stattdessen verwendet die "
+"Anwendung das Python, das von der jeweiligen Linux-Distribution "
+"bereitgestellt wird."
 
 #: ../../tutorial/tutorial-3.rst:161 fe74d9da7c0547dfb954c30585d3c6d3
 #, fuzzy
@@ -193,6 +213,11 @@ msgstr "Möglicherweise bemerken Sie einige kleine Unterschiede im Aussehen Ihre
 #: ../../tutorial/tutorial-3.rst:350 076f393b725549ff974cbda1d791c3a6
 msgid "Before continuing, close the app. As with previous tutorial steps, you can do this by pressing the close button on the application window, by selecting Quit/Exit from the application's menu, or by typing **Ctrl+C** in the terminal where you ran ``briefcase run``."
 msgstr ""
+"Bevor Sie fortfahren, schließen Sie die App. Wie in den vorherigen Schritten "
+"des Tutorials können Sie dies tun, indem Sie auf die Schaltfläche „Schließen“"
+" im Anwendungsfenster klicken, im Menü der Anwendung „Beenden/Exit“ "
+"auswählen oder **Strg+C** in dem Terminal eingeben, in dem Sie ``briefcase "
+"run`` ausgeführt haben."
 
 #: ../../tutorial/tutorial-3.rst:356 2a2ce686b2524f5980e5f37ec555be91
 #, fuzzy
@@ -310,4 +335,3 @@ msgstr "Wir haben unsere Anwendung nun für die Verteilung auf Desktop-Plattform
 
 #~ msgid "Before continuing, close the app. As with previous tutorial steps, you can do this by pressing the close button on the application window, by selecting Quit/Exit from the application's menu, or by typing **Ctrl+C** in the terminal where you ran ``briefcase dev``."
 #~ msgstr ""
-
