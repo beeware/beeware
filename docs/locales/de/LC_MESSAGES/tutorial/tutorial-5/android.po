@@ -1,17 +1,18 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-09 04:13+0000\n"
-"PO-Revision-Date: 2024-07-30 00:09+0000\n"
-"Last-Translator: tct123 <tct1234@protonmail.com>\n"
+"PO-Revision-Date: 2025-08-19 20:02+0000\n"
+"Last-Translator: \"Mirko P.\" <michoo@outlook.de>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
+"tutorial-5/android/de/>\n"
 "Language: de\n"
-"Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-5/android/de/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.13\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../tutorial/tutorial-5/android.rst:3 d5546e4be0be41f09fb6ea0242fa01ee
@@ -49,6 +50,7 @@ msgstr "macOS"
 #: ../../tutorial/tutorial-5/android.rst:334 7a0fc8cd2f894c83a4f5c45f66743d34
 #: b6bc8b4099354b5cba078c9019e68986 e543b453329146ff806db4881196fb1d
 #: fd6e8265ffcb4679a58bfcb0757cdaf5
+#, fuzzy
 msgid "Linux"
 msgstr "Linux"
 
@@ -62,9 +64,14 @@ msgid "Windows"
 msgstr "Windows"
 
 #: ../../tutorial/tutorial-5/android.rst:102 72d65e3da98248cd8b14009fd6db873f
-#, fuzzy
 msgid "When you run ``briefcase create android`` for the first time, Briefcase downloads a Java JDK, and the Android SDK. File sizes and download times can be considerable; this may take a while (10 minutes or longer, depending on the speed of your Internet connection). When the download has completed, you will be prompted to accept Google's Android SDK license. There's a number of licenses you'll need to agree too - keep entering ``y`` at the prompt to review and accept each of the necessary the license agreements."
-msgstr "Wenn Sie ``briefcase create android`` zum ersten Mal ausführen, lädt Briefcase ein Java JDK und das Android SDK herunter. Die Dateigrößen und Downloadzeiten können beträchtlich sein; dies kann eine Weile dauern (10 Minuten oder länger, abhängig von der Geschwindigkeit Ihrer Internetverbindung). Wenn der Download abgeschlossen ist, werden Sie aufgefordert, die Android-SDK-Lizenz von Google zu akzeptieren."
+msgstr ""
+"Wenn Sie ``briefcase create android`` zum ersten Mal ausführen, lädt "
+"Briefcase ein Java JDK und das Android SDK herunter. Die Dateigrößen und "
+"Downloadzeiten können beträchtlich sein; dies kann eine Weile dauern (10 "
+"Minuten oder länger, abhängig von der Geschwindigkeit Ihrer "
+"Internetverbindung). Wenn der Download abgeschlossen ist, werden Sie "
+"aufgefordert, die Android-SDK-Lizenz von Google zu akzeptieren."
 
 #: ../../tutorial/tutorial-5/android.rst:110 08d75338c70c4293b3fc7e4756341837
 msgid "Once this completes, we'll have a ``build\\helloworld\\android\\gradle`` directory in our project, which will contain an Android project with a Gradle build configuration. This project will contain your application code, and a support package containing the Python interpreter."
@@ -155,6 +162,12 @@ msgstr "Wenn Sie nicht sehen, dass Ihre Anwendung startet, sollten Sie Ihr Termi
 #: ../../tutorial/tutorial-5/android.rst:289 192cae1733114f41bd9ce02912165e8b
 msgid "While the app is running, you'll see a lot of messages being streamed in the console. This is a stream of the application's logs from the emulator. Typing Ctrl+C into the terminal will halt the streamed information in the console, but it will not close the emulator. This is so you can test new changes without restarting the emulator."
 msgstr ""
+"Während die App ausgeführt wird, werden in der Konsole zahlreiche Meldungen "
+"angezeigt. Dabei handelt es sich um einen Stream der Anwendungsprotokolle "
+"aus dem Emulator. Durch Eingabe von Strg+C im Terminal wird die Anzeige der "
+"Informationen in der Konsole angehalten, der Emulator wird jedoch nicht "
+"geschlossen. Auf diese Weise können Sie neue Änderungen testen, ohne den "
+"Emulator neu starten zu müssen."
 
 #: ../../tutorial/tutorial-5/android.rst:295 69b63d21aaf348c2a1e285d53972eb57
 msgid "In future, if you want to run on this device without using the menu, you can provide the emulator's name to Briefcase, using ``briefcase run android -d \"@beePhone\"`` to run on the virtual device directly."
@@ -211,4 +224,3 @@ msgstr "Nächste Schritte"
 #: ../../tutorial/tutorial-5/android.rst:382 9acc33318e1742ffbc17d613201926b7
 msgid "We've now got an application on our phone! Is there anywhere else we can deploy a BeeWare app? Turn to :doc:`Tutorial 6 <../tutorial-6>` to find out..."
 msgstr "Wir haben jetzt eine Anwendung auf unserem Telefon! Gibt es noch einen anderen Ort, an dem wir eine BeeWare-Anwendung einsetzen können? Schauen Sie sich :doc:`Tutorial 6 <../tutorial-6>` an, um das herauszufinden..."
-
