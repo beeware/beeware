@@ -1,17 +1,18 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-09 04:13+0000\n"
-"PO-Revision-Date: 2024-02-02 22:01+0000\n"
-"Last-Translator: Marco Esters <mesters@anaconda.com>\n"
+"PO-Revision-Date: 2025-08-19 20:01+0000\n"
+"Last-Translator: \"Mirko P.\" <michoo@outlook.de>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
+"tutorial-1/de/>\n"
 "Language: de\n"
-"Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-1/de/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.13\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../tutorial/tutorial-1.rst:3 c44a58bf9af545b9beabcb395dd6bac3
@@ -19,7 +20,6 @@ msgid "Tutorial 1 - Your first app"
 msgstr "Tutorial 1 - Ihre erste App"
 
 #: ../../tutorial/tutorial-1.rst:5 8c55369abe0a4bf582a904a8982622c8
-#, fuzzy
 msgid "We're ready to create our first application."
 msgstr "Wir sind bereit, unsere erste Anwendung zu erstellen."
 
@@ -42,6 +42,7 @@ msgstr "macOS"
 #: ../../tutorial/tutorial-1.rst:170 ../../tutorial/tutorial-1.rst:206
 #: 1db7c563c9cf437285d8f8636f90732f 5a59e8ca70a849448ce604247299a4ca
 #: 6ce7c4cd72c147f1b72610192fef57c6 7044be37b9484502b8e8fd2c451d0a9b
+#, fuzzy
 msgid "Linux"
 msgstr "Linux"
 
@@ -160,19 +161,23 @@ msgstr "Hello World Tutorial 1 Fenster unter Windows"
 
 #: ../../tutorial/tutorial-1.rst:218 837c32d837be48feb610ebe744ad7f3d
 msgid "Invalid requirements or pip unable to connect"
-msgstr ""
+msgstr "Ungültige Anforderungen oder pip kann keine Verbindung herstellen"
 
 #: ../../tutorial/tutorial-1.rst:220 c3b14c5409c54522910cce5a3d69ab0c
 msgid "If you encounter the error:"
-msgstr ""
+msgstr "Wenn Sie die folgende Fehlermeldung erhalten:"
 
 #: ../../tutorial/tutorial-1.rst:228 f62b400262f44c45a4e2b84061b7387d
 msgid "Confirm that you are running a :ref:`version of python that this tutorial supports <install-python>`."
 msgstr ""
+"Stellen Sie sicher, dass Sie eine :ref:`Version von Python verwenden, die "
+"von diesem Tutorial unterstützt wird <install-python>`."
 
 #: ../../tutorial/tutorial-1.rst:231 5787f011a2134cd6906cfd39163dfa2f
 msgid "If your version of python is *not* a supported version, you will have to restart the tutorial."
 msgstr ""
+"Wenn Ihre Python-Version *nicht* unterstützt wird, müssen Sie das Tutorial "
+"neu starten."
 
 #: ../../tutorial/tutorial-1.rst:234 b0d1adb969ab4e53b7e44bba85ccd12b
 #, fuzzy
@@ -189,4 +194,3 @@ msgstr "Wir haben jetzt eine funktionierende Anwendung, die im Entwicklermodus l
 
 #~ msgid "One of the BeeWare tools is **Briefcase**. Briefcase can be used to package your application for distribution to end users - but it can also be used to bootstrap a new project."
 #~ msgstr "Eines der BeeWare-Tools ist **Briefcase**. Briefcase kann verwendet werden, um Ihre Anwendung für die Verteilung an Endbenutzer zu verpacken - es kann aber auch zur Erstellung eines neuen Projekts verwendet werden."
-
