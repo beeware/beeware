@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-06 18:04+0800\n"
-"PO-Revision-Date: 2024-02-02 22:01+0000\n"
-"Last-Translator: Marco Esters <mesters@anaconda.com>\n"
+"PO-Revision-Date: 2025-08-19 20:01+0000\n"
+"Last-Translator: \"Mirko P.\" <michoo@outlook.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
 "tutorial-6/de/>\n"
 "Language: de\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.13\n"
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../tutorial/tutorial-6.rst:3 2a532cc3806d417fa3be690ab757a4b2
@@ -20,40 +20,56 @@ msgid "Tutorial 6 - Put it on the web!"
 msgstr "Tutorial 6 - Ins Netz stellen!"
 
 #: ../../tutorial/tutorial-6.rst:5 63bdab949d54413bbda05a5c366ce19b
-#, fuzzy
 msgid "In addition to supporting mobile platforms, the Toga widget toolkit also supports the web! Using the same API that you used to deploy your desktop and mobile applications, you can deploy your application as a single-page web app."
-msgstr "Das Toga Widget Toolkit unterstützt nicht nur mobile Plattformen, sondern auch das Web! Mit der gleichen API, die Sie für die Bereitstellung Ihrer Desktop- und mobilen Anwendungen verwendet haben, können Sie Ihre Anwendung als einseitige Webanwendung bereitstellen."
+msgstr ""
+"Neben mobilen Plattformen unterstützt das Toga-Widget-Toolkit auch das Web! "
+"Mit derselben API, die Sie für die Bereitstellung Ihrer Desktop- und "
+"Mobilanwendungen verwendet haben, können Sie Ihre Anwendung als Single-Page-"
+"Web-App bereitstellen."
 
 #: ../../tutorial/tutorial-6.rst:9 1af5ed570dab4ac9bd5e0f7c920e62a5
-#, fuzzy
 msgid "Proof of Concept"
-msgstr "Proof of Concept"
+msgstr "Konzeptnachweis"
 
 #: ../../tutorial/tutorial-6.rst:11 879b2c25a86349688aa458b19265fa96
-#, fuzzy
 msgid "The Toga Web backend is the least mature of all the Toga backends. It's mature enough to show off a few features, but it's likely to be buggy, and will be missing many of the widgets that are available on other platforms. At this point in time, Web deployment should be considered a \"Proof of Concept\" - enough to demonstrate what can be done, but not enough to be relied on for serious development."
-msgstr "Das Toga Web Backend ist das am wenigsten ausgereifte von allen Toga Backends. Es ist ausgereift genug, um ein paar Funktionen zu zeigen, aber es wird wahrscheinlich fehlerhaft sein und viele der Widgets, die auf anderen Plattformen verfügbar sind, fehlen. Zum jetzigen Zeitpunkt sollte Web Deployment als \"Proof of Concept\" betrachtet werden - genug, um zu demonstrieren, was getan werden kann, aber nicht genug, um sich auf eine ernsthafte Entwicklung zu verlassen."
+msgstr ""
+"Das Toga-Web-Backend ist das am wenigsten ausgereifte aller Toga-Backends. "
+"Es ist zwar ausgereift genug, um einige Funktionen zu demonstrieren, aber es "
+"ist wahrscheinlich fehlerhaft und es fehlen viele der Widgets, die auf "
+"anderen Plattformen verfügbar sind. Zum jetzigen Zeitpunkt sollte die Web-"
+"Bereitstellung als „Proof of Concept“ betrachtet werden – ausreichend, um zu "
+"zeigen, was möglich ist, aber nicht ausreichend, um sich bei ernsthaften "
+"Entwicklungsprojekten darauf zu verlassen."
 
 #: ../../tutorial/tutorial-6.rst:18 865c937ff1a4479d96d1345c782d971e
-#, fuzzy
 msgid "If you have problems with this step of the tutorial, you can skip to the next page."
-msgstr "Wenn Sie Probleme mit diesem Schritt des Tutorials haben, können Sie zur nächsten Seite wechseln."
+msgstr ""
+"Wenn Sie Probleme mit diesem Schritt des Tutorials haben, können Sie zur "
+"nächsten Seite springen."
 
 #: ../../tutorial/tutorial-6.rst:22 2ec049fc8b704716bc73962331d277be
-#, fuzzy
 msgid "Deploying as a web app"
 msgstr "Als Webanwendung bereitstellen"
 
 #: ../../tutorial/tutorial-6.rst:24 e8a7a354dedf42e5addb91efd4403f7d
-#, fuzzy
 msgid "The process of deploying as a single-page web app follows the same familiar pattern - you create the application, then build the application, then run it. However, Briefcase can be a little bit smart; if you attempt to run an application, and Briefcase determines that it hasn't been created or built for the platform being targeted, it will do the create and build steps for you. Since this is our first time running the app for the web, we can perform all three steps with one command:"
-msgstr "Der Prozess der Bereitstellung als einseitige Webanwendung folgt dem gleichen bekannten Muster - Sie erstellen die Anwendung, bauen die Anwendung und führen sie dann aus. Wenn Sie versuchen, eine Anwendung auszuführen und Briefcase feststellt, dass sie nicht für die angestrebte Plattform erstellt oder gebaut wurde, führt es die Schritte zum Erstellen und Bauen für Sie aus. Da wir die Anwendung zum ersten Mal für das Web ausführen, können wir alle drei Schritte mit einem Befehl ausführen:"
+msgstr ""
+"Der Prozess der Bereitstellung als Single-Page-Web-App folgt dem gleichen "
+"bekannten Muster: Sie erstellen die Anwendung, bauen sie dann und führen sie "
+"anschließend aus. Briefcase kann jedoch etwas intelligenter sein: Wenn Sie "
+"versuchen, eine Anwendung auszuführen, und Briefcase feststellt, dass sie "
+"nicht für die Zielplattform erstellt oder gebaut wurde, führt es die "
+"Schritte zum Erstellen und Bauen für Sie aus. Da wir die App zum ersten Mal "
+"für das Web ausführen, können wir alle drei Schritte mit einem einzigen "
+"Befehl ausführen:"
 
 #: ../../tutorial/tutorial-6.rst:34 510f5b2ca0884038a8e30fb9a096af4d
 msgid "macOS"
 msgstr "macOS"
 
 #: ../../tutorial/tutorial-6.rst:72 52e1585ec59c40f781a5ca2464633807
+#, fuzzy
 msgid "Linux"
 msgstr "Linux"
 
