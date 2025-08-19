@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-29 10:14+0800\n"
-"PO-Revision-Date: 2025-02-17 02:05+0000\n"
-"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
+"PO-Revision-Date: 2025-08-19 20:02+0000\n"
+"Last-Translator: \"Mirko P.\" <michoo@outlook.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
 "topics/testing/de/>\n"
 "Language: de\n"
@@ -12,38 +12,51 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10\n"
+"X-Generator: Weblate 5.13\n"
 "Generated-By: Babel 2.15.0\n"
 
 #: ../../tutorial/topics/testing.rst:3 93773728f8c54ddb87420111aeed2ad4
-#, fuzzy
 msgid "Testing times"
 msgstr "Prüfzeiten"
 
 #: ../../tutorial/topics/testing.rst:5 f78267d23da54a2ab3d6150efa58d899
-#, fuzzy
 msgid "Most software development doesn't involve writing new code - it's modifying existing code. Ensuring that existing code continues to work in the way we expect is a key part of the software development process. One way to do ensure the behavior of our app is with a *test suite*."
-msgstr "Bei der Softwareentwicklung wird meist kein neuer Code geschrieben, sondern bestehender Code geändert. Die Sicherstellung, dass vorhandener Code weiterhin so funktioniert, wie wir es erwarten, ist ein wichtiger Teil des Softwareentwicklungsprozesses. Eine Möglichkeit, das Verhalten unserer Anwendung sicherzustellen, ist eine *Testsuite*."
+msgstr ""
+"Bei der Softwareentwicklung geht es meistens nicht darum, neuen Code zu "
+"schreiben, sondern bestehenden Code zu ändern. Es ist ein wichtiger Teil des "
+"Softwareentwicklungsprozesses, sicherzustellen, dass der bestehende Code "
+"weiterhin so funktioniert, wie wir es erwarten. Eine Möglichkeit, das "
+"Verhalten unserer App sicherzustellen, ist eine *Testsuite*."
 
 #: ../../tutorial/topics/testing.rst:11 8170b274930d4849aa64dc40421d0549
-#, fuzzy
 msgid "Running the test suite"
-msgstr "Ausführen der Testsuite"
+msgstr "Testlauf durchführen"
 
 #: ../../tutorial/topics/testing.rst:13 e55d23b4fa494b09a62a3c55ee0d0ebb
-#, fuzzy
 msgid "It turns out the project from the core tutorial already has a test suite! When we originally generated our project, two top-level directories were generated: ``src`` and ``tests``. The ``src`` folder contains the code for our app; the ``tests`` folder contains our test suite. Inside the ``tests`` folder is a file named ``test_app.py`` with the following content::"
-msgstr "Es stellt sich heraus, dass unser Projekt bereits eine Testsuite hat! Als wir unser Projekt ursprünglich erzeugten, wurden zwei Verzeichnisse der obersten Ebene erzeugt: ``src`` und ``tests``. Der Ordner ``src`` enthält den Code für unsere Anwendung; der Ordner ``tests`` enthält unsere Testsuite. Innerhalb des Ordners ``tests`` befindet sich eine Datei namens ``test_app.py`` mit folgendem Inhalt::"
+msgstr ""
+"Es stellt sich heraus, dass das Projekt aus dem Kern-Tutorial bereits über "
+"eine Testsuite verfügt! Als wir unser Projekt ursprünglich erstellt haben, "
+"wurden zwei Verzeichnisse auf oberster Ebene generiert: „src“ und „tests“. "
+"Der Ordner „src“ enthält den Code für unsere App, der Ordner „tests“ enthält "
+"unsere Testsuite. Im Ordner „tests“ befindet sich eine Datei namens "
+"„test_app.py“ mit folgendem Inhalt::"
 
 #: ../../tutorial/topics/testing.rst:23 12578aff26fb4372963fa5ccd8005e18
-#, fuzzy
 msgid "This is a `Pytest <https://pytest.org>`__ *test case* - a block of code that can be executed to verify some behavior of your app. In this case, the test is a placeholder, and doesn't test anything about our app - but it is a test that we can perform."
-msgstr "Dies ist ein `Pytest <https://pytest.org>`__ *Testfall* - ein Codeblock, der ausgeführt werden kann, um ein bestimmtes Verhalten Ihrer Anwendung zu überprüfen. In diesem Fall ist der Test ein Platzhalter und testet nichts über unsere Anwendung - aber es ist ein Test, den wir durchführen können."
+msgstr ""
+"Dies ist ein `Pytest <https://pytest.org>`__ *Testfall* – ein Code-Block, "
+"der ausgeführt werden kann, um bestimmte Verhaltensweisen Ihrer App zu "
+"überprüfen. In diesem Fall ist der Test ein Platzhalter und testet nichts an "
+"unserer App – aber es ist ein Test, den wir durchführen können."
 
 #: ../../tutorial/topics/testing.rst:28 a8e6e625f47e4c0f8f476892ce705854
-#, fuzzy
 msgid "We can run this test suite using the ``--test`` option to ``briefcase dev``. As this is the first time we are running tests, we also need to pass in the ``-r`` option to ensure that the test requirements are also installed:"
-msgstr "Wir können diese Testsuite mit der Option ``--test`` für ``briefcase dev`` ausführen. Da dies das erste Mal ist, dass wir Tests ausführen, müssen wir auch die Option ``-r`` übergeben, um sicherzustellen, dass die Testanforderungen auch installiert werden:"
+msgstr ""
+"Wir können diese Testsuite mit der Option ``--test`` für ``briefcase dev`` "
+"ausführen. Da dies das erste Mal ist, dass wir Tests ausführen, müssen wir "
+"auch die Option ``-r`` übergeben, um sicherzustellen, dass die "
+"Testanforderungen auch installiert werden:"
 
 #: ../../tutorial/topics/testing.rst:34 ../../tutorial/topics/testing.rst:139
 #: ../../tutorial/topics/testing.rst:209 ../../tutorial/topics/testing.rst:326
@@ -58,6 +71,7 @@ msgstr "macOS"
 #: ../../tutorial/topics/testing.rst:438 0369e600a7bf45b99e78a947f28092a3
 #: 5288d72cc7cf4c27bd9be3b011cdfcc9 612b128c8f5b4b6bba57ff8bc5bd82d9
 #: b219829b954a484a94cc43d37bfa964a c6c3252a29314eb5acb19f780e3d5d58
+#, fuzzy
 msgid "Linux"
 msgstr "Linux"
 
@@ -70,9 +84,11 @@ msgid "Windows"
 msgstr "Windows"
 
 #: ../../tutorial/topics/testing.rst:109 e61fdd65e77041648fef0e3ec359513c
-#, fuzzy
 msgid "Success! We've just executed a single test that verifies Python math works in the way we'd expect (What a relief!)."
-msgstr "Erfolgreich! Wir haben soeben einen einzigen Test durchgeführt, der bestätigt, dass die Python-Mathematik so funktioniert, wie wir es erwartet haben (was für eine Erleichterung!)."
+msgstr ""
+"Erfolgreich! Wir haben soeben einen einzigen Test durchgeführt, der "
+"bestätigt, dass die Python-Mathematik so funktioniert, wie wir es erwartet "
+"haben (was für eine Erleichterung!)."
 
 #: ../../tutorial/topics/testing.rst:112 bdfb76180b914a03a4b9f51b8b415562
 #, fuzzy
