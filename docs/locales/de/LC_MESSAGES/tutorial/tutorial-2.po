@@ -1,17 +1,18 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-09 04:13+0000\n"
-"PO-Revision-Date: 2024-02-03 01:43+0000\n"
-"Last-Translator: Marco Esters <mesters@anaconda.com>\n"
+"PO-Revision-Date: 2025-08-19 20:01+0000\n"
+"Last-Translator: \"Mirko P.\" <michoo@outlook.de>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
+"tutorial-2/de/>\n"
 "Language: de\n"
-"Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-2/de/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.13\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../tutorial/tutorial-2.rst:3 2e1be6a8aa08484fb6e79eb40a1af561
@@ -40,21 +41,24 @@ msgstr "``__main__.py`` markiert das ``helloworld`` Modul als eine besondere Art
 
 #: ../../tutorial/tutorial-2.rst:29 0d4ebd6dfe7c48fbb51894c045ff24fc
 msgid "This file does two things:"
-msgstr ""
+msgstr "Diese Datei hat zwei Funktionen:"
 
 #: ../../tutorial/tutorial-2.rst:31 6d23aa2404fc48ba96da528ccc1f2940
 msgid "It imports the ``main`` method from from the ``helloworld`` app."
-msgstr ""
+msgstr "Es importiert die Methode „main“ aus der App „helloworld“."
 
 #: ../../tutorial/tutorial-2.rst:32 0b48d24bc644417e829bacd14d0f3cdc
-#, fuzzy
 msgid "Then, it starts the application’s main loop. The main loop is the way a GUI application listens for user input (like mouse clicks and keyboard presses)."
-msgstr "Das heißt, es importiert die Methode ``main`` aus der Anwendung ``helloworld``; und wenn es als Einstiegspunkt ausgeführt wird, ruft es die Methode main() auf und startet die Hauptschleife der Anwendung. Die Hauptschleife ist die Art und Weise, wie eine GUI-Anwendung auf Benutzereingaben (wie Mausklicks und Tastatureingaben) wartet."
+msgstr ""
+"Anschließend startet es die Hauptschleife der Anwendung. Die Hauptschleife "
+"ist die Methode, mit der eine GUI-Anwendung auf Benutzereingaben (wie "
+"Mausklicks und Tastatureingaben) reagiert."
 
 #: ../../tutorial/tutorial-2.rst:35 09fd77cade1b42b4a8b88e37bb0da6e3
-#, fuzzy
 msgid "The more interesting file is ``app.py`` - this contains the logic that creates our application window::"
-msgstr "Die interessantere Datei ist ``app.py`` - diese enthält die Logik, die unser Anwendungsfenster erstellt::"
+msgstr ""
+"Die interessantere Datei ist ``app.py`` - diese enthält die Logik, die unser "
+"Anwendungsfenster erstellt::"
 
 #: ../../tutorial/tutorial-2.rst:52 df7ece5eaff04ed19ab39cdb23b6ac77
 #, fuzzy
@@ -102,11 +106,16 @@ msgstr "Dies erzeugt eine Instanz eines ``toga.MainWindow``, das einen Titel hat
 
 #: ../../tutorial/tutorial-2.rst:93 83ddcb8dc2f54f7482e37d1144f29626
 msgid "Where is my window?"
-msgstr ""
+msgstr "Wo ist mein Fenster?"
 
 #: ../../tutorial/tutorial-2.rst:95 969f733e9f794de9b374ad9163e7ac85
 msgid "If you have made an error in your code, the main window of the app may not display. If this happens, you can type **Ctrl+C** in the terminal where you started the app. This will stop the app. You can then fix the error and restart the app."
 msgstr ""
+"Wenn Sie einen Fehler in Ihrem Code gemacht haben, wird das Hauptfenster der "
+"App möglicherweise nicht angezeigt. In diesem Fall können Sie **Strg+C** in "
+"dem Terminal eingeben, in dem Sie die App gestartet haben. Dadurch wird die "
+"App beendet. Anschließend können Sie den Fehler beheben und die App neu "
+"starten."
 
 #: ../../tutorial/tutorial-2.rst:99 e612fb6b63b14bdcb39b5626b021c777
 #, fuzzy
@@ -136,6 +145,7 @@ msgstr "Hinzufügen von eigenen Inhalten"
 #: ../../tutorial/tutorial-2.rst:121 3a5a7f2ca0e2483f93fef97babc01fc7
 msgid "Let's do something more interesting with our ``HelloWorld`` app."
 msgstr ""
+"Lassen Sie uns etwas Interessanteres mit unserer ``HelloWorld`` App machen."
 
 #: ../../tutorial/tutorial-2.rst:125 e44cc783a890402085f37580f482fac8
 #, fuzzy
@@ -165,6 +175,8 @@ msgstr "Das in Toga eingebaute Layoutsystem heißt \"Pack\". Es verhält sich se
 #: ../../tutorial/tutorial-2.rst:178 e4c4909f5fc74238b79131c26ff237e1
 msgid "For more advanced uses, Toga also supports a separate style object, which is used like this::"
 msgstr ""
+"Für fortgeschrittenere Anwendungen unterstützt Toga auch ein separates Style-"
+"Objekt, das wie folgt verwendet wird:"
 
 #: ../../tutorial/tutorial-2.rst:184 e23e0c1845b74ae7a43b340944dd39d7
 #, fuzzy
@@ -233,6 +245,7 @@ msgstr "macOS"
 
 #: ../../tutorial/tutorial-2.rst:261 ../../tutorial/tutorial-2.rst:295
 #: 51471227c16245ed8b3e1c89bfb531fd e137e8312d734528bb174c3bf9ab339c
+#, fuzzy
 msgid "Linux"
 msgstr "Linux"
 
@@ -273,6 +286,10 @@ msgstr "Wenn Sie einen Namen in das Textfeld eingeben und die Schaltfläche GUI 
 #: ../../tutorial/tutorial-2.rst:310 aee9f2a8601c49b79f8c4b63b9eb57ee
 msgid "Before continuing, close the app. As with Tutorial 1, you can do this by pressing the close button on the application window, by selecting Quit/Exit from the application's menu, or by typing **Ctrl+C** in the terminal where you ran ``briefcase dev``."
 msgstr ""
+"Bevor Sie fortfahren, schließen Sie die App. Wie in Tutorial 1 können Sie "
+"dies tun, indem Sie auf die Schaltfläche „Schließen” im Anwendungsfenster "
+"klicken, im Menü der Anwendung „Beenden/Exit” auswählen oder **Strg+C** in "
+"dem Terminal eingeben, in dem Sie ``briefcase dev`` ausgeführt haben."
 
 #: ../../tutorial/tutorial-2.rst:316 d9d95d995cad48a782fc1461330d67cc
 msgid "Next steps"
@@ -285,4 +302,3 @@ msgstr "Wir haben jetzt eine Anwendung, die etwas Interessanteres macht. Aber si
 
 #~ msgid "Lets do something more interesting with our ``HelloWorld`` app."
 #~ msgstr ""
-
