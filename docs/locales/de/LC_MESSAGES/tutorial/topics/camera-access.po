@@ -8,14 +8,16 @@ msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-09 04:13+0000\n"
-"PO-Revision-Date: 2024-08-19 17:09+0000\n"
-"Last-Translator: tct123 <tct1234@protonmail.com>\n"
+"PO-Revision-Date: 2025-08-19 20:02+0000\n"
+"Last-Translator: \"Mirko P.\" <michoo@outlook.de>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
+"topics/camera-access/de/>\n"
 "Language: de\n"
-"Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/topics/camera-access/de/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.13\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../tutorial/topics/camera-access.rst:3 7c5c420b17304079bd445140a1851b41
@@ -23,9 +25,12 @@ msgid "Using the camera"
 msgstr "Kameranutzung"
 
 #: ../../tutorial/topics/camera-access.rst:5 bb0a3b6736644bb3b7fab9941df38545
-#, fuzzy
 msgid "Almost every modern computing device has a camera of some sort. In this tutorial, we'll write new application that is able to request access to this camera, take a photograph, and then display that photograph in the new application that uses your device's camera."
-msgstr "Fast jedes moderne Computergerät verfügt über eine Kamera. In diesem Tutorial schreiben wir eine neue Anwendung, die Zugriff auf diese Kamera anfordern, ein Foto aufnehmen und dieses Foto dann in der App anzeigen kann. Neue Anwendung, die die Kamera Ihres Geräts verwendet."
+msgstr ""
+"Fast jedes moderne Computergerät verfügt über eine Kamera. In diesem "
+"Tutorial schreiben wir eine neue Anwendung, die Zugriff auf diese Kamera "
+"anfordern, ein Foto aufnehmen und dieses Foto dann in der neuen Anwendung "
+"anzeigen kann, um die Kamera Ihres Geräts zu verwendet."
 
 #: ../../tutorial/topics/camera-access.rst:10 cab7dec2992b41d9a2f32d5836ed0413
 msgid "This tutorial won't work on all platforms!"
@@ -128,4 +133,3 @@ msgstr "Weitere Berechtigungen hinzufügen"
 #: ../../tutorial/topics/camera-access.rst:184 7ff6abda48b3472d8864b3b71af74118
 msgid "Permissions are declared in the files that are generated during the original call to ``briefcase create``. Unfortunately, Briefcase can't update these files once they've been initially generated; so if you want to add a new permission to your app, or modify existing permissions, you'll need to re-create the app. You can do this by re-running ``briefcase create``; this will warn you that the existing app will be overwritten, and then regenerate the application with the new permissions."
 msgstr "Berechtigungen werden in den Dateien deklariert, die während des ursprünglichen Aufrufs von ``briefcase create`` generiert werden. Leider kann Briefcase diese Dateien nicht aktualisieren, nachdem sie einmal generiert wurden. Wenn Sie Ihrer App also eine neue Berechtigung hinzufügen oder vorhandene Berechtigungen ändern möchten, müssen Sie die App neu erstellen. Sie können dies tun, indem Sie ``briefcase create`` erneut ausführen. Dadurch werden Sie gewarnt, dass die vorhandene App überschrieben wird, und die Anwendung wird dann mit den neuen Berechtigungen neu generiert."
-
