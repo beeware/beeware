@@ -1,17 +1,18 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-13 17:07+0000\n"
-"PO-Revision-Date: 2024-08-19 17:09+0000\n"
-"Last-Translator: tct123 <tct1234@protonmail.com>\n"
+"PO-Revision-Date: 2025-08-19 20:02+0000\n"
+"Last-Translator: \"Mirko P.\" <michoo@outlook.de>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
+"topics/custom-icons/de/>\n"
 "Language: de\n"
-"Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/topics/custom-icons/de/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.13\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../tutorial/topics/custom-icons.rst:3 c1706f393a104fc5b7064c77c2a786c7
@@ -37,10 +38,19 @@ msgstr "Bearbeiten Sie Ihr ``pyproject.toml`` und fügen Sie ein neues Konfigura
 #: ../../tutorial/topics/custom-icons.rst:24 aa6015f5a4c642808f44a94873ba7f84
 msgid "This icon definition doesn't specify any file extension. The value will be used as a prefix; each platform will add additional items to this prefix to build the files needed for each platform. Some platforms require *multiple* icon files; this prefix will be combined with file size and variant modifiers to generate the list of icon files that are used."
 msgstr ""
+"Diese Icon-Definition gibt keine Dateierweiterung an. Der Wert wird als "
+"Präfix verwendet; jede Plattform fügt diesem Präfix zusätzliche Elemente "
+"hinzu, um die für die jeweilige Plattform erforderlichen Dateien zu "
+"erstellen. Einige Plattformen erfordern *mehrere* Icon-Dateien; dieses "
+"Präfix wird mit Dateigröße und Variantenmodifikatoren kombiniert, um die "
+"Liste der verwendeten Icon-Dateien zu generieren."
 
 #: ../../tutorial/topics/custom-icons.rst:30 db2586affb344ffdb33e21f2e645e828
 msgid "We can now run ``briefcase update`` again - but this time, we pass in the ``--update-resources`` flag, telling Briefcase that we want to install new application resources (i.e., the icons):"
 msgstr ""
+"Wir können nun erneut „briefcase update“ ausführen – diesmal jedoch mit dem "
+"Flag „--update-resources“, um Briefcase mitzuteilen, dass wir neue "
+"Anwendungsressourcen (d. h. die Symbole) installieren möchten:"
 
 #: ../../tutorial/topics/custom-icons.rst:36
 #: ../../tutorial/topics/custom-icons.rst:203
@@ -53,15 +63,16 @@ msgstr "macOS"
 #: ../../tutorial/topics/custom-icons.rst:227
 #: ../../tutorial/topics/custom-icons.rst:401 00af053b734d49d4a5b96df9b40f0e97
 #: 0ad55197e9ad4758a909497dc629f4ae 1e93c588c9814bbd8d86347d4afe8b9b
+#, fuzzy
 msgid "Linux"
-msgstr ""
+msgstr "Linux"
 
 #: ../../tutorial/topics/custom-icons.rst:75
 #: ../../tutorial/topics/custom-icons.rst:257
 #: ../../tutorial/topics/custom-icons.rst:416 36416c2a89a54c0d8894096c0791ce22
 #: 54940928b2f2406eb56d7387799e716d e4c3775e1b7246e1a881e8d0b2f9c6b2
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: ../../tutorial/topics/custom-icons.rst:92
 #: ../../tutorial/topics/custom-icons.rst:282
@@ -80,50 +91,108 @@ msgstr "iOS"
 #: ../../tutorial/topics/custom-icons.rst:160 289e151c4b864343820c468fede21cb7
 msgid "This reports the specific icon file (or files) that Briefcase is expecting. However, as we haven't provided the actual icon files, the install fails, and Briefcase falls back to a default value (the same \"gray bee\" icon)."
 msgstr ""
+"Dies gibt die spezifische(n) Icon-Datei(en) an, die Briefcase erwartet. Da "
+"wir jedoch keine tatsächlichen Icon-Dateien bereitgestellt haben, schlägt "
+"die Installation fehl und Briefcase greift auf einen Standardwert zurück ("
+"das gleiche „graue Bienen”-Icon)."
 
 #: ../../tutorial/topics/custom-icons.rst:164 59a75ae48ca9456e81d444a01000d571
 msgid "Let's provide some actual icons. Download :download:`this icons.zip bundle <../resources/icons.zip>`, and unzip it into the root of your project directory. After unzipping, your project directory should look something like::"
 msgstr ""
+"Lassen Sie uns einige tatsächliche Symbole bereitstellen. Laden Sie "
+":download:`dieses icons.zip-Paket <../resources/icons.zip>` herunter und "
+"entpacken Sie es in das Stammverzeichnis Ihres Projektverzeichnisses. Nach "
+"dem Entpacken sollte Ihr Projektverzeichnis in etwa so aussehen::"
 
 #: ../../tutorial/topics/custom-icons.rst:183 e91e96b4625c4a519138e249ee6dfd35
 msgid "There's a *lot* of icons in this folder, but most of them should look the same: a green snake on a light blue background:"
 msgstr ""
+"In diesem Ordner befinden sich *sehr viele* Symbole, aber die meisten davon "
+"sollten gleich aussehen: eine grüne Schlange auf hellblauem Hintergrund:"
 
 #: ../../tutorial/topics/custom-icons.rst:186 8e853741df5f40e8a774ada7b49c7d5d
 msgid "Icon of green snake with a light blue background"
-msgstr ""
+msgstr "Symbol einer grünen Schlange vor hellblauem Hintergrund"
 
 #: ../../tutorial/topics/custom-icons.rst:190 c9ebe4a9ad3a4de290e45e966b69b5d6
 msgid "The only exception will be the icons with ``-adaptive-`` in their name; these will have a transparent background. This represents all the different icon sizes and shapes you need to support an app on every platform that Briefcase supports."
 msgstr ""
+"Die einzige Ausnahme bilden die Symbole mit „-adaptive-“ im Namen; diese "
+"haben einen transparenten Hintergrund. Dies umfasst alle verschiedenen "
+"Symbolgrößen und -formen, die Sie benötigen, um eine App auf jeder von "
+"Briefcase unterstützten Plattform zu unterstützen."
 
 #: ../../tutorial/topics/custom-icons.rst:194 65f87761e9004b9386e7dbefd2aa394c
 msgid "Now that we have icons, we can update the application again. However, ``briefcase update`` will only copy the updated resources into the build directory; we also want to rebuild the app to make sure the new icon is included, then start the app. We can shortcut this process by passing ``--update-resources`` to our call to ``run`` - this will update the app, update the app's resources, and then start the app:"
 msgstr ""
+"Jetzt, da wir über Symbole verfügen, können wir die Anwendung erneut "
+"aktualisieren. Allerdings kopiert „briefcase update“ nur die aktualisierten "
+"Ressourcen in das Build-Verzeichnis. Wir möchten jedoch auch die Anwendung "
+"neu erstellen, um sicherzustellen, dass das neue Symbol enthalten ist, und "
+"dann die Anwendung starten. Wir können diesen Vorgang abkürzen, indem wir "
+"„--update-resources“ an unseren Aufruf von „run“ übergeben. Dadurch wird die "
+"Anwendung aktualisiert, die Ressourcen der Anwendung aktualisiert und "
+"anschließend die Anwendung gestartet:"
 
 #: ../../tutorial/topics/custom-icons.rst:322 e9cdf877c0e5423bae9dd933abdecf9f
 msgid "If you're using a recent version of Android, you may notice that the app icon has been changed to a green snake, but the background of the icon is *white*, rather than light blue. We'll fix this in the next step."
 msgstr ""
+"Wenn Sie eine aktuelle Version von Android verwenden, werden Sie "
+"möglicherweise feststellen, dass das App-Symbol zu einer grünen Schlange "
+"geändert wurde, der Hintergrund des Symbols jedoch *weiß* statt hellblau "
+"ist. Wir werden dies im nächsten Schritt beheben."
 
 #: ../../tutorial/topics/custom-icons.rst:363 2b3d902e7e1a4d44aaad92e4ff207770
 msgid "If you get a stack trace referencing ``faker`` or ``httpx`` when you run the app, it's possible you missed running your app during step 7 or 8 of the tutorial. Re-run the app, adding the ``-r`` argument to update the app requirements."
 msgstr ""
+"Wenn Sie beim Ausführen der App einen Stacktrace erhalten, der auf „faker“ "
+"oder „httpx“ verweist, haben Sie möglicherweise Schritt 7 oder 8 des "
+"Tutorials übersprungen. Führen Sie die App erneut aus und fügen Sie das "
+"Argument „-r“ hinzu, um die App-Anforderungen zu aktualisieren."
 
 #: ../../tutorial/topics/custom-icons.rst:368 6738123561854e59a85e5e713b335706
 msgid "When you run the app on iOS or Android, in addition to the icon change, you should also notice that the splash screen incorporates the new icon. However, the light blue background of the icon looks a little out of place against the white background of the splash screen. We can fix this by customizing the background color of the splash screen. Add the following definition to your ``pyproject.toml``, just after the ``icon`` definition::"
 msgstr ""
+"Wenn Sie die App auf iOS oder Android ausführen, sollten Sie neben der "
+"Änderung des Symbols auch feststellen, dass das neue Symbol in den "
+"Begrüßungsbildschirm integriert ist. Allerdings wirkt der hellblaue "
+"Hintergrund des Symbols vor dem weißen Hintergrund des Begrüßungsbildschirms "
+"etwas deplatziert. Wir können dies beheben, indem wir die Hintergrundfarbe "
+"des Begrüßungsbildschirms anpassen. Fügen Sie die folgende Definition zu "
+"Ihrer ``pyproject.toml`` hinzu, direkt nach der Definition ``icon``::"
 
 #: ../../tutorial/topics/custom-icons.rst:377 789aeb1ef195404b9739aa8458b8526a
 msgid "Unfortunately, Briefcase isn't able to apply this change to an already generated project, as it requires making modifications to one of the files that was generated during the original call to ``briefcase create``. To apply this change, we have to re-create the app by re-running ``briefcase create``. When we do this, we'll be prompted to confirm that we want to overwrite the existing project:"
 msgstr ""
+"Leider kann Briefcase diese Änderung nicht auf ein bereits generiertes "
+"Projekt anwenden, da dafür Änderungen an einer der Dateien vorgenommen "
+"werden müssen, die beim ursprünglichen Aufruf von „briefcase create“ "
+"generiert wurden. Um diese Änderung anzuwenden, müssen wir die App neu "
+"erstellen, indem wir „briefcase create“ erneut ausführen. Dabei werden wir "
+"aufgefordert, zu bestätigen, dass wir das vorhandene Projekt überschreiben "
+"möchten:"
 
 #: ../../tutorial/topics/custom-icons.rst:459 720972604dec4271a2325ea2ace89510
 msgid "You can then re-build and re-run the app using ``briefcase run``. You won't notice any changes to the desktop app; but the Android or iOS apps should now have a light blue splash screen background."
 msgstr ""
+"Sie können die App dann mit „briefcase run“ neu erstellen und erneut "
+"ausführen. An der Desktop-App werden Sie keine Änderungen bemerken, aber die "
+"Android- oder iOS-Apps sollten nun einen hellblauen Hintergrund für den "
+"Begrüßungsbildschirm haben."
 
 #: ../../tutorial/topics/custom-icons.rst:463 1555fe480813416281ff14cf946d9920
 msgid "You'll need to re-create the app like this whenever you make a change to your ``pyproject.toml`` that doesn't relate to source code or dependencies. Any change to descriptions, version numbers, colors, or permissions will require a re-create step. Because of this, while you are developing your project, you shouldn't make any manual changes to the contents of the ``build`` folder, and you shouldn't add the ``build`` folder to your version control system. The ``build`` folder should be considered entirely ephemeral - an output of the build system that can be recreated as needed to reflect the current configuration of your project."
 msgstr ""
+"Sie müssen die App jedes Mal neu erstellen, wenn Sie Änderungen an Ihrer "
+"``pyproject.toml`` vornehmen, die nicht den Quellcode oder die "
+"Abhängigkeiten betreffen. Jede Änderung an Beschreibungen, Versionsnummern, "
+"Farben oder Berechtigungen erfordert einen Neuanlegungsvorgang. Aus diesem "
+"Grund sollten Sie während der Entwicklung Ihres Projekts keine manuellen "
+"Änderungen am Inhalt des Ordners „build“ vornehmen und den Ordner „build“ "
+"nicht zu Ihrem Versionskontrollsystem hinzufügen. Der Ordner „build“ sollte "
+"als vollständig vergänglich betrachtet werden – als Ausgabe des Build-"
+"Systems, die bei Bedarf neu erstellt werden kann, um die aktuelle "
+"Konfiguration Ihres Projekts widerzuspiegeln."
 
 #~ msgid "**Coming soon**"
 #~ msgstr "**Kommt bald**"
@@ -139,4 +208,3 @@ msgstr ""
 
 #~ msgid "Let's provide some actual icons. Download :download:`this icons.zip bundle <../resources/icons.zip>`, and unpack it into the root of your project directory. After unpacking, your project directory should look something like::"
 #~ msgstr ""
-
