@@ -1,17 +1,18 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: BeeWare 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-25 23:41+0000\n"
-"PO-Revision-Date: 2024-02-02 22:01+0000\n"
-"Last-Translator: Marco Esters <mesters@anaconda.com>\n"
+"PO-Revision-Date: 2025-08-19 20:01+0000\n"
+"Last-Translator: \"Mirko P.\" <michoo@outlook.de>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/"
+"tutorial-4/de/>\n"
 "Language: de\n"
-"Language-Team: German <https://hosted.weblate.org/projects/beeware/tutorial/tutorial-4/de/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.13\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../tutorial/tutorial-4.rst:3 095a20d68b59496e9ff67f5b9c9497e5
@@ -19,43 +20,59 @@ msgid "Tutorial 4 - Updating your application"
 msgstr "Tutorial 4 - Aktualisieren Ihrer Anwendung"
 
 #: ../../tutorial/tutorial-4.rst:5 48603895c251446b96cabbb9b632a61e
-#, fuzzy
 msgid "In the last tutorial, we packaged our application as a native application. If you're dealing with a real-world app, that isn't going to be the end of the story - you'll likely do some testing, discover problems, and need to make some changes. Even if your application is perfect, you'll eventually want to publish version 2 of your application with improvements."
-msgstr "Im letzten Lehrgang haben wir unsere Anwendung als native Anwendung verpackt. Wenn Sie es mit einer realen Anwendung zu tun haben, wird das nicht das Ende der Geschichte sein - Sie werden wahrscheinlich einige Tests durchführen, Probleme entdecken und einige Änderungen vornehmen müssen. Selbst wenn Ihre Anwendung perfekt ist, werden Sie irgendwann die Version 2 Ihrer Anwendung mit Verbesserungen veröffentlichen wollen."
+msgstr ""
+"Im letzten Tutorial haben wir unsere Anwendung als native Anwendung gepackt. "
+"Wenn Sie mit einer realen Anwendung arbeiten, ist das noch nicht das Ende "
+"der Geschichte – Sie werden wahrscheinlich einige Tests durchführen, "
+"Probleme entdecken und Änderungen vornehmen müssen. Selbst wenn Ihre "
+"Anwendung perfekt ist, werden Sie irgendwann eine verbesserte Version 2 "
+"Ihrer Anwendung veröffentlichen wollen."
 
 #: ../../tutorial/tutorial-4.rst:11 f23a96b01cd24622bfacbdc9604c51a1
-#, fuzzy
 msgid "So - how do you update your installed app when you make code changes?"
-msgstr "Wie aktualisieren Sie also Ihre installierte Anwendung, wenn Sie Codeänderungen vornehmen?"
+msgstr ""
+"Also – wie aktualisieren Sie Ihre installierte App, wenn Sie Änderungen am "
+"Code vornehmen?"
 
 #: ../../tutorial/tutorial-4.rst:14 38c2d3a4568b409c855516e9c1b3fe5d
-#, fuzzy
 msgid "Updating application code"
 msgstr "Aktualisierung des Anwendungscodes"
 
 #: ../../tutorial/tutorial-4.rst:16 9683153b6b4347fca656609ec21ee119
-#, fuzzy
 msgid "Our application currently prints to the console when you press the button. However, GUI applications shouldn't really use the console for output. They need to use dialogs to communicate with users."
-msgstr "Unsere Anwendung gibt derzeit auf der Konsole aus, wenn Sie die Schaltfläche drücken. Allerdings sollten GUI-Anwendungen die Konsole nicht wirklich für die Ausgabe verwenden. Sie müssen Dialoge verwenden, um mit den Benutzern zu kommunizieren."
+msgstr ""
+"Unsere Anwendung gibt derzeit eine Meldung auf der Konsole aus, wenn Sie die "
+"Schaltfläche drücken. GUI-Anwendungen sollten jedoch nicht wirklich die "
+"Konsole für die Ausgabe verwenden. Sie müssen Dialoge verwenden, um mit "
+"Benutzern zu kommunizieren."
 
 #: ../../tutorial/tutorial-4.rst:20 97094341a84147c1bdc1fffc57a42567
-#, fuzzy
 msgid "Let's add a dialog box to say hello, instead of writing to the console. Modify the ``say_hello`` callback so it looks like this::"
-msgstr "Fügen wir ein Dialogfeld hinzu, um Hallo zu sagen, anstatt in die Konsole zu schreiben. Ändern Sie den ``say_hello`` Callback so, dass er wie folgt aussieht::"
+msgstr ""
+"Fügen wir ein Dialogfeld hinzu, um Hallo zu sagen, anstatt in die Konsole zu "
+"schreiben. Ändern Sie den ``say_hello`` Callback so, dass er wie folgt "
+"aussieht::"
 
 #: ../../tutorial/tutorial-4.rst:31 4dbdb0dca00243d6a6c5e778a372d124
 msgid "We need to make the method ``async`` so that when we display the dialog, the rest of the application continues to run. Don't worry about this detail too much right now - we'll give a more detailed explanation in :doc:`Tutorial 8 <tutorial-8>`."
 msgstr ""
+"Wir müssen die Methode „async“ machen, damit der Rest der Anwendung "
+"weiterläuft, wenn wir den Dialog anzeigen. Mach dir jetzt noch keine "
+"Gedanken über dieses Detail – wir erklären es genauer in :doc:`Tutorial 8 "
+"<tutorial-8>`."
 
 #: ../../tutorial/tutorial-4.rst:35 b682bcef3af8479c9f551ede9217eea0
-#, fuzzy
 msgid "This directs Toga to open a modal dialog box when the button is pressed."
-msgstr "Damit wird Toga angewiesen, ein modales Dialogfeld zu öffnen, wenn die Schaltfläche gedrückt wird."
+msgstr ""
+"Dadurch wird Toga angewiesen, ein modales Dialogfeld zu öffnen, wenn die "
+"Schaltfläche gedrückt wird."
 
 #: ../../tutorial/tutorial-4.rst:37 9047a157a5d849318cbd3c7245b70950
-#, fuzzy
 msgid "If you run ``briefcase dev``, enter a name, and press the button, you'll see the new dialog box:"
-msgstr "Wenn Sie ``briefcase dev`` ausführen, einen Namen eingeben und die Taste drücken, sehen Sie das neue Dialogfenster:"
+msgstr ""
+"Wenn Sie „briefcase dev“ ausführen, einen Namen eingeben und auf die "
+"Schaltfläche klicken, wird das neue Dialogfeld angezeigt:"
 
 #: ../../tutorial/tutorial-4.rst:42 ../../tutorial/tutorial-4.rst:76
 #: ../../tutorial/tutorial-4.rst:177 47110cedbc6f4f28b5f1fa3c0d58928e
@@ -71,6 +88,7 @@ msgstr "Hallo Welt Tutorial 4 Dialog, auf macOS"
 #: ../../tutorial/tutorial-4.rst:48 ../../tutorial/tutorial-4.rst:90
 #: ../../tutorial/tutorial-4.rst:198 a05a5cd569ac4f17abe91642bc14b4eb
 #: a1b9548d17224fedabc666fbb2cba1fd a5102f35dcb945ad8428708192d99605
+#, fuzzy
 msgid "Linux"
 msgstr "Linux"
 
@@ -168,4 +186,3 @@ msgstr "Wir haben unsere Anwendung jetzt für die Verteilung auf Desktop-Plattfo
 #, fuzzy
 msgid "But what about mobile? In :doc:`Tutorial 5 <tutorial-5/index>`, we'll convert our application into a mobile application, and deploy it onto a device simulator, and onto a phone."
 msgstr "Aber was ist mit mobilen Geräten? In :doc:`Tutorial 5 <tutorial-5/index>` werden wir unsere Anwendung in eine mobile Anwendung umwandeln und sie in einem Gerätesimulator und auf einem Telefon einsetzen."
-
