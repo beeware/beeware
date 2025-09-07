@@ -29,7 +29,7 @@ jobs:
           token: ${{ secrets.BRUTUS_PAT_TOKEN }}
 
       - name: Set up Python
-        uses: actions/setup-python@v5.6.0
+        uses: actions/setup-python@v6.0.0
         with:
           python-version: "3.X"
           cache: pip
