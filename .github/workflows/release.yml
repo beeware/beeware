@@ -45,7 +45,7 @@ jobs:
           path: dist
 
       - name: Create release
-        uses: ncipollo/release-action@v1.18.0
+        uses: ncipollo/release-action@v1.20.0
         with:
           name: ${{ env.VERSION }}
           draft: true
