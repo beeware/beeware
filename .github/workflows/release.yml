@@ -12,17 +12,9 @@ jobs:
     with:
       attest-package: "true"
 
-  docs:
-    name: Verify Docs Build
-    uses: beeware/.github/.github/workflows/docs-build-verify.yml@main
-    secrets: inherit
-    with:
-      project-name: "beeware"
-      project-version: ${{ github.ref_name }}
-
   release:
     name: Create Release
-    needs: [ ci, docs ]
+    needs: [ ci, ]
     runs-on: ubuntu-latest
     permissions:
       contents: write

@@ -1,9 +1,0 @@
-/* Render card titles in link color so that there is a cue that they're links. */
-.sd-card-title {
-    color: var(--color-link);
-}
-
-/* Fix for Pygments not having a dark mode override for "generic content" */
-body[data-theme="dark"] .highlight .go {
-    color: #ccc;
-}

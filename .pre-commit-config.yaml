@@ -7,14 +7,7 @@ repos:
       - id: check-case-conflict
       - id: check-docstring-first
       - id: end-of-file-fixer
-        # PO files may not have a trailing EOL, as they are tool generated
-        exclude: "docs/locales"
       - id: trailing-whitespace
-  - repo: https://github.com/asottile/pyupgrade
-    rev: v3.21.0
-    hooks:
-      - id: pyupgrade
-        args: [--py38-plus]
   - repo: https://github.com/astral-sh/ruff-pre-commit
     # Ruff version.
     rev: v0.14.1
@@ -24,11 +17,3 @@ repos:
         args: [ --fix ]
       # Run the formatter.
       - id: ruff-format
-  - repo: https://github.com/codespell-project/codespell
-    rev: v2.4.1
-    hooks:
-    - id: codespell
-      # remove toml extra once Python 3.10 is no longer supported
-      additional_dependencies: ['.[toml]']
-      # Can't spell check a file that isn't in english...
-      exclude: "docs/locales"
