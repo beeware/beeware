@@ -47,7 +47,7 @@ pre-commit = [
 ]
 
 dev = [
-    "setuptools_scm == 9.2.1",
+    "setuptools_scm == 9.2.2",
     {include-group = "pre-commit"},
 ]
 
