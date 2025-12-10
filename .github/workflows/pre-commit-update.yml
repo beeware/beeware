@@ -2,7 +2,10 @@ name: Update pre-commit
 
 on:
   schedule:
-    - cron: "0 20 * * SUN"  # Sunday @ 2000 UTC
+    - cron: "0 20 1-7 * */7"  # First Sunday of the month @ 2000 UTC
+      # Reading this expression: At 20:00 on every day-of-month from 1 through 7 if
+      # it's on every 7th day-of-week, i.e. any one of the first seven days of the
+      # month as long as it is a Sunday.
   workflow_dispatch:
 
 jobs:
