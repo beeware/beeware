@@ -43,7 +43,7 @@ Source = "https://github.com/beeware"
 
 [dependency-groups]
 pre-commit = [
-    "pre-commit == 4.5.0",
+    "pre-commit == 4.5.1",
 ]
 
 dev = [
