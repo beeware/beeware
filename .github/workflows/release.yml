@@ -31,13 +31,13 @@ jobs:
           python-version: "3.x"
 
       - name: Get packages
-        uses: actions/download-artifact@v8.0.0
+        uses: actions/download-artifact@v8.0.1
         with:
           name: ${{ needs.ci.outputs.artifact-name }}
           path: dist
 
       - name: Create release
-        uses: ncipollo/release-action@v1.20.0
+        uses: ncipollo/release-action@v1.21.0
         with:
           name: ${{ env.VERSION }}
           draft: true
