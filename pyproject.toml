@@ -52,13 +52,13 @@ dev = [
 ]
 
 [tool.codespell]
-skip = ".git,*.pdf,*.svg"
+skip =".git,*.pdf,*.svg"
 # the way to make case sensitive skips of words etc
 ignore-regex = "\bNd\b"
 ignore-words-list = "re-use"
 
 [tool.setuptools_scm]
-# To enable SCM versioning, we need an empty tool configuration for setuptools_scm
+# To enable SCM versioning, we need an empty tool configuration for setuptools_scm!
 
 [tool.check-wheel-contents]
 # WOO7: wheel library is empty
@@ -83,7 +83,7 @@ extend-select = [
     # "SIM",    # flake8-simplify
 ]
 ignore = [
- "F821",  # Undefined name `tags`
+ "F821", # Undefined name `tags`
  "E501"  # Line too long
  ]
 
