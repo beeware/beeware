@@ -1,6 +1,4 @@
-<a href="https://beeware.org">
-  <img src="https://beeware.org/static/images/brutus-270.png" alt="BeeWare Logo" height="72">
-</a>
+[<img src="https://beeware.org/static/images/brutus-270.png" width="72" alt="BeeWare logo" />](https://beeware.org/)
 
 # BeeWare
 
@@ -11,11 +9,9 @@
 [![Build Status](https://github.com/beeware/beeware/workflows/CI/badge.svg?branch=main)](https://github.com/beeware/beeware/actions)
 [![Discord server](https://img.shields.io/discord/836455665257021440?label=Discord%20Chat&logo=discord&style=plastic)](https://beeware.org/bee/chat/)
 
-BeeWare is a collection of tools and libraries for building and
-distributing native applications in Python.
+BeeWare is a collection of tools and libraries for building and distributing native applications in Python.
 
-For an introduction to the full BeeWare suite, we recommend running the
-[BeeWare Tutorial](https://tutorial.beeware.org/).
+For an introduction to the full BeeWare suite, we recommend running the [BeeWare Tutorial](https://tutorial.beeware.org/).
 
 ## Community
 
@@ -24,28 +20,18 @@ You can talk to the BeeWare community through:
 - [@beeware@fosstodon.org on Mastodon](https://fosstodon.org/@beeware)
 - [Discord](https://beeware.org/bee/chat/)
 
-We foster a welcoming and respectful community as described in our
-[BeeWare Community Code of
-Conduct](http://beeware.org/community/behavior/).
+We foster a welcoming and respectful community as described in our [BeeWare Community Code of Conduct](http://beeware.org/community/code-of-conduct/).
 
 ## Contributing
 
-If you experience problems with BeeWare, [log them on
-GitHub](https://github.com/beeware/beeware/issues). If you want to
-contribute code, please [fork the
-code](https://github.com/beeware/beeware) and [submit a pull
-request](https://github.com/beeware/beeware/pulls).
+If you experience problems with BeeWare, [log them on GitHub](https://github.com/beeware/beeware/issues). If you want to contribute code, please [fork the code](https://github.com/beeware/beeware) and [submit a pull request](https://github.com/beeware/beeware/pulls).
 
 ### Translations
 
-<a href="https://hosted.weblate.org/engage/beeware/">
-  <img src="https://hosted.weblate.org/widget/beeware/open-graph.png" alt="Translation Status" width="300">
-</a>
+[<img src="https://hosted.weblate.org/widget/beeware/open-graph.png" width="300" alt="Translation status" />](https://hosted.weblate.org/engage/beeware/)
 
 We manage translations using [Weblate](https://weblate.org/).
 
 [![Translation status](https://hosted.weblate.org/widget/beeware/horizontal-blue.svg)](https://hosted.weblate.org/engage/beeware/)
 
-If you'd like to contribute to the translation effort, join the
-`#translations` channel on [Discord](https://beeware.org/bee/chat/) and
-introduce yourself!
+If you'd like to contribute to the translation effort, join the `#translations` channel on [Discord](https://beeware.org/bee/chat/) and introduce yourself!
