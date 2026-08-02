@@ -1,7 +1,7 @@
 [build-system]
 requires = [
     "setuptools==83.0.0",
-    "setuptools_scm==10.2.0",
+    "setuptools_scm==10.2.1",
 ]
 build-backend = "setuptools.build_meta"
 
@@ -43,11 +43,11 @@ Source = "https://github.com/beeware"
 
 [dependency-groups]
 pre-commit = [
-    "pre-commit == 4.6.0",
+    "pre-commit == 4.6.1",
 ]
 
 dev = [
-    "setuptools_scm == 10.0.5",
+    "setuptools_scm == 10.2.1",
     {include-group = "pre-commit"},
 ]
 
