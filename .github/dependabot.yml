@@ -12,13 +12,19 @@ updates:
     directory: "/"
     patterns: ["*"]
     multi-ecosystem-group: "dependencies"
+    cooldown:
+      default-days: 7
 
   - package-ecosystem: "pre-commit"
     directory: "/"
     patterns: ["*"]
     multi-ecosystem-group: "dependencies"
+    cooldown:
+      default-days: 7
 
   - package-ecosystem: "pip"
     directory: "/"
     patterns: ["*"]
     multi-ecosystem-group: "dependencies"
+    cooldown:
+      default-days: 7
