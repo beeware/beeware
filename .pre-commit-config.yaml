@@ -10,7 +10,7 @@ repos:
       - id: trailing-whitespace
   - repo: https://github.com/astral-sh/ruff-pre-commit
     # Ruff version.
-    rev: v0.16.9
+    rev: v0.17.2
     hooks:
       # Run the linter.
       - id: ruff-check
@@ -18,6 +18,6 @@ repos:
       # Run the formatter.
       - id: ruff-format
   - repo: https://github.com/zizmorcore/zizmor-pre-commit
-    rev: v1.30.1
+    rev: v1.31.1
     hooks:
       - id: zizmor
